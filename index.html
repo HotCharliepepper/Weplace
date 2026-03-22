@@ -331,6 +331,58 @@
     .form-fallback p { margin: 0 0 16px; font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.6; }
     .form-fallback .sub { font-size: 13px; color: var(--muted); margin-top: 12px; }
 
+    /* ─── Self-Check Quiz ─── */
+    .quiz-card {
+      max-width: 720px; margin: 0 auto; padding: 40px;
+      background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04); position: relative; overflow: hidden;
+    }
+    .quiz-step { display: none; }
+    .quiz-step.active { display: block; animation: quizEnter 0.45s ease forwards; }
+    @keyframes quizEnter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .quiz-q {
+      display: flex; gap: 14px; align-items: flex-start; margin-bottom: 28px;
+    }
+    .quiz-num {
+      width: 36px; height: 36px; border-radius: 50%; background: var(--accent-light);
+      color: var(--accent); display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 13px; flex-shrink: 0;
+    }
+    .quiz-q h3 { margin: 0; font-size: 18px; font-weight: 800; line-height: 1.45; padding-top: 5px; }
+    .quiz-options { display: grid; gap: 12px; }
+    .quiz-opt {
+      display: block; width: 100%; text-align: left; padding: 18px 20px;
+      border: 1px solid var(--border); border-radius: 12px; background: #fff;
+      font-size: 15px; font-weight: 600; color: var(--text); cursor: pointer;
+      transition: all 0.2s; font-family: inherit; line-height: 1.5;
+      -webkit-appearance: none; appearance: none;
+    }
+    .quiz-opt:hover { border-color: var(--accent); background: var(--accent-light); }
+    .quiz-opt:active { transform: scale(0.99); }
+    .quiz-progress {
+      display: flex; gap: 6px; margin-bottom: 24px;
+    }
+    .quiz-progress-bar {
+      flex: 1; height: 3px; border-radius: 2px; background: var(--border); transition: background 0.3s;
+    }
+    .quiz-progress-bar.filled { background: var(--accent); }
+    .quiz-result { text-align: center; padding: 20px 0; }
+    .quiz-result-icon {
+      width: 64px; height: 64px; border-radius: 50%; background: var(--accent-light);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px; font-size: 28px; color: var(--accent);
+    }
+    .quiz-result h3 { margin: 0 0 12px; font-size: 22px; font-weight: 900; }
+    .quiz-result p { margin: 0 0 28px; color: var(--muted); font-size: 15px; line-height: 1.7; max-width: 420px; margin-left: auto; margin-right: auto; }
+    .quiz-result-actions { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .quiz-result-sub { font-size: 12px; color: var(--muted); font-weight: 600; margin-top: 8px; }
+
+    @media (max-width: 720px) {
+      .quiz-card { padding: 28px 20px; }
+      .quiz-q h3 { font-size: 16px; }
+      .quiz-opt { padding: 16px; font-size: 14px; }
+    }
+
     /* ─── Kakao CTA Section ─── */
     .kakao-section { text-align: center; padding: 48px 0; }
     .kakao-inner { max-width: 480px; margin: 0 auto; }
@@ -431,6 +483,7 @@
       <nav class="nav-links">
         <a href="#services">서비스</a>
         <a href="#platforms">플랫폼 전략</a>
+        <a href="#self-check">진단</a>
         <a href="#cases">사례</a>
         <a href="#ai">AI 설계</a>
         <a href="#faq">FAQ</a>
@@ -443,6 +496,7 @@
     <div class="drawer" id="drawer">
       <a href="#services">서비스</a>
       <a href="#platforms">플랫폼 전략</a>
+      <a href="#self-check">진단</a>
       <a href="#cases">사례</a>
       <a href="#ai">AI 설계</a>
       <a href="#faq">FAQ</a>
@@ -577,6 +631,72 @@
   </div>
 </section>
 
+<!-- ═══ SELF-CHECK ═══ -->
+<section id="self-check">
+  <div class="wrap">
+    <div class="section-header center reveal">
+      <span class="section-label">1-Minute Diagnostic</span>
+      <h2 class="section-title keep-all">1분이면 막히는 지점을<br>미리 알 수 있습니다.</h2>
+      <p class="section-desc keep-all">3가지 질문에 답하면, 전환이 막히는 구간이 보입니다.</p>
+    </div>
+
+    <div class="quiz-card reveal d1">
+      <!-- Step 1 -->
+      <div class="quiz-step active" id="q-step-1">
+        <div class="quiz-progress"><span class="quiz-progress-bar filled"></span><span class="quiz-progress-bar"></span><span class="quiz-progress-bar"></span></div>
+        <div class="quiz-q">
+          <span class="quiz-num">01</span>
+          <h3 class="keep-all">플레이스나 검색에서 우리 매장이 뜨긴 하나요?</h3>
+        </div>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizNext(1)">뜨긴 하는데, 클릭이 잘 안 됩니다.</button>
+          <button class="quiz-opt" onclick="quizNext(1)">클릭은 되는데, 들어와서 바로 나갑니다.</button>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="quiz-step" id="q-step-2">
+        <div class="quiz-progress"><span class="quiz-progress-bar filled"></span><span class="quiz-progress-bar filled"></span><span class="quiz-progress-bar"></span></div>
+        <div class="quiz-q">
+          <span class="quiz-num">02</span>
+          <h3 class="keep-all">리뷰가 고객의 방문 결정에 도움이 되고 있나요?</h3>
+        </div>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizNext(2)">리뷰는 있는데, "좋아요" 수준의 내용뿐입니다.</button>
+          <button class="quiz-opt" onclick="quizNext(2)">진짜 후기가 꾸준히 쌓이는 구조가 없습니다.</button>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="quiz-step" id="q-step-3">
+        <div class="quiz-progress"><span class="quiz-progress-bar filled"></span><span class="quiz-progress-bar filled"></span><span class="quiz-progress-bar filled"></span></div>
+        <div class="quiz-q">
+          <span class="quiz-num">03</span>
+          <h3 class="keep-all">고객이 "문의하기"를 누를 이유가 명확한가요?</h3>
+        </div>
+        <div class="quiz-options">
+          <button class="quiz-opt" onclick="quizFinish()">설명은 있는데, 고객의 고민을 짚어주는 문장이 없습니다.</button>
+          <button class="quiz-opt" onclick="quizFinish()">문의 버튼은 있는데, 지금 눌러야 할 이유가 부족합니다.</button>
+        </div>
+      </div>
+      <!-- Result -->
+      <div class="quiz-step" id="q-step-result">
+        <div class="quiz-result">
+          <div class="quiz-result-icon">✓</div>
+          <h3 class="keep-all">막히는 지점이 발견되었습니다.</h3>
+          <p class="keep-all">노출은 되지만 전환이 막히는 구간이 있습니다. 전문가가 데이터를 분석하여 핵심 막히는 지점 1개와 개선안 3개를 정리해 드립니다.</p>
+          <div class="quiz-result-actions">
+            <a class="btn kakao-btn" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" style="font-size:16px; padding:16px 36px; gap:10px;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
+              진단 결과 바탕으로 상담하기
+            </a>
+            <a class="btn" href="#contact" style="font-size:14px; padding:12px 24px;">양식으로 직접 문의하기</a>
+          </div>
+          <p class="quiz-result-sub">* 카카오톡에서 "자가진단 완료"라고 말씀해주시면 더 빠르게 안내드립니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ CASES ═══ -->
 <section id="cases">
   <div class="wrap">
@@ -594,7 +714,7 @@
           <span class="case-region">마사지 · 서울 명동</span>
         </div>
         <h3 class="keep-all">명동 마사지 1–2위,<br>3년간 유지</h3>
-        <p class="keep-all">일 유동인구 50만, 외국인 비중이 높은 상권. 고객이 검색 후 즉시 예약하는 흐름에 맞춰, 다국어 플레이스 + 사진·리뷰 동선을 전환 중심으로 재설계했습니다.</p>
+        <p class="keep-all">일 유동인구 50만, 외국인 비중이 극히 높은 상권입니다. 단기 체류 고객이 검색 후 즉시 예약하는 흐름에 맞춰, 다국어 플레이스 구성과 사진·리뷰 동선을 전환 중심으로 재설계했습니다.</p>
         <div class="case-stat">
           <div><div class="case-stat-num">1–2위</div><div class="case-stat-label">네이버 플레이스 · 3년 연속</div></div>
         </div>
@@ -717,17 +837,17 @@
     </div>
     <div class="grid3">
       <article class="card svc reveal d1">
-        <div class="svc-icon" style="background:#FEF3C7;"></div>
+        <div class="svc-icon" style="background:#FEF3C7;">🎯</div>
         <h3 class="keep-all">노출보다 '클릭 이후 3초'</h3>
         <p class="keep-all">아무리 많은 사람이 들어와도 첫 화면에서 매력을 못 느끼면 바로 나갑니다. 무의미한 트래픽보다 고객의 시선이 머무는 카피와 비주얼에 집중합니다.</p>
       </article>
       <article class="card svc reveal d2">
-        <div class="svc-icon" style="background:#DBEAFE;"></div>
+        <div class="svc-icon" style="background:#DBEAFE;">⭐</div>
         <h3 class="keep-all">가짜 리뷰 100개보다 진짜 경험 10개</h3>
         <p class="keep-all">"좋아요"로 도배된 100개의 리뷰는 지갑을 열지 못합니다. 고객이 자발적으로 구체적인 경험을 적게 만드는 동선과 루틴을 설계합니다.</p>
       </article>
       <article class="card svc reveal d3">
-        <div class="svc-icon" style="background:#EDE9FE;"></div>
+        <div class="svc-icon" style="background:#EDE9FE;">🔮</div>
         <h3 class="keep-all">템플릿 복사가 아닌 '브랜드 페르소나'</h3>
         <p class="keep-all">공장형 마케팅은 AI 검색 시대에 살아남을 수 없습니다. 공간의 본질과 원장님의 철학을 해석하여 고유의 브랜드를 구축합니다.</p>
       </article>
@@ -925,6 +1045,16 @@
       fallback?.classList.add("visible");
     }
   });
+
+  // Quiz
+  function quizNext(step) {
+    document.getElementById('q-step-' + step)?.classList.remove('active');
+    document.getElementById('q-step-' + (step + 1))?.classList.add('active');
+  }
+  function quizFinish() {
+    document.getElementById('q-step-3')?.classList.remove('active');
+    document.getElementById('q-step-result')?.classList.add('active');
+  }
 
   // Scroll Reveal
   if ('IntersectionObserver' in window) {
