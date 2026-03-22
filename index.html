@@ -6,7 +6,7 @@
   <title>We, place. — 브랜드 전환 설계 파트너</title>
   <meta name="description" content="보이지만 팔리지 않는 브랜드를 다시 설계합니다. 플레이스·리뷰·콘텐츠·AI 추천까지 하나의 구조로. We, place." />
   <meta property="og:title" content="We, place. — Brand Conversion Agency" />
-  <meta property="og:description" content="노출은 시작일 뿐입니다. 고객이 신뢰하고, 문의하고, 다시 찾는 구조를 설계합니다." />
+  <meta property="og:description" content="노출은 시작일 뿐입니다. 고객이 신뢰하고, 찾아오고, 다시 오는 구조를 설계합니다." />
   <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -25,7 +25,7 @@
       --radius: 16px;
       --max: 1120px;
       --kakao: #FEE500;
-      --section-gap: 100px;
+      --section-gap: 140px;
     }
 
     * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
@@ -35,9 +35,17 @@
       background: var(--bg); color: var(--text); line-height: 1.6; letter-spacing: -0.4px;
       overflow-x: hidden;
     }
+    main { scroll-snap-type: y proximity; }
     a { color: inherit; text-decoration: none; }
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
     .keep-all { word-break: keep-all; }
+
+    /* ─── Section Breather ─── */
+    .section-breather {
+      height: 1px; border: none;
+      background: linear-gradient(90deg, transparent 0%, var(--border) 20%, var(--border) 80%, transparent 100%);
+      max-width: 480px; margin: 32px auto;
+    }
 
     /* ─── Header ─── */
     header {
@@ -72,16 +80,16 @@
     .hamburger { display: none; }
 
     /* ─── Sections ─── */
-    section { padding: var(--section-gap) 0; position: relative; }
+    section { padding: var(--section-gap) 0; position: relative; scroll-snap-align: start; scroll-margin-top: 64px; }
     .section-label { display: inline-block; font-size: 12px; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 16px; }
     .section-title { margin: 0 0 16px; font-size: clamp(26px, 4vw, 40px); font-weight: 900; letter-spacing: -1px; line-height: 1.3; }
     .section-desc { margin: 0 0 48px; color: var(--muted); font-size: 16px; font-weight: 500; line-height: 1.7; max-width: 640px; }
-    .section-header { margin-bottom: 56px; }
+    .section-header { margin-bottom: 64px; }
     .section-header.center { text-align: center; }
     .section-header.center .section-desc { margin-left: auto; margin-right: auto; }
 
     /* ─── Hero ─── */
-    .hero { padding: 120px 0 80px; }
+    .hero { padding: 140px 0 100px; }
     .hero-inner { max-width: 720px; }
     .hero h1 {
       margin: 0 0 24px; font-size: clamp(32px, 5.5vw, 52px); line-height: 1.25;
@@ -98,22 +106,22 @@
     .hero-inner .hero-sub,
     .hero-inner .hero-cta,
     .hero-inner .hero-micro {
-      opacity: 0; transform: translateY(24px);
-      animation: heroFadeUp 0.9s cubic-bezier(0.22,1,0.36,1) forwards;
+      opacity: 0; transform: translateY(36px);
+      animation: heroFadeUp 1.2s cubic-bezier(0.16,1,0.3,1) forwards;
     }
-    .hero-inner .section-label { animation-delay: 0.1s; }
-    .hero-inner h1 { animation-delay: 0.25s; }
-    .hero-inner .hero-sub { animation-delay: 0.45s; }
-    .hero-inner .hero-cta { animation-delay: 0.6s; }
-    .hero-inner .hero-micro { animation-delay: 0.7s; }
+    .hero-inner .section-label { animation-delay: 0.15s; }
+    .hero-inner h1 { animation-delay: 0.45s; }
+    .hero-inner .hero-sub { animation-delay: 0.8s; }
+    .hero-inner .hero-cta { animation-delay: 1.05s; }
+    .hero-inner .hero-micro { animation-delay: 1.2s; }
     @keyframes heroFadeUp { to { opacity: 1; transform: translateY(0); } }
 
     .hero h1 .em {
       background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 100%);
       background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%;
       padding-bottom: 3px;
-      animation: heroFadeUp 0.9s cubic-bezier(0.22,1,0.36,1) 0.25s forwards,
-                 emUnderline 0.8s ease 1.3s forwards;
+      animation: heroFadeUp 1.2s cubic-bezier(0.16,1,0.3,1) 0.45s forwards,
+                 emUnderline 1s ease 1.8s forwards;
     }
     @keyframes emUnderline { to { background-size: 100% 2px; } }
 
@@ -126,7 +134,7 @@
 
     /* ─── Proof Bar ─── */
     .proof-strip {
-      margin-top: 56px; padding: 28px 32px; background: #fff; border: 1px solid var(--border);
+      margin-top: 72px; padding: 28px 32px; background: #fff; border: 1px solid var(--border);
       border-radius: 12px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
     }
     .proof-item { text-align: left; }
@@ -158,13 +166,16 @@
     .bridge {
       padding: 0; text-align: center; position: relative;
       background: linear-gradient(180deg, var(--bg) 0%, var(--accent-light) 100%);
+      scroll-snap-align: center;
     }
-    .bridge-inner { padding: 56px 24px 64px; max-width: 640px; margin: 0 auto; }
+    .bridge-inner { padding: 100px 24px 128px; max-width: 640px; margin: 0 auto; }
     .bridge-text { font-size: 18px; font-weight: 600; color: var(--text); line-height: 1.8; margin: 0; }
-    .bridge-text .bridge-em { display: block; margin-top: 8px; font-size: 20px; font-weight: 800; color: var(--accent); line-height: 1.5; }
-    .bridge-cue { display: flex; flex-direction: column; align-items: center; gap: 0; margin-top: 28px; }
-    .bridge-cue-line { width: 1px; height: 32px; background: linear-gradient(to bottom, rgba(37,99,235,0.15), rgba(37,99,235,0.5)); }
-    .bridge-cue-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); opacity: 0.6; }
+    .bridge-text .bridge-em { display: block; margin-top: 12px; font-size: 21px; font-weight: 800; color: var(--accent); line-height: 1.5; }
+    .bridge-cue { display: flex; flex-direction: column; align-items: center; gap: 0; margin-top: 56px; }
+    .bridge-cue-line { width: 1px; height: 140px; background: linear-gradient(to bottom, rgba(37,99,235,0.05), rgba(37,99,235,0.35)); }
+    .bridge-cue-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); opacity: 0.5; animation: bridgePulse 4.5s ease-in-out infinite; }
+    @keyframes bridgePulse { 0%,100% { opacity: 0.25; transform: scale(1); } 50% { opacity: 0.6; transform: scale(1.3); } }
+    @media (prefers-reduced-motion: reduce) { .bridge-cue-dot { animation: none; opacity: 0.5; } }
 
     /* ─── Platform Steps ─── */
     .steps-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
@@ -229,7 +240,7 @@
     .ai-card-wide h3 { font-size: 20px; }
 
     /* ─── Semantic Flow Visual ─── */
-    .sem-flow { position: relative; width: 100%; aspect-ratio: 28/13; min-height: 150px; overflow: hidden; border-radius: 12px; background: rgba(0,0,0,0.25); margin-top: 20px; flex-grow: 1; }
+    .sem-flow { position: relative; width: 100%; aspect-ratio: 2/1; min-height: 200px; overflow: hidden; border-radius: 12px; background: rgba(0,0,0,0.25); margin-top: 20px; flex-grow: 1; }
     .sem-flow svg { width: 100%; height: 100%; display: block; }
     .sem-flow text { font-family: "Pretendard Variable", sans-serif; }
     .sf-pill { opacity: 0.5; animation: sfPillPulse 5s ease-in-out infinite; }
@@ -406,12 +417,12 @@
     footer { border-top: 1px solid var(--border); padding: 40px 0 60px; color: var(--muted); font-size: 14px; font-weight: 500; text-align: center; }
 
     /* ─── Reveal ─── */
-    .reveal { opacity: 0; transform: translateY(32px); transition: all 0.8s cubic-bezier(0.175,0.885,0.32,1.275); }
+    .reveal { opacity: 0; transform: translateY(48px); transition: all 1.1s cubic-bezier(0.16,1,0.3,1); }
     .reveal.active { opacity: 1; transform: translateY(0); }
-    .reveal.d1 { transition-delay: 0.1s; }
-    .reveal.d2 { transition-delay: 0.2s; }
-    .reveal.d3 { transition-delay: 0.3s; }
-    .reveal.d4 { transition-delay: 0.4s; }
+    .reveal.d1 { transition-delay: 0.12s; }
+    .reveal.d2 { transition-delay: 0.24s; }
+    .reveal.d3 { transition-delay: 0.36s; }
+    .reveal.d4 { transition-delay: 0.48s; }
 
     /* ─── Mobile Sticky CTA ─── */
     .mobile-sticky { display: none; }
@@ -422,15 +433,15 @@
       .grid2 { grid-template-columns: 1fr; }
       .ai-bento { grid-template-columns: 1fr; }
       .ai-card-wide { grid-row: auto; }
-      .sem-flow { min-height: 140px; }
+      .sem-flow { min-height: 160px; }
       .form-row { grid-template-columns: 1fr; gap: 0; }
       .contact-card { padding: 32px 24px; }
     }
     @media (max-width: 720px) {
-      :root { --section-gap: 72px; }
+      :root { --section-gap: 96px; }
       .nav-links { display: none; }
       .hamburger { display: inline-flex; background: #fff; border-color: var(--border); }
-      .hero { padding: 88px 0 56px; }
+      .hero { padding: 100px 0 72px; }
       .hero h1 { font-size: clamp(28px, 7vw, 36px); }
       .hero-sub { font-size: 16px; }
       .hero-cta { flex-direction: column; align-items: stretch; }
@@ -439,7 +450,7 @@
       .proof-item { text-align: center; }
       .proof-num { font-size: 32px; }
       .section-title { font-size: clamp(24px, 6vw, 32px); }
-      .section-header { margin-bottom: 40px; }
+      .section-header { margin-bottom: 48px; }
       .case-stat { flex-direction: column; gap: 12px; }
       .testimonial-grid { gap: 16px; }
       .trust-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -514,15 +525,15 @@
       <span class="section-label">Brand Conversion Agency</span>
       <h1 class="keep-all">
         노출은 됩니다.<br>
-        그런데 왜 <span class="em">문의가 없을까요?</span>
+        그런데 왜 <span class="em">고객이 안 올까요?</span>
       </h1>
       <p class="hero-sub keep-all">
         문제는 노출이 아니라 구조입니다.<br>
-        고객이 검색하고, 클릭하고, 신뢰하고, 문의하는 흐름 전체를 설계합니다.
+        고객이 검색하고, 클릭하고, 신뢰하고, 찾아오는 흐름 전체를 설계합니다.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">카카오로 무료 상담 시작하기</a>
-        <a class="btn" href="#services">어떻게 작동하는지 보기</a>
+        <a class="btn" href="#services">구조 살펴보기</a>
       </div>
       <span class="hero-micro">✓ 결제 정보 없이 시작 · 1영업일 내 1차 회신</span>
     </div>
@@ -549,12 +560,12 @@
 </section>
 
 <!-- ═══ SERVICES ═══ -->
-<section id="services" style="padding-bottom: 48px;">
+<section id="services" style="padding-bottom: 64px;">
   <div class="wrap">
     <div class="section-header reveal">
       <span class="section-label">What We Build</span>
       <h2 class="section-title keep-all">전환을 만드는 세 가지 구조</h2>
-      <p class="section-desc keep-all">노출만으로는 문의가 생기지 않습니다.<br>고객이 신뢰하고, 머물고, 행동하게 만드는 구조를 설계합니다.</p>
+      <p class="section-desc keep-all">노출만으로는 고객이 찾아오지 않습니다.<br>고객이 신뢰하고, 머물고, 행동하게 만드는 구조를 설계합니다.</p>
     </div>
     <div class="grid3">
       <article class="card svc reveal d1">
@@ -565,7 +576,7 @@
       <article class="card svc reveal d2">
         <div class="svc-icon">↗</div>
         <h3>Growth Architecture</h3>
-        <p class="keep-all">노출은 되는데 문의가 없다면 동선의 문제입니다. 검색 → 클릭 → 체류 → 문의로 이어지는 전환 흐름을 설계합니다.</p>
+        <p class="keep-all">노출은 되는데 고객이 안 온다면 동선의 문제입니다. 검색 → 클릭 → 체류 → 방문·예약으로 이어지는 전환 흐름을 설계합니다.</p>
       </article>
       <article class="card svc reveal d3">
         <div class="svc-icon">◎</div>
@@ -670,11 +681,11 @@
         <div class="quiz-progress"><span class="quiz-progress-bar filled"></span><span class="quiz-progress-bar filled"></span><span class="quiz-progress-bar filled"></span></div>
         <div class="quiz-q">
           <span class="quiz-num">03</span>
-          <h3 class="keep-all">고객이 "문의하기"를 누를 이유가 명확한가요?</h3>
+          <h3 class="keep-all">고객이 연락하거나 찾아올 이유가 명확한가요?</h3>
         </div>
         <div class="quiz-options">
           <button class="quiz-opt" onclick="quizFinish()">설명은 있는데, 고객의 고민을 짚어주는 문장이 없습니다.</button>
-          <button class="quiz-opt" onclick="quizFinish()">문의 버튼은 있는데, 지금 눌러야 할 이유가 부족합니다.</button>
+          <button class="quiz-opt" onclick="quizFinish()">버튼은 있는데, 고객이 지금 눌러야 할 이유가 부족합니다.</button>
         </div>
       </div>
       <!-- Result -->
@@ -696,6 +707,8 @@
     </div>
   </div>
 </section>
+
+<hr class="section-breather">
 
 <!-- ═══ CASES ═══ -->
 <section id="cases">
@@ -738,6 +751,8 @@
   </div>
 </section>
 
+<hr class="section-breather">
+
 <!-- ═══ TESTIMONIALS ═══ -->
 <section style="background:#fff;">
   <div class="wrap">
@@ -753,13 +768,13 @@
         <span class="testi-author">— 피부과 원장 · 서울</span>
       </article>
       <article class="card testimonial reveal d2">
-        <div class="testi-photo"><span class="ph-label">실제 문의 증가 캡처</span></div>
-        <p class="testi-text keep-all">솔직히 '진단'이라고 해서 형식적인 리포트를 예상했는데, 우리 매장이 왜 문의가 안 오는지 정확히 짚어주더라고요. 사진 순서 하나 바꾸고 문의가 늘기 시작했습니다.</p>
+        <div class="testi-photo"><span class="ph-label">실제 예약 증가 캡처</span></div>
+        <p class="testi-text keep-all">솔직히 '진단'이라고 해서 형식적인 리포트를 예상했는데, 우리 매장에 왜 고객이 안 오는지 정확히 짚어주더라고요. 사진 순서 하나 바꾸고 예약이 늘기 시작했습니다.</p>
         <span class="testi-author">— 마사지샵 대표 · 명동</span>
       </article>
       <article class="card testimonial reveal d3">
         <div class="testi-photo"><span class="ph-label">블로그 유입 그래프</span></div>
-        <p class="testi-text keep-all">블로그를 1년 넘게 했는데 효과가 없었어요. 위플레이스에서 글의 구조와 연결 동선만 바꿨는데, 한 달 만에 상담 문의가 두 배가 됐습니다. 구조가 이렇게 중요한 줄 몰랐어요.</p>
+        <p class="testi-text keep-all">블로그를 1년 넘게 했는데 효과가 없었어요. 위플레이스에서 글의 구조와 연결 동선만 바꿨는데, 한 달 만에 상담 신청이 두 배가 됐습니다. 구조가 이렇게 중요한 줄 몰랐어요.</p>
         <span class="testi-author">— 학원 운영자 · 광주</span>
       </article>
     </div>
@@ -780,36 +795,44 @@
         <h3>LLM 시맨틱 최적화</h3>
         <p class="keep-all">AI는 키워드가 아니라 구조를 읽습니다. 흩어진 브랜드 정보를 AI가 해석할 수 있는 시맨틱 데이터로 재정비합니다.</p>
         <div class="sem-flow">
-          <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 560 280" xmlns="http://www.w3.org/2000/svg">
             <defs><radialGradient id="sfGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" class="sf-color-shift"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
-            <ellipse cx="280" cy="130" rx="100" ry="80" fill="url(#sfGlow)" opacity="0.5"/>
-            <g class="sf-pill"><rect x="24" y="35" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/><text x="63" y="53" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">매장명</text></g>
-            <g class="sf-pill"><rect x="24" y="85" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/><text x="63" y="103" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">리뷰</text></g>
-            <g class="sf-pill"><rect x="24" y="140" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/><text x="63" y="158" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">위치</text></g>
-            <g class="sf-pill"><rect x="24" y="195" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/><text x="63" y="213" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">서비스</text></g>
-            <line x1="102" y1="49" x2="200" y2="80" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
-            <line x1="102" y1="99" x2="200" y2="110" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
-            <line x1="102" y1="154" x2="200" y2="150" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
-            <line x1="102" y1="209" x2="200" y2="185" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
-            <rect x="200" y="48" width="170" height="168" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(173,198,255,0.18)" stroke-width="0.8"/>
-            <text x="285" y="42" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(173,198,255,0.35)" letter-spacing="0.1em">SCHEMA</text>
-            <rect x="220" y="72" width="130" height="6" rx="3" fill="rgba(37,99,235,0.35)" class="sf-bar"/>
-            <rect x="220" y="100" width="105" height="6" rx="3" fill="rgba(37,99,235,0.28)" class="sf-bar"/>
-            <rect x="220" y="128" width="120" height="6" rx="3" fill="rgba(86,58,210,0.28)" class="sf-bar"/>
-            <rect x="220" y="156" width="90" height="6" rx="3" fill="rgba(86,58,210,0.22)" class="sf-bar"/>
-            <text x="220" y="67" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">name / type</text>
-            <text x="220" y="95" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">review / rating</text>
-            <text x="220" y="123" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">geo / address</text>
-            <text x="220" y="151" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">offer / action</text>
-            <circle cx="357" cy="75" r="3" fill="rgba(100,200,150,0.5)"/><circle cx="357" cy="103" r="3" fill="rgba(100,200,150,0.5)"/>
-            <circle cx="357" cy="131" r="3" fill="rgba(100,200,150,0.4)"/><circle cx="357" cy="159" r="3" fill="rgba(100,200,150,0.3)"/>
-            <line x1="370" y1="132" x2="448" y2="130" class="sf-out" stroke="rgba(173,198,255,0.22)" stroke-width="1"/>
-            <polygon points="445,126 455,130 445,134" fill="rgba(173,198,255,0.2)"/>
-            <circle cx="488" cy="130" r="36" fill="rgba(37,99,235,0.06)" class="sf-ai-glow"/>
-            <circle cx="488" cy="130" r="26" fill="rgba(37,99,235,0.15)" stroke="rgba(173,198,255,0.35)" stroke-width="0.8"/>
-            <circle cx="488" cy="130" r="17" fill="rgba(37,99,235,0.25)" stroke="rgba(173,198,255,0.5)" stroke-width="0.5"/>
-            <text x="488" y="134" text-anchor="middle" font-size="11" font-weight="800" fill="rgba(200,220,255,0.9)">AI</text>
-            <text x="488" y="170" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(173,198,255,0.3)">추천</text>
+            <ellipse cx="280" cy="140" rx="110" ry="90" fill="url(#sfGlow)" opacity="0.5"/>
+            <!-- Raw data pills -->
+            <g class="sf-pill"><rect x="16" y="32" width="90" height="34" rx="17" fill="rgba(173,198,255,0.1)" stroke="rgba(173,198,255,0.3)" stroke-width="1"/><text x="61" y="54" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(173,198,255,0.85)">매장명</text></g>
+            <g class="sf-pill"><rect x="16" y="82" width="90" height="34" rx="17" fill="rgba(173,198,255,0.1)" stroke="rgba(173,198,255,0.3)" stroke-width="1"/><text x="61" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(173,198,255,0.85)">리뷰</text></g>
+            <g class="sf-pill"><rect x="16" y="140" width="90" height="34" rx="17" fill="rgba(173,198,255,0.1)" stroke="rgba(173,198,255,0.3)" stroke-width="1"/><text x="61" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(173,198,255,0.85)">위치</text></g>
+            <g class="sf-pill"><rect x="16" y="200" width="90" height="34" rx="17" fill="rgba(173,198,255,0.1)" stroke="rgba(173,198,255,0.3)" stroke-width="1"/><text x="61" y="222" text-anchor="middle" font-size="13" font-weight="700" fill="rgba(173,198,255,0.85)">서비스</text></g>
+            <!-- Flow lines -->
+            <line x1="106" y1="49" x2="200" y2="82" class="sf-flow-line" stroke="rgba(173,198,255,0.2)" stroke-width="1.2"/>
+            <line x1="106" y1="99" x2="200" y2="115" class="sf-flow-line" stroke="rgba(173,198,255,0.2)" stroke-width="1.2"/>
+            <line x1="106" y1="157" x2="200" y2="155" class="sf-flow-line" stroke="rgba(173,198,255,0.2)" stroke-width="1.2"/>
+            <line x1="106" y1="217" x2="200" y2="195" class="sf-flow-line" stroke="rgba(173,198,255,0.2)" stroke-width="1.2"/>
+            <!-- Schema card -->
+            <rect x="200" y="48" width="176" height="184" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(173,198,255,0.22)" stroke-width="1"/>
+            <text x="288" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.45)" letter-spacing="0.12em">SCHEMA</text>
+            <text x="222" y="74" font-size="9" font-weight="600" fill="rgba(173,198,255,0.5)">name / type</text>
+            <rect x="222" y="80" width="134" height="7" rx="3.5" fill="rgba(37,99,235,0.4)" class="sf-bar"/>
+            <text x="222" y="106" font-size="9" font-weight="600" fill="rgba(173,198,255,0.5)">review / rating</text>
+            <rect x="222" y="112" width="108" height="7" rx="3.5" fill="rgba(37,99,235,0.32)" class="sf-bar"/>
+            <text x="222" y="138" font-size="9" font-weight="600" fill="rgba(173,198,255,0.5)">geo / address</text>
+            <rect x="222" y="144" width="124" height="7" rx="3.5" fill="rgba(86,58,210,0.32)" class="sf-bar"/>
+            <text x="222" y="170" font-size="9" font-weight="600" fill="rgba(173,198,255,0.5)">offer / action</text>
+            <rect x="222" y="176" width="94" height="7" rx="3.5" fill="rgba(86,58,210,0.25)" class="sf-bar"/>
+            <!-- Status dots -->
+            <circle cx="365" cy="84" r="4" fill="rgba(100,200,150,0.6)"/>
+            <circle cx="365" cy="116" r="4" fill="rgba(100,200,150,0.55)"/>
+            <circle cx="365" cy="148" r="4" fill="rgba(100,200,150,0.45)"/>
+            <circle cx="365" cy="180" r="4" fill="rgba(100,200,150,0.35)"/>
+            <!-- Output arrow -->
+            <line x1="376" y1="140" x2="448" y2="140" class="sf-out" stroke="rgba(173,198,255,0.28)" stroke-width="1.2"/>
+            <polygon points="445,135 457,140 445,145" fill="rgba(173,198,255,0.25)"/>
+            <!-- AI node -->
+            <circle cx="492" cy="140" r="40" fill="rgba(37,99,235,0.06)" class="sf-ai-glow"/>
+            <circle cx="492" cy="140" r="28" fill="rgba(37,99,235,0.15)" stroke="rgba(173,198,255,0.4)" stroke-width="1"/>
+            <circle cx="492" cy="140" r="18" fill="rgba(37,99,235,0.28)" stroke="rgba(173,198,255,0.55)" stroke-width="0.8"/>
+            <text x="492" y="145" text-anchor="middle" font-size="14" font-weight="800" fill="rgba(200,220,255,0.95)">AI</text>
+            <text x="492" y="184" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.4)">추천</text>
           </svg>
         </div>
       </div>
@@ -965,7 +988,7 @@
       <label for="c-contact">연락 가능한 수단 <span style="color:var(--accent);">*</span></label>
       <input id="c-contact" name="contact_method" type="text" placeholder="예) 010-1234-5678 / 카카오톡 ID / 이메일" required>
       <label for="c-pain">지금 가장 막히는 지점 <span style="color:var(--accent);">*</span></label>
-      <input id="c-pain" name="pain_point" type="text" placeholder="예) 노출은 있는데 문의가 없음 / 리뷰가 안 쌓임" required>
+      <input id="c-pain" name="pain_point" type="text" placeholder="예) 노출은 있는데 고객이 안 옴 / 리뷰가 안 쌓임" required>
       <label for="c-msg">추가 메모 (선택)</label>
       <textarea id="c-msg" name="message" placeholder="플레이스/인스타/홈페이지 링크가 있으면 같이 적어주세요."></textarea>
       <p class="form-note">입력은 1분이면 충분합니다.</p>
@@ -1060,14 +1083,14 @@
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('active'); obs.unobserve(entry.target); } });
-    }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+    }, { threshold: 0.06, rootMargin: "0px 0px -60px 0px" });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   } else {
     document.querySelectorAll('.reveal').forEach(el => { el.style.opacity='1'; el.style.transform='none'; });
   }
 
   // Safety: force reveal after 4s
-  setTimeout(() => { document.querySelectorAll('.reveal:not(.active)').forEach(el => { el.style.opacity='1'; el.style.transform='translateY(0)'; }); }, 4000);
+  setTimeout(() => { document.querySelectorAll('.reveal:not(.active)').forEach(el => { el.style.opacity='1'; el.style.transform='translateY(0)'; }); }, 5000);
 
   // Kakao float: desktop only, after scroll
   const kf = document.querySelector('.kakao-float');
