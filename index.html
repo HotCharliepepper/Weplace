@@ -1,909 +1,866 @@
-<!DOCTYPE html>
-<html class="light" lang="ko">
+<!doctype html>
+<html lang="ko">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>We, place. | Brand Conversion Agency</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>We, place. — 브랜드 전환 설계 파트너</title>
+  <meta name="description" content="보이지만 팔리지 않는 브랜드를 다시 설계합니다. 플레이스·리뷰·콘텐츠·AI 추천까지 하나의 구조로. We, place." />
+  <meta property="og:title" content="We, place. — Brand Conversion Agency" />
+  <meta property="og:description" content="노출은 시작일 뿐입니다. 고객이 신뢰하고, 문의하고, 다시 찾는 구조를 설계합니다." />
+  <meta property="og:type" content="website" />
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const form = document.querySelector('#contact form');
-        const toast = document.getElementById('toast-notification');
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css">
 
-        if (form) {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                toast.classList.add('show');
-                form.reset();
-                setTimeout(() => {
-                    toast.classList.remove('show');
-                }, 4000);
-            });
-        }
-    });
-</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<noscript>
-<style>
-    /* JS 미실행 환경에서 모든 콘텐츠 강제 표시 */
-    .reveal, .reveal.reveal-d1, .reveal.reveal-d2, .reveal.reveal-d3 {
-        opacity: 1 !important; transform: none !important; transition: none !important;
-    }
-    .hero-enter, .hero-enter-d1, .hero-enter-d2, .hero-enter-d3 {
-        opacity: 1 !important; transform: none !important; animation: none !important;
-    }
-    .quiz-step { display: block !important; animation: none !important; }
-    .quiz-step + .quiz-step { display: none !important; }
-    .quiz-step:first-child { display: block !important; }
-    #toast-notification { display: none !important; }
-</style>
-</noscript>
-
-<script id="tailwind-config">
-    tailwind.config = {
-        darkMode: "class",
-        theme: {
-            extend: {
-                colors: {
-                    "surface-variant": "#e0e2e8",
-                    "surface-container-low": "#f1f3f9",
-                    "secondary-fixed-dim": "#adc6ff",
-                    "secondary": "#0058be",
-                    "primary": "#00010f",
-                    "surface-container-highest": "#e0e2e8",
-                    "on-surface": "#181c20",
-                    "on-primary": "#ffffff",
-                    "surface": "#f7f9ff",
-                    "surface-container-lowest": "#ffffff",
-                    "on-surface-variant": "#46464f",
-                    "secondary-container": "#2170e4",
-                    "primary-container": "#0f1748"
-                },
-                fontFamily: {
-                    "headline": ["Plus Jakarta Sans", "sans-serif"],
-                    "body": ["Manrope", "sans-serif"],
-                    "label": ["Manrope", "sans-serif"]
-                },
-                borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-            },
-        },
-    }
-</script>
-<style>
-    /* === Base === */
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
-    h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .korean-wrap { word-break: keep-all; }
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-
-    /* === Fallback: Material Symbols 미로드 시 아이콘 숨김 처리 === */
-    .material-symbols-outlined {
-        font-size: 24px;
-        line-height: 1;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        max-width: 1.5em;
-        max-height: 1.5em;
-        vertical-align: middle;
-        text-overflow: clip;
-        white-space: nowrap;
+  <style>
+    :root {
+      --bg: #F8F9FA;
+      --card-bg: #FFFFFF;
+      --text: #111111;
+      --muted: #555555;
+      --accent: #2563EB;
+      --accent-light: #EFF6FF;
+      --accent-dark: #1D4ED8;
+      --border: #E5E7EB;
+      --radius: 16px;
+      --max: 1120px;
+      --kakao: #FEE500;
+      --section-gap: 100px;
     }
 
-    /* === Fallback: reveal 요소 강제 표시 (JS 미실행 환경 대비) === */
-    .reveal-fallback .reveal,
-    .reveal-fallback .reveal.reveal-d1,
-    .reveal-fallback .reveal.reveal-d2,
-    .reveal-fallback .reveal.reveal-d3 {
-        opacity: 1 !important;
-        transform: none !important;
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    html, body { height: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: "Pretendard Variable", -apple-system, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.6; letter-spacing: -0.4px;
+      overflow-x: hidden;
     }
-    .reveal-fallback .hero-enter,
-    .reveal-fallback .hero-enter-d1,
-    .reveal-fallback .hero-enter-d2,
-    .reveal-fallback .hero-enter-d3 {
-        opacity: 1 !important;
-        transform: none !important;
-        animation: none !important;
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+    .keep-all { word-break: keep-all; }
+
+    /* ─── Header ─── */
+    header {
+      position: -webkit-sticky; position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { display: flex; gap: 6px; align-items: center; font-weight: 900; font-size: 17px; }
+    .brand-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    .brand-we { color: var(--text); }
+    .brand-place { color: var(--accent); }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { font-size: 15px; font-weight: 600; color: var(--muted); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-actions { display: flex; gap: 8px; align-items: center; }
+
+    /* ─── Buttons ─── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      border: 1px solid var(--border); background: #fff; color: var(--text);
+      padding: 12px 22px; border-radius: 999px; font-size: 15px; font-weight: 700;
+      cursor: pointer; transition: all 0.25s ease; user-select: none;
+      white-space: nowrap; -webkit-appearance: none; appearance: none;
+    }
+    .btn:hover { border-color: var(--text); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+    .btn.primary { border: none; background: var(--accent); color: #fff; box-shadow: 0 4px 15px rgba(37,99,235,0.2); }
+    .btn.primary:hover { background: var(--accent-dark); box-shadow: 0 6px 20px rgba(37,99,235,0.3); }
+    .btn.kakao-btn { background: var(--kakao); color: #3C1E1E; border: none; font-weight: 800; }
+    .btn.kakao-btn:hover { background: #F5DA00; }
+    .hamburger { display: none; }
+
+    /* ─── Sections ─── */
+    section { padding: var(--section-gap) 0; position: relative; }
+    .section-label { display: inline-block; font-size: 12px; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 16px; }
+    .section-title { margin: 0 0 16px; font-size: clamp(26px, 4vw, 40px); font-weight: 900; letter-spacing: -1px; line-height: 1.3; }
+    .section-desc { margin: 0 0 48px; color: var(--muted); font-size: 16px; font-weight: 500; line-height: 1.7; max-width: 640px; }
+    .section-header { margin-bottom: 56px; }
+    .section-header.center { text-align: center; }
+    .section-header.center .section-desc { margin-left: auto; margin-right: auto; }
+
+    /* ─── Hero ─── */
+    .hero { padding: 120px 0 80px; }
+    .hero-inner { max-width: 720px; }
+    .hero h1 {
+      margin: 0 0 24px; font-size: clamp(32px, 5.5vw, 52px); line-height: 1.25;
+      letter-spacing: -1.5px; font-weight: 900;
+    }
+    .hero h1 .em { color: var(--accent); }
+    .hero-sub { font-size: 18px; color: var(--muted); margin: 0 0 40px; line-height: 1.7; font-weight: 500; }
+    .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .hero-micro { display: block; margin-top: 16px; font-size: 13px; color: var(--accent); font-weight: 700; }
+
+    /* ─── Proof Bar ─── */
+    .proof-strip {
+      margin-top: 56px; padding: 28px 32px; background: #fff; border: 1px solid var(--border);
+      border-radius: 12px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .proof-item { text-align: left; }
+    .proof-num { font-size: 36px; font-weight: 900; color: var(--accent); letter-spacing: -1px; line-height: 1; }
+    .proof-label { font-size: 14px; color: var(--text); font-weight: 700; margin-top: 8px; }
+    .proof-context { font-size: 13px; color: var(--muted); font-weight: 500; margin-top: 4px; line-height: 1.5; }
+    .proof-note { margin-top: 0; font-size: 13px; color: var(--muted); font-weight: 500; grid-column: 1 / -1; padding-top: 16px; border-top: 1px solid var(--border); }
+
+    /* ─── Cards ─── */
+    .card {
+      background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+      transition: transform 0.4s cubic-bezier(0.175,0.885,0.32,1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+    @media (hover:hover) and (pointer:fine) {
+      .card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.07); }
     }
 
-    /* === Tailwind CDN 미로드 시 기본 레이아웃 보장 === */
-    .tw-fallback-layout {
-        box-sizing: border-box;
-    }
-    .tw-fallback-layout *,
-    .tw-fallback-layout *::before,
-    .tw-fallback-layout *::after {
-        box-sizing: border-box;
-    }
+    /* ─── Grids ─── */
+    .grid3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .grid2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
 
-    /* === Hero background === */
-    .hero-fx-glow {
-        background: radial-gradient(circle at 50% 50%, #0f1748 0%, #00010f 100%);
-        position: relative;
-        overflow: hidden;
-    }
-    .nebula-layer {
-        position: absolute; width: 160%; height: 160%; top: -30%; left: -30%;
-        background: radial-gradient(circle at 30% 20%, rgba(0, 88, 190, 0.16) 0%, transparent 40%),
-                    radial-gradient(circle at 70% 80%, rgba(0, 88, 190, 0.10) 0%, transparent 40%),
-                    radial-gradient(ellipse 120% 60% at 20% 8%, rgba(86, 46, 200, 0.08) 0%, transparent 50%);
-        filter: blur(60px); pointer-events: none;
-        animation: nebulaDrift 55s ease-in-out infinite alternate;
-    }
-    @keyframes nebulaDrift {
-        0%   { transform: translate3d(0, 0, 0) scale(1); }
-        33%  { transform: translate3d(-1.8%, 1.2%, 0) scale(1.02); }
-        66%  { transform: translate3d(1.4%, -0.8%, 0) scale(1.01); }
-        100% { transform: translate3d(-0.6%, 1.6%, 0) scale(1); }
-    }
-    .hero-vignette {
-        position: absolute; bottom: 0; left: 0; right: 0; height: 22%;
-        background: linear-gradient(180deg, rgba(15, 23, 72, 0) 0%, rgba(15, 23, 72, 0.12) 80%, #f7f9ff 100%);
-        pointer-events: none; z-index: 1;
-    }
+    /* ─── Service Cards ─── */
+    .svc { padding: 36px; }
+    .svc-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--accent-light); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 22px; }
+    .svc h3 { margin: 0 0 8px; font-size: 20px; font-weight: 800; }
+    .svc p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
 
-    /* === Scroll Animations === */
-    .reveal { opacity: 0; transform: translateY(32px); transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1); }
-    .reveal.is-visible { opacity: 1; transform: translateY(0); }
-    .reveal-d1 { transition-delay: 0.15s; }
-    .reveal-d2 { transition-delay: 0.3s; }
-
-    .hero-enter { opacity: 0; transform: translateY(40px); animation: heroReveal 2s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-    .hero-enter-d1 { animation-delay: 0.4s; }
-    .hero-enter-d2 { animation-delay: 0.8s; }
-    .hero-enter-d3 { animation-delay: 1.2s; }
-    @keyframes heroReveal { to { opacity: 1; transform: translateY(0); } }
-
-    .card-hover { transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s ease; }
-    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 24px 48px rgba(24, 28, 32, 0.05); }
-
-    /* === UI Details === */
-    .logo-we { color: #181c20; }
-    .logo-place { color: #0058be; }
-    .logo-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #0058be; margin-right: 6px; vertical-align: middle; top: -1px; position: relative; }
-    
-    nav.is-scrolled { padding-top: 0.625rem; padding-bottom: 0.625rem; box-shadow: 0 8px 24px rgba(15, 23, 72, 0.08); }
-    nav { transition: all 0.4s ease; }
-
-    /* === Quiz & Toast === */
-    .quiz-step { display: none; }
-    .quiz-step.active { display: block; animation: quizEnter 0.5s forwards; }
-    @keyframes quizEnter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-    .quiz-option { transition: all 0.2s; border: 1px solid #e2e8f0; }
-    .quiz-option:hover { border-color: #0058be; background: #eff6ff; }
-    
-    #toast-notification {
-        position: fixed; bottom: -100px; left: 50%; transform: translateX(-50%);
-        background: #ffffff; padding: 16px 24px; border-radius: 12px;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 12px;
-        transition: bottom 0.5s cubic-bezier(0.22, 1, 0.36, 1); z-index: 9999;
-        border: 1px solid #e0e2e8;
-        max-width: calc(100vw - 32px);
-        width: auto;
-        min-width: 280px;
+    /* ─── Bridge ─── */
+    .bridge {
+      padding: 0; text-align: center; position: relative;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--accent-light) 100%);
     }
-    #toast-notification.show { bottom: 32px; }
-    #toast-notification .toast-icon {
-        width: 28px; height: 28px; flex-shrink: 0;
-        color: #0058be;
-    }
-    #toast-notification .toast-text p:first-child {
-        font-weight: 700; font-size: 15px; color: #00010f; white-space: nowrap;
-    }
-    #toast-notification .toast-text p:last-child {
-        font-size: 12px; color: #64748b; margin-top: 2px;
-    }
+    .bridge-inner { padding: 56px 24px 64px; max-width: 640px; margin: 0 auto; }
+    .bridge-text { font-size: 18px; font-weight: 600; color: var(--text); line-height: 1.8; margin: 0; }
+    .bridge-text .bridge-em { display: block; margin-top: 8px; font-size: 20px; font-weight: 800; color: var(--accent); line-height: 1.5; }
+    .bridge-cue { display: flex; flex-direction: column; align-items: center; gap: 0; margin-top: 28px; }
+    .bridge-cue-line { width: 1px; height: 32px; background: linear-gradient(to bottom, rgba(37,99,235,0.15), rgba(37,99,235,0.5)); }
+    .bridge-cue-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); opacity: 0.6; }
 
-    /* === AI Structural Flow Visual === */
-    .sem-flow { position: relative; width: 100%; aspect-ratio: 28/13; min-height: 180px; overflow: hidden; border-radius: 16px; background: rgba(0,0,0,0.3); }
-    .sem-flow svg { width: 100%; height: 100%; }
-    .sem-flow text { font-family: 'Manrope', sans-serif; }
+    /* ─── Platform Steps ─── */
+    .steps-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+    .step-card { padding: 32px 24px; text-align: center; position: relative; }
+    .step-num { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; background: var(--accent-light); color: var(--accent); font-weight: 900; font-size: 14px; margin-bottom: 16px; }
+    .step-card h4 { margin: 0 0 8px; font-size: 16px; font-weight: 800; }
+    .step-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+
+    /* ─── Cases ─── */
+    .case-card { padding: 32px; }
+    .case-meta { display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px; }
+    .case-badge { font-size: 11px; font-weight: 800; color: var(--accent); background: var(--accent-light); padding: 4px 10px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .case-region { font-size: 12px; color: var(--muted); font-weight: 700; }
+    .case-card h3 { margin: 0 0 12px; font-size: 20px; font-weight: 800; line-height: 1.35; }
+    .case-card p { margin: 0 0 16px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .case-stat { display: flex; gap: 24px; padding-top: 16px; border-top: 1px solid var(--border); }
+    .case-stat-num { font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; }
+    .case-stat-label { font-size: 13px; color: var(--muted); font-weight: 600; margin-top: 4px; }
+    .case-insight { margin-top: 16px; font-size: 13px; color: var(--muted); font-style: italic; line-height: 1.6; padding: 12px 16px; background: #F9FAFB; border-radius: 8px; }
+
+    /* ─── Testimonials ─── */
+    .testimonial-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .testimonial { padding: 32px; position: relative; }
+    .testimonial::before { content: '\201C'; position: absolute; top: 20px; left: 28px; font-size: 48px; color: var(--accent-light); font-weight: 900; line-height: 1; }
+    .testi-text { font-size: 15px; line-height: 1.7; color: var(--text); font-weight: 500; margin: 0 0 20px; padding-top: 8px; }
+    .testi-author { font-size: 13px; color: var(--muted); font-weight: 700; }
+
+    /* ─── AI Section ─── */
+    .ai-section { background: #0A0F1E; color: #fff; }
+    .ai-section .section-label { color: #93c5fd; }
+    .ai-section .section-title { color: #fff; }
+    .ai-section .section-desc { color: rgba(255,255,255,0.6); }
+    .ai-card {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius); padding: 32px; transition: background 0.3s, border-color 0.3s;
+    }
+    .ai-card:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); }
+    .ai-card h3 { margin: 16px 0 8px; font-size: 18px; font-weight: 800; }
+    .ai-card p { margin: 0; color: rgba(255,255,255,0.55); font-size: 14px; line-height: 1.65; }
+    .ai-icon { width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; font-size: 20px; }
+
+    /* ─── AI Bento Layout ─── */
+    .ai-bento { display: grid; grid-template-columns: 3fr 2fr; gap: 24px; }
+    .ai-card-wide { grid-row: 1 / 3; display: flex; flex-direction: column; }
+    .ai-card-wide h3 { font-size: 20px; }
+
+    /* ─── Semantic Flow Visual ─── */
+    .sem-flow { position: relative; width: 100%; aspect-ratio: 28/13; min-height: 150px; overflow: hidden; border-radius: 12px; background: rgba(0,0,0,0.25); margin-top: 20px; flex-grow: 1; }
+    .sem-flow svg { width: 100%; height: 100%; display: block; }
+    .sem-flow text { font-family: "Pretendard Variable", sans-serif; }
     .sf-pill { opacity: 0.5; animation: sfPillPulse 5s ease-in-out infinite; }
     .sf-pill:nth-child(2) { animation-delay: 0.6s; }
     .sf-pill:nth-child(3) { animation-delay: 1.2s; }
     .sf-pill:nth-child(4) { animation-delay: 1.8s; }
-    @keyframes sfPillPulse { 0%, 100% { opacity: 0.45; } 40% { opacity: 0.85; } }
+    @keyframes sfPillPulse { 0%,100% { opacity: 0.45; } 40% { opacity: 0.85; } }
     .sf-flow-line { stroke-dasharray: 5 8; animation: sfDash 6s linear infinite; }
     .sf-flow-line:nth-of-type(2) { animation-delay: 0.5s; }
     .sf-flow-line:nth-of-type(3) { animation-delay: 1.0s; }
     .sf-flow-line:nth-of-type(4) { animation-delay: 1.5s; }
     @keyframes sfDash { 0% { stroke-dashoffset: 26; } 100% { stroke-dashoffset: 0; } }
     .sf-bar { opacity: 0; animation: sfBarReveal 5s ease-in-out infinite; }
-    .sf-bar:nth-child(1) { animation-delay: 0.3s; }
-    .sf-bar:nth-child(2) { animation-delay: 0.9s; }
-    .sf-bar:nth-child(3) { animation-delay: 1.5s; }
-    .sf-bar:nth-child(4) { animation-delay: 2.1s; }
-    @keyframes sfBarReveal { 0%, 100% { opacity: 0.2; } 30%, 70% { opacity: 0.7; } }
+    .sf-bar:nth-child(1) { animation-delay: 0.3s; } .sf-bar:nth-child(2) { animation-delay: 0.9s; }
+    .sf-bar:nth-child(3) { animation-delay: 1.5s; } .sf-bar:nth-child(4) { animation-delay: 2.1s; }
+    @keyframes sfBarReveal { 0%,100% { opacity: 0.2; } 30%,70% { opacity: 0.7; } }
     .sf-out { stroke-dasharray: 4 6; animation: sfOutFlow 4s linear infinite; }
     @keyframes sfOutFlow { 0% { stroke-dashoffset: 20; } 100% { stroke-dashoffset: 0; } }
     .sf-ai-glow { animation: sfAiPulse 6s ease-in-out infinite; }
-    @keyframes sfAiPulse { 0%, 100% { opacity: 0.12; } 50% { opacity: 0.3; } }
+    @keyframes sfAiPulse { 0%,100% { opacity: 0.12; } 50% { opacity: 0.3; } }
     .sf-color-shift { animation: sfColorShift 12s ease-in-out infinite alternate; }
-    @keyframes sfColorShift { 0% { stop-color: rgba(0,88,190,0.3); } 50% { stop-color: rgba(86,58,210,0.3); } 100% { stop-color: rgba(0,88,190,0.3); } }
+    @keyframes sfColorShift { 0% { stop-color: rgba(37,99,235,0.3); } 50% { stop-color: rgba(86,58,210,0.3); } 100% { stop-color: rgba(37,99,235,0.3); } }
     @media (prefers-reduced-motion: reduce) {
-        .sf-pill, .sf-flow-line, .sf-bar, .sf-out, .sf-ai-glow { animation: none; }
-        .sf-pill { opacity: 0.65; } .sf-bar { opacity: 0.5; } .sf-ai-glow { opacity: 0.2; }
+      .sf-pill, .sf-flow-line, .sf-bar, .sf-out, .sf-ai-glow, .sf-color-shift { animation: none; }
+      .sf-pill { opacity: 0.65; } .sf-bar { opacity: 0.5; } .sf-ai-glow { opacity: 0.2; }
     }
 
-    /* === FAQ Details === */
-    details summary { list-style: none; }
-    details summary::-webkit-details-marker { display: none; }
+    /* ─── FAQ ─── */
+    .faq-list { max-width: 760px; margin: 0 auto; display: grid; gap: 12px; }
+    details { border: 1px solid var(--border); background: var(--card-bg); border-radius: 12px; padding: 24px; cursor: pointer; transition: border-color 0.2s; }
+    details:hover { border-color: var(--accent); }
+    summary { font-weight: 800; font-size: 16px; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; line-height: 1.4; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; color: var(--accent); font-size: 22px; line-height: 1; flex-shrink: 0; margin-left: 12px; }
+    details[open] summary::after { content: '\2212'; }
+    details p { margin: 16px 0 0; color: var(--muted); font-size: 15px; font-weight: 500; line-height: 1.65; }
 
-    /* === AI Bento Box Custom === */
-    .bento-card {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(12px);
-        transition: border-color 0.3s ease, background 0.3s ease;
+    /* ─── Contact ─── */
+    .contact-section { background: #fff; }
+    .contact-card {
+      max-width: 640px; margin: 0 auto; padding: 48px 40px;
+      border: 2px solid var(--text); border-radius: var(--radius);
+      background: #fff; box-shadow: 6px 6px 0 rgba(17,17,17,0.04);
     }
-    .bento-card:hover { background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.15); }
-</style>
+    label { display: block; font-size: 14px; color: var(--text); margin: 0 0 8px; font-weight: 700; }
+    input, textarea, select {
+      width: 100%; border-radius: 8px; border: 1px solid var(--border);
+      background: #F9FAFB; color: var(--text); padding: 16px;
+      font-family: inherit; font-size: 16px; outline: none; margin-bottom: 20px;
+      transition: all 0.2s; -webkit-appearance: none; appearance: none;
+    }
+    input:focus, textarea:focus, select:focus { border-color: var(--accent); background: #fff; box-shadow: 0 0 0 4px var(--accent-light); }
+    textarea { min-height: 120px; resize: vertical; }
+    select {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat; background-position: right 16px center; background-size: 16px; padding-right: 40px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-note { text-align: center; font-size: 14px; color: var(--muted); margin-bottom: 16px; font-weight: 500; }
+    .form-disclaimer { margin: 16px 0 0; color: var(--muted); font-size: 13px; text-align: center; }
+
+    /* ─── Trust Box ─── */
+    .trust-box {
+      max-width: 640px; margin: 0 auto 40px; padding: 32px;
+      background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .trust-box-title { margin: 0 0 4px; font-size: 17px; font-weight: 800; color: var(--text); }
+    .trust-box-sub { margin: 0 0 24px; font-size: 13px; color: var(--muted); font-weight: 500; }
+    .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 32px; }
+    .trust-item { display: flex; gap: 12px; align-items: flex-start; }
+    .trust-icon { width: 36px; height: 36px; border-radius: 10px; background: var(--accent-light); display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; color: var(--accent); }
+    .trust-item-title { font-size: 14px; font-weight: 800; color: var(--text); margin: 0 0 2px; }
+    .trust-item-desc { font-size: 13px; color: var(--muted); font-weight: 500; margin: 0; line-height: 1.5; }
+    .trust-footer { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; font-weight: 700; color: var(--muted); }
+    .trust-footer span { display: flex; align-items: center; gap: 4px; }
+    .trust-footer .ck { color: var(--accent); font-weight: 800; }
+
+    /* ─── Form Divider ─── */
+    .form-divider { max-width: 640px; margin: 0 auto; display: flex; align-items: center; gap: 16px; padding: 8px 0 32px; }
+    .form-divider::before, .form-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .form-divider span { font-size: 13px; color: var(--muted); font-weight: 600; white-space: nowrap; }
+
+    /* ─── Toast ─── */
+    .toast { position: fixed; bottom: -80px; left: 50%; transform: translateX(-50%); background: #fff; padding: 16px 28px; border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border: 1px solid var(--border); display: flex; align-items: center; gap: 12px; z-index: 10000; transition: bottom 0.5s cubic-bezier(0.22,1,0.36,1); max-width: calc(100vw - 32px); }
+    .toast.show { bottom: 32px; }
+    .toast-icon { color: var(--accent); font-size: 22px; flex-shrink: 0; }
+    .toast-body strong { display: block; font-size: 15px; color: var(--text); }
+    .toast-body span { font-size: 13px; color: var(--muted); }
+
+    /* ─── Kakao CTA Section ─── */
+    .kakao-section { text-align: center; padding: 48px 0; }
+    .kakao-inner { max-width: 480px; margin: 0 auto; }
+    .kakao-inner p { color: var(--muted); font-size: 15px; margin: 0 0 24px; line-height: 1.6; }
+
+    /* ─── Kakao Floating Button ─── */
+    .kakao-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 9998;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--kakao); border: none; cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.3s, box-shadow 0.3s, opacity 0.4s;
+      opacity: 0; pointer-events: none;
+    }
+    .kakao-float.visible { opacity: 1; pointer-events: auto; }
+    .kakao-float:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(0,0,0,0.18); }
+    .kakao-float svg { width: 28px; height: 28px; }
+
+    /* ─── Footer ─── */
+    footer { border-top: 1px solid var(--border); padding: 40px 0 60px; color: var(--muted); font-size: 14px; font-weight: 500; text-align: center; }
+
+    /* ─── Reveal ─── */
+    .reveal { opacity: 0; transform: translateY(32px); transition: all 0.8s cubic-bezier(0.175,0.885,0.32,1.275); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    .reveal.d1 { transition-delay: 0.1s; }
+    .reveal.d2 { transition-delay: 0.2s; }
+    .reveal.d3 { transition-delay: 0.3s; }
+    .reveal.d4 { transition-delay: 0.4s; }
+
+    /* ─── Mobile Sticky CTA ─── */
+    .mobile-sticky { display: none; }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 980px) {
+      .grid3, .testimonial-grid, .steps-row { grid-template-columns: 1fr; }
+      .grid2 { grid-template-columns: 1fr; }
+      .ai-bento { grid-template-columns: 1fr; }
+      .ai-card-wide { grid-row: auto; }
+      .sem-flow { min-height: 140px; }
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+      .contact-card { padding: 32px 24px; }
+    }
+    @media (max-width: 720px) {
+      :root { --section-gap: 72px; }
+      .nav-links { display: none; }
+      .hamburger { display: inline-flex; background: #fff; border-color: var(--border); }
+      .hero { padding: 88px 0 56px; }
+      .hero h1 { font-size: clamp(28px, 7vw, 36px); }
+      .hero-sub { font-size: 16px; }
+      .hero-cta { flex-direction: column; align-items: stretch; }
+      .hero-cta .btn { width: 100%; justify-content: center; padding: 16px; }
+      .proof-strip { grid-template-columns: 1fr; gap: 20px; padding: 24px; }
+      .proof-item { text-align: center; }
+      .proof-num { font-size: 32px; }
+      .section-title { font-size: clamp(24px, 6vw, 32px); }
+      .section-header { margin-bottom: 40px; }
+      .case-stat { flex-direction: column; gap: 12px; }
+      .testimonial-grid { gap: 16px; }
+      .trust-grid { grid-template-columns: 1fr; gap: 16px; }
+      .trust-box { padding: 24px 20px; }
+      .mobile-sticky {
+        display: block; position: fixed; bottom: 0; left: 0; right: 0;
+        background: #111; padding: 14px 20px;
+        padding-bottom: calc(14px + env(safe-area-inset-bottom));
+        text-align: center; z-index: 9999;
+        box-shadow: 0 -4px 16px rgba(0,0,0,0.15);
+      }
+      .mobile-sticky a { display: block; background: var(--accent); color: #fff; font-weight: 800; font-size: 16px; padding: 14px; border-radius: 8px; }
+      .kakao-float { display: none; }
+      body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+    }
+    @media (max-width: 390px) {
+      .wrap { padding: 0 16px; }
+      .brand { font-size: 15px; }
+      .nav-actions .btn { padding: 8px 12px; font-size: 13px; }
+    }
+
+    .drawer { display: none; border-top: 1px solid var(--border); padding: 12px 0; background: #fff; }
+    .drawer a { display: block; padding: 14px 16px; border-radius: 8px; font-size: 16px; font-weight: 700; }
+    .drawer a:hover { background: var(--bg); color: var(--accent); }
+    .drawer.open { display: block; }
+  </style>
 </head>
-<body class="bg-surface text-on-surface selection:bg-secondary selection:text-white">
 
-<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm flex justify-between items-center px-6 md:px-8 py-4 max-w-full mx-auto">
-    <a class="text-xl md:text-2xl font-extrabold tracking-tighter flex items-center" href="#top">
-        <span class="logo-dot"></span><span class="logo-we">We,</span><span class="logo-place ml-1">place.</span>
-    </a>
-    <div class="hidden md:flex items-center space-x-8 text-[15px] font-bold tracking-tight">
-        <a class="text-slate-600 hover:text-primary transition-colors" href="#services">서비스</a>
-        <a class="text-slate-600 hover:text-primary transition-colors" href="#self-check">진단</a>
-        <a class="text-slate-600 hover:text-primary transition-colors" href="#cases">사례</a>
-        <a class="text-slate-600 hover:text-primary transition-colors" href="#ai-trust">AI 설계</a>
-        <a class="text-slate-600 hover:text-primary transition-colors" href="#contact">문의</a>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span class="brand-we">We,</span>
+        <span class="brand-place">place.</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#services">서비스</a>
+        <a href="#platforms">플랫폼 전략</a>
+        <a href="#cases">사례</a>
+        <a href="#ai">AI 설계</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn primary" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">카카오 상담</a>
+        <button class="btn hamburger" id="hamburger">메뉴</button>
+      </div>
     </div>
-    <a class="bg-secondary text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-md hover:bg-secondary-container transition-colors" href="#contact">무료 진단</a>
-</nav>
+    <div class="drawer" id="drawer">
+      <a href="#services">서비스</a>
+      <a href="#platforms">플랫폼 전략</a>
+      <a href="#cases">사례</a>
+      <a href="#ai">AI 설계</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">카카오 상담</a>
+    </div>
+  </div>
+</header>
 
-<main id="top" class="pt-0">
-    <section class="hero-fx-glow min-h-[100vh] flex items-center justify-center px-6 text-white pt-20">
-        <div class="nebula-layer"></div>
-        <div class="hero-vignette"></div>
-        <div class="max-w-5xl text-center relative z-10 space-y-6 md:space-y-8">
-            <span class="text-blue-400 font-label text-xs tracking-[0.2em] uppercase font-bold hero-enter hero-enter-d1 block">Brand Conversion Agency</span>
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter korean-wrap leading-[1.15] hero-enter hero-enter-d2">
-                보이지만 팔리지 않는 브랜드를<br class="hidden md:block"/> 다시 <span class="text-secondary-fixed-dim">설계</span>합니다.
-            </h1>
-            <p class="text-[17px] md:text-xl text-blue-100/70 max-w-2xl mx-auto korean-wrap font-body leading-relaxed hero-enter hero-enter-d3">
-                하나의 병목을 찾고, 세 가지 개선안을 제시합니다.<br class="hidden md:block"/>불필요한 미팅 없이, 진단서부터 드립니다.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 hero-enter hero-enter-d3">
-                <a class="w-full sm:w-auto bg-secondary hover:bg-secondary-container text-white px-10 py-4 md:py-5 rounded-xl font-bold text-lg shadow-[0_8px_20px_rgba(0,88,190,0.3)] transition-all inline-block" href="#contact">
-                    무료 병목 진단 받기
-                </a>
-            </div>
+<main id="top">
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner reveal">
+      <span class="section-label">Brand Conversion Agency</span>
+      <h1 class="keep-all">
+        노출은 됩니다.<br>
+        그런데 왜 <span class="em">문의가 없을까요?</span>
+      </h1>
+      <p class="hero-sub keep-all">
+        문제는 노출이 아니라 구조입니다.<br>
+        고객이 검색하고, 클릭하고, 신뢰하고, 문의하는 흐름 전체를 설계합니다.
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">카카오로 무료 상담 시작하기</a>
+        <a class="btn" href="#services">어떻게 작동하는지 보기</a>
+      </div>
+      <span class="hero-micro">✓ 결제 정보 없이 시작 · 1영업일 내 1차 회신</span>
+    </div>
+
+    <div class="proof-strip reveal d1">
+      <div class="proof-item">
+        <div class="proof-num">3년</div>
+        <div class="proof-label">명동 마사지 1–2위 유지</div>
+        <div class="proof-context">다국어 플레이스 + 전환 동선 재설계</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num">4배</div>
+        <div class="proof-label">블로그 유입 증가</div>
+        <div class="proof-context">콘텐츠 구조 변경 · 1개월 만에 달성</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num">2배</div>
+        <div class="proof-label">상담 전환 증가</div>
+        <div class="proof-context">검색 → 콘텐츠 → 상담 연결 흐름 구축</div>
+      </div>
+      <p class="proof-note">※ 실제 운영 매장 기준 · 측정 가능한 지표만 표기합니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services" style="padding-bottom: 48px;">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <span class="section-label">What We Build</span>
+      <h2 class="section-title keep-all">전환을 만드는 세 가지 구조</h2>
+      <p class="section-desc keep-all">노출만으로는 문의가 생기지 않습니다.<br>고객이 신뢰하고, 머물고, 행동하게 만드는 구조를 설계합니다.</p>
+    </div>
+    <div class="grid3">
+      <article class="card svc reveal d1">
+        <div class="svc-icon">✦</div>
+        <h3>Editorial Authority</h3>
+        <p class="keep-all">카피 한 줄, 이미지 한 장이 신뢰를 결정합니다. 매거진 수준의 언어와 비주얼로 '여기는 다르다'는 인상을 만듭니다.</p>
+      </article>
+      <article class="card svc reveal d2">
+        <div class="svc-icon">↗</div>
+        <h3>Growth Architecture</h3>
+        <p class="keep-all">노출은 되는데 문의가 없다면 동선의 문제입니다. 검색 → 클릭 → 체류 → 문의로 이어지는 전환 흐름을 설계합니다.</p>
+      </article>
+      <article class="card svc reveal d3">
+        <div class="svc-icon">◎</div>
+        <h3>Signal Integration</h3>
+        <p class="keep-all">플레이스, 블로그, 인스타, 구글 — 어디서든 같은 신뢰를 느끼도록 모든 접점의 메시지를 통합합니다.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BRIDGE ═══ -->
+<div class="bridge">
+  <div class="bridge-inner reveal">
+    <p class="bridge-text keep-all">
+      이 세 가지 구조는 따로 움직이면 효과가 반감됩니다.
+      <span class="bridge-em">하나의 실행 루틴으로 연결될 때, 전환이 만들어집니다.</span>
+    </p>
+    <div class="bridge-cue">
+      <span class="bridge-cue-line"></span>
+      <span class="bridge-cue-dot"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PLATFORM STRATEGY ═══ -->
+<section id="platforms" style="background: var(--accent-light); padding-top: 64px;">
+  <div class="wrap">
+    <div class="section-header center reveal">
+      <span class="section-label">Platform Strategy</span>
+      <h2 class="section-title keep-all">플레이스만으로는 충분하지 않습니다.</h2>
+      <p class="section-desc keep-all">네이버 플레이스는 시작점입니다. 진짜 전환은 여러 플랫폼에 걸쳐 있는 브랜드 구조에서 만들어집니다.</p>
+    </div>
+    <div class="steps-row">
+      <article class="card step-card reveal d1">
+        <div class="step-num">01</div>
+        <h4>네이버 플레이스</h4>
+        <p class="keep-all">사진·소개·리뷰를 전환 중심으로 정비합니다. 검색 노출의 기본기.</p>
+      </article>
+      <article class="card step-card reveal d2">
+        <div class="step-num">02</div>
+        <h4>구글 · 웹 플랫폼</h4>
+        <p class="keep-all">구글 비즈니스, 자사 블로그, 인스타그램으로 고객 접점을 확장합니다.</p>
+      </article>
+      <article class="card step-card reveal d3">
+        <div class="step-num">03</div>
+        <h4>구조화된 콘텐츠</h4>
+        <p class="keep-all">모든 텍스트·이미지·데이터를 AI가 읽을 수 있는 형태로 정리합니다.</p>
+      </article>
+      <article class="card step-card reveal d4">
+        <div class="step-num">04</div>
+        <h4>AI 추천 진입</h4>
+        <p class="keep-all">AI가 당신의 브랜드를 이해하고 추천할 수 있는 상태로 전환합니다.</p>
+      </article>
+    </div>
+    <div class="reveal d3" style="text-align:center; margin-top:40px;">
+      <div style="display:inline-block; background:#fff; border:1px solid var(--border); border-radius:12px; padding:20px 32px;">
+        <p style="margin:0; font-size:15px; font-weight:700; color:var(--text); line-height:1.7;" class="keep-all">
+          <span style="color:var(--accent);">위플레이스는 이 4단계를 하나의 실행 루틴으로 연결합니다.</span><br>
+          개별 플랫폼 관리가 아니라, 전체 구조를 한 번에 설계합니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CASES ═══ -->
+<section id="cases">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <span class="section-label">Results</span>
+      <h2 class="section-title keep-all">시장을 읽고, 구조를 바꾼 결과입니다.</h2>
+      <p class="section-desc keep-all">같은 '플레이스 최적화'라도 상권마다 설계가 다릅니다. 순위가 아니라 해당 시장에서 가장 효과적인 전환 경로를 찾습니다.</p>
+    </div>
+    <div class="grid2">
+      <article class="card case-card reveal d1">
+        <div class="case-meta">
+          <span class="case-badge">Case 01</span>
+          <span class="case-region">마사지 · 서울 명동</span>
         </div>
-    </section>
-
-    <section class="py-20 md:py-32 px-6 bg-surface" id="services">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-16 md:mb-20 space-y-3 reveal text-center md:text-left">
-                <span class="text-secondary font-label text-xs tracking-widest uppercase font-bold">우리가 해결하는 것</span>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">전환을 만드는 세 가지 구조</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-slate-100 card-hover reveal reveal-d1">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-secondary">auto_awesome</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Editorial Authority</h3>
-                    <p class="text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">카피 한 줄, 이미지 한 장이 신뢰를 만듭니다. 매거진 수준의 언어와 비주얼로 브랜드 권위를 설계합니다.</p>
-                </div>
-                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-slate-100 card-hover reveal reveal-d2">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-secondary">insights</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Growth Architecture</h3>
-                    <p class="text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">보이는 건 많은데 문의가 없다면 구조의 문제입니다. 노출 → 클릭 → 문의로 이어지는 흐름을 설계합니다.</p>
-                </div>
-                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-slate-100 card-hover reveal reveal-d3">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-secondary">language</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Signal Integration</h3>
-                    <p class="text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">고객이 검색하고, 클릭하고, 판단하는 모든 접점에서 같은 신뢰를 느끼도록 통합합니다.</p>
-                </div>
-            </div>
+        <h3 class="keep-all">명동 마사지 1–2위,<br>3년간 유지</h3>
+        <p class="keep-all">일 유동인구 50만, 외국인 비중이 극히 높은 상권입니다. 단기 체류 고객이 검색 후 즉시 예약하는 흐름에 맞춰, 다국어 플레이스 구성과 사진·리뷰 동선을 전환 중심으로 재설계했습니다.</p>
+        <div class="case-stat">
+          <div><div class="case-stat-num">1–2위</div><div class="case-stat-label">네이버 플레이스 · 3년 연속</div></div>
         </div>
-    </section>
-
-    <section class="py-20 md:py-32 px-6 bg-surface-container-low" id="self-check">
-        <div class="max-w-3xl mx-auto">
-            <div class="text-center mb-16 space-y-5 reveal">
-                <span class="text-secondary font-label text-xs tracking-widest uppercase font-bold">1-Minute Diagnostic</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-primary tracking-tight korean-wrap leading-[1.6]">1분이면 병목 지점을<br class="hidden md:block"/> 미리 알 수 있습니다.</h2>
-                <p class="text-slate-600 font-body korean-wrap mt-3 text-[16px] leading-loose">3가지 질문에 답하면, 전환이 막히는 구간이 보입니다.</p>
-            </div>
-            
-            <div class="bg-white p-8 md:p-14 rounded-3xl shadow-xl border border-slate-100 reveal reveal-d1 relative overflow-hidden">
-                <div class="quiz-step active space-y-10" id="step-1">
-                    <div class="flex items-start gap-4">
-                        <span class="w-9 h-9 shrink-0 rounded-full bg-blue-50 text-secondary flex items-center justify-center font-bold text-sm">01</span>
-                        <h3 class="text-lg md:text-xl font-bold korean-wrap pt-1 leading-relaxed">플레이스나 검색에서 우리 매장이 뜨긴 하나요?</h3>
-                    </div>
-                    <div class="grid grid-cols-1 gap-4">
-                        <button class="quiz-option w-full text-left p-5 rounded-xl text-[15px] font-semibold text-slate-700 leading-relaxed" onclick="quizNext(1)">뜨긴 하는데, 클릭이 잘 안 됩니다.</button>
-                        <button class="quiz-option w-full text-left p-5 rounded-xl text-[15px] font-semibold text-slate-700 leading-relaxed" onclick="quizNext(1)">클릭은 되는데, 들어와서 바로 나갑니다.</button>
-                    </div>
-                </div>
-                <div class="quiz-step space-y-10" id="step-2">
-                    <div class="flex items-start gap-4">
-                        <span class="w-9 h-9 shrink-0 rounded-full bg-blue-50 text-secondary flex items-center justify-center font-bold text-sm">02</span>
-                        <h3 class="text-lg md:text-xl font-bold korean-wrap pt-1 leading-relaxed">리뷰가 고객의 방문 결정에 도움이 되고 있나요?</h3>
-                    </div>
-                    <div class="grid grid-cols-1 gap-4">
-                        <button class="quiz-option w-full text-left p-5 rounded-xl text-[15px] font-semibold text-slate-700 leading-relaxed" onclick="quizNext(2)">리뷰는 있는데, "좋아요" 수준의 내용뿐입니다.</button>
-                        <button class="quiz-option w-full text-left p-5 rounded-xl text-[15px] font-semibold text-slate-700 leading-relaxed" onclick="quizNext(2)">진짜 후기가 꾸준히 쌓이는 구조가 없습니다.</button>
-                    </div>
-                </div>
-                <div class="quiz-step space-y-10" id="step-3">
-                    <div class="flex items-start gap-4">
-                        <span class="w-9 h-9 shrink-0 rounded-full bg-blue-50 text-secondary flex items-center justify-center font-bold text-sm">03</span>
-                        <h3 class="text-lg md:text-xl font-bold korean-wrap pt-1 leading-relaxed">고객이 "문의하기"를 누를 이유가 명확한가요?</h3>
-                    </div>
-                    <div class="grid grid-cols-1 gap-4">
-                        <button class="quiz-option w-full text-left p-5 rounded-xl text-[15px] font-semibold text-slate-700 leading-relaxed" onclick="quizResult()">설명은 있는데, 고객의 고민을 짚어주는 문장이 없습니다.</button>
-                        <button class="quiz-option w-full text-left p-5 rounded-xl text-[15px] font-semibold text-slate-700 leading-relaxed" onclick="quizResult()">문의 버튼은 있는데, 지금 눌러야 할 이유가 부족합니다.</button>
-                    </div>
-                </div>
-                <div class="quiz-step space-y-8 text-center py-8" id="step-result">
-                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2">
-                        <span class="material-symbols-outlined text-secondary text-3xl">fact_check</span>
-                    </div>
-                    <h3 class="text-2xl md:text-3xl font-extrabold text-primary korean-wrap" id="quiz-result-title">전환 병목이 발견되었습니다.</h3>
-                    <p class="text-slate-600 korean-wrap leading-relaxed max-w-md mx-auto font-medium text-[16px]" id="quiz-result-desc">
-                        노출은 되지만 전환이 막히는 지점이 있습니다. 전문가가 데이터를 분석하여 1개 핵심 병목과 3개 개선안을 정리해 드립니다.
-                    </p>
-                    <div class="pt-6 flex flex-col items-center">
-                        <button onclick="applyResultToForm()" class="w-full sm:w-auto bg-secondary hover:bg-secondary-container text-white px-8 py-4 md:py-5 rounded-xl font-bold text-lg shadow-lg transition-all flex justify-center items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">content_copy</span> 진단 결과 바탕으로 문의하기
-                        </button>
-                        <p class="text-xs text-slate-400 mt-5 font-bold">* 하단 폼에 결과가 자동 입력됩니다.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="case-insight keep-all">유동인구가 많은 상권일수록 '노출 순위'보다 '클릭 직후 예약까지의 속도'가 결과를 결정합니다.</div>
+      </article>
+      <article class="card case-card reveal d2">
+        <div class="case-meta">
+          <span class="case-badge">Case 02</span>
+          <span class="case-region">교육 · 광주</span>
         </div>
-    </section>
-
-    <!-- Cases Section -->
-    <section class="py-20 md:py-32 px-6 bg-surface" id="cases">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-16 md:mb-20 space-y-3 reveal text-center md:text-left">
-                <span class="text-secondary font-label text-xs tracking-widest uppercase font-bold">Study Cases</span>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight korean-wrap">시장을 읽고, 구조를 바꾼 결과입니다.</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Case 1 -->
-                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden card-hover reveal reveal-d1">
-                    <div class="bg-slate-50 px-8 py-6 border-b border-slate-100">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">마사지 · 서울 명동</span>
-                            <span class="text-xs font-bold text-secondary bg-blue-50 px-3 py-1 rounded-full">CASE 01</span>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-extrabold text-primary korean-wrap">명동 마사지 1–2위, 3년간 유지</h3>
-                    </div>
-                    <div class="p-8 space-y-5">
-                        <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">지역 특성</p>
-                            <p class="text-slate-700 font-body text-[15px] leading-relaxed korean-wrap">
-                                명동은 일 유동인구 50만 이상, 외국인 비중이 극히 높은 상권입니다. 단기 체류 고객이 검색 후 즉시 예약하는 흐름에 맞춰, 다국어 플레이스 구성과 사진·리뷰 동선을 전환 중심으로 재설계했습니다.
-                            </p>
-                        </div>
-                        <div class="border-t border-slate-100 pt-4 flex items-baseline gap-3">
-                            <span class="text-2xl font-extrabold text-secondary tracking-tight">1–2위</span>
-                            <span class="text-sm text-slate-500 font-bold">네이버 플레이스 · 3년 연속</span>
-                        </div>
-                        <p class="text-slate-500 font-body text-[13px] leading-relaxed korean-wrap italic">유동인구가 많은 상권일수록, '노출 순위'보다 '클릭 직후 예약까지의 속도'가 결과를 결정합니다.</p>
-                    </div>
-                </div>
-
-                <!-- Case 2 -->
-                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden card-hover reveal reveal-d2">
-                    <div class="bg-slate-50 px-8 py-6 border-b border-slate-100">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">교육 · 광주</span>
-                            <span class="text-xs font-bold text-secondary bg-blue-50 px-3 py-1 rounded-full">CASE 02</span>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-extrabold text-primary korean-wrap">자사블로그 1개월 만에 유입 4배, 상담 2배</h3>
-                    </div>
-                    <div class="p-8 space-y-5">
-                        <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">지역 특성</p>
-                            <p class="text-slate-700 font-body text-[15px] leading-relaxed korean-wrap">
-                                광주는 상주인구 중심의 생활권 상권입니다. 저녁·주말 시간대 지역 주민과 학생이 주 고객층인 구조에서, 자사 블로그를 검색 유입 → 수업 경험 소개 → 상담 연결의 흐름으로 재구성했습니다.
-                            </p>
-                        </div>
-                        <div class="border-t border-slate-100 pt-4 flex flex-wrap items-baseline gap-x-6 gap-y-2">
-                            <div class="flex items-baseline gap-2">
-                                <span class="text-2xl font-extrabold text-secondary tracking-tight">4배</span>
-                                <span class="text-sm text-slate-500 font-bold">블로그 유입</span>
-                            </div>
-                            <div class="flex items-baseline gap-2">
-                                <span class="text-2xl font-extrabold text-secondary tracking-tight">2배</span>
-                                <span class="text-sm text-slate-500 font-bold">상담 전환</span>
-                            </div>
-                        </div>
-                        <p class="text-slate-500 font-body text-[13px] leading-relaxed korean-wrap italic">재방문·회원제 모델은 즉시 전환보다 '신뢰 축적형 콘텐츠'가 상담 속도를 결정합니다.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-10 p-6 md:p-8 bg-slate-50 rounded-2xl border border-slate-100 reveal text-center">
-                <p class="text-slate-600 font-body text-[15px] korean-wrap leading-relaxed">
-                    같은 '플레이스 최적화'라도, 명동과 광주에서는 설계가 완전히 다릅니다.<br class="hidden md:block"/>
-                    위플레이스는 순위가 아니라 <span class="font-bold text-primary">해당 시장에서 가장 효과적인 전환 경로</span>를 찾습니다.
-                </p>
-            </div>
+        <h3 class="keep-all">자사 블로그 1개월 만에<br>유입 4배, 상담 2배</h3>
+        <p class="keep-all">상주인구 중심의 생활권 상권입니다. 지역 주민과 학생이 주 고객층인 구조에서, 자사 블로그를 검색 유입 → 수업 경험 소개 → 상담 연결의 흐름으로 재구성했습니다.</p>
+        <div class="case-stat">
+          <div><div class="case-stat-num">4배</div><div class="case-stat-label">블로그 유입</div></div>
+          <div><div class="case-stat-num">2배</div><div class="case-stat-label">상담 전환</div></div>
         </div>
-    </section>
+        <div class="case-insight keep-all">재방문·회원제 모델은 즉시 전환보다 '신뢰 축적형 콘텐츠'가 상담 속도를 결정합니다.</div>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <!-- Platform Flow Section -->
-    <section class="py-20 md:py-32 px-6 bg-surface-container-low" id="platforms">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-20 space-y-6 reveal">
-                <span class="text-secondary font-label text-xs tracking-widest uppercase font-bold">Platform Strategy</span>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight korean-wrap leading-[1.6]">플레이스만으로는<br class="hidden md:block"/>충분하지 않습니다.</h2>
-                <p class="text-slate-600 font-body text-lg max-w-2xl mx-auto mt-4 korean-wrap leading-loose">
-                    네이버 플레이스는 시작점입니다.<br/>진짜 전환은 여러 플랫폼에 걸쳐 있는 브랜드 구조에서 만들어집니다.
-                </p>
-            </div>
+<!-- ═══ TESTIMONIALS ═══ -->
+<section style="background:#fff;">
+  <div class="wrap">
+    <div class="section-header center reveal">
+      <span class="section-label">Owner Reviews</span>
+      <h2 class="section-title keep-all">대표님들의 실제 후기입니다.</h2>
+    </div>
+    <div class="testimonial-grid">
+      <article class="card testimonial reveal d1">
+        <p class="testi-text keep-all">마케팅 업체를 여러 곳 써봤는데, 처음으로 '우리 가게를 이해하고 있다'는 느낌을 받았어요. 흩어져 있던 플레이스, 블로그, 인스타를 하나의 흐름으로 정리해주셨어요.</p>
+        <span class="testi-author">— 피부과 원장 · 서울</span>
+      </article>
+      <article class="card testimonial reveal d2">
+        <p class="testi-text keep-all">솔직히 '진단'이라고 해서 형식적인 리포트를 예상했는데, 우리 매장이 왜 문의가 안 오는지 정확히 짚어주더라고요. 사진 순서 하나 바꾸고 문의가 늘기 시작했습니다.</p>
+        <span class="testi-author">— 마사지샵 대표 · 명동</span>
+      </article>
+      <article class="card testimonial reveal d3">
+        <p class="testi-text keep-all">블로그를 1년 넘게 했는데 효과가 없었어요. 위플레이스에서 글의 구조와 연결 동선만 바꿨는데, 한 달 만에 상담 문의가 두 배가 됐습니다. 구조가 이렇게 중요한 줄 몰랐어요.</p>
+        <span class="testi-author">— 학원 운영자 · 광주</span>
+      </article>
+    </div>
+  </div>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4 reveal reveal-d1">
-                <div class="relative text-center px-4 py-5">
-                    <div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
-                        <span class="material-symbols-outlined text-secondary text-2xl" style="font-variation-settings: 'FILL' 1;">storefront</span>
-                    </div>
-                    <span class="text-[10px] font-bold text-secondary uppercase tracking-widest">Step 01</span>
-                    <h3 class="text-[15px] font-extrabold mt-2 mb-3 korean-wrap">네이버 플레이스</h3>
-                    <p class="text-slate-500 font-body text-[13px] leading-relaxed korean-wrap">사진·소개·리뷰를 전환 중심으로 정비. 검색 노출의 기본기.</p>
-                    <div class="hidden md:block absolute top-7 -right-2 text-slate-300">
-                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
-                    </div>
-                </div>
-                <div class="relative text-center px-4 py-5">
-                    <div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
-                        <span class="material-symbols-outlined text-secondary text-2xl" style="font-variation-settings: 'FILL' 1;">travel_explore</span>
-                    </div>
-                    <span class="text-[10px] font-bold text-secondary uppercase tracking-widest">Step 02</span>
-                    <h3 class="text-[15px] font-extrabold mt-2 mb-3 korean-wrap">구글 · 웹 플랫폼</h3>
-                    <p class="text-slate-500 font-body text-[13px] leading-relaxed korean-wrap">구글 비즈니스, 자사 블로그, 인스타그램. 고객 접점을 확장.</p>
-                    <div class="hidden md:block absolute top-7 -right-2 text-slate-300">
-                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
-                    </div>
-                </div>
-                <div class="relative text-center px-4 py-5">
-                    <div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
-                        <span class="material-symbols-outlined text-secondary text-2xl" style="font-variation-settings: 'FILL' 1;">edit_document</span>
-                    </div>
-                    <span class="text-[10px] font-bold text-secondary uppercase tracking-widest">Step 03</span>
-                    <h3 class="text-[15px] font-extrabold mt-2 mb-3 korean-wrap">구조화된 콘텐츠</h3>
-                    <p class="text-slate-500 font-body text-[13px] leading-relaxed korean-wrap">모든 텍스트·이미지·데이터를 AI가 읽을 수 있는 형태로 정리.</p>
-                    <div class="hidden md:block absolute top-7 -right-2 text-slate-300">
-                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
-                    </div>
-                </div>
-                <div class="text-center px-4 py-5">
-                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
-                        <span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
-                    </div>
-                    <span class="text-[10px] font-bold text-primary uppercase tracking-widest">Step 04</span>
-                    <h3 class="text-[15px] font-extrabold mt-2 mb-3 korean-wrap">AI 추천 진입</h3>
-                    <p class="text-slate-500 font-body text-[13px] leading-relaxed korean-wrap">AI가 당신의 브랜드를 이해하고 추천할 수 있는 상태로 전환.</p>
-                </div>
-            </div>
-
-            <div class="mt-16 text-center reveal">
-                <div class="inline-block bg-white rounded-2xl border border-slate-100 shadow-sm px-6 md:px-10 py-6">
-                    <p class="text-slate-700 font-body text-[15px] font-bold korean-wrap leading-relaxed">
-                        <span class="text-secondary">위플레이스는 이 4단계를 하나의 실행 루틴으로 연결합니다.</span><br class="hidden sm:block"/>
-                        개별 플랫폼 관리가 아니라, 전체 구조를 한 번에 설계합니다.
-                    </p>
-                </div>
-            </div>
+<!-- ═══ AI TRUST ═══ -->
+<section class="ai-section" id="ai">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <span class="section-label">AI Search Paradigm</span>
+      <h2 class="section-title keep-all">고객이 AI에게 물을 때,<br>당신의 브랜드가 추천됩니까?</h2>
+      <p class="section-desc keep-all">검색의 시대가 끝나고 있습니다. 이제 고객은 AI에게 직접 묻습니다.<br>그 AI가 당신의 브랜드를 추천하도록, 데이터 구조를 먼저 설계합니다.</p>
+    </div>
+    <div class="ai-bento">
+      <div class="ai-card ai-card-wide reveal d1">
+        <div class="ai-icon">⟐</div>
+        <h3>LLM 시맨틱 최적화</h3>
+        <p class="keep-all">AI는 키워드가 아니라 구조를 읽습니다. 흩어진 브랜드 정보를 AI가 해석할 수 있는 시맨틱 데이터로 재정비합니다.</p>
+        <div class="sem-flow">
+          <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg">
+            <defs><radialGradient id="sfGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" class="sf-color-shift"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+            <ellipse cx="280" cy="130" rx="100" ry="80" fill="url(#sfGlow)" opacity="0.5"/>
+            <g class="sf-pill"><rect x="24" y="35" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/><text x="63" y="53" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">매장명</text></g>
+            <g class="sf-pill"><rect x="24" y="85" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/><text x="63" y="103" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">리뷰</text></g>
+            <g class="sf-pill"><rect x="24" y="140" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/><text x="63" y="158" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">위치</text></g>
+            <g class="sf-pill"><rect x="24" y="195" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/><text x="63" y="213" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">서비스</text></g>
+            <line x1="102" y1="49" x2="200" y2="80" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
+            <line x1="102" y1="99" x2="200" y2="110" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
+            <line x1="102" y1="154" x2="200" y2="150" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
+            <line x1="102" y1="209" x2="200" y2="185" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
+            <rect x="200" y="48" width="170" height="168" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(173,198,255,0.18)" stroke-width="0.8"/>
+            <text x="285" y="42" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(173,198,255,0.35)" letter-spacing="0.1em">SCHEMA</text>
+            <rect x="220" y="72" width="130" height="6" rx="3" fill="rgba(37,99,235,0.35)" class="sf-bar"/>
+            <rect x="220" y="100" width="105" height="6" rx="3" fill="rgba(37,99,235,0.28)" class="sf-bar"/>
+            <rect x="220" y="128" width="120" height="6" rx="3" fill="rgba(86,58,210,0.28)" class="sf-bar"/>
+            <rect x="220" y="156" width="90" height="6" rx="3" fill="rgba(86,58,210,0.22)" class="sf-bar"/>
+            <text x="220" y="67" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">name / type</text>
+            <text x="220" y="95" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">review / rating</text>
+            <text x="220" y="123" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">geo / address</text>
+            <text x="220" y="151" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">offer / action</text>
+            <circle cx="357" cy="75" r="3" fill="rgba(100,200,150,0.5)"/><circle cx="357" cy="103" r="3" fill="rgba(100,200,150,0.5)"/>
+            <circle cx="357" cy="131" r="3" fill="rgba(100,200,150,0.4)"/><circle cx="357" cy="159" r="3" fill="rgba(100,200,150,0.3)"/>
+            <line x1="370" y1="132" x2="448" y2="130" class="sf-out" stroke="rgba(173,198,255,0.22)" stroke-width="1"/>
+            <polygon points="445,126 455,130 445,134" fill="rgba(173,198,255,0.2)"/>
+            <circle cx="488" cy="130" r="36" fill="rgba(37,99,235,0.06)" class="sf-ai-glow"/>
+            <circle cx="488" cy="130" r="26" fill="rgba(37,99,235,0.15)" stroke="rgba(173,198,255,0.35)" stroke-width="0.8"/>
+            <circle cx="488" cy="130" r="17" fill="rgba(37,99,235,0.25)" stroke="rgba(173,198,255,0.5)" stroke-width="0.5"/>
+            <text x="488" y="134" text-anchor="middle" font-size="11" font-weight="800" fill="rgba(200,220,255,0.9)">AI</text>
+            <text x="488" y="170" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(173,198,255,0.3)">추천</text>
+          </svg>
         </div>
-    </section>
+      </div>
+      <div class="ai-card reveal d2">
+        <div class="ai-icon">⊛</div>
+        <h3>맥락적 신뢰 네트워크</h3>
+        <p class="keep-all">AI가 신뢰도를 판단하는 가장 큰 기준은 '외부 인용'입니다. 공신력 있는 매체와 리뷰어의 맥락적 언급을 축적합니다.</p>
+      </div>
+      <div class="ai-card reveal d3">
+        <div class="ai-icon">◈</div>
+        <h3>프롬프트 페르소나</h3>
+        <p class="keep-all">"이 지역에서 제일 분위기 좋은 곳 찾아줘"라는 질문에 우리 브랜드가 답변으로 출력되도록, 감성적 페르소나를 데이터에 주입합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="py-24 md:py-32 px-6 bg-[#030508] text-white relative overflow-hidden" id="ai-trust">
-        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary/20 rounded-full blur-[120px] pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
-        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-600/20 rounded-full blur-[100px] pointer-events-none transform -translate-x-1/2 translate-y-1/2"></div>
-        
-        <div class="max-w-6xl mx-auto relative z-10">
-            <div class="text-center md:text-left mb-16 md:mb-20 space-y-4 reveal">
-                <span class="text-secondary-fixed-dim font-label text-xs tracking-[0.2em] uppercase font-bold border border-secondary-fixed-dim/30 px-3 py-1 rounded-full">AI Search Paradigm</span>
-                <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight korean-wrap">
-                    고객이 AI에게 물을 때,<br/>당신의 브랜드가 <span class="text-blue-400">추천됩니까?</span>
-                </h2>
-                <p class="text-slate-400 font-body text-lg md:text-xl max-w-3xl mt-4 korean-wrap leading-relaxed">
-                    검색의 시대가 끝나고 있습니다. 이제 고객은 AI에게 직접 묻습니다. </br>그 AI가 당신의 브랜드를 추천하도록, 데이터 구조를 먼저 설계합니다.
-                </p>
-            </div>
+<!-- ═══ PRINCIPLES ═══ -->
+<section>
+  <div class="wrap">
+    <div class="section-header reveal">
+      <span class="section-label">Our Standards</span>
+      <h2 class="section-title keep-all">수많은 대행사 중<br>위플레이스를 선택해야 하는 이유.</h2>
+      <p class="section-desc keep-all">우리가 절대 타협하지 않는 3가지 원칙입니다.</p>
+    </div>
+    <div class="grid3">
+      <article class="card svc reveal d1">
+        <div class="svc-icon" style="background:#FEF3C7;">🎯</div>
+        <h3 class="keep-all">노출보다 '클릭 이후 3초'</h3>
+        <p class="keep-all">아무리 많은 사람이 들어와도 첫 화면에서 매력을 못 느끼면 바로 나갑니다. 무의미한 트래픽보다 고객의 시선이 머무는 카피와 비주얼에 집중합니다.</p>
+      </article>
+      <article class="card svc reveal d2">
+        <div class="svc-icon" style="background:#DBEAFE;">⭐</div>
+        <h3 class="keep-all">가짜 리뷰 100개보다 진짜 경험 10개</h3>
+        <p class="keep-all">"좋아요"로 도배된 100개의 리뷰는 지갑을 열지 못합니다. 고객이 자발적으로 구체적인 경험을 적게 만드는 동선과 루틴을 설계합니다.</p>
+      </article>
+      <article class="card svc reveal d3">
+        <div class="svc-icon" style="background:#EDE9FE;">🔮</div>
+        <h3 class="keep-all">템플릿 복사가 아닌 '브랜드 페르소나'</h3>
+        <p class="keep-all">공장형 마케팅은 AI 검색 시대에 살아남을 수 없습니다. 공간의 본질과 원장님의 철학을 해석하여 고유의 브랜드를 구축합니다.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal reveal-d1">
-                <div class="bento-card p-8 rounded-3xl md:col-span-2 flex flex-col justify-between overflow-hidden relative group">
-                    <div class="relative z-10">
-                        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-blue-300">schema</span>
-                        </div>
-                        <h3 class="text-2xl md:text-3xl font-bold mb-3">LLM 시맨틱 최적화</h3>
-                        <p class="text-slate-400 font-body text-[15px] leading-relaxed max-w-lg korean-wrap">AI는 키워드가 아니라 구조를 읽습니다. 흩어진 브랜드 정보를 AI가 해석할 수 있는 시맨틱 데이터로 재정비합니다.</p>
-                    </div>
-                    <div class="sem-flow mt-8">
-                        <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <radialGradient id="sfGlow" cx="50%" cy="50%" r="50%">
-                                    <stop offset="0%" class="sf-color-shift"/>
-                                    <stop offset="100%" stop-color="transparent"/>
-                                </radialGradient>
-                            </defs>
-                            <ellipse cx="280" cy="130" rx="100" ry="80" fill="url(#sfGlow)" opacity="0.5"/>
-                            <!-- Raw data pills -->
-                            <g class="sf-pill">
-                                <rect x="24" y="35" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/>
-                                <text x="63" y="53" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">매장명</text>
-                            </g>
-                            <g class="sf-pill">
-                                <rect x="24" y="85" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/>
-                                <text x="63" y="103" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">리뷰</text>
-                            </g>
-                            <g class="sf-pill">
-                                <rect x="24" y="140" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/>
-                                <text x="63" y="158" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">위치</text>
-                            </g>
-                            <g class="sf-pill">
-                                <rect x="24" y="195" width="78" height="28" rx="14" fill="rgba(173,198,255,0.08)" stroke="rgba(173,198,255,0.2)" stroke-width="0.6"/>
-                                <text x="63" y="213" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(173,198,255,0.65)">서비스</text>
-                            </g>
-                            <!-- Flow lines -->
-                            <line x1="102" y1="49" x2="200" y2="80" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
-                            <line x1="102" y1="99" x2="200" y2="110" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
-                            <line x1="102" y1="154" x2="200" y2="150" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
-                            <line x1="102" y1="209" x2="200" y2="185" class="sf-flow-line" stroke="rgba(173,198,255,0.15)" stroke-width="0.8"/>
-                            <!-- Schema card -->
-                            <rect x="200" y="48" width="170" height="168" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(173,198,255,0.18)" stroke-width="0.8"/>
-                            <text x="285" y="42" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(173,198,255,0.35)" letter-spacing="0.1em">SCHEMA</text>
-                            <rect x="220" y="72" width="130" height="6" rx="3" fill="rgba(0,88,190,0.35)" class="sf-bar"/>
-                            <rect x="220" y="100" width="105" height="6" rx="3" fill="rgba(0,88,190,0.28)" class="sf-bar"/>
-                            <rect x="220" y="128" width="120" height="6" rx="3" fill="rgba(86,58,210,0.28)" class="sf-bar"/>
-                            <rect x="220" y="156" width="90" height="6" rx="3" fill="rgba(86,58,210,0.22)" class="sf-bar"/>
-                            <text x="220" y="67" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">name / type</text>
-                            <text x="220" y="95" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">review / rating</text>
-                            <text x="220" y="123" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">geo / address</text>
-                            <text x="220" y="151" font-size="7" font-weight="600" fill="rgba(173,198,255,0.3)">offer / action</text>
-                            <circle cx="357" cy="75" r="3" fill="rgba(100,200,150,0.5)"/>
-                            <circle cx="357" cy="103" r="3" fill="rgba(100,200,150,0.5)"/>
-                            <circle cx="357" cy="131" r="3" fill="rgba(100,200,150,0.4)"/>
-                            <circle cx="357" cy="159" r="3" fill="rgba(100,200,150,0.3)"/>
-                            <!-- Output to AI -->
-                            <line x1="370" y1="132" x2="448" y2="130" class="sf-out" stroke="rgba(173,198,255,0.22)" stroke-width="1"/>
-                            <polygon points="445,126 455,130 445,134" fill="rgba(173,198,255,0.2)"/>
-                            <!-- AI node -->
-                            <circle cx="488" cy="130" r="36" fill="rgba(0,88,190,0.06)" class="sf-ai-glow"/>
-                            <circle cx="488" cy="130" r="26" fill="rgba(0,88,190,0.15)" stroke="rgba(173,198,255,0.35)" stroke-width="0.8"/>
-                            <circle cx="488" cy="130" r="17" fill="rgba(0,88,190,0.25)" stroke="rgba(173,198,255,0.5)" stroke-width="0.5"/>
-                            <text x="488" y="134" text-anchor="middle" font-size="11" font-weight="800" fill="rgba(200,220,255,0.9)">AI</text>
-                            <text x="488" y="170" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(173,198,255,0.3)">추천</text>
-                        </svg>
-                    </div>
-                </div>
+<!-- ═══ FAQ ═══ -->
+<section id="faq" style="background: var(--accent-light);">
+  <div class="wrap">
+    <div class="section-header center reveal">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">자주 묻는 질문</h2>
+      <p class="section-desc">문의 전, 대표님들이 가장 궁금해하시는 점을 정리했습니다.</p>
+    </div>
+    <div class="faq-list reveal" itemscope itemtype="https://schema.org/FAQPage">
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name" class="keep-all">일반적인 마케팅 대행과 뭐가 다른가요?</summary>
+        <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text" class="keep-all">세팅만 해두고 끝내지 않습니다. 현재 막히는 지점을 먼저 찾고, 전환 동선·리뷰·콘텐츠를 실제 운영에 맞게 정리한 뒤 월간 리포트로 계속 개선합니다.</span></p>
+      </details>
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">네이버만 하나요, 구글도 하나요?</summary>
+        <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text" class="keep-all">둘 다 합니다. 특히 외국인 유입이나 지도 검색이 중요하면 구글 비즈니스 프로필과 영문 동선 정비 효과가 큽니다.</span></p>
+      </details>
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name" class="keep-all">무료 진단에서는 어디까지 알려주나요?</summary>
+        <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text" class="keep-all">현재 핵심 막히는 지점 1개, 우선순위 개선안 3개, 바로 적용 가능한 문구 방향을 정리해 보내드립니다. 결제 정보 없이 진행됩니다.</span></p>
+      </details>
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">비용은 어느 정도인가요?</summary>
+        <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text" class="keep-all">업종과 현재 상태에 따라 달라집니다. 무료 진단에서 필요한 범위를 먼저 정의한 뒤, 과한 패키지 제안은 하지 않습니다.</span></p>
+      </details>
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">어떤 업종에 효과적인가요?</summary>
+        <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text" class="keep-all">뷰티, F&B, 클리닉, 교육, 공간 기반 서비스 등 오프라인 고객 접점이 있는 업종에서 가장 큰 효과를 보고 있습니다.</span></p>
+      </details>
+    </div>
+  </div>
+</section>
 
-                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-blue-300">hub</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">맥락적 신뢰 네트워크</h3>
-                        <p class="text-slate-400 font-body text-[15px] leading-relaxed korean-wrap">AI가 신뢰도를 판단하는 가장 큰 기준은 '외부 인용'입니다. 공신력 있는 매체와 리뷰어의 맥락적 언급을 축적합니다.</p>
-                    </div>
-                </div>
+<!-- ═══ CONTACT ═══ -->
+<section class="contact-section" id="contact">
+  <div class="wrap">
+    <div class="section-header center reveal">
+      <h2 class="section-title keep-all">결정을 미루는 시간에도,<br>고객은 다른 곳을 예약합니다.</h2>
+      <p class="section-desc keep-all">가장 먼저 고쳐야 할 막히는 지점 1개를 알려드립니다.</p>
+    </div>
 
-                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-blue-300">psychology</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">프롬프트 페르소나</h3>
-                        <p class="text-slate-400 font-body text-[15px] leading-relaxed korean-wrap">"이 지역에서 제일 분위기 좋은 곳 찾아줘"라는 질문에 우리 브랜드가 답변으로 출력되도록, 감성적 페르소나를 데이터에 주입합니다.</p>
-                    </div>
-                </div>
-            </div>
+    <div class="trust-box reveal d1">
+      <h3 class="trust-box-title">무료 진단 리포트 제공 내역</h3>
+      <p class="trust-box-sub">문의 후 아래 내용을 정리해 보내드립니다.</p>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">◎</div>
+          <div><p class="trust-item-title">핵심 막히는 지점 1개</p><p class="trust-item-desc">가장 먼저 손봐야 할 지점</p></div>
         </div>
-    </section>
-
-    <!-- Principles Section -->
-    <section class="py-20 md:py-32 px-6 bg-surface" id="principles">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-20 md:mb-24 space-y-5 reveal text-center md:text-left">
-                <span class="text-secondary font-label text-xs tracking-widest uppercase font-bold">Our Standards</span>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight korean-wrap leading-[1.6]">수많은 대행사 중<br class="hidden md:block"/>위플레이스를 선택해야 하는 이유.</h2>
-                <p class="text-slate-600 font-body text-lg max-w-2xl mt-4 korean-wrap leading-loose">우리가 절대 타협하지 않는 3가지 설계 원칙입니다.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-                <div class="bg-white p-10 md:p-12 rounded-2xl shadow-sm border border-slate-100 card-hover reveal reveal-d1">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-7">
-                        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">ads_click</span>
-                    </div>
-                    <span class="text-secondary font-label text-xs tracking-widest uppercase font-bold">Principle 01</span>
-                    <h3 class="text-xl font-extrabold mt-3 mb-4 korean-wrap">노출보다 '클릭 이후 3초'를 봅니다</h3>
-                    <p class="text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">아무리 많은 사람이 들어와도 첫 화면에서 매력을 느끼지 못하면 바로 나갑니다. 우리는 무의미한 트래픽 올리기보다, 고객의 시선이 머무는 랜딩 카피와 시각적 페르소나 정렬에 집착합니다.</p>
-                </div>
-                <div class="bg-white p-10 md:p-12 rounded-2xl shadow-sm border border-slate-100 card-hover reveal reveal-d2">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-7">
-                        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">rate_review</span>
-                    </div>
-                    <span class="text-secondary font-label text-xs tracking-widest uppercase font-bold">Principle 02</span>
-                    <h3 class="text-xl font-extrabold mt-3 mb-4 korean-wrap">가짜 리뷰 100개보다 '진짜 경험 10개'</h3>
-                    <p class="text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">단순히 "맛있어요", "좋아요"로 도배된 100개의 리뷰는 고객의 지갑을 열지 못합니다. 우리는 고객이 자발적으로 구체적인 경험을 적게 만드는 오프라인 동선과 리뷰 루틴을 설계합니다.</p>
-                </div>
-                <div class="bg-white p-10 md:p-12 rounded-2xl shadow-sm border border-slate-100 card-hover reveal reveal-d2">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-7">
-                        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">fingerprint</span>
-                    </div>
-                    <span class="text-secondary font-label text-xs tracking-widest uppercase font-bold">Principle 03</span>
-                    <h3 class="text-xl font-extrabold mt-3 mb-4 korean-wrap">템플릿 복사가 아닌 '브랜드 페르소나'</h3>
-                    <p class="text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">공장형으로 찍어내는 마케팅은 AI 검색 시대에 살아남을 수 없습니다. 공간의 본질과 원장님의 철학을 해석하여, AI와 고객 모두가 신뢰할 수 있는 고유의 브랜드를 구축합니다.</p>
-                </div>
-            </div>
-            <div class="text-center mt-14 md:mt-20 reveal">
-                <p class="text-slate-600 font-body text-[15px] font-bold korean-wrap mb-6">이 3가지 원칙에 동의하신다면, 위플레이스와 가장 큰 시너지를 낼 수 있습니다.</p>
-                <a class="bg-secondary hover:bg-secondary-container text-white px-8 py-4 rounded-xl font-bold text-lg shadow-md transition-all inline-block" href="#contact">지금 바로 병목 진단 받기</a>
-            </div>
+        <div class="trust-item">
+          <div class="trust-icon">▤</div>
+          <div><p class="trust-item-title">우선순위 개선안 3개</p><p class="trust-item-desc">바로 실행할 수 있는 순서</p></div>
         </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-20 md:py-28 px-6 bg-surface-container-low" id="faq">
-        <div class="max-w-3xl mx-auto">
-            <div class="text-center mb-12 space-y-3 reveal">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-primary tracking-tight korean-wrap">자주 묻는 질문</h2>
-                <p class="text-slate-600 font-body korean-wrap">문의 전에 궁금하신 점을 먼저 확인해보세요.</p>
-            </div>
-            <div class="space-y-4 reveal reveal-d1">
-                <details class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 group">
-                    <summary class="flex justify-between items-center cursor-pointer font-bold text-primary korean-wrap">
-                        일반적인 마케팅 대행과 뭐가 다른가요?
-                        <span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-45 shrink-0 ml-4">add</span>
-                    </summary>
-                    <p class="mt-4 text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">
-                        세팅만 해두고 끝내지 않습니다. 현재 병목을 먼저 찾고, 전환 동선·리뷰·콘텐츠를 실제 운영에 맞게 정리한 뒤 월간 리포트로 계속 개선합니다.
-                    </p>
-                </details>
-                <details class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 group">
-                    <summary class="flex justify-between items-center cursor-pointer font-bold text-primary korean-wrap">
-                        네이버 플레이스 최적화도 포함되나요?
-                        <span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-45 shrink-0 ml-4">add</span>
-                    </summary>
-                    <p class="mt-4 text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">
-                        네. 네이버 플레이스 세팅, 사진 구성, 소개 문구, 리뷰 구조까지 전환 관점에서 재정비합니다. 구글 비즈니스 프로필도 동일하게 진행할 수 있습니다.
-                    </p>
-                </details>
-                <details class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 group">
-                    <summary class="flex justify-between items-center cursor-pointer font-bold text-primary korean-wrap">
-                        무료 진단에서는 어디까지 알려주나요?
-                        <span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-45 shrink-0 ml-4">add</span>
-                    </summary>
-                    <p class="mt-4 text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">
-                        현재 핵심 병목 1개, 우선순위 개선안 3개, 바로 적용 가능한 문구 방향을 정리해 보내드립니다. 결제 정보 없이 진행됩니다.
-                    </p>
-                </details>
-                <details class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 group">
-                    <summary class="flex justify-between items-center cursor-pointer font-bold text-primary korean-wrap">
-                        어떤 업종에 효과적인가요?
-                        <span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-45 shrink-0 ml-4">add</span>
-                    </summary>
-                    <p class="mt-4 text-slate-600 font-body text-[15px] leading-relaxed korean-wrap">
-                        뷰티, F&B, 클리닉, 교육, 공간 기반 서비스 등 오프라인 고객 접점이 있는 업종에서 가장 큰 효과를 보고 있습니다. 업종별 진단 기준이 다르므로, 먼저 진단을 받아보시는 것을 권해드립니다.
-                    </p>
-                </details>
-            </div>
+        <div class="trust-item">
+          <div class="trust-icon">✎</div>
+          <div><p class="trust-item-title">즉시 적용 가능한 문구</p><p class="trust-item-desc">카피·CTA 방향 포함</p></div>
         </div>
-    </section>
-
-    <section class="py-20 md:py-32 px-6 bg-surface" id="contact">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16 md:mb-20 space-y-6 reveal">
-                <h2 class="text-3xl md:text-5xl font-extrabold text-primary tracking-tight korean-wrap leading-[1.6]">결정을 미루는 시간에도,<br class="hidden sm:block"/> 고객은 다른 곳을 예약합니다.</h2>
-                <div class="p-5 md:p-7 bg-blue-50 rounded-2xl border border-blue-100/50 inline-block mt-5 shadow-sm">
-                    <p class="text-secondary font-extrabold text-[15px] md:text-lg korean-wrap leading-loose">
-                        가장 먼저 고쳐야 할 1개의 병목을 알려드립니다.
-                    </p>
-                </div>
-            </div>
-
-            <div class="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 mb-10 reveal reveal-d1 shadow-sm">
-                <h3 class="text-lg font-bold text-primary mb-2 korean-wrap">무료 진단 리포트 제공 내역</h3>
-                <p class="text-slate-500 font-body text-xs mb-8 korean-wrap">입력 후 24시간 내에 아래 내용을 정리해 보내드립니다.</p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-7 gap-x-8 text-sm font-body text-slate-700">
-                    <div class="flex items-start gap-4">
-                        <span class="material-symbols-outlined text-secondary text-2xl mt-0.5 shrink-0">target</span>
-                        <div><span class="font-bold text-primary">핵심 병목 1개</span><p class="text-[13px] text-slate-500 mt-1.5 leading-relaxed">가장 먼저 손봐야 할 지점</p></div>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <span class="material-symbols-outlined text-secondary text-2xl mt-0.5 shrink-0">format_list_numbered</span>
-                        <div><span class="font-bold text-primary">우선순위 개선안 3개</span><p class="text-[13px] text-slate-500 mt-1.5 leading-relaxed">바로 실행할 수 있는 순서</p></div>
-                    </div>
-                </div>
-                
-                <div class="mt-8 pt-6 border-t border-slate-100 flex flex-wrap gap-4 text-[13px] text-slate-600 font-bold bg-slate-50 rounded-xl py-5 px-5">
-                    <span class="flex items-center gap-1"><span class="text-secondary">✓</span> 결제 정보 불필요</span>
-                    <span class="flex items-center gap-1"><span class="text-secondary">✓</span> 24시간 내 회신</span>
-                    <span class="flex items-center gap-1"><span class="text-secondary">✓</span> 진단서 확인 후 판단</span>
-                </div>
-            </div>
-
-            <div class="bg-white p-6 md:p-14 rounded-3xl shadow-xl border border-slate-100 reveal reveal-d2">
-                <form action="/f/YOUR_ENDPOINT_HERE" class="space-y-8 md:space-y-10" method="POST">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                        <div class="space-y-3">
-                            <label class="block font-headline text-sm font-bold text-slate-700">성함 / 담당자명 <span class="text-secondary">*</span></label>
-                            <input class="w-full bg-slate-50 border-transparent focus:bg-white focus:border-secondary focus:ring-4 focus:ring-secondary/10 rounded-xl p-4 transition-all outline-none font-medium" placeholder="홍길동" required type="text"/>
-                        </div>
-                        <div class="space-y-3">
-                            <label class="block font-headline text-sm font-bold text-slate-700">이메일 주소 <span class="text-secondary">*</span></label>
-                            <input class="w-full bg-slate-50 border-transparent focus:bg-white focus:border-secondary focus:ring-4 focus:ring-secondary/10 rounded-xl p-4 transition-all outline-none font-medium" placeholder="email@example.com" required type="email"/>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                        <div class="space-y-3">
-                            <label class="block font-headline text-sm font-bold text-slate-700">상호명 <span class="text-secondary">*</span></label>
-                            <input class="w-full bg-slate-50 border-transparent focus:bg-white focus:border-secondary focus:ring-4 focus:ring-secondary/10 rounded-xl p-4 transition-all outline-none font-medium" placeholder="위플레이스 피부과의원" required type="text"/>
-                        </div>
-                        <div class="space-y-3">
-                            <label class="block font-headline text-sm font-bold text-slate-700">브랜드 웹사이트 / SNS <span class="text-secondary">*</span></label>
-                            <input class="w-full bg-slate-50 border-transparent focus:bg-white focus:border-secondary focus:ring-4 focus:ring-secondary/10 rounded-xl p-4 transition-all outline-none font-medium" placeholder="https:// 또는 @인스타계정" required type="text"/>
-                        </div>
-                    </div>
-                    <div class="space-y-3">
-                        <label class="block font-headline text-sm font-bold text-slate-700">지금 가장 답답한 지점을 적어주세요 <span class="text-secondary">*</span></label>
-                        <textarea id="contact-bottleneck" class="w-full bg-slate-50 border-transparent focus:bg-white focus:border-secondary focus:ring-4 focus:ring-secondary/10 rounded-xl p-4 transition-all outline-none resize-y font-medium text-slate-800" placeholder="예: 블로그 방문은 많은데 문의로 이어지지 않아요." required rows="6"></textarea>
-                        <p id="form-feedback" class="text-[13px] text-secondary font-bold hidden pt-1">✓ 진단 결과가 폼에 붙여넣어졌습니다. 내용을 추가하셔도 좋습니다.</p>
-                    </div>
-                    <div class="pt-6">
-                        <button class="w-full bg-primary hover:bg-slate-800 text-white py-5 rounded-xl font-extrabold text-lg md:text-xl shadow-lg transition-all flex justify-center items-center gap-2 group" type="submit">
-                            내 병목 + 개선안 받기 <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                        </button>
-                    </div>
-                </form>
-            </div>
+        <div class="trust-item">
+          <div class="trust-icon">⟳</div>
+          <div><p class="trust-item-title">7일 / 30일 체크리스트</p><p class="trust-item-desc">단기·중기 실행 가이드</p></div>
         </div>
-    </section>
+      </div>
+      <div class="trust-footer">
+        <span><span class="ck">✓</span> 결제 정보 불필요</span>
+        <span><span class="ck">✓</span> 1영업일 내 회신</span>
+        <span><span class="ck">✓</span> 진단서 확인 후 판단</span>
+      </div>
+    </div>
+
+    <div class="kakao-section reveal d2">
+      <div class="kakao-inner">
+        <p class="keep-all" style="font-size:16px; font-weight:600;">카카오톡으로 편하게 문의하세요.<br>간단한 상황만 알려주시면 진단 리포트를 보내드립니다.</p>
+        <a class="btn kakao-btn" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" style="font-size:17px; padding:16px 40px; gap:10px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
+          카카오톡으로 편하게 문의하기
+        </a>
+      </div>
+    </div>
+
+    <div class="form-divider reveal d3"><span>또는 양식으로 직접 문의</span></div>
+
+    <!--
+      FORM ENDPOINT HOOKUP
+      Option A — Formspree: action="https://formspree.io/f/YOUR_ID" method="POST"
+      Option B — Netlify: add netlify netlify-honeypot="bot-field" to <form>
+      Option C — Custom: action="https://your-api.com/submit" method="POST"
+      현재: JS fallback. 연동 시 action을 수정하고 JS의 e.preventDefault()를 제거하세요.
+    -->
+    <form class="contact-card reveal d3" id="contactForm" action="#" method="POST">
+      <input type="hidden" name="_subject" value="We,place 무료 진단 요청">
+      <div class="form-row">
+        <div>
+          <label for="c-name">이름 / 업장명 <span style="color:var(--accent);">*</span></label>
+          <input id="c-name" name="name" type="text" placeholder="예) 홍길동 / OO피부샵" required>
+        </div>
+        <div>
+          <label for="c-channel">가장 고민되는 채널</label>
+          <select id="c-channel" name="channel">
+            <option value="">선택해주세요</option>
+            <option value="naver_place">네이버 플레이스 노출/전환</option>
+            <option value="google">구글 / 외국인 타겟 유입</option>
+            <option value="review_content">리뷰 및 콘텐츠 누적</option>
+            <option value="ads_landing">광고 효율 및 랜딩 개선</option>
+            <option value="full_audit">전체 구조 점검</option>
+          </select>
+        </div>
+      </div>
+      <label for="c-contact">연락 가능한 수단 <span style="color:var(--accent);">*</span></label>
+      <input id="c-contact" name="contact_method" type="text" placeholder="예) 010-1234-5678 / 카카오톡 ID / 이메일" required>
+      <label for="c-pain">지금 가장 막히는 지점 <span style="color:var(--accent);">*</span></label>
+      <input id="c-pain" name="pain_point" type="text" placeholder="예) 노출은 있는데 문의가 없음 / 리뷰가 안 쌓임" required>
+      <label for="c-msg">추가 메모 (선택)</label>
+      <textarea id="c-msg" name="message" placeholder="플레이스/인스타/홈페이지 링크가 있으면 같이 적어주세요."></textarea>
+      <p class="form-note">입력은 1분이면 충분합니다.</p>
+      <button class="btn primary" type="submit" style="width:100%; padding:18px; font-size:17px;">무료 진단 요청 보내기</button>
+      <p class="form-disclaimer">* 작성해주신 정보는 진단 목적 외에는 사용되지 않습니다.</p>
+    </form>
+  </div>
+</section>
+
 </main>
 
-<footer class="bg-white w-full py-10 px-6 grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between items-center border-t border-slate-100" id="agency">
-    <div class="space-y-2 mb-8 lg:mb-0 text-center md:text-left">
-        <div class="text-lg font-bold flex items-center justify-center md:justify-start gap-2">
-            <span class="inline-block w-[6px] h-[6px] rounded-full bg-secondary"></span><span class="text-primary">We,</span><span class="text-secondary">place.</span>
-        </div>
-        <p class="font-manrope text-[11px] font-bold tracking-wider uppercase text-slate-400">© 2026 We, place. All rights reserved.</p>
+<!-- Toast -->
+<div class="toast" id="formToast">
+  <span class="toast-icon">✓</span>
+  <div class="toast-body">
+    <strong>진단 요청이 접수되었습니다</strong>
+    <span>1영업일 내에 연락드리겠습니다.</span>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div style="display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom:8px;">
+      <span class="brand-dot" style="width:6px;height:6px;"></span>
+      <span style="font-weight:800; font-size:15px;"><span style="color:var(--text);">We,</span> <span style="color:var(--accent);">place.</span></span>
     </div>
-    <div class="flex flex-wrap justify-center gap-6 md:gap-8 items-center font-bold">
-        <a class="font-manrope text-[11px] tracking-wider uppercase text-slate-400 hover:text-primary transition-colors" href="#">Privacy</a>
-        <a class="font-manrope text-[11px] tracking-wider uppercase text-slate-400 hover:text-primary transition-colors" href="#">Terms</a>
-        <a class="font-manrope text-[11px] tracking-wider uppercase text-slate-400 hover:text-primary transition-colors" href="#contact">Contact</a>
-    </div>
+    <div>&copy; <span id="year"></span> We, place. All rights reserved.</div>
+  </div>
 </footer>
 
-<div id="toast-notification">
-    <svg class="toast-icon" viewBox="0 0 24 24" fill="currentColor" style="width:28px;height:28px;flex-shrink:0;color:#0058be;">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-    </svg>
-    <div class="toast-text">
-        <p style="font-weight:700;font-size:15px;color:#00010f;white-space:nowrap;">진단 요청 완료</p>
-        <p style="font-size:12px;color:#64748b;margin-top:2px;">24시간 내에 기재하신 연락처로 회신드리겠습니다.</p>
-    </div>
+<a class="kakao-float" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" aria-label="카카오톡 상담">
+  <svg viewBox="0 0 24 24" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
+</a>
+
+<div class="mobile-sticky">
+  <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">지금 카카오로 문의하기</a>
 </div>
 
 <script>
-    /* === Scroll Animations === */
-    document.addEventListener('DOMContentLoaded', () => {
-        // Tailwind CDN 로드 체크 — 실패 시 기본 레이아웃 보장
-        const twCheck = setTimeout(() => {
-            const test = document.createElement('div');
-            test.className = 'hidden';
-            document.body.appendChild(test);
-            const isHidden = window.getComputedStyle(test).display === 'none';
-            document.body.removeChild(test);
-            if (!isHidden) {
-                // Tailwind 미로드: fallback 스타일 적용
-                document.body.classList.add('tw-fallback-layout');
-                console.warn('[We,place] Tailwind CDN not loaded. Fallback active.');
-            }
-        }, 2000);
+  document.getElementById("year").textContent = new Date().getFullYear();
 
-        // IntersectionObserver 지원 여부 확인
-        if ('IntersectionObserver' in window) {
-            const revealObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        revealObserver.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  // Hamburger
+  const hamburger = document.getElementById("hamburger");
+  const drawer = document.getElementById("drawer");
+  hamburger?.addEventListener("click", () => drawer.classList.toggle("open"));
+  drawer?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => drawer.classList.remove("open")));
 
-            document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-        } else {
-            // IntersectionObserver 미지원: 모든 reveal 즉시 표시
-            document.body.classList.add('reveal-fallback');
-        }
+  // Form — endpoint-ready with toast fallback
+  // 연동: <form> action을 실제 URL로 변경 → e.preventDefault() 제거
+  const form = document.getElementById("contactForm");
+  const toast = document.getElementById("formToast");
+  function showToast() { toast?.classList.add("show"); setTimeout(() => toast?.classList.remove("show"), 4000); }
 
-        // Hero 안전장치 (기존 유지)
-        setTimeout(() => {
-            document.querySelectorAll('.hero-enter').forEach(el => {
-                el.style.opacity = '1'; el.style.transform = 'translateY(0)';
-            });
-        }, 3000);
-
-        // Reveal 최종 안전장치 — 5초 후에도 안 보이면 강제 표시
-        setTimeout(() => {
-            document.querySelectorAll('.reveal:not(.is-visible)').forEach(el => {
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-            });
-        }, 5000);
-    });
-
-    // DOMContentLoaded 미실행 대비 — 페이지 로드 3초 후 강제 표시
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            document.querySelectorAll('.reveal, .hero-enter').forEach(el => {
-                if (window.getComputedStyle(el).opacity === '0') {
-                    el.style.opacity = '1';
-                    el.style.transform = 'translateY(0)';
-                }
-            });
-        }, 1500);
-    });
-
-    /* === Quiz & Copy Logic === */
-    function quizNext(currentStep) {
-        document.getElementById(`step-${currentStep}`).classList.remove('active');
-        document.getElementById(`step-${currentStep + 1}`).classList.add('active');
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault(); // ← 실제 엔드포인트 연동 시 삭제
+    const action = form.getAttribute("action");
+    if (action && action !== "#") {
+      fetch(action, { method: "POST", body: new FormData(form) })
+        .then(r => { if (r.ok) { showToast(); form.reset(); } else { alert("전송 오류. 카카오톡으로 문의해주세요."); } })
+        .catch(() => alert("네트워크 오류. 카카오톡으로 문의해주세요."));
+    } else {
+      showToast(); form.reset();
     }
+  });
 
-    function quizResult() {
-        document.getElementById('step-3').classList.remove('active');
-        document.getElementById('step-result').classList.add('active');
-    }
+  // Scroll Reveal
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('active'); obs.unobserve(entry.target); } });
+    }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => { el.style.opacity='1'; el.style.transform='none'; });
+  }
 
-    window.applyResultToForm = function() {
-        const title = document.getElementById('quiz-result-title').innerText;
-        const desc = document.getElementById('quiz-result-desc').innerText;
-        const textarea = document.getElementById('contact-bottleneck');
-        
-        if(textarea) {
-            // 결과 복사 및 서식 지정
-            textarea.value = `[자가진단 결과 확인]\n${title}\n- ${desc}\n\n이 결과에 대한 개선안을 받아보고 싶습니다.`;
-            
-            // 시각적 피드백
-            textarea.classList.remove('border-transparent', 'bg-slate-50');
-            textarea.classList.add('bg-white', 'border-secondary', 'ring-4', 'ring-secondary/20');
-            
-            const feedback = document.getElementById('form-feedback');
-            feedback.classList.remove('hidden');
+  // Safety: force reveal after 4s
+  setTimeout(() => { document.querySelectorAll('.reveal:not(.active)').forEach(el => { el.style.opacity='1'; el.style.transform='translateY(0)'; }); }, 4000);
 
-            // 스크롤 이동 및 포커스
-            document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-            setTimeout(() => {
-                textarea.focus();
-                // 3초 후 시각적 강조 원상복구
-                setTimeout(() => {
-                    textarea.classList.remove('border-secondary', 'ring-4', 'ring-secondary/20');
-                    textarea.classList.add('border-transparent');
-                    feedback.classList.add('hidden');
-                }, 3000);
-            }, 600);
-        }
-    };
+  // Kakao float: desktop only, after scroll
+  const kf = document.querySelector('.kakao-float');
+  if (kf && window.matchMedia('(min-width: 721px)').matches) {
+    window.addEventListener('scroll', () => { kf.classList.toggle('visible', window.scrollY > 600); }, { passive: true });
+  }
 </script>
 </body>
 </html>
