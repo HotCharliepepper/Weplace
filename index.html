@@ -92,6 +92,38 @@
     .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
     .hero-micro { display: block; margin-top: 16px; font-size: 13px; color: var(--accent); font-weight: 700; }
 
+    /* ─── Hero Stagger Entrance ─── */
+    .hero-inner .section-label,
+    .hero-inner h1,
+    .hero-inner .hero-sub,
+    .hero-inner .hero-cta,
+    .hero-inner .hero-micro {
+      opacity: 0; transform: translateY(24px);
+      animation: heroFadeUp 0.9s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+    .hero-inner .section-label { animation-delay: 0.1s; }
+    .hero-inner h1 { animation-delay: 0.25s; }
+    .hero-inner .hero-sub { animation-delay: 0.45s; }
+    .hero-inner .hero-cta { animation-delay: 0.6s; }
+    .hero-inner .hero-micro { animation-delay: 0.7s; }
+    @keyframes heroFadeUp { to { opacity: 1; transform: translateY(0); } }
+
+    .hero h1 .em {
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 100%);
+      background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%;
+      padding-bottom: 3px;
+      animation: heroFadeUp 0.9s cubic-bezier(0.22,1,0.36,1) 0.25s forwards,
+                 emUnderline 0.8s ease 1.3s forwards;
+    }
+    @keyframes emUnderline { to { background-size: 100% 2px; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-inner .section-label, .hero-inner h1, .hero-inner .hero-sub,
+      .hero-inner .hero-cta, .hero-inner .hero-micro, .hero h1 .em {
+        opacity: 1; transform: none; animation: none; background-size: 100% 2px;
+      }
+    }
+
     /* ─── Proof Bar ─── */
     .proof-strip {
       margin-top: 56px; padding: 28px 32px; background: #fff; border: 1px solid var(--border);
@@ -159,6 +191,23 @@
     .testimonial::before { content: '\201C'; position: absolute; top: 20px; left: 28px; font-size: 48px; color: var(--accent-light); font-weight: 900; line-height: 1; }
     .testi-text { font-size: 15px; line-height: 1.7; color: var(--text); font-weight: 500; margin: 0 0 20px; padding-top: 8px; }
     .testi-author { font-size: 13px; color: var(--muted); font-weight: 700; }
+    .testi-photo {
+      width: 100%; border-radius: 10px; overflow: hidden; margin-bottom: 16px;
+      background: #F1F5F9; border: 1px solid var(--border); aspect-ratio: 16/9;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .testi-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .testi-photo .ph-label { font-size: 11px; color: var(--muted); font-weight: 600; text-align: center; padding: 12px; }
+
+    /* ─── Case Image Slot ─── */
+    .case-img {
+      width: 100%; border-radius: 10px; overflow: hidden; margin-bottom: 20px;
+      background: #F1F5F9; border: 1px dashed #CBD5E1; aspect-ratio: 16/10;
+      display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 6px;
+    }
+    .case-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .case-img .ph-badge { font-size: 11px; font-weight: 700; color: #fff; background: var(--text); padding: 3px 8px; border-radius: 4px; }
+    .case-img .ph-label { font-size: 12px; color: var(--muted); font-weight: 500; }
 
     /* ─── AI Section ─── */
     .ai-section { background: #0A0F1E; color: #fff; }
@@ -271,6 +320,17 @@
     .toast-body strong { display: block; font-size: 15px; color: var(--text); }
     .toast-body span { font-size: 13px; color: var(--muted); }
 
+    /* ─── Form Fallback (no endpoint) ─── */
+    .form-fallback {
+      display: none; text-align: center; padding: 32px 24px;
+      max-width: 640px; margin: 0 auto;
+      background: var(--accent-light); border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .form-fallback.visible { display: block; }
+    .form-fallback p { margin: 0 0 16px; font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.6; }
+    .form-fallback .sub { font-size: 13px; color: var(--muted); margin-top: 12px; }
+
     /* ─── Kakao CTA Section ─── */
     .kakao-section { text-align: center; padding: 48px 0; }
     .kakao-inner { max-width: 480px; margin: 0 auto; }
@@ -341,6 +401,7 @@
       }
       .mobile-sticky a { display: block; background: var(--accent); color: #fff; font-weight: 800; font-size: 16px; padding: 14px; border-radius: 8px; }
       .kakao-float { display: none; }
+      .toast.show { bottom: calc(80px + env(safe-area-inset-bottom)); }
       body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
     }
     @media (max-width: 390px) {
@@ -526,18 +587,21 @@
     </div>
     <div class="grid2">
       <article class="card case-card reveal d1">
+        <!-- 이미지 삽입: 플레이스 순위 캡처 / 매장 전경 사진 -->
+        <div class="case-img"><span class="ph-badge">EVIDENCE</span><span class="ph-label">네이버 플레이스 순위 캡처</span></div>
         <div class="case-meta">
           <span class="case-badge">Case 01</span>
           <span class="case-region">마사지 · 서울 명동</span>
         </div>
         <h3 class="keep-all">명동 마사지 1–2위,<br>3년간 유지</h3>
-        <p class="keep-all">일 유동인구 50만, 외국인 비중이 극히 높은 상권입니다. 단기 체류 고객이 검색 후 즉시 예약하는 흐름에 맞춰, 다국어 플레이스 구성과 사진·리뷰 동선을 전환 중심으로 재설계했습니다.</p>
+        <p class="keep-all">일 유동인구 50만, 외국인 비중이 높은 상권. 고객이 검색 후 즉시 예약하는 흐름에 맞춰, 다국어 플레이스 + 사진·리뷰 동선을 전환 중심으로 재설계했습니다.</p>
         <div class="case-stat">
           <div><div class="case-stat-num">1–2위</div><div class="case-stat-label">네이버 플레이스 · 3년 연속</div></div>
         </div>
         <div class="case-insight keep-all">유동인구가 많은 상권일수록 '노출 순위'보다 '클릭 직후 예약까지의 속도'가 결과를 결정합니다.</div>
       </article>
       <article class="card case-card reveal d2">
+        <div class="case-img"><span class="ph-badge">EVIDENCE</span><span class="ph-label">블로그 트래픽 변화 그래프</span></div>
         <div class="case-meta">
           <span class="case-badge">Case 02</span>
           <span class="case-region">교육 · 광주</span>
@@ -563,14 +627,18 @@
     </div>
     <div class="testimonial-grid">
       <article class="card testimonial reveal d1">
+        <!-- 이미지 삽입: 카카오 대화 캡처 / 리뷰 스크린샷 / 매장 사진 등 -->
+        <div class="testi-photo"><span class="ph-label">카카오 후기 캡처</span></div>
         <p class="testi-text keep-all">마케팅 업체를 여러 곳 써봤는데, 처음으로 '우리 가게를 이해하고 있다'는 느낌을 받았어요. 흩어져 있던 플레이스, 블로그, 인스타를 하나의 흐름으로 정리해주셨어요.</p>
         <span class="testi-author">— 피부과 원장 · 서울</span>
       </article>
       <article class="card testimonial reveal d2">
+        <div class="testi-photo"><span class="ph-label">실제 문의 증가 캡처</span></div>
         <p class="testi-text keep-all">솔직히 '진단'이라고 해서 형식적인 리포트를 예상했는데, 우리 매장이 왜 문의가 안 오는지 정확히 짚어주더라고요. 사진 순서 하나 바꾸고 문의가 늘기 시작했습니다.</p>
         <span class="testi-author">— 마사지샵 대표 · 명동</span>
       </article>
       <article class="card testimonial reveal d3">
+        <div class="testi-photo"><span class="ph-label">블로그 유입 그래프</span></div>
         <p class="testi-text keep-all">블로그를 1년 넘게 했는데 효과가 없었어요. 위플레이스에서 글의 구조와 연결 동선만 바꿨는데, 한 달 만에 상담 문의가 두 배가 됐습니다. 구조가 이렇게 중요한 줄 몰랐어요.</p>
         <span class="testi-author">— 학원 운영자 · 광주</span>
       </article>
@@ -649,17 +717,17 @@
     </div>
     <div class="grid3">
       <article class="card svc reveal d1">
-        <div class="svc-icon" style="background:#FEF3C7;">🎯</div>
+        <div class="svc-icon" style="background:#FEF3C7;"></div>
         <h3 class="keep-all">노출보다 '클릭 이후 3초'</h3>
         <p class="keep-all">아무리 많은 사람이 들어와도 첫 화면에서 매력을 못 느끼면 바로 나갑니다. 무의미한 트래픽보다 고객의 시선이 머무는 카피와 비주얼에 집중합니다.</p>
       </article>
       <article class="card svc reveal d2">
-        <div class="svc-icon" style="background:#DBEAFE;">⭐</div>
+        <div class="svc-icon" style="background:#DBEAFE;"></div>
         <h3 class="keep-all">가짜 리뷰 100개보다 진짜 경험 10개</h3>
         <p class="keep-all">"좋아요"로 도배된 100개의 리뷰는 지갑을 열지 못합니다. 고객이 자발적으로 구체적인 경험을 적게 만드는 동선과 루틴을 설계합니다.</p>
       </article>
       <article class="card svc reveal d3">
-        <div class="svc-icon" style="background:#EDE9FE;">🔮</div>
+        <div class="svc-icon" style="background:#EDE9FE;"></div>
         <h3 class="keep-all">템플릿 복사가 아닌 '브랜드 페르소나'</h3>
         <p class="keep-all">공장형 마케팅은 AI 검색 시대에 살아남을 수 없습니다. 공간의 본질과 원장님의 철학을 해석하여 고유의 브랜드를 구축합니다.</p>
       </article>
@@ -784,6 +852,16 @@
       <button class="btn primary" type="submit" style="width:100%; padding:18px; font-size:17px;">무료 진단 요청 보내기</button>
       <p class="form-disclaimer">* 작성해주신 정보는 진단 목적 외에는 사용되지 않습니다.</p>
     </form>
+
+    <!-- 엔드포인트 미연결 시 표시되는 안내 -->
+    <div class="form-fallback" id="formFallback">
+      <p class="keep-all">양식이 접수 준비 중입니다.<br>카카오톡으로 먼저 문의해주시면 더 빠르게 도와드릴 수 있습니다.</p>
+      <a class="btn kakao-btn" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" style="font-size:15px; padding:14px 32px; gap:8px;">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
+        카카오톡으로 문의하기
+      </a>
+      <p class="sub">입력하신 내용은 저장되지 않았습니다.</p>
+    </div>
   </div>
 </section>
 
@@ -825,21 +903,26 @@
   hamburger?.addEventListener("click", () => drawer.classList.toggle("open"));
   drawer?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => drawer.classList.remove("open")));
 
-  // Form — endpoint-ready with toast fallback
+  // Form — endpoint-ready with honest fallback
   // 연동: <form> action을 실제 URL로 변경 → e.preventDefault() 제거
   const form = document.getElementById("contactForm");
   const toast = document.getElementById("formToast");
+  const fallback = document.getElementById("formFallback");
   function showToast() { toast?.classList.add("show"); setTimeout(() => toast?.classList.remove("show"), 4000); }
 
   form?.addEventListener("submit", (e) => {
     e.preventDefault(); // ← 실제 엔드포인트 연동 시 삭제
     const action = form.getAttribute("action");
+
     if (action && action !== "#") {
+      // 실제 엔드포인트 연결됨
       fetch(action, { method: "POST", body: new FormData(form) })
         .then(r => { if (r.ok) { showToast(); form.reset(); } else { alert("전송 오류. 카카오톡으로 문의해주세요."); } })
         .catch(() => alert("네트워크 오류. 카카오톡으로 문의해주세요."));
     } else {
-      showToast(); form.reset();
+      // 엔드포인트 미연결 — 가짜 성공 표시하지 않음
+      form.style.display = "none";
+      fallback?.classList.add("visible");
     }
   });
 
