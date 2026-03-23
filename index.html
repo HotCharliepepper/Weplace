@@ -57,8 +57,8 @@
     .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
     .brand { display: flex; gap: 6px; align-items: center; font-weight: 900; font-size: 17px; }
     .brand-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
-    .brand-we { color: var(--text); }
-    .brand-place { color: var(--accent); }
+    .brand-we { color: var(--accent); }
+    .brand-place { color: var(--text); }
     .nav-links { display: flex; gap: 28px; align-items: center; }
     .nav-links a { font-size: 15px; font-weight: 600; color: var(--muted); transition: color 0.2s; }
     .nav-links a:hover { color: var(--accent); }
@@ -159,8 +159,8 @@
     /* ─── Service Cards ─── */
     .svc { padding: 36px; }
     .svc-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--accent-light); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 22px; }
-    .svc h3 { margin: 0 0 4px; font-size: 20px; font-weight: 800; }
-    .svc-sub { font-size: 13px; color: var(--accent); font-weight: 700; margin: 0 0 12px; }
+    .svc h3 { margin: 0 0 6px; font-size: 20px; font-weight: 800; }
+    .svc-sub { font-size: 13px; color: var(--accent); font-weight: 700; margin: 0 0 14px; }
     .svc p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
 
     /* ─── Case Image (with real image) ─── */
@@ -207,6 +207,7 @@
     .case-region { font-size: 12px; color: var(--muted); font-weight: 700; }
     .case-card h3 { margin: 0 0 12px; font-size: 20px; font-weight: 800; line-height: 1.35; }
     .case-card p { margin: 0 0 16px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .case-card p strong { color: var(--text); font-weight: 700; }
     .case-stat { display: flex; gap: 24px; padding-top: 16px; border-top: 1px solid var(--border); }
     .case-stat-num { font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; }
     .case-stat-label { font-size: 13px; color: var(--muted); font-weight: 600; margin-top: 4px; }
@@ -406,6 +407,8 @@
 
     @media (max-width: 720px) {
       .quiz-card { padding: 28px 20px; }
+      .svc h3 { margin: 0 0 8px; }
+      .svc-sub { margin: 0 0 16px; }
       .quiz-q h3 { font-size: 16px; }
       .quiz-opt { padding: 16px; font-size: 14px; }
     }
@@ -653,7 +656,7 @@
     <div class="reveal d3" style="text-align:center; margin-top:40px;">
       <div style="display:inline-block; background:#fff; border:1px solid var(--border); border-radius:12px; padding:20px 32px;">
         <p style="margin:0; font-size:15px; font-weight:700; color:var(--text); line-height:1.7;" class="keep-all">
-          <span style="color:var(--accent);">위플레이스는 이 4단계를 하나의 실행 루틴으로 연결합니다.</span><br>
+          <span style="color:var(--accent);">We, Place.는 이 4단계를 하나의 실행 루틴으로 연결합니다.</span><br>
           개별 플랫폼 관리가 아니라, 전체 구조를 한 번에 설계합니다.
         </p>
       </div>
@@ -744,8 +747,8 @@
           <span class="case-badge">Case 01</span>
           <span class="case-region">마사지 · 서울 명동</span>
         </div>
-        <h3 class="keep-all">명동 마사지 1–2위,<br>3년간 유지</h3>
-        <p class="keep-all">일 유동인구 50만, 외국인 비중이 극히 높은 상권입니다. 단기 체류 고객이 검색 후 즉시 예약하는 흐름에 맞춰, 다국어 플레이스 구성과 사진·리뷰 동선을 전환 중심으로 재설계했습니다.</p>
+        <h3 class="keep-all">명동 마사지 <span style="color:var(--accent);">1–2위</span>,<br><span style="color:var(--accent);">3년간</span> 유지</h3>
+        <p class="keep-all">일 유동인구 <strong>50만</strong>, <strong>외국인 비중이 극히 높은</strong> 상권입니다. 단기 체류 고객이 <strong>검색 후 즉시 예약하는</strong> 흐름에 맞춰, 다국어 플레이스 구성과 사진·리뷰 동선을 전환 중심으로 재설계했습니다.</p>
         <div class="case-stat">
           <div><div class="case-stat-num">1–2위</div><div class="case-stat-label">네이버 플레이스 · 3년 연속</div></div>
         </div>
@@ -757,11 +760,12 @@
           <span class="case-badge">Case 02</span>
           <span class="case-region">교육 · 광주</span>
         </div>
-        <h3 class="keep-all">자사 블로그 1개월 만에<br>유입 4배, 상담 2배</h3>
+        <h3 class="keep-all">자사 블로그 <span style="color:var(--accent);">1개월</span> 만에<br>유입 <span style="color:var(--accent);">4배</span>, 상담 <span style="color:var(--accent);">2배</span></h3>
         <p class="keep-all">상주인구 중심의 생활권 상권입니다. 지역 주민과 학생이 주 고객층인 구조에서, 자사 블로그를 검색 유입 → 수업 경험 소개 → 상담 연결의 흐름으로 재구성했습니다.</p>
         <div class="case-stat">
           <div><div class="case-stat-num">4배</div><div class="case-stat-label">블로그 유입</div></div>
           <div><div class="case-stat-num">2배</div><div class="case-stat-label">상담 전환</div></div>
+          <div><div class="case-stat-num">+160%</div><div class="case-stat-label">매출 증가</div></div>
         </div>
         <div class="case-insight keep-all">재방문·회원제 모델은 즉시 전환보다 '신뢰 축적형 콘텐츠'가 상담 속도를 결정합니다.</div>
       </article>
@@ -792,7 +796,7 @@
       </article>
       <article class="card testimonial reveal d3">
         <div class="testi-photo"><span class="ph-label">블로그 유입 그래프</span></div>
-        <p class="testi-text keep-all">블로그를 1년 넘게 했는데 효과가 없었어요. 위플레이스에서 글의 구조와 연결 동선만 바꿨는데, 한 달 만에 상담 신청이 두 배가 됐습니다. 구조가 이렇게 중요한 줄 몰랐어요.</p>
+        <p class="testi-text keep-all">블로그를 1년 넘게 했는데 효과가 없었어요. We, Place.에서 글의 구조와 연결 동선만 바꿨는데, 한 달 만에 상담 신청이 두 배가 됐습니다. 구조가 이렇게 중요한 줄 몰랐어요.</p>
         <span class="testi-author">— 학원 운영자 · 광주</span>
       </article>
     </div>
@@ -807,7 +811,7 @@
     <div class="section-header reveal">
       <span class="section-label">AI Search Paradigm</span>
       <h2 class="section-title keep-all">고객이 AI에게 물을 때,<br>당신의 브랜드가 추천됩니까?</h2>
-      <p class="section-desc keep-all">고객이 정보를 찾는 방식이 AI 중심으로 재편되고 있습니다. 이제 고객은 AI에게 직접 묻습니다.<br>그 AI가 당신의 브랜드를 추천하도록, 데이터 구조를 먼저 설계합니다.</p>
+      <p class="section-desc keep-all">검색의 시대가 끝나고 있습니다. 이제 고객은 AI에게 직접 묻습니다.<br>그 AI가 당신의 브랜드를 추천하도록, 데이터 구조를 먼저 설계합니다.</p>
     </div>
     <div class="ai-bento">
       <div class="ai-card ai-card-wide reveal d1">
@@ -875,13 +879,13 @@
   <div class="wrap">
     <div class="section-header reveal">
       <span class="section-label">Our Standards</span>
-      <h2 class="section-title keep-all">수많은 대행사 중<br>위플레이스를 선택해야 하는 이유.</h2>
+      <h2 class="section-title keep-all">수많은 대행사 중<br>We, Place.를 선택해야 하는 이유.</h2>
       <p class="section-desc keep-all">우리가 절대 타협하지 않는 3가지 원칙입니다.</p>
     </div>
     <div class="grid3">
       <article class="card svc reveal d1">
         <div class="svc-icon" style="background:#FEF3C7;">🎯</div>
-        <h3 class="keep-all">노출보다 '클릭 이후 3초'</h3>
+        <h3 class="keep-all">노출보다 <span style="color:var(--accent);">'클릭 이후 3초'</span></h3>
         <p class="keep-all">아무리 많은 사람이 들어와도 첫 화면에서 매력을 못 느끼면 바로 나갑니다. 무의미한 트래픽보다 고객의 시선이 머무는 카피와 비주얼에 집중합니다.</p>
       </article>
       <article class="card svc reveal d2">
@@ -1043,7 +1047,7 @@
   <div class="wrap">
     <div style="display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom:8px;">
       <span class="brand-dot" style="width:6px;height:6px;"></span>
-      <span style="font-weight:800; font-size:15px;"><span style="color:var(--text);">We,</span> <span style="color:var(--accent);">place.</span></span>
+      <span style="font-weight:800; font-size:15px;"><span style="color:var(--accent);">We,</span> <span style="color:var(--text);">place.</span></span>
     </div>
     <div>&copy; <span id="year"></span> We, place. All rights reserved.</div>
   </div>
