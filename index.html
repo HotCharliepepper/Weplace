@@ -248,10 +248,15 @@
     .ai-card {
       background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
       border-radius: var(--radius); padding: 32px; transition: background 0.3s, border-color 0.3s;
+      overflow: hidden;
     }
     .ai-card:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); }
     .ai-card h3 { margin: 16px 0 8px; font-size: 18px; font-weight: 800; }
     .ai-card p { margin: 0; color: rgba(255,255,255,0.55); font-size: 14px; line-height: 1.65; }
+    .ai-card .ai-sub {
+      display: block; margin-top: 14px; font-size: 15px; font-weight: 800;
+      color: #fff; line-height: 1.5;
+    }
     .ai-icon { width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; font-size: 20px; }
 
     /* ─── AI Bento Layout ─── */
@@ -345,8 +350,8 @@
     .form-divider span { font-size: 13px; color: var(--muted); font-weight: 600; white-space: nowrap; }
 
     /* ─── Toast ─── */
-    .toast { position: fixed; bottom: -80px; left: 50%; transform: translateX(-50%); background: #fff; padding: 16px 28px; border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border: 1px solid var(--border); display: flex; align-items: center; gap: 12px; z-index: 10000; transition: bottom 0.5s cubic-bezier(0.22,1,0.36,1); max-width: calc(100vw - 32px); }
-    .toast.show { bottom: 32px; }
+    .toast { position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%); background: #fff; padding: 16px 28px; border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.12); border: 1px solid var(--border); display: none; align-items: center; gap: 12px; z-index: 10000; max-width: calc(100vw - 32px); }
+    .toast.show { display: flex; }
     .toast-icon { color: var(--accent); font-size: 22px; flex-shrink: 0; }
     .toast-body strong { display: block; font-size: 15px; color: var(--text); }
     .toast-body span { font-size: 13px; color: var(--muted); }
@@ -489,7 +494,7 @@
       }
       .mobile-sticky a { display: block; background: var(--accent); color: #fff; font-weight: 800; font-size: 16px; padding: 14px; border-radius: 8px; }
       .kakao-float { display: none; }
-      .toast.show { bottom: calc(80px + env(safe-area-inset-bottom)); }
+      .toast.show { bottom: calc(80px + env(safe-area-inset-bottom)); display: flex; }
       body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
     }
     @media (max-width: 390px) {
@@ -822,7 +827,7 @@
       <div class="ai-card ai-card-wide reveal d1">
         <div class="ai-icon">⟐</div>
         <h3>LLM 시맨틱 최적화</h3>
-        <p class="keep-all">AI는 키워드가 아니라 구조를 읽습니다. 흩어진 브랜드 정보를 AI가 해석할 수 있는 시맨틱 데이터로 재정비,<h3>AI가 우리 가게를 잘 이해하게 만드는 작업</h3></p>
+        <p class="keep-all">AI는 키워드가 아니라 구조를 읽습니다. 흩어진 브랜드 정보를 AI가 해석할 수 있는 시맨틱 데이터로 재정비합니다.<span class="ai-sub">AI가 우리 가게를 잘 이해하게 만드는 작업</span></p>
         <div class="sem-flow">
           <svg viewBox="0 0 560 280" xmlns="http://www.w3.org/2000/svg">
             <defs><radialGradient id="sfGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" class="sf-color-shift"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
@@ -868,12 +873,12 @@
       <div class="ai-card reveal d2">
         <div class="ai-icon">⊛</div>
         <h3 class="keep-all">맥락적 신뢰 네트워크</h3>
-        <p class="keep-all">AI가 신뢰도를 판단하는 가장 큰 기준은 '외부 인용'입니다. <h3>여기저기서 봐도 다 믿음 가게 만드는 구조형성</h3></p>
+        <p class="keep-all">AI가 신뢰도를 판단하는 가장 큰 기준은 '외부 인용'입니다. 공신력 있는 매체와 리뷰어의 맥락적 언급을 축적합니다.<span class="ai-sub">여기저기서 봐도 다 믿음 가게 만드는 구조형성</span></p>
       </div>
       <div class="ai-card reveal d3">
         <div class="ai-icon">◈</div>
         <h3 class="keep-all">프롬프트 페르소나</h3>
-        <p class="keep-all">"이 지역에서 제일 분위기 좋은 곳 찾아줘"라는 질문에 우리 브랜드가 답변으로 출력되도록, <h3>우리 매장에 딱 맞는 글/응대 스타일을 생성합니다</h3></p>
+        <p class="keep-all">"이 지역에서 제일 분위기 좋은 곳 찾아줘"라는 질문에 우리 브랜드가 답변으로 출력되도록, 감성적 페르소나를 데이터에 주입합니다.<span class="ai-sub">우리 매장에 딱 맞는 글/응대 스타일을 생성합니다</span></p>
       </div>
     </div>
   </div>
@@ -1058,7 +1063,7 @@
       상호명: (주) 위플레이스마케팅 · 대표자: 박규민<br>
       사업자등록번호: 145-88-03119<br>
       서울특별시 금천구 디지털로 178, 1910호 현대지식산업센터 가산퍼블릭 에이치<br>
-      <a href="tel:010-6461-6594">010-6461-6594</a> · <a href="mailto:weplacehyun@naver.com">weplacehyun@naver.com</a>
+      <a href="tel:010-2678-9036">010-2678-9036</a> · <a href="mailto:weplacehyun@naver.com">weplacehyun@naver.com</a>
     </div>
     <div style="margin-top:16px;">&copy; 2025 (주) 위플레이스마케팅. All rights reserved.</div>
   </div>
@@ -1084,7 +1089,11 @@
   const form = document.getElementById("contactForm");
   const toast = document.getElementById("formToast");
   const fallback = document.getElementById("formFallback");
-  function showToast() { toast?.classList.add("show"); setTimeout(() => toast?.classList.remove("show"), 4000); }
+  function showToast() {
+    if (!toast) return;
+    toast.classList.add("show");
+    setTimeout(() => { toast.classList.remove("show"); }, 4000);
+  }
 
   form?.addEventListener("submit", (e) => {
     e.preventDefault(); // ← 실제 엔드포인트 연동 시 삭제
