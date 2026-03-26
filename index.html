@@ -507,6 +507,80 @@
     .drawer a { display: block; padding: 14px 16px; border-radius: 8px; font-size: 16px; font-weight: 700; }
     .drawer a:hover { background: var(--bg); color: var(--accent); }
     .drawer.open { display: block; }
+
+    /* ─── Live Counter Bar ─── */
+    .live-bar {
+      background: var(--accent-light);
+      border-bottom: 1px solid rgba(37, 99, 235, 0.08);
+      padding: 9px 20px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .live-bar .live-dot {
+      width: 7px; height: 7px;
+      background: #22C55E;
+      border-radius: 50%;
+      animation: livePulse 2.2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    .live-bar .live-num {
+      font-weight: 800;
+      color: var(--text);
+      display: inline-block;
+      min-width: 14px;
+      transition: transform 0.3s ease;
+    }
+    .live-bar .live-num.bump { transform: scale(1.18); }
+    @keyframes livePulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.75); }
+    }
+
+    /* ─── Live Toast (periodic popup) ─── */
+    .live-toast {
+      position: fixed;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%) translateY(16px);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 9997;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+    .live-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    .live-toast .lt-dot {
+      width: 6px; height: 6px;
+      background: #22C55E;
+      border-radius: 50%;
+      animation: livePulse 2.2s ease-in-out infinite;
+    }
+    .live-toast .lt-num { font-weight: 800; color: var(--accent); }
+    .live-toast .lt-label { color: var(--muted); font-weight: 500; }
+
+    @media (max-width: 720px) {
+      .live-toast.show { bottom: calc(90px + env(safe-area-inset-bottom)); }
+    }
   </style>
 </head>
 
@@ -545,6 +619,12 @@
     </div>
   </div>
 </header>
+
+<!-- ═══ LIVE COUNTER BAR ═══ -->
+<div class="live-bar" id="liveBar">
+  <span class="live-dot"></span>
+  현재 <span class="live-num" id="liveCount">0</span>명이 상담을 진행하고 있습니다
+</div>
 
 <main id="top">
 
@@ -1063,7 +1143,7 @@
       상호명: (주) 위플레이스마케팅 · 대표자: 박규민<br>
       사업자등록번호: 145-88-03119<br>
       서울특별시 금천구 디지털로 178, 1910호 현대지식산업센터 가산퍼블릭 에이치<br>
-      <a href="tel:010-6461-6594">010-6461-6594</a> · <a href="mailto:weplacehyun@naver.com">weplacehyun@naver.com</a>
+      <a href="tel:010-6461-6594">010-6461-6594</a> · <a href="/cdn-cgi/l/email-protection#a1d6c4d1cdc0c2c4c9d8d4cfe1cfc0d7c4d38fc2cecc"><span class="__cf_email__" data-cfemail="b5c2d0c5d9d4d6d0ddccc0dbf5dbd4c3d0c79bd6dad8">[email&#160;protected]</span></a>
     </div>
     <div style="margin-top:16px;">&copy; 2025 (주) 위플레이스마케팅. All rights reserved.</div>
   </div>
@@ -1077,7 +1157,7 @@
   <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">지금 카카오로 문의하기</a>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Hamburger
   const hamburger = document.getElementById("hamburger");
   const drawer = document.getElementById("drawer");
@@ -1136,9 +1216,100 @@
 
   // Kakao float: desktop only, after scroll
   const kf = document.querySelector('.kakao-float');
-  if (kf && window.matchMedia('(min-width: 721px)').matches) {
-    window.addEventListener('scroll', () => { kf.classList.toggle('visible', window.scrollY > 600); }, { passive: true });
+  if (kf && window.innerWidth > 720) {
+    let shown = false;
+    window.addEventListener('scroll', () => {
+      if (!shown && window.scrollY > 600) { kf.classList.add('visible'); shown = true; }
+    }, { passive: true });
   }
+
+  // ═══ LIVE COUNTER ENGINE ═══
+  (function() {
+    'use strict';
+    function rand(a, b) { return Math.floor(Math.random() * (b - a + 1)) + a; }
+
+    // 시간대별 기초값 (5~10 범위)
+    function getBaseCount() {
+      var h = new Date().getHours();
+      if (h >= 0  && h < 7)  return rand(3, 5);   // 심야
+      if (h >= 7  && h < 12) return rand(5, 8);   // 오전
+      if (h >= 12 && h < 18) return rand(7, 10);  // 오후 피크
+      if (h >= 18 && h < 22) return rand(5, 8);   // 저녁
+      return rand(3, 6);                           // 밤
+    }
+
+    // 세션 지속성
+    var SK = 'wp_lc', ST = 'wp_lt', TTL = 30 * 60 * 1000;
+    function loadCount() {
+      try {
+        var s = sessionStorage.getItem(SK), t = sessionStorage.getItem(ST);
+        if (s && t && (Date.now() - parseInt(t,10)) < TTL) return parseInt(s,10);
+      } catch(e) {}
+      return getBaseCount();
+    }
+    function saveCount(n) {
+      try { sessionStorage.setItem(SK, n); sessionStorage.setItem(ST, Date.now()); } catch(e) {}
+    }
+
+    var count = loadCount();
+    var MAX = 12, MIN = 3;
+
+    function updateUI(animate) {
+      var el = document.getElementById('liveCount');
+      var tel = document.getElementById('toastNum');
+      if (el) {
+        el.textContent = count;
+        if (animate) {
+          el.classList.add('bump');
+          setTimeout(function() { el.classList.remove('bump'); }, 300);
+        }
+      }
+      if (tel) tel.textContent = count;
+      saveCount(count);
+    }
+
+    function drift() {
+      var r = Math.random();
+      if (r < 0.45)      count += 1;    // 45% +1
+      else if (r < 0.60) count += 2;    // 15% +2
+      else if (r < 0.82) count -= 1;    // 22% -1 (자연스러운 감소)
+      else {}                            // 18% 변화 없음
+
+      if (count > MAX) count = MAX - rand(1, 2);
+      if (count < MIN) count = MIN + rand(0, 1);
+      updateUI(true);
+    }
+
+    function scheduleNext() {
+      setTimeout(function() { drift(); scheduleNext(); }, rand(10000, 30000));
+    }
+
+    // 토스트 알림
+    function showLiveToast() {
+      var t = document.getElementById('liveToast2');
+      if (!t) return;
+      t.classList.add('show');
+      setTimeout(function() { t.classList.remove('show'); }, 4000);
+    }
+    function scheduleToast() {
+      setTimeout(function() {
+        showLiveToast();
+        setInterval(showLiveToast, rand(35000, 70000));
+      }, rand(12000, 20000));
+    }
+
+    updateUI(false);
+    scheduleNext();
+    scheduleToast();
+  })();
 </script>
+
+<!-- Live Toast -->
+<div class="live-toast" id="liveToast2">
+  <span class="lt-dot"></span>
+  <span class="lt-num" id="toastNum">0</span>명
+  <span class="lt-label">상담 진행중</span>
+</div>
+
 </body>
 </html>
