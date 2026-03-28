@@ -443,6 +443,47 @@
       .quiz-opt { padding: 16px; font-size: 14px; }
     }
 
+    /* ─── Service Lineup ─── */
+    .lineup-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .lineup-card { padding: 36px; display: flex; flex-direction: column; }
+    .lineup-card.recommended { border-color: var(--accent); border-width: 2px; }
+    .lineup-level {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.12em; color: var(--muted); margin-bottom: 16px;
+    }
+    .lineup-card.recommended .lineup-level { color: var(--accent); }
+    .lineup-badge {
+      font-size: 10px; font-weight: 800; color: #fff; background: var(--accent);
+      padding: 2px 8px; border-radius: 4px; letter-spacing: 0.05em;
+    }
+    .lineup-card h3 { margin: 0 0 8px; font-size: 20px; font-weight: 800; }
+    .lineup-card .lineup-oneliner { font-size: 14px; color: var(--accent); font-weight: 700; margin: 0 0 20px; line-height: 1.5; }
+    .lineup-fit {
+      margin: 0 0 20px; padding: 14px 16px; background: var(--bg);
+      border-radius: 10px; font-size: 13px; color: var(--text); font-weight: 600; line-height: 1.6;
+    }
+    .lineup-fit-label { font-size: 11px; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; }
+    .lineup-scope { margin: 0 0 20px; padding: 0; list-style: none; }
+    .lineup-scope li {
+      font-size: 14px; color: var(--muted); font-weight: 500; line-height: 1.6;
+      padding: 6px 0; border-bottom: 1px solid var(--border); position: relative; padding-left: 20px;
+    }
+    .lineup-scope li:last-child { border-bottom: none; }
+    .lineup-scope li::before { content: '✦'; position: absolute; left: 0; color: var(--accent); font-size: 10px; top: 8px; }
+    .lineup-effect {
+      margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border);
+      font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.6;
+    }
+    .lineup-effect-label { font-size: 11px; font-weight: 800; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 4px; }
+    .lineup-cta-row {
+      text-align: center; margin-top: 48px;
+    }
+    .lineup-cta-sub { font-size: 14px; color: var(--muted); font-weight: 500; margin-top: 12px; }
+    @media (max-width: 980px) {
+      .lineup-grid { grid-template-columns: 1fr; }
+    }
+
     /* ─── Kakao CTA Section ─── */
     .kakao-section { text-align: center; padding: 48px 0; }
     .kakao-inner { max-width: 480px; margin: 0 auto; }
@@ -623,6 +664,7 @@
         <a href="#self-check">진단</a>
         <a href="#cases">사례</a>
         <a href="#ai">AI 설계</a>
+        <a href="#lineup">상품</a>
         <a href="#faq">FAQ</a>
       </nav>
       <div class="nav-actions">
@@ -636,6 +678,7 @@
       <a href="#self-check">진단</a>
       <a href="#cases">사례</a>
       <a href="#ai">AI 설계</a>
+      <a href="#lineup">상품</a>
       <a href="#faq">FAQ</a>
       <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">카카오 상담</a>
     </div>
@@ -645,7 +688,7 @@
 <!-- ═══ LIVE COUNTER BAR ═══ -->
 <div class="live-bar" id="liveBar">
   <span class="live-dot"></span>
-  현재 <span class="live-num" id="liveCount">0</span>명이 상담을 진행하고 있습니다
+  현재 <span class="live-num" id="liveCount">3</span>명이 상담을 진행하고 있습니다
 </div>
 
 <main id="top">
@@ -715,7 +758,7 @@
       <article class="card svc reveal d3">
         <div class="svc-icon">◎</div>
         <h3>Signal Integration</h3>
-        <p class="svc-sub">어떤 플랫폼 (Naver/Google등)에서 보든 신뢰감 있는 매장으로 만들기</p>
+        <p class="svc-sub">어떤 플랫폼 (Naver/Google등)에서 봐도 신뢰감 있는 매장으로 만들기</p>
         <p class="keep-all">플레이스, 블로그, 인스타, 구글 — 어디서든 같은 신뢰를 느끼도록 모든 접점의 메시지를 통합합니다.</p>
       </article>
     </div>
@@ -773,6 +816,82 @@
           개별 플랫폼 관리가 아니라, 전체 구조를 한 번에 설계합니다.
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICE LINEUP ═══ -->
+<section id="lineup">
+  <div class="wrap">
+    <div class="section-header center reveal">
+      <span class="section-label">Service Lineup</span>
+      <h2 class="section-title keep-all">대표님의 상황에 맞는<br>구조 설계를 제안합니다.</h2>
+      <p class="section-desc keep-all">모든 매장이 같은 출발선에 있지 않습니다.<br>지금 단계에서 가장 효과적인 범위를 먼저 정의합니다.</p>
+    </div>
+    <div class="lineup-grid">
+      <article class="card lineup-card reveal d1">
+        <div class="lineup-level">Foundation</div>
+        <h3 class="keep-all">플레이스 기본 정비</h3>
+        <p class="lineup-oneliner keep-all">검색에서 클릭까지, 첫인상을 다시 설계합니다.</p>
+        <div class="lineup-fit">
+          <div class="lineup-fit-label">이런 분께 적합합니다</div>
+          <span class="keep-all">처음 온라인 정비를 시작하거나,<br>기존 노출이 정리되지 않은 매장</span>
+        </div>
+        <ul class="lineup-scope">
+          <li class="keep-all">네이버 플레이스 최적화</li>
+          <li class="keep-all">기본 검색 노출 세팅</li>
+          <li class="keep-all">사진 · 소개 · 메뉴 재구성</li>
+          <li class="keep-all">기초 전환 동선 점검</li>
+        </ul>
+        <div class="lineup-effect">
+          <div class="lineup-effect-label">기대 변화</div>
+          <span class="keep-all">검색 → 클릭까지 자연스러운 첫인상 확보</span>
+        </div>
+      </article>
+      <article class="card lineup-card recommended reveal d2">
+        <div class="lineup-level">Growth <span class="lineup-badge">추천</span></div>
+        <h3 class="keep-all">전환 동선 설계</h3>
+        <p class="lineup-oneliner keep-all">노출 이후, 예약/방문까지 이어지는 구조를 만듭니다.</p>
+        <div class="lineup-fit">
+          <div class="lineup-fit-label">이런 분께 적합합니다</div>
+          <span class="keep-all">노출은 되지만 예약이나 방문으로<br>이어지지 않는 매장</span>
+        </div>
+        <ul class="lineup-scope">
+          <li class="keep-all">전환 동선 분석 · 재설계</li>
+          <li class="keep-all">콘텐츠 구조 재설계 (블로그/SNS)</li>
+          <li class="keep-all">리뷰 자산화 구조 설계</li>
+          <li class="keep-all">플랫폼 통합 운영 설계</li>
+          <li class="keep-all">월간 성과 리포트</li>
+        </ul>
+        <div class="lineup-effect">
+          <div class="lineup-effect-label">기대 변화</div>
+          <span class="keep-all">클릭 → 체류 → 예약/방문 전환률 개선</span>
+        </div>
+      </article>
+      <article class="card lineup-card reveal d3">
+        <div class="lineup-level">Authority</div>
+        <h3 class="keep-all">플랫폼 통합 · AI 대응</h3>
+        <p class="lineup-oneliner keep-all">전 채널을 하나의 브랜드 구조로 연결합니다.</p>
+        <div class="lineup-fit">
+          <div class="lineup-fit-label">이런 분께 적합합니다</div>
+          <span class="keep-all">여러 플랫폼에 걸친 브랜드 통합 또는<br>AI 추천 진입을 준비하는 매장</span>
+        </div>
+        <ul class="lineup-scope">
+          <li class="keep-all">네이버 + 구글 + SNS 통합 설계</li>
+          <li class="keep-all">AI 시맨틱 구조 설계 (LLM 대응)</li>
+          <li class="keep-all">브랜드 콘텐츠 자산화</li>
+          <li class="keep-all">구글 비즈니스 프로필 최적화</li>
+          <li class="keep-all">월간 운영 리포트 + 분기 전략 리뷰</li>
+        </ul>
+        <div class="lineup-effect">
+          <div class="lineup-effect-label">기대 변화</div>
+          <span class="keep-all">AI가 추천하는 브랜드 구조 + 지속 운영 체계 확보</span>
+        </div>
+      </article>
+    </div>
+    <div class="lineup-cta-row reveal d3">
+      <a class="btn primary" href="#self-check" style="font-size:16px; padding:16px 36px;">어떤 상품이 맞을지, 무료 진단부터</a>
+      <p class="lineup-cta-sub keep-all">진단 후 상황에 맞는 범위를 함께 정의합니다. 진단 시, 맞춤 패키지를 제안합니다.</p>
     </div>
   </div>
 </section>
@@ -851,7 +970,7 @@
     <div class="section-header reveal">
       <span class="section-label">Results</span>
       <h2 class="section-title keep-all">시장을 읽고, 구조를 바꾼 결과입니다.</h2>
-      <p class="section-desc keep-all">같은 '플레이스 최적화'라도 상권마다 설계가 다릅니다. 순위가 아니라 해당 시장에서 가장 효과적인 전환 경로를 찾습니다.</p>
+      <p class="section-desc keep-all">상권마다 설계가 다릅니다. 순위가 아니라 해당 시장에서 가장 효과적인 전환 경로를 찾습니다.</p>
     </div>
     <div class="grid2">
       <article class="card case-card reveal d1">
@@ -923,7 +1042,7 @@
     <div class="section-header reveal">
       <span class="section-label">AI Search Paradigm</span>
       <h2 class="section-title keep-all">고객이 AI에게 물을 때,<br>당신의 브랜드가 추천됩니까?</h2>
-      <p class="section-desc keep-all">고객이 정보를 찾는 방식이 AI 중심으로 재편되고 있습니다. 이제 고객은 AI에게 직접 묻습니다.<br>그 AI가 당신의 브랜드를 추천하도록, 데이터 구조를 먼저 설계합니다.</p>
+      <p class="section-desc keep-all">고객이 AI에게 직접 묻는 시대입니다.<br>AI가 당신의 브랜드를 추천하도록, 데이터 구조를 먼저 설계합니다.</p>
     </div>
     <div class="ai-bento">
       <div class="ai-card ai-card-wide reveal d1">
@@ -991,24 +1110,24 @@
   <div class="wrap">
     <div class="section-header reveal">
       <span class="section-label">Our Standards</span>
-      <h2 class="section-title keep-all">수많은 대행사 중<br><span class="brand-inline"><span class="bi-we">We,</span> <span class="bi-pl">Place.</span></span>를 선택해야 하는 이유.</h2>
-      <p class="section-desc keep-all">우리가 절대 타협하지 않는 3가지 원칙입니다.</p>
+      <h2 class="section-title keep-all"><span class="brand-inline"><span class="bi-we">We,</span> <span class="bi-pl">Place.</span></span>가 다른 이유.</h2>
+      <p class="section-desc keep-all">타협하지 않는 3가지 원칙.</p>
     </div>
     <div class="grid3">
       <article class="card svc reveal d1">
         <div class="svc-icon" style="background:#FEF3C7;">🎯</div>
-        <h3 class="keep-all">노출보다 <span style="color:var(--accent);">'클릭 후 3초'</span></h3>
-        <p class="keep-all">아무리 많은 사람이 들어와도 첫 화면에서 매력을 못 느끼면 바로 나갑니다. 무의미한 트래픽보다 고객의 시선이 머무는 카피와 비주얼에 집중합니다.</p>
+        <h3 class="keep-all">노출보다 '클릭 후 3초'</h3>
+        <p class="keep-all">첫 화면에서 매력을 못 느끼면 바로 나갑니다. 트래픽이 아니라 시선이 머무는 구조에 집중합니다.</p>
       </article>
       <article class="card svc reveal d2">
         <div class="svc-icon" style="background:#DBEAFE;">⭐</div>
         <h3 class="keep-all">가짜 리뷰 100개보다 진짜 경험 10개</h3>
-        <p class="keep-all">"좋아요"로 도배된 100개의 리뷰는 지갑을 열지 못합니다. 고객이 자발적으로 구체적인 경험을 적게 만드는 동선과 루틴을 설계합니다.</p>
+        <p class="keep-all">고객이 자발적으로 구체적인 경험을 남기게 만드는 동선을 설계합니다.</p>
       </article>
       <article class="card svc reveal d3">
         <div class="svc-icon" style="background:#EDE9FE;">🔮</div>
-        <h3 class="keep-all">템플릿 복사가 아닌 '브랜드 페르소나'</h3>
-        <p class="keep-all">공장형 마케팅은 AI 검색 시대에 살아남을 수 없습니다. 공간의 본질과 원장님의 철학을 해석하여 고유의 브랜드를 구축합니다.</p>
+        <h3 class="keep-all">템플릿이 아닌 브랜드 페르소나</h3>
+        <p class="keep-all">공간의 본질과 대표님의 철학을 해석해 고유의 브랜드를 만듭니다.</p>
       </article>
     </div>
   </div>
@@ -1051,8 +1170,8 @@
 <section class="contact-section" id="contact">
   <div class="wrap">
     <div class="section-header center reveal">
-      <h2 class="section-title keep-all">결정을 미루는 시간에도,<br>고객은 다른 곳을 예약합니다.</h2>
-      <p class="section-desc keep-all">가장 먼저 고쳐야 할 막히는 지점 1개를 알려드립니다.</p>
+      <h2 class="section-title keep-all">지금 상태를 점검하는 것부터<br>시작하면 됩니다.</h2>
+      <p class="section-desc keep-all">가장 먼저 고쳐야 할 막히는 지점 1개를 정리해 드립니다.</p>
     </div>
 
     <div class="trust-box reveal d1">
@@ -1096,11 +1215,10 @@
     <div class="form-divider reveal d3"><span>또는 양식으로 직접 문의</span></div>
 
     <!--
-      FORM ENDPOINT HOOKUP
-      Option A — Formspree: action="https://formspree.io/f/YOUR_ID" method="POST"
-      Option B — Netlify: add netlify netlify-honeypot="bot-field" to <form>
-      Option C — Custom: action="https://your-api.com/submit" method="POST"
-      현재: JS fallback. 연동 시 action을 수정하고 JS의 e.preventDefault()를 제거하세요.
+      FORM ENDPOINT
+      Formspree: action="https://formspree.io/f/YOUR_ID" method="POST"
+      Netlify Forms: <form> 태그에 netlify 속성 추가
+      연동 시 JS의 e.preventDefault()를 제거하세요.
     -->
     <form class="contact-card reveal d3" id="contactForm" action="#" method="POST">
       <input type="hidden" name="_subject" value="We,place 무료 진단 요청">
@@ -1134,12 +1252,12 @@
 
     <!-- 엔드포인트 미연결 시 표시되는 안내 -->
     <div class="form-fallback" id="formFallback">
-      <p class="keep-all">양식이 접수 준비 중입니다.<br>카카오톡으로 먼저 문의해주시면 더 빠르게 도와드릴 수 있습니다.</p>
+      <p class="keep-all">양식 접수가 현재 준비 중입니다.<br>카카오톡으로 문의하시면 동일한 진단 리포트를 보내드립니다.</p>
       <a class="btn kakao-btn" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" style="font-size:15px; padding:14px 32px; gap:8px;">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
         카카오톡으로 문의하기
       </a>
-      <p class="sub">입력하신 내용은 저장되지 않았습니다.</p>
+      <p class="sub">작성하신 내용은 저장되지 않았으니, 카카오톡에서 간단히 말씀해 주세요.</p>
     </div>
   </div>
 </section>
@@ -1165,7 +1283,7 @@
       상호명: (주) 위플레이스마케팅 · 대표자: 박규민<br>
       사업자등록번호: 145-88-03119<br>
       서울특별시 금천구 디지털로 178, 1910호 현대지식산업센터 가산퍼블릭 에이치<br>
-      <a href="tel:010-6461-6594">010-6461-6594</a> · <a href="/cdn-cgi/l/email-protection#a1d6c4d1cdc0c2c4c9d8d4cfe1cfc0d7c4d38fc2cecc"><span class="__cf_email__" data-cfemail="b5c2d0c5d9d4d6d0ddccc0dbf5dbd4c3d0c79bd6dad8">[email&#160;protected]</span></a>
+      <a href="tel:010-6461-6594">010-6461-6594</a> · <a href="mailto:weplacehyun@naver.com">weplacehyun@naver.com</a>
     </div>
     <div style="margin-top:16px;">&copy; 2025 (주) 위플레이스마케팅. All rights reserved.</div>
   </div>
@@ -1179,7 +1297,7 @@
   <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">지금 카카오로 문의하기</a>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Hamburger
   const hamburger = document.getElementById("hamburger");
   const drawer = document.getElementById("drawer");
@@ -1248,33 +1366,23 @@
   // ═══ LIVE COUNTER ENGINE ═══
   (function() {
     'use strict';
+    var MIN = 3, MAX = 5;
     function rand(a, b) { return Math.floor(Math.random() * (b - a + 1)) + a; }
-
-    // 시간대별 기초값 (5~10 범위)
-    function getBaseCount() {
-      var h = new Date().getHours();
-      if (h >= 0  && h < 7)  return rand(3, 5);   // 심야
-      if (h >= 7  && h < 12) return rand(5, 8);   // 오전
-      if (h >= 12 && h < 18) return rand(7, 10);  // 오후 피크
-      if (h >= 18 && h < 22) return rand(5, 8);   // 저녁
-      return rand(3, 6);                           // 밤
-    }
 
     // 세션 지속성
     var SK = 'wp_lc', ST = 'wp_lt', TTL = 30 * 60 * 1000;
     function loadCount() {
       try {
         var s = sessionStorage.getItem(SK), t = sessionStorage.getItem(ST);
-        if (s && t && (Date.now() - parseInt(t,10)) < TTL) return parseInt(s,10);
+        if (s && t && (Date.now() - parseInt(t,10)) < TTL) return Math.max(MIN, Math.min(MAX, parseInt(s,10)));
       } catch(e) {}
-      return getBaseCount();
+      return rand(MIN, MIN + 1); // 초기값 3~4
     }
     function saveCount(n) {
       try { sessionStorage.setItem(SK, n); sessionStorage.setItem(ST, Date.now()); } catch(e) {}
     }
 
     var count = loadCount();
-    var MAX = 12, MIN = 3;
 
     function updateUI(animate) {
       var el = document.getElementById('liveCount');
@@ -1292,32 +1400,31 @@
 
     function drift() {
       var r = Math.random();
-      if (r < 0.45)      count += 1;    // 45% +1
-      else if (r < 0.60) count += 2;    // 15% +2
-      else if (r < 0.82) count -= 1;    // 22% -1 (자연스러운 감소)
-      else {}                            // 18% 변화 없음
+      if (r < 0.35)      count += 1;    // 35% +1
+      else if (r < 0.65) count -= 1;    // 30% -1
+      else {}                            // 35% 변화 없음
 
-      if (count > MAX) count = MAX - rand(1, 2);
-      if (count < MIN) count = MIN + rand(0, 1);
+      if (count > MAX) count = MAX;
+      if (count < MIN) count = MIN;
       updateUI(true);
     }
 
     function scheduleNext() {
-      setTimeout(function() { drift(); scheduleNext(); }, rand(10000, 30000));
+      setTimeout(function() { drift(); scheduleNext(); }, rand(25000, 55000));
     }
 
-    // 토스트 알림
+    // 토스트 알림 (절제)
     function showLiveToast() {
       var t = document.getElementById('liveToast2');
       if (!t) return;
       t.classList.add('show');
-      setTimeout(function() { t.classList.remove('show'); }, 4000);
+      setTimeout(function() { t.classList.remove('show'); }, 3500);
     }
     function scheduleToast() {
       setTimeout(function() {
         showLiveToast();
-        setInterval(showLiveToast, rand(35000, 70000));
-      }, rand(12000, 20000));
+        setInterval(showLiveToast, rand(60000, 120000));
+      }, rand(20000, 40000));
     }
 
     updateUI(false);
@@ -1329,7 +1436,7 @@
 <!-- Live Toast -->
 <div class="live-toast" id="liveToast2">
   <span class="lt-dot"></span>
-  <span class="lt-num" id="toastNum">0</span>명
+  <span class="lt-num" id="toastNum">3</span>명
   <span class="lt-label">상담 진행중</span>
 </div>
 
