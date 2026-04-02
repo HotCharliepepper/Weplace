@@ -1352,11 +1352,18 @@
       <p class="form-note">입력은 1분이면 충분합니다.</p>
       <button class="btn primary" type="submit" style="width:100%; padding:18px; font-size:17px;">무료 매장 진단 요청 보내기</button>
       <p class="form-disclaimer">* 작성해주신 정보는 진단 목적에만 사용합니다.</p>
+      <div style="text-align:center; margin-top:20px; padding-top:20px; border-top:1px solid var(--border);">
+        <p style="font-size:13px; color:var(--muted); margin:0 0 10px;">양식 대신 직접 문의하셔도 됩니다.</p>
+        <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" style="font-size:14px; font-weight:700; color:var(--accent); text-decoration:none;">카카오톡 문의</a>
+        <span style="color:var(--border); margin:0 10px;">|</span>
+        <a href="tel:010-6461-6594" style="font-size:14px; font-weight:700; color:var(--muted); text-decoration:none;">010-6461-6594</a>
+      </div>
     </form>
     <div class="form-fallback" id="formFallback">
-      <p class="keep-all">양식 접수가 현재 준비 중입니다.<br>전화 또는 이메일로 문의해 주시면 동일한 진단 리포트를 보내드립니다.</p>
-      <a class="btn primary" href="tel:010-6461-6594" style="font-size:15px; padding:14px 32px;">010-6461-6594 전화 문의</a>
-      <p class="sub">작성하신 내용은 저장되지 않았으니, 전화 시 간단히 말씀해 주세요.</p>
+      <p class="keep-all">양식 접수가 현재 준비 중입니다.<br>아래 방법으로 문의하시면 동일한 진단 리포트를 보내드립니다.</p>
+      <a class="btn primary" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" style="font-size:15px; padding:14px 32px;">카카오톡으로 문의하기</a>
+      <a class="btn" href="tel:010-6461-6594" style="font-size:14px; padding:12px 28px; margin-top:8px;">전화 문의 · 010-6461-6594</a>
+      <p class="sub">작성하신 내용은 저장되지 않았으니, 문의 시 간단히 말씀해 주세요.</p>
     </div>
   </div>
 </section>
@@ -1489,7 +1496,7 @@ function copyDiagForKakao(){
 // ═══ FORM ═══
 const form=document.getElementById("contactForm"),toast=document.getElementById("formToast"),fallback=document.getElementById("formFallback");
 function showToast(){if(!toast)return;toast.classList.add("show");setTimeout(()=>{toast.classList.remove("show");},4000);}
-form?.addEventListener("submit",(e)=>{e.preventDefault();const a=form.getAttribute("action");if(a&&a!=="#"){fetch(a,{method:"POST",body:new FormData(form)}).then(r=>{if(r.ok){showToast();form.reset();}else{alert("전송 오류. 전화(010-6461-6594)로 문의해주세요.");}}).catch(()=>alert("네트워크 오류. 전화(010-6461-6594)로 문의해주세요."));}else{form.style.display="none";fallback?.classList.add("visible");}});
+form?.addEventListener("submit",(e)=>{e.preventDefault();const a=form.getAttribute("action");if(a&&a!=="#"){fetch(a,{method:"POST",body:new FormData(form)}).then(r=>{if(r.ok){showToast();form.reset();}else{alert("전송 오류. 카카오톡 또는 전화(010-6461-6594)로 문의해주세요.");}}).catch(()=>alert("네트워크 오류. 카카오톡 또는 전화(010-6461-6594)로 문의해주세요."));}else{form.style.display="none";fallback?.classList.add("visible");}});
 
 
 
