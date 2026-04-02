@@ -40,7 +40,6 @@
       --border: #E5E7EB;
       --radius: 16px;
       --max: 1120px;
-      --kakao: #FEE500;
       --section-gap: 120px;
     }
     * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
@@ -86,8 +85,6 @@
     .btn:hover { border-color: var(--text); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
     .btn.primary { border: none; background: var(--accent); color: #fff; box-shadow: 0 4px 15px rgba(37,99,235,0.2); }
     .btn.primary:hover { background: var(--accent-dark); box-shadow: 0 6px 20px rgba(37,99,235,0.3); }
-    .btn.kakao-btn { background: var(--kakao); color: #3C1E1E; border: none; font-weight: 800; }
-    .btn.kakao-btn:hover { background: #F5DA00; }
 
     /* ─── Sections ─── */
     section { padding: var(--section-gap) 0; position: relative; scroll-margin-top: 67px; }
@@ -158,7 +155,6 @@
     .hero-sub { font-size: 16px; color: rgba(255,255,255,0.72); margin: 0 0 36px; line-height: 1.7; font-weight: 500; }
     .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: center; }
     .hero-cta .btn.primary { padding: 16px 36px; font-size: 16px; box-shadow: 0 4px 20px rgba(37,99,235,0.35); }
-    .hero-cta .btn.kakao-btn { padding: 16px 28px; font-size: 15px; }
     .hero-micro { display: block; margin-top: 16px; font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 600; letter-spacing: 0.02em; }
     .hero-scroll {
       position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 2;
@@ -207,7 +203,6 @@
       --google-light: #E8F0FE;
       --insta: #E4405F;
       --insta-light: #FDE8EC;
-      --kakao-light: #FFF9DB;
       --purple: #7C3AED;
       --purple-light: #F0EAFF;
       --amber: #E67E22;
@@ -512,10 +507,6 @@
     .toast-icon { color: var(--accent); font-size: 22px; flex-shrink: 0; }
     .toast-body strong { display: block; font-size: 15px; color: var(--text); }
     .toast-body span { font-size: 13px; color: var(--muted); }
-    .kakao-float { position: fixed; bottom: 24px; right: 24px; z-index: 9998; width: 56px; height: 56px; border-radius: 50%; background: var(--kakao); border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.12); display: flex; align-items: center; justify-content: center; transition: transform 0.3s, box-shadow 0.3s, opacity 0.4s; opacity: 0; pointer-events: none; }
-    .kakao-float.visible { opacity: 1; pointer-events: auto; }
-    .kakao-float:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(0,0,0,0.18); }
-    .kakao-float svg { width: 28px; height: 28px; }
     footer { border-top: 1px solid var(--border); padding: 40px 0 60px; color: var(--muted); font-size: 13px; font-weight: 500; text-align: center; line-height: 1.8; }
     .footer-biz { margin-top: 20px; font-size: 12px; color: #999; line-height: 1.9; }
     .footer-biz a { color: #999; text-decoration: underline; text-underline-offset: 2px; }
@@ -528,6 +519,20 @@
     .drawer.open { display: block; }
     .mobile-sticky { display: none; }
     .section-fade-to-dark { height: 100px; margin: 0; background: linear-gradient(180deg, var(--bg) 0%, #0A0F1E 100%); }
+    .section-fade-from-dark { height: 80px; margin: 0; background: linear-gradient(180deg, #0A0F1E 0%, var(--accent-light) 100%); }
+    .section-divider {
+      height: 1px; margin: 0; position: relative;
+      background: linear-gradient(90deg, transparent 0%, var(--border) 20%, var(--accent) 50%, var(--border) 80%, transparent 100%);
+      opacity: 0.4;
+    }
+    .section-divider--soft {
+      height: 48px; margin: 0;
+      background: linear-gradient(180deg, var(--bg) 0%, #fff 100%);
+    }
+    .section-divider--soft-rev {
+      height: 48px; margin: 0;
+      background: linear-gradient(180deg, #fff 0%, var(--bg) 100%);
+    }
 
 
 
@@ -646,7 +651,6 @@
       .section-bridge { height: 56px; }
       .mobile-sticky { display: block; position: fixed; bottom: 0; left: 0; right: 0; background: #111; padding: 14px 20px; padding-bottom: calc(14px + env(safe-area-inset-bottom)); text-align: center; z-index: 9999; box-shadow: 0 -4px 16px rgba(0,0,0,0.15); }
       .mobile-sticky a { display: block; background: var(--accent); color: #fff; font-weight: 800; font-size: 16px; padding: 14px; border-radius: 8px; }
-      .kakao-float { display: none; }
 
       /* ─── Mobile Center Alignment ─── */
       .hero { min-height: 100vh; min-height: 100svh; }
@@ -736,10 +740,7 @@
     </p>
     <div class="hero-cta">
       <a class="btn primary" href="#diagnostic">무료 매장 진단 받기</a>
-      <a class="btn kakao-btn" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
-        카카오 상담
-      </a>
+
     </div>
     <span class="hero-micro">무료 진단 · 결제 정보 불필요 · 1영업일 내 회신</span>
   </div>
@@ -830,10 +831,7 @@
             <a class="btn primary" href="#contact" onclick="fillFormFromDiag()" style="font-size:16px; padding:16px 36px; gap:10px;">
               이 내용으로 바로 문의하기 ↓
             </a>
-            <a class="btn kakao-btn" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" onclick="copyDiagForKakao()" style="font-size:15px; padding:14px 32px; gap:10px;">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
-              카카오톡으로 상담하기
-            </a>
+
             <a class="btn" href="#packages" style="font-size:14px; padding:12px 24px;">서비스 구조 확인 ↓</a>
           </div>
         </div>
@@ -841,6 +839,8 @@
     </div>
   </div>
 </section>
+
+<div class="section-divider"></div>
 
 <!-- ═══ 4. PROBLEM ═══ -->
 <section id="problem">
@@ -893,6 +893,8 @@
     </div>
   </div>
 </section>
+
+<div class="section-divider--soft"></div>
 
 <!-- ═══ 5. 3-LAYER SYSTEM ═══ -->
 <section id="system" style="background: #fff;">
@@ -953,7 +955,7 @@
       </div>
     </div>
     <div class="layer-note reveal d2" style="max-width:720px; margin:24px auto 0;">
-      이 세 단계는 따로 움직이면 효과가 반감됩니다.<br><span class="ln-em">하나의 흐름으로 연결될 때, 비로소 매출이 만들어집니다.</span>
+      이 세 단계는 따로 움직이면 효과가 반감됩니다.<br><br><span class="ln-em">하나의 흐름으로 연결될 때, 비로소 매출이 만들어집니다.</span>
     </div>
   </div>
 </section>
@@ -1019,6 +1021,7 @@
   </div>
 </section>
 
+<div class="section-divider--soft"></div>
 
 <!-- ═══ 7. CASES / PROOF ═══ -->
 <section id="cases" style="background:#fff;">
@@ -1046,13 +1049,15 @@
       <article class="card case-card reveal d3">
         <span class="case-badge">REVENUE CONNECTION</span>
         <h3 class="keep-all">문의는 오는데 실제 방문이 적은 매장</h3>
-        <p class="keep-all">리뷰 구조, FAQ, 카카오/전화 문의 연결, 문의 이후 응답 흐름까지 다시 설계해 “들어오긴 하는데 끝까지 안 가는” 문제을 풀었습니다. 세팅보다 연결 구조가 중요했습니다.</p>
+        <p class="keep-all">리뷰 구조, FAQ, 전화/문의 연결, 문의 이후 응답 흐름까지 다시 설계해 “들어오긴 하는데 끝까지 안 가는” 문제을 풀었습니다. 세팅보다 연결 구조가 중요했습니다.</p>
         <div class="case-stat"><div><strong>3단</strong><span>매출 연결 구조</span></div><div><strong>중요</strong><span>리뷰 · FAQ · 문의연결</span></div></div>
         <div class="case-insight keep-all">핵심 인사이트: 발견과 신뢰가 있어도, 문의와 방문을 잇는 흐름이 약하면 매출은 만들어지지 않습니다.</div>
       </article>
     </div>
   </div>
 </section>
+
+<div class="section-divider"></div>
 
 <!-- ═══ 8. TESTIMONIALS — 대표님들의 실제 후기 ═══ -->
 <section class="testimonial-section" style="padding-top:72px;">
@@ -1121,6 +1126,8 @@
     </div>
   </div>
 </section>
+
+<div class="section-divider"></div>
 
 <!-- ═══ 10. PACKAGES ═══ -->
 <section id="packages">
@@ -1252,6 +1259,8 @@
   </div>
 </section>
 
+<div class="section-fade-from-dark"></div>
+
 <!-- ═══ 13. FAQ ═══ -->
 <section id="faq" style="background: var(--accent-light);">
   <div class="wrap">
@@ -1293,14 +1302,11 @@
 <section class="final-cta" style="padding-bottom: 64px;">
   <div class="wrap">
     <div class="section-header center reveal">
-      <h2 class="section-title keep-all" style="font-size: clamp(24px,4.5vw,36px);">지금 필요한 건 광고를 더 태우는 일이 아니라,<br>발견된 관심이 문의와 방문으로<br>이어지는 구조를 먼저 만드는 일입니다.</h2>
+      <h2 class="section-title keep-all" style="font-size: clamp(24px,4.5vw,36px);">지금 필요한 건 광고를 더 태우는 일이 아니라,<br>관심이 문의와 방문으로 이어지는 구조를 먼저 만드는 일입니다.</h2>
       <p class="section-desc keep-all">고객을 가장 많이 놓치는 곳 1개를 정리해 드립니다.<br>무료 진단 후, 우리 매장에 맞는 단계와 범위를 함께 제안합니다.</p>
     </div>
     <div class="reveal d1" style="text-align:center;">
-      <a class="btn kakao-btn pulse-attention" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" style="font-size:17px; padding:18px 44px; gap:10px;">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
-        카카오톡으로 무료 매장 진단받기
-      </a>
+      <a class="btn primary pulse-attention" href="#contact" style="font-size:17px; padding:18px 44px;">무료 매장 진단 요청하기</a>
       <p class="final-cta-sub">✓ 결제 정보 불필요 &nbsp; ✓ 1영업일 내 회신 &nbsp; ✓ 진단 후 판단</p>
     </div>
   </div>
@@ -1348,12 +1354,9 @@
       <p class="form-disclaimer">* 작성해주신 정보는 진단 목적에만 사용합니다.</p>
     </form>
     <div class="form-fallback" id="formFallback">
-      <p class="keep-all">양식 접수가 현재 준비 중입니다.<br>카카오톡으로 문의하시면 동일한 진단 리포트를 보내드립니다.</p>
-      <a class="btn kakao-btn" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" style="font-size:15px; padding:14px 32px; gap:8px;">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
-        카카오톡으로 문의하기
-      </a>
-      <p class="sub">작성하신 내용은 저장되지 않았으니, 카카오톡에서 간단히 말씀해 주세요.</p>
+      <p class="keep-all">양식 접수가 현재 준비 중입니다.<br>전화 또는 이메일로 문의해 주시면 동일한 진단 리포트를 보내드립니다.</p>
+      <a class="btn primary" href="tel:010-6461-6594" style="font-size:15px; padding:14px 32px;">010-6461-6594 전화 문의</a>
+      <p class="sub">작성하신 내용은 저장되지 않았으니, 전화 시 간단히 말씀해 주세요.</p>
     </div>
   </div>
 </section>
@@ -1364,7 +1367,7 @@
 <div class="copy-toast" id="copyToast">
   <span class="copy-toast-icon">📋</span>
   진단 결과가 복사되었습니다
-  <span class="copy-toast-sub">아래 문의 양식에 붙여넣기 하시거나,<br>카카오톡 상담 시 붙여넣기 해주세요.</span>
+  <span class="copy-toast-sub">아래 문의 양식에 붙여넣기 하시면<br>더 정확한 진단을 받으실 수 있습니다.</span>
 </div>
 
 <footer>
@@ -1383,10 +1386,8 @@
   </div>
 </footer>
 
-<a class="kakao-float" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" aria-label="카카오톡 상담">
-  <svg viewBox="0 0 24 24" fill="#3C1E1E"><path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.24.11.06.24.01.24.01.32-.04 3.7-2.4 4.28-2.81.56.08 1.14.13 1.72.13 5.52 0 10-3.58 10-7.86C22 6.58 17.52 3 12 3z"/></svg>
-</a>
-<div class="mobile-sticky"><a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">지금 카카오로 무료 매장 진단받기</a></div>
+
+<div class="mobile-sticky"><a href="#diagnostic">무료 매장 진단 받기</a></div>
 
 <script>
 // ═══ HAMBURGER ═══
@@ -1488,7 +1489,7 @@ function copyDiagForKakao(){
 // ═══ FORM ═══
 const form=document.getElementById("contactForm"),toast=document.getElementById("formToast"),fallback=document.getElementById("formFallback");
 function showToast(){if(!toast)return;toast.classList.add("show");setTimeout(()=>{toast.classList.remove("show");},4000);}
-form?.addEventListener("submit",(e)=>{e.preventDefault();const a=form.getAttribute("action");if(a&&a!=="#"){fetch(a,{method:"POST",body:new FormData(form)}).then(r=>{if(r.ok){showToast();form.reset();}else{alert("전송 오류. 카카오톡으로 문의해주세요.");}}).catch(()=>alert("네트워크 오류. 카카오톡으로 문의해주세요."));}else{form.style.display="none";fallback?.classList.add("visible");}});
+form?.addEventListener("submit",(e)=>{e.preventDefault();const a=form.getAttribute("action");if(a&&a!=="#"){fetch(a,{method:"POST",body:new FormData(form)}).then(r=>{if(r.ok){showToast();form.reset();}else{alert("전송 오류. 전화(010-6461-6594)로 문의해주세요.");}}).catch(()=>alert("네트워크 오류. 전화(010-6461-6594)로 문의해주세요."));}else{form.style.display="none";fallback?.classList.add("visible");}});
 
 
 
@@ -1552,9 +1553,7 @@ if('IntersectionObserver' in window){
 }
 setTimeout(()=>{document.querySelectorAll('.reveal:not(.active), .reveal-scale:not(.active)').forEach(el=>{el.style.opacity='1';el.style.transform='none';});},6000);
 
-// ═══ KAKAO FLOAT ═══
-const kf=document.querySelector('.kakao-float');
-if(kf&&window.innerWidth>720){let s=false;window.addEventListener('scroll',()=>{if(!s&&window.scrollY>600){kf.classList.add('visible');s=true;}},{passive:true});}
+
 </script>
 <div class="live-toast" id="liveToast2">
   <span class="lt-dot"></span>
