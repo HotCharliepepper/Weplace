@@ -168,7 +168,7 @@
     .footer-biz a{color:var(--text);font-weight:600}
     .mobile-sticky{display:none}
     @media(max-width:980px){.flip-grid,.pkg-grid,.testi-grid,.svc-grid,.cta-channels{grid-template-columns:1fr}.persp-layout{grid-template-columns:1fr}.persp-visual{height:240px}}
-    @media(max-width:720px){:root{--section-gap:80px}.nav-links{display:none}.hamburger{display:inline-flex;background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:13px;font-weight:700;cursor:pointer}.hero h1{font-size:clamp(24px,7vw,32px)}.hero-sub{font-size:14px}.hero-cta{flex-direction:column;align-items:stretch}.hero-cta .btn{width:100%;justify-content:center}.section-header{text-align:center}.section-header .section-desc{margin-left:auto;margin-right:auto}.section-label{display:block;width:fit-content;margin-left:auto;margin-right:auto}.flip-card{height:180px}.mobile-sticky{display:block;position:fixed;bottom:0;left:0;right:0;background:var(--text);padding:14px 20px;padding-bottom:calc(14px + env(safe-area-inset-bottom));text-align:center;z-index:9999}.mobile-sticky a{display:block;background:var(--brand);color:#fff;font-weight:800;font-size:15px;padding:14px;border-radius:10px}body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}.persp-layout.reverse{direction:ltr}.insight-slide{padding:0 24px}.reveal{opacity:1!important;transform:none!important}}
+    @media(max-width:720px){:root{--section-gap:80px}.nav-links{display:none}.hamburger{display:inline-flex;background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:13px;font-weight:700;cursor:pointer}.hero{min-height:85vh;min-height:85svh}.hero-video video{object-position:center 30%}.hero h1{font-size:clamp(24px,7vw,32px)}.hero-sub{font-size:14px}.hero-cta{flex-direction:column;align-items:stretch}.hero-cta .btn{width:100%;justify-content:center}.section-header{text-align:center}.section-header .section-desc{margin-left:auto;margin-right:auto}.section-label{display:block;width:fit-content;margin-left:auto;margin-right:auto}.flip-card{height:180px}.mobile-sticky{display:block;position:fixed;bottom:0;left:0;right:0;background:var(--text);padding:14px 20px;padding-bottom:calc(14px + env(safe-area-inset-bottom));text-align:center;z-index:9999}.mobile-sticky a{display:block;background:var(--brand);color:#fff;font-weight:800;font-size:15px;padding:14px;border-radius:10px}body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}.persp-layout.reverse{direction:ltr}.insight-slide{padding:0 24px}.reveal{opacity:1!important;transform:none!important}}
   </style>
 </head>
 <body>
@@ -177,7 +177,7 @@
 
 <!-- ═══ 1. HERO ═══ -->
 <section class="hero">
-  <div class="hero-video"><video autoplay muted loop playsinline poster="hero-poster.jpg"><source src="hero-bg.mp4" type="video/mp4"></video></div>
+  <div class="hero-video"><video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="hero-poster.jpg"><source src="hero-bg.mp4" type="video/mp4"></video></div>
   <div class="hero-inner">
     <span class="section-label">매장을 함께 읽는 팀</span>
     <h1 class="keep-all">고객은 <span class="em">검색</span>으로 찾아오지만,<br><span class="em">감각</span>으로 머무르고,<br><span class="em">경험</span>으로 소개합니다.</h1>
@@ -373,6 +373,8 @@
 <div class="mobile-sticky"><a href="#contact">매장 상황 이야기하기</a></div>
 <script>
 const hamburger=document.getElementById("hamburger"),drawer=document.getElementById("drawer");
+// Hero video autoplay fallback
+(function(){const v=document.querySelector('.hero-video video');if(!v)return;const tryPlay=()=>{v.play().catch(()=>{});};if(document.readyState==='complete')tryPlay();else window.addEventListener('load',tryPlay);document.addEventListener('touchstart',tryPlay,{once:true});})();
 hamburger?.addEventListener("click",()=>drawer.classList.toggle("open"));
 drawer?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>drawer.classList.remove("open")));
 
