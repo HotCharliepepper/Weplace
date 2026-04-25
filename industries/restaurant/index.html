@@ -3,798 +3,586 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>식당의 검색 노출과 문의 전환을 설계합니다 | 위플레이스 마케팅</title>
-  <meta
-    name="description"
-    content="위플레이스 마케팅은 식당의 네이버플레이스, 구글 비즈니스 프로필, 홈페이지 구조, FAQ, 리뷰, 메인사진과 썸네일까지 함께 정비해 검색 노출과 문의 전환을 설계합니다."
-  />
-  <meta name="robots" content="index,follow" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="식당의 검색 노출과 문의 전환을 설계합니다 | 위플레이스 마케팅" />
-  <meta
-    property="og:description"
-    content="식당의 강점이 검색 결과와 플레이스 화면, 실제 방문 경험까지 자연스럽게 이어지도록 설계합니다."
-  />
-  <meta property="og:url" content="https://weplace.netlify.app/industries/restaurant/" />
-  <meta property="og:image" content="https://weplace.netlify.app/og-image.png" />
-
+  <!-- SEO -->
+  <title>식당의 검색과 문의를 함께 설계합니다 | We Place</title>
+  <meta name="description" content="사장님은 매장에서 손님을 보지만, 손님은 화면에서 사장님을 봅니다. 위플레이스는 식당의 네이버 플레이스, 구글 비즈니스 프로필, 홈페이지 정보를 하나의 기준으로 정렬합니다." />
   <link rel="canonical" href="https://weplace.netlify.app/industries/restaurant/" />
 
-  <style>
-    :root {
-      --bg: #08111f;
-      --bg-soft: #0d1830;
-      --panel: rgba(255,255,255,0.06);
-      --panel-strong: rgba(255,255,255,0.1);
-      --line: rgba(255,255,255,0.12);
-      --text: #f5f7fb;
-      --muted: #b9c3d4;
-      --accent: #7cc4ff;
-      --accent-strong: #c7ecff;
-      --max: 1160px;
-      --radius: 24px;
-      --shadow: 0 20px 50px rgba(0,0,0,0.28);
-    }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="We Place" />
+  <meta property="og:title" content="식당의 검색과 문의를 함께 설계합니다 | We Place" />
+  <meta property="og:description" content="사장님은 매장에서 손님을 보지만, 손님은 화면에서 사장님을 봅니다." />
+  <meta property="og:url" content="https://weplace.netlify.app/industries/restaurant/" />
+  <meta property="og:image" content="https://weplace.netlify.app/og-image.png" />
+  <meta property="og:locale" content="ko_KR" />
 
-    * {
-      box-sizing: border-box;
-    }
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="식당의 검색과 문의를 함께 설계합니다 | We Place" />
+  <meta name="twitter:description" content="사장님은 매장에서 손님을 보지만, 손님은 화면에서 사장님을 봅니다." />
 
-    html {
-      scroll-behavior: smooth;
-    }
+  <!-- Last modified -->
+  <meta property="article:published_time" content="2025-12-15T00:00:00+09:00" />
+  <meta property="article:modified_time" content="2025-12-15T00:00:00+09:00" />
+  <meta name="last-modified" content="2025-12-15" />
 
-    body {
-      margin: 0;
-      font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(67, 132, 255, 0.16), transparent 30%),
-        linear-gradient(180deg, #07101d 0%, #0a1324 42%, #08111f 100%);
-      color: var(--text);
-      line-height: 1.65;
-    }
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/common.css" />
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .container {
-      width: min(calc(100% - 32px), var(--max));
-      margin: 0 auto;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(18px);
-      background: rgba(5, 10, 20, 0.68);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .header-inner {
-      min-height: 74px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .logo {
-      font-size: 1.3rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-    }
-
-    .logo span {
-      color: var(--accent);
-    }
-
-    .nav {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .nav a {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .nav a:hover {
-      color: var(--text);
-    }
-
-    .nav-cta {
-      padding: 10px 16px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, rgba(124,196,255,0.22), rgba(199,236,255,0.12));
-      border: 1px solid rgba(124,196,255,0.26);
-      color: var(--text) !important;
-      font-weight: 600;
-    }
-
-    .hero {
-      padding: 92px 0 52px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 28px;
-      align-items: stretch;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(124,196,255,0.1);
-      border: 1px solid rgba(124,196,255,0.16);
-      color: var(--accent-strong);
-      font-size: 0.88rem;
-      margin-bottom: 16px;
-    }
-
-    h1 {
-      margin: 0 0 18px;
-      font-size: clamp(2.2rem, 5vw, 4.4rem);
-      line-height: 1.08;
-      letter-spacing: -0.05em;
-    }
-
-    .hero p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.06rem;
-    }
-
-    .hero-actions {
-      margin-top: 26px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 50px;
-      padding: 0 20px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 0.96rem;
-      transition: transform 0.18s ease, opacity 0.18s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-1px);
-      opacity: 0.96;
-    }
-
-    .btn-primary {
-      color: #07101d;
-      background: linear-gradient(135deg, #d8f1ff 0%, #8bd3ff 100%);
-      box-shadow: var(--shadow);
-    }
-
-    .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.04);
-      color: var(--text);
-    }
-
-    .hero-card,
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .hero-card {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 18px;
-    }
-
-    .hero-card h2 {
-      margin: 0;
-      font-size: 1.05rem;
-      letter-spacing: -0.02em;
-    }
-
-    .hero-card ul {
-      margin: 0;
-      padding-left: 18px;
-      color: var(--muted);
-    }
-
-    .hero-card li + li {
-      margin-top: 10px;
-    }
-
-    .hero-card-note {
-      padding-top: 16px;
-      border-top: 1px solid var(--line);
-      color: var(--accent-strong);
-      font-size: 0.92rem;
-    }
-
-    section {
-      padding: 38px 0;
-    }
-
-    .section-head {
-      max-width: 780px;
-      margin-bottom: 24px;
-    }
-
-    .section-kicker {
-      display: inline-block;
-      margin-bottom: 10px;
-      color: var(--accent);
-      font-size: 0.92rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      font-size: clamp(1.65rem, 3vw, 2.5rem);
-      line-height: 1.18;
-      letter-spacing: -0.04em;
-    }
-
-    .section-head p,
-    .body-copy,
-    .faq-answer,
-    .cta-copy,
-    .muted {
-      color: var(--muted);
-    }
-
-    .grid-2,
-    .grid-3 {
-      display: grid;
-      gap: 18px;
-    }
-
-    .grid-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 22px;
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-      font-size: 1.12rem;
-      letter-spacing: -0.03em;
-    }
-
-    .card p,
-    .card li {
-      color: var(--muted);
-    }
-
-    .card ul,
-    .process-list,
-    .faq-list {
-      margin: 0;
-      padding-left: 18px;
-    }
-
-    .card li + li,
-    .process-list li + li {
-      margin-top: 8px;
-    }
-
-    .highlight-panel {
-      padding: 28px;
-      background:
-        linear-gradient(180deg, rgba(124,196,255,0.08), rgba(255,255,255,0.04));
-      border: 1px solid rgba(124,196,255,0.18);
-      border-radius: 24px;
-    }
-
-    .highlight-panel strong {
-      color: var(--text);
-    }
-
-    .faq-item {
-      padding: 22px;
-      border-radius: 22px;
-      background: var(--panel);
-      border: 1px solid var(--line);
-    }
-
-    .faq-question {
-      margin: 0 0 10px;
-      font-size: 1.04rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .cta-wrap {
-      padding: 34px;
-      border-radius: 28px;
-      background:
-        linear-gradient(135deg, rgba(124,196,255,0.16), rgba(255,255,255,0.05));
-      border: 1px solid rgba(124,196,255,0.2);
-      box-shadow: var(--shadow);
-    }
-
-    .cta-wrap h2 {
-      margin-bottom: 14px;
-    }
-
-    .cta-actions {
-      margin-top: 22px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .related-links {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 18px;
-    }
-
-    .chip-link {
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .chip-link:hover {
-      color: var(--text);
-      border-color: rgba(124,196,255,0.22);
-    }
-
-    .site-footer {
-      padding: 38px 0 54px;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      margin-top: 44px;
-    }
-
-    .footer-grid {
-      display: flex;
-      justify-content: space-between;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .footer-brand {
-      max-width: 520px;
-    }
-
-    .footer-brand h3 {
-      margin: 0 0 10px;
-      font-size: 1.1rem;
-    }
-
-    .footer-brand p,
-    .footer-meta {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 920px) {
-      .hero-grid,
-      .grid-2,
-      .grid-3 {
-        grid-template-columns: 1fr;
+  <!-- JSON-LD: FAQ Schema (AEO용) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "식당 마케팅 대행은 보통 얼마나 걸리고, 어떻게 진행되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "위플레이스는 매장 상황을 먼저 듣고, 네이버 플레이스와 구글 비즈니스 프로필을 직접 열어 진단부터 드립니다. 보통 첫 한 달은 정보 정렬과 사진·리뷰 응답 정비, 두 달째부터 검색에서 잡히는 변화가 보이기 시작합니다. 월 단위로 자유롭게 종료할 수 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "식당인데 노출만 늘리면 손님이 더 오나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "노출이 늘어도 메인 사진이 흐릿하거나, 영업시간·메뉴가 어긋나 있거나, 리뷰에 답글이 없으면 손님은 화면에서 멈춥니다. 위플레이스는 노출보다 먼저 화면에서 손님이 멈추는 지점을 정리합니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "외국인 손님이 부쩍 늘었는데, 영어 응대까지 신경 쓸 여력이 없습니다.",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "구글 비즈니스 프로필의 영문 비즈니스 설명, 메뉴 영문 표기, 영문 리뷰 응답 템플릿까지 위플레이스가 함께 정리합니다. 사장님은 평소처럼 매장만 보시면 됩니다."
+        }
       }
+    ]
+  }
+  </script>
 
-      .nav {
-        display: none;
-      }
-
-      .hero {
-        padding-top: 72px;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .container {
-        width: min(calc(100% - 24px), var(--max));
-      }
-
-      .hero-card,
-      .card,
-      .faq-item,
-      .cta-wrap,
-      .highlight-panel {
-        padding: 18px;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .hero-actions,
-      .cta-actions {
-        flex-direction: column;
-      }
-    }
-  </style>
-
+  <!-- JSON-LD: Service Schema (GEO용) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "식당 검색 노출 및 문의 전환 설계",
-    "serviceType": "Restaurant Search Visibility and Conversion Design",
+    "serviceType": "식당 검색 노출·문의 전환 설계",
     "provider": {
       "@type": "Organization",
-      "name": "위플레이스 마케팅",
+      "name": "We Place",
       "url": "https://weplace.netlify.app/"
     },
     "areaServed": "KR",
-    "url": "https://weplace.netlify.app/industries/restaurant/",
-    "description": "위플레이스 마케팅은 식당의 네이버플레이스, 구글 비즈니스 프로필, 홈페이지 구조, FAQ, 리뷰, 메인사진과 썸네일까지 함께 정비해 검색 노출과 문의 전환을 설계합니다."
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "식당, 음식점, 카페, 한식, 일식, 양식, 이자카야, 디저트 매장 운영자"
+    },
+    "description": "네이버 플레이스, 구글 비즈니스 프로필, 홈페이지에 흩어진 식당 정보를 하나의 기준으로 정렬하고, 검색에서 손님이 발견하고 실제로 연락하기까지의 흐름을 설계합니다."
   }
   </script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="/" class="logo">We<span>place</span></a>
-      <nav class="nav" aria-label="주요 메뉴">
-        <a href="/">홈</a>
-        <a href="/industries/restaurant/">식당</a>
-        <a href="/problems/google-business-profile/">GBP</a>
-        <a href="/problems/geo-homepage/">AEO/GEO</a>
-        <a href="https://pf.kakao.com/_mxbexhX" class="nav-cta">상담 문의</a>
-      </nav>
+
+<body class="tone-default">
+
+<!-- ========== Header ========== -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="/" class="site-logo" aria-label="We Place 홈">
+      We<span class="logo-comma">,</span>Place<span class="logo-dot">.</span>
+    </a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="/industries/restaurant/" aria-current="page">식당</a>
+      <a href="/problems/">문제별</a>
+      <a href="/#how">우리가 일하는 방식</a>
+      <a href="/#contact" class="t-accent">연결하기</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ========== Hero ========== -->
+  <section class="hero bg-paper">
+    <div class="container-narrow fade-in">
+      <span class="t-eyebrow">For Restaurants</span>
+      <h1 class="hero__title" style="max-width: 22ch;">
+        사장님은 매장에서 손님을 보지만,<br>
+        손님은 <span class="t-accent">화면</span>에서 사장님을 봅니다.
+      </h1>
+      <p class="hero__lead">
+        같은 가게라도, 손님이 들어오기 전에 만나는 건 매장이 아니라 화면입니다.<br>
+        위플레이스는 식당의 첫 화면 — 네이버, 구글, 홈페이지 — 을 함께 정리합니다.
+      </p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn-primary btn-lg">매장 상황 알려주기</a>
+        <a href="#first-screen" class="btn btn-ghost btn-lg">첫 화면 보러 가기 ↓</a>
+      </div>
+
+      <!-- 신뢰 표지 3줄 -->
+      <div class="trust-strip" id="trust-strip" aria-label="위플레이스가 일하는 방식">
+        <div class="trust-strip__inner">
+          <div class="trust-item">
+            <span class="trust-item__check">✓</span>
+            <span>콜드콜·전화 영업으로 연락드리지 않습니다</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__check">✓</span>
+            <span>매장 상호만 알려주시면, 진단부터 드립니다</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__check">✓</span>
+            <span>월 단위로 자유롭게 종료됩니다</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">Restaurant Search Conversion</div>
-          <h1>식당의 발견성과 문의 전환을<br />함께 설계합니다</h1>
-          <p>
-            네이버플레이스, 구글 비즈니스 프로필, 홈페이지, 리뷰, FAQ, 메인사진과 썸네일까지.<br />
-            위플레이스는 식당이 검색에서 보이고 화면에서 신뢰를 얻고 실제 방문으로 이어지도록 구조를 함께 설계합니다.
-          </p>
 
-          <div class="hero-actions">
-            <a href="https://pf.kakao.com/_mxbexhX" class="btn btn-primary">식당 상담 문의하기</a>
-            <a href="#what-we-fix" class="btn btn-secondary">무엇을 손보는지 보기</a>
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="핵심 정리">
-          <div>
-            <h2>위플레이스가 식당을 볼 때 먼저 확인하는 것</h2>
-            <ul>
-              <li>메인사진이 계절감과 대표메뉴를 제대로 보여주는지</li>
-              <li>소개글이 분위기만 말하고 끝나지 않는지</li>
-              <li>네이버와 구글의 정보 흐름이 서로 어긋나지 않는지</li>
-              <li>리뷰가 쌓여도 강점이 구조적으로 읽히는지</li>
-              <li>화면 첫인상이 실제 방문 기대감으로 이어지는지</li>
-            </ul>
-          </div>
-          <div class="hero-card-note">
-            단순 노출이 아니라, 검색 → 화면 신뢰 → 방문 기대 → 문의 연결의 흐름을 봅니다.
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="why-now">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">왜 지금 중요한가</span>
-          <h2>지금 식당은 맛만으로 선택되지 않습니다</h2>
-          <p>
-            손님은 먼저 검색합니다. 그리고 사진을 보고, 소개글을 보고, 리뷰를 보고, 위치와 분위기를 확인합니다.
-            이 과정에서 식당의 강점이 화면에 제대로 번역되지 않으면 좋은 매장도 쉽게 지나쳐집니다.
-          </p>
-        </div>
-
-        <div class="highlight-panel">
-          <p class="body-copy">
-            위플레이스는 식당의 실제 강점이 <strong>검색결과</strong>와 <strong>플레이스 화면</strong>,
-            그리고 <strong>방문 전 기대감</strong>까지 자연스럽게 이어지도록 정리합니다.
-            키워드만 보는 것이 아니라, 손님이 어떤 흐름으로 멈추고 신뢰하고 움직이는지까지 함께 봅니다.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="blind-spots">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">대표님들이 자주 놓치는 지점</span>
-          <h2>문제가 없는 식당이 아니라,<br />정리가 덜 된 식당이 많습니다</h2>
-        </div>
-
-        <div class="grid-3">
-          <article class="card">
-            <h3>메인사진이 강점을 못 보여줍니다</h3>
-            <p>
-              현재 계절과 대표메뉴, 첫인상 분위기가 메인사진에서 약하게 읽히면 좋은 매장도 첫 정지점에서 손해를 봅니다.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>소개글이 추상적입니다</h3>
-            <p>
-              정성, 맛, 분위기 같은 말만 반복하면 검색하는 손님은 “그래서 어떤 식당인지”를 빠르게 이해하기 어렵습니다.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>네이버와 구글이 따로 놉니다</h3>
-            <p>
-              한쪽은 정리돼 있고 한쪽은 비어 있거나 결이 다르면, 손님이 교차 확인하는 순간 신뢰 흐름이 끊길 수 있습니다.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>사진 흐름에 의도가 없습니다</h3>
-            <p>
-              음식, 공간, 좌석, 외관, 분위기 사진의 순서가 섞여 있으면 손님이 머릿속으로 매장을 그리기 어려워집니다.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>리뷰가 쌓여도 강점이 흐립니다</h3>
-            <p>
-              손님이 어떤 포인트를 좋게 느끼는지 구조가 없으면 리뷰가 많아도 대표 강점이 선명하게 남지 않습니다.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>문의 동선이 약합니다</h3>
-            <p>
-              단체 예약, 외국인 안내, 위치 확인, 대표 메뉴 확인 같은 문의 포인트가 명확히 연결되지 않으면 기회를 놓치게 됩니다.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="weplace-structure">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">위플레이스가 보는 구조</span>
-          <h2>저희는 식당을 이렇게 봅니다</h2>
-          <p>
-            저희는 단순히 키워드만 보지 않습니다.
-            손님이 어떤 상황에서 검색하는지, 어떤 사진에서 멈추는지, 어떤 문장에서 안심하는지,
-            그리고 어떤 흐름에서 방문을 결심하는지까지 함께 봅니다.
-          </p>
-        </div>
-
-        <div class="grid-2">
-          <article class="card">
-            <h3>검색에서 읽히는 구조</h3>
-            <ul>
-              <li>네이버플레이스 소개글 정리</li>
-              <li>구글 비즈니스 프로필 설명과 카테고리 점검</li>
-              <li>리뷰 문맥과 FAQ 연결</li>
-              <li>검색어와 실제 방문 의도의 간극 확인</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>화면에서 읽히는 구조</h3>
-            <ul>
-              <li>대표사진과 썸네일 방향 재설계</li>
-              <li>메뉴, 공간, 외관, 분위기 사진의 흐름 정리</li>
-              <li>정보 배치와 첫인상 리듬 정리</li>
-              <li>홈페이지 또는 랜딩페이지 연결 구조 정비</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="what-we-fix">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">무엇을 함께 손보는가</span>
-          <h2>글만 바꾸는 것이 아닙니다</h2>
-          <p>
-            위플레이스는 식당의 화면 전체가 하나의 흐름으로 읽히도록 정리합니다.
-          </p>
-        </div>
-
-        <div class="grid-3">
-          <article class="card">
-            <h3>네이버플레이스</h3>
-            <p>소개글, 대표 키워드 방향, 메인사진, 사진 흐름, 정보 정렬을 함께 봅니다.</p>
-          </article>
-
-          <article class="card">
-            <h3>Google Business Profile</h3>
-            <p>설명, 서비스, 사진, 화면 첫인상, 로컬 검색 발견성까지 정비합니다.</p>
-          </article>
-
-          <article class="card">
-            <h3>홈페이지 구조</h3>
-            <p>식당의 강점이 단순 소개가 아니라 신뢰와 문의로 이어지는 흐름으로 재정리합니다.</p>
-          </article>
-
-          <article class="card">
-            <h3>FAQ 설계</h3>
-            <p>예약, 대표 메뉴, 주차, 단체 방문, 외국인 안내처럼 실제 문의를 줄이거나 전환시키는 질문을 정리합니다.</p>
-          </article>
-
-          <article class="card">
-            <h3>리뷰 구조</h3>
-            <p>손님이 어떤 포인트를 기억하게 할지, 어떤 강점이 반복되게 할지 방향을 잡습니다.</p>
-          </article>
-
-          <article class="card">
-            <h3>사진과 썸네일</h3>
-            <p>대표 메뉴, 계절감, 공간 분위기, 고객 기대감이 첫 화면에서 무너지지 않도록 설계합니다.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="what-changes">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">정리되면 달라지는 것</span>
-          <h2>검색 결과에서 이해되고,<br />플레이스 화면에서 덜 손실됩니다</h2>
-        </div>
-
-        <div class="grid-2">
-          <article class="card">
-            <h3>손님 입장</h3>
-            <p>
-              식당이 어떤 곳인지 더 빠르게 이해됩니다.
-              메뉴, 분위기, 위치 신뢰, 화면 인상이 자연스럽게 연결되면서 망설임이 줄어듭니다.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>대표님 입장</h3>
-            <p>
-              실제 강점이 덜 흐려집니다.
-              검색은 노출로, 노출은 관심으로, 관심은 방문과 문의로 이어질 가능성이 높아집니다.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="process">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">진행 방식</span>
-          <h2>보통은 이런 순서로 진행합니다</h2>
-        </div>
-
-        <div class="card">
-          <ol class="process-list">
-            <li>현재 검색 노출과 화면 구조 진단</li>
-            <li>업종과 상권 흐름에 맞춘 핵심 강점 정리</li>
-            <li>네이버플레이스와 구글 프로필 구조 정비</li>
-            <li>사진 흐름과 소개 문구 재정렬</li>
-            <li>필요 시 홈페이지 또는 랜딩페이지 연결 구조 정비</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">FAQ</span>
-          <h2>식당 대표님들이 자주 묻는 질문</h2>
-        </div>
-
-        <div class="grid-2">
-          <article class="faq-item">
-            <h3 class="faq-question">네이버플레이스만 관리하면 안 되나요</h3>
-            <p class="faq-answer">
-              네이버는 여전히 중요합니다. 다만 손님은 네이버만 보지 않고 구글, 리뷰, 홈페이지, 사진까지 함께 확인합니다.
-              한 채널만 정리하면 중간에서 흐름이 끊길 수 있습니다.
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3 class="faq-question">메인사진이 정말 중요한가요</h3>
-            <p class="faq-answer">
-              중요합니다. 손님은 글보다 먼저 사진을 봅니다.
-              대표메뉴, 분위기, 계절감, 매장의 결이 메인사진에서 어긋나면 첫인상에서 손해를 볼 수 있습니다.
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3 class="faq-question">홈페이지가 없어도 진행할 수 있나요</h3>
-            <p class="faq-answer">
-              가능합니다. 다만 메뉴 설명, 강점 정리, FAQ, 단체예약이나 외국인 응대처럼 더 많은 정보를 자연스럽게 연결하려면
-              별도 페이지가 있으면 훨씬 유리합니다.
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3 class="faq-question">어떤 식당 업종과 특히 잘 맞나요</h3>
-            <p class="faq-answer">
-              사시미, 오마카세, 고깃집, 지역 맛집, 브런치, 카페형 식당처럼
-              메뉴와 분위기, 화면 첫인상이 함께 중요한 업종과 특히 잘 맞습니다.
-            </p>
-          </article>
-        </div>
-
-        <div class="related-links">
-          <a href="/problems/google-business-profile/" class="chip-link">Google Business Profile 최적화 보기</a>
-          <a href="/problems/naver-google-structure/" class="chip-link">네이버와 구글 통합 구조 보기</a>
-          <a href="/problems/geo-homepage/" class="chip-link">AEO/GEO 홈페이지 구조 보기</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="cta">
-      <div class="container">
-        <div class="cta-wrap">
-          <h2>식당의 강점이 검색 화면에서 덜 손실되게</h2>
-          <p class="cta-copy">
-            위플레이스는 식당의 실제 강점이 검색 결과와 플레이스 화면, 방문 전 기대감까지 이어지도록 함께 설계합니다.
-            지금 상태를 함께 보고, 어디부터 손봐야 효과가 큰지 먼저 정리해드릴 수 있습니다.
-          </p>
-
-          <div class="cta-actions">
-            <a href="https://pf.kakao.com/_mxbexhX" class="btn btn-primary">카카오톡으로 문의하기</a>
-            <a href="/" class="btn btn-secondary">위플레이스 메인으로 돌아가기</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <h3>위플레이스 마케팅</h3>
-        <p>
-          자영업자의 검색 노출과 문의 전환 구조를 설계합니다.<br />
-          네이버플레이스, Google Business Profile, 홈페이지 구조, FAQ, 리뷰, 사진 흐름까지 함께 봅니다.
+  <!-- ========== Section 1. The First Screen ========== -->
+  <section id="first-screen" class="section bg-paper-soft">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="t-eyebrow">5초 안에 결정됩니다</span>
+        <h2 class="t-h2">손님이 식당을 만나는 건,<br>매장이 아니라 <span class="t-accent">화면</span>입니다.</h2>
+        <p class="t-lead" style="max-width: 52ch; margin: 0 auto;">
+          오늘 우리 식당을 처음 만나는 손님은, 대부분 화면 두 곳을 먼저 엽니다.<br>
+          여기서 5초 안에 멈추거나, 들어옵니다.
         </p>
       </div>
 
-      <div class="footer-meta">
-        <p>Website: weplace.netlify.app</p>
-        <p>Contact: 010-6461-6594</p>
+      <div class="grid grid-2">
+
+        <article class="card">
+          <span class="t-eyebrow" style="color: var(--color-accent);">화면 1 · 네이버 플레이스</span>
+          <h3 class="t-h3" style="margin-top:6px;">한국 손님이 가장 먼저 여는 곳</h3>
+          <p class="card-body">
+            대표 사진, 별점, 리뷰 첫 줄, 영업 중 / 영업 종료, 메뉴 가격 — 손님은 이 다섯 가지를
+            거의 동시에 봅니다. 이 중 어디 하나가 어긋나면, 들어올 결심이 멈춥니다.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="t-eyebrow" style="color: var(--color-accent);">화면 2 · 구글 비즈니스 프로필</span>
+          <h3 class="t-h3" style="margin-top:6px;">외국인 손님과 아이폰 손님이 여는 곳</h3>
+          <p class="card-body">
+            한국 관광객은 네이버를 보지만, 외국인 손님과 아이폰 사용자의 손은 구글로 갑니다.
+            여기에 안 떠 있는 식당은, 그들에게는 처음부터 없는 식당입니다.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="t-caption text-center mt-md">
+        업종마다 화면에 먼저 보여줘야 할 것이 다릅니다. 식당의 첫 화면은, 사진·시간·메뉴 세 가지가 핵심입니다.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ========== Section 2. 5 Common Misses ========== -->
+  <section id="misses" class="section bg-paper">
+    <div class="container-narrow">
+      <div class="text-center mb-lg">
+        <span class="t-eyebrow">자주 놓치는 5가지</span>
+        <h2 class="t-h2">맛은 그대로인데<br>손님이 줄고 있다면,<br>대체로 이 다섯 가지입니다.</h2>
+      </div>
+
+      <ul class="symptom-list">
+        <li>
+          <strong>대표 사진이 옛날 사진입니다.</strong>
+          리뉴얼 전 인테리어, 단종된 메뉴, 어두운 조명. 사장님이 보면 "어, 이걸 아직 쓰고 있었네" 싶은 사진이 첫 화면에 걸려 있습니다.
+        </li>
+        <li>
+          <strong>네이버와 구글의 정보가 서로 다릅니다.</strong>
+          영업시간이 한쪽은 22시, 한쪽은 21시. 주소도 예전 건물 이름. 손님은 헷갈리고, 검색엔진도 우리 가게 정보를 의심하기 시작합니다.
+        </li>
+        <li>
+          <strong>리뷰에 답글이 거의 없습니다.</strong>
+          좋은 리뷰는 그냥 두고, 안 좋은 리뷰만 답하시는 사장님이 많습니다. 검색엔진과 손님은 이걸 정반대로 읽습니다.
+        </li>
+        <li>
+          <strong>메뉴와 가격이 실제와 어긋나 있습니다.</strong>
+          가격이 올랐는데 화면에는 옛날 가격. 단종된 메뉴는 그대로. 손님은 "왔는데 다르네"가 한 번 쌓이면 다시 안 옵니다.
+        </li>
+        <li>
+          <strong>외국인 손님이 늘었는데, 화면은 한국어 그대로입니다.</strong>
+          영업시간만 영문으로 자동 표기되고, 메뉴와 비즈니스 설명은 한글뿐. 외국인 리뷰에 답글도 없는 상태가 길게 이어집니다.
+        </li>
+      </ul>
+
+      <p class="t-caption text-center mt-md">
+        해당되는 항목이 많을수록, 정리해야 할 시점입니다.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ========== Section 3. How We See Restaurants ========== -->
+  <section class="section bg-paper-soft">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="t-eyebrow">위플레이스가 식당을 보는 방식</span>
+        <h2 class="t-h2">매장이 아니라,<br>손님의 <span class="t-accent">동선</span>을 봅니다.</h2>
+        <p class="t-lead" style="max-width: 52ch; margin: 0 auto;">
+          식당은 맛으로 시작하지만, 손님은 손가락 끝에서 결정합니다.<br>
+          위플레이스는 그 손가락이 우리 가게에 닿기까지의 흐름을 봅니다.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <span class="t-eyebrow" style="color: var(--color-accent);">01 · 화면</span>
+          <h3 class="t-h3" style="margin-top:6px;">사진 한 장으로 결정됩니다</h3>
+          <p class="card-body">
+            대표 사진이 흐릿하거나, 메뉴 사진이 어둡거나, 인테리어 사진이 옛날 사진이면
+            손님은 거기서 멈춥니다. 사진 순서를 다시 잡고, 빠진 각도를 채웁니다.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="t-eyebrow" style="color: var(--color-accent);">02 · 정보</span>
+          <h3 class="t-h3" style="margin-top:6px;">두 화면을 같은 기준으로 맞춥니다</h3>
+          <p class="card-body">
+            네이버에 적힌 정보와 구글에 적힌 정보가 같아야 합니다. 영업시간, 휴무일,
+            대표 메뉴, 주소 표기 — 손님이 어느 쪽에서 들어와도 같은 가게를 보게 됩니다.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="t-eyebrow" style="color: var(--color-accent);">03 · 응답</span>
+          <h3 class="t-h3" style="margin-top:6px;">리뷰의 답글이 다음 손님을 부릅니다</h3>
+          <p class="card-body">
+            좋은 리뷰에 어떤 톤으로 답글을 달지, 안 좋은 리뷰는 어떻게 받을지,
+            외국인 리뷰는 어떤 영문 템플릿으로 갈지 — 매장 성격에 맞는 응답 방식을 함께 만듭니다.
+          </p>
+        </article>
       </div>
     </div>
-  </footer>
+  </section>
+
+
+  <!-- ========== Section 4. Why now (수치 앵커) ========== -->
+  <section class="section bg-paper">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="t-eyebrow">Why now</span>
+        <h2 class="t-h2">식당의 첫 화면이<br>점점 더 중요해지고 있습니다.</h2>
+        <p class="t-lead" style="max-width: 52ch; margin: 0 auto;">
+          예전에는 간판과 입구가 첫인상이었습니다. 지금은 화면이 먼저 도착합니다.
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3 class="card-title">거리의 손님이 바뀌었습니다</h3>
+          <p class="card-body">
+            2025년 한국을 찾은 외국인 관광객은 <strong>1,740만 명</strong>을 넘어,
+            역대 최고였던 2019년 기록을 다시 뚫었습니다. 명동·홍대·성수만의 이야기가 아닙니다.
+            지방 골목 맛집 앞에서도, 지도를 들고 서 있는 손님 중 한국어를 쓰지 않는 분이
+            점점 늘고 있습니다. 그들이 여는 첫 앱은 구글맵입니다.
+          </p>
+          <p class="t-caption mt-sm">출처: 한국관광공사, 2025년 1~11월 누적 관광통계</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">국내 손님도 첫 화면에서 결정합니다</h3>
+          <p class="card-body">
+            네이버 플레이스 리뷰의 영향력은 비프랜차이즈 매장일수록 높게 나타납니다.
+            네이버 자체 조사에서, 비프랜차이즈 매장은 프랜차이즈보다 리뷰 효용성 만족도가
+            평균 4.2점을 상회합니다. 작은 식당일수록 첫 화면 정비의 효과가 큽니다.
+          </p>
+          <p class="t-caption mt-sm">출처: 네이버 D-플레이스 리포트</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== Section 5. Practical Details (GEO 디테일) ========== -->
+  <section class="section bg-dark">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="t-eyebrow" style="color: rgba(255,255,255,.7);">자주 빠지는 실무 디테일</span>
+        <h2 class="t-h2" style="color:#fff;">식당 운영자가 셀프로 정비할 때<br>자주 빠뜨리는 4가지.</h2>
+        <p class="t-lead" style="color: rgba(255,255,255,.7); max-width: 56ch; margin: 0 auto;">
+          이 네 가지는 셀프로 챙기실 수도 있습니다. 다만, 잘 안 보이는 자리에 숨어 있습니다.
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <article class="card" style="background:#1A2130; border-color:#2A3142;">
+          <span class="t-eyebrow" style="color: var(--color-accent);">디테일 1</span>
+          <h3 class="card-title" style="color:#fff; margin-top:6px;">구글 비즈니스 카테고리는 1차·2차로 나뉩니다</h3>
+          <p class="card-body" style="color:rgba(255,255,255,.7);">
+            예를 들어 "한식당"이 1차, "갈비 전문점"이 2차. 1차는 메인 검색에, 2차는 세부 검색에 잡힙니다.
+            많은 식당이 1차만 설정해두고 2차를 비워둡니다. 우리 가게에 맞는 2차를 채워야 외국인의 세부
+            검색에서도 발견됩니다.
+          </p>
+        </article>
+
+        <article class="card" style="background:#1A2130; border-color:#2A3142;">
+          <span class="t-eyebrow" style="color: var(--color-accent);">디테일 2</span>
+          <h3 class="card-title" style="color:#fff; margin-top:6px;">대표 사진 첫 장은 "음식 단독"이 안전합니다</h3>
+          <p class="card-body" style="color:rgba(255,255,255,.7);">
+            인테리어 사진이나 외관 사진을 첫 장에 두면, 작은 썸네일에서 무슨 가게인지 안 읽힙니다.
+            식당의 첫 장은 메뉴 한 접시가 정면으로 보이는 사진이 가장 안전합니다.
+          </p>
+        </article>
+
+        <article class="card" style="background:#1A2130; border-color:#2A3142;">
+          <span class="t-eyebrow" style="color: var(--color-accent);">디테일 3</span>
+          <h3 class="card-title" style="color:#fff; margin-top:6px;">임시 휴무는 영업시간보다 우선합니다</h3>
+          <p class="card-body" style="color:rgba(255,255,255,.7);">
+            네이버와 구글 둘 다 "임시 휴무" 설정이 일반 영업시간보다 우선 적용됩니다. 명절·휴가·
+            공사 기간을 따로 등록해두지 않으면 화면에는 "영업 중"으로 떠서 헛걸음이 발생합니다.
+          </p>
+        </article>
+
+        <article class="card" style="background:#1A2130; border-color:#2A3142;">
+          <span class="t-eyebrow" style="color: var(--color-accent);">디테일 4</span>
+          <h3 class="card-title" style="color:#fff; margin-top:6px;">영문 메뉴 표기는 음역이 아니라 설명입니다</h3>
+          <p class="card-body" style="color:rgba(255,255,255,.7);">
+            "Kimchi Jjigae"보다 "Kimchi Jjigae (spicy fermented cabbage stew)"가 잘 잡힙니다.
+            구글은 음역어가 아니라 설명어를 검색 패턴으로 인식합니다. 외국인 손님도 그렇게 검색합니다.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== Section 6. FAQ ========== -->
+  <section class="section bg-paper-soft">
+    <div class="container-narrow">
+      <div class="text-center mb-lg">
+        <span class="t-eyebrow">FAQ</span>
+        <h2 class="t-h2">식당 사장님들이<br>자주 묻는 질문들</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>식당 마케팅 대행은 보통 얼마나 걸리고, 어떻게 진행되나요?</summary>
+          <div class="faq-item__body">
+            매장 상황을 먼저 듣고, 네이버 플레이스와 구글 비즈니스 프로필을 직접 열어
+            진단부터 드립니다. 보통 첫 한 달은 정보 정렬과 사진·리뷰 응답 정비, 두 달째부터
+            검색에서 잡히는 변화가 보이기 시작합니다. 월 단위로 자유롭게 종료할 수 있습니다.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>노출만 늘리면 손님이 더 오나요?</summary>
+          <div class="faq-item__body">
+            노출이 늘어도 메인 사진이 흐릿하거나, 영업시간·메뉴가 어긋나 있거나, 리뷰에 답글이
+            없으면 손님은 화면에서 멈춥니다. 위플레이스는 노출보다 먼저 화면에서 손님이 멈추는
+            지점을 정리합니다. 그게 정비된 다음에 노출을 봅니다.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>외국인 손님이 늘었는데, 영어 응대까지 신경 쓸 여력이 없습니다.</summary>
+          <div class="faq-item__body">
+            구글 비즈니스 프로필의 영문 비즈니스 설명, 메뉴 영문 표기, 영문 리뷰 응답 템플릿까지
+            함께 정리합니다. 사장님은 평소처럼 매장만 보시면 됩니다.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>전화로 영업하는 마케팅 회사들이 너무 많아서 의심부터 듭니다.</summary>
+          <div class="faq-item__body">
+            그 의심이 맞습니다. 위플레이스는 먼저 매장을 네이버 & 구글에서 열어 보고, </br> 어디부터 정리하면 좋을지 보여드린 뒤에 함께 일할지 결정합니다.</br>
+            "노출 보장", "1페이지 노출" 같은 말도 쓰지 않습니다.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>지금 다른 마케팅 회사에 맡기고 있는데, 효과를 모르겠습니다.</summary>
+          <div class="faq-item__body">
+            지금 받고 있는 게 어떤 작업인지, 그게 매장 상황에 맞는지 먼저 같이 봅니다.
+            계약 조건이 있으시면 무리하게 갈아타시라고 권하지 않습니다. 지금 작업과 겹치지 않는
+            부분부터 손볼 수 있습니다.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>상담 전에 제가 준비해야 할 자료가 있나요?</summary>
+          <div class="faq-item__body">
+            없습니다. 매장 이름과 위치만 알려주시면, 위플레이스가 먼저 네이버 플레이스와
+            구글 비즈니스 프로필을 열어 현재 상태를 파악합니다. 사장님은 지금 매장의 고민만
+            편하게 이야기해 주시면 됩니다.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== Section 7. Closing CTA (되돌이 동선) ========== -->
+  <section id="contact" class="section">
+    <div class="container-narrow">
+      <div class="cta-block">
+        <h2 class="cta-block__title">
+          위에서 말씀드린 그대로입니다.<br>
+          매장 이름과 지금 상황만 보내주시면,<br>
+          화면은 <span style="color: var(--color-accent);">저희가 먼저</span> 봅니다.
+        </h2>
+        <p class="cta-block__lead">
+          <a href="#trust-strip" style="color: rgba(255,255,255,.85); text-decoration: underline; text-underline-offset: 4px;">
+            ↑ 위플레이스가 일하는 방식 다시 보기
+          </a>
+        </p>
+
+        <div class="hero__cta" style="margin-top: 24px;">
+          <a href="https://pf.kakao.com/_mxbexhX" class="btn btn-kakao btn-lg" target="_blank" rel="noopener">
+            💬 카카오톡으로 시작
+          </a>
+          <a href="tel:010-6461-6594" class="btn btn-ghost btn-lg" style="color:#fff; border-color:rgba(255,255,255,.4);">
+            전화로 바로 문의
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== Related Links ========== -->
+  <section class="related-links">
+    <div class="container">
+      <p class="related-links__title">같이 보면 좋은 페이지</p>
+
+      <div class="related-links__grid">
+        <a href="/" class="related-link">
+          <div class="related-link__label">Main</div>
+          <div class="related-link__title">위플레이스가 일하는 방식 전체 보기</div>
+        </a>
+
+        <a href="/problems/google-business-profile/" class="related-link">
+          <div class="related-link__label">Problem</div>
+          <div class="related-link__title">네이버엔 있는데, 구글엔 없을 때</div>
+        </a>
+
+        <a href="/problems/" class="related-link">
+          <div class="related-link__label">Problem Index</div>
+          <div class="related-link__title">매장이 겪는 다른 문제들 둘러보기</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ========== Footer ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__cols">
+      <div>
+        <div class="site-footer__brand">
+          We<span style="color: var(--color-accent);">,</span>Place<span style="color: var(--color-accent);">.</span>
+        </div>
+        <p style="color:rgba(255,255,255,.6); max-width: 36ch;">
+          매장을 함께 읽는 팀. 네이버·구글·홈페이지를 하나의 기준으로 정렬해
+          검색에서 발견되고 실제로 연락이 오기까지를 함께 설계합니다.
+        </p>
+      </div>
+
+      <div>
+        <p class="site-footer__title">업종별</p>
+        <ul class="site-footer__links">
+          <li><a href="/industries/restaurant/">식당</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="site-footer__title">문제별</p>
+        <ul class="site-footer__links">
+          <li><a href="/problems/google-business-profile/">구글 노출</a></li>
+          <li><a href="/problems/">전체 문제 보기</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="site-footer__title">Contact</p>
+        <ul class="site-footer__links">
+          <li><a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">카카오톡 상담</a></li>
+          <li><a href="mailto:weplace25@gmail.com">weplace25@gmail.com</a></li>
+          <li><a href="tel:010-6461-6594">010-6461-6594</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom" style="flex-direction: column; align-items: flex-start; gap: 6px; font-size: 12px; line-height: 1.6;">
+      <span style="color: rgba(255,255,255,.4); font-size: 11px; letter-spacing: 0.03em;">
+        마지막 업데이트: 2025년 12월 &nbsp;·&nbsp; 다음 예정 업데이트: 2026년 2월
+      </span>
+      <span>© 2025 We Place. All rights reserved.</span>
+      <span>
+        상호 (주)위플레이스마케팅 &middot; 대표 박규민 &middot; 사업자등록번호 145-88-03119<br>
+        주소 서울특별시 금천구 디지털로 178 퍼블릭가산C동 &middot;
+        이메일 weplace25@gmail.com &middot;
+        전화 010-6461-6594
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ========== Page-specific styles (신뢰 표지) ========== -->
+<style>
+  .trust-strip {
+    margin-top: 40px;
+    padding: 20px 24px;
+    background: var(--color-white);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+  .trust-strip__inner {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .trust-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: var(--fs-body);
+    color: var(--color-ink-soft);
+    line-height: 1.5;
+  }
+  .trust-item__check {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--color-accent-soft);
+    color: var(--color-accent-ink);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+  @media (min-width: 720px) {
+    .trust-strip__inner {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .trust-item {
+      font-size: var(--fs-caption);
+      line-height: 1.6;
+    }
+  }
+</style>
+
 </body>
 </html>
