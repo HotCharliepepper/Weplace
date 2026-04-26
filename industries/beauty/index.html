@@ -77,14 +77,22 @@
       .trust-item { font-size: var(--fs-caption); line-height: 1.6; }
     }
 
-    /* === Hero Visual placeholder === */
-    .hero-beauty-visual {
+   /* === Hero Visual === */
+.hero-beauty-visual {
   max-width: 720px;
+  width: 100%;
   margin: 0 auto var(--gap-lg);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 16 / 9;
-  background: #EAF0EC url('/hero-beauty.jpg') center/cover no-repeat;
+
+  /* 기존 16:9보다 세로 여유 확보 */
+  aspect-ratio: 3 / 2;
+
+  background-color: #EAF0EC;
+  background-image: url('/hero-beauty.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
     /* === Symptom Check (식당·카페와 동일) === */
