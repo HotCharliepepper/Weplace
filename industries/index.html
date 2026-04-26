@@ -6,7 +6,7 @@
 
   <!-- SEO -->
   <title>업종별 검색 설계 — 매장 종류에 따라, 첫 화면이 달라집니다 | We Place</title>
-  <meta name="description" content="식당, 카페, 미용·뷰티, 의료, 학원, 공간 대여 — 업종마다 화면에 먼저 보여줘야 할 것이 다릅니다. 위플레이스는 업종에 맞춰 검색과 문의를 함께 설계합니다." />
+  <meta name="description" content="식당, 카페, 미용·뷰티, 병의원, 학원, 공간 대여 — 업종마다 화면에 먼저 보여줘야 할 것이 다릅니다. 위플레이스는 업종에 맞춰 검색과 문의를 함께 설계합니다." />
   <link rel="canonical" href="https://weplace.netlify.app/industries/" />
 
   <!-- Open Graph -->
@@ -15,6 +15,7 @@
   <meta property="og:title" content="업종별 검색 설계 | We Place" />
   <meta property="og:description" content="업종마다 화면에 먼저 보여줘야 할 것이 다릅니다." />
   <meta property="og:url" content="https://weplace.netlify.app/industries/" />
+  <meta property="og:image" content="https://weplace.netlify.app/og-image.png" />
   <meta property="og:locale" content="ko_KR" />
 
   <!-- Twitter -->
@@ -24,8 +25,8 @@
 
   <!-- Last modified -->
   <meta property="article:published_time" content="2025-12-15T00:00:00+09:00" />
-  <meta property="article:modified_time" content="2025-12-15T00:00:00+09:00" />
-  <meta name="last-modified" content="2025-12-15" />
+  <meta property="article:modified_time" content="2026-04-25T00:00:00+09:00" />
+  <meta name="last-modified" content="2026-04-25" />
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" />
@@ -33,19 +34,129 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/common.css" />
 
-  <!-- JSON-LD: CollectionPage Schema (GEO용) -->
+  <!-- JSON-LD: CollectionPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "업종별 검색 설계",
-    "description": "식당, 카페, 미용·뷰티, 의료, 학원, 공간 대여 등 업종에 맞춘 검색 노출과 문의 전환 설계 페이지 모음.",
+    "description": "식당, 카페, 미용·뷰티, 병의원, 학원, 공간 대여 등 업종에 맞춘 검색 발견성과 문의 전환 설계 페이지 모음.",
     "url": "https://weplace.netlify.app/industries/",
     "publisher": {
       "@type": "Organization",
       "name": "We Place",
       "url": "https://weplace.netlify.app/"
     }
+  }
+  </script>
+
+  <!-- JSON-LD: ItemList (활성 3개 + 별도 트랙 + 준비 중 2개) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "업종별 페이지 모음",
+    "url": "https://weplace.netlify.app/industries/",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "식당",
+        "url": "https://weplace.netlify.app/industries/restaurant/",
+        "description": "사장님은 매장에서 손님을 보지만, 손님은 화면에서 사장님을 봅니다. 식당의 네이버·구글·홈페이지를 하나의 기준으로 정렬합니다."
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "카페·디저트",
+        "url": "https://weplace.netlify.app/industries/cafe/",
+        "description": "카페는 와본 적 없는 손님이 화면에서 먼저 다녀갑니다. 공간감과 시그니처 메뉴 한 컷의 균형을 화면에 정렬합니다."
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "미용·뷰티 (헤어·네일·왁싱)",
+        "url": "https://weplace.netlify.app/industries/beauty/",
+        "description": "손님은 시술받기 전에 화면에서 한 번 결정합니다. 시술 사진과 후기와 가격의 신뢰 구조를 화면에 정렬합니다."
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "병의원·시술계열 (별도 트랙)",
+        "description": "병의원·한의원·치과 / 피부 클리닉·반영구·에스테틱 같은 시술계열은 의료광고법 가이드를 별도로 정비해 따로 진행합니다."
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "학원·교육",
+        "description": "준비 중. 곧 공개됩니다."
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "공간 대여·스튜디오",
+        "description": "준비 중. 곧 공개됩니다."
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "We Place",
+    "alternateName": ["위플레이스", "We,Place."],
+    "legalName": "(주)위플레이스마케팅",
+    "url": "https://weplace.netlify.app/",
+    "logo": "https://weplace.netlify.app/og-image.png",
+    "description": "자영업자의 검색 발견성과 문의 전환을 네이버, 구글, 인스타그램, 홈페이지까지 하나의 구조로 정렬하는 팀.",
+    "founder": { "@type": "Person", "name": "박규민" },
+    "email": "weplace25@gmail.com",
+    "telephone": "+82-10-6461-6594",
+    "taxID": "145-88-03119",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "디지털로 178 퍼블릭가산C동",
+      "addressLocality": "금천구",
+      "addressRegion": "서울특별시",
+      "addressCountry": "KR"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (미니 FAQ 3개) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "내 업종이 여기 목록에 없습니다.",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "목록에 없는 업종이라도 매장 상황을 들어보고 정리할 수 있습니다. 카페·식당·미용처럼 페이지 형태로 만들어둔 업종이 우선이지만, 다른 업종도 동일한 방식으로 작업 가능합니다. 매장 이름과 지금 상황만 알려주시면, 위플레이스가 먼저 화면을 봅니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "병의원이나 시술계열은 어디로 가야 하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "병의원·한의원·치과 / 피부 클리닉·반영구·에스테틱 같은 시술계열은 의료광고법 가이드가 일반 업종과 결이 달라, 별도 트랙으로 진행합니다. 매장 상황을 알려주시면 별도 트랙으로 같이 봐드립니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "여러 업종이 섞인 매장은 어느 페이지부터 봐야 하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "예를 들어 카페에서 디저트도 만들고 클래스도 운영하는 매장처럼, 한 매장에 여러 결이 섞여 있을 수 있습니다. 그런 경우 매장의 결정적 동선이 어느 쪽인지 — 손님이 가장 자주 오는 자리가 카페인지, 클래스인지 — 부터 같이 봅니다. 한 페이지로 묶을지, 두 결을 분리해서 볼지는 매장 상황에 맞춰 정합니다."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -73,14 +184,14 @@
   <section class="hero bg-paper">
     <div class="container-narrow fade-in">
       <span class="t-eyebrow">Industry Index</span>
-      <h1 class="hero__title">
-        업종마다 <span class="t-accent">화면</span>에<br>
+      <h1 class="hero__title keep-all">
+        업종마다 <span class="t-accent">화면</span>에<br class="br-d">
         먼저 보여줘야 할 것이 다릅니다.
       </h1>
-      <p class="hero__lead">
-        식당의 첫 화면은 사진 한 장으로 결정됩니다.<br>
-        뷰티 매장은 후기와 시술 사진의 순서가 다릅니다.<br>
-        의료는 정보의 정확성이 가장 먼저 읽힙니다.
+      <p class="hero__lead keep-all">
+        식당의 첫 화면은 사진 한 장으로 결정됩니다.<br class="br-d">
+        카페는 공간감과 시그니처의 균형에서 결정됩니다.<br class="br-d">
+        미용은 시술 사진과 가격의 솔직함에서 결정됩니다.
       </p>
     </div>
   </section>
@@ -91,7 +202,7 @@
     <div class="container">
       <div class="text-center mb-lg">
         <span class="t-eyebrow">지금 다루는 업종</span>
-        <h2 class="t-h2">업종별로 하나씩 정리합니다.</h2>
+        <h2 class="t-h2 keep-all">업종별로 하나씩 정리합니다.</h2>
       </div>
 
       <div class="grid grid-3">
@@ -99,9 +210,12 @@
         <!-- 1. 식당 (활성) -->
         <a href="/industries/restaurant/" class="card" style="text-decoration:none; display:block;">
           <span class="t-eyebrow" style="color: var(--color-accent);">Industry · 활성</span>
-          <h3 class="t-h3" style="margin-top:4px;">식당</h3>
-          <p class="card-body">
-            한식, 일식, 양식, 이자카야, 고깃집. 음식 사진 한 장으로 결정되는 첫 화면을
+          <h3 class="t-h3 keep-all" style="margin-top:4px;">식당</h3>
+          <p class="card-body keep-all" style="font-weight:500; color:var(--color-ink); margin-bottom:8px;">
+            손님이 화면에서 사장님을 봅니다.
+          </p>
+          <p class="card-body keep-all">
+            한식, 일식, 양식, 이자카야, 고깃집. 사진 한 장으로 결정되는 첫 화면을
             정리하고, 외국인 손님까지 함께 받습니다.
           </p>
           <p class="t-caption mt-sm" style="color: var(--color-accent); font-weight:600;">
@@ -109,46 +223,61 @@
           </p>
         </a>
 
-        <!-- 2. 카페·디저트 (준비 중) -->
-        <div class="card" style="background: var(--color-paper); border-style: dashed; opacity: 0.7;">
-          <span class="t-eyebrow" style="color: var(--color-ink-mute);">Industry · 준비 중</span>
-          <h3 class="t-h3" style="margin-top:4px; color: var(--color-ink-soft);">카페·디저트</h3>
-          <p class="card-body">
-            공간감과 메뉴 한 컷의 균형이 결정합니다. 인스타그램 검색과 네이버 플레이스의
-            연결, 디저트 매장 특유의 시간대별 노출 정비.
+        <!-- 2. 카페·디저트 (활성) -->
+        <a href="/industries/cafe/" class="card" style="text-decoration:none; display:block;">
+          <span class="t-eyebrow" style="color: var(--color-accent);">Industry · 활성</span>
+          <h3 class="t-h3 keep-all" style="margin-top:4px;">카페·디저트</h3>
+          <p class="card-body keep-all" style="font-weight:500; color:var(--color-ink); margin-bottom:8px;">
+            와본 적 없는 손님이 화면에서 먼저 다녀갑니다.
           </p>
-          <p class="t-caption mt-sm">곧 공개됩니다</p>
-        </div>
+          <p class="card-body keep-all">
+            공간감과 시그니처 메뉴 한 컷의 균형이 결정합니다. 네이버·인스타그램·구글
+            세 화면을 같은 결로 정렬합니다.
+          </p>
+          <p class="t-caption mt-sm" style="color: var(--color-accent); font-weight:600;">
+            자세히 보기 →
+          </p>
+        </a>
 
-        <!-- 3. 미용·뷰티 (준비 중) -->
-        <div class="card" style="background: var(--color-paper); border-style: dashed; opacity: 0.7;">
-          <span class="t-eyebrow" style="color: var(--color-ink-mute);">Industry · 준비 중</span>
-          <h3 class="t-h3" style="margin-top:4px; color: var(--color-ink-soft);">미용·뷰티</h3>
-          <p class="card-body">
-            헤어샵, 네일, 왁싱, 피부 관리. 시술 사진과 후기의 순서가 결정합니다.
-            예약 동선과 가격 표기까지 함께 정리합니다.
+        <!-- 3. 미용·뷰티 (활성) -->
+        <a href="/industries/beauty/" class="card" style="text-decoration:none; display:block;">
+          <span class="t-eyebrow" style="color: var(--color-accent);">Industry · 활성</span>
+          <h3 class="t-h3 keep-all" style="margin-top:4px;">미용·뷰티</h3>
+          <p class="card-body keep-all" style="font-weight:500; color:var(--color-ink); margin-bottom:8px;">
+            시술받기 전에 화면에서 한 번 결정합니다.
           </p>
-          <p class="t-caption mt-sm">곧 공개됩니다</p>
-        </div>
+          <p class="card-body keep-all">
+            헤어샵·네일샵·왁싱샵. 시술 사진의 진짜 같음, 후기의 결, 가격의 솔직함을
+            신뢰 구조로 정렬합니다.
+          </p>
+          <p class="t-caption mt-sm" style="color: var(--color-accent); font-weight:600;">
+            자세히 보기 →
+          </p>
+        </a>
 
-        <!-- 4. 의료 (준비 중) -->
-        <div class="card" style="background: var(--color-paper); border-style: dashed; opacity: 0.7;">
-          <span class="t-eyebrow" style="color: var(--color-ink-mute);">Industry · 준비 중</span>
-          <h3 class="t-h3" style="margin-top:4px; color: var(--color-ink-soft);">의료·한의원</h3>
-          <p class="card-body">
-            의료광고법을 지키면서도 손님이 충분한 정보를 받게 하는 균형. 진료 분야 표기와
-            지도 기반 검색 정비가 핵심입니다.
+        <!-- 4. 병의원·시술계열 (별도 트랙) -->
+        <div class="card" style="background: var(--color-paper); border-style: solid; border-color: var(--color-accent-soft);">
+          <span class="t-eyebrow" style="color: var(--color-accent-ink);">Industry · 별도 트랙</span>
+          <h3 class="t-h3 keep-all" style="margin-top:4px;">병의원·시술계열</h3>
+          <p class="card-body keep-all" style="font-weight:500; color:var(--color-ink); margin-bottom:8px;">
+            의료광고법은 결이 달라, 따로 봅니다.
           </p>
-          <p class="t-caption mt-sm">곧 공개됩니다</p>
+          <p class="card-body keep-all">
+            병의원·한의원·치과 / 피부 클리닉·반영구·에스테틱. 매장 상황을 알려주시면
+            별도 트랙으로 같이 봐드립니다.
+          </p>
+          <p class="t-caption mt-sm" style="color: var(--color-accent-ink); font-weight:600;">
+            카카오톡으로 문의하기 ↓
+          </p>
         </div>
 
         <!-- 5. 학원·교육 (준비 중) -->
         <div class="card" style="background: var(--color-paper); border-style: dashed; opacity: 0.7;">
           <span class="t-eyebrow" style="color: var(--color-ink-mute);">Industry · 준비 중</span>
-          <h3 class="t-h3" style="margin-top:4px; color: var(--color-ink-soft);">학원·교육</h3>
-          <p class="card-body">
-            학부모와 학생, 두 명의 검색자를 같이 봐야 합니다. 동네 검색과 과목 검색의
-            우선순위, 후기 신뢰도 설계.
+          <h3 class="t-h3 keep-all" style="margin-top:4px; color: var(--color-ink-soft);">학원·교육</h3>
+          <p class="card-body keep-all">
+            학부모와 학생, 두 명의 검색자를 같이 봅니다. 동네 검색과 과목 검색의
+            우선순위, 후기 신뢰도까지 함께 봅니다.
           </p>
           <p class="t-caption mt-sm">곧 공개됩니다</p>
         </div>
@@ -156,23 +285,69 @@
         <!-- 6. 공간 대여·스튜디오 (준비 중) -->
         <div class="card" style="background: var(--color-paper); border-style: dashed; opacity: 0.7;">
           <span class="t-eyebrow" style="color: var(--color-ink-mute);">Industry · 준비 중</span>
-          <h3 class="t-h3" style="margin-top:4px; color: var(--color-ink-soft);">공간 대여·스튜디오</h3>
-          <p class="card-body">
-            모임 공간, 촬영 스튜디오, 파티룸. 공간 사진과 용도별 분류가 결정합니다.
-            예약 시스템과 검색 결과의 연결까지.
+          <h3 class="t-h3 keep-all" style="margin-top:4px; color: var(--color-ink-soft);">공간 대여·스튜디오</h3>
+          <p class="card-body keep-all">
+            모임 공간, 촬영 스튜디오, 파티룸. 공간 사진과 용도별 분류, 예약 시스템과
+            검색 결과까지 자연스럽게 잇습니다.
           </p>
           <p class="t-caption mt-sm">곧 공개됩니다</p>
         </div>
 
       </div>
 
-      <p class="t-caption text-center mt-lg" style="max-width: 52ch; margin: var(--gap-lg) auto 0;">
-        목록에 없는 업종이라도 매장 상황을 들어보고 정리할 수 있습니다.<br>
-        매장 이름과 지금 상황만 보내주시면, 화면은 저희가 먼저 봅니다.
+      <p class="t-caption text-center mt-lg keep-all" style="max-width: 52ch; margin: var(--gap-lg) auto 0;">
+        목록에 없는 업종이라도 매장 상황을 들어보고 정리할 수 있습니다.<br class="br-d">
+        매장 이름과 지금 상황만 보내주시면, 화면은 위플레이스가 먼저 봅니다.
       </p>
 
       <div class="text-center mt-md">
         <a href="/#contact" class="btn btn-primary btn-lg">매장 상황 알려주기</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== Mini FAQ — 고르기 전 자주 받는 질문 ========== -->
+  <section class="section bg-paper">
+    <div class="container-narrow">
+      <div class="text-center mb-lg">
+        <span class="t-eyebrow">Before You Pick</span>
+        <h2 class="t-h2 keep-all">고르기 전에 자주 받는 질문 세 가지.</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary class="keep-all">내 업종이 여기 목록에 없습니다.</summary>
+          <div class="faq-item__body keep-all">
+            목록에 없는 업종이라도 매장 상황을 들어보고 정리할 수 있습니다.
+            카페·식당·미용처럼 페이지 형태로 만들어둔 업종이 우선이지만, 다른 업종도 동일한 방식으로 작업 가능합니다.
+
+            매장 이름과 지금 상황만 알려주시면, 위플레이스가 먼저 화면을 봅니다.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="keep-all">병의원이나 시술계열은 어디로 가야 하나요?</summary>
+          <div class="faq-item__body keep-all">
+            병의원·한의원·치과 / 피부 클리닉·반영구·에스테틱 같은 시술계열은
+            의료광고법 가이드가 일반 업종과 결이 달라, 별도 트랙으로 진행합니다.
+
+            매장 상황을 알려주시면 별도 트랙으로 같이 봐드립니다.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="keep-all">여러 업종이 섞인 매장은 어느 페이지부터 봐야 하나요?</summary>
+          <div class="faq-item__body keep-all">
+            예를 들어 카페에서 디저트도 만들고 클래스도 운영하는 매장처럼, 한 매장에 여러 결이 섞여 있을 수 있습니다.
+            그런 경우 매장의 결정적 동선이 어느 쪽인지 — 손님이 가장 자주 오는 자리가 카페인지, 클래스인지 —
+            부터 같이 봅니다.
+
+            한 페이지로 묶을지, 두 결을 분리해서 볼지는 매장 상황에 맞춰 정합니다.
+          </div>
+        </details>
+
       </div>
     </div>
   </section>
@@ -214,7 +389,7 @@
           We<span style="color: var(--color-accent);">,</span>Place<span style="color: var(--color-accent);">.</span>
         </div>
         <p style="color:rgba(255,255,255,.6); max-width: 36ch;">
-          매장을 함께 읽는 팀. 네이버·구글·홈페이지를 하나의 기준으로 정렬해
+          매장을 함께 읽는 팀. 네이버·구글·인스타그램·홈페이지를 하나의 결로 정렬해
           검색에서 발견되고 실제로 연락이 오기까지를 함께 설계합니다.
         </p>
       </div>
@@ -223,6 +398,8 @@
         <p class="site-footer__title">업종별</p>
         <ul class="site-footer__links">
           <li><a href="/industries/restaurant/">식당</a></li>
+          <li><a href="/industries/cafe/">카페·디저트</a></li>
+          <li><a href="/industries/beauty/">미용·뷰티</a></li>
           <li><a href="/industries/">전체 업종 →</a></li>
         </ul>
       </div>
@@ -247,7 +424,7 @@
 
     <div class="site-footer__bottom" style="flex-direction: column; align-items: flex-start; gap: 6px; font-size: 12px; line-height: 1.6;">
       <span style="color: rgba(255,255,255,.4); font-size: 11px; letter-spacing: 0.03em;">
-        마지막 업데이트: 2025년 12월 &nbsp;·&nbsp; 다음 예정 업데이트: 2026년 2월
+        마지막 업데이트: 2026년 4월 &nbsp;·&nbsp; 다음 예정 업데이트: 2026년 6월
       </span>
       <span>© 2025 We Place. All rights reserved.</span>
       <span>
