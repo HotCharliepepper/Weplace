@@ -33,6 +33,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="theme-color" content="#0F1724" />
 
+  <!-- ============ Preload Hero Image (LCP 최적화) ============ -->
+  <link rel="preload" as="image" href="/assets/img/hero/main-hero.webp" fetchpriority="high" />
+
   <!-- ============ CSS ============ -->
   <link rel="stylesheet" href="/assets/css/common.css" />
 
@@ -180,8 +183,9 @@
   <!-- ====================================================================
        01. HERO — 마케팅은 광고가 아닙니다 (필터링형)
        ==================================================================== -->
-  <section class="hero-dark" id="top" aria-label="히어로">
-    <div class="hero-dark__bg" aria-hidden="true"></div>
+  <section class="hero-dark hero-dark--photo" id="top" aria-label="히어로">
+    <div class="hero-dark__bg" aria-hidden="true"
+         style="background-image: url('/assets/img/hero/main-hero.webp');"></div>
     <div class="container-narrow hero-dark__inner">
       <span class="t-eyebrow" style="color: rgba(255,255,255,.55); margin-bottom: 1.4em; display: block;">
         매장을 함께 읽는 팀
@@ -283,6 +287,12 @@
         표정·자세·옷차림·말투가 어긋나면 <strong>무의식적으로 거리를 둡니다</strong>.
         손님이 매장을 볼 때도 같습니다.
       </p>
+
+      <figure class="concept-figure">
+        <img src="/assets/img/concept/first-impression.webp"
+             alt="거리에서 처음 마주치는 두 사람을 멀리서 바라본 장면"
+             loading="lazy" width="1600" height="900" />
+      </figure>
 
       <div class="signature-quote mt-lg">
         <p class="signature-quote__text keep-all">
@@ -611,99 +621,126 @@
 
 
   <!-- ====================================================================
-       07. 기준 비용 — 정렬 단계별 기준값
+       07. 가격 구조 — 광고 한 달 비용으로, 평생 가는 자산
        1층 70% / 2층 30%
        ==================================================================== -->
-  <section class="section-lg bg-paper-soft">
+  <section class="section-lg bg-paper-soft" id="pricing">
     <div class="container">
-      <div style="text-align: center; max-width: 640px; margin: 0 auto var(--gap-lg);">
-        <span class="t-eyebrow t-accent">비용 가늠</span>
+
+      <!-- Header -->
+      <div class="pricing-header">
+        <span class="t-eyebrow pricing-eyebrow">RECOMMENDED STRUCTURE</span>
         <h2 class="t-display mt-sm keep-all">
-          정렬 단계별<br class="br-d">
-          기준 비용입니다.
+          광고 한 달 비용으로,<br class="br-d">
+          평생 가는 검색 자산을 만듭니다.
         </h2>
         <p class="t-lead keep-all">
-          묶음 결제가 아니라 단계입니다. 한 단계만 진행하셔도 되고,
-          진단 결과에 따라 필요한 단계만 골라 진행하실 수 있습니다.
+          진단이 먼저, 구축은 한 번, 운영은 3개월 시범.
+          자영업 매장의 가장 부담 없는 진입로입니다.
+        </p>
+        <p class="pricing-signature keep-all">
+          광고비는 사라지지만, 구축은 남습니다.
         </p>
       </div>
 
-      <div class="cost-grid">
-        <article class="cost-card">
-          <span class="cost-card__no">단계 1</span>
-          <h3 class="cost-card__title">첫 화면 진단</h3>
-          <p class="cost-card__fit keep-all">
-            작업 전, 매장이 검색 이후 어디서 멈추는지부터 확인하실 분
+      <!-- 4 Tier Cards -->
+      <div class="pricing-grid">
+
+        <!-- Card 1 · 진단 -->
+        <article class="pricing-card pricing-card--light">
+          <span class="pricing-card__tier">Tier 1 · 진단</span>
+          <h3 class="pricing-card__title keep-all">첫 화면 진단</h3>
+          <p class="pricing-card__fit keep-all">
+            작업 전, 매장이 검색 이후 어디서 멈추는지부터 확인하실 분께 권합니다.
           </p>
-          <p class="cost-card__price">
-            <span class="cost-card__price-num">₩300,000 ~</span>
-          </p>
-          <p class="cost-card__note keep-all">
-            업종·매장 규모·기존 상태에 따라 최종 견적은 달라집니다.
+          <p class="pricing-card__price">
+            <span class="pricing-card__price-num">₩300,000</span>
+            <span class="pricing-card__price-unit">· 1회</span>
           </p>
         </article>
 
-        <article class="cost-card">
-          <span class="cost-card__no">단계 2</span>
-          <h3 class="cost-card__title">첫 화면 정렬</h3>
-          <p class="cost-card__fit keep-all">
-            네이버·구글·홈페이지의 첫인상이 따로 놀고 있는 매장
+        <!-- Card 2 · 구축 (다크 · 추천) -->
+        <article class="pricing-card pricing-card--dark pricing-card--featured">
+          <span class="pricing-card__badge">추천 · 영구 자산</span>
+          <span class="pricing-card__tier">Tier 2 · 구축</span>
+          <h3 class="pricing-card__title keep-all">AI 검색 시대의 매장 한 장</h3>
+          <p class="pricing-card__subtitle">Google Business Profile + 엔티티 허브 페이지</p>
+          <p class="pricing-card__fit keep-all">
+            한 번 만들면 검색에 영구히 작동합니다.
+            홈페이지 제작 예산이 있던 분께 권합니다.
           </p>
-          <p class="cost-card__price">
-            <span class="cost-card__price-num">₩900,000 ~</span>
-          </p>
-          <p class="cost-card__note keep-all">
-            업종·매장 규모·기존 상태에 따라 최종 견적은 달라집니다.
-          </p>
-        </article>
-
-        <article class="cost-card">
-          <span class="cost-card__no">단계 3</span>
-          <h3 class="cost-card__title">두 검색엔진 정렬</h3>
-          <p class="cost-card__fit keep-all">
-            네이버 플레이스와 구글 비즈니스 프로필을 함께 정비할 시점
-          </p>
-          <p class="cost-card__price">
-            <span class="cost-card__price-num">₩1,800,000 ~</span>
-          </p>
-          <p class="cost-card__note keep-all">
-            업종·매장 규모·기존 상태에 따라 최종 견적은 달라집니다.
+          <p class="pricing-card__price">
+            <span class="pricing-card__price-num">₩1,500,000</span>
+            <span class="pricing-card__price-unit">· 1회</span>
           </p>
         </article>
 
-        <article class="cost-card">
-          <span class="cost-card__no">단계 4</span>
-          <h3 class="cost-card__title">콘텐츠·리뷰 흐름</h3>
-          <p class="cost-card__fit keep-all">
-            블로그·리뷰 응답·소식이 같은 방향으로 쌓이지 않은 매장
+        <!-- Card 3 · 운영 (다크 · 추천) -->
+        <article class="pricing-card pricing-card--dark pricing-card--featured">
+          <span class="pricing-card__badge">추천 · 3개월 시범</span>
+          <span class="pricing-card__tier">Tier 3 · 운영</span>
+          <h3 class="pricing-card__title keep-all">Threads 운영 + 월간 검색 리포트</h3>
+          <p class="pricing-card__fit keep-all">
+            3개월 시범 운영입니다.
+            숫자를 보고 갱신 여부를 함께 결정합니다.
           </p>
-          <p class="cost-card__price">
-            <span class="cost-card__price-num">₩ 상담 ~</span>
-          </p>
-          <p class="cost-card__note keep-all">
-            업종·매장 규모·기존 상태에 따라 최종 견적은 달라집니다.
+          <p class="pricing-card__price">
+            <span class="pricing-card__price-num">₩300,000</span>
+            <span class="pricing-card__price-unit">/ 월 · 3개월 특가</span>
           </p>
         </article>
 
-        <article class="cost-card">
-          <span class="cost-card__no">단계 5</span>
-          <h3 class="cost-card__title">AI 검색·SNS 확장</h3>
-          <p class="cost-card__fit keep-all">
-            홈페이지·FAQ·SNS까지 같은 정보로 정렬할 시점
+        <!-- Card 4 · 확장 -->
+        <article class="pricing-card pricing-card--light">
+          <span class="pricing-card__tier">Tier 4 · 확장</span>
+          <h3 class="pricing-card__title keep-all">매장 상태에 따라 더합니다</h3>
+          <p class="pricing-card__fit keep-all">
+            위 셋이 안정된 뒤, 매장에 필요한 작업을 골라 추가합니다.
           </p>
-          <p class="cost-card__price">
-            <span class="cost-card__price-num">₩ 상담 ~</span>
-          </p>
-          <p class="cost-card__note keep-all">
-            업종·매장 규모·기존 상태에 따라 최종 견적은 달라집니다.
+          <ul class="pricing-card__addons">
+            <li>인스타그램 운영 <span>월간</span></li>
+            <li>네이버 블로그 발행 <span>월간</span></li>
+            <li>네이버 광고 운영 <span>월간 · 광고비 별도</span></li>
+            <li>AI 검색 심화 대응 <span>1회</span></li>
+            <li>영문 콘텐츠 정렬 <span>1회</span></li>
+          </ul>
+          <p class="pricing-card__price">
+            <span class="pricing-card__price-num">+@</span>
+            <span class="pricing-card__price-unit">매장별 산정</span>
           </p>
         </article>
+
       </div>
 
-      <p class="t-caption t-mute mt-lg" style="text-align: center; max-width: 540px; margin-left: auto; margin-right: auto;">
-        모든 단계는 진단 결과를 본 다음에 시작합니다.
-        진단 단계에서 멈추셔도 됩니다.
+      <!-- Comparison Block -->
+      <div class="comparison-block">
+        <span class="t-eyebrow t-accent">숫자로 비교해 보세요</span>
+        <div class="comparison-table">
+          <div class="comparison-row">
+            <div class="comparison-row__label">광고 한 달</div>
+            <div class="comparison-row__price">₩500,000 ~ ₩1,500,000</div>
+            <div class="comparison-row__note">매달 다시 시작합니다</div>
+          </div>
+          <div class="comparison-row comparison-row--accent">
+            <div class="comparison-row__label">Weplace 구축</div>
+            <div class="comparison-row__price">₩1,500,000 · 1회</div>
+            <div class="comparison-row__note">검색에 영구히 남습니다</div>
+          </div>
+          <div class="comparison-row comparison-row--accent">
+            <div class="comparison-row__label">Weplace 3개월 시범</div>
+            <div class="comparison-row__price">₩900,000 (3개월 합산)</div>
+            <div class="comparison-row__note">갱신은 의무가 아닙니다</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Safety / Exit Copy -->
+      <p class="pricing-release keep-all">
+        3개월 후, 숫자를 함께 봅니다.
+        갱신은 의무가 아닙니다.
+        같은 단계로 더 운영하실 수도 있고, 다른 단계로 옮기실 수도 있고, 멈추셔도 됩니다.
       </p>
+
     </div>
   </section>
 
@@ -729,6 +766,11 @@
       <h3 class="industry-row-title">검색에서 외국인 손님이 먼저 보는 업종</h3>
       <div class="industry-grid">
         <a href="/industries/restaurant/" class="industry-card industry-card--ready">
+          <div class="industry-card__thumb">
+            <img src="/assets/img/industries/restaurant.webp"
+                 alt="정갈하게 차려진 한 접시 음식"
+                 loading="lazy" width="600" height="450" />
+          </div>
           <span class="industry-card__status">발행 완료</span>
           <h4 class="industry-card__title">식당</h4>
           <p class="industry-card__fit keep-all">메뉴 사진·리뷰·소개글이 따로 노는 매장</p>
@@ -737,6 +779,11 @@
         </a>
 
         <a href="/industries/cafe/" class="industry-card industry-card--ready">
+          <div class="industry-card__thumb">
+            <img src="/assets/img/industries/cafe.webp"
+                 alt="카페 카운터에서 건네지는 라떼 한 잔"
+                 loading="lazy" width="600" height="450" />
+          </div>
           <span class="industry-card__status">발행 완료</span>
           <h4 class="industry-card__title">카페</h4>
           <p class="industry-card__fit keep-all">인스타·블로그는 잘 도는데 구글에는 비어 있는 매장</p>
@@ -745,6 +792,11 @@
         </a>
 
         <a href="/industries/beauty/" class="industry-card industry-card--ready">
+          <div class="industry-card__thumb">
+            <img src="/assets/img/industries/beauty.webp"
+                 alt="정돈된 네일 케어 도구가 놓인 트레이"
+                 loading="lazy" width="600" height="450" />
+          </div>
           <span class="industry-card__status">발행 완료</span>
           <h4 class="industry-card__title">미용·웰니스</h4>
           <p class="industry-card__fit keep-all">네일·왁싱·마사지·헤어, 외국인 워킹인이 늘기 시작한 매장</p>
@@ -755,6 +807,11 @@
         <button class="industry-card industry-card--prep"
           data-msg="안녕하세요. Weplace 홈페이지에서 [숙박시설] 업종 정렬에 관해 연락드립니다. 매장명은 ____, 지역은 ____ 입니다."
           onclick="copyAndOpenKakao(this)">
+          <div class="industry-card__thumb">
+            <img src="/assets/img/industries/lodging.webp"
+                 alt="해질녘 한옥 처마와 창호지 너머 불빛"
+                 loading="lazy" width="600" height="450" />
+          </div>
           <span class="industry-card__status industry-card__status--prep">준비 중</span>
           <h4 class="industry-card__title">숙박시설</h4>
           <p class="industry-card__fit keep-all">한옥스테이·게스트하우스·소형 호텔, OTA에 의존 중인 매장</p>
@@ -765,6 +822,11 @@
         <button class="industry-card industry-card--prep"
           data-msg="안녕하세요. Weplace 홈페이지에서 [병의원] 업종 정렬에 관해 연락드립니다. 진료과는 ____, 지역은 ____ 입니다."
           onclick="copyAndOpenKakao(this)">
+          <div class="industry-card__thumb">
+            <img src="/assets/img/industries/clinic.webp"
+                 alt="깨끗한 진료실 대기 카운터의 자연광"
+                 loading="lazy" width="600" height="450" />
+          </div>
           <span class="industry-card__status industry-card__status--prep">준비 중</span>
           <h4 class="industry-card__title">병의원</h4>
           <p class="industry-card__fit keep-all">외국인 환자 검색은 늘었는데 영문·구글 정보가 비어 있는 진료과</p>
@@ -778,6 +840,11 @@
         <button class="industry-card industry-card--prep"
           data-msg="안녕하세요. Weplace 홈페이지에서 [매장형 사업 — 청소·설비수리·시공] 정렬에 관해 연락드립니다. 업종은 ____, 지역은 ____ 입니다."
           onclick="copyAndOpenKakao(this)">
+          <div class="industry-card__thumb">
+            <img src="/assets/img/industries/space.webp"
+                 alt="정돈된 작업 도구가 놓인 작업대"
+                 loading="lazy" width="600" height="450" />
+          </div>
           <span class="industry-card__status industry-card__status--prep">준비 중</span>
           <h4 class="industry-card__title">매장형 사업</h4>
           <p class="industry-card__fit keep-all">청소업체·설비수리·시공 — 견적 문의가 검색이 아니라 지인 소개에서만 들어오는 매장</p>
@@ -787,6 +854,11 @@
         <button class="industry-card industry-card--prep"
           data-msg="안녕하세요. Weplace 홈페이지에서 [기타 업종] 정렬에 관해 연락드립니다. 업종은 ____, 지역은 ____ 입니다."
           onclick="copyAndOpenKakao(this)">
+          <div class="industry-card__thumb">
+            <img src="/assets/img/industries/others.webp"
+                 alt="자연광이 드리운 작은 공방 내부"
+                 loading="lazy" width="600" height="450" />
+          </div>
           <span class="industry-card__status industry-card__status--prep">준비 중</span>
           <h4 class="industry-card__title">기타 업종</h4>
           <p class="industry-card__fit keep-all">학원·공간 대여·체험 공방 등 위에 없는 업종</p>
@@ -1024,6 +1096,16 @@
       radial-gradient(ellipse at 80% 80%, rgba(74,95,232,.10), transparent 55%),
       linear-gradient(180deg, #0F1724 0%, #1A2130 100%);
   }
+  /* Hero with photo background */
+  .hero-dark--photo .hero-dark__bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(.55) saturate(.85);
+  }
+  .hero-dark--photo::before {
+    background: linear-gradient(180deg, rgba(15,23,36,.45) 0%, rgba(15,23,36,.72) 60%, rgba(15,23,36,.85) 100%);
+  }
   .hero-dark__title {
     font-size: var(--fs-display);
     margin-bottom: .8em;
@@ -1117,6 +1199,23 @@
     line-height: 1.5;
     margin: 0;
     color: #fff;
+  }
+
+  /* Concept Figure — 첫인상 비유 사진 */
+  .concept-figure {
+    margin: var(--gap-lg) auto 0;
+    max-width: 720px;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--color-paper-soft);
+    box-shadow: var(--shadow-sm);
+  }
+  .concept-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   /* 첫인상 비유 — 6칸 그리드 */
@@ -1355,75 +1454,270 @@
   }
 
   /* ============================================================
-     07. 기준 비용 단계 5개
+     07. 가격 구조 — 4 Tier 카드 + 비교 블록
      ============================================================ */
-  .cost-grid {
+
+  /* Pricing Header */
+  .pricing-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto var(--gap-xl);
+  }
+  .pricing-eyebrow {
+    color: var(--color-accent);
+    letter-spacing: 0.25em;
+    font-weight: 700;
+  }
+  .pricing-signature {
+    font-family: var(--font-serif);
+    font-size: var(--fs-h3);
+    color: var(--color-accent);
+    margin: var(--gap-md) 0 0;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  /* Pricing Grid */
+  .pricing-grid {
     display: grid;
     gap: var(--gap-md);
     grid-template-columns: 1fr;
     max-width: 1080px;
     margin: 0 auto;
   }
-  @media (min-width: 640px) {
-    .cost-grid { grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 720px) {
+    .pricing-grid { grid-template-columns: repeat(2, 1fr); }
   }
-  @media (min-width: 960px) {
-    .cost-grid { grid-template-columns: repeat(5, 1fr); gap: 14px; }
+  @media (min-width: 1024px) {
+    .pricing-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      align-items: stretch;
+    }
   }
 
-  .cost-card {
+  /* Pricing Card — base */
+  .pricing-card {
+    position: relative;
     background: var(--color-white);
     border: 1px solid var(--color-line);
     border-radius: var(--radius-md);
-    padding: 24px 20px;
+    padding: 32px 24px 28px;
     display: flex;
     flex-direction: column;
     transition: transform .25s var(--ease), box-shadow .25s var(--ease);
   }
-  .cost-card:hover {
-    transform: translateY(-2px);
+  .pricing-card:hover {
+    transform: translateY(-3px);
     box-shadow: var(--shadow-md);
   }
-  .cost-card__no {
+
+  /* Dark variant — featured (Tier 2 · 3) */
+  .pricing-card--dark {
+    background: var(--color-dark);
+    color: #fff;
+    border-color: var(--color-dark);
+    box-shadow: var(--shadow-md);
+  }
+  .pricing-card--dark:hover {
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Featured badge (상단 떠 있는 라벨) */
+  .pricing-card__badge {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 5px 14px;
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Tier label */
+  .pricing-card__tier {
     display: inline-block;
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--color-accent);
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
-  .cost-card__title {
+  .pricing-card--dark .pricing-card__tier {
+    color: #93A4F5;
+  }
+
+  /* Title */
+  .pricing-card__title {
     font-size: var(--fs-h3);
     font-weight: 700;
     color: var(--color-ink);
-    margin: 0 0 12px;
     line-height: 1.4;
+    margin: 0 0 8px;
   }
-  .cost-card__fit {
+  .pricing-card--dark .pricing-card__title {
+    color: #fff;
+  }
+
+  /* Subtitle (Card 2 only) */
+  .pricing-card__subtitle {
     font-size: var(--fs-caption);
+    color: var(--color-ink-mute);
+    margin: 0 0 14px;
+    line-height: 1.5;
+  }
+  .pricing-card--dark .pricing-card__subtitle {
+    color: rgba(255,255,255,.55);
+  }
+
+  /* Fit copy */
+  .pricing-card__fit {
+    font-size: var(--fs-body);
     color: var(--color-ink-soft);
     line-height: var(--lh-loose);
-    margin: 0 0 18px;
+    margin: 0 0 20px;
     flex: 1;
   }
-  .cost-card__price {
-    margin: 0 0 12px;
-    padding-top: 14px;
-    border-top: 1px solid var(--color-line);
+  .pricing-card--dark .pricing-card__fit {
+    color: rgba(255,255,255,.72);
   }
-  .cost-card__price-num {
+
+  /* Addon list (Card 4 only) */
+  .pricing-card__addons {
+    list-style: none;
+    padding: 14px 16px;
+    margin: 0 0 18px;
+    background: var(--color-paper-soft);
+    border-radius: var(--radius-sm);
+  }
+  .pricing-card__addons li {
+    font-size: var(--fs-caption);
+    color: var(--color-ink-soft);
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    line-height: 1.5;
+  }
+  .pricing-card__addons li + li {
+    border-top: 1px dashed var(--color-line);
+  }
+  .pricing-card__addons li span {
+    color: var(--color-ink-mute);
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Price */
+  .pricing-card__price {
+    margin: 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-line);
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .pricing-card--dark .pricing-card__price {
+    border-top-color: rgba(255,255,255,.18);
+  }
+  .pricing-card__price-num {
     font-family: var(--font-serif);
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--color-ink);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
+    line-height: 1;
   }
-  .cost-card__note {
-    font-size: 11px;
+  .pricing-card--dark .pricing-card__price-num {
+    color: #fff;
+  }
+  .pricing-card__price-unit {
+    font-size: var(--fs-caption);
     color: var(--color-ink-mute);
-    line-height: 1.6;
-    margin: 0;
+    font-weight: 500;
+  }
+  .pricing-card--dark .pricing-card__price-unit {
+    color: rgba(255,255,255,.6);
+  }
+
+  /* Comparison Block */
+  .comparison-block {
+    max-width: 720px;
+    margin: var(--gap-xl) auto 0;
+    text-align: center;
+  }
+  .comparison-table {
+    margin-top: var(--gap-md);
+    background: var(--color-white);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    text-align: left;
+  }
+  .comparison-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--color-line);
+  }
+  .comparison-row:last-child {
+    border-bottom: none;
+  }
+  @media (min-width: 720px) {
+    .comparison-row {
+      grid-template-columns: 1.1fr 1.4fr 1.3fr;
+      gap: 16px;
+      align-items: center;
+    }
+  }
+  .comparison-row--accent {
+    background: var(--color-accent-soft);
+  }
+  .comparison-row__label {
+    font-size: var(--fs-body);
+    font-weight: 700;
+    color: var(--color-ink);
+  }
+  .comparison-row__price {
+    font-family: var(--font-serif);
+    font-size: var(--fs-body-l);
+    font-weight: 600;
+    color: var(--color-ink);
+    letter-spacing: -0.005em;
+  }
+  .comparison-row__note {
+    font-size: var(--fs-caption);
+    color: var(--color-ink-mute);
+    line-height: 1.5;
+  }
+  @media (min-width: 720px) {
+    .comparison-row__note {
+      text-align: right;
+    }
+  }
+  .comparison-row--accent .comparison-row__note {
+    color: var(--color-accent-ink);
+    font-weight: 500;
+  }
+
+  /* Safety release copy */
+  .pricing-release {
+    max-width: 600px;
+    margin: var(--gap-lg) auto 0;
+    font-size: var(--fs-caption);
+    color: var(--color-ink-mute);
+    line-height: var(--lh-loose);
+    text-align: center;
   }
 
   /* ============================================================
@@ -1489,6 +1783,33 @@
     border-color: var(--color-accent);
     border-style: solid;
   }
+
+  /* Industry card thumbnail — 카드 상단 사진 */
+  .industry-card__thumb {
+    margin: -24px -22px 18px;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--color-paper-soft);
+    border-top-left-radius: calc(var(--radius-md) - 1px);
+    border-top-right-radius: calc(var(--radius-md) - 1px);
+  }
+  .industry-card__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s var(--ease), filter .3s var(--ease);
+  }
+  .industry-card:hover .industry-card__thumb img {
+    transform: scale(1.04);
+  }
+  .industry-card--prep .industry-card__thumb img {
+    filter: grayscale(.35) opacity(.88);
+  }
+  .industry-card--prep:hover .industry-card__thumb img {
+    filter: grayscale(0) opacity(1);
+  }
+
   .industry-card__status {
     display: inline-block;
     align-self: flex-start;
@@ -1642,8 +1963,8 @@
     .cta-final__buttons .btn {
       width: 100%;
     }
-    .cost-card {
-      padding: 20px 18px;
+    .pricing-card {
+      padding: 28px 20px 24px;
     }
   }
 
