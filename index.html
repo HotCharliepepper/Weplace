@@ -899,7 +899,6 @@
                  alt="마사지 룸의 정돈된 침구와 부드러운 조명"
                  loading="lazy" width="600" height="450" />
           </div>
-          <span class="industry-card__status industry-card__status--prep">준비 중</span>
           <h4 class="industry-card__title">마사지·테라피</h4>
           <p class="industry-card__fit keep-all">한국 마사지를 찾는 외국인 워킹인이 늘기 시작한 매장</p>
           <p class="industry-card__hint keep-all">외국인 손님의 출발점은 네이버가 아니라 구글입니다.</p>
@@ -913,7 +912,6 @@
                  alt="정갈하게 차려진 한 접시 음식"
                  loading="lazy" width="600" height="450" />
           </div>
-          <span class="industry-card__status">발행 완료</span>
           <h4 class="industry-card__title">식당</h4>
           <p class="industry-card__fit keep-all">메뉴 사진·리뷰·소개글이 따로 노는 매장</p>
           <p class="industry-card__hint keep-all">대표 사진 첫 장은 메뉴 단독이 가장 안전합니다.</p>
@@ -927,7 +925,6 @@
                  alt="깨끗한 진료실 대기 카운터의 자연광"
                  loading="lazy" width="600" height="450" />
           </div>
-          <span class="industry-card__status industry-card__status--prep">준비 중</span>
           <h4 class="industry-card__title">병의원·피부과</h4>
           <p class="industry-card__fit keep-all">외국인 환자 검색은 늘었는데 영문·구글 정보가 비어 있는 진료과</p>
           <p class="industry-card__hint keep-all">시술명 영문 표기와 구글 예약 가능성도 함께 봅니다.</p>
@@ -941,7 +938,6 @@
                  alt="해질녘 한옥 처마와 창호지 너머 불빛"
                  loading="lazy" width="600" height="450" />
           </div>
-          <span class="industry-card__status industry-card__status--prep">준비 중</span>
           <h4 class="industry-card__title">숙박시설</h4>
           <p class="industry-card__fit keep-all">펜션·한옥스테이·게스트하우스·소형 호텔, OTA에 의존 중인 매장</p>
           <p class="industry-card__hint keep-all">Booking·Agoda·구글 정보가 서로 안 맞는지부터 봅니다.</p>
@@ -967,7 +963,6 @@
                    alt="카페 카운터에서 건네지는 라떼 한 잔"
                    loading="lazy" width="600" height="450" />
             </div>
-            <span class="industry-card__status">발행 완료</span>
             <h4 class="industry-card__title">카페</h4>
             <p class="industry-card__fit keep-all">인스타·블로그는 잘 도는데 구글에는 비어 있는 매장</p>
             <span class="industry-card__cta">자세히 보기 →</span>
@@ -980,7 +975,6 @@
                    alt="정돈된 네일 케어 도구가 놓인 트레이"
                    loading="lazy" width="600" height="450" />
             </div>
-            <span class="industry-card__status">발행 완료</span>
             <h4 class="industry-card__title">미용·웰니스</h4>
             <p class="industry-card__fit keep-all">네일·왁싱·헤어, 외국인 워킹인이 늘기 시작한 매장</p>
             <span class="industry-card__cta">자세히 보기 →</span>
@@ -993,7 +987,6 @@
                    alt="실내 액티비티 공간의 자연광"
                    loading="lazy" width="600" height="450" />
             </div>
-            <span class="industry-card__status industry-card__status--prep">준비 중</span>
             <h4 class="industry-card__title">액티비티</h4>
             <p class="industry-card__fit keep-all">스크린골프·헬스장·요가·공방 — 체험형 매장</p>
             <span class="industry-card__cta industry-card__cta--locked">자세히 보기 (R)</span>
@@ -1006,7 +999,6 @@
                    alt="정돈된 작업 도구가 놓인 작업대"
                    loading="lazy" width="600" height="450" />
             </div>
-            <span class="industry-card__status industry-card__status--prep">준비 중</span>
             <h4 class="industry-card__title">매장형 사업</h4>
             <p class="industry-card__fit keep-all">청소업체·설비수리·시공 — 견적 문의가 지인 소개에서만 들어오는 매장</p>
             <span class="industry-card__cta industry-card__cta--locked">자세히 보기 (R)</span>
@@ -1937,6 +1929,10 @@
     object-fit: cover;
     display: block;
     transition: transform .5s var(--ease), filter .3s var(--ease);
+    /* 이미지 로드 실패 시 alt 텍스트가 화면에 노출되지 않도록.
+       SEO·스크린리더용 alt 속성은 그대로 유지됩니다. */
+    font-size: 0;
+    color: transparent;
   }
   .industry-card:hover .industry-card__thumb img {
     transform: scale(1.04);
