@@ -892,10 +892,8 @@
       <h3 class="industry-row-title">먼저 보는 업종</h3>
       <div class="industry-grid">
 
-        <!-- 1. 마사지·테라피 (준비 중) -->
-        <button class="industry-card industry-card--prep"
-          data-msg="안녕하세요. Weplace 홈페이지에서 [마사지·테라피] 업종 정렬에 관해 연락드립니다. 매장명은 ____, 지역은 ____ 입니다."
-          onclick="copyAndOpenKakao(this)">
+        <!-- 1. 마사지·테라피 (R · 준비 중 — 발행 시점에 button → a 로 교체) -->
+        <div class="industry-card industry-card--prep industry-card--locked" aria-disabled="true">
           <div class="industry-card__thumb">
             <img src="/assets/img/industries/massage.webp"
                  alt="마사지 룸의 정돈된 침구와 부드러운 조명"
@@ -905,8 +903,8 @@
           <h4 class="industry-card__title">마사지·테라피</h4>
           <p class="industry-card__fit keep-all">한국 마사지를 찾는 외국인 워킹인이 늘기 시작한 매장</p>
           <p class="industry-card__hint keep-all">외국인 손님의 출발점은 네이버가 아니라 구글입니다.</p>
-          <span class="industry-card__cta">카카오톡으로 먼저 문의하기 →</span>
-        </button>
+          <span class="industry-card__cta industry-card__cta--locked">자세히 보기 (R)</span>
+        </div>
 
         <!-- 2. 식당 (발행 완료) — 펼침에서 승격 -->
         <a href="/industries/restaurant/" class="industry-card industry-card--ready">
@@ -922,10 +920,8 @@
           <span class="industry-card__cta">자세히 보기 →</span>
         </a>
 
-        <!-- 3. 병의원·피부과 (준비 중) -->
-        <button class="industry-card industry-card--prep"
-          data-msg="안녕하세요. Weplace 홈페이지에서 [병의원·피부과] 업종 정렬에 관해 연락드립니다. 진료과는 ____, 지역은 ____ 입니다."
-          onclick="copyAndOpenKakao(this)">
+        <!-- 3. 병의원·피부과 (R · 준비 중 — 발행 시점에 div → a 로 교체) -->
+        <div class="industry-card industry-card--prep industry-card--locked" aria-disabled="true">
           <div class="industry-card__thumb">
             <img src="/assets/img/industries/clinic.webp"
                  alt="깨끗한 진료실 대기 카운터의 자연광"
@@ -935,13 +931,11 @@
           <h4 class="industry-card__title">병의원·피부과</h4>
           <p class="industry-card__fit keep-all">외국인 환자 검색은 늘었는데 영문·구글 정보가 비어 있는 진료과</p>
           <p class="industry-card__hint keep-all">시술명 영문 표기와 구글 예약 가능성도 함께 봅니다.</p>
-          <span class="industry-card__cta">카카오톡으로 먼저 문의하기 →</span>
-        </button>
+          <span class="industry-card__cta industry-card__cta--locked">자세히 보기 (R)</span>
+        </div>
 
-        <!-- 4. 숙박시설 (준비 중) -->
-        <button class="industry-card industry-card--prep"
-          data-msg="안녕하세요. Weplace 홈페이지에서 [숙박시설] 업종 정렬에 관해 연락드립니다. 매장명은 ____, 지역은 ____ 입니다."
-          onclick="copyAndOpenKakao(this)">
+        <!-- 4. 숙박시설 (R · 준비 중 — 발행 시점에 div → a 로 교체) -->
+        <div class="industry-card industry-card--prep industry-card--locked" aria-disabled="true">
           <div class="industry-card__thumb">
             <img src="/assets/img/industries/lodging.webp"
                  alt="해질녘 한옥 처마와 창호지 너머 불빛"
@@ -951,8 +945,8 @@
           <h4 class="industry-card__title">숙박시설</h4>
           <p class="industry-card__fit keep-all">펜션·한옥스테이·게스트하우스·소형 호텔, OTA에 의존 중인 매장</p>
           <p class="industry-card__hint keep-all">Booking·Agoda·구글 정보가 서로 안 맞는지부터 봅니다.</p>
-          <span class="industry-card__cta">카카오톡으로 먼저 문의하기 →</span>
-        </button>
+          <span class="industry-card__cta industry-card__cta--locked">자세히 보기 (R)</span>
+        </div>
 
       </div>
 
@@ -992,10 +986,8 @@
             <span class="industry-card__cta">자세히 보기 →</span>
           </a>
 
-          <!-- 7. 액티비티 (준비 중) -->
-          <button class="industry-card industry-card--prep industry-card--compact"
-            data-msg="안녕하세요. Weplace 홈페이지에서 [액티비티 — 스크린골프·헬스장·요가 등] 정렬에 관해 연락드립니다. 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
+          <!-- 7. 액티비티 (R · 준비 중 — 발행 시점에 div → a 로 교체) -->
+          <div class="industry-card industry-card--prep industry-card--compact industry-card--locked" aria-disabled="true">
             <div class="industry-card__thumb">
               <img src="/assets/img/industries/activity.webp"
                    alt="실내 액티비티 공간의 자연광"
@@ -1004,13 +996,11 @@
             <span class="industry-card__status industry-card__status--prep">준비 중</span>
             <h4 class="industry-card__title">액티비티</h4>
             <p class="industry-card__fit keep-all">스크린골프·헬스장·요가·공방 — 체험형 매장</p>
-            <span class="industry-card__cta">카카오톡으로 먼저 문의하기 →</span>
-          </button>
+            <span class="industry-card__cta industry-card__cta--locked">자세히 보기 (R)</span>
+          </div>
 
-          <!-- 8. 매장형 사업 (준비 중) -->
-          <button class="industry-card industry-card--prep industry-card--compact"
-            data-msg="안녕하세요. Weplace 홈페이지에서 [매장형 사업 — 청소·설비수리·시공] 정렬에 관해 연락드립니다. 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
+          <!-- 8. 매장형 사업 (R · 준비 중 — 발행 시점에 div → a 로 교체) -->
+          <div class="industry-card industry-card--prep industry-card--compact industry-card--locked" aria-disabled="true">
             <div class="industry-card__thumb">
               <img src="/assets/img/industries/space.webp"
                    alt="정돈된 작업 도구가 놓인 작업대"
@@ -1019,11 +1009,16 @@
             <span class="industry-card__status industry-card__status--prep">준비 중</span>
             <h4 class="industry-card__title">매장형 사업</h4>
             <p class="industry-card__fit keep-all">청소업체·설비수리·시공 — 견적 문의가 지인 소개에서만 들어오는 매장</p>
-            <span class="industry-card__cta">카카오톡으로 먼저 문의하기 →</span>
-          </button>
+            <span class="industry-card__cta industry-card__cta--locked">자세히 보기 (R)</span>
+          </div>
 
         </div>
       </details>
+
+      <p class="industry-r-note keep-all">
+        <span class="industry-r-note__mark">(R)</span>
+        곧 열립니다. 발행 시점은 푸터의 ‘다음 예정 업데이트’를 확인해 주세요.
+      </p>
 
     </div>
   </section>
@@ -1905,6 +1900,28 @@
     border-style: solid;
   }
 
+  /* ───────────────────────────────────────────────
+     Locked variant — (R) 표기, 클릭 불가, 호버 비활성
+     ─────────────────────────────────────────────── */
+  .industry-card--locked {
+    cursor: default;
+    pointer-events: none;
+  }
+  .industry-card--locked:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: rgba(15,23,36,.18);
+    border-style: dashed;
+  }
+  .industry-card--locked:hover .industry-card__thumb img {
+    transform: none;
+    filter: grayscale(.35) opacity(.88);
+  }
+  .industry-card__cta--locked {
+    color: var(--color-ink-mute);
+    font-weight: 500;
+  }
+
   /* Industry card thumbnail — 카드 상단 사진 */
   .industry-card__thumb {
     margin: -24px -22px 18px;
@@ -1973,6 +1990,23 @@
     font-weight: 600;
     color: var(--color-accent);
     letter-spacing: var(--ls-wide);
+  }
+
+  /* (R) 의미 안내 캡션 — 업종 섹션 마감 직전 */
+  .industry-r-note {
+    max-width: 560px;
+    margin: var(--gap-lg) auto 0;
+    text-align: center;
+    font-size: var(--fs-caption);
+    color: var(--color-ink-mute);
+    line-height: var(--lh-loose);
+  }
+  .industry-r-note__mark {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-right: 4px;
+    letter-spacing: 0.02em;
   }
 
   /* Quick Inquiry Chip Bar */
