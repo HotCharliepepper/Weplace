@@ -25,8 +25,8 @@
 
   <!-- ============ Last modified ============ -->
   <meta property="article:published_time" content="2026-05-11T00:00:00+09:00" />
-  <meta property="article:modified_time" content="2026-05-13T00:00:00+09:00" />
-  <meta name="last-modified" content="2026-05-13" />
+  <meta property="article:modified_time" content="2026-05-15T00:00:00+09:00" />
+  <meta name="last-modified" content="2026-05-15" />
 
   <!-- ============ Favicon ============ -->
   <link rel="icon" href="/favicon.ico" />
@@ -159,6 +159,14 @@
           "@type": "Answer",
           "text": "1단계 매장 상태 진단은 네이버 플레이스, 구글 비즈니스 프로필, 홈페이지, 리뷰 첫 세 줄, 사진 첫 장, 소개글, 가격 표기, SNS를 함께 열어보고, 손님이 어디서 멈추는지를 화면 단위로 짚은 진단서로 드립니다. 진단서에는 우선 정리 항목, 매장 상태에 맞춘 다음 단계 후보, 비용 범위가 들어갑니다. 진단 단계에서 멈추셔도 됩니다."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "홈페이지 관리는 어디까지 포함되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "운영시간, 가격, 사진, FAQ, 검색 문구, 문의 버튼 같은 실제 매장과 어긋나기 쉬운 부분을 월 또는 분기 단위로 점검합니다. 변경이 많지 않은 매장은 분기 단위로, 검색 경쟁이나 문의 전환이 중요한 매장은 월 단위로 맞춥니다. 신규 페이지 제작, 디자인 전면 변경, 결제·예약 기능 개발 같은 작업은 관리 범위에 포함되지 않고 별도로 안내드립니다. 세부 범위는 매장 운영 방식에 맞춰 따로 정리해서 보내드립니다."
+        }
       }
     ]
   }
@@ -180,6 +188,7 @@
       <a href="/industries/">업종별</a>
       <a href="/problems/">문제별</a>
       <a href="#self-diagnosis">자가진단</a>
+      <a href="#geo-homepage">홈페이지 흐름</a>
       <a href="#contact" class="t-accent">매장명 보내기</a>
     </nav>
   </div>
@@ -218,6 +227,15 @@
           자가진단 먼저 보기 ↓
         </a>
       </div>
+
+      <!-- 입구 분기 라벨 — 신규 유입과 단골 유입을 다른 흐름으로 안내 -->
+      <p class="hero-entry-split keep-all">
+        <span class="hero-entry-split__label">처음 오신 분은</span>
+        <a href="#geo-homepage" class="hero-entry-split__link">홈페이지 흐름부터 보기 →</a>
+        <span class="hero-entry-split__sep">·</span>
+        <span class="hero-entry-split__label">단골이시면</span>
+        <a href="#self-diagnosis" class="hero-entry-split__link">자가진단으로 →</a>
+      </p>
     </div>
   </section>
 
@@ -700,6 +718,10 @@
           <div>
             <h3 class="execution-step__title">홈페이지 또는 엔티티 허브 페이지 구축</h3>
             <p class="execution-step__sub">검증의 마지막 화면을 만듭니다. AI가 매장을 이해하기 쉬운 FAQ와 설명문을 함께 둡니다.</p>
+            <p class="execution-step__hint keep-all">
+              플레이스·블로그·리뷰·SNS에 있는 정보가 다른 매장으로 읽히고 있다면, 이 단계가 먼저입니다.
+              <a href="#geo-homepage" class="execution-step__hint-link">GEO 홈페이지 흐름 보기 →</a>
+            </p>
           </div>
         </li>
 
@@ -842,6 +864,177 @@
         업종·매장 규모·기존 상태에 따라 최종 비용은 달라집니다.
         진단 단계에서 멈추셔도 됩니다. 같은 단계로 더 운영하실 수도 있고,
         다른 단계로 옮기실 수도 있고, 멈추셔도 됩니다.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       08-B. GEO 홈페이지 흐름 — 단계 6 도달 직후 부드러운 보조 카드 한 묶음
+       1층 80% / 2층 20%
+       가격은 범위 노출(₩1.5M ~ ₩5M)만, 우선 적용가는 라벨 한 줄로 힌트
+       활용안 B — 운영 흐름 다이어그램 1장 (자랑 아니라 방법론 공개)
+       ※ 결제 슬롯 4 — 카드 1 CTA의 data-payment-target="geo-homepage-150"
+       ==================================================================== -->
+  <section class="section-lg bg-paper" id="geo-homepage" aria-label="GEO 홈페이지 흐름">
+    <div class="container">
+
+      <div class="geo-header">
+        <span class="t-eyebrow t-accent">홈페이지 흐름이 필요하시면</span>
+        <h2 class="t-display mt-sm keep-all">
+          홈페이지는 명함이 아니라,<br class="br-d">
+          검색과 문의가 도착하는 기준 페이지입니다.
+        </h2>
+        <p class="t-lead keep-all">
+          네이버 플레이스, 구글 비즈니스 프로필, 블로그, 리뷰, SNS에
+          흩어진 정보를 하나로 정리합니다.
+          손님에게는 문의 전 마지막 확인 화면이 되고,
+          검색엔진과 AI에는 이 매장이 어떤 곳인지 설명하는 공식 근거가 됩니다.
+        </p>
+      </div>
+
+      <!-- 활용안 B · 운영 흐름 다이어그램 (SVG) -->
+      <figure class="geo-flow-figure">
+        <svg class="geo-flow-svg" viewBox="0 0 880 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="geo-flow-title geo-flow-desc">
+          <title id="geo-flow-title">검색 신뢰 구조 운영 흐름</title>
+          <desc id="geo-flow-desc">스레드·블로그·리뷰가 신호를 만들고, 홈페이지가 기준 페이지가 되고, 네이버·구글·AI가 같은 매장으로 읽고, 손님 문의로 도착하는 흐름</desc>
+
+          <!-- 좌측: 신호 (3개 노드) -->
+          <g class="geo-flow-col" transform="translate(60, 30)">
+            <text class="geo-flow-collabel" x="0" y="-8">신호</text>
+            <g transform="translate(0, 12)">
+              <rect class="geo-flow-node geo-flow-node--soft" x="0" y="0" width="140" height="36" rx="8"/>
+              <text class="geo-flow-nodetext" x="70" y="22">스레드 · 블로그</text>
+            </g>
+            <g transform="translate(0, 64)">
+              <rect class="geo-flow-node geo-flow-node--soft" x="0" y="0" width="140" height="36" rx="8"/>
+              <text class="geo-flow-nodetext" x="70" y="22">리뷰 · 사진</text>
+            </g>
+            <g transform="translate(0, 116)">
+              <rect class="geo-flow-node geo-flow-node--soft" x="0" y="0" width="140" height="36" rx="8"/>
+              <text class="geo-flow-nodetext" x="70" y="22">GBP · 플레이스</text>
+            </g>
+          </g>
+
+          <!-- 좌측 → 중앙 화살표 (3개) -->
+          <g class="geo-flow-arrow">
+            <path d="M 205 60 L 350 100" />
+            <path d="M 205 112 L 350 110" />
+            <path d="M 205 164 L 350 120" />
+          </g>
+
+          <!-- 중앙: 홈페이지 기준 페이지 -->
+          <g transform="translate(355, 70)">
+            <rect class="geo-flow-node geo-flow-node--anchor" x="0" y="0" width="170" height="80" rx="10"/>
+            <text class="geo-flow-nodetext geo-flow-nodetext--anchor" x="85" y="35">홈페이지</text>
+            <text class="geo-flow-subtext" x="85" y="58">기준 페이지</text>
+          </g>
+
+          <!-- 중앙 → 우측 화살표 -->
+          <g class="geo-flow-arrow">
+            <path d="M 530 110 L 670 110" />
+          </g>
+
+          <!-- 우측: 도착 (검색·문의) -->
+          <g class="geo-flow-col" transform="translate(675, 30)">
+            <text class="geo-flow-collabel" x="0" y="-8">도착</text>
+            <g transform="translate(0, 12)">
+              <rect class="geo-flow-node geo-flow-node--accent" x="0" y="0" width="140" height="36" rx="8"/>
+              <text class="geo-flow-nodetext geo-flow-nodetext--accent" x="70" y="22">네이버 · 구글</text>
+            </g>
+            <g transform="translate(0, 64)">
+              <rect class="geo-flow-node geo-flow-node--accent" x="0" y="0" width="140" height="36" rx="8"/>
+              <text class="geo-flow-nodetext geo-flow-nodetext--accent" x="70" y="22">AI 검색 답변</text>
+            </g>
+            <g transform="translate(0, 116)">
+              <rect class="geo-flow-node geo-flow-node--accent" x="0" y="0" width="140" height="36" rx="8"/>
+              <text class="geo-flow-nodetext geo-flow-nodetext--accent" x="70" y="22">손님 문의</text>
+            </g>
+          </g>
+        </svg>
+        <figcaption class="geo-flow-caption keep-all">
+          왼쪽 신호가 홈페이지로 모이고, 검색엔진과 AI가 같은 매장으로 읽어 손님 문의로 도착하는 흐름입니다.
+        </figcaption>
+      </figure>
+
+      <!-- GEO 카드 3장 -->
+      <div class="geo-grid">
+
+        <!-- 카드 1 · GEO 홈페이지 초기 세팅 (결제 슬롯 4) -->
+        <article class="geo-card geo-card--primary">
+          <span class="geo-card__no">A</span>
+          <h3 class="geo-card__title">GEO 홈페이지 초기 세팅</h3>
+          <p class="geo-card__price-range">
+            <span class="geo-card__price-num">₩1,500,000 ~ ₩5,000,000</span>
+          </p>
+          <p class="geo-card__price-note keep-all">
+            매장 규모·서비스 라인 수·외국어 안내 여부에 따라 달라집니다.
+            소규모 매장은 1.5에서 시작합니다.
+          </p>
+          <ul class="geo-card__list">
+            <li>모바일 1페이지 홈페이지</li>
+            <li>FAQ · CTA · 위치 · 매장 소개</li>
+            <li>네이버 플레이스 · 구글 비즈니스 프로필 연결</li>
+            <li>메타태그 · OG 공유카드 · 검색 설명 문구</li>
+          </ul>
+          <p class="geo-card__hint keep-all">
+            기존 고객·초기 레퍼런스 단계에서는 별도 우선 적용가가 있습니다.
+          </p>
+          <!-- ※ 결제 슬롯 4: 향후 결제 도입 시 카카오 CTA를 결제 라우팅 버튼으로 교체 -->
+          <div class="geo-card__cta-block" data-cta-mode="kakao" data-payment-target="geo-homepage-150">
+            <button class="geo-card__cta"
+              data-msg="안녕하세요. Weplace 홈페이지에서 [GEO 홈페이지 흐름]이 궁금합니다. 매장명은 ____, 업종은 ____, 지역은 ____ 입니다."
+              onclick="copyAndOpenKakao(this)">
+              카카오톡으로 홈페이지 방향 확인하기 →
+            </button>
+          </div>
+        </article>
+
+        <!-- 카드 2 · Threads 3개월 검색맥락 운영 -->
+        <article class="geo-card">
+          <span class="geo-card__no">B</span>
+          <h3 class="geo-card__title">Threads 3개월 검색맥락 운영</h3>
+          <p class="geo-card__price-range">
+            <span class="geo-card__price-num">월 ₩300,000</span>
+          </p>
+          <p class="geo-card__price-note keep-all">
+            홈페이지가 공식 설명이라면, 스레드는 반복 노출과 신뢰 신호를 만드는 외부 콘텐츠입니다.
+          </p>
+          <ul class="geo-card__list">
+            <li>월 8~12개 게시글 기획·작성</li>
+            <li>홈페이지·검색 키워드와 연결되는 주제 구성</li>
+            <li>업종·브랜드 톤 반영</li>
+          </ul>
+          <p class="geo-card__hint geo-card__hint--mute keep-all">
+            매일 업로드, 실시간 댓글 응대, 영상 제작은 포함되지 않습니다.
+          </p>
+        </article>
+
+        <!-- 카드 3 · 홈페이지 지속관리 -->
+        <article class="geo-card">
+          <span class="geo-card__no">C</span>
+          <h3 class="geo-card__title">홈페이지 지속관리</h3>
+          <p class="geo-card__price-range">
+            <span class="geo-card__price-num">월별 또는 분기별 선택</span>
+          </p>
+          <p class="geo-card__price-note keep-all">
+            홈페이지가 시간이 지나면서 실제 매장과 어긋나지 않게 관리합니다.
+          </p>
+          <ul class="geo-card__list">
+            <li>운영시간·가격·사진·FAQ 점검</li>
+            <li>검색 설명 문구 보완</li>
+            <li>문의 버튼·CTA 흐름 확인</li>
+          </ul>
+          <p class="geo-card__hint geo-card__hint--mute keep-all">
+            수정 횟수와 관리 범위는 매장 운영 방식에 맞춰 안내드립니다.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="geo-bottom-note keep-all">
+        세부 범위는 매장 상태에 맞춰 따로 정리해서 보내드립니다.
+        진단부터 시작하셔도 됩니다.
       </p>
     </div>
   </section>
@@ -1053,6 +1246,10 @@
         답장은 평일 오전·오후 중에 드립니다.<br>
         진단이 먼저, 작업은 나중입니다.
       </p>
+
+      <p class="cta-final__sub-link keep-all">
+        홈페이지가 이미 있으시면, <a href="#geo-homepage" class="cta-final__sub-link-a">GEO 홈페이지 흐름도 함께 보실 수 있습니다 →</a>
+      </p>
     </div>
   </section>
 
@@ -1160,6 +1357,20 @@
             그 어긋남이 어디서 시작되는지를 화면 단위로 짚어드립니다.
           </div>
         </details>
+
+        <details class="faq-item">
+          <summary>홈페이지 관리는 어디까지 포함되나요</summary>
+          <div class="faq-item__body">
+            운영시간, 가격, 사진, FAQ, 검색 문구, 문의 버튼 같은 "실제 매장과 어긋나기 쉬운 부분"을
+            월 또는 분기 단위로 점검합니다.
+
+            변경이 많지 않은 매장은 분기 단위로, 검색 경쟁이나 문의 전환이 중요한 매장은 월 단위로
+            맞춥니다. 신규 페이지 제작, 디자인 전면 변경, 결제·예약 기능 개발 같은 작업은
+            관리 범위에 포함되지 않고 별도로 안내드립니다.
+
+            세부 범위는 매장 운영 방식에 맞춰 따로 정리해서 보내드립니다.
+          </div>
+        </details>
       </div>
     </div>
   </section>
@@ -1214,7 +1425,7 @@
 
     <div class="site-footer__bottom" style="flex-direction: column; align-items: flex-start; gap: 6px; font-size: 12px; line-height: 1.6;">
       <span style="color: rgba(255,255,255,.4); font-size: 11px; letter-spacing: 0.03em;">
-        마지막 업데이트: 2026년 5월 &nbsp;·&nbsp; 다음 예정 업데이트: 2026년 7월
+        마지막 업데이트: 2026년 5월 15일 &nbsp;·&nbsp; 다음 예정 업데이트: 2026년 7월
       </span>
       <span>© 2025 We Place. All rights reserved.</span>
       <span>
@@ -2279,6 +2490,316 @@
       animation-duration: .01ms !important;
       transition-duration: .01ms !important;
     }
+  }
+
+  /* ============================================================
+     입구 분기 라벨 — Hero 하단 (방안 C 핵심 장치)
+     ============================================================ */
+  .hero-entry-split {
+    margin: var(--gap-lg) auto 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.7;
+    color: rgba(255,255,255,.55);
+    letter-spacing: -0.01em;
+    max-width: 540px;
+  }
+  .hero-entry-split__label {
+    color: rgba(255,255,255,.5);
+    margin-right: 4px;
+  }
+  .hero-entry-split__link {
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,.35);
+    padding-bottom: 1px;
+    margin: 0 2px;
+    transition: border-color .2s var(--ease), color .2s var(--ease);
+  }
+  .hero-entry-split__link:hover {
+    color: #93A4F5;
+    border-bottom-color: #93A4F5;
+  }
+  .hero-entry-split__sep {
+    margin: 0 8px;
+    color: rgba(255,255,255,.25);
+  }
+  @media (max-width: 560px) {
+    .hero-entry-split {
+      display: grid;
+      gap: 6px;
+    }
+    .hero-entry-split__sep { display: none; }
+  }
+
+  /* ============================================================
+     실행 순서 단계 6 보강 힌트 — GEO 흐름 진입
+     ============================================================ */
+  .execution-step__hint {
+    margin: 12px 0 0;
+    padding: 12px 14px;
+    background: var(--color-accent-soft);
+    border-left: 2px solid var(--color-accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: var(--fs-caption);
+    line-height: var(--lh-loose);
+    color: var(--color-accent-ink);
+  }
+  .execution-step__hint-link {
+    display: inline-block;
+    margin-left: 4px;
+    color: var(--color-accent);
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-accent);
+    padding-bottom: 1px;
+    transition: color .2s var(--ease);
+  }
+  .execution-step__hint-link:hover {
+    color: var(--color-accent-ink);
+  }
+
+  /* ============================================================
+     08-B. GEO 홈페이지 흐름 섹션 (신규)
+     ============================================================ */
+  .geo-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto var(--gap-xl);
+  }
+
+  /* 흐름 다이어그램 (활용안 B) */
+  .geo-flow-figure {
+    max-width: 920px;
+    margin: 0 auto var(--gap-xl);
+  }
+  .geo-flow-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+  }
+  .geo-flow-collabel {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    fill: var(--color-ink-mute);
+  }
+  .geo-flow-node {
+    fill: var(--color-white);
+    stroke: var(--color-line);
+    stroke-width: 1;
+  }
+  .geo-flow-node--soft {
+    fill: var(--color-paper-soft);
+  }
+  .geo-flow-node--anchor {
+    fill: var(--color-accent);
+    stroke: var(--color-accent);
+  }
+  .geo-flow-node--accent {
+    fill: var(--color-white);
+    stroke: var(--color-accent);
+    stroke-width: 1.5;
+  }
+  .geo-flow-nodetext {
+    fill: var(--color-ink);
+    font-size: 13px;
+    font-weight: 600;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
+  .geo-flow-nodetext--anchor {
+    fill: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .geo-flow-nodetext--accent {
+    fill: var(--color-accent-ink);
+  }
+  .geo-flow-subtext {
+    fill: rgba(255,255,255,.78);
+    font-size: 11px;
+    font-weight: 500;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    letter-spacing: 0.04em;
+  }
+  .geo-flow-arrow path {
+    fill: none;
+    stroke: var(--color-ink-mute);
+    stroke-width: 1.2;
+    stroke-dasharray: 4 4;
+    marker-end: none;
+  }
+  .geo-flow-caption {
+    margin-top: 16px;
+    text-align: center;
+    font-size: var(--fs-caption);
+    color: var(--color-ink-mute);
+    line-height: var(--lh-loose);
+  }
+  @media (max-width: 720px) {
+    .geo-flow-svg {
+      min-width: 720px;
+    }
+    .geo-flow-figure {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 8px;
+    }
+  }
+
+  /* GEO 카드 그리드 */
+  .geo-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  @media (min-width: 720px) {
+    .geo-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .geo-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s var(--ease), box-shadow .2s var(--ease);
+  }
+  .geo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+  .geo-card--primary {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px var(--color-accent-soft);
+  }
+  .geo-card--primary:hover {
+    box-shadow: var(--shadow-md), 0 0 0 2px var(--color-accent-soft);
+  }
+  .geo-card__no {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--color-accent);
+    margin-bottom: 10px;
+  }
+  .geo-card__title {
+    font-size: var(--fs-h3);
+    font-weight: 700;
+    color: var(--color-ink);
+    margin: 0 0 14px;
+    line-height: 1.35;
+  }
+  .geo-card__price-range {
+    margin: 0 0 6px;
+    padding: 0;
+  }
+  .geo-card__price-num {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-ink);
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+  .geo-card__price-note {
+    margin: 0 0 16px;
+    font-size: var(--fs-caption);
+    color: var(--color-ink-soft);
+    line-height: var(--lh-loose);
+  }
+  .geo-card__list {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 14px 0 0;
+    border-top: 1px solid var(--color-line);
+    flex: 1;
+  }
+  .geo-card__list li {
+    position: relative;
+    padding: 6px 0 6px 18px;
+    font-size: var(--fs-caption);
+    color: var(--color-ink-soft);
+    line-height: var(--lh-loose);
+  }
+  .geo-card__list li::before {
+    content: '·';
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    font-weight: 700;
+    color: var(--color-accent);
+    font-size: 18px;
+    line-height: 1;
+  }
+  .geo-card__hint {
+    margin: 0 0 16px;
+    padding: 10px 12px;
+    font-size: 11.5px;
+    color: var(--color-accent-ink);
+    background: var(--color-accent-soft);
+    border-radius: var(--radius-sm);
+    line-height: 1.55;
+  }
+  .geo-card__hint--mute {
+    color: var(--color-ink-mute);
+    background: var(--color-paper-soft);
+    border: 1px solid var(--color-line);
+  }
+  .geo-card__cta-block {
+    margin-top: auto;
+  }
+  .geo-card__cta {
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--color-accent);
+    color: #fff;
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-caption);
+    font-weight: 600;
+    text-align: center;
+    transition: background .2s var(--ease), transform .2s var(--ease);
+    cursor: pointer;
+    border: none;
+  }
+  .geo-card__cta:hover {
+    background: var(--color-accent-ink);
+    transform: translateY(-1px);
+  }
+
+  .geo-bottom-note {
+    max-width: 580px;
+    margin: var(--gap-lg) auto 0;
+    text-align: center;
+    font-size: var(--fs-caption);
+    color: var(--color-ink-mute);
+    line-height: var(--lh-loose);
+  }
+
+  /* ============================================================
+     최종 CTA 보조 라벨 — GEO 흐름 후방 동선
+     ============================================================ */
+  .cta-final__sub-link {
+    margin: var(--gap-md) 0 0;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255,255,255,.55);
+    line-height: 1.7;
+  }
+  .cta-final__sub-link-a {
+    color: rgba(255,255,255,.85);
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    padding-bottom: 1px;
+    transition: color .2s var(--ease), border-color .2s var(--ease);
+  }
+  .cta-final__sub-link-a:hover {
+    color: #fff;
+    border-bottom-color: #fff;
   }
 </style>
 
