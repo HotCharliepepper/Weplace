@@ -1,2472 +1,777 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-  <!-- ============ SEO ============ -->
-  <title>AI 검색 시대의 로컬 매장 OS — 마케팅은 광고가 아닙니다 | Weplace</title>
-  <meta name="description" content="Weplace는 GEO 기반 로컬 검색 신뢰 OS입니다. 네이버·구글·홈페이지·리뷰·SNS를 따로 관리하지 않고, AI가 같은 매장으로 추천할 수 있는 하나의 흐름으로 정리합니다. 광고비를 더 쓰기 전에, 매장의 선택 구조부터 점검합니다." />
-  <link rel="canonical" href="https://weplace.netlify.app/" />
+<!-- ============ SEO ============ -->
+<title>광고비를 더 쓰기 전에 — 손님이 매장을 이해하는 데 쓰는 에너지를 먼저 줄입니다 | Weplace</title>
+<meta name="description" content="흐리면 멈추고, 선명하면 움직입니다. Weplace는 네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 같은 매장으로 읽히게 정리해, 사람과 AI가 동시에 이해할 수 있도록 매장의 첫 표면을 정돈합니다. 정리 안 돼도 됩니다. 매장명 한 줄이면 시작합니다." />
+<link rel="canonical" href="https://weplace.netlify.app/" />
+<meta name="theme-color" content="#100C0A" />
+<meta name="last-modified" content="2026-06-01" />
 
-  <!-- ============ Open Graph ============ -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="We Place" />
-  <meta property="og:title" content="AI 검색 시대의 로컬 매장 OS — 마케팅은 광고가 아닙니다 | Weplace" />
-  <meta property="og:description" content="Weplace는 GEO 기반 로컬 검색 신뢰 OS입니다. 네이버·구글·홈페이지·리뷰·SNS를 따로 관리하지 않고, 하나의 검색 신뢰 구조로 정리합니다." />
-  <meta property="og:url" content="https://weplace.netlify.app/" />
-  <meta property="og:image" content="https://weplace.netlify.app/og-image.png" />
-  <meta property="og:locale" content="ko_KR" />
+<!-- ============ Open Graph ============ -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="We Place" />
+<meta property="og:title" content="손님이 매장을 이해하는 데 쓰는 에너지를 먼저 줄입니다 | Weplace" />
+<meta property="og:description" content="흐리면 멈춥니다. 선명하면 움직입니다. 사람과 AI가 동시에 이해하도록 매장의 첫 표면을 정리합니다." />
+<meta property="og:url" content="https://weplace.netlify.app/" />
+<meta property="og:image" content="https://weplace.netlify.app/og-image.png" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="손님이 매장을 이해하는 데 쓰는 에너지를 먼저 줄입니다 | Weplace" />
+<meta name="twitter:description" content="흐리면 멈추고, 선명하면 움직입니다." />
 
-  <!-- ============ Twitter ============ -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AI 검색 시대의 로컬 매장 OS — 마케팅은 광고가 아닙니다 | Weplace" />
-  <meta name="twitter:description" content="Weplace는 GEO 기반 로컬 검색 신뢰 OS입니다. 네이버·구글·홈페이지·리뷰·SNS를 하나의 검색 신뢰 구조로 정리합니다." />
+<!-- ============ Fonts ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
-  <!-- ============ Last modified ============ -->
-  <meta property="article:published_time" content="2026-05-18T00:00:00+09:00" />
-  <meta property="article:modified_time" content="2026-05-18T00:00:00+09:00" />
-  <meta name="last-modified" content="2026-05-18" />
+<!-- ============ JSON-LD ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "We Place", "alternateName": "위플레이스", "legalName": "(주)위플레이스마케팅",
+  "url": "https://weplace.netlify.app/", "logo": "https://weplace.netlify.app/og-image.png",
+  "foundingDate": "2025", "founder": { "@type": "Person", "name": "박규민" },
+  "description": "네이버·구글·홈페이지·리뷰·SNS·AI 검색에 흩어진 정보를 같은 매장으로 읽히게 정리합니다. 사람과 AI가 동시에 이해하도록 매장의 첫 표면을 정돈하는 팀입니다.",
+  "address": { "@type": "PostalAddress", "streetAddress": "디지털로 178 퍼블릭가산C동", "addressLocality": "금천구", "addressRegion": "서울특별시", "addressCountry": "KR" },
+  "contactPoint": { "@type": "ContactPoint", "telephone": "+82-10-6461-6594", "email": "weplace25@gmail.com", "contactType": "customer service", "areaServed": "KR", "availableLanguage": ["Korean","English"] }
+}
+</script>
+<script type="application/ld+json">
+{ "@context":"https://schema.org","@type":"WebSite","name":"We Place","url":"https://weplace.netlify.app/","inLanguage":"ko-KR" }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org","@type": "Service",
+  "serviceType": "매장 첫 표면 정리 및 검색 신뢰 구조 정비",
+  "provider": { "@type": "Organization", "name": "We Place", "url": "https://weplace.netlify.app/" },
+  "areaServed": "KR",
+  "audience": { "@type": "BusinessAudience", "audienceType": "자영업 매장 운영자 — 마사지·테라피, 식당·카페, 병의원·피부과, 숙박, 미용·웰니스 등" },
+  "description": "흩어진 정보를 같은 매장으로 읽히게 정리합니다. 사람과 AI가 동시에 이해하도록 첫 표면을 정돈합니다. 진단이 먼저, 작업은 그 다음입니다."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org","@type": "FAQPage",
+  "mainEntity": [
+    { "@type":"Question","name":"GEO가 정확히 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"GEO는 AI가 답변을 만들 때 참고할 수 있도록 온라인 정보를 정리하는 작업입니다. 다만 GEO 자체가 매출을 보장하지는 않습니다. 중요한 건 그 과정에서 네이버·구글·홈페이지·리뷰에 흩어진 정보가 같은 매장으로 읽히게 정리된다는 점입니다. 고객도 AI도 정리된 정보를 더 쉽게 이해합니다."}},
+    { "@type":"Question","name":"광고비를 더 쓰면 손님이 늘까요?","acceptedAnswer":{"@type":"Answer","text":"손님이 어디서 멈추는지 모르는 채 광고비를 늘리면 같은 자리에서 더 많이 빠져나갑니다. 광고는 손님을 데려오고, 그다음 화면이 손님을 머물게 합니다. 광고를 더 쓰기 전에 그 화면부터 봅니다."}},
+    { "@type":"Question","name":"진단을 받으면 꼭 작업을 해야 하나요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. 진단은 현재 표면을 같이 확인하는 첫 단계입니다. 어디서 손님이 멈추는지 먼저 보고, 정리할지는 대표님이 정하시면 됩니다."}},
+    { "@type":"Question","name":"진단을 받으면 무엇을 받게 되나요?","acceptedAnswer":{"@type":"Answer","text":"매장명과 지역만 보내주시면 네이버·구글·홈페이지·리뷰를 같이 열어보고, 손님이 멈추는 화면과 먼저 정리할 순서를 1장으로 정리해 보내드립니다."}}
+  ]
+}
+</script>
 
-  <!-- ============ Favicon ============ -->
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <meta name="theme-color" content="#0F1724" />
+<style>
+/* =======================================================================
+   Weplace — Main page styles
+   warm dark palette · serif display · generous whitespace · side navigation · gold dust
+   point color: gold(안심) 1개 + teal(신뢰) 희소. 텍스트 최소.
+   ======================================================================= */
+:root{
+  --void:#100C0A; --void-2:#16110D; --char:#1C1611;
+  --ivory:#F3ECDF; --ivory-soft:#FBF6EE; --cream:#EFE6D6;
+  --gold:#C49A5A; --gold-deep:#9A7838; --gold-line:#CBA968; --champagne:#E9D6A8;
+  --teal:#7FB1A8; --teal-deep:#3E6F68;
+  --ink:#241E18; --ink-soft:#5E5247; --ink-faint:#8A7E70; --brown:#6B4D3A;
+  --txt:#F0E9DC; --txt-soft:rgba(240,233,220,.6); --txt-faint:rgba(240,233,220,.4);
+  --serif:'Nanum Myeongjo',serif;
+  --sans:'Pretendard Variable','Pretendard',-apple-system,'Apple SD Gothic Neo',system-ui,sans-serif;
+  --wrap:760px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height:1.85;
+  letter-spacing:-.01em;word-break:keep-all;overflow-wrap:break-word;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+::selection{background:rgba(196,154,90,.32);color:#fff}
 
-  <!-- ============ Preload Hero Image (LCP 우선 로딩) ============ -->
-  <link rel="preload" as="image" href="/assets/img/hero/main-hero.webp" fetchpriority="high" />
+/* 따뜻한 빛 — 스크롤에 미세 반응(패럴랙스) */
+.amb{position:fixed;inset:-20vh 0;z-index:0;pointer-events:none;will-change:transform;
+  background:
+    radial-gradient(60% 40% at 78% 14%,rgba(196,154,90,.14),transparent 60%),
+    radial-gradient(55% 40% at 12% 88%,rgba(107,77,58,.18),transparent 62%)}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.045;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.dust{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.dust i{position:absolute;border-radius:50%;background:radial-gradient(circle,var(--champagne),rgba(233,214,168,0));
+  opacity:0;animation:float linear infinite}
+@keyframes float{0%{opacity:0;transform:translateY(12px)}15%{opacity:.5}85%{opacity:.5}100%{opacity:0;transform:translateY(-60px)}}
 
-  <!-- ============ CSS ============ -->
-  <link rel="stylesheet" href="/assets/css/common.css" />
+/* progress */
+.bar-wrap{position:fixed;top:0;left:0;right:0;height:2px;z-index:50}
+.bar{height:100%;width:0;background:linear-gradient(90deg,var(--gold-deep),var(--champagne));transition:width .12s linear}
 
-  <!-- ============ JSON-LD: Organization ============ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "We Place",
-    "alternateName": "위플레이스",
-    "legalName": "(주)위플레이스마케팅",
-    "url": "https://weplace.netlify.app/",
-    "logo": "https://weplace.netlify.app/og-image.png",
-    "description": "Weplace는 GEO 기반 로컬 검색 신뢰 OS입니다. AI 검색 시대에 매장이 네이버 플레이스·구글 비즈니스 프로필·GEO/AEO 홈페이지·리뷰·Threads·숏폼에서 같은 매장으로 읽히도록 다섯 축을 하나의 흐름으로 정리합니다. 광고를 부정하지 않지만, 광고가 작동하기 전에 손님이 비교하고 신뢰하고 문의하는 화면들을 먼저 봅니다.",
-    "foundingDate": "2025",
-    "founder": { "@type": "Person", "name": "박규민" },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "디지털로 178 퍼블릭가산C동",
-      "addressLocality": "금천구",
-      "addressRegion": "서울특별시",
-      "addressCountry": "KR"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+82-10-6461-6594",
-      "email": "weplace25@gmail.com",
-      "contactType": "customer service",
-      "areaServed": "KR",
-      "availableLanguage": ["Korean", "English"]
-    }
-  }
-  </script>
+/* ---------- Section navigation (right, numbered) ---------- */
+.nav{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:40;
+  display:flex;flex-direction:column;align-items:center;gap:14px}
+.nav a{font-family:var(--serif);font-size:11px;letter-spacing:.14em;color:var(--txt-faint);
+  text-decoration:none;transition:color .25s;line-height:1;position:relative}
+.nav a::before{content:"";position:absolute;right:calc(100% + 9px);top:50%;width:0;height:1px;
+  background:var(--gold-line);transition:width .3s}
+.nav a.on{color:var(--champagne)}
+.nav a.on::before{width:16px}
+.nav a:hover{color:var(--cream)}
+.nav__mark{width:9px;height:9px;border-radius:50%;border:1px solid var(--txt-faint);transition:all .25s}
+.nav__mark.on{background:var(--gold);border-color:var(--gold)}
+.nav__arrows{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.nav__arrows button{background:none;border:none;cursor:pointer;color:var(--txt-faint);padding:2px;line-height:0;transition:color .2s}
+.nav__arrows button:hover{color:var(--champagne)}
+@media(max-width:760px){.nav{display:none}}  /* 모바일: 우측 번호 네비 숨김 (상단 progress bar만) */
 
-  <!-- ============ JSON-LD: Service ============ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "GEO 기반 로컬 검색 신뢰 구조 정비 (Generative Engine Optimization)",
-    "provider": {
-      "@type": "Organization",
-      "name": "We Place",
-      "url": "https://weplace.netlify.app/"
-    },
-    "areaServed": "KR",
-    "audience": {
-      "@type": "BusinessAudience",
-      "audienceType": "자영업 매장 운영자 — 마사지·에스테틱, 식당·카페, 펜션·숙소, 스크린골프·액티비티, 도배·인테리어·생활서비스, 병의원·피부과·성형외과 등"
-    },
-    "description": "광고비를 늘리기 전에, 고객이 매장을 발견하고 비교하고 신뢰하고 문의하는 흐름을 먼저 봅니다. 네이버 플레이스·구글 비즈니스 프로필·GEO/AEO 홈페이지·리뷰·Threads·숏폼에 흩어진 정보를 하나의 기준으로 정렬해, AI가 매장을 정확히 추천할 수 있도록 만듭니다. 진단이 먼저이고, 작업은 그 다음입니다.",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Weplace 구축 단계",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "name": "Place Trust Care · 플레이스 신뢰관리 정비",
-          "description": "네이버·구글·홈페이지의 첫 화면이 같은 매장으로 읽히게 정리합니다. 매장 상태 진단서와 첫 화면 정비 결과를 함께 드립니다."
-        },
-        {
-          "@type": "Offer",
-          "name": "Local Growth 90 · 90일 검색신뢰 런칭",
-          "description": "90일 동안 다섯 축을 같은 방향으로 쌓아, 검색에서 안정적으로 읽히는 상태를 만듭니다."
-        },
-        {
-          "@type": "Offer",
-          "name": "AI Search Trust System · AI 검색신뢰 구축",
-          "description": "GEO/AEO 홈페이지와 콘텐츠 신호를 정렬해, AI가 매장을 정확히 추천하도록 만듭니다."
-        }
-      ]
-    }
-  }
-  </script>
+/* logo */
+.brand{position:fixed;top:26px;left:26px;z-index:40;font-family:var(--serif);
+  font-size:15px;letter-spacing:.22em;color:var(--cream);text-decoration:none;font-weight:700}
+.brand small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.06em;
+  color:var(--txt-faint);font-weight:400;margin-top:4px}
+@media(max-width:760px){.brand{top:18px;left:18px;font-size:13px}}
 
-  <!-- ============ JSON-LD: FAQPage (8문항) ============ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Weplace는 광고대행사인가요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "광고대행사가 아닙니다. Weplace는 GEO 기반 로컬 검색 신뢰 구조를 정리하는 팀입니다. 광고는 손님이 매장을 발견하는 입구를 만들고, Weplace는 발견 이후 손님이 비교하고 신뢰하고 문의하기까지의 흐름을 정리합니다. 광고를 부정하지는 않습니다. 다만 광고가 작동하기 전에, 손님이 확인하는 다섯 화면(네이버·구글·홈페이지·리뷰·SNS)이 같은 매장으로 읽혀야 한다는 입장입니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "광고비를 더 쓰면 매출이 오를까요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "고객이 어디서 이탈하는지 모르는 채로 광고비를 늘리면, 같은 지점에서 더 많이 빠져나갑니다. 광고는 진입을 만들고, 마케팅은 선택을 만듭니다. Weplace는 광고를 부정하지 않지만, 광고를 늘리기 전에 이탈 지점을 먼저 짚는 일을 합니다. 광고는 마케팅 안의 한 표면입니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "AI 검색은 아직 이른 거 아닌가요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "AI 검색은 지금부터 준비하는 게 빠릅니다. ChatGPT·Perplexity·Gemini가 매장을 추천할 때 읽는 건 구조화된 정보입니다. 같은 정보가 네이버·구글·홈페이지·SNS에 같게 적혀 있어야 AI가 그 매장을 신뢰합니다. 지금부터 같은 기준으로 쌓으면, 1년 뒤 AI 검색에서 먼저 발견되는 매장이 됩니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "구글이 정말 필요한가요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "구글은 외국인만 쓰는 도구가 아닙니다. 한국인 손님도 지도 검색·길찾기·AI 답변에서 구글 데이터를 받습니다. 네이버만 정리된 매장은 AI 검색이 점점 늘수록 불리해집니다. 외국인 손님의 출발점은 처음부터 끝까지 구글입니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "홈페이지가 꼭 있어야 하나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "홈페이지는 명함이 아니라 검증의 마지막 화면입니다. 손님은 검색 → 플레이스 → 홈페이지 순서로 옵니다. 홈페이지가 비어 있거나 정보가 어긋나면, 마지막 단계에서 결정이 끊깁니다. 홈페이지가 없으셔도 됩니다. 다만 있다면 AI가 읽을 수 있는 정보 구조로 정리되어야 합니다. Weplace의 GEO/AEO 홈페이지가 그 역할을 합니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Threads는 왜 운영하나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Threads는 단순한 SNS가 아닙니다. 텍스트 기반이라 검색엔진과 AI가 읽기 좋고, 시간이 지나도 오래 남아 매장의 검색 신호로 쌓입니다. 같은 주제를 홈페이지·플레이스·Threads에 반복해서 남기면, AI가 그 매장을 하나의 정체성으로 이해합니다. 인스타그램이 분위기를 보여주는 화면이라면, Threads는 매장이 어떻게 생각하는지를 남기는 검색 자산입니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "진단비를 결제하면 어떤 자료를 받게 되나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "현재는 카카오톡으로 매장명을 보내주시면, 진단 일정을 협의한 뒤 결제와 진단을 진행합니다. 진단 결과로는 다섯 축(네이버·구글·홈페이지·리뷰·SNS)이 어떻게 어긋났는지 짚은 진단서, 매장이 어디서 멈추는지 정리한 운영 기준, 다음 단계 권장안을 받게 됩니다. 다음 단계 진행 여부는 진단 결과를 보고 함께 결정합니다. 진단이 먼저, 작업은 나중입니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "진단을 받으면 작업이 강제로 이어지나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "진단 단계에서 멈추셔도 됩니다. 진단만 받으시는 분도 많습니다. 매장 상태를 같이 본 결과를 문서로 드리고, 그 다음 단계는 대표님이 결정하시면 됩니다. 진단이 먼저, 작업은 나중입니다."
-        }
-      }
-    ]
-  }
-  </script>
+/* ---------- panel ---------- */
+.panel{min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+  padding:120px 26px;position:relative;z-index:2;overflow:hidden}
+.panel__in{max-width:var(--wrap);width:100%;margin:0 auto}
+.panel--center{text-align:center}
+.panel--center .panel__in{text-align:center}
 
+/* 따뜻한 '빛' 패널(표면·진단) — 차가운 백색 대신 워밍 아이보리 */
+.lit{background:radial-gradient(120% 90% at 50% 36%,#FBF6EE,#F1E7D6 68%,#E7DAC2 100%)}
+.lit .vlabel{color:rgba(107,77,58,.5)}
+
+/* Vertical label (one per section) */
+.vlabel{position:absolute;top:50%;writing-mode:vertical-rl;transform:translateY(-50%);
+  font-family:var(--serif);font-size:11px;letter-spacing:.34em;color:var(--txt-faint);right:8px;text-transform:uppercase}
+@media(max-width:760px){.vlabel{display:none}}
+
+/* chapter label */
+.chap{font-family:var(--serif);font-size:12px;letter-spacing:.32em;display:inline-block;margin-bottom:34px}
+.chap__no{color:var(--champagne)}
+.chap--dark .chap__no{color:var(--gold-deep)}
+.chap__no::before{content:"";display:inline-block;width:24px;height:1px;background:var(--gold-line);vertical-align:middle;margin-right:13px;transform:translateY(-3px)}
+.chap__t{margin-left:11px;font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--txt-soft)}
+.chap--dark .chap__t{color:var(--ink-soft)}
+
+/* type */
+.disp{font-family:var(--serif);font-weight:700;letter-spacing:-.015em}
+.d-hero{font-size:clamp(30px,7.4vw,58px);line-height:1.3}
+.d-xl{font-size:clamp(28px,6.6vw,48px);line-height:1.32}
+.d-l{font-size:clamp(24px,5.6vw,38px);line-height:1.4}
+.on-d{color:var(--txt)} .on-l{color:var(--ink)}
+.hl{color:var(--champagne)} .lit .hl{color:var(--gold-deep)}
+.teal{color:var(--teal)} .lit .teal{color:var(--teal-deep)}
+.dim{color:var(--txt-faint)} .lit .dim{color:var(--ink-faint)}
+.sub{font-family:var(--sans);font-weight:400;font-size:clamp(15px,2.4vw,17px);line-height:1.85}
+.sub.on-d{color:var(--txt-soft)} .sub.on-l{color:var(--ink-soft)}
+.mt6{margin-top:6px}.mt16{margin-top:16px}.mt24{margin-top:24px}.mt40{margin-top:40px}.mt56{margin-top:56px}
+
+/* stagger rise */
+.rise{opacity:0;transform:translateY(26px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.panel.is-in .rise.in{opacity:1;transform:none}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-size:15.5px;font-weight:700;
+  text-decoration:none;padding:16px 28px;border-radius:999px;border:1.5px solid transparent;cursor:pointer;
+  -webkit-appearance:none;appearance:none;transition:transform .22s,box-shadow .22s,background .22s,border-color .22s;
+  touch-action:manipulation;line-height:1;position:relative;overflow:hidden}
+.btn--gold{background:linear-gradient(145deg,var(--gold),var(--gold-deep));color:#23170B}
+.btn--gold::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transition:left .55s ease}
+.btn--gold:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(154,120,56,.4)}
+.btn--gold:hover::after{left:140%}
+.btn--ghost{background:rgba(240,233,220,.05);color:var(--cream);border-color:rgba(203,169,104,.4)}
+.btn--ghost:hover{background:rgba(240,233,220,.1)}
+.btn--ink{background:var(--ink);color:var(--ivory-soft)}
+.btn--ink:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(36,30,24,.3)}
+.btn--lg{padding:18px 32px;font-size:16.5px}
+.cue{display:inline-block;margin-top:64px;font-family:var(--sans);font-size:11px;letter-spacing:.3em;color:var(--txt-faint);animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+/* ===== Hero background image — img/weplace-brand-surface.jpg ===== */
+#top{overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;
+  opacity:.58;filter:saturate(.9) brightness(.72) contrast(1.02);
+  transform:scale(1.05);animation:kbhero 28s ease-out forwards}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(120% 95% at 50% 38%,rgba(16,12,10,.5),rgba(16,12,10,.82) 100%),
+  linear-gradient(180deg,rgba(16,12,10,.45),transparent 34%,rgba(16,12,10,.9) 100%)}
+#top .panel__in{position:relative;z-index:2}
+@keyframes kbhero{to{transform:scale(1)}}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:8px 0}
+.chip{font-size:14px;font-weight:600;color:var(--cream);background:rgba(240,233,220,.05);
+  border:1px solid rgba(203,169,104,.24);border-radius:999px;padding:10px 17px}
+.chip i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--gold);margin-right:8px;vertical-align:middle;font-style:normal}
+
+/* two eyes */
+.eyes{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.eye{padding:28px 24px;border-radius:18px}
+.eye--h{background:rgba(196,154,90,.08);border:1px solid rgba(203,169,104,.26)}
+.eye--a{background:rgba(127,177,168,.07);border:1px solid rgba(127,177,168,.26)}
+.eye__t{font-family:var(--serif);font-size:13px;letter-spacing:.16em;font-weight:700}
+.eye--h .eye__t{color:var(--champagne)} .eye--a .eye__t{color:var(--teal)}
+.eye ul{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:10px}
+.eye li{font-size:14.5px;color:var(--txt-soft);padding-left:15px;position:relative}
+.eye li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%}
+.eye--h li::before{background:var(--gold-line)} .eye--a li::before{background:var(--teal)}
+@media(max-width:560px){.eyes{grid-template-columns:1fr}}
+
+/* fields (업종) */
+.fields{display:flex;flex-direction:column}
+.field{display:grid;grid-template-columns:160px 1fr;gap:18px;align-items:baseline;
+  padding:20px 0;border-bottom:1px solid rgba(203,169,104,.16)}
+.field:first-child{border-top:1px solid rgba(203,169,104,.16)}
+.field__n{font-family:var(--serif);font-size:16.5px;font-weight:700;color:var(--cream);white-space:nowrap}
+.field__w{display:block;font-size:14px;color:var(--txt-soft);line-height:1.5}
+.field__w b{color:var(--champagne);font-weight:700}
+.field__p{display:block;font-size:13px;color:var(--txt-faint);line-height:1.55;margin-top:6px}
+.field__p span{color:var(--cream);font-weight:600}
+@media(max-width:560px){.field{grid-template-columns:1fr;gap:5px}}
+
+/* sample — 진단 산출물 목업 (아이보리 시트, 다크 위) */
+.dxsheet{background:var(--ivory-soft);border:1px solid var(--gold-line);border-radius:20px;
+  padding:28px 26px;box-shadow:0 30px 70px rgba(8,5,3,.5);text-align:left;max-width:560px;margin-left:auto;margin-right:auto}
+.dxsheet__top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding-bottom:15px;border-bottom:1px solid var(--line-ivory)}
+.dxsheet__brand{font-family:var(--serif);font-size:13px;letter-spacing:.12em;color:var(--gold-deep);font-weight:700}
+.dxsheet__meta{font-family:var(--sans);font-size:12px;color:var(--ink-faint);white-space:nowrap}
+.dxrow{display:grid;grid-template-columns:auto 1fr;gap:15px;padding:18px 0;border-bottom:1px solid var(--line-ivory)}
+.dxrow:last-child{border-bottom:none;padding-bottom:2px}
+.dxrow__n{font-family:var(--serif);font-size:13px;font-weight:800;color:#fff;background:var(--brown);width:26px;height:26px;border-radius:50%;display:grid;place-items:center}
+.dxrow__t{font-family:var(--serif);font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:12px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tile{position:relative;background:#fff;border:1px solid var(--line-ivory);border-radius:11px;padding:26px 12px 12px;min-height:58px}
+.tile__lab{font-size:11.5px;color:var(--ink-soft);line-height:1.3}
+.tile__dot{position:absolute;top:11px;left:11px;width:8px;height:8px;border-radius:50%}
+.flags{display:flex;flex-wrap:wrap;gap:8px}
+.flag{font-size:13px;font-weight:600;color:var(--ink-soft);background:#fff;border:1px solid var(--line-ivory);border-radius:999px;padding:8px 14px}
+.flag.hit{color:var(--brown);border-color:var(--gold-line);background:rgba(196,154,90,.09)}
+.flag.hit i{font-style:normal;font-size:10px;color:var(--gold-deep);margin-left:7px;font-weight:700}
+.order{list-style:none;counter-reset:o;display:flex;flex-direction:column;gap:9px}
+.order li{counter-increment:o;display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink)}
+.order li::before{content:counter(o);font-family:var(--serif);font-size:11.5px;font-weight:800;color:var(--gold-deep);width:22px;height:22px;border:1px solid var(--gold-line);border-radius:50%;display:grid;place-items:center;flex:0 0 auto}
+.d-ok{background:#5C8A6B}.d-warn{background:var(--gold)}.d-bad{background:#B5654A}
+@media(max-width:560px){.tiles{grid-template-columns:1fr}}
+
+/* diagnosis */
+.diag{max-width:520px;margin:0 auto;text-align:center}
+.q{margin-top:18px;text-align:left;opacity:0;max-height:0;overflow:hidden;transform:translateY(10px);
+  transition:opacity .5s,max-height .6s,transform .5s}
+.q.show,.q#q1{opacity:1;max-height:560px;transform:none}
+.q__h{display:flex;align-items:center;gap:11px;margin-bottom:13px}
+.q__n{font-family:var(--serif);font-size:13px;font-weight:800;color:#fff;background:var(--brown);
+  width:23px;height:23px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto}
+.q__t{font-family:var(--serif);font-size:16px;color:var(--ink);font-weight:700;line-height:1.45}
+.q__o{display:flex;flex-direction:column;gap:9px}
+.opt{font-family:var(--sans);font-size:14.5px;font-weight:600;color:var(--ink);text-align:left;background:#fff;
+  border:1.5px solid rgba(122,86,64,.22);border-radius:13px;padding:14px 16px;cursor:pointer;
+  -webkit-appearance:none;appearance:none;transition:border-color .2s,background .2s,transform .12s}
+.opt:hover{border-color:var(--gold)}
+.opt.sel{border-color:var(--gold-deep);background:rgba(196,154,90,.12);transform:translateX(2px)}
+.go{margin-top:22px;opacity:0;max-height:0;overflow:hidden;transition:opacity .5s,max-height .5s}
+.go.show{opacity:1;max-height:160px}
+.result{margin-top:28px;opacity:0;max-height:0;overflow:hidden;transition:opacity .6s,max-height .8s}
+.result.show{opacity:1;max-height:760px}
+.ring{position:relative;width:168px;height:168px;margin:0 auto}
+.ring svg{transform:rotate(-90deg)}
+.ring__v{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:46px;font-weight:800;color:var(--ink);line-height:1}
+.ring__v small{font-size:15px;color:var(--ink-soft);font-weight:700}
+.res-g{font-family:var(--serif);font-size:clamp(19px,5vw,23px);color:var(--ink);font-weight:700;margin-top:16px;line-height:1.5}
+.res-n{font-size:14.5px;color:var(--ink-soft);line-height:1.72;margin-top:12px;max-width:40ch;margin-left:auto;margin-right:auto}
+
+/* faq */
+.faq{max-width:var(--wrap);margin:48px auto 0;text-align:left}
+.faq details{border-bottom:1px solid rgba(203,169,104,.2)}
+.faq summary{list-style:none;cursor:pointer;padding:19px 34px 19px 0;position:relative;
+  font-family:var(--serif);font-size:16px;color:var(--cream);line-height:1.45}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:2px;top:19px;font-family:var(--serif);font-size:19px;color:var(--gold-line)}
+.faq details[open] summary::after{content:"−"}
+.faq__b{padding:0 34px 22px 0;color:var(--txt-soft);font-size:14.5px;line-height:1.78}
+
+/* final / contact */
+.contact-box{margin-top:34px}
+.small{font-family:var(--sans);font-size:12.5px;color:var(--txt-faint)}
+.contacts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+.contacts a{color:var(--cream);text-decoration:none;font-size:13.5px;font-weight:600;
+  border:1px solid rgba(203,169,104,.3);padding:9px 16px;border-radius:999px;transition:background .2s}
+.contacts a:hover{background:rgba(240,233,220,.07)}
+
+/* footer */
+.foot{background:#0A0705;color:var(--txt-faint);padding:46px 26px;text-align:center;position:relative;z-index:2}
+.foot__b{font-family:var(--serif);font-size:17px;color:var(--cream);letter-spacing:.06em}
+.foot__l{margin-top:12px;font-size:12.5px;line-height:1.9;max-width:44ch;margin-left:auto;margin-right:auto}
+.foot__n{margin-top:16px;font-size:12px;color:var(--txt-faint);line-height:1.8}
+.foot__m{margin-top:16px;font-family:var(--sans);font-size:11px;color:rgba(240,233,220,.28);letter-spacing:.04em}
+
+/* toast */
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(18px);
+  background:var(--ink);color:var(--ivory-soft);padding:13px 22px;border-radius:999px;font-size:14px;
+  box-shadow:0 16px 44px rgba(8,5,3,.5);opacity:0;pointer-events:none;transition:all .3s;z-index:80;max-width:88vw}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(min-width:760px){:root{--wrap:780px}}
+@media(prefers-reduced-motion:reduce){.rise{opacity:1;transform:none;transition:none}.dust{display:none}*{scroll-behavior:auto;animation:none!important}}
+
+/* ===== 이미지 섹션 (img/ 경로) ===== */
+.hero-bg{background:linear-gradient(168deg,#241A14,#100B09)} /* 로딩 전/실패 폴백 */
+.energy-grid{display:grid;grid-template-columns:.82fr 1fr;gap:26px;align-items:center}
+.energy-shot{border-radius:18px;overflow:hidden;border:1px solid rgba(203,169,104,.2);box-shadow:0 24px 60px rgba(8,5,3,.45)}
+.energy-shot img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:4/5;filter:saturate(.92) brightness(.92)}
+.energy-side__lab{font-family:var(--serif);font-size:12px;letter-spacing:.12em;color:var(--champagne);display:block;margin-bottom:16px}
+.energy-side .chips{margin:0}
+@media(max-width:640px){.energy-grid{grid-template-columns:1fr;gap:18px}.energy-shot img{aspect-ratio:16/10}}
+.fcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.fcard{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;border:1px solid rgba(203,169,104,.18)}
+.fcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.82);transition:transform .6s ease,filter .4s ease}
+.fcard:hover img{transform:scale(1.04);filter:saturate(.95) brightness(.9)}
+.fcard__grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,12,10,.1) 0%,rgba(16,12,10,.22) 45%,rgba(16,12,10,.9) 100%)}
+.fcard__body{position:absolute;left:0;right:0;bottom:0;padding:20px 18px;z-index:2}
+.fcard__n{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--ivory-soft)}
+.fcard__p{font-size:12.5px;color:rgba(243,236,223,.8);line-height:1.5;margin-top:7px}
+@media(max-width:520px){.fcards{grid-template-columns:1fr 1fr;gap:10px}.fcard__n{font-size:14px}.fcard__p{font-size:11.5px}}
+#contact{overflow:hidden}
+.cta-bg{position:absolute;inset:0;z-index:0}
+.cta-bg img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.3;filter:saturate(.9) brightness(.7)}
+.cta-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 100% at 50% 50%,rgba(16,12,10,.5),rgba(16,12,10,.9) 100%)}
+#contact .panel__in{position:relative;z-index:2}
+
+/* ===== sample mockup refinements (status text · issues · ranked order) ===== */
+.tile{padding:14px 13px;min-height:auto}
+.tile__st{display:block;font-size:11px;font-weight:700;margin-bottom:5px}
+.tile__lab{font-size:12.5px;color:var(--ink-soft);line-height:1.35}
+.st-ok{color:#5C8A6B}.st-warn{color:#9A7838}.st-bad{color:#B5654A}
+.issues{list-style:none;display:flex;flex-direction:column;gap:8px}
+.issues li{font-size:13.5px;color:var(--ink-soft);padding-left:18px;position:relative;line-height:1.45}
+.issues li::before{content:"!";position:absolute;left:0;top:0;font-family:var(--serif);font-weight:800;color:#9A7838}
+.order{list-style:none;display:flex;flex-direction:column;gap:9px}
+.order li{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;font-size:13.5px;color:var(--ink)}
+.order li::before{content:none}
+.order__rank{font-family:var(--serif);font-size:11px;font-weight:800;color:#fff;background:var(--brown);padding:3px 8px;border-radius:6px;white-space:nowrap}
+.order__when{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.w-now{color:#7A5230;background:rgba(196,154,90,.16);border:1px solid var(--gold-line)}
+.w-week{color:#3E6F68;background:rgba(127,177,168,.12);border:1px solid rgba(127,177,168,.3)}
+.w-op{color:var(--ink-faint);background:rgba(122,86,64,.07);border:1px solid var(--line-ivory)}
+.dxnote{font-family:var(--serif);font-size:14.5px;color:var(--cream);text-align:center;max-width:34em;margin:24px auto 0;line-height:1.6}
+@media(max-width:560px){.order li{grid-template-columns:auto 1fr}.order__when{grid-column:2;justify-self:start;margin-top:3px}}
+</style>
 </head>
+<body>
+<div class="amb" id="amb" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="dust" id="dust" aria-hidden="true"></div>
+<div class="bar-wrap" aria-hidden="true"><span class="bar" id="bar"></span></div>
 
-<body class="tone-default">
+<a href="#top" class="brand">WE PLACE<small>매장을 함께 읽는 팀</small></a>
 
-<!-- ========================================================================
-     GLOBAL HEADER — 로고 옆에 GEO Local Trust OS 마이크로 라벨
-     ======================================================================== -->
-<header class="site-header">
-  <div class="site-header__inner">
-    <a href="/" class="site-logo" aria-label="We Place 홈 — GEO Local Trust OS">
-      <span class="site-logo__brand">
-        We<span class="logo-comma">,</span>Place<span class="logo-dot">.</span>
-      </span>
-      <span class="site-logo__suffix">GEO Local Trust OS</span>
-    </a>
-    <nav class="site-nav" aria-label="주요 메뉴">
-      <a href="#services-5axis">5축</a>
-      <a href="/industries/">업종별</a>
-      <a href="#self-diagnosis">자가진단</a>
-      <a href="#contact" class="t-accent">매장명 보내기</a>
-    </nav>
+<nav class="nav" id="nav" aria-label="섹션 이동">
+  <a href="#top" data-sec="top" class="nav__mark on" aria-label="처음으로"></a>
+  <a href="#scene"     data-sec="scene">01</a>
+  <a href="#energy"    data-sec="energy">02</a>
+  <a href="#surface"   data-sec="surface">03</a>
+  <a href="#eyes"      data-sec="eyes">04</a>
+  <a href="#fields"    data-sec="fields">05</a>
+  <a href="#sample"    data-sec="sample">06</a>
+  <a href="#diagnosis" data-sec="diagnosis">07</a>
+  <a href="#contact"   data-sec="contact">08</a>
+  <div class="nav__arrows">
+    <button id="navUp" aria-label="이전"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
+    <button id="navDn" aria-label="다음"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="panel" id="top">
+  <!-- ▼ Hero 이미지: img/weplace-brand-surface.jpg (배포 시 img 폴더에 사진 8장 배치). 교체는 src만 수정 -->
+  <div class="hero-bg" aria-hidden="true"><img src="img/weplace-brand-surface.jpg" alt="" loading="eager" /></div>
+  <div class="panel__in rise">
+    <h1 class="disp d-hero on-d">
+      광고비를 더 쓰기 전에,<br>
+      손님이 매장을 이해하는 데 쓰는<br>
+      <span class="hl">에너지를 먼저 줄입니다.</span>
+    </h1>
+    <p class="sub on-d mt24 rise" style="max-width:32em">
+      네이버 · 구글 · 홈페이지 · 리뷰 · AI 검색.<br>
+      흩어진 정보를 하나의 매장으로 정리합니다.<br><br>
+      손님이 다시 검색으로 빠지지 않도록,<br>
+      처음 보는 화면부터 맞춥니다.
+    </p>
+    <div class="mt40 rise">
+      <a href="#diagnosis" class="btn btn--gold btn--lg">매장명으로 1장 진단 받아보기</a>
+      <a href="#scene" class="btn btn--ghost btn--lg" style="margin-left:10px">내려가며 보기</a>
+    </div>
+    <span class="cue rise">SCROLL ↓</span>
   </div>
 </header>
 
-
 <main>
 
-  <!-- ====================================================================
-       01. HERO — H-A · GEO 정체성 + 시그니처 보존
-       ==================================================================== -->
-  <section class="hero-dark hero-dark--photo" id="top" aria-label="히어로">
-    <div class="hero-dark__bg" aria-hidden="true"
-         style="background-image: url('/assets/img/hero/main-hero.webp');"></div>
-    <div class="container-narrow hero-dark__inner">
-      <span class="t-eyebrow hero-dark__eyebrow">
-        GEO 기반 로컬 검색 신뢰 OS
-      </span>
-      <h1 class="hero-dark__title keep-all">
-        마케팅은<br>
-        <span class="hero-highlight">광고가 아닙니다.</span>
-      </h1>
-      <p class="hero-lead keep-all">
-        AI가 매장을 추천하는 시대,<br class="br-d">
-        네이버·구글·홈페이지·리뷰·SNS를 따로 관리하지 않고
-        <strong>하나의 검색 신뢰 구조</strong>로 정리합니다.
-      </p>
-      <p class="hero-sub keep-all">
-        광고는 마케팅 안에 포함되는 하나의 표면입니다.
-      </p>
-      <div class="hero-dark__cta">
-        <a href="#self-diagnosis" class="btn btn-accent btn-lg">
-          우리 업장 검색 구조 점검받기
-        </a>
-        <a href="#services-5axis" class="btn btn-ghost-light btn-lg">
-          Weplace가 보는 방식 ↓
-        </a>
-      </div>
-    </div>
-  </section>
+<!-- 01 ===================== 검색창 앞에서 ===================== -->
+<section class="panel" id="scene">
+  <span class="vlabel">searching</span>
+  <div class="panel__in">
+    <span class="chap rise"><span class="chap__no">01 — 검색창 앞에서</span></span>
+    <p class="disp d-xl on-d rise">좋은 매장은<br>이미 많습니다.</p>
+    <p class="sub on-d mt24 rise" style="max-width:30em">
+      문제는 좋은 점이 없는 것이 아니라, 그 좋은 점을 손님이 <span class="hl">너무 많은 화면</span>을 거쳐 이해해야 한다는 데 있습니다.
+    </p>
+  </div>
+</section>
 
-
-  <!-- ====================================================================
-       02. WEPLACE 5축 — 신설. Naver / GBP / GEO Homepage / Threads / Short-form
-       1층 80% / 2층 20%
-       ==================================================================== -->
-  <section class="section-lg bg-paper" id="services-5axis">
-    <div class="container-narrow">
-      <span class="t-eyebrow t-accent">Weplace가 보는 다섯 화면</span>
-      <h2 class="t-display mt-sm keep-all">
-        따로 관리하지 않습니다.<br class="br-d">
-        한 매장으로 읽히게 정리합니다.
-      </h2>
-      <p class="t-lead keep-all">
-        손님은 네이버에서 보고, 구글에서 다시 확인하고,
-        AI에게 추천을 묻고, SNS에서 분위기를 봅니다.
-        다섯 화면이 같은 톤이 아니면, 손님은 한 곳에서 멈춥니다.
-      </p>
-
-      <div class="axis-grid mt-lg">
-
-        <article class="axis-card">
-          <span class="axis-card__no">01</span>
-          <p class="axis-card__en">Naver Place</p>
-          <h3 class="axis-card__title">한국 손님의 첫 화면</h3>
-          <p class="axis-card__sub keep-all">
-            사진 첫 장, 리뷰 첫 줄, 소개글이
-            같은 톤으로 읽히게 합니다.
-          </p>
-        </article>
-
-        <article class="axis-card">
-          <span class="axis-card__no">02</span>
-          <p class="axis-card__en">Google Business Profile</p>
-          <h3 class="axis-card__title">외국인·지도·AI 검색의 출발점</h3>
-          <p class="axis-card__sub keep-all">
-            한국어와 영문 정보가
-            같은 매장으로 읽히게 정리합니다.
-          </p>
-        </article>
-
-        <article class="axis-card axis-card--accent">
-          <span class="axis-card__no">03</span>
-          <p class="axis-card__en">GEO / AEO Homepage</p>
-          <h3 class="axis-card__title">AI가 읽는 매장 한 장</h3>
-          <p class="axis-card__sub keep-all">
-            ChatGPT·Perplexity·Gemini가
-            매장을 추천할 수 있는 정보 구조를 만듭니다.
-          </p>
-        </article>
-
-        <article class="axis-card">
-          <span class="axis-card__no">04</span>
-          <p class="axis-card__en">Threads &amp; SNS</p>
-          <h3 class="axis-card__title">길게 남는 검색 신호</h3>
-          <p class="axis-card__sub keep-all">
-            단발 포스팅이 아니라, 같은 주제를
-            여러 화면에 반복해 신뢰를 쌓습니다.
-          </p>
-        </article>
-
-        <article class="axis-card">
-          <span class="axis-card__no">05</span>
-          <p class="axis-card__en">Short-form Planning</p>
-          <h3 class="axis-card__title">매장 분위기의 마지막 검증</h3>
-          <p class="axis-card__sub keep-all">
-            손님이 SNS에서 마지막으로 확인하는
-            분위기와 톤을 같은 방향으로 맞춥니다.
-          </p>
-        </article>
-
-      </div>
-
-      <p class="t-caption t-mute mt-lg" style="text-align: center;">
-        다섯 축은 별도 상품이 아닙니다. 매장 상태에 따라
-        어떤 축부터 정리할지 진단에서 정합니다.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- ====================================================================
-       03. 광고 오해 깨기 — 광고는 마케팅 안의 한 표면입니다 (현행 유지)
-       1층 80% / 2층 20%
-       ==================================================================== -->
-  <section class="section-lg bg-paper-soft" id="why-ads-arent-marketing">
-    <div class="container-narrow">
-      <span class="t-eyebrow t-accent">진짜 문제 위치 인식</span>
-      <h2 class="t-display mt-sm keep-all">
-        광고는 마케팅 안의<br class="br-d">
-        한 표면입니다.
-      </h2>
-      <p class="t-lead keep-all">
-        광고는 손님이 매장을 <strong>발견하는 입구</strong>를 만듭니다.
-        마케팅은 손님이 <strong>선택까지 가는 흐름</strong>을 만듭니다.
-        둘은 같은 일이 아닙니다.
-      </p>
-
-      <div class="compare-block mt-lg">
-        <div class="compare-col compare-col--ads">
-          <span class="compare-col__tag">광고</span>
-          <p class="compare-col__line">손님이 매장을 <strong>발견</strong>하게 합니다.</p>
-          <p class="compare-col__sub">노출, 클릭, 진입까지. 거기까지가 광고의 일입니다.</p>
-        </div>
-        <div class="compare-col compare-col--marketing">
-          <span class="compare-col__tag">마케팅</span>
-          <p class="compare-col__line">손님이 매장을 <strong>선택</strong>하게 합니다.</p>
-          <p class="compare-col__sub">발견 다음에 손님이 멈추는 화면들을 같은 기준으로 맞춥니다.</p>
-        </div>
-      </div>
-
-      <div class="faq-list mt-lg">
-        <details class="faq-item">
-          <summary>광고를 더 써도 매출이 유지되지 않는 이유가 있습니다</summary>
-          <div class="faq-item__body">
-            광고는 손님을 매장 페이지 앞까지 데려옵니다. 하지만 그 다음에 손님이 보는 화면 —
-            사진 첫 장, 리뷰 첫 줄, 소개글, 가격, 위치 — 이 따로 놀면, 손님은 비교 단계에서
-            바로 옆 가게로 넘어갑니다. 광고비를 늘려도 같은 지점에서 더 많이 빠져나가는 것뿐입니다.
-
-            이탈 지점을 모르는 채 광고를 늘리는 건, 구멍 난 컵에 물을 더 부으시는 것과 같습니다.
-            구멍부터 봅니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>외국인 손님은 한국 광고를 보지 않습니다</summary>
-          <div class="faq-item__body">
-            네이버 검색 광고, 인스타그램 한국어 광고, 블로그 체험단. 한국 손님에게는 닿지만
-            외국인 손님에게는 닿지 않습니다. 그분들은 광고를 보지 않고 <strong>구글에서 검색</strong>합니다.
-
-            외국인 손님이 매출의 일부라면, 광고만으로는 그분들을 만날 수 없습니다.
-            구글에 매장 정보가 어떻게 적혀 있는지가 광고보다 먼저 작동합니다.
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ====================================================================
-       04. 첫인상 비유 (현행 유지 · 시그니처 명제 1회차)
-       ==================================================================== -->
-  <section class="section-lg bg-paper">
-    <div class="container-narrow">
-      <span class="t-eyebrow t-accent">무의식적 이탈 자각</span>
-      <h2 class="t-display mt-sm keep-all">
-        사람도 매장도,<br class="br-d">
-        상태가 먼저 읽힙니다.
-      </h2>
-      <p class="t-lead keep-all">
-        처음 만나는 사람을 볼 때, 우리는 그 사람을 분석하지 않습니다.
-        표정·자세·옷차림·말투가 어긋나면 <strong>무의식적으로 거리를 둡니다</strong>.
-        손님이 매장을 볼 때도 같습니다.
-      </p>
-
-      <figure class="concept-figure">
-        <img src="/assets/img/concept/first-impression.webp"
-             alt="거리에서 처음 마주치는 두 사람을 멀리서 바라본 장면"
-             loading="lazy" width="1600" height="900" />
+<!-- 02 ===================== 손님이 쓰는 것 ===================== -->
+<section class="panel" id="energy">
+  <div class="panel__in">
+    <span class="chap rise"><span class="chap__no">02 — 손님이 쓰는 것</span></span>
+    <p class="disp d-l on-d rise">손님은 선택하기 전,<br>이미 <span class="hl">많은 에너지</span>를 씁니다.</p>
+    <p class="sub on-d mt16 rise" style="max-width:26em">검색이 길어질수록, 마음은 조금씩 식습니다.</p>
+    <div class="energy-grid mt40 rise">
+      <figure class="energy-shot">
+        <img src="img/weplace-search-moment.jpg" alt="밤에 스마트폰으로 매장을 검색하며 비교하는 손님" loading="lazy" />
       </figure>
-
-      <div class="signature-quote mt-lg">
-        <p class="signature-quote__text keep-all">
-          고객은 매장을 분석하지 않습니다.<br>
-          그냥 느낌이 맞지 않으면 나갑니다.
-        </p>
-      </div>
-
-      <div class="impression-grid mt-lg">
-        <div class="impression-cell">
-          <span class="impression-cell__tag">사진</span>
-          <p>리뉴얼 전 인테리어, 단종된 메뉴, 어두운 조명이 첫 장에 걸려 있는 경우</p>
+      <div class="energy-side">
+        <span class="energy-side__lab">지금 손님이 확인 중인 것</span>
+        <div class="chips">
+          <span class="chip"><i></i>가격</span><span class="chip"><i></i>사진</span><span class="chip"><i></i>후기</span>
+          <span class="chip"><i></i>위치</span><span class="chip"><i></i>예약</span><span class="chip"><i></i>메뉴</span>
+          <span class="chip"><i></i>자주 묻는 질문</span>
         </div>
-        <div class="impression-cell">
-          <span class="impression-cell__tag">리뷰</span>
-          <p>첫 세 줄이 불만 응답이거나, 답글 톤이 사장님 톤과 다른 경우</p>
-        </div>
-        <div class="impression-cell">
-          <span class="impression-cell__tag">소개글</span>
-          <p>마지막 수정일이 2년 전이거나, 지금 운영과 다른 정보가 적혀 있는 경우</p>
-        </div>
-        <div class="impression-cell">
-          <span class="impression-cell__tag">가격</span>
-          <p>네이버·구글·홈페이지의 가격이 서로 다르거나, 표기 단위가 어긋나는 경우</p>
-        </div>
-        <div class="impression-cell">
-          <span class="impression-cell__tag">구글</span>
-          <p>네이버 정보는 정돈됐는데, 구글 비즈니스 프로필이 비어 있거나 영문이 빠진 경우</p>
-        </div>
-        <div class="impression-cell">
-          <span class="impression-cell__tag">홈페이지</span>
-          <p>홈페이지에 들어가니 메뉴·운영시간·연락 방법이 즉시 안 보이는 경우</p>
-        </div>
-      </div>
-
-      <p class="t-caption t-mute mt-lg" style="text-align: center;">
-        손님은 이 화면들을 따로따로 보지 않습니다. 하나의 인상으로 묶어서 봅니다.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- ====================================================================
-       05. 검색 후 7동선 (현행 유지)
-       ==================================================================== -->
-  <section class="section-lg bg-paper-soft">
-    <div class="container-narrow">
-      <span class="t-eyebrow t-accent">어디서 멈추는지 추적</span>
-      <h2 class="t-display mt-sm keep-all">
-        손님은 검색 후<br class="br-d">
-        일곱 번 멈춥니다.
-      </h2>
-      <p class="t-lead keep-all">
-        네이버 → 사진 → 리뷰 → 가격 → 구글 → 홈페이지 → 문의.
-        한 곳이라도 어긋나면 다음으로 넘어가지 않습니다.
-      </p>
-
-      <ol class="journey-flow mt-lg" aria-label="고객 검색 후 7단계 흐름">
-        <li class="journey-step">
-          <span class="journey-step__no">01</span>
-          <div>
-            <p class="journey-step__title">네이버에서 검색합니다</p>
-            <p class="journey-step__sub">"지역 + 업종"으로 검색해 플레이스 첫 결과를 봅니다. 외국인 손님이라면 구글에서 시작합니다.</p>
-          </div>
-        </li>
-        <li class="journey-step">
-          <span class="journey-step__no">02</span>
-          <div>
-            <p class="journey-step__title">대표 사진 첫 장을 봅니다</p>
-            <p class="journey-step__sub">메뉴 한 접시인지, 외관인지, 인테리어인지. 작은 썸네일에서 무슨 가게인지 0.5초 안에 읽힙니다.</p>
-          </div>
-        </li>
-        <li class="journey-step">
-          <span class="journey-step__no">03</span>
-          <div>
-            <p class="journey-step__title">리뷰 첫 세 줄을 읽습니다</p>
-            <p class="journey-step__sub">개수보다 톤이 먼저 읽힙니다. 좋은 후기 옆에 사장님 답글이 어떻게 달렸는지가 신뢰를 좌우합니다.</p>
-          </div>
-        </li>
-        <li class="journey-step">
-          <span class="journey-step__no">04</span>
-          <div>
-            <p class="journey-step__title">가격과 메뉴를 확인합니다</p>
-            <p class="journey-step__sub">예상 비용이 안 잡히면 손님은 그 자리에서 옆 가게로 넘어갑니다. 가격이 비공개일수록 비교가 빨라집니다.</p>
-          </div>
-        </li>
-        <li class="journey-step">
-          <span class="journey-step__no">05</span>
-          <div>
-            <p class="journey-step__title">구글에서 다시 검증합니다</p>
-            <p class="journey-step__sub">한국 손님도 지도 검색·길찾기에 구글을 씁니다. 외국인 손님은 처음부터 끝까지 구글입니다.</p>
-          </div>
-        </li>
-        <li class="journey-step">
-          <span class="journey-step__no">06</span>
-          <div>
-            <p class="journey-step__title">홈페이지에 들어옵니다 (있다면)</p>
-            <p class="journey-step__sub">마지막 검증 화면입니다. 운영시간·메뉴·연락 방법이 즉시 안 보이면 여기서 결정이 끊깁니다. AI도 이 화면을 읽습니다.</p>
-          </div>
-        </li>
-        <li class="journey-step">
-          <span class="journey-step__no">07</span>
-          <div>
-            <p class="journey-step__title">문의하거나, 그냥 닫습니다</p>
-            <p class="journey-step__sub">앞의 여섯 화면이 같은 톤으로 맞춰져 있으면 손님은 연락합니다. 한 곳이라도 어긋났다면 닫습니다.</p>
-          </div>
-        </li>
-      </ol>
-
-      <p class="t-caption t-mute mt-lg keep-all" style="text-align: center;">
-        내국인 손님은 네이버에서, 외국인 손님은 구글에서, AI는 다섯 축을 동시에 읽습니다.<br>
-        세 입구가 같은 매장으로 읽혀야 합니다.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- ====================================================================
-       NEW. 고객 반응 포인트 — 같은 이유로 결정하지 않는 6가지 유형
-       ==================================================================== -->
-  <section class="section-lg bg-paper" id="customer-response-points">
-    <div class="container-narrow">
-      <span class="t-eyebrow t-accent">고객 반응 포인트</span>
-      <h2 class="t-display mt-sm keep-all">
-        고객은 같은 이유로<br class="br-d">
-        결정하지 않습니다.
-      </h2>
-      <p class="t-lead keep-all">
-        어떤 손님은 시간을 아끼고 싶어 움직이고,<br class="br-d">
-        어떤 손님은 손해를 피하고 싶어 멈춥니다.<br>
-        어떤 손님은 안심이 생길 때 비로소 문의합니다.
-      </p>
-      <p class="keep-all mt-md" style="color: rgba(15,23,36,.7); line-height: 1.85;">
-        Weplace는 업종만 보지 않습니다.
-        그 매장의 고객이 무엇에 먼저 반응하는지,
-        어디서 망설이는지, 어떤 신호가 안심을 만드는지 함께 봅니다.
-      </p>
-
-      <div class="response-grid mt-lg">
-
-        <article class="response-card">
-          <span class="response-card__tag">시간 절약</span>
-          <h3>빨리 이해하고 싶은 고객</h3>
-          <p class="keep-all">
-            메뉴, 가격, 위치, 예약 방법이 바로 읽히지 않으면
-            비교 단계에서 이탈합니다.
-          </p>
-        </article>
-
-        <article class="response-card">
-          <span class="response-card__tag">안심</span>
-          <h3>실수 없이 고르고 싶은 고객</h3>
-          <p class="keep-all">
-            리뷰 톤, 사진의 결, 답글 태도에서
-            이 매장이 믿을 만한지 확인합니다.
-          </p>
-        </article>
-
-        <article class="response-card">
-          <span class="response-card__tag">손해 회피</span>
-          <h3>헛돈 쓰고 싶지 않은 고객</h3>
-          <p class="keep-all">
-            가격이 불명확하거나 후기가 애매하면
-            더 안전해 보이는 옆 매장으로 넘어갑니다.
-          </p>
-        </article>
-
-        <article class="response-card">
-          <span class="response-card__tag">인정 · 만족</span>
-          <h3>잘 골랐다는 감각이 필요한 고객</h3>
-          <p class="keep-all">
-            분위기, 사진, 후기, 브랜드 톤이
-            선택 이후의 만족감을 미리 보여줘야 합니다.
-          </p>
-        </article>
-
-        <article class="response-card">
-          <span class="response-card__tag">효율</span>
-          <h3>적은 시간으로 좋은 결과를 원하는 고객</h3>
-          <p class="keep-all">
-            예약 동선, 상담 방식, 서비스 구성이
-            복잡하면 문의 전부터 피로해집니다.
-          </p>
-        </article>
-
-        <article class="response-card">
-          <span class="response-card__tag">회복 · 해소</span>
-          <h3>피로와 스트레스를 풀고 싶은 고객</h3>
-          <p class="keep-all">
-            마사지, 숙소, 식당, 카페처럼 감정 회복이 중요한 업종은
-            사진과 문장만으로도 편안함이 전달되어야 합니다.
-          </p>
-        </article>
-
-      </div>
-
-      <div class="signature-quote mt-lg">
-        <p class="signature-quote__text keep-all">
-          마케팅은 더 크게 말하는 일이 아니라,<br>
-          고객이 먼저 반응하는 지점을 정확히 찾는 일입니다.
-        </p>
       </div>
     </div>
-  </section>
+    <p class="disp d-l on-d mt56 rise" style="line-height:1.4">
+      흐리면 <span class="dim">멈춥니다.</span><br>
+      선명하면 <span class="teal">움직입니다.</span>
+    </p>
+  </div>
+</section>
 
+<!-- 03 ===================== 표면 (GEO 재정의, 따뜻한 빛) ===================== -->
+<section class="panel panel--center lit" id="surface">
+  <span class="vlabel">surface</span>
+  <div class="panel__in">
+    <span class="chap chap--dark rise"><span class="chap__no">03 — 첫 표면 정리</span><span class="chap__t">AI 검색 정리, 흔히 ‘GEO’라고 부르는 일</span></span>
+    <p class="disp d-l on-l rise">AI 검색 정리 자체가<br>매출을 바로 올리는 건 아닙니다.</p>
+    <p class="sub on-l mt24 rise" style="max-width:37em;margin-left:auto;margin-right:auto">
+      다만 그 과정에서 매장의 이름·사진·설명·리뷰·위치·FAQ가 한 기준으로 정리됩니다.<br>
+      그 표면을 본 고객은 <span class="hl">더 적은 감각 에너지로</span> 매장을 이해합니다.
+    </p>
+    <p class="disp d-l on-l mt56 rise" style="line-height:1.4">
+      사람과 AI가 함께 이해하도록,<br>
+      매장의 <span class="teal">첫 표면을 정리</span>하는 일.
+    </p>
+  </div>
+</section>
 
-  <!-- ====================================================================
-       NEW. 오프라인 감각 흐름 — 입구부터 퇴장까지 8단계 + 4가지 감각 기준
-       ==================================================================== -->
-  <section class="section-lg bg-paper-soft" id="offline-sensory-flow">
-    <div class="container-narrow">
-      <span class="t-eyebrow t-accent">오프라인 경험 진단</span>
-
-      <h2 class="t-display mt-sm keep-all">
-        검색만 보지 않습니다.<br class="br-d">
-        입구부터 퇴장까지 같이 봅니다.
-      </h2>
-
-      <p class="t-lead keep-all">
-        손님은 검색 화면에서만 매장을 판단하지 않습니다.
-        입구에 들어오는 순간, 자리에 앉는 순간,
-        메뉴를 보는 순간, 계산하고 나가는 순간까지
-        전체 경험을 하나의 인상으로 기억합니다.
-      </p>
-
-      <div class="sensory-flow mt-lg">
-
-        <article class="sensory-step">
-          <span class="sensory-step__no">01</span>
-          <div>
-            <h3>입구</h3>
-            <p class="keep-all">
-              들어가기 전부터 첫 긴장감이 생깁니다.
-              간판, 조명, 문 앞 정돈 상태가 첫 신호가 됩니다.
-            </p>
-          </div>
-        </article>
-
-        <article class="sensory-step">
-          <span class="sensory-step__no">02</span>
-          <div>
-            <h3>입장</h3>
-            <p class="keep-all">
-              직원의 첫 인사, 매장 소리, 공기의 냄새가
-              손님에게 안심 또는 거리감을 만듭니다.
-            </p>
-          </div>
-        </article>
-
-        <article class="sensory-step">
-          <span class="sensory-step__no">03</span>
-          <div>
-            <h3>착석</h3>
-            <p class="keep-all">
-              의자의 무게감, 테이블 간격, 시선의 부담이
-              오래 머물고 싶은지 결정하게 만듭니다.
-            </p>
-          </div>
-        </article>
-
-        <article class="sensory-step">
-          <span class="sensory-step__no">04</span>
-          <div>
-            <h3>메뉴 · 주문</h3>
-            <p class="keep-all">
-              메뉴판이 어렵거나 추천 흐름이 없으면
-              선택 피로가 생기고 주문이 보수적으로 바뀝니다.
-            </p>
-          </div>
-        </article>
-
-        <article class="sensory-step">
-          <span class="sensory-step__no">05</span>
-          <div>
-            <h3>기다림</h3>
-            <p class="keep-all">
-              기다리는 시간은 짧아도 길게 느껴질 수 있습니다.
-              소리, 향, 안내 한마디가 기대감을 유지시킵니다.
-            </p>
-          </div>
-        </article>
-
-        <article class="sensory-step">
-          <span class="sensory-step__no">06</span>
-          <div>
-            <h3>음식 · 서비스 도착</h3>
-            <p class="keep-all">
-              첫 비주얼, 온도, 향, 설명 방식이
-              손님의 만족도를 가장 빠르게 결정합니다.
-            </p>
-          </div>
-        </article>
-
-        <article class="sensory-step">
-          <span class="sensory-step__no">07</span>
-          <div>
-            <h3>화장실 · 부대공간</h3>
-            <p class="keep-all">
-              손님은 메인 공간만 기억하지 않습니다.
-              화장실과 이동 동선에서 운영의 완성도를 확인합니다.
-            </p>
-          </div>
-        </article>
-
-        <article class="sensory-step">
-          <span class="sensory-step__no">08</span>
-          <div>
-            <h3>계산 · 퇴장</h3>
-            <p class="keep-all">
-              마지막 응대, 영수증, 리뷰 안내, 배웅의 온도가
-              재방문과 리뷰 작성 여부를 결정합니다.
-            </p>
-          </div>
-        </article>
-
+<!-- 04 ===================== 두 개의 눈 ===================== -->
+<section class="panel" id="eyes">
+  <div class="panel__in">
+    <span class="chap rise"><span class="chap__no">04 — 두 개의 눈</span></span>
+    <p class="disp d-l on-d rise">같은 매장을,<br>두 곳이 봅니다.</p>
+    <div class="eyes mt40 rise">
+      <div class="eye eye--h">
+        <span class="eye__t">사람</span>
+        <ul><li>사진 첫 장</li><li>리뷰의 결</li><li>가격과 메뉴</li><li>예약 흐름</li></ul>
       </div>
+      <div class="eye eye--a">
+        <span class="eye__t">AI</span>
+        <ul><li>구조화된 정보</li><li>한 줄 FAQ</li><li>일관된 상호·주소</li><li>흩어지지 않은 메뉴</li></ul>
+      </div>
+    </div>
+    <p class="disp d-l on-d mt40 rise">결국 같은 하나 — <span class="teal">일관성.</span></p>
+    <p class="sub on-d mt24 rise" style="max-width:32em">사람이 보는 화면을 정리합니다.<br>AI가 읽는 구조를 정리합니다.<br>그리고 둘 사이의 말이 어긋나지 않게 맞춥니다.</p>
+  </div>
+</section>
 
-      <div class="sensory-summary mt-lg">
-        <h3 class="keep-all">
-          Weplace는 이 흐름을 네 가지 감각 기준으로 다시 봅니다.
-        </h3>
+<!-- 05 ===================== 업종마다 ===================== -->
+<section class="panel" id="fields">
+  <span class="vlabel">where</span>
+  <div class="panel__in">
+    <span class="chap rise"><span class="chap__no">05 — 업종마다</span></span>
+    <p class="disp d-l on-d rise">멈추는 자리는,<br>업종마다 다릅니다.</p>
+    <div class="fcards mt40 rise">
+      <article class="fcard">
+        <img src="img/weplace-massage-spa.jpg" alt="조용한 스파의 타월과 캔들 — 마사지·테라피 매장 분위기" loading="lazy" />
+        <div class="fcard__grad"></div>
+        <div class="fcard__body"><p class="fcard__n">마사지·테라피</p><p class="fcard__p">고객은 가격보다 먼저 ‘괜찮은 곳인가?’를 확인합니다.</p></div>
+      </article>
+      <article class="fcard">
+        <img src="img/weplace-restaurant.jpg" alt="은은한 조명의 플레이팅 — 식당·카페 매장 분위기" loading="lazy" />
+        <div class="fcard__grad"></div>
+        <div class="fcard__body"><p class="fcard__n">식당·카페</p><p class="fcard__p">고객은 맛보다 먼저 ‘오늘 목적에 맞는 곳인가?’를 봅니다.</p></div>
+      </article>
+      <article class="fcard">
+        <img src="img/weplace-clinic.jpg" alt="차분한 클리닉 리셉션 — 병의원·피부과 매장 분위기" loading="lazy" />
+        <div class="fcard__grad"></div>
+        <div class="fcard__body"><p class="fcard__n">병의원·피부과</p><p class="fcard__p">고객은 실력만큼이나 설명의 안정감을 봅니다.</p></div>
+      </article>
+      <article class="fcard">
+        <img src="img/weplace-stay.jpg" alt="노을 진 침실 — 숙박시설 매장 분위기" loading="lazy" />
+        <div class="fcard__grad"></div>
+        <div class="fcard__body"><p class="fcard__n">숙박시설</p><p class="fcard__p">고객은 예약 전 이미 도착 동선을 상상합니다.</p></div>
+      </article>
+      <article class="fcard">
+        <img src="img/weplace-beauty-salon.jpg" alt="어두운 조도의 미용실 인테리어 — 미용·웰니스 매장 분위기" loading="lazy" />
+        <div class="fcard__grad"></div>
+        <div class="fcard__body"><p class="fcard__n">미용·웰니스</p><p class="fcard__p">고객은 낯선 공간에 들어가기 전 불안을 줄이고 싶어합니다.</p></div>
+      </article>
+    </div>
+    <p class="sub on-d mt24 rise dim" style="max-width:36em">고급 매장만 보는 것이 아닙니다. 손님이 선택 전 확인하는 화면이 있다면, 모든 매장이 대상입니다.</p>
+  </div>
+</section>
 
-        <div class="sensory-factor-grid">
-          <div>
-            <span>시간</span>
-            <p class="keep-all">언제 기다림이 길게 느껴지는가</p>
-          </div>
-          <div>
-            <span>소리</span>
-            <p class="keep-all">어떤 소리가 안심과 피로를 만드는가</p>
-          </div>
-          <div>
-            <span>향</span>
-            <p class="keep-all">어떤 냄새가 기대와 기억을 남기는가</p>
-          </div>
-          <div>
-            <span>촉감</span>
-            <p class="keep-all">의자, 테이블, 온도가 어떤 인상을 남기는가</p>
+<!-- 06 ===================== 진단은 이렇게 남습니다 (산출물 카드 3개) ===================== -->
+<section class="panel" id="sample">
+  <span class="vlabel">deliverable</span>
+  <div class="panel__in">
+    <span class="chap rise"><span class="chap__no">06 — 1장 진단서 미리보기</span></span>
+    <p class="disp d-l on-d rise">매장 화면을 열어보고,<br>고객이 멈출 지점과 먼저 손볼 순서를 표시합니다.</p>
+    <div class="dxsheet mt40 rise">
+      <div class="dxsheet__top">
+        <span class="dxsheet__brand">WEPLACE · 첫 표면 진단</span>
+        <span class="dxsheet__meta">○○ 매장 · 1장 요약</span>
+      </div>
+      <div class="dxrow">
+        <span class="dxrow__n">01</span>
+        <div>
+          <p class="dxrow__t">처음 보이는 화면</p>
+          <div class="tiles">
+            <div class="tile"><span class="tile__st st-warn">● 보완 필요</span><span class="tile__lab">네이버 대표사진</span></div>
+            <div class="tile"><span class="tile__st st-bad">● 비어 있음</span><span class="tile__lab">구글 정보</span></div>
+            <div class="tile"><span class="tile__st st-ok">● 양호</span><span class="tile__lab">홈페이지 첫 문장</span></div>
           </div>
         </div>
       </div>
-
-      <p class="t-caption t-mute mt-lg keep-all" style="text-align: center;">
-        온라인 검색 구조와 오프라인 감각 흐름이 맞아야,
-        손님은 다시 방문하고 리뷰를 남깁니다.
-      </p>
+      <div class="dxrow">
+        <span class="dxrow__n">02</span>
+        <div>
+          <p class="dxrow__t">고객이 멈추는 지점</p>
+          <ul class="issues">
+            <li>위치 설명이 애매함</li>
+            <li>예약 전 질문 답변 없음</li>
+            <li>리뷰 답글 톤이 일정하지 않음</li>
+            <li>가격 기준이 흩어져 있음</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dxrow">
+        <span class="dxrow__n">03</span>
+        <div>
+          <p class="dxrow__t">먼저 정리할 순서</p>
+          <ol class="order">
+            <li><span class="order__rank">1순위</span><span>대표사진 교체</span><span class="order__when w-now">오늘 바로</span></li>
+            <li><span class="order__rank">2순위</span><span>소개문 첫 줄 수정</span><span class="order__when w-now">오늘 바로</span></li>
+            <li><span class="order__rank">3순위</span><span>FAQ 한 화면 구성</span><span class="order__when w-week">이번 주</span></li>
+            <li><span class="order__rank">4순위</span><span>구글 정보 채우기</span><span class="order__when w-week">이번 주</span></li>
+            <li><span class="order__rank">5순위</span><span>리뷰 답글 기준 만들기</span><span class="order__when w-op">운영 기준</span></li>
+          </ol>
+        </div>
+      </div>
     </div>
-  </section>
+    <p class="dxnote rise">이 진단서는 견적서가 아니라, 대표님이 현재 매장 화면을 이해하기 위한 지도입니다.</p>
+    <p class="small rise" style="text-align:center;margin-top:8px;color:var(--txt-faint)">위 화면은 예시입니다 · 실제 진단은 매장 화면을 함께 열어 작성합니다</p>
+  </div>
+</section>
 
+<!-- 07 ===================== 비춰보기 (진단, 따뜻한 빛) ===================== -->
+<section class="panel panel--center lit" id="diagnosis">
+  <div class="panel__in">
+    <div class="diag">
+      <span class="chap chap--dark rise"><span class="chap__no">07 — 비춰보기</span></span>
+      <p class="disp d-l on-l rise">3가지만 답하면,<br>지금 표면이 보입니다.</p>
 
-  <!-- ====================================================================================
-       06. 자가진단 5카드 (현행 유지 · 결제 확장 클래스 통일)
-       ==================================================================== -->
-  <section class="section-lg bg-paper" id="self-diagnosis">
-    <div class="container">
-      <div style="text-align: center; max-width: 640px; margin: 0 auto var(--gap-lg);">
-        <span class="t-eyebrow t-accent">자기 유형 식별</span>
-        <h2 class="t-display mt-sm keep-all">
-          대표님의 매장은<br class="br-d">
-          지금 어느 단계입니까?
-        </h2>
-        <p class="t-lead keep-all">
-          다섯 가지 유형 중 가장 가까운 하나를 고르세요.
-          카드를 누르시면 카카오톡에 보낼 메시지가 자동 복사됩니다.
-          그 단계에 맞는 첫 정리부터 시작합니다.
-        </p>
-      </div>
-
-      <div class="diagnosis-grid">
-
-        <article class="diagnosis-card">
-          <span class="diagnosis-card__no">유형 01</span>
-          <h3 class="diagnosis-card__title keep-all">
-            검색은 되는데<br>
-            문의가 적습니다.
-          </h3>
-          <p class="diagnosis-card__result keep-all">
-            <span class="diagnosis-card__result-label">진단</span>
-            노출보다 선택 구조 점검이 먼저입니다.
-          </p>
-          <button class="diagnosis-card__cta js-diagnosis-cta"
-            data-msg="안녕하세요. Weplace 홈페이지에서 [검색은 되는데 문의가 적은 유형]을 보고 연락드립니다. 매장명은 ____, 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
-            이 유형으로 진단받기 →
-          </button>
-        </article>
-
-        <article class="diagnosis-card">
-          <span class="diagnosis-card__no">유형 02</span>
-          <h3 class="diagnosis-card__title keep-all">
-            네이버는 괜찮은데<br>
-            구글이 비어 있습니다.
-          </h3>
-          <p class="diagnosis-card__result keep-all">
-            <span class="diagnosis-card__result-label">진단</span>
-            내국인 중심에서 외국인·AI 검색 대응으로 확장할 시점입니다.
-          </p>
-          <button class="diagnosis-card__cta js-diagnosis-cta"
-            data-msg="안녕하세요. [네이버는 있는데 구글이 비어 있는 유형]으로 연락드립니다. 매장명은 ____, 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
-            이 유형으로 진단받기 →
-          </button>
-        </article>
-
-        <article class="diagnosis-card">
-          <span class="diagnosis-card__no">유형 03</span>
-          <h3 class="diagnosis-card__title keep-all">
-            블로그·리뷰는 있는데<br>
-            첫 화면이 정돈되지 않았습니다.
-          </h3>
-          <p class="diagnosis-card__result keep-all">
-            <span class="diagnosis-card__result-label">진단</span>
-            기존 자산이 같은 매장으로 읽히도록 정렬할 시점입니다.
-          </p>
-          <button class="diagnosis-card__cta js-diagnosis-cta"
-            data-msg="안녕하세요. [블로그·리뷰는 있는데 첫 화면이 정돈되지 않은 유형]으로 연락드립니다. 매장명은 ____, 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
-            이 유형으로 진단받기 →
-          </button>
-        </article>
-
-        <article class="diagnosis-card">
-          <span class="diagnosis-card__no">유형 04</span>
-          <h3 class="diagnosis-card__title keep-all">
-            광고를 쓰고 있는데<br>
-            매출 유지가 어렵습니다.
-          </h3>
-          <p class="diagnosis-card__result keep-all">
-            <span class="diagnosis-card__result-label">진단</span>
-            광고 유입 후 고객이 어디서 이탈하는지 봐야 합니다.
-          </p>
-          <button class="diagnosis-card__cta js-diagnosis-cta"
-            data-msg="안녕하세요. [광고를 쓰지만 매출 유지가 어려운 유형]으로 연락드립니다. 매장명은 ____, 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
-            이 유형으로 진단받기 →
-          </button>
-        </article>
-
-        <article class="diagnosis-card">
-          <span class="diagnosis-card__no">유형 05</span>
-          <h3 class="diagnosis-card__title keep-all">
-            홈페이지·플레이스·SNS가<br>
-            각각 따로 놉니다.
-          </h3>
-          <p class="diagnosis-card__result keep-all">
-            <span class="diagnosis-card__result-label">진단</span>
-            검색엔진과 AI가 같은 정보를 읽도록 정렬해야 합니다.
-          </p>
-          <button class="diagnosis-card__cta js-diagnosis-cta"
-            data-msg="안녕하세요. [홈페이지·플레이스·SNS가 따로 노는 유형]으로 연락드립니다. 매장명은 ____, 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
-            이 유형으로 진단받기 →
-          </button>
-        </article>
-      </div>
-
-      <p class="t-caption t-mute mt-lg" style="text-align: center;">
-        다섯 유형 중 어디에도 해당이 없으시면, 매장명만 보내주셔도 됩니다. 같이 봅니다.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- ====================================================================
-       07. 상품 3종 — Place Trust Care / Local Growth 90 / AI Search Trust System
-       1층 90% / 2층 10%
-       ==================================================================== -->
-  <section class="section-lg bg-paper-soft" id="pricing">
-    <div class="container">
-
-      <div class="pricing-section-header">
-        <span class="t-eyebrow t-accent">정렬 단계별 구축 흐름</span>
-        <h2 class="t-display mt-sm keep-all">
-          매장 상태에 따라<br class="br-d">
-          시작점은 다릅니다.
-        </h2>
-        <p class="t-lead keep-all">
-          세 가지 구축 단계 중,<br class="br-d">
-          지금 우리 매장에 필요한 단계부터 시작합니다.
-        </p>
-      </div>
-
-      <div class="product-grid">
-
-        <!-- Step 1 · Place Trust Care -->
-        <article class="product-card" id="place-trust-care">
-          <span class="product-card__step">Step 1</span>
-          <p class="product-card__en">Place Trust Care</p>
-          <h3 class="product-card__title keep-all">플레이스 신뢰관리 정비</h3>
-          <p class="product-card__role">진단 + 첫 화면 정렬 · 1회</p>
-          <p class="product-card__desc keep-all">
-            네이버·구글·홈페이지의 첫 화면이
-            같은 매장으로 읽히게 정리합니다.
-            매장 상태를 점검한 진단서와
-            첫 화면 정비 결과를 함께 드립니다.
-          </p>
-          <p class="product-card__price">
-            <span class="product-card__price-num">₩300,000</span>
-            <span class="product-card__price-unit">~ · 진단 1회</span>
-          </p>
-          <p class="product-card__price-note keep-all">
-            정비 범위는 진단 후 함께 결정합니다.
-          </p>
-          <button class="product-card__cta js-diagnosis-cta"
-            data-msg="안녕하세요. Weplace 홈페이지에서 [Place Trust Care · 플레이스 신뢰관리 정비] 진단을 요청합니다. 매장명은 ____, 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
-            이 단계로 점검받기 →
-          </button>
-        </article>
-
-        <!-- Step 2 · Local Growth 90 (Featured) -->
-        <article class="product-card product-card--featured" id="local-growth-90">
-          <span class="product-card__badge">RECOMMENDED</span>
-          <span class="product-card__step">Step 2</span>
-          <p class="product-card__en">Local Growth 90</p>
-          <h3 class="product-card__title keep-all">90일 검색신뢰 런칭</h3>
-          <p class="product-card__role">90일 구축 운영</p>
-          <p class="product-card__desc keep-all">
-            90일 동안 다섯 축을 같은 방향으로 쌓아,
-            검색에서 안정적으로 읽히는 상태를 만듭니다.
-            네이버·구글·홈페이지·리뷰·SNS가
-            같은 매장으로 보이게 정렬합니다.
-          </p>
-          <p class="product-card__price">
-            <span class="product-card__price-num">₩2,500,000</span>
-            <span class="product-card__price-unit">~ · 90일 합산</span>
-          </p>
-          <p class="product-card__price-note keep-all">
-            매장 규모와 시작 상태에 따라 달라집니다.
-          </p>
-          <button class="product-card__cta js-diagnosis-cta"
-            data-msg="안녕하세요. Weplace 홈페이지에서 [Local Growth 90 · 90일 검색신뢰 런칭] 상담을 요청합니다. 매장명은 ____, 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
-            90일 구조 상담하기 →
-          </button>
-        </article>
-
-        <!-- Step 3 · AI Search Trust System -->
-        <article class="product-card" id="ai-search-trust-system">
-          <span class="product-card__step">Step 3</span>
-          <p class="product-card__en">AI Search Trust System</p>
-          <h3 class="product-card__title keep-all">AI 검색신뢰 구축</h3>
-          <p class="product-card__role">GEO/AEO 구축 · 1회</p>
-          <p class="product-card__desc keep-all">
-            GEO/AEO 홈페이지와 콘텐츠 신호를 정렬해,
-            AI가 매장을 정확히 추천하도록 만듭니다.
-            한 번 구축하면 검색에 영구히 작동합니다.
-          </p>
-          <p class="product-card__price">
-            <span class="product-card__price-num">₩1,500,000</span>
-            <span class="product-card__price-unit">~ · 구축 1회</span>
-          </p>
-          <p class="product-card__price-note keep-all">
-            운영 유지는 별도로 정합니다.
-          </p>
-          <button class="product-card__cta js-diagnosis-cta"
-            data-msg="안녕하세요. Weplace 홈페이지에서 [AI Search Trust System · AI 검색신뢰 구축] 상담을 요청합니다. 매장명은 ____, 업종은 ____, 지역은 ____ 입니다."
-            onclick="copyAndOpenKakao(this)">
-            AI 검색 구축 상담하기 →
-          </button>
-        </article>
-
-      </div>
-
-      <!-- 비교 1줄 — 광고 한 달 vs 90일 자산 -->
-      <div class="compare-bar">
-        <p class="compare-bar__title keep-all">
-          <strong>광고 한 달치 비용으로,</strong>
-          90일 자산이 남습니다.
-        </p>
-        <div class="compare-bar__rows">
-          <div class="compare-bar__row">
-            <span class="compare-bar__label">광고</span>
-            <span class="compare-bar__num">₩500,000 ~ ₩1,500,000 / 월</span>
-            <span class="compare-bar__note">매달 다시 시작</span>
+      <div id="quiz">
+        <div class="q show" id="q1">
+          <div class="q__h"><span class="q__n">1</span><span class="q__t">검색해서 처음 보는 화면에서, 무슨 매장인지 3초 안에 보입니까?</span></div>
+          <div class="q__o">
+            <button class="opt" data-key="first" data-val="3">바로 보인다</button>
+            <button class="opt" data-key="first" data-val="1">그저 그렇다</button>
+            <button class="opt" data-key="first" data-val="0">잘 모르겠다</button>
           </div>
-          <div class="compare-bar__row compare-bar__row--accent">
-            <span class="compare-bar__label">Weplace 90일 구축</span>
-            <span class="compare-bar__num">₩2,500,000 ~ · 90일</span>
-            <span class="compare-bar__note">검색에 영구히 남음</span>
+        </div>
+        <div class="q" id="q2">
+          <div class="q__h"><span class="q__n">2</span><span class="q__t">네이버·구글·홈페이지·리뷰의 정보가 서로 같습니까?</span></div>
+          <div class="q__o">
+            <button class="opt" data-key="match" data-val="3">거의 같다</button>
+            <button class="opt" data-key="match" data-val="1">군데군데 다르다</button>
+            <button class="opt" data-key="match" data-val="0">확인해본 적 없다</button>
           </div>
+        </div>
+        <div class="q" id="q3">
+          <div class="q__h"><span class="q__n">3</span><span class="q__t">자주 묻는 질문(위치·주차·예약·가격)의 답이 한 화면에 모여 있습니까?</span></div>
+          <div class="q__o">
+            <button class="opt" data-key="answer" data-val="3">한 화면에 있다</button>
+            <button class="opt" data-key="answer" data-val="1">흩어져 있다</button>
+            <button class="opt" data-key="answer" data-val="0">정리한 적 없다</button>
+          </div>
+        </div>
+        <div class="go" id="goWrap">
+          <button class="btn btn--ink btn--lg" id="goBtn" style="width:100%;justify-content:center">첫 표면 점수 보기</button>
         </div>
       </div>
 
-      <p class="pricing-release keep-all">
-        업종·매장 규모·기존 상태에 따라 최종 견적은 달라집니다.
-        진단 결과를 보고 함께 결정합니다.
-        <br><br>
-        <strong>진단이 먼저, 작업은 나중입니다.</strong>
-      </p>
-
-    </div>
-  </section>
-
-
-  <!-- ====================================================================
-       08. 실행 순서 — 3단계 (상품 3종과 1:1 대응)
-       ==================================================================== -->
-  <section class="section-lg bg-paper">
-    <div class="container-narrow">
-      <span class="t-eyebrow t-accent">작업 흐름 신뢰</span>
-      <h2 class="t-display mt-sm keep-all">
-        먼저 보고,<br class="br-d">
-        그다음 정리합니다.
-      </h2>
-      <p class="t-lead keep-all">
-        세 상품은 따로 움직이지 않습니다.
-        진단 → 90일 구축 → AI 검색 신뢰로 이어지는 한 흐름입니다.
-      </p>
-
-      <ol class="execution-flow execution-flow--cards mt-lg">
-
-        <li class="execution-step execution-step--card">
-          <div class="execution-step__num-col">
-            <span class="execution-step__no-big">01</span>
-            <span class="execution-step__no-tag">단계 1</span>
-          </div>
-          <div class="execution-step__body">
-            <p class="execution-step__product">Place Trust Care</p>
-            <h3 class="execution-step__title">매장 상태를 같이 봅니다</h3>
-            <p class="execution-step__sub keep-all">
-              네이버·구글·홈페이지를 함께 열어,
-              손님이 어디서 멈추는지 진단서로 짚어드립니다.
-            </p>
-            <details class="execution-step__expand">
-              <summary>진단에서 무엇을 보는지 보기</summary>
-              <div class="execution-step__detail">
-                대표 사진 첫 장, 리뷰 첫 세 줄의 톤, 소개글 마지막 수정일,
-                가격 표기 단위, 운영시간 표기, 외국인 안내 문구, 구글 비즈니스 프로필의 영문 정보까지.
-                다섯 축이 같은 매장으로 읽히는지를 같은 기준표로 점검합니다.
-
-                진단서는 텍스트 자료로 드립니다. 그 다음 단계는 대표님이 결정하시면 됩니다.
-              </div>
-            </details>
-          </div>
-        </li>
-
-        <li class="execution-step execution-step--card">
-          <div class="execution-step__num-col">
-            <span class="execution-step__no-big">02</span>
-            <span class="execution-step__no-tag">단계 2</span>
-          </div>
-          <div class="execution-step__body">
-            <p class="execution-step__product">Local Growth 90</p>
-            <h3 class="execution-step__title">90일 동안 다섯 축을 같이 쌓습니다</h3>
-            <p class="execution-step__sub keep-all">
-              첫 화면·키워드·콘텐츠·리뷰·외국인 안내까지
-              한 매장으로 읽히도록 정렬합니다.
-            </p>
-            <details class="execution-step__expand">
-              <summary>90일 동안 무엇을 쌓는지 보기</summary>
-              <div class="execution-step__detail">
-                네이버 플레이스 첫 화면 정비, 구글 비즈니스 프로필 한·영 정렬,
-                키워드 정리, 블로그·플레이스 게시물 발행, 리뷰 응답 톤 기준 정리,
-                Threads 단기 운영. 같은 주제를 여러 화면에 반복해서 남기는 흐름을 만듭니다.
-
-                90일 후에는 검색에서 안정적으로 읽히는 상태가 됩니다.
-                그 다음에 AI 검색 구축으로 이어갈지 결정합니다.
-              </div>
-            </details>
-          </div>
-        </li>
-
-        <li class="execution-step execution-step--card">
-          <div class="execution-step__num-col">
-            <span class="execution-step__no-big">03</span>
-            <span class="execution-step__no-tag">단계 3</span>
-          </div>
-          <div class="execution-step__body">
-            <p class="execution-step__product">AI Search Trust System</p>
-            <h3 class="execution-step__title">AI가 매장을 추천할 수 있게 만듭니다</h3>
-            <p class="execution-step__sub keep-all">
-              GEO/AEO 홈페이지와 Threads·숏폼 신호로
-              AI 검색에 매장이 안정적으로 자리잡게 합니다.
-            </p>
-            <details class="execution-step__expand">
-              <summary>AI 검색 구축이 왜 별도 단계인지 보기</summary>
-              <div class="execution-step__detail">
-                ChatGPT·Perplexity·Gemini가 매장을 추천할 때 읽는 건 구조화된 정보입니다.
-                같은 정보가 홈페이지 FAQ, 구글 비즈니스 프로필, Threads 게시물에 같은 표현으로
-                반복돼야 AI가 그 매장을 신뢰합니다.
-
-                숏폼은 매장 분위기의 마지막 검증 화면이자, AI가 영상 메타 정보를 통해 매장을
-                이해하는 보조 신호입니다. 한 번 구축하면 검색에 영구히 남고,
-                매주 새 콘텐츠로 신호를 보내면 AI가 그 매장을 계속 추천합니다.
-              </div>
-            </details>
-          </div>
-        </li>
-
-      </ol>
-    </div>
-  </section>
-
-
-  <!-- ====================================================================
-       09. 업종 6+1 — 마사지/에스테틱, 식당/카페, 펜션/숙소,
-                       스크린골프/액티비티, 도배/인테리어/생활서비스,
-                       병의원/피부과/성형외과 + 기타
-       ==================================================================== -->
-  <section class="section-lg bg-paper-soft" id="industries">
-    <div class="container">
-      <div style="text-align: center; max-width: 640px; margin: 0 auto var(--gap-lg);">
-        <span class="t-eyebrow t-accent">자기 업종으로 이동</span>
-        <h2 class="t-display mt-sm keep-all">
-          모든 업종을<br class="br-d">
-          같은 방식으로 보지 않습니다.
-        </h2>
-        <p class="t-lead keep-all">
-          검색과 지도, 리뷰와 사진이 매출에 직접 연결되는
-          여섯 업종부터 먼저 봅니다.
-        </p>
-      </div>
-
-      <div class="industry-grid-6">
-
-        <!-- 1. 마사지·에스테틱 (미용·웰니스 흡수) -->
-        <a href="/industries/massage/" class="industry-card industry-card--ready">
-          <div class="industry-card__thumb">
-            <img src="/assets/img/industries/massage.webp"
-                 alt="자연광이 드는 마사지샵 트리트먼트룸"
-                 loading="lazy" width="600" height="450" />
-          </div>
-          <span class="industry-card__status">발행 완료</span>
-          <h4 class="industry-card__title">마사지·에스테틱</h4>
-          <p class="industry-card__fit keep-all">
-            외국인 손님이 구글에서 먼저 확인하는 업종.
-            미용·웰니스도 같은 흐름으로 봅니다.
-          </p>
-          <span class="industry-card__cta">자세히 보기 →</span>
-        </a>
-
-        <!-- 2. 식당·카페 (통합) -->
-        <a href="/industries/restaurant/" class="industry-card industry-card--ready">
-          <div class="industry-card__thumb">
-            <img src="/assets/img/industries/restaurant.webp"
-                 alt="정갈하게 차려진 한 접시 음식"
-                 loading="lazy" width="600" height="450" />
-          </div>
-          <span class="industry-card__status">발행 완료</span>
-          <h4 class="industry-card__title">식당·카페</h4>
-          <p class="industry-card__fit keep-all">
-            사진 첫 장과 리뷰 첫 줄이
-            매출에 직접 연결되는 업종.
-          </p>
-          <span class="industry-card__cta">자세히 보기 →</span>
-        </a>
-
-        <!-- 3. 펜션·숙소 -->
-        <button class="industry-card industry-card--prep"
-          data-msg="안녕하세요. Weplace 홈페이지에서 [펜션·숙소] 업종 정렬에 관해 연락드립니다. 매장명은 ____, 지역은 ____ 입니다."
-          onclick="copyAndOpenKakao(this)">
-          <div class="industry-card__thumb">
-            <img src="/assets/img/industries/lodging.webp"
-                 alt="조용한 산속 펜션 외관"
-                 loading="lazy" width="600" height="450" />
-          </div>
-          <span class="industry-card__status industry-card__status--prep">준비 중</span>
-          <h4 class="industry-card__title">펜션·숙소</h4>
-          <p class="industry-card__fit keep-all">
-            예약 전 구글과 예약 플랫폼 정보가
-            서로 맞아야 하는 업종.
-          </p>
-          <span class="industry-card__cta">카카오톡으로 먼저 문의하기 →</span>
-        </button>
-
-        <!-- 4. 스크린골프·액티비티 -->
-        <button class="industry-card industry-card--prep"
-          data-msg="안녕하세요. Weplace 홈페이지에서 [스크린골프·액티비티] 업종 정렬에 관해 연락드립니다. 매장명은 ____, 지역은 ____ 입니다."
-          onclick="copyAndOpenKakao(this)">
-          <div class="industry-card__thumb industry-card__thumb--placeholder" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="6" y="10" width="36" height="28" rx="2" stroke="currentColor" stroke-width="1.4"/>
-              <circle cx="16" cy="20" r="2.4" fill="currentColor"/>
-              <path d="M6 32 L18 22 L24 26 L34 18 L42 26" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="industry-card__thumb-label">사진 준비 중</span>
-          </div>
-          <span class="industry-card__status industry-card__status--prep">준비 중</span>
-          <h4 class="industry-card__title">스크린골프·액티비티</h4>
-          <p class="industry-card__fit keep-all">
-            시간대·인원·요금이 검색 화면에서
-            즉시 읽혀야 하는 업종.
-          </p>
-          <span class="industry-card__cta">카카오톡으로 먼저 문의하기 →</span>
-        </button>
-
-        <!-- 5. 도배·인테리어·생활서비스 -->
-        <button class="industry-card industry-card--prep"
-          data-msg="안녕하세요. Weplace 홈페이지에서 [도배·인테리어·생활서비스] 업종 정렬에 관해 연락드립니다. 업체명은 ____, 지역은 ____ 입니다."
-          onclick="copyAndOpenKakao(this)">
-          <div class="industry-card__thumb industry-card__thumb--placeholder" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="6" y="10" width="36" height="28" rx="2" stroke="currentColor" stroke-width="1.4"/>
-              <circle cx="16" cy="20" r="2.4" fill="currentColor"/>
-              <path d="M6 32 L18 22 L24 26 L34 18 L42 26" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="industry-card__thumb-label">사진 준비 중</span>
-          </div>
-          <span class="industry-card__status industry-card__status--prep">준비 중</span>
-          <h4 class="industry-card__title">도배·인테리어·생활서비스</h4>
-          <p class="industry-card__fit keep-all">
-            지역 검색과 후기 첫 줄이
-            문의로 직결되는 업종.
-          </p>
-          <span class="industry-card__cta">카카오톡으로 먼저 문의하기 →</span>
-        </button>
-
-        <!-- 6. 병의원·피부과·성형외과 -->
-        <button class="industry-card industry-card--prep"
-          data-msg="안녕하세요. Weplace 홈페이지에서 [병의원·피부과·성형외과] 업종 정렬에 관해 연락드립니다. 진료과는 ____, 지역은 ____ 입니다."
-          onclick="copyAndOpenKakao(this)">
-          <div class="industry-card__thumb industry-card__thumb--placeholder" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="6" y="10" width="36" height="28" rx="2" stroke="currentColor" stroke-width="1.4"/>
-              <circle cx="16" cy="20" r="2.4" fill="currentColor"/>
-              <path d="M6 32 L18 22 L24 26 L34 18 L42 26" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="industry-card__thumb-label">사진 준비 중</span>
-          </div>
-          <span class="industry-card__status industry-card__status--prep">준비 중</span>
-          <h4 class="industry-card__title">병의원·피부과·성형외과</h4>
-          <p class="industry-card__fit keep-all">
-            환자가 안심하고 확인할 수 있는
-            진료 정보가 필요한 업종.
-          </p>
-          <span class="industry-card__cta">카카오톡으로 먼저 문의하기 →</span>
-        </button>
-
-      </div>
-
-      <!-- 기타 업종 보조 박스 -->
-      <button class="industry-other js-diagnosis-cta"
-        data-msg="안녕하세요. Weplace 홈페이지에서 [기타 업종] 정렬에 관해 연락드립니다. 업종은 ____, 매장명은 ____, 지역은 ____ 입니다."
-        onclick="copyAndOpenKakao(this)">
-        <span class="industry-other__label">위 여섯 업종에 해당하지 않으시면</span>
-        <span class="industry-other__cta">매장명 한 줄만 보내주세요 →</span>
-      </button>
-
-    </div>
-  </section>
-
-
-  <!-- ====================================================================
-       10. 내부 진단 시스템 — 신설. CRM/통화/영상은 "단계적 준비"로만
-       1층 70% / 2층 30%
-       ==================================================================== -->
-  <section class="section-lg bg-paper" id="internal-system">
-    <div class="container-narrow">
-      <span class="t-eyebrow t-accent">진단 기준 안내</span>
-      <h2 class="t-display mt-sm keep-all">
-        매장 상태를<br class="br-d">
-        감으로 보지 않습니다.
-      </h2>
-      <p class="t-lead keep-all">
-        사진 첫 장, 리뷰 첫 세 줄, 소개글, 가격 표기,
-        외국인 안내 문구까지 같은 기준표로 점검합니다.
-      </p>
-
-      <div class="system-grid mt-lg">
-        <div class="system-cell">
-          <span class="system-cell__tag">진단서</span>
-          <p class="keep-all">
-            매장이 어디서 멈추는지, 다섯 축이
-            어떻게 어긋났는지 짚은 문서를 드립니다.
-          </p>
+      <div class="result" id="result">
+        <div class="ring">
+          <svg width="168" height="168" viewBox="0 0 168 168">
+            <circle cx="84" cy="84" r="72" fill="none" stroke="rgba(122,86,64,.18)" stroke-width="10"/>
+            <circle id="scoreBar" cx="84" cy="84" r="72" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round" stroke-dasharray="452" stroke-dashoffset="452"/>
+            <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C49A5A"/><stop offset="1" stop-color="#3E6F68"/></linearGradient></defs>
+          </svg>
+          <div class="ring__v"><span id="scoreVal">0</span><small>점</small></div>
         </div>
-        <div class="system-cell">
-          <span class="system-cell__tag">운영 기준표</span>
-          <p class="keep-all">
-            사진·리뷰 답글·가격 표기·외국인 안내 문구 등
-            매장이 운영할 수 있는 기준을 정리해 드립니다.
-          </p>
-        </div>
-        <div class="system-cell">
-          <span class="system-cell__tag">월간 리포트</span>
-          <p class="keep-all">
-            90일 구축 기간 동안 다섯 축이 어떻게
-            쌓이는지 월 단위로 정리해 보여드립니다.
-          </p>
+        <p class="res-g" id="resGrade"></p>
+        <p class="res-n" id="resNote"></p>
+        <div class="mt24">
+          <button class="btn btn--gold btn--lg" style="width:100%;justify-content:center"
+            data-msg="안녕하세요. Weplace 홈페이지에서 첫 표면 점수를 보고 진단 문의드립니다. 매장명은 ____, 지역은 ____, 업종은 ____ 입니다."
+            onclick="wpKakao(this)">매장명·지역 보내고 1장 진단 받기</button>
         </div>
       </div>
-
-      <details class="system-expand mt-lg">
-        <summary>운영 시스템 고도화 방향</summary>
-        <div class="system-expand__body keep-all">
-          Weplace는 매장의 검색 신뢰뿐 아니라, 통화 흐름·리뷰 응답 톤·매장 영상 분위기까지
-          같은 기준으로 정리할 수 있는 운영 시스템을 단계적으로 준비하고 있습니다.
-
-          현재 단계에서는 진단서와 운영 기준표 형태로 전달드리며, 해당 기능들은 매장 운영
-          데이터를 다루는 영역이므로 충분한 검증을 거친 뒤 도입할 예정입니다.
-
-          지금 단계에서는 다섯 축이 같은 매장으로 읽히는지부터 정리합니다.
-        </div>
-      </details>
     </div>
-  </section>
+  </div>
+</section>
 
-
-  <!-- ====================================================================
-       11. 최종 CTA — 시그니처 명제 2회차 등장 위치
-       ==================================================================== -->
-  <section class="cta-final" id="contact">
-    <div class="container-narrow cta-final__inner">
-      <span class="t-eyebrow cta-final__eyebrow">광고비를 더 쓰기 전에</span>
-      <h2 class="cta-final__title keep-all">
-        우리 업장 검색 구조부터<br>
-        <span class="cta-final__em">한 번 같이 봅니다.</span>
-      </h2>
-      <p class="cta-final__lead keep-all">
-        매장명과 업종, 지금 막히는 부분 한 줄만 보내주세요.
-        네이버·구글·홈페이지·리뷰·SNS를 함께 열어보고
-        손님이 어디서 멈추는지 같이 짚어드립니다.
-      </p>
-
-      <p class="cta-final__signature keep-all">
-        광고는 마케팅 안의 한 표면입니다.
-      </p>
-
-      <div class="cta-final__buttons">
-        <button class="btn btn-kakao btn-lg js-diagnosis-cta"
-          data-msg="안녕하세요. Weplace 홈페이지에서 [우리 업장 검색 구조 점검]을 요청드립니다. 매장명은 ____, 업종은 ____, 지역은 ____, 지금 막히는 부분은 ____ 입니다."
-          onclick="copyAndOpenKakao(this)">
-          우리 업장 검색 구조 점검받기
-        </button>
-        <button class="btn btn-ghost-light btn-lg js-diagnosis-cta"
-          data-msg="안녕하세요. Weplace 홈페이지에서 [90일 검색신뢰 구조 상담]을 요청드립니다. 매장명은 ____, 업종은 ____, 지역은 ____, 지금 막히는 부분은 ____ 입니다."
-          onclick="copyAndOpenKakao(this)">
-          90일 검색신뢰 구조 상담하기
-        </button>
+<!-- 08 ===================== 시작 (최종 CTA) ===================== -->
+<section class="panel panel--center" id="contact">
+  <div class="cta-bg" aria-hidden="true"><img src="img/weplace-arrival.jpg" alt="" loading="lazy" /></div>
+  <div class="panel__in">
+    <span class="chap rise"><span class="chap__no">08 — 시작</span></span>
+    <p class="disp d-xl on-d rise">정리 안 돼도 됩니다.<br><span class="hl">매장명 한 줄</span>이면 시작합니다.</p>
+    <p class="sub on-d mt24 rise">진단이 먼저, 작업은 그 다음.</p>
+    <div class="contact-box rise">
+      <p class="small">버튼을 누르면 카카오톡에 보낼 메시지가 복사됩니다</p>
+      <div class="mt16">
+        <button class="btn btn--gold btn--lg" style="min-width:280px;justify-content:center"
+          data-msg="안녕하세요. Weplace 홈페이지를 보고 매장 진단 문의드립니다. 매장명은 ____, 지역은 ____, 업종은 ____ 입니다. 지금 가장 아쉬운 부분은 ____ 입니다."
+          onclick="wpKakao(this)">카카오톡으로 매장명 보내기</button>
       </div>
-
-      <p class="cta-final__release keep-all">
-        답장은 평일 오전·오후 중에 드립니다.<br>
-        진단이 먼저, 작업은 나중. 진단 한 번에 작업이 강제로 이어지지 않습니다.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- ====================================================================
-       12. FAQ — 8문항 (시그니처 명제 2회차 인용 위치)
-       ==================================================================== -->
-  <section class="section-lg bg-paper-soft">
-    <div class="container-narrow">
-      <div style="text-align: center; margin-bottom: var(--gap-lg);">
-        <span class="t-eyebrow t-accent">마지막 의심 해소</span>
-        <h2 class="t-h1 mt-sm keep-all">
-          자주 받는<br class="br-d">
-          여덟 가지 질문
-        </h2>
-        <p class="t-caption t-mute mt-md keep-all">
-          고객은 매장을 분석하지 않습니다. 그냥 느낌이 맞지 않으면 나갑니다.
-          그래서 손님 입장에서 가장 먼저 어긋나는 질문부터 정리했습니다.
-        </p>
-      </div>
-
-      <div class="faq-list">
-
-        <details class="faq-item">
-          <summary>Weplace는 광고대행사인가요?</summary>
-          <div class="faq-item__body">
-            광고대행사가 아닙니다. Weplace는 GEO 기반 로컬 검색 신뢰 구조를 정리하는 팀입니다.
-            광고는 손님이 매장을 발견하는 입구를 만들고, Weplace는 발견 이후 손님이 비교하고
-            신뢰하고 문의하기까지의 흐름을 정리합니다.
-
-            광고를 부정하지는 않습니다. 다만 광고가 작동하기 전에, 손님이 확인하는 다섯 화면
-            (네이버·구글·홈페이지·리뷰·SNS)이 같은 매장으로 읽혀야 한다는 입장입니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>광고비를 더 쓰면 매출이 오르지 않습니다</summary>
-          <div class="faq-item__body">
-            고객이 어디서 이탈하는지 모르는 채로 광고비를 늘리면, 같은 지점에서 더 많이 빠져나갑니다.
-            광고는 진입을 만들고, 마케팅은 선택을 만듭니다. Weplace는 광고를 부정하지 않지만,
-            광고를 늘리기 전에 이탈 지점을 먼저 짚는 일을 합니다.
-
-            이 부분이 헷갈리시면 매장 상황을 보내 주세요. 같이 봐드립니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>AI 검색은 지금부터 준비하는 게 빠릅니다</summary>
-          <div class="faq-item__body">
-            ChatGPT·Perplexity·Gemini가 매장을 추천할 때 읽는 건 구조화된 정보입니다.
-            같은 정보가 네이버·구글·홈페이지·SNS에 같게 적혀 있어야 AI가 그 매장을 신뢰합니다.
-
-            아직 늦지 않았습니다. 지금부터 같은 기준으로 쌓으면, 1년 뒤 AI 검색에서 먼저
-            발견되는 매장이 됩니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>구글은 외국인만 쓰는 도구가 아닙니다</summary>
-          <div class="faq-item__body">
-            한국인 손님도 지도 검색·길찾기·AI 답변에서 구글 데이터를 받습니다.
-            네이버만 정리된 매장은 AI 검색이 점점 늘수록 불리해집니다.
-            외국인 손님의 출발점은 처음부터 끝까지 구글입니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>홈페이지는 명함이 아니라 검증의 마지막 화면입니다</summary>
-          <div class="faq-item__body">
-            손님은 검색 → 플레이스 → 홈페이지 순서로 옵니다. 홈페이지가 비어 있거나 정보가
-            어긋나면, 마지막 단계에서 결정이 끊깁니다.
-
-            홈페이지가 없으셔도 됩니다. 다만 있다면 AI가 읽을 수 있는 정보 구조로 정리되어야
-            합니다. Weplace의 GEO/AEO 홈페이지가 그 역할을 합니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Threads는 왜 운영하나요?</summary>
-          <div class="faq-item__body">
-            Threads는 단순한 SNS가 아닙니다. 텍스트 기반이라 검색엔진과 AI가 읽기 좋고,
-            시간이 지나도 오래 남아 매장의 검색 신호로 쌓입니다.
-
-            같은 주제를 홈페이지·플레이스·Threads에 반복해서 남기면, AI가 그 매장을
-            하나의 정체성으로 이해합니다. 인스타그램이 분위기를 보여주는 화면이라면,
-            Threads는 매장이 어떻게 생각하는지를 남기는 검색 자산입니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>진단비를 결제하면 어떤 자료를 받게 되나요?</summary>
-          <div class="faq-item__body">
-            현재는 카카오톡으로 매장명을 보내주시면, 진단 일정을 협의한 뒤 결제와 진단을 진행합니다.
-            진단 결과로는 다음을 드립니다.
-
-            — 다섯 축(네이버·구글·홈페이지·리뷰·SNS)이 어떻게 어긋났는지 짚은 진단서
-            — 매장이 어디서 멈추는지, 어떤 단계부터 정리할지 정리한 운영 기준
-            — 다음 단계(90일 구축 / AI 검색 구축) 권장안
-
-            다음 단계 진행 여부는 진단 결과를 보고 함께 결정합니다.
-            진단이 먼저, 작업은 나중입니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>진단을 받는다고 작업이 강제로 이어지지 않습니다</summary>
-          <div class="faq-item__body">
-            진단 단계에서 멈추셔도 됩니다. 진단만 받으시는 분도 많습니다.
-            매장 상태를 같이 본 결과를 문서로 드리고, 그 다음 단계는 대표님이 결정하시면 됩니다.
-            진단이 먼저, 작업은 나중입니다.
-          </div>
-        </details>
-
+      <div class="contacts">
+        <!-- 전화번호 교체 지점: href의 tel:+82… 와 표시 텍스트 010-… 를 함께 수정 -->
+        <a href="tel:+821064616594">전화 010-6461-6594</a>
+        <a href="mailto:weplace25@gmail.com">weplace25@gmail.com</a>
       </div>
     </div>
-  </section>
+
+    <div class="faq rise">
+      <details><summary>GEO가 정확히 무엇인가요?</summary><div class="faq__b">GEO는 AI가 답변을 만들 때 참고할 수 있도록 온라인 정보를 정리하는 작업입니다. 다만 GEO 자체가 매출을 보장하지는 않습니다. 중요한 건 그 과정에서 네이버·구글·홈페이지·리뷰에 흩어진 정보가 같은 매장으로 읽히게 정리된다는 점입니다. 고객도 AI도 정리된 정보를 더 쉽게 이해합니다.</div></details>
+      <details><summary>광고비를 더 쓰면 손님이 늘까요?</summary><div class="faq__b">손님이 어디서 멈추는지 모르는 채 광고비를 늘리면 같은 자리에서 더 많이 빠져나갑니다. 광고는 손님을 데려오고, 그다음 화면이 손님을 머물게 합니다.</div></details>
+      <details><summary>진단을 받으면 꼭 작업을 해야 하나요?</summary><div class="faq__b">아닙니다. 진단은 현재 표면을 같이 확인하는 첫 단계입니다. 정리할지는 대표님이 정하시면 됩니다.</div></details>
+      <details><summary>진단을 받으면 무엇을 받게 되나요?</summary><div class="faq__b">매장명과 지역만 보내주시면 네이버·구글·홈페이지·리뷰를 같이 열어보고, 손님이 멈추는 화면과 먼저 정리할 순서를 1장으로 정리해 보내드립니다.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- [확장 예정 — 이번 메인 제외] Essay(07_essay) · Comic(08_webtoon) · Insight(09_trend) 별도 페이지로 연결 -->
 
 </main>
 
-
-<!-- ========================================================================
-     GLOBAL FOOTER
-     ======================================================================== -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="site-footer__cols">
-      <div>
-        <div class="site-footer__brand">
-          We<span style="color: var(--color-accent);">,</span>Place<span style="color: var(--color-accent);">.</span>
-        </div>
-        <p style="color:rgba(255,255,255,.6); max-width: 36ch;">
-          GEO 기반 로컬 검색 신뢰 OS.<br>
-          매장의 다섯 화면을 한 매장으로 읽히게 정리합니다.
-        </p>
-      </div>
-      <div>
-        <p class="site-footer__heading">구축 단계</p>
-        <ul>
-          <li><a href="#place-trust-care">Place Trust Care</a></li>
-          <li><a href="#local-growth-90">Local Growth 90</a></li>
-          <li><a href="#ai-search-trust-system">AI Search Trust System</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="site-footer__heading">탐색</p>
-        <ul>
-          <li><a href="#services-5axis">5축</a></li>
-          <li><a href="/industries/">업종별</a></li>
-          <li><a href="#self-diagnosis">자가진단</a></li>
-          <li><a href="#contact">매장명 보내기</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="site-footer__heading">법인 정보</p>
-        <p style="color:rgba(255,255,255,.6); font-size: var(--fs-caption); line-height: 1.7;">
-          (주)위플레이스마케팅<br>
-          서울특별시 금천구 디지털로 178 퍼블릭가산C동<br>
-          대표 박규민<br>
-          weplace25@gmail.com
-        </p>
-      </div>
-    </div>
-    <p class="site-footer__copy">© 2025—2026 We Place. All rights reserved.</p>
-  </div>
+<footer class="foot">
+  <div class="foot__b">We Place · 위플레이스</div>
+  <p class="foot__l">사람과 AI가 동시에 이해하도록, 매장의 첫 표면을 정리합니다.</p>
+  <p class="foot__n">(주)위플레이스마케팅 · 서울특별시 금천구 디지털로 178 퍼블릭가산C동 · 전화 010-6461-6594 · weplace25@gmail.com</p>
+  <p class="foot__m">정보 갱신일 2026-06-01 · © We Place</p>
 </footer>
 
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<!-- ========================================================================
-     Kakao Toast
-     ======================================================================== -->
-<div class="kakao-toast" id="kakao-toast" role="status" aria-live="polite"></div>
-
-
-<!-- ========================================================================
-     PAGE STYLES — common.css 보완. 신규 컴포넌트만 추가.
-     ======================================================================== -->
-<style>
-  /* ============================================================
-     Site Header Logo · GEO Local Trust OS 마이크로 라벨
-     ============================================================ */
-  .site-logo {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 10px;
-    text-decoration: none;
-    color: inherit;
-  }
-  .site-logo__brand {
-    font-family: var(--font-head);
-    font-weight: 700;
-    letter-spacing: var(--ls-tight);
-    color: var(--color-ink);
-  }
-  .site-logo .logo-comma,
-  .site-logo .logo-dot {
-    color: var(--color-accent);
-  }
-  .site-logo__suffix {
-    display: none;
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: rgba(15, 23, 36, .45);
-    padding: 4px 8px;
-    border: 1px solid rgba(15, 23, 36, .12);
-    border-radius: 999px;
-    position: relative;
-    top: -1px;
-    white-space: nowrap;
-  }
-  @media (min-width: 768px) {
-    .site-logo__suffix { display: inline-flex; }
-  }
-  .site-logo__suffix::before {
-    content: "·";
-    margin-right: 6px;
-    color: var(--color-accent);
-  }
-
-  /* ============================================================
-     Hero — eyebrow / sub
-     ============================================================ */
-  .hero-dark__eyebrow {
-    color: rgba(255,255,255,.55);
-    margin-bottom: 1.4em;
-    display: block;
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-  }
-  .hero-dark__eyebrow::before {
-    content: "◆ ";
-    color: var(--color-accent);
-    margin-right: 4px;
-  }
-  .hero-sub {
-    color: rgba(255,255,255,.55);
-    font-size: var(--fs-body);
-    line-height: 1.7;
-    margin: 1em 0 1.6em;
-    padding-left: 14px;
-    border-left: 2px solid rgba(147,164,245,.5);
-    font-style: italic;
-    font-family: var(--font-serif);
-  }
-
-  /* ============================================================
-     02. Axis Grid — 5축 카드
-     ============================================================ */
-  .axis-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin-top: var(--gap-lg);
-  }
-  @media (min-width: 720px) {
-    .axis-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media (min-width: 1080px) {
-    .axis-grid {
-      grid-template-columns: repeat(5, 1fr);
-      gap: 12px;
-    }
-  }
-  .axis-card {
-    position: relative;
-    background: #fff;
-    border: 1px solid rgba(15, 23, 36, .08);
-    border-radius: var(--radius-md);
-    padding: 22px 20px 24px;
-    transition: transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s var(--ease);
-  }
-  .axis-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: rgba(74, 95, 232, .25);
-  }
-  .axis-card--accent {
-    border-color: rgba(74, 95, 232, .35);
-    background: linear-gradient(180deg, rgba(74,95,232,.04) 0%, #fff 60%);
-  }
-  .axis-card--accent::before {
-    content: "AI 검색의 코어";
-    position: absolute;
-    top: -10px;
-    left: 16px;
-    background: var(--color-accent);
-    color: #fff;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 3px 8px;
-    border-radius: 999px;
-  }
-  .axis-card__no {
-    display: inline-block;
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    color: var(--color-accent);
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .axis-card__en {
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 12px;
-    color: rgba(15, 23, 36, .55);
-    letter-spacing: 0.04em;
-    margin: 0 0 6px;
-    line-height: 1.4;
-  }
-  .axis-card__title {
-    font-family: var(--font-head);
-    font-size: var(--fs-body-l);
-    font-weight: 700;
-    color: var(--color-ink);
-    margin: 0 0 12px;
-    line-height: 1.4;
-    letter-spacing: var(--ls-tight);
-  }
-  .axis-card__sub {
-    font-size: var(--fs-caption);
-    color: rgba(15, 23, 36, .68);
-    line-height: 1.65;
-    margin: 0;
-  }
-
-  /* ============================================================
-     07. Product Grid — 상품 3종
-     ============================================================ */
-  .pricing-section-header {
-    text-align: center;
-    max-width: 640px;
-    margin: 0 auto var(--gap-lg);
-  }
-  .product-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  @media (min-width: 960px) {
-    .product-grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-  }
-  .product-card {
-    position: relative;
-    background: #fff;
-    border: 1px solid rgba(15, 23, 36, .08);
-    border-radius: var(--radius-md);
-    padding: 28px 24px 24px;
-    display: flex;
-    flex-direction: column;
-    transition: transform .2s var(--ease), box-shadow .2s var(--ease);
-  }
-  .product-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
-  }
-  .product-card--featured {
-    background: var(--color-dark);
-    color: #fff;
-    border-color: var(--color-dark);
-    box-shadow: var(--shadow-lg);
-  }
-  .product-card--featured .product-card__title,
-  .product-card--featured .product-card__price-num {
-    color: #fff;
-  }
-  .product-card--featured .product-card__step,
-  .product-card--featured .product-card__role {
-    color: #93A4F5;
-  }
-  .product-card--featured .product-card__en {
-    color: rgba(255,255,255,.55);
-  }
-  .product-card--featured .product-card__desc,
-  .product-card--featured .product-card__price-unit,
-  .product-card--featured .product-card__price-note {
-    color: rgba(255,255,255,.75);
-  }
-  .product-card__badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--color-accent);
-    color: #fff;
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    padding: 5px 14px;
-    border-radius: 999px;
-    white-space: nowrap;
-  }
-  .product-card__step {
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    color: var(--color-accent);
-    font-weight: 700;
-    margin-bottom: 6px;
-    display: block;
-  }
-  .product-card__en {
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 13px;
-    color: rgba(15, 23, 36, .55);
-    letter-spacing: 0.02em;
-    margin: 0 0 4px;
-    line-height: 1.4;
-  }
-  .product-card__title {
-    font-family: var(--font-head);
-    font-size: var(--fs-h3);
-    font-weight: 700;
-    color: var(--color-ink);
-    margin: 0 0 6px;
-    line-height: 1.35;
-    letter-spacing: var(--ls-tight);
-  }
-  .product-card__role {
-    font-size: var(--fs-caption);
-    color: var(--color-accent);
-    font-weight: 600;
-    margin: 0 0 16px;
-    letter-spacing: 0.02em;
-  }
-  .product-card__desc {
-    font-size: var(--fs-body);
-    color: rgba(15, 23, 36, .75);
-    line-height: 1.75;
-    margin: 0 0 20px;
-    flex: 1;
-  }
-  .product-card__price {
-    margin: 0 0 4px;
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-  }
-  .product-card__price-num {
-    font-family: var(--font-head);
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--color-ink);
-    letter-spacing: var(--ls-tight);
-  }
-  .product-card__price-unit {
-    font-size: var(--fs-caption);
-    color: rgba(15, 23, 36, .55);
-  }
-  .product-card__price-note {
-    font-size: 12px;
-    color: rgba(15, 23, 36, .5);
-    margin: 0 0 18px;
-    line-height: 1.5;
-  }
-  .product-card__cta {
-    appearance: none;
-    background: var(--color-ink);
-    color: #fff;
-    border: 0;
-    padding: 14px 18px;
-    border-radius: var(--radius-pill);
-    font-family: var(--font-head);
-    font-size: var(--fs-body);
-    font-weight: 600;
-    cursor: pointer;
-    text-align: center;
-    transition: background .2s var(--ease), transform .15s var(--ease);
-    width: 100%;
-  }
-  .product-card__cta:hover {
-    background: var(--color-accent);
-    transform: translateY(-1px);
-  }
-  .product-card--featured .product-card__cta {
-    background: var(--color-accent);
-  }
-  .product-card--featured .product-card__cta:hover {
-    background: #93A4F5;
-    color: var(--color-dark);
-  }
-
-  /* ============================================================
-     07-b. Compare Bar — 광고 한 달 vs 90일 자산
-     ============================================================ */
-  .compare-bar {
-    max-width: 900px;
-    margin: var(--gap-xl) auto 0;
-    background: #fff;
-    border: 1px solid rgba(15, 23, 36, .08);
-    border-radius: var(--radius-md);
-    padding: 24px 28px 22px;
-  }
-  .compare-bar__title {
-    font-family: var(--font-head);
-    font-size: var(--fs-body-l);
-    color: var(--color-ink);
-    text-align: center;
-    margin: 0 0 18px;
-    line-height: 1.55;
-    font-weight: 600;
-  }
-  .compare-bar__title strong {
-    color: var(--color-accent);
-    font-weight: 700;
-  }
-  .compare-bar__rows {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .compare-bar__row {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4px;
-    padding: 14px 16px;
-    background: rgba(15, 23, 36, .03);
-    border-radius: var(--radius-sm);
-    border-left: 3px solid rgba(15, 23, 36, .15);
-  }
-  @media (min-width: 640px) {
-    .compare-bar__row {
-      grid-template-columns: 160px 1fr auto;
-      align-items: center;
-      gap: 14px;
-    }
-  }
-  .compare-bar__row--accent {
-    background: rgba(74, 95, 232, .06);
-    border-left-color: var(--color-accent);
-  }
-  .compare-bar__label {
-    font-family: var(--font-head);
-    font-size: var(--fs-caption);
-    font-weight: 700;
-    color: var(--color-ink);
-    letter-spacing: 0.02em;
-  }
-  .compare-bar__num {
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: var(--fs-body);
-    color: var(--color-ink);
-    font-weight: 600;
-  }
-  .compare-bar__note {
-    font-size: var(--fs-caption);
-    color: rgba(15, 23, 36, .55);
-  }
-
-  .pricing-release {
-    max-width: 540px;
-    margin: var(--gap-lg) auto 0;
-    text-align: center;
-    color: rgba(15, 23, 36, .6);
-    font-size: var(--fs-caption);
-    line-height: 1.8;
-  }
-
-  /* ============================================================
-     08. Execution Flow — 3단계 (상품 3종 매핑) · 카드형 가운데 정렬
-     ============================================================ */
-  .execution-step__product {
-    display: inline-block;
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    color: var(--color-accent);
-    font-weight: 700;
-    margin: 0 0 4px;
-    padding: 3px 8px;
-    background: rgba(74, 95, 232, .08);
-    border-radius: 4px;
-  }
-
-  /* 카드형 단계 — 가운데 정렬 + 좌측 큰 번호 + 우측 텍스트 */
-  .execution-flow--cards {
-    list-style: none;
-    padding: 0;
-    margin: var(--gap-lg) auto 0;
-    max-width: 880px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-  .execution-step--card {
-    background: #fff;
-    border: 1px solid rgba(15, 23, 36, .08);
-    border-radius: var(--radius-md);
-    padding: 28px 32px 26px;
-    display: grid;
-    grid-template-columns: 96px 1fr;
-    gap: 28px;
-    align-items: start;
-    transition: transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s var(--ease);
-  }
-  .execution-step--card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: rgba(74, 95, 232, .25);
-  }
-  .execution-step__num-col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    padding-top: 4px;
-    border-right: 1px solid rgba(15, 23, 36, .08);
-    padding-right: 20px;
-    height: 100%;
-  }
-  .execution-step__no-big {
-    font-family: var(--font-head);
-    font-size: 56px;
-    font-weight: 700;
-    color: var(--color-accent);
-    letter-spacing: -0.04em;
-    line-height: 0.95;
-  }
-  .execution-step__no-tag {
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    color: rgba(15, 23, 36, .45);
-    text-transform: uppercase;
-  }
-  .execution-step__body {
-    min-width: 0;
-  }
-  @media (max-width: 720px) {
-    .execution-step--card {
-      grid-template-columns: 1fr;
-      gap: 14px;
-      padding: 24px 22px 22px;
-    }
-    .execution-step__num-col {
-      flex-direction: row;
-      align-items: baseline;
-      gap: 10px;
-      border-right: 0;
-      border-bottom: 1px solid rgba(15, 23, 36, .08);
-      padding-right: 0;
-      padding-bottom: 10px;
-      height: auto;
-    }
-    .execution-step__no-big {
-      font-size: 40px;
-    }
-  }
-
-  /* ============================================================
-     09. Industry Grid 6 — 2x3 (mobile) / 3x2 (desktop)
-     ============================================================ */
-  .industry-grid-6 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    max-width: 1080px;
-    margin: 0 auto;
-  }
-  @media (min-width: 720px) {
-    .industry-grid-6 {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-  }
-
-  /* Thumb Placeholder — 사진 준비 중 카드 */
-  .industry-card__thumb--placeholder {
-    aspect-ratio: 4 / 3;
-    background: linear-gradient(135deg, rgba(15, 23, 36, .04) 0%, rgba(15, 23, 36, .09) 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: rgba(15, 23, 36, .32);
-    border-radius: var(--radius-sm, 8px);
-    overflow: hidden;
-  }
-  .industry-card__thumb--placeholder svg {
-    width: 44px;
-    height: 44px;
-  }
-  .industry-card__thumb-label {
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 10px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: rgba(15, 23, 36, .4);
-  }
-
-  /* Industry Other 보조 박스 */
-  .industry-other {
-    appearance: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    width: 100%;
-    max-width: 540px;
-    margin: var(--gap-lg) auto 0;
-    background: #fff;
-    border: 1px dashed rgba(15, 23, 36, .2);
-    border-radius: var(--radius-md);
-    padding: 22px 24px;
-    cursor: pointer;
-    font-family: inherit;
-    color: var(--color-ink);
-    text-align: center;
-    transition: background .2s var(--ease), border-color .2s var(--ease);
-  }
-  .industry-other:hover {
-    background: rgba(74, 95, 232, .04);
-    border-color: var(--color-accent);
-  }
-  .industry-other__label {
-    font-size: var(--fs-caption);
-    color: rgba(15, 23, 36, .6);
-  }
-  .industry-other__cta {
-    font-family: var(--font-head);
-    font-size: var(--fs-body);
-    font-weight: 700;
-    color: var(--color-accent);
-  }
-
-  /* ============================================================
-     10. Internal System
-     ============================================================ */
-  .system-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  @media (min-width: 720px) {
-    .system-grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-    }
-  }
-  .system-cell {
-    background: #fff;
-    border: 1px solid rgba(15, 23, 36, .08);
-    border-radius: var(--radius-md);
-    padding: 22px 20px 22px;
-  }
-  .system-cell__tag {
-    display: inline-block;
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    color: var(--color-accent);
-    background: rgba(74, 95, 232, .08);
-    padding: 4px 10px;
-    border-radius: 4px;
-    margin-bottom: 12px;
-  }
-  .system-cell p {
-    font-size: var(--fs-caption);
-    color: rgba(15, 23, 36, .72);
-    line-height: 1.7;
-    margin: 0;
-  }
-  .system-expand {
-    border-top: 1px solid rgba(15, 23, 36, .08);
-    padding-top: 18px;
-  }
-  .system-expand summary {
-    cursor: pointer;
-    font-family: var(--font-head);
-    font-size: var(--fs-body);
-    font-weight: 600;
-    color: var(--color-ink);
-    padding: 8px 0;
-    list-style: none;
-    position: relative;
-    padding-right: 32px;
-  }
-  .system-expand summary::-webkit-details-marker { display: none; }
-  .system-expand summary::after {
-    content: "+";
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    color: var(--color-accent);
-    font-size: 20px;
-    font-weight: 300;
-    transition: transform .2s var(--ease);
-  }
-  .system-expand[open] summary::after {
-    content: "−";
-  }
-  .system-expand__body {
-    padding: 10px 0 4px;
-    font-size: var(--fs-caption);
-    color: rgba(15, 23, 36, .68);
-    line-height: 1.8;
-    white-space: pre-line;
-  }
-
-  /* ============================================================
-     NEW · 고객 반응 포인트 (Response Points)
-     ============================================================ */
-  .response-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-  }
-  .response-card {
-    background: #fff;
-    border: 1px solid rgba(15, 23, 36, .08);
-    border-radius: var(--radius-md);
-    padding: 24px 22px 22px;
-    transition: transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s var(--ease);
-  }
-  .response-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: rgba(74, 95, 232, .25);
-  }
-  .response-card__tag {
-    display: inline-block;
-    margin-bottom: 14px;
-    padding: 4px 10px;
-    border-radius: 999px;
-    background: rgba(74, 95, 232, .08);
-    color: var(--color-accent);
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-  }
-  .response-card h3 {
-    font-family: var(--font-head);
-    font-size: var(--fs-body-l);
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: var(--ls-tight);
-    margin: 0 0 10px;
-    color: var(--color-ink);
-  }
-  .response-card p {
-    font-size: var(--fs-caption);
-    line-height: 1.75;
-    color: rgba(15, 23, 36, .68);
-    margin: 0;
-  }
-
-  /* ============================================================
-     NEW · 오프라인 감각 흐름 (Offline Sensory Flow)
-     ============================================================ */
-  .sensory-flow {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-  }
-  .sensory-step {
-    display: grid;
-    grid-template-columns: 52px 1fr;
-    gap: 16px;
-    align-items: start;
-    background: #fff;
-    border: 1px solid rgba(15, 23, 36, .08);
-    border-radius: var(--radius-md);
-    padding: 22px 22px 20px;
-    transition: transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s var(--ease);
-  }
-  .sensory-step:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: rgba(74, 95, 232, .2);
-  }
-  .sensory-step__no {
-    display: inline-flex;
-    width: 44px;
-    height: 44px;
-    border-radius: 999px;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-ink);
-    color: #fff;
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    flex-shrink: 0;
-  }
-  .sensory-step h3 {
-    font-family: var(--font-head);
-    font-size: var(--fs-body-l);
-    font-weight: 700;
-    line-height: 1.35;
-    letter-spacing: var(--ls-tight);
-    margin: 0 0 8px;
-    color: var(--color-ink);
-  }
-  .sensory-step p {
-    font-size: var(--fs-caption);
-    line-height: 1.75;
-    color: rgba(15, 23, 36, .68);
-    margin: 0;
-  }
-
-  .sensory-summary {
-    background: var(--color-dark, var(--color-ink));
-    color: #fff;
-    border-radius: var(--radius-md);
-    padding: 30px 28px 28px;
-    box-shadow: var(--shadow-lg);
-  }
-  .sensory-summary h3 {
-    font-family: var(--font-head);
-    font-size: var(--fs-h3);
-    font-weight: 700;
-    line-height: 1.45;
-    letter-spacing: var(--ls-tight);
-    margin: 0 0 20px;
-    color: #fff;
-  }
-  .sensory-factor-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
-  }
-  .sensory-factor-grid > div {
-    border: 1px solid rgba(255, 255, 255, .14);
-    border-radius: var(--radius-sm, 12px);
-    padding: 16px 16px 14px;
-    background: rgba(255, 255, 255, .04);
-  }
-  .sensory-factor-grid span {
-    display: block;
-    color: #93A4F5;
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    margin-bottom: 8px;
-  }
-  .sensory-factor-grid p {
-    color: rgba(255, 255, 255, .72);
-    font-size: var(--fs-caption);
-    line-height: 1.65;
-    margin: 0;
-  }
-
-  @media (max-width: 900px) {
-    .response-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .sensory-flow {
-      grid-template-columns: 1fr;
-    }
-    .sensory-factor-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  @media (max-width: 640px) {
-    .response-grid {
-      grid-template-columns: 1fr;
-    }
-    .response-card,
-    .sensory-step,
-    .sensory-summary {
-      padding: 20px 20px 18px;
-    }
-    .sensory-step {
-      grid-template-columns: 40px 1fr;
-      gap: 14px;
-    }
-    .sensory-step__no {
-      width: 36px;
-      height: 36px;
-      font-size: 11px;
-    }
-    .sensory-factor-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* ============================================================
-     Kakao Toast
-     ============================================================ */
-  .kakao-toast {
-    position: fixed;
-    bottom: 32px;
-    left: 50%;
-    transform: translateX(-50%) translateY(20px);
-    background: var(--color-ink);
-    color: var(--color-paper);
-    padding: 14px 22px;
-    border-radius: var(--radius-pill);
-    font-size: var(--fs-body);
-    font-weight: 500;
-    box-shadow: var(--shadow-lg);
-    z-index: 1000;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .3s var(--ease), transform .3s var(--ease);
-    max-width: 92vw;
-    text-align: center;
-    line-height: 1.5;
-  }
-  .kakao-toast.visible {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-
-  /* ============================================================
-     Responsive Tweaks
-     ============================================================ */
-  @media (max-width: 640px) {
-    .hero-dark { min-height: 80vh; padding: 64px 0; }
-    .hero-dark__cta,
-    .cta-final__buttons {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .hero-dark__cta .btn,
-    .cta-final__buttons .btn {
-      width: 100%;
-    }
-    .product-card {
-      padding: 26px 22px 22px;
-    }
-  }
-
-  @media (max-width: 380px) {
-    .hero-dark__title { font-size: 26px; }
-    .cta-final__title { font-size: 22px; }
-    .product-card__price-num { font-size: 24px; }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: .01ms !important;
-      transition-duration: .01ms !important;
-    }
-  }
-</style>
-
-
-<!-- ========================================================================
-     Page JS — 카카오톡 클립보드 복사 (현행 유지)
-     ======================================================================== -->
 <script>
-  /**
-   * 카드/버튼 클릭 → 사전입력 메시지 클립보드 복사 → 카카오톡 채널 새 탭
-   * 사용: <button data-msg="..." onclick="copyAndOpenKakao(this)">
-   *
-   * 향후 진단비 결제 버튼으로 교체할 경우:
-   *   .js-diagnosis-cta 클래스를 가진 버튼만 일괄 교체하면 됩니다.
-   *   1) Place Trust Care 상품 카드 CTA
-   *   2) 자가진단 5카드 CTA
-   *   3) 최종 CTA 두 버튼
-   *   4) 기타 업종 버튼
-   */
-  const KAKAO_CHANNEL_URL = 'https://pf.kakao.com/_mxbexhX';
+/* ===== 설정값(추후 교체) ===== */
+/* ▼ 카카오톡 채널 또는 오픈채팅 URL을 따옴표 안에 넣으세요.
+      예) var KAKAO_LINK_PLACEHOLDER = "https://pf.kakao.com/_xXxXxX/chat";
+      비워두면("") 메시지 복사 + 안내만 동작합니다(채널 자동 열기 없음). */
+var KAKAO_LINK_PLACEHOLDER = "";
+/* 전화번호는 이미 010-6461-6594로 설정됨.
+   변경 시: 본문 문의 버튼·푸터의 tel:+821064616594 와 표시 텍스트(010-6461-6594)를 함께 수정. */
 
-  function copyAndOpenKakao(btn) {
-    const msg = btn.dataset.msg || '';
-    if (!msg) {
-      window.open(KAKAO_CHANNEL_URL, '_blank', 'noopener');
-      return;
-    }
+function wpToast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('on');
+  clearTimeout(window.__t);window.__t=setTimeout(function(){t.classList.remove('on')},3200);}
+function wpKakao(btn){var msg=btn.getAttribute('data-msg')||"";
+  function done(){if(KAKAO_LINK_PLACEHOLDER){wpToast("메시지가 복사됐어요. 카카오톡을 엽니다.");window.open(KAKAO_LINK_PLACEHOLDER,"_blank","noopener");}
+    else{wpToast("메시지가 복사됐어요. 카카오톡에 붙여넣어 보내주세요.");}}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(done).catch(function(){wpFb(msg);done();});}
+  else{wpFb(msg);done();}}
+function wpFb(t){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';
+  document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);}
 
-    const onSuccess = () => {
-      showToast('메시지가 복사되었습니다. 카카오톡 채팅창에 붙여 넣어 주세요.');
-      window.open(KAKAO_CHANNEL_URL, '_blank', 'noopener');
-    };
-    const onFail = () => {
-      showToast('메시지를 직접 복사해 보내 주세요.');
-      window.open(KAKAO_CHANNEL_URL, '_blank', 'noopener');
-    };
+/* ===== 골드 먼지 ===== */
+(function(){var d=document.getElementById('dust');if(!d)return;var n=window.innerWidth<600?12:20;
+  for(var i=0;i<n;i++){var s=document.createElement('i');var sz=2+Math.random()*4;
+    s.style.width=s.style.height=sz+'px';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';
+    s.style.animationDuration=(9+Math.random()*12)+'s';s.style.animationDelay=(-Math.random()*12)+'s';d.appendChild(s);}})();
 
-    if (navigator.clipboard && window.isSecureContext) {
-      navigator.clipboard.writeText(msg).then(onSuccess).catch(() => fallbackCopy(msg, onSuccess, onFail));
-    } else {
-      fallbackCopy(msg, onSuccess, onFail);
-    }
+/* ===== 스크롤: 진행바 + 빛 패럴랙스 + 등장 스태거 ===== */
+(function(){
+  var bar=document.getElementById('bar'),amb=document.getElementById('amb');
+  function onScroll(){var h=document.documentElement,sc=h.scrollTop,s=sc/(h.scrollHeight-h.clientHeight);
+    bar.style.width=Math.min(100,Math.max(0,s*100))+'%';
+    if(amb)amb.style.transform='translateY('+(sc*0.06)+'px)';}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('is-in');
+        var rs=e.target.querySelectorAll('.rise');rs.forEach(function(r,i){r.style.transitionDelay=(i*0.09)+'s';r.classList.add('in');});
+        io.unobserve(e.target);}});},{threshold:0.18});
+    document.querySelectorAll('.panel').forEach(function(p){io.observe(p);});
+  }else{document.querySelectorAll('.rise').forEach(function(r){r.classList.add('in');});}
+})();
+
+/* ===== 우측 번호 네비 (활성 추적 + 화살표) ===== */
+(function(){
+  var secs=['top','scene','energy','surface','eyes','fields','sample','diagnosis','contact'];
+  var links={};document.querySelectorAll('.nav a').forEach(function(a){links[a.getAttribute('data-sec')]=a;});
+  var cur='top';
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){var id=e.target.id;cur=id;
+        for(var k in links)links[k].classList.toggle('on',k===id);}});},{threshold:0.5});
+    secs.forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el);});
   }
+  function go(dir){var i=secs.indexOf(cur),j=Math.min(secs.length-1,Math.max(0,i+dir));
+    var el=document.getElementById(secs[j]);if(el)el.scrollIntoView({behavior:'smooth'});}
+  var up=document.getElementById('navUp'),dn=document.getElementById('navDn');
+  if(up)up.addEventListener('click',function(){go(-1);});
+  if(dn)dn.addEventListener('click',function(){go(1);});
+})();
 
-  function fallbackCopy(text, onSuccess, onFail) {
-    const ta = document.createElement('textarea');
-    ta.value = text;
-    ta.setAttribute('readonly', '');
-    ta.style.position = 'fixed';
-    ta.style.top = '0';
-    ta.style.left = '0';
-    ta.style.opacity = '0';
-    document.body.appendChild(ta);
-    ta.select();
-    try {
-      const ok = document.execCommand('copy');
-      ok ? onSuccess() : onFail();
-    } catch (e) {
-      onFail();
-    }
-    document.body.removeChild(ta);
-  }
-
-  let toastTimer = null;
-  function showToast(text) {
-    const el = document.getElementById('kakao-toast');
-    if (!el) return;
-    el.textContent = text;
-    el.classList.add('visible');
-    if (toastTimer) clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => {
-      el.classList.remove('visible');
-    }, 3500);
-  }
+/* ===== 첫 표면 점수 ===== */
+(function(){
+  var ans={first:null,match:null,answer:null};
+  var quiz=document.getElementById('quiz');if(!quiz)return;
+  function reveal(id){var el=document.getElementById(id);if(el)el.classList.add('show');}
+  function soft(el){if(el&&el.scrollIntoView)el.scrollIntoView({behavior:'smooth',block:'center'});}
+  quiz.addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;
+    var key=b.getAttribute('data-key'),val=parseInt(b.getAttribute('data-val'),10);
+    b.closest('.q__o').querySelectorAll('.opt').forEach(function(o){o.classList.remove('sel');});
+    b.classList.add('sel');ans[key]=val;
+    if(key==='first'&&!document.getElementById('q2').classList.contains('show')){reveal('q2');setTimeout(function(){soft(document.getElementById('q2'))},180);}
+    else if(key==='match'&&!document.getElementById('q3').classList.contains('show')){reveal('q3');setTimeout(function(){soft(document.getElementById('q3'))},180);}
+    else if(key==='answer'){reveal('goWrap');setTimeout(function(){soft(document.getElementById('goWrap'))},180);}});
+  function grade(s){if(s>=85)return '이미 잘 정리돼 있습니다. 마지막 한 끗만 손보면 됩니다.';
+    if(s>=70)return '기본기가 단단합니다. 살짝 흐려진 화면 한두 곳만 맞추면 됩니다.';
+    if(s>=55)return '절반은 이미 갖춰져 있습니다. 어디부터 정리하면 좋을지 순서가 보입니다.';
+    return '막힌 게 아니라, 정리할 순서가 또렷하게 보이는 상태입니다. 지금 시작하기 좋은 때입니다.';}
+  function weak(){var lo=Math.min(ans.first,ans.match,ans.answer);
+    if(ans.first===lo)return '먼저 손보면 좋은 건, 처음 보이는 화면입니다. 3초 안에 무슨 매장인지 보이게 맞추는 것부터요.';
+    if(ans.match===lo)return '먼저 손보면 좋은 건, 네이버·구글·홈페이지를 같은 매장으로 맞추는 일입니다. 그러면 손님이 다시 검색으로 빠지지 않습니다.';
+    return '먼저 손보면 좋은 건, 자주 묻는 질문을 한 화면에 모으는 일입니다. 그것만으로 망설임이 크게 줄어듭니다.';}
+  document.getElementById('goBtn').addEventListener('click',function(){
+    if(ans.first===null||ans.match===null||ans.answer===null)return;
+    var sum=ans.first+ans.match+ans.answer,score=Math.min(96,Math.max(46,Math.round((sum/9)*50+46)));
+    document.getElementById('goWrap').style.display='none';
+    ['q1','q2','q3'].forEach(function(id){document.getElementById(id).style.opacity='.42';});
+    document.getElementById('resGrade').textContent=grade(score);
+    document.getElementById('resNote').textContent=weak();
+    var res=document.getElementById('result');res.classList.add('show');setTimeout(function(){soft(res)},120);
+    var b=document.getElementById('scoreBar'),C=452;
+    setTimeout(function(){b.style.transition='stroke-dashoffset 1.3s cubic-bezier(.2,.7,.2,1)';b.style.strokeDashoffset=(C-C*(score/100)).toFixed(1);},180);
+    var out=document.getElementById('scoreVal'),t0=null,dur=1300;
+    function tick(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur),ev=1-Math.pow(1-p,3);
+      out.textContent=Math.round(score*ev);if(p<1)requestAnimationFrame(tick);else out.textContent=score;}
+    requestAnimationFrame(tick);});
+})();
 </script>
-
 </body>
 </html>
