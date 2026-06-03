@@ -194,8 +194,8 @@ body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height
 /* ===== Hero background image — img/weplace-brand-surface.jpg ===== */
 #top{overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;
-  opacity:.58;filter:saturate(.9) brightness(.72) contrast(1.02);
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%;
+  opacity:.64;filter:saturate(.92) brightness(.82) contrast(1.02);
   transform:scale(1.05);animation:kbhero 28s ease-out forwards}
 .hero-bg::after{content:"";position:absolute;inset:0;background:
   radial-gradient(120% 95% at 50% 38%,rgba(16,12,10,.5),rgba(16,12,10,.82) 100%),
@@ -359,6 +359,54 @@ body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height
 .w-op{color:var(--ink-faint);background:rgba(122,86,64,.07);border:1px solid var(--line-ivory)}
 .dxnote{font-family:var(--serif);font-size:14.5px;color:var(--cream);text-align:center;max-width:34em;margin:24px auto 0;line-height:1.6}
 @media(max-width:560px){.order li{grid-template-columns:auto 1fr}.order__when{grid-column:2;justify-self:start;margin-top:3px}}
+
+/* ===== Global menu (shared component) ===== */
+.gnav{position:fixed;top:24px;right:26px;z-index:55;display:flex;align-items:center}
+.gnav__menu{display:flex;align-items:center;gap:22px}
+.gnav__menu a{font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:.01em;
+  color:var(--txt-soft);text-decoration:none;transition:color .22s;white-space:nowrap;position:relative}
+.gnav__menu a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--gold-line);
+  transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.gnav__menu a:hover{color:var(--cream)}
+.gnav__menu a:hover::after{transform:scaleX(1)}
+.gnav__menu a.gnav__cta{color:var(--champagne);border:1px solid rgba(203,169,104,.4);
+  padding:8px 16px;border-radius:999px}
+.gnav__menu a.gnav__cta::after{display:none}
+.gnav__menu a.gnav__cta:hover{background:rgba(196,154,90,.12);color:var(--ivory-soft)}
+.gnav__toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;
+  background:rgba(16,12,10,.5);border:1px solid rgba(203,169,104,.3);border-radius:12px;cursor:pointer;
+  -webkit-appearance:none;appearance:none;padding:0;backdrop-filter:blur(6px);transition:border-color .2s}
+.gnav__toggle span{display:block;width:18px;height:1.6px;background:var(--cream);margin:0 auto;transition:transform .28s,opacity .2s}
+.gnav__toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6.6px) rotate(45deg)}
+.gnav__toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.gnav__toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.6px) rotate(-45deg)}
+@media(max-width:960px){
+  .gnav__toggle{display:flex}
+  .gnav__menu{position:fixed;inset:0;z-index:54;flex-direction:column;justify-content:center;gap:8px;
+    background:linear-gradient(168deg,#16110D,#100B09);opacity:0;pointer-events:none;transition:opacity .32s;
+    padding:80px 26px}
+  .gnav__menu.open{opacity:1;pointer-events:auto}
+  .gnav__menu a{font-family:var(--serif);font-size:23px;font-weight:700;color:var(--cream);padding:12px 0}
+  .gnav__menu a::after{display:none}
+  .gnav__menu a.gnav__cta{margin-top:14px;font-size:17px;padding:14px 30px}
+}
+
+/* ===== 07 더 깊게 보기 — 에세이·웹툰·가이드 입구 ===== */
+.dcards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.dcard{display:flex;flex-direction:column;background:rgba(240,233,220,.04);border:1px solid rgba(203,169,104,.22);
+  border-radius:18px;padding:24px 22px 22px;text-decoration:none;transition:transform .28s,border-color .28s,background .28s}
+.dcard:hover{transform:translateY(-3px);border-color:rgba(203,169,104,.5);background:rgba(240,233,220,.06)}
+.dcard__lab{font-family:var(--eng);font-style:italic;font-size:14px;letter-spacing:.06em;color:var(--champagne);margin-bottom:14px}
+.dcard__t{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ivory-soft);line-height:1.45}
+.dcard__p{font-size:13.5px;color:var(--txt-soft);line-height:1.65;margin-top:11px;flex:1}
+.dcard__go{font-size:13px;font-weight:700;color:var(--champagne);margin-top:18px;letter-spacing:.01em}
+.dcard:hover .dcard__go{color:var(--cream)}
+@media(max-width:720px){.dcards{grid-template-columns:1fr}}
+
+/* ===== Footer nav (shared) ===== */
+.foot__nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;margin-top:22px}
+.foot__nav a{font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--cream);text-decoration:none;transition:color .2s}
+.foot__nav a:hover{color:var(--champagne)}
 </style>
 </head>
 <body>
@@ -369,6 +417,20 @@ body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height
 
 <a href="#top" class="brand">WE PLACE<small>매장을 함께 읽는 팀</small></a>
 
+<nav class="gnav" aria-label="주요 메뉴">
+  <button class="gnav__toggle" id="gnavToggle" type="button" aria-expanded="false" aria-controls="gnavMenu" aria-label="메뉴 열기">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="gnav__menu" id="gnavMenu">
+    <a href="/diagnosis/">첫 표면 진단</a>
+    <a href="/industries/">업종별</a>
+    <a href="/essay/">에세이</a>
+    <a href="/webtoon/">웹툰</a>
+    <a href="/problems/">문제별</a>
+    <a href="#contact" class="gnav__cta">문의</a>
+  </div>
+</nav>
+
 <nav class="nav" id="nav" aria-label="섹션 이동">
   <a href="#top" data-sec="top" class="nav__mark on" aria-label="처음으로"></a>
   <a href="#scene"     data-sec="scene">01</a>
@@ -377,8 +439,9 @@ body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height
   <a href="#eyes"      data-sec="eyes">04</a>
   <a href="#fields"    data-sec="fields">05</a>
   <a href="#sample"    data-sec="sample">06</a>
-  <a href="#diagnosis" data-sec="diagnosis">07</a>
-  <a href="#contact"   data-sec="contact">08</a>
+  <a href="#deeper"    data-sec="deeper">07</a>
+  <a href="#diagnosis" data-sec="diagnosis">08</a>
+  <a href="#contact"   data-sec="contact">09</a>
   <div class="nav__arrows">
     <button id="navUp" aria-label="이전"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
     <button id="navDn" aria-label="다음"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -387,19 +450,16 @@ body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height
 
 <!-- ===================== HERO ===================== -->
 <header class="panel" id="top">
-  <!-- ▼ Hero 이미지: img/weplace-brand-surface.jpg (배포 시 img 폴더에 사진 8장 배치). 교체는 src만 수정 -->
-  <div class="hero-bg" aria-hidden="true"><img src="img/weplace-brand-surface.jpg" alt="" loading="eager" /></div>
+  <!-- ▼ Hero 이미지: img/hero-network.webp (고화질 webp로 교체 가능 · src만 수정). 폴백 그라데이션이 로딩 전/실패 시 표시 -->
+  <div class="hero-bg" aria-hidden="true"><img src="img/hero-network.webp" alt="" loading="eager" fetchpriority="high" /></div>
   <div class="panel__in rise">
     <h1 class="disp d-hero on-d">
-      광고비를 더 쓰기 전에,<br>
-      손님이 매장을 이해하는 데 쓰는<br>
-      <span class="hl">에너지를 먼저 줄입니다.</span>
+      흩어진 신호가<br>
+      <span class="hl">하나의 매장으로</span> 읽히는 순간.
     </h1>
-    <p class="sub on-d mt24 rise" style="max-width:32em">
-      네이버 · 구글 · 홈페이지 · 리뷰 · AI 검색.<br>
-      흩어진 정보를 하나의 매장으로 정리합니다.<br><br>
-      손님이 다시 검색으로 빠지지 않도록,<br>
-      처음 보는 화면부터 맞춥니다.
+    <p class="sub on-d mt24 rise" style="max-width:30em">
+      네이버 · 구글 · 홈페이지 · 리뷰 · AI 검색을<br>
+      한 기준으로 정리합니다.
     </p>
     <div class="mt40 rise">
       <a href="#diagnosis" class="btn btn--gold btn--lg">매장명으로 1장 진단 받아보기</a>
@@ -416,9 +476,9 @@ body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height
   <span class="vlabel">searching</span>
   <div class="panel__in">
     <span class="chap rise"><span class="chap__no">01 — 검색창 앞에서</span></span>
-    <p class="disp d-xl on-d rise">좋은 매장은<br>이미 많습니다.</p>
-    <p class="sub on-d mt24 rise" style="max-width:30em">
-      문제는 좋은 점이 없는 것이 아니라, 그 좋은 점을 손님이 <span class="hl">너무 많은 화면</span>을 거쳐 이해해야 한다는 데 있습니다.
+    <p class="disp d-xl on-d rise">광고비를 더 쓰기 전에,<br>손님이 어디서 멈추는지 봅니다.</p>
+    <p class="sub on-d mt24 rise" style="max-width:32em">
+      손님은 오기 전에 이미 가격, 사진, 후기, 위치, 예약 가능 여부를 다른 화면에서 확인합니다. 좋은 점이 없어서가 아니라, 그 좋은 점을 <span class="hl">너무 많은 화면</span>을 거쳐 이해해야 하기 때문입니다.
     </p>
   </div>
 </section>
@@ -576,11 +636,45 @@ body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height
   </div>
 </section>
 
-<!-- 07 ===================== 비춰보기 (진단, 따뜻한 빛) ===================== -->
+<!-- 07 ===================== 더 깊게 보기 (에세이·웹툰·가이드 입구) ===================== -->
+<section class="panel" id="deeper">
+  <span class="vlabel">deeper</span>
+  <div class="panel__in">
+    <span class="chap rise"><span class="chap__no">07 — 더 깊게 보기</span></span>
+    <p class="disp d-l on-d rise">매장은 이미 좋을 수 있습니다.<br>다만 화면에서 <span class="hl">다르게 읽히고</span> 있을 수 있습니다.</p>
+    <p class="sub on-d mt24 rise" style="max-width:33em">
+      Weplace는 광고를 더하기 전에,<br>
+      손님이 어디서 멈추는지 먼저 봅니다.<br>
+      아래 글과 웹툰은 그 차이를 쉽게 보여주는 기록입니다.
+    </p>
+    <div class="dcards mt40 rise">
+      <a class="dcard" href="/essay/">
+        <span class="dcard__lab">Essay</span>
+        <p class="dcard__t">고객은 매장을 선택하기 전 이미 지칩니다.</p>
+        <p class="dcard__p">광고보다 먼저 봐야 할 것은 고객이 이해하는 데 쓰는 에너지입니다.</p>
+        <span class="dcard__go">읽어보기 →</span>
+      </a>
+      <a class="dcard" href="/webtoon/">
+        <span class="dcard__lab">Webtoon</span>
+        <p class="dcard__t">대표님이 보는 매장과 손님이 보는 화면은 다릅니다.</p>
+        <p class="dcard__p">검색 화면 앞에서 손님이 실제로 어디서 멈추는지 짧은 이야기로 보여드립니다.</p>
+        <span class="dcard__go">보러가기 →</span>
+      </a>
+      <a class="dcard" href="/problems/">
+        <span class="dcard__lab">Guide</span>
+        <p class="dcard__t">내 매장이 흐려 보이는 이유를 문제별로 확인합니다.</p>
+        <p class="dcard__p">구글 정보, 리뷰 답글, FAQ, 대표사진, 예약 동선을 하나씩 봅니다.</p>
+        <span class="dcard__go">확인하기 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 08 ===================== 비춰보기 (진단, 따뜻한 빛) ===================== -->
 <section class="panel panel--center lit" id="diagnosis">
   <div class="panel__in">
     <div class="diag">
-      <span class="chap chap--dark rise"><span class="chap__no">07 — 비춰보기</span></span>
+      <span class="chap chap--dark rise"><span class="chap__no">08 — 비춰보기</span></span>
       <p class="disp d-l on-l rise">3가지만 답하면,<br>지금 표면이 보입니다.</p>
 
       <div id="quiz">
@@ -634,11 +728,11 @@ body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height
   </div>
 </section>
 
-<!-- 08 ===================== 시작 (최종 CTA) ===================== -->
+<!-- 09 ===================== 시작 (최종 CTA) ===================== -->
 <section class="panel panel--center" id="contact">
   <div class="cta-bg" aria-hidden="true"><img src="img/weplace-arrival.jpg" alt="" loading="lazy" /></div>
   <div class="panel__in">
-    <span class="chap rise"><span class="chap__no">08 — 시작</span></span>
+    <span class="chap rise"><span class="chap__no">09 — 시작</span></span>
     <p class="disp d-xl on-d rise">정리 안 돼도 됩니다.<br><span class="hl">매장명 한 줄</span>이면 시작합니다.</p>
     <p class="sub on-d mt24 rise">진단이 먼저, 작업은 그 다음.</p>
     <div class="contact-box rise">
@@ -664,13 +758,22 @@ body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height
   </div>
 </section>
 
-<!-- [확장 예정 — 이번 메인 제외] Essay(07_essay) · Comic(08_webtoon) · Insight(09_trend) 별도 페이지로 연결 -->
+<!-- 별도 허브 연결 완료: /essay/ · /webtoon/ · /industries/ · /problems/ · /diagnosis/ (상단 메뉴 + 07 더 깊게 보기 + 푸터) -->
+<!-- 추후: 사주/운영 리듬 테스트는 /rhythm/ 로 분리 예정 (메인 직접 혼합 금지) -->
 
 </main>
 
 <footer class="foot">
   <div class="foot__b">We Place · 위플레이스</div>
   <p class="foot__l">사람과 AI가 동시에 이해하도록, 매장의 첫 표면을 정리합니다.</p>
+  <nav class="foot__nav" aria-label="페이지 이동">
+    <a href="/diagnosis/">첫 표면 진단</a>
+    <a href="/industries/">업종별</a>
+    <a href="/essay/">에세이</a>
+    <a href="/webtoon/">웹툰</a>
+    <a href="/problems/">문제별</a>
+    <a href="#contact">문의</a>
+  </nav>
   <p class="foot__n">(주)위플레이스마케팅 · 서울특별시 금천구 디지털로 178 퍼블릭가산C동 · 전화 010-6461-6594 · weplace25@gmail.com</p>
   <p class="foot__m">정보 갱신일 2026-06-01 · © We Place</p>
 </footer>
@@ -694,6 +797,15 @@ function wpKakao(btn){var msg=btn.getAttribute('data-msg')||"";
   else{wpToast("메시지가 복사됐어요. 카카오톡에 붙여넣어 보내주세요.");}}
 function wpFb(t){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';
   document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);}
+
+/* ===== 글로벌 메뉴 토글 ===== */
+(function(){var t=document.getElementById('gnavToggle'),m=document.getElementById('gnavMenu');if(!t||!m)return;
+  function close(){m.classList.remove('open');t.setAttribute('aria-expanded','false');t.setAttribute('aria-label','메뉴 열기');document.body.style.overflow='';}
+  function open(){m.classList.add('open');t.setAttribute('aria-expanded','true');t.setAttribute('aria-label','메뉴 닫기');document.body.style.overflow='hidden';}
+  t.addEventListener('click',function(){m.classList.contains('open')?close():open();});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  window.addEventListener('resize',function(){if(window.innerWidth>960)close();});})();
 
 /* ===== 골드 먼지 ===== */
 (function(){var d=document.getElementById('dust');if(!d)return;var n=window.innerWidth<600?12:20;
@@ -720,7 +832,7 @@ function wpFb(t){var a=document.createElement('textarea');a.value=t;a.style.posi
 
 /* ===== 우측 번호 네비 (활성 추적 + 화살표) ===== */
 (function(){
-  var secs=['top','scene','energy','surface','eyes','fields','sample','diagnosis','contact'];
+  var secs=['top','scene','energy','surface','eyes','fields','sample','deeper','diagnosis','contact'];
   var links={};document.querySelectorAll('.nav a').forEach(function(a){links[a.getAttribute('data-sec')]=a;});
   var cur='top';
   if('IntersectionObserver' in window){
