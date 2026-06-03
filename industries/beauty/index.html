@@ -26,7 +26,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700;900&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
-<!-- ████ 배포 시 이 <style id="preview-css"> 블록 하나만 삭제하세요. 아래 <link>가 정본 weplace.css를 불러옵니다(단일 CSS). 미리보기 전용입니다. ████ -->
+<!-- ████ 미리보기 전용 — 배포 시 이 <style id="preview-css">와 본문 끝의 <script id="preview-js"> 두 블록을 삭제하세요. 아래 <link>/외부 weplace.js가 정본을 불러옵니다(단일 CSS·단일 JS). ████ -->
 <style id="preview-css">
 /* =======================================================================
    Weplace — shared hub styles
@@ -472,6 +472,53 @@ img{display:block;max-width:100%}
 </footer>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<!-- ████ 미리보기 전용 JS — 배포 시 이 블록 삭제. 외부 weplace.js가 동일 동작(reveal·먼지·카카오·메뉴). ████ -->
+<script id="preview-js">
+/* Weplace shared hub script — menu toggle · kakao copy · gold dust · scroll reveal */
+(function(){
+  /* ===== 카카오톡 채널 (메인과 동일 값) ===== */
+  var KAKAO_LINK = "https://pf.kakao.com/_mxbexhX";
+
+  function toast(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('on');
+    clearTimeout(window.__wpt);window.__wpt=setTimeout(function(){t.classList.remove('on')},3200);}
+  function fallbackCopy(t){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';
+    document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);}
+  window.wpKakao=function(btn){var msg=btn.getAttribute('data-msg')||"";
+    fallbackCopy(msg);
+    if(navigator.clipboard&&navigator.clipboard.writeText){try{navigator.clipboard.writeText(msg);}catch(e){}}
+    if(KAKAO_LINK){toast("매장명·지역을 복사했어요. 카카오톡 채널을 엽니다.");window.open(KAKAO_LINK,"_blank","noopener");}
+    else{toast("메시지가 복사됐어요. 카카오톡에 붙여넣어 보내주세요.");}};
+
+  /* ===== 글로벌 메뉴 토글 ===== */
+  var t=document.getElementById('gnavToggle'),m=document.getElementById('gnavMenu');
+  if(t&&m){
+    var close=function(){m.classList.remove('open');t.setAttribute('aria-expanded','false');t.setAttribute('aria-label','메뉴 열기');document.body.style.overflow='';};
+    var open=function(){m.classList.add('open');t.setAttribute('aria-expanded','true');t.setAttribute('aria-label','메뉴 닫기');document.body.style.overflow='hidden';};
+    t.addEventListener('click',function(){m.classList.contains('open')?close():open();});
+    m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+    window.addEventListener('resize',function(){if(window.innerWidth>960)close();});
+  }
+
+  /* ===== 골드 먼지 ===== */
+  var d=document.getElementById('dust');
+  if(d){var n=window.innerWidth<600?10:16;
+    for(var i=0;i<n;i++){var s=document.createElement('i');var sz=2+Math.random()*4;
+      s.style.width=s.style.height=sz+'px';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';
+      s.style.animationDuration=(9+Math.random()*12)+'s';s.style.animationDelay=(-Math.random()*12)+'s';d.appendChild(s);}}
+
+  /* ===== 등장 스태거 ===== */
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){var rs=e.target.querySelectorAll('.rise');
+        if(e.target.classList.contains('rise'))e.target.classList.add('in');
+        rs.forEach(function(r,i){r.style.transitionDelay=(i*0.07)+'s';r.classList.add('in');});
+        io.unobserve(e.target);}});},{threshold:0.14});
+    document.querySelectorAll('.reveal,.rise').forEach(function(p){io.observe(p);});
+  }else{document.querySelectorAll('.rise').forEach(function(r){r.classList.add('in');});}
+})();
+
+</script>
 <script src="/assets/weplace.js"></script>
 </body>
 </html>
