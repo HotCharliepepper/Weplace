@@ -166,26 +166,17 @@
   /* 다크 섹션 BG: 감정만 남고 거의 안 보이는 수준의 은은한 사진 + 강한 오버레이 */
   #webtoon.dark{background:linear-gradient(180deg,rgba(16,13,10,.88),rgba(16,13,10,.96)),radial-gradient(120% 90% at 50% 0%,rgba(212,176,106,.12),transparent 58%),url("/img/weplace-webtoon-bg.jpg") center/cover no-repeat;}
   #diagnosis.dark{background:linear-gradient(180deg,rgba(16,13,10,.88),rgba(16,13,10,.96)),radial-gradient(80% 60% at 50% 12%,rgba(212,176,106,.16),transparent 62%),url("/img/weplace-diagnosis-bg.jpg") center/cover no-repeat;}
-  .cuts__intro{font-family:var(--garamond);font-style:italic;font-size:15px;color:rgba(236,228,214,.55);margin:38px 0 22px;}
-  .cuts{display:flex;flex-direction:column;gap:13px;}
-  .cuts .cut{opacity:0;transform:translateY(18px);}
-  .cuts.in .cut{animation:cutIn .65s var(--ease) forwards;}
-  .cuts.in .cut:nth-child(1){animation-delay:.03s;}.cuts.in .cut:nth-child(2){animation-delay:.12s;}.cuts.in .cut:nth-child(3){animation-delay:.21s;}.cuts.in .cut:nth-child(4){animation-delay:.3s;}.cuts.in .cut:nth-child(5){animation-delay:.39s;}.cuts.in .cut:nth-child(6){animation-delay:.48s;}.cuts.in .cut:nth-child(7){animation-delay:.57s;}
-  @keyframes cutIn{to{opacity:1;transform:none;}}
-  .cut{display:flex;align-items:center;gap:18px;}
-  .cut__frame{flex:0 0 72px;width:72px;height:96px;border-radius:9px;border:1px solid rgba(212,176,106,.26);background:#0F0C08;position:relative;overflow:hidden;padding:8px 7px;}
-  /* 웹툰 컷 이미지 슬롯: 각 프레임에 <img src="/webtoon/episode-01/cut-0N.jpg" onerror> 끼우면 CSS 폴백 대체 */
-  .cut__bar{height:5px;border-radius:2px;background:rgba(169,155,134,.32);margin-bottom:5px;}
-  .cut__bar.ad{background:var(--gold-bright);}.cut__bar.q{width:42%;}
-  .cut__search{height:7px;border-radius:3px;background:rgba(212,176,106,.22);margin-bottom:7px;}
-  .cut__photo{height:24px;border-radius:4px;background:linear-gradient(135deg,#C9A45E,#9A7838);margin-bottom:6px;}
-  .cut__photo.empty{background:#1a1510;border:1px dashed rgba(169,155,134,.26);}
-  .cut__q{position:absolute;inset:0;display:grid;place-items:center;font-size:21px;color:rgba(169,155,134,.42);font-family:var(--serif);}
-  .cut__dim{opacity:.4;}.cut__arrow{position:absolute;right:7px;bottom:6px;color:var(--gold-bright);font-size:14px;}
-  .cut__eye{position:absolute;right:7px;bottom:6px;color:var(--gold-bright);font-size:13px;}
-  .cut__check{position:absolute;right:7px;bottom:6px;color:var(--teal);font-size:12px;}
-  .cut__no{display:block;font-family:var(--garamond);font-style:italic;font-size:12.5px;color:var(--gold-bright);letter-spacing:.04em;margin-bottom:3px;}
-  .cut__line{font-family:var(--serif);font-size:15.5px;color:var(--ivory-on-dark);line-height:1.45;}
+  /* === 웹툰 실사 컷 스트립 — 모바일 풀블리드 ===
+     이미지 경로: /webtoon/episode-01/cut-0N.jpg (9:16 세로)
+     모바일: .wrap 패딩(-26px) 상쇄 → 화면 꽉 참
+     데스크톱: max-width 480px 중앙 정렬 */
+  .wt-strip{margin:32px -26px 0;}
+  .wt-cut{display:block;position:relative;line-height:0;overflow:hidden;}
+  .wt-cut img{width:100%;height:auto;display:block;aspect-ratio:9/16;object-fit:cover;}
+  .wt-cut+.wt-cut{border-top:1px solid rgba(212,176,106,.08);}
+  @media(min-width:601px){
+    .wt-strip{max-width:480px;margin-left:auto;margin-right:auto;border-radius:16px;overflow:hidden;}
+  }
   .cuts__punch{font-family:var(--serif);font-size:clamp(18px,4vw,23px);font-weight:700;color:#fff;line-height:1.5;margin:32px 0 0;letter-spacing:-.01em;}
   .cuts__punch b{color:var(--gold-bright);}
   .wt__more{display:inline-block;margin-top:22px;font-family:var(--garamond);font-style:italic;font-size:14.5px;color:var(--gold-bright);text-decoration:none;border-bottom:1px solid rgba(212,176,106,.4);}
@@ -297,11 +288,12 @@
   @media(max-width:560px){
     .hero__cta{flex-direction:column;}
     .hero__cta .hbtn{text-align:center;}
-    .hero__bg{background:linear-gradient(180deg,rgba(247,241,230,.93) 0%,rgba(247,241,230,.82) 52%,var(--ivory) 100%),url("/img/weplace-hero-surface.jpg") center/cover no-repeat;}
+    .hero__bg{background:linear-gradient(180deg,rgba(247,241,230,.93) 0%,rgba(247,241,230,.82) 52%,var(--ivory) 100%),url("/img/weplace-hero-surface.jpg") top center/cover no-repeat;}
+    #webtoon.dark,#diagnosis.dark{background-position:top center;}
   }
-  @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none;}.cuts .cut{opacity:1;transform:none;}.cuts.in .cut{animation:none;}.dust,.hero__scroll::after{animation:none;}*{scroll-behavior:auto;}}
+  @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none;}.wt-cut{opacity:1!important;transform:none!important;}.dust,.hero__scroll::after{animation:none;}*{scroll-behavior:auto;}}
 </style>
-<noscript><style>.r{opacity:1!important;transform:none!important;}.cuts .cut{opacity:1!important;transform:none!important;}.nav{transform:none!important;background:rgba(250,247,241,.9)!important;}.qa__a{max-height:none!important;opacity:1!important;}</style></noscript>
+<noscript><style>.r{opacity:1!important;transform:none!important;}.wt-cut{opacity:1!important;transform:none!important;}.nav{transform:none!important;background:rgba(250,247,241,.9)!important;}.qa__a{max-height:none!important;opacity:1!important;}</style></noscript>
 </head>
 <body>
 <!-- 배경 이미지 슬롯 (없어도 그라데이션 폴백 동작) — Hero: /img/weplace-hero-surface.jpg · Webtoon: /img/weplace-webtoon-bg.jpg · Diagnosis: /img/weplace-diagnosis-bg.jpg · 각 권장 1920x1080, webp 가능, 용량 ≤300KB · Hero는 고정 배경이 아닌 일반 cover 배경 -->
@@ -406,49 +398,49 @@
   <div class="wrap">
     <div class="secno r">Story · 04</div>
     <h2 class="t r d1">대표님이 보는 매장과,<br>손님이 보는 화면은 다릅니다.</h2>
-    <p class="cuts__intro r">긴 설명 대신, 손님이 멈추는 순간을 짧게.</p>
-    <!-- 웹툰 티저(스토리보드형). 실제 컷 이미지 준비 시 각 .cut__frame 안에 cut 이미지(/webtoon/episode-01/cut-0N.jpg)를 넣고 9:16 세로 컷으로 전환(프레임 비율 조정). 현재는 CSS 폴백으로 동작. -->
-    <div class="cuts">
-      <div class="cut"><div class="cut__frame"><div class="cut__bar ad"></div><div class="cut__bar"></div><div class="cut__bar q"></div></div><div><span class="cut__no">CUT 01</span><span class="cut__line">대표님은 광고를 봅니다.</span></div></div>
-      <div class="cut"><div class="cut__frame"><div class="cut__search"></div><div class="cut__bar"></div><div class="cut__bar"></div><div class="cut__bar q"></div></div><div><span class="cut__no">CUT 02</span><span class="cut__line">손님은 검색 화면을 봅니다.</span></div></div>
-      <div class="cut"><div class="cut__frame"><div class="cut__bar"></div><div class="cut__bar q"></div><div class="cut__q">?</div></div><div><span class="cut__no">CUT 03</span><span class="cut__line">가격이 보이지 않습니다.</span></div></div>
-      <div class="cut"><div class="cut__frame"><div class="cut__photo empty"></div><div class="cut__bar q"></div><div class="cut__q">?</div></div><div><span class="cut__no">CUT 04</span><span class="cut__line">주차와 예약이 애매합니다.</span></div></div>
-      <div class="cut"><div class="cut__frame"><div class="cut__dim"><div class="cut__bar"></div><div class="cut__bar"></div><div class="cut__bar q"></div></div><div class="cut__arrow">→</div></div><div><span class="cut__no">CUT 05</span><span class="cut__line">손님은 조용히 다른 매장을 누릅니다.</span></div></div>
-      <div class="cut"><div class="cut__frame"><div class="cut__search"></div><div class="cut__bar q"></div><div class="cut__eye">◉</div></div><div><span class="cut__no">CUT 06</span><span class="cut__line">Weplace는 멈춘 지점을 봅니다.</span></div></div>
-      <div class="cut"><div class="cut__frame"><div class="cut__photo"></div><div class="cut__bar"></div><div class="cut__bar"></div><div class="cut__check">✓</div></div><div><span class="cut__no">CUT 07</span><span class="cut__line">정리되면, 같은 매장으로 읽힙니다.</span></div></div>
-    </div>
-    <p class="cuts__punch r">고객은 더 싼 곳보다,<br><b>덜 불안한 곳</b>을 먼저 누릅니다.</p>
-    <a href="/webtoon/" class="wt__more r">웹툰 전체 보기 →</a>
+    <p class="p r d2">손님이 매장에 닿기 전, 화면에서 일어나는 일을 짧게 그렸습니다.</p>
 
-    <p class="ba__lead r">정리 전과 정리 후는,<br>손님이 쓰는 에너지부터 다릅니다.</p>
-    <div class="ba r" id="ba">
-      <div class="ba__pane ba__after">
-        <div class="mock mock--after">
-          <div class="mock__photo">사진 · 또렷</div>
-          <div class="mock__body">
-            <div class="mock__name">○○ 카페</div>
-            <div class="mock__row"><span>영업</span><b>매일 11–22시</b></div>
-            <div class="mock__row"><span>메뉴</span><b>한눈에 정리</b></div>
-            <div class="mock__row"><span>위치</span><b>또렷</b></div>
-          </div>
-        </div>
-        <span class="ba__tag ba__tag--r">정리 후</span>
+    <!-- 웹툰 컷 스트립 — 9:16 실사 이미지, 모바일에서 화면 꾽 채 스크롤 -->
+    <div class="wt-strip">
+      <div class="wt-cut r">
+        <img src="/webtoon/episode-01/cut-01.jpg"
+             alt="대표님은 광고를 볕니다."
+             loading="lazy" width="1080" height="1920">
       </div>
-      <div class="ba__pane ba__before">
-        <div class="mock mock--before">
-          <div class="mock__photo">사진 없음</div>
-          <div class="mock__body">
-            <div class="mock__name">○○ 카페</div>
-            <div class="mock__row"><span>영업</span><b>정보 없음</b></div>
-            <div class="mock__row"><span>메뉴</span><b>—</b></div>
-            <div class="mock__row"><span>위치</span><b>?</b></div>
-          </div>
-        </div>
-        <span class="ba__tag ba__tag--l">정리 전</span>
+      <div class="wt-cut r">
+        <img src="/webtoon/episode-01/cut-02.jpg"
+             alt="손님은 검색 화면을 볕니다."
+             loading="eager" width="1080" height="1920">
       </div>
-      <div class="ba__grip" id="baGrip" tabindex="0" role="slider" aria-label="정리 전후 비교 슬라이더" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+      <div class="wt-cut r">
+        <img src="/webtoon/episode-01/cut-03.jpg"
+             alt="가격이 보이지 않습니다."
+             loading="lazy" width="1080" height="1920">
+      </div>
+      <div class="wt-cut r">
+        <img src="/webtoon/episode-01/cut-04.jpg"
+             alt="주차와 예약이 애매합니다."
+             loading="lazy" width="1080" height="1920">
+      </div>
+      <div class="wt-cut r">
+        <img src="/webtoon/episode-01/cut-05.jpg"
+             alt="손님은 조용히 다른 매장을 누릅니다."
+             loading="lazy" width="1080" height="1920">
+      </div>
+      <div class="wt-cut r">
+        <img src="/webtoon/episode-01/cut-06.jpg"
+             alt="정리되면, 같은 매장으로 읽힙니다."
+             loading="lazy" width="1080" height="1920">
+      </div>
+      <div class="wt-cut r">
+        <img src="/webtoon/episode-01/cut-07.jpg"
+             alt="같은 매장, 다른 첫인상."
+             loading="lazy" width="1080" height="1920">
+      </div>
     </div>
-    <p class="ba__hint r">좌우로 끌어 비교해 보세요.</p>
+
+    <p class="cuts__punch r">고객은 더 슼 곳보다,<br><b>덜 불안한 곳</b>을 먼저 누릅니다.</p>
+    <a href="/webtoon/" class="wt__more r">웹툰 전체 보기 →</a>
   </div>
 </section>
 <div class="div"></div>
