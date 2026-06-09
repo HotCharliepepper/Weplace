@@ -86,11 +86,8 @@
   .nav.show{background:rgba(20,17,11,.72);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-soft);padding:14px 30px;}
   .nav__b{font-family:var(--serif);font-weight:500;font-size:18px;color:var(--cream);text-decoration:none;}
   .nav__b b{color:var(--gold-soft);font-weight:600;}
-  .nav.top .nav__b{color:var(--on-paper);} .nav.top .nav__b b{color:var(--gold-paper);}
   .nav__cta{margin-left:auto;font-size:12.5px;font-weight:600;color:var(--cream);border:1px solid var(--line);border-radius:999px;padding:9px 17px;text-decoration:none;transition:.25s;}
-  .nav.top .nav__cta{color:var(--on-paper);border-color:var(--line-ivory);}
   .nav__cta:hover{border-color:var(--gold);color:var(--gold-soft);}
-  .nav.top .nav__cta:hover{border-color:var(--gold-paper);color:var(--gold-paper);}
 
   /* dot nav (데스크탑 전용) */
   .dotnav{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:55;display:flex;flex-direction:column;gap:14px;}
@@ -110,19 +107,18 @@
   .btn-ghost.on-paper:hover{border-color:var(--gold-paper);color:var(--gold-paper);}
 
   /* ===== HERO (따뜻한 아이보리 · 생성 이미지) ===== */
-  .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 84px;background:var(--paper);
-    background-image:linear-gradient(92deg,rgba(244,239,230,.80) 0%,rgba(244,239,230,.42) 40%,rgba(244,239,230,.04) 70%,transparent 100%),url("img/weplace-hero-surface.jpg");
-    background-size:cover;background-position:center right;}
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 84px;background-color:var(--void);
+    background-image:linear-gradient(96deg,rgba(16,13,9,.90) 0%,rgba(16,13,9,.60) 44%,rgba(16,13,9,.16) 74%,transparent 100%),linear-gradient(180deg,transparent 50%,rgba(16,13,9,.55) 82%,var(--void) 100%),url("img/weplace-hero-surface.jpg");
+    background-size:cover;background-position:center;}
   .hero .kicker{margin-bottom:24px;}
-  .hero__sig{display:block;margin-bottom:18px;color:var(--gold-paper);font-style:italic;font-family:var(--eng);font-size:16px;}
-  .hero h1{color:var(--on-paper);}
-  .hero h1 em{font-style:normal;color:var(--gold-paper);}
-  .hero__sub{margin-top:26px;font-size:15.5px;color:var(--soft-paper);font-weight:300;line-height:1.85;max-width:24em;}
+  .hero__sig{display:block;margin-bottom:18px;color:var(--gold-soft);font-style:italic;font-family:var(--eng);font-size:16px;}
+  .hero h1{color:var(--cream);text-shadow:0 2px 30px rgba(0,0,0,.5);}
+  .hero h1 em{font-style:normal;color:var(--gold-soft);}
+  .hero__sub{margin-top:26px;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.85;max-width:24em;text-shadow:0 2px 24px rgba(0,0,0,.45);}
   .hero__cta{margin-top:40px;display:flex;gap:13px;flex-wrap:wrap;}
-  .hero__cta .btn-gold{box-shadow:0 16px 40px rgba(138,110,62,.26);}
-  .scrollcue{margin-top:58px;font-size:10.5px;letter-spacing:.3em;color:var(--mute-paper);text-transform:uppercase;display:flex;align-items:center;gap:10px;}
-  .scrollcue .ln{width:1px;height:34px;background:linear-gradient(var(--gold-paper),transparent);}
-  @media(max-width:900px){.hero{background-image:linear-gradient(180deg,rgba(244,239,230,.86) 0%,rgba(244,239,230,.5) 40%,rgba(244,239,230,.08) 100%),url("img/weplace-hero-surface.jpg");background-position:center;}}
+  .scrollcue{margin-top:58px;font-size:10.5px;letter-spacing:.3em;color:var(--muted);text-transform:uppercase;display:flex;align-items:center;gap:10px;}
+  .scrollcue .ln{width:1px;height:34px;background:linear-gradient(var(--gold-deep),transparent);}
+  @media(max-width:900px){.hero{background-image:linear-gradient(180deg,rgba(16,13,9,.58) 0%,rgba(16,13,9,.40) 38%,rgba(16,13,9,.82) 100%),url("img/weplace-hero-surface.jpg");background-position:center;}}
   @media(max-width:520px){.hero__cta{flex-direction:column;}.btn{text-align:center;}}
 
   /* ===== 다크 콘텐츠 공통 ===== */
@@ -150,6 +146,7 @@
   .stage::before{content:"";position:absolute;width:92%;height:80%;top:10%;left:4%;border-radius:50%;background:radial-gradient(circle,rgba(205,174,104,.16),transparent 66%);filter:blur(34px);}
   .np{position:relative;z-index:1;width:268px;max-width:80vw;border-radius:22px;background:#FCFAF5;overflow:hidden;border:1px solid rgba(255,255,255,.06);box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 56px rgba(205,174,104,.12);}
   .np__cover{height:120px;position:relative;display:flex;align-items:flex-end;padding:11px 13px;}
+  .np__cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
   .np--clear .np__cover{background:linear-gradient(135deg,#C7A463,#9A7838 56%,#6f5526);}
   .np--clear .np__cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(0,0,0,.35));}
   .np__heart{position:absolute;top:11px;right:13px;z-index:2;color:rgba(255,255,255,.9);font-size:13px;}
@@ -201,7 +198,10 @@
   /* Fields — 업종 (생성 썸네일) */
   .fields{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
   @media(max-width:560px){.fields{grid-template-columns:1fr;}}
-  .field{position:relative;min-height:200px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#241B12,#15110B);}
+  .field{position:relative;display:block;text-decoration:none;min-height:200px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#241B12,#15110B);transition:transform .35s var(--ease),border-color .35s;}
+  .field:hover{transform:translateY(-3px);border-color:var(--gold);}
+  .field img{transition:transform .6s var(--ease);}
+  .field:hover img{transform:scale(1.05);}
   .field img{width:100%;height:200px;object-fit:cover;display:block;}
   .field__veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(16,13,9,.55) 70%,rgba(16,13,9,.92));}
   .field__t{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;}
@@ -305,13 +305,13 @@
 <!-- Hero -->
 <header class="hero" id="top">
   <div class="wrap">
-    <span class="kicker on-paper r">Weplace · 매장 검색 표면 정리</span>
+    <span class="kicker r">Weplace · 매장 검색 표면 정리</span>
     <span class="hero__sig r d1">손님은 이제 검색창뿐 아니라, AI에게도 묻습니다.</span>
-    <h1 class="r d1">광고비를 더 쓰기 전에,<br>손님이 매장을 이해하는 데 쓰는<br><em>에너지를 먼저 줄입니다.</em></h1>
+    <h1 class="r d1">광고비를 더 쓰기 전에,<br>손님이 매장을 이해하는<br><em>에너지부터 줄입니다.</em></h1>
     <p class="hero__sub r d2">네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를, 하나의 매장처럼 읽히게 정리합니다.</p>
     <div class="hero__cta r d3">
       <a href="#cta" class="btn btn-gold">매장명으로 1장 진단 받기</a>
-      <a href="#diagnosis-preview" class="btn btn-ghost on-paper">어떻게 보이는지 보기</a>
+      <a href="#diagnosis-preview" class="btn btn-ghost">어떻게 보이는지 보기</a>
     </div>
     <div class="scrollcue r d4"><span class="ln"></span>SCROLL</div>
   </div>
@@ -322,7 +322,7 @@
   <div class="wrap">
     <div class="kicker r">01 · 고객 판단 에너지</div>
     <h2 class="r d1">손님은 한 화면만 보고<br>정하지 않습니다.</h2>
-    <p class="lead sec-lead r d2">선택 전, 손님은 네이버에서 보고 구글에서 확인하고 리뷰와 사진을 넘겨본 뒤 정합니다. 화면마다 말이 다르면, 손님은 같은 매장으로 읽지 못하고 그만큼 에너지를 씁니다.</p>
+    <p class="lead sec-lead r d2">선택 전, 손님은 네이버·구글·리뷰를 오가며 확인합니다. 화면마다 말이 다르면, 같은 매장으로 읽지 못하고 에너지를 씁니다.</p>
     <div class="screens r d2">
       <div class="scr"><span class="scr__n">i</span><div><div class="scr__t">네이버 플레이스</div><div class="scr__d">처음 눌렀을 때 매장의 인상이 정해집니다.</div></div></div>
       <div class="scr"><span class="scr__n">ii</span><div><div class="scr__t">구글 비즈니스 프로필</div><div class="scr__d">외부 고객과 AI 검색이 참고하는 기본 정보입니다.</div></div></div>
@@ -349,7 +349,7 @@
         <div class="ba-lab">정리 후</div>
         <div class="stage">
           <div class="np np--clear">
-            <div class="np__cover"><span class="np__heart">&#9825;</span></div>
+            <div class="np__cover"><img src="img/np-cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="np__heart">&#9825;</span></div>
             <div class="np__body">
               <div class="np__name">○○ 레스토랑</div>
               <div class="np__cat">이탈리안 · 파스타 · 스테이크</div>
@@ -375,7 +375,7 @@
   <div class="wrap creed">
     <span class="signal r">사람도, AI도, 흐린 매장은 쉽게 설명하지 못합니다.</span>
     <h2 class="r d1">손님은 이제<br><span class="g">AI에게도 묻습니다.</span></h2>
-    <p class="creed__body r d2">손님은 매장을 선택하기 전 네이버, 구글, 리뷰, 홈페이지, AI 답변을 오갑니다. 정보가 흩어져 있으면 사람도 헷갈리고, AI도 정확히 설명하지 못합니다. <b>Weplace는 AI에게만 잘 보이기 위한 작업을 하지 않습니다.</b> 사람과 AI가 동시에 이해할 수 있도록, 매장의 첫 표면을 정리합니다.</p>
+    <p class="creed__body r d2">정보가 흩어져 있으면 사람도 헷갈리고, AI도 정확히 설명하지 못합니다. <b>Weplace는 AI에게만 잘 보이기 위한 작업을 하지 않습니다.</b> 사람과 AI가 동시에 이해할 수 있도록, 매장의 첫 표면을 정리합니다.</p>
     <!-- 철학 에세이 페이지(/essay.html)는 추후 생성 -->
     <a href="/essay.html" class="essaylink r d3">왜 광고보다 '첫 표면'을 먼저 볼까요? — 철학 에세이 읽기 &#8594;</a>
   </div>
@@ -387,7 +387,7 @@
     <div class="kicker r">02 · 첫 표면 정리</div>
     <h2 class="r d1">AI가 읽기 전에,<br>손님이 먼저 봅니다.</h2>
     <div class="geo-note r d2"><b>GEO</b>, 즉 AI 검색 정리는 AI가 매장을 답변할 때 참고할 수 있도록, 온라인에 흩어진 정보를 정리하는 작업입니다.</div>
-    <p class="surface-key r d2">AI 검색 정리 자체가 매출을 바로 올리는 것은 아닙니다. 다만 그 과정에서 매장의 이름, 사진, 설명, 리뷰, 위치, FAQ가 한 기준으로 정리됩니다. <b>그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다.</b></p>
+    <p class="surface-key r d2">AI 검색 정리 자체가 매출을 바로 올리지는 않습니다. 다만 이름·사진·설명·리뷰·위치·FAQ가 한 기준으로 정리됩니다. <b>그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다.</b></p>
   </div>
 </section>
 
@@ -480,11 +480,11 @@
     <div class="kicker r">04 · 업종별 적용</div>
     <h2 class="r d1">업종마다, 손님이<br>먼저 보는 것이 다릅니다.</h2>
     <div class="fields r d2">
-      <div class="field"><img src="img/ind-dining.jpg" alt="식당·카페" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">식당 · 카페</div><div class="field__d">맛보다 먼저, 오늘 목적에 맞는 곳인지를 봅니다.</div></div></div>
-      <div class="field"><img src="img/ind-spa.jpg" alt="마사지·에스테틱" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">마사지 · 에스테틱</div><div class="field__d">가격보다 먼저, 괜찮은 곳인지 확인받고 싶어 합니다.</div></div></div>
-      <div class="field"><img src="img/ind-stay.jpg" alt="펜션·숙소" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">펜션 · 숙소</div><div class="field__d">예약 전, 도착 동선과 분위기부터 상상합니다.</div></div></div>
-      <div class="field"><img src="img/ind-beauty.jpg" alt="미용·헤어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">미용 · 헤어</div><div class="field__d">결과보다 먼저, 실패 불안을 덜고 싶어 합니다.</div></div></div>
-      <div class="field"><img src="img/ind-clinic.jpg" alt="병의원·피부과" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">병의원 · 피부과</div><div class="field__d">실력만큼, 설명의 안정감을 봅니다.</div></div></div>
+      <a class="field" href="industries/dining.html"><img src="img/ind-dining.jpg" alt="식당·카페" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">식당 · 카페</div><div class="field__d">맛보다 먼저, 오늘 목적에 맞는 곳인지를 봅니다.</div></div></a>
+      <a class="field" href="industries/spa.html"><img src="img/ind-spa.jpg" alt="마사지·에스테틱" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">마사지 · 에스테틱</div><div class="field__d">가격보다 먼저, 괜찮은 곳인지 확인받고 싶어 합니다.</div></div></a>
+      <a class="field" href="industries/stay.html"><img src="img/ind-stay.jpg" alt="펜션·숙소" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">펜션 · 숙소</div><div class="field__d">예약 전, 도착 동선과 분위기부터 상상합니다.</div></div></a>
+      <a class="field" href="industries/beauty.html"><img src="img/ind-beauty.jpg" alt="미용·헤어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">미용 · 헤어</div><div class="field__d">결과보다 먼저, 실패 불안을 덜고 싶어 합니다.</div></div></a>
+      <a class="field" href="industries/clinic.html"><img src="img/ind-clinic.jpg" alt="병의원·피부과" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">병의원 · 피부과</div><div class="field__d">실력만큼, 설명의 안정감을 봅니다.</div></div></a>
     </div>
     <p class="fields-foot r">고급 매장만 보는 것이 아닙니다. 손님이 선택 전 확인하는 화면이 있다면, 모든 매장이 대상입니다.</p>
   </div>
@@ -541,7 +541,7 @@
   <div class="wrap">
     <div class="kicker r">Contact · 문의</div>
     <h2 class="r d1">매장명과 지역만<br>보내주세요.</h2>
-    <p class="lead sec-lead r d2">길게 설명하지 않으셔도 됩니다. 지금 운영 중인 매장명과 지역만 보내주시면, 첫 화면에서 손님이 멈출 수 있는 지점부터 같이 봅니다.</p>
+    <p class="lead sec-lead r d2">길게 설명하지 않으셔도 됩니다. 매장명과 지역만 보내주시면, 손님이 멈추는 지점부터 같이 봅니다.</p>
     <div class="cm-grid r d2">
       <a class="cm" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener"><div class="cm__k">Kakao</div><div class="cm__v">카카오톡으로 보내기</div></a>
       <a class="cm" href="tel:+821064616594"><div class="cm__k">Call</div><div class="cm__v">010-6461-6594</div></a>
