@@ -3,590 +3,548 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>가게를 올리지 않습니다. 제 자리에 놓습니다. | Weplace</title>
-<meta name="description" content="대표님이 보는 매장과 손님이 보는 화면은 다릅니다. 흐리면 멈추고, 선명하면 움직입니다. 매장명과 지역만 주시면 손님이 멈추는 화면을 한 장으로 정리해 드립니다." />
-<meta name="theme-color" content="#F7F1E6" />
+<title>Weplace · 손님이 보는 첫 화면을, 하나의 기준으로 정리합니다</title>
+<meta name="description" content="네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 하나의 매장처럼 읽히게 정리합니다. 사람도 AI도 흐린 매장은 쉽게 설명하지 못합니다. 매장명과 지역만 보내주시면 1장 진단서로 먼저 보여드립니다." />
+<link rel="canonical" href="https://weplace.kr/" />
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="Weplace" />
-<meta property="og:title" content="가게를 올리지 않습니다. 제 자리에 놓습니다." />
-<meta property="og:description" content="대표님이 보는 매장과, 손님이 보는 화면은 다릅니다." />
-<meta property="og:locale" content="ko_KR" />
-<meta property="og:url" content="https://weplace.netlify.app/" />
-<link rel="canonical" href="https://weplace.netlify.app/" />
-<meta property="og:image" content="https://weplace.netlify.app/og-image.png" />
+<meta property="og:title" content="손님이 보는 첫 화면을, 하나의 기준으로 정리합니다 | Weplace" />
+<meta property="og:description" content="네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 하나의 매장처럼 읽히게 정리합니다. 매장명 한 줄이면 시작합니다." />
+<meta property="og:image" content="img/og.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="가게를 올리지 않습니다. 제 자리에 놓습니다. | Weplace" />
-<meta name="twitter:description" content="손님은 가게에 닿기 전, 화면에서 먼저 마음을 정합니다." />
-<meta name="twitter:image" content="https://weplace.netlify.app/og-image.png" />
+<meta name="twitter:title" content="손님이 보는 첫 화면을, 하나의 기준으로" />
+<meta name="twitter:description" content="사람과 AI가 동시에 이해할 수 있도록 매장의 첫 표면을 정리합니다." />
+
+<link rel="preload" as="image" href="img/weplace-hero-surface.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Noto+Serif+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"We Place","alternateName":"위플레이스","legalName":"(주)위플레이스마케팅","url":"https://weplace.netlify.app/","foundingDate":"2025","founder":{"@type":"Person","name":"박규민"},"address":{"@type":"PostalAddress","streetAddress":"디지털로 178 퍼블릭가산C동","addressLocality":"금천구","addressRegion":"서울특별시","addressCountry":"KR"},"contactPoint":{"@type":"ContactPoint","telephone":"+82-10-6461-6594","email":"weplace25@gmail.com","contactType":"customer service","areaServed":"KR","availableLanguage":["Korean","English"]}}
+{"@context":"https://schema.org","@type":"Organization","name":"위플레이스마케팅","alternateName":"Weplace","url":"https://weplace.kr/","email":"weplace25@gmail.com","description":"네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 하나의 매장처럼 읽히게 정리하는 팀","address":{"@type":"PostalAddress","streetAddress":"디지털로 178 퍼블릭가산 C동","addressLocality":"금천구","addressRegion":"서울","addressCountry":"KR"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Weplace","url":"https://weplace.netlify.app/","inLanguage":"ko-KR"}
+{"@context":"https://schema.org","@type":"WebSite","name":"Weplace","url":"https://weplace.kr/"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","serviceType":"로컬 매장 검색 표면 정리","provider":{"@type":"Organization","name":"We Place"},"areaServed":"KR","audience":{"@type":"BusinessAudience","audienceType":"로컬 매장 운영자"},"description":"네이버 플레이스·구글 비즈니스 프로필·홈페이지·리뷰·콘텐츠가 같은 매장으로 읽히도록 정리합니다."}
+{"@context":"https://schema.org","@type":"Service","serviceType":"매장 검색 표면 정리","provider":{"@type":"Organization","name":"위플레이스마케팅"},"areaServed":"KR","description":"네이버·구글·홈페이지·리뷰·AI 검색의 매장 정보를 사람과 AI가 동시에 이해할 수 있도록 한 기준으로 정리합니다."}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"검색 1위에 올려주시나요?","acceptedAnswer":{"@type":"Answer","text":"올려드린다고 말하지 않습니다. 가게가 제 자리에 놓이면 검색에서도 또렷하게 불립니다. 불리는 건 자리가 맞은 결과이지, 약속이 아닙니다."}},
-{"@type":"Question","name":"정리가 하나도 안 돼 있는데 괜찮나요?","acceptedAnswer":{"@type":"Answer","text":"괜찮습니다. 정리 안 된 상태가 출발점입니다. 막힌 자리 하나만 보여주시면 거기서부터 같이 봅니다."}},
-{"@type":"Question","name":"AI 검색에는 준비가 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"AI도 결국 정리된 표면을 읽습니다. 같은 정보가 네이버·구글·홈페이지에 같게 적혀 있을수록 먼저 참고됩니다. 다만 특정 노출을 약속하지는 않습니다."}},
-{"@type":"Question","name":"어떤 가게에 맞나요?","acceptedAnswer":{"@type":"Answer","text":"검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다."}}
+{"@type":"Question","name":"AI 검색에 잘 보이게 해주는 건가요?","acceptedAnswer":{"@type":"Answer","text":"AI에게만 잘 보이기 위한 작업은 하지 않습니다. 사람과 AI가 동시에 이해할 수 있도록, 네이버·구글·홈페이지·리뷰에 흩어진 정보를 같은 매장처럼 정리합니다."}},
+{"@type":"Question","name":"상위에 올려주시나요?","acceptedAnswer":{"@type":"Answer","text":"특정 노출을 약속하지 않습니다. 먼저 손님이 보는 첫 화면을 한 기준으로 정리합니다. 그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다."}},
+{"@type":"Question","name":"정리가 하나도 안 돼 있어도 되나요?","acceptedAnswer":{"@type":"Answer","text":"괜찮습니다. 정리 안 된 상태가 출발점입니다. 매장명과 지역만 주시면 손님이 어디서 멈추는지부터 봅니다."}},
+{"@type":"Question","name":"어떤 매장에 잘 맞나요?","acceptedAnswer":{"@type":"Answer","text":"검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다."}}
 ]}
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
 <style>
-  /* ============================================================
-     WEPLACE 메인 v4 — Build Knowledge v1.0의 11섹션 허브
-     팔레트: B+A 락 (웜 아이보리 베이스 + 다크 모먼트 2: webtoon/diagnosis)
-       ↳ 문서의 다크 허브 원할 시 :root 라이트값만 다크로 치환하면 전체 반전
-     gold=안심/이득 · 흐림=결핍 · teal=정리됨 신호(극절제)
-     ============================================================ */
   :root{
-    --ivory:#F7F1E6; --ivory-soft:#FCF8F1; --cream:#EFE6D6; --cream-deep:#E8DECB; --card:#FFFDF8;
-    --ink:#241E18; --ink-soft:#5E5247; --ink-mute:#8A7E70; --muted:#9C8F7C;
-    --line:#E4D8C2; --line-soft:#EFE7D8;
-    --gold:#B0883C; --gold-deep:#8A6A2E; --gold-soft:#E9D6A8; --gold-line:#D8C28E;
-    --dark:#171410; --dark-2:#1F1B16; --dark-void:#100D0A;
-    --gold-bright:#D4B06A; --champagne:#E9D6A8; --ivory-on-dark:#ECE4D6; --muted-on-dark:#9C8F7C;
-    --faint:#A99B86; --teal:#7FB1A8; --teal-deep:#3E6F68;
-    --serif:'Noto Serif KR',serif;
-    --garamond:'Cormorant Garamond',serif;
+    /* dark base */
+    --ink:#14110B; --ink-2:#1A1610; --ink-3:#211B12; --void:#100D09;
+    --cream:#EFE8D9; --cream-dim:#BEB39D; --muted:#8E8470; --muted-2:#6E6555;
+    /* warm ivory (hero · paper) */
+    --paper:#F4EFE6; --paper-2:#FBF8F1; --on-paper:#241B12; --soft-paper:#574E42; --mute-paper:#8B8174;
+    /* gold */
+    --gold:#CDAE68; --gold-deep:#A6813B; --gold-soft:#E2CE9C; --gold-paper:#8A6E3E; --gold-bg-paper:#EFE3C6;
+    /* lines */
+    --line:rgba(226,206,156,.16); --line-soft:rgba(226,206,156,.08);
+    --line-ivory:rgba(122,86,64,.18);
+    /* 진단 상태 */
+    --ok:#86A66E; --warn:#CBA64E; --empty:#BE7B57;
+    --serif:'Noto Serif KR',serif; --eng:'Cormorant Garamond',serif;
     --sans:'Pretendard Variable','Pretendard',-apple-system,'Apple SD Gothic Neo',system-ui,sans-serif;
-    --ease:cubic-bezier(.22,.61,.36,1);
-    --maxw:680px;
+    --maxw:640px; --ease:cubic-bezier(.22,.61,.36,1);
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
-  body{font-family:var(--sans);background:var(--ivory);color:var(--ink);line-height:1.85;
-    word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:relative;overflow-x:hidden;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px;position:relative;z-index:2;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{font-family:var(--sans);background:var(--ink);color:var(--cream);line-height:1.75;letter-spacing:-.01em;
+    word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(1100px 700px at 84% 4%,rgba(176,138,66,.12),transparent 60%),radial-gradient(900px 700px at -5% 60%,rgba(58,44,30,.18),transparent 60%),radial-gradient(1000px 800px at 100% 100%,rgba(176,138,66,.07),transparent 60%);}
+  body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .wrap{position:relative;z-index:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 26px;}
+  section{position:relative;z-index:1;}
+  img{max-width:100%;display:block;}
 
-  /* 앰비언트 광 + 그레인 + 먼지 */
-  .amb{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(60% 44% at 50% -6%,rgba(176,136,60,.09),transparent 62%);}
-  .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.5;mix-blend-mode:multiply;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.028'/%3E%3C/svg%3E");}
-  .dust{position:fixed;inset:0;z-index:1;pointer-events:none;}
-  .dust span{position:absolute;width:2px;height:2px;border-radius:50%;background:var(--gold-soft);opacity:0;animation:flo 15s linear infinite;}
-  .dust span:nth-child(1){left:14%;top:32%;}.dust span:nth-child(2){left:80%;top:22%;animation-delay:4s;}
-  .dust span:nth-child(3){left:46%;top:64%;animation-delay:8s;}.dust span:nth-child(4){left:88%;top:56%;animation-delay:11s;}
-  @keyframes flo{0%{opacity:0;transform:translateY(20px);}25%{opacity:.5;}80%{opacity:.4;}100%{opacity:0;transform:translateY(-70px);}}
-
-  .progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:80;background:linear-gradient(90deg,var(--gold),var(--gold-deep));transition:width .1s linear;}
-
-  /* 좌측 세로 라벨 (모바일 숨김) */
-  .vlabel{position:fixed;left:18px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;z-index:55;
-    font-family:var(--garamond);font-style:italic;font-size:12px;letter-spacing:.2em;color:var(--muted);}
-  /* 우측 점네비 */
-  .dotnav{position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:55;display:flex;flex-direction:column;gap:14px;}
-  .dotnav a{width:9px;height:9px;border-radius:50%;border:1px solid var(--gold-line);position:relative;text-decoration:none;transition:transform .3s,background .3s,border-color .3s;}
-  .dotnav a .n{position:absolute;right:18px;top:50%;transform:translateY(-50%);font-family:var(--garamond);font-style:italic;font-size:11.5px;color:var(--ink-mute);opacity:0;white-space:nowrap;transition:opacity .25s;}
-  .dotnav a:hover .n{opacity:1;}
-  .dotnav a.active{background:var(--gold-deep);border-color:var(--gold-deep);transform:scale(1.3);}
-  @media(max-width:880px){.dotnav,.vlabel{display:none;}}
-
-  /* 타이포 */
-  .kicker{font-family:var(--garamond);font-style:italic;font-size:14px;letter-spacing:.03em;color:var(--gold-deep);}
-  .secno{font-family:var(--garamond);font-size:14px;font-style:italic;letter-spacing:.06em;color:var(--gold-deep);display:flex;align-items:center;gap:11px;margin-bottom:18px;}
-  .secno::before{content:"";width:24px;height:1px;background:var(--gold-line);}
-  .on-dark .secno{color:var(--gold-bright);}.on-dark .secno::before{background:rgba(212,176,106,.4);}
-
+  /* type instruments */
+  .kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:26px;}
+  .kicker::before{content:"";width:24px;height:1px;background:var(--gold-deep);opacity:.7;}
+  .kicker.on-paper{color:var(--gold-paper);}.kicker.on-paper::before{background:var(--gold-paper);}
+  h1,h2{font-family:var(--serif);letter-spacing:-.022em;line-height:1.34;}
+  h1{font-weight:500;font-size:clamp(31px,5.2vw,48px);}
+  h2{font-weight:500;font-size:clamp(24px,4vw,34px);color:var(--cream);}
+  h2 .g,h1 .g{color:var(--gold-soft);} h2 em,h1 em{font-style:normal;}
+  .lead{font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.88;}
+  .signal{font-family:var(--eng);font-style:italic;font-size:16px;color:var(--gold-soft);}
   .r{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease);}
   .r.in{opacity:1;transform:none;}
-  .r.d1{transition-delay:.1s;}.r.d2{transition-delay:.2s;}.r.d3{transition-delay:.3s;}.r.d4{transition-delay:.4s;}
+  .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.42s}
 
-  /* 내비 */
-  .nav{position:fixed;top:0;left:0;right:0;z-index:60;padding:16px 26px;display:flex;align-items:center;gap:18px;transform:translateY(-100%);transition:transform .5s var(--ease),background .4s,box-shadow .4s,padding .4s;}
-  .nav.show{transform:none;background:rgba(250,247,241,.86);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line);padding:12px 26px;}
-  .nav__brand{font-family:var(--serif);font-weight:700;font-size:17px;letter-spacing:-.01em;color:var(--ink);text-decoration:none;}
-  .nav__links{display:flex;gap:18px;margin-left:auto;}
-  .nav__links a{font-size:13px;color:var(--ink-soft);text-decoration:none;transition:color .2s;}
-  .nav__links a:hover{color:var(--gold-deep);}
-  .nav__cta{font-family:var(--garamond);font-style:italic;font-size:14px;color:var(--ivory);background:var(--gold-deep);border-radius:999px;padding:8px 17px;text-decoration:none;transition:background .25s,transform .2s;}
-  .nav__cta:hover{background:var(--ink);transform:translateY(-1px);}
-  @media(max-width:680px){.nav__links{display:none;}.nav{padding:13px 18px;}.nav.show{padding:11px 18px;}}
+  /* nav */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;padding:22px 30px;transition:.4s;}
+  .nav.show{background:rgba(20,17,11,.72);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-soft);padding:14px 30px;}
+  .nav__b{font-family:var(--serif);font-weight:500;font-size:18px;color:var(--cream);text-decoration:none;}
+  .nav__b b{color:var(--gold-soft);font-weight:600;}
+  .nav.top .nav__b{color:var(--on-paper);} .nav.top .nav__b b{color:var(--gold-paper);}
+  .nav__cta{margin-left:auto;font-size:12.5px;font-weight:600;color:var(--cream);border:1px solid var(--line);border-radius:999px;padding:9px 17px;text-decoration:none;transition:.25s;}
+  .nav.top .nav__cta{color:var(--on-paper);border-color:var(--line-ivory);}
+  .nav__cta:hover{border-color:var(--gold);color:var(--gold-soft);}
+  .nav.top .nav__cta:hover{border-color:var(--gold-paper);color:var(--gold-paper);}
 
-  /* 섹션 베이스 */
-  .sec{padding:104px 0;}
-  .sec--cream{background:var(--ivory-soft);}
-  .sec--deep{background:var(--cream-deep);}            /* essay: 너무 밝지 않게 */
-  h2.t{font-family:var(--serif);font-weight:700;font-size:clamp(26px,6vw,40px);line-height:1.36;letter-spacing:-.025em;margin-bottom:18px;}
-  .on-dark h2.t{color:#fff;}
-  .p{font-size:16px;color:var(--ink-soft);max-width:31em;line-height:1.92;}
-  .on-dark .p{color:rgba(236,228,214,.66);}
-  .sig{font-family:var(--garamond);font-style:italic;font-size:15px;color:var(--gold-deep);margin-top:18px;}
-  .on-dark .sig{color:var(--gold-bright);}
+  /* dot nav (데스크탑 전용) */
+  .dotnav{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:55;display:flex;flex-direction:column;gap:14px;}
+  .dotnav a{width:8px;height:8px;border-radius:50%;background:rgba(226,206,156,.28);transition:.3s;position:relative;}
+  .dotnav a.active{background:var(--gold);transform:scale(1.35);box-shadow:0 0 10px var(--gold);}
+  .dotnav a span{position:absolute;right:18px;top:50%;transform:translateY(-50%);white-space:nowrap;font-size:10.5px;letter-spacing:.05em;color:var(--cream-dim);opacity:0;pointer-events:none;transition:.3s;}
+  .dotnav a:hover span{opacity:1;}
+  @media(max-width:1080px){.dotnav{display:none;}}
 
-  /* 01 Hero */
-  .hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;padding:120px 0 80px;position:relative;overflow:hidden;}
-  /* 히어로 배경 이미지 슬롯: 아래 .hero__bg에 url(...) 끼우고 그라데이션 폴백 유지 */
-  .hero__bg{position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(247,241,230,.94) 0%,rgba(247,241,230,.82) 42%,rgba(247,241,230,.46) 100%),linear-gradient(180deg,rgba(247,241,230,.16) 0%,var(--ivory) 92%),url("/img/weplace-hero-surface.jpg") center/cover no-repeat;}
-  .hero__bg::after{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 18% 42%,rgba(247,241,230,.86),transparent 62%),linear-gradient(180deg,transparent 0%,var(--ivory) 94%);pointer-events:none;}
-  .hero .wrap{z-index:2;}
-  .hero::after{content:"";position:absolute;top:-16%;right:-16%;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(176,136,60,.1),transparent 68%);pointer-events:none;}
-  .hero .kicker{margin-bottom:32px;display:block;}
-  h1{font-family:var(--serif);font-weight:700;font-size:clamp(33px,8.4vw,58px);line-height:1.32;letter-spacing:-.03em;margin-bottom:26px;}
-  h1 .l2{color:var(--gold-deep);}
-  .hero__sub{font-size:16.5px;color:var(--ink-soft);max-width:26em;line-height:1.9;}
-  .hero__scroll{margin-top:52px;font-family:var(--garamond);font-style:italic;font-size:14px;color:var(--ink-mute);display:flex;align-items:center;gap:10px;}
-  .hero__scroll::after{content:"";width:1px;height:30px;background:linear-gradient(180deg,var(--gold),transparent);animation:pulse 2.4s ease-in-out infinite;}
-  @keyframes pulse{0%,100%{opacity:.3;}50%{opacity:1;}}
-  .hero__cta{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap;}
-  .hbtn{font-size:14.5px;font-weight:700;text-decoration:none;padding:15px 22px;border-radius:12px;transition:transform .2s,box-shadow .25s,background .25s,border-color .25s,color .25s;}
-  .hbtn--solid{background:var(--gold-deep);color:var(--ivory);box-shadow:0 14px 36px rgba(138,106,46,.2);}
-  .hbtn--solid:hover{background:var(--ink);transform:translateY(-2px);}
-  .hbtn--ghost{background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:500;}
-  .hbtn--ghost:hover{border-color:var(--gold);color:var(--gold-deep);transform:translateY(-2px);}
-  .hero__scroll{margin-top:26px;}
+  /* buttons */
+  .btn{font-size:14.5px;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:12px;display:inline-block;transition:transform .2s,box-shadow .25s,border-color .25s,color .25s,background .25s;}
+  .btn-gold{background:linear-gradient(90deg,var(--gold-deep),var(--gold));color:#16110a;box-shadow:0 14px 40px rgba(166,129,59,.3);}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 20px 52px rgba(166,129,59,.42);}
+  .btn-ghost{background:transparent;border:1px solid var(--line);color:var(--cream);font-weight:600;}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft);transform:translateY(-2px);}
+  .btn-ghost.on-paper{border-color:var(--line-ivory);color:var(--on-paper);}
+  .btn-ghost.on-paper:hover{border-color:var(--gold-paper);color:var(--gold-paper);}
 
-  /* 02 Choice */
-  .choice__grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px;}
-  @media(max-width:560px){.choice__grid{grid-template-columns:1fr;}}
-  .chx{cursor:pointer;border:1px solid var(--line);border-radius:15px;background:var(--card);padding:22px;text-align:left;font-family:inherit;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s;-webkit-tap-highlight-color:transparent;}
-  .chx:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 18px 42px rgba(36,30,24,.1);}
-  .chx.sel{border-color:var(--gold-deep);background:#FBF4E6;}
-  .chx__scr{border-radius:9px;margin-bottom:14px;padding:14px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);background:var(--ivory-soft);}
-  .chx__row{display:flex;justify-content:space-between;align-items:center;font-size:12px;}
-  .chx__row span{color:var(--ink-mute);}
-  .chx__row b{font-weight:600;}
-  .chx--clear .chx__scr{background:#FCF8F1;border-color:var(--gold-line);}
-  .chx--clear .chx__row b{color:var(--gold-deep);}
-  .chx--blur .chx__scr{filter:blur(1.1px);opacity:.72;background:#EFEADF;}
-  .chx--blur .chx__row span,.chx--blur .chx__row b{color:var(--muted);font-weight:400;}
-  .chx__t{font-family:var(--serif);font-weight:700;font-size:16px;color:var(--ink);}
-  .choice__rev{margin-top:22px;font-size:15px;color:var(--ink-soft);min-height:1.4em;opacity:0;transition:opacity .5s;}
-  .choice__rev.show{opacity:1;}
-  .choice__rev b{color:var(--gold-deep);font-weight:600;}
+  /* ===== HERO (따뜻한 아이보리 · 생성 이미지) ===== */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 84px;background:var(--paper);
+    background-image:linear-gradient(92deg,rgba(244,239,230,.80) 0%,rgba(244,239,230,.42) 40%,rgba(244,239,230,.04) 70%,transparent 100%),url("img/weplace-hero-surface.jpg");
+    background-size:cover;background-position:center right;}
+  .hero .kicker{margin-bottom:24px;}
+  .hero__sig{display:block;margin-bottom:18px;color:var(--gold-paper);font-style:italic;font-family:var(--eng);font-size:16px;}
+  .hero h1{color:var(--on-paper);}
+  .hero h1 em{font-style:normal;color:var(--gold-paper);}
+  .hero__sub{margin-top:26px;font-size:15.5px;color:var(--soft-paper);font-weight:300;line-height:1.85;max-width:24em;}
+  .hero__cta{margin-top:40px;display:flex;gap:13px;flex-wrap:wrap;}
+  .hero__cta .btn-gold{box-shadow:0 16px 40px rgba(138,110,62,.26);}
+  .scrollcue{margin-top:58px;font-size:10.5px;letter-spacing:.3em;color:var(--mute-paper);text-transform:uppercase;display:flex;align-items:center;gap:10px;}
+  .scrollcue .ln{width:1px;height:34px;background:linear-gradient(var(--gold-paper),transparent);}
+  @media(max-width:900px){.hero{background-image:linear-gradient(180deg,rgba(244,239,230,.86) 0%,rgba(244,239,230,.5) 40%,rgba(244,239,230,.08) 100%),url("img/weplace-hero-surface.jpg");background-position:center;}}
+  @media(max-width:520px){.hero__cta{flex-direction:column;}.btn{text-align:center;}}
 
-  /* 05 Webtoon (다크) */
-  .dark{background:radial-gradient(130% 100% at 50% 0%,var(--dark),var(--dark-void));color:var(--ivory-on-dark);}
-  /* 다크 섹션 BG: 감정만 남고 거의 안 보이는 수준의 은은한 사진 + 강한 오버레이 */
-  #webtoon.dark{background:linear-gradient(180deg,rgba(16,13,10,.88),rgba(16,13,10,.96)),radial-gradient(120% 90% at 50% 0%,rgba(212,176,106,.12),transparent 58%),url("/img/weplace-webtoon-bg.jpg") center/cover no-repeat;}
-  #diagnosis.dark{background:linear-gradient(180deg,rgba(16,13,10,.88),rgba(16,13,10,.96)),radial-gradient(80% 60% at 50% 12%,rgba(212,176,106,.16),transparent 62%),url("/img/weplace-diagnosis-bg.jpg") center/cover no-repeat;}
-  /* === 웹툰 실사 컷 스트립 — 모바일 풀블리드 ===
-     이미지 경로: /webtoon/episode-01/cut-0N.jpg (9:16 세로)
-     모바일: .wrap 패딩(-26px) 상쇄 → 화면 꽉 참
-     데스크톱: max-width 480px 중앙 정렬 */
-  .wt-strip{margin:32px -26px 0;}
-  .wt-cut{display:block;position:relative;line-height:0;overflow:hidden;}
-  .wt-cut img{width:100%;height:auto;display:block;aspect-ratio:9/16;object-fit:cover;}
+  /* ===== 다크 콘텐츠 공통 ===== */
+  .sec{padding:116px 0;}
+  .sec--void{background:var(--void);} .sec--ink2{background:var(--ink-2);}
+  .sec-lead{margin-top:20px;max-width:28em;}
+
+  /* 화면 5 — 에디토리얼 리스트 */
+  .screens{margin-top:42px;border-top:1px solid var(--line-soft);}
+  .scr{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:baseline;padding:18px 4px;border-bottom:1px solid var(--line-soft);transition:padding-left .35s var(--ease);}
+  .scr:hover{padding-left:9px;}
+  .scr__n{font-family:var(--eng);font-style:italic;font-size:18px;color:var(--gold-deep);}
+  .scr__t{font-family:var(--serif);font-weight:500;font-size:16.5px;color:var(--cream);}
+  .scr__d{font-size:12.5px;color:var(--muted);font-weight:300;margin-top:4px;line-height:1.6;}
+  .scr-merge{margin-top:30px;font-family:var(--serif);font-weight:400;font-size:clamp(16px,2.8vw,20px);color:var(--gold-soft);line-height:1.5;}
+
+  /* 흐림 → 또렷 (네이버형 화면 카드) */
+  .ba{margin-top:48px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px;}
+  .ba-col{display:flex;flex-direction:column;align-items:center;}
+  .ba-lab{font-family:var(--eng);font-style:italic;font-size:15px;margin-bottom:14px;}
+  .ba-col--b .ba-lab{color:var(--muted);} .ba-col--a .ba-lab{color:var(--gold-soft);}
+  .ba-arrow{font-size:21px;color:var(--gold-deep);}
+  @media(max-width:560px){.ba{grid-template-columns:1fr;gap:34px;}.ba-arrow{transform:rotate(90deg);}}
+  .stage{position:relative;display:flex;justify-content:center;}
+  .stage::before{content:"";position:absolute;width:92%;height:80%;top:10%;left:4%;border-radius:50%;background:radial-gradient(circle,rgba(205,174,104,.16),transparent 66%);filter:blur(34px);}
+  .np{position:relative;z-index:1;width:268px;max-width:80vw;border-radius:22px;background:#FCFAF5;overflow:hidden;border:1px solid rgba(255,255,255,.06);box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 56px rgba(205,174,104,.12);}
+  .np__cover{height:120px;position:relative;display:flex;align-items:flex-end;padding:11px 13px;}
+  .np--clear .np__cover{background:linear-gradient(135deg,#C7A463,#9A7838 56%,#6f5526);}
+  .np--clear .np__cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(0,0,0,.35));}
+  .np__heart{position:absolute;top:11px;right:13px;z-index:2;color:rgba(255,255,255,.9);font-size:13px;}
+  .np__cover--empty{background:#e7ddc9;border-bottom:1px dashed #cdbfa3;align-items:center;justify-content:center;}
+  .np__cover--empty span{color:#9a917f;font-size:11.5px;letter-spacing:.04em;}
+  .np__body{padding:14px 14px 16px;color:#15120e;}
+  .np__name{font-family:var(--serif);font-weight:600;font-size:15.5px;color:#15120e;}
+  .np__cat{font-size:11px;color:#8b8174;margin-top:3px;}
+  .np__rate{margin-top:8px;font-size:12px;color:#8A6E3E;font-weight:600;}
+  .np__rate span{color:#9a917f;font-weight:400;} .np__rate--none{color:#9a917f;font-weight:400;}
+  .np__acts{display:flex;gap:5px;margin-top:11px;}
+  .np__acts span{flex:1;text-align:center;font-size:9.5px;color:#574f43;background:#efe7d6;border-radius:7px;padding:7px 0;}
+  .np__chips{display:flex;gap:5px;margin-top:8px;}
+  .np__chips span{font-size:9px;color:#8A6E3E;background:#efe1bd;border-radius:6px;padding:4px 7px;}
+  .np__menu{margin-top:11px;border-top:1px solid #eee6d7;padding-top:9px;}
+  .np__mi{display:flex;justify-content:space-between;font-size:11px;padding:3px 0;}
+  .np__mi span{color:#574f43;} .np__mi b{color:#15120e;font-weight:600;}
+  .np__cta{margin-top:11px;text-align:center;font-size:11.5px;font-weight:700;color:#3a2c12;background:linear-gradient(90deg,#D8BC84,#b8965b);border-radius:8px;padding:9px 0;}
+  .np__empty{margin-top:10px;border-top:1px solid #eee6d7;padding-top:10px;font-size:11px;color:#9a917f;line-height:1.7;}
+  .np--blur{box-shadow:0 26px 60px rgba(0,0,0,.45);} .np--blur .np__name{color:#9a917f;}
+  .ba-note{margin-top:30px;text-align:center;font-size:14px;color:var(--cream-dim);line-height:1.7;}
+
+  /* AI 첫 표면 — 사색 밴드 */
+  .creed{text-align:center;}
+  .creed .signal{display:block;margin-bottom:24px;}
+  .creed h2{max-width:15em;margin:0 auto;}
+  .creed__body{margin-top:28px;max-width:26em;margin-left:auto;margin-right:auto;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.9;}
+  .creed__body b{color:var(--cream);font-weight:500;}
+  .essaylink{margin-top:34px;display:inline-flex;gap:8px;align-items:center;font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-soft);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.25s;}
+  .essaylink:hover{color:var(--gold);border-color:var(--gold);}
+
+  /* Surface */
+  .geo-note{margin-top:22px;background:linear-gradient(160deg,#1f1910,#161109);border:1px solid var(--line);border-left:2px solid var(--gold-deep);border-radius:13px;padding:18px 20px;font-size:13.5px;color:var(--cream-dim);line-height:1.75;max-width:30em;}
+  .geo-note b{color:var(--gold-soft);font-weight:600;}
+  .surface-key{margin-top:26px;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.9;max-width:30em;}
+  .surface-key b{color:var(--cream);font-weight:500;}
+
+  /* Eyes — 두 시선 */
+  .eyes{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:640px){.eyes{grid-template-columns:1fr;}}
+  .eye{background:var(--ink-3);border:1px solid var(--line);border-radius:16px;padding:24px 22px;}
+  .eye__h{font-family:var(--serif);font-weight:500;font-size:16px;color:var(--cream);margin-bottom:4px;}
+  .eye__sub{font-family:var(--eng);font-style:italic;font-size:13px;color:var(--gold-soft);margin-bottom:16px;}
+  .eye ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+  .eye li{font-size:13px;color:var(--cream-dim);padding-left:16px;position:relative;line-height:1.5;}
+  .eye li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--gold-deep);}
+  .eyes-foot{margin-top:30px;text-align:center;font-family:var(--serif);font-weight:400;font-size:clamp(16px,2.8vw,20px);color:var(--gold-soft);line-height:1.55;}
+
+  /* Fields — 업종 (생성 썸네일) */
+  .fields{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:560px){.fields{grid-template-columns:1fr;}}
+  .field{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--ink-3);}
+  .field img{width:100%;height:200px;object-fit:cover;display:block;}
+  .field__veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(16,13,9,.55) 70%,rgba(16,13,9,.92));}
+  .field__t{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;}
+  .field__name{font-family:var(--serif);font-weight:500;font-size:16px;color:#fff;}
+  .field__d{font-size:11.5px;color:rgba(239,232,217,.82);margin-top:4px;line-height:1.5;}
+
+  /* 웹툰 */
+  .wt-strip{margin:40px -26px 0;}
+  .wt-cut{position:relative;display:block;aspect-ratio:9/16;background:#0F0C08;overflow:hidden;}
   .wt-cut+.wt-cut{border-top:1px solid rgba(212,176,106,.08);}
-  @media(min-width:601px){
-    .wt-strip{max-width:480px;margin-left:auto;margin-right:auto;border-radius:16px;overflow:hidden;}
-  }
-  .cuts__punch{font-family:var(--serif);font-size:clamp(18px,4vw,23px);font-weight:700;color:#fff;line-height:1.5;margin:32px 0 0;letter-spacing:-.01em;}
-  .cuts__punch b{color:var(--gold-bright);}
-  .wt__more{display:inline-block;margin-top:22px;font-family:var(--garamond);font-style:italic;font-size:14.5px;color:var(--gold-bright);text-decoration:none;border-bottom:1px solid rgba(212,176,106,.4);}
+  .wt-cut__ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--eng);font-style:italic;color:rgba(212,176,106,.36);font-size:13px;letter-spacing:.14em;}
+  .wt-cut img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  @media(min-width:601px){.wt-strip{max-width:460px;margin-left:auto;margin-right:auto;border-radius:16px;overflow:hidden;}}
+  .wt-punch{margin-top:34px;text-align:center;font-family:var(--serif);font-weight:400;font-size:clamp(17px,3vw,21px);color:var(--cream);line-height:1.5;}
+  .wt-punch b{color:var(--gold-soft);}
+  .wt-more{margin-top:22px;text-align:center;}
+  .wt-more a{font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-soft);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
 
-  /* 전후 슬라이더 */
-  .ba__lead{font-family:var(--serif);font-size:clamp(19px,4.2vw,25px);font-weight:700;color:#fff;text-align:center;margin:62px 0 0;letter-spacing:-.01em;}
-  .ba{position:relative;width:100%;max-width:380px;height:380px;margin:30px auto 18px;border-radius:18px;overflow:hidden;border:1px solid rgba(212,176,106,.25);background:var(--dark-2);touch-action:none;cursor:ew-resize;user-select:none;--pos:50%;}
-  .ba__pane{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
-  .ba__before{clip-path:inset(0 calc(100% - var(--pos)) 0 0);background:var(--dark-2);}
-  .ba__after{background:#211a12;}
-  /* 전후 실사진 슬롯: .mock 자리에 <img> 끼우면 됨 */
-  .mock{width:236px;border-radius:13px;overflow:hidden;}
-  .mock__photo{height:118px;display:flex;align-items:center;justify-content:center;font-size:12px;letter-spacing:.04em;}
-  .mock__body{padding:15px 16px;}
-  .mock__name{font-family:var(--serif);font-weight:700;font-size:16px;margin-bottom:11px;}
-  .mock__row{display:flex;justify-content:space-between;font-size:12.5px;padding:5px 0;border-bottom:1px solid;}
-  .mock__row:last-child{border-bottom:none;}
-  .mock--after{background:var(--ivory);box-shadow:0 18px 50px rgba(0,0,0,.4);}
-  .mock--after .mock__photo{background:linear-gradient(135deg,#C9A45E,#9A7838);color:#3a2c12;}
-  .mock--after .mock__name{color:var(--ink);}.mock--after .mock__row{color:var(--ink-soft);border-color:var(--line);}.mock--after .mock__row b{color:var(--gold-deep);font-weight:600;}
-  .mock--before{background:#2a2219;border:1px dashed rgba(169,155,134,.3);}
-  .mock--before .mock__photo{background:#241d15;color:var(--faint);}
-  .mock--before .mock__name{color:var(--faint);}.mock--before .mock__row{color:rgba(169,155,134,.7);border-color:rgba(169,155,134,.16);}.mock--before .mock__row b{color:rgba(169,155,134,.5);font-weight:400;}
-  .ba__tag{position:absolute;top:16px;font-family:var(--garamond);font-style:italic;font-size:13px;padding:4px 12px;border-radius:999px;z-index:3;}
-  .ba__tag--l{left:16px;color:var(--faint);background:rgba(16,13,10,.7);}
-  .ba__tag--r{right:16px;color:#3a2c12;background:var(--champagne);}
-  .ba__grip{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;background:var(--gold-bright);z-index:4;transform:translateX(-1px);}
-  .ba__grip::before{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;background:var(--gold-bright);color:var(--dark-void);display:grid;place-items:center;font-size:15px;box-shadow:0 4px 18px rgba(0,0,0,.45);cursor:ew-resize;}
-  .ba__grip:focus-visible{outline:none;}.ba__grip:focus-visible::before{box-shadow:0 0 0 4px rgba(212,176,106,.4);}
-  .ba__hint{text-align:center;font-family:var(--garamond);font-style:italic;font-size:13.5px;color:rgba(236,228,214,.5);margin-top:6px;}
+  /* 1장 진단서 — 페이퍼 카드 */
+  .dxsheet{margin-top:40px;background:var(--paper-2);color:var(--on-paper);border-radius:18px;padding:30px 28px;box-shadow:0 40px 90px rgba(0,0,0,.4);max-width:540px;position:relative;}
+  .dxsheet::before{content:"";position:absolute;top:0;left:28px;right:28px;height:2px;background:linear-gradient(90deg,var(--gold-paper),transparent);}
+  .dxsheet__ttl{font-family:var(--serif);font-weight:600;font-size:17px;color:var(--on-paper);}
+  .dxsheet__meta{font-size:12.5px;color:var(--mute-paper);margin:5px 0 22px;padding-bottom:18px;border-bottom:1px dashed var(--line-ivory);}
+  .dxstep{padding:16px 0;border-bottom:1px dashed var(--line-ivory);}
+  .dxstep:last-child{border-bottom:none;padding-bottom:2px;}
+  .dxstep__h{display:flex;align-items:baseline;gap:10px;margin-bottom:12px;}
+  .dxstep__n{font-family:var(--eng);font-style:italic;font-size:17px;color:var(--gold-paper);}
+  .dxstep__t{font-family:var(--serif);font-weight:500;font-size:14.5px;color:var(--on-paper);}
+  .dxrow{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--soft-paper);padding:5px 0;}
+  .chip{font-size:10px;font-weight:700;border-radius:6px;padding:3px 8px;white-space:nowrap;letter-spacing:.02em;}
+  .chip--ok{background:#e7efdf;color:#5d7b48;} .chip--warn{background:#f6eccf;color:#937329;} .chip--empty{background:#f3e2d6;color:#9c5a3a;}
+  .dxrow .ord{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-paper);min-width:46px;}
+  .dxsheet__foot{margin-top:22px;font-size:12.5px;color:var(--mute-paper);line-height:1.7;font-style:italic;}
 
-  /* 06 Essay Notes (톤 다운) */
-  .essay .kicker{display:block;margin-bottom:14px;}
-  .essay__notes{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:34px;}
-  @media(max-width:600px){.essay__notes{grid-template-columns:1fr;}}
-  .essay-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:24px 22px;text-decoration:none;color:inherit;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s;}
-  .essay-card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 18px 42px rgba(36,30,24,.1);}
-  .essay-card__k{font-family:var(--garamond);font-style:italic;font-size:12.5px;color:var(--gold-deep);letter-spacing:.05em;}
-  .essay-card__t{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ink);line-height:1.45;letter-spacing:-.01em;margin:9px 0 8px;}
-  .essay-card__d{font-size:13px;color:var(--ink-soft);line-height:1.66;}
-  .essay__more{display:inline-block;margin-top:26px;font-family:var(--garamond);font-style:italic;font-size:14.5px;color:var(--gold-deep);text-decoration:none;border-bottom:1px solid var(--gold-line);}
+  /* 자가진단 */
+  .selfcheck{margin-top:40px;background:var(--ink-3);border:1px solid var(--line);border-radius:18px;padding:28px 26px;max-width:540px;}
+  .sc-q{display:flex;align-items:center;gap:13px;padding:12px 0;border-bottom:1px solid var(--line-soft);cursor:pointer;user-select:none;}
+  .sc-q:last-of-type{border-bottom:none;}
+  .sc-box{width:22px;height:22px;border-radius:7px;border:1.5px solid var(--gold-deep);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:.2s;color:transparent;font-size:13px;font-weight:700;}
+  .sc-q.on .sc-box{background:var(--gold);border-color:var(--gold);color:#16110a;}
+  .sc-q span{font-size:13.5px;color:var(--cream-dim);line-height:1.5;}
+  .sc-q.on span{color:var(--cream);}
+  .sc-result{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);text-align:center;}
+  .sc-score{font-family:var(--serif);font-weight:500;font-size:clamp(20px,4vw,26px);color:var(--gold-soft);}
+  .sc-msg{margin-top:8px;font-size:13.5px;color:var(--cream-dim);line-height:1.7;min-height:2.6em;}
 
-  /* 07 Trust */
-  .trust__rows{display:flex;flex-direction:column;gap:0;margin-top:34px;border-top:1px solid var(--line);}
-  .trust__row{display:grid;grid-template-columns:150px 1fr;gap:22px;padding:22px 4px;border-bottom:1px solid var(--line);}
-  @media(max-width:560px){.trust__row{grid-template-columns:1fr;gap:6px;}}
-  .trust__k{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--ink);letter-spacing:-.01em;}
-  .trust__v{font-size:14.5px;color:var(--ink-soft);line-height:1.7;}
+  /* FAQ */
+  .qa{border-bottom:1px solid var(--line-soft);}
+  .qa__q{width:100%;background:none;border:none;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:20px 2px;font-family:var(--sans);font-size:15px;font-weight:500;color:var(--cream);}
+  .qa__q .pl{color:var(--gold);font-size:18px;transition:transform .3s;}
+  .qa.open .qa__q .pl{transform:rotate(45deg);}
+  .qa__a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease);}
+  .qa.open .qa__a{max-height:260px;}
+  .qa__a p{padding:0 2px 22px;font-size:13.5px;color:var(--cream-dim);font-weight:300;line-height:1.8;}
 
-  /* 08 Industry */
-  .bizgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:38px;}
-  @media(max-width:600px){.bizgrid{grid-template-columns:1fr;}}
-  .bcard{position:relative;display:block;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px 22px 20px;text-decoration:none;color:inherit;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s;}
-  .bcard::before{content:"";position:absolute;left:0;top:20px;bottom:20px;width:2px;background:var(--bc,var(--gold));opacity:0;transform:scaleY(.4);transform-origin:top;transition:opacity .3s,transform .3s;}
-  .bcard:hover{transform:translateY(-4px);border-color:var(--bc,var(--gold));box-shadow:0 20px 46px rgba(36,30,24,.1);}
-  .bcard:hover::before{opacity:.7;transform:scaleY(1);}
-  .bcard__top{display:flex;align-items:center;gap:10px;margin-bottom:11px;}
-  .bcard__no{font-family:var(--garamond);font-style:italic;font-size:14px;color:var(--gold-deep);}
-  .bcard__st{margin-left:auto;font-family:var(--garamond);font-style:italic;font-size:11.5px;padding:2px 10px;border-radius:999px;}
-  .bcard__st.live{color:var(--gold-deep);background:var(--gold-soft);}.bcard__st.soon{color:var(--ink-mute);background:var(--cream);}
-  .bcard__t{font-family:var(--serif);font-size:18px;font-weight:700;letter-spacing:-.01em;margin-bottom:5px;}
-  .bcard__d{font-size:13px;color:var(--ink-soft);line-height:1.66;margin-bottom:13px;}.bcard__d b{color:var(--gold-deep);font-weight:600;}
-  .bcard__go{font-family:var(--garamond);font-style:italic;font-size:13px;color:var(--ink-mute);display:flex;align-items:center;gap:6px;transition:color .25s,gap .25s;}
-  .bcard:hover .bcard__go{color:var(--bc,var(--gold-deep));gap:11px;}
-  .biz__foot{margin-top:28px;font-size:14px;color:var(--ink-soft);}
-  .biz__foot a{color:var(--gold-deep);font-weight:600;text-decoration:none;border-bottom:1px solid var(--gold-line);}
+  /* CTA (야경 배경) */
+  .cta{position:relative;padding:128px 0 134px;background-color:var(--void);
+    background-image:linear-gradient(180deg,var(--void) 0%,rgba(16,13,9,.56) 26%,rgba(16,13,9,.64) 72%,var(--void) 100%),url("img/weplace-diagnosis-bg.jpg");
+    background-size:cover;background-position:center;}
+  .cta h2{max-width:13em;}
+  .cta__sub{margin-top:18px;font-size:15px;color:var(--cream-dim);font-weight:300;line-height:1.85;max-width:24em;}
+  .cta__defense{margin-top:14px;font-size:13px;color:var(--muted);line-height:1.7;max-width:25em;}
+  .cta__btns{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;}
+  .cta__micro{margin-top:16px;font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);}
+  @media(max-width:520px){.cta__btns{flex-direction:column;}}
 
-  /* 09 Diagnosis (다크 CTA) */
-  .diag{text-align:center;padding:112px 0 116px;}
-  .diag h2.t{font-size:clamp(27px,6.4vw,42px);}
-  .diag__rule{width:40px;height:1px;background:var(--gold-bright);margin:40px auto;}
-  .diag__cta{font-family:var(--serif);font-size:clamp(20px,4.4vw,26px);font-weight:700;color:#fff;letter-spacing:-.01em;margin-bottom:14px;}
-  .diag__sub{color:rgba(236,228,214,.62);font-size:15px;max-width:25em;margin:0 auto 34px;line-height:1.85;}
-  .diag__sub b{color:var(--gold-bright);font-weight:400;font-family:var(--garamond);font-style:italic;}
-  .btns{display:flex;flex-direction:column;gap:12px;max-width:360px;margin:0 auto;}
-  .btn{display:block;text-decoration:none;font-weight:700;font-size:15.5px;padding:18px 22px;border-radius:13px;transition:transform .2s,box-shadow .25s,background .25s;}
-  .btn--gold{background:var(--gold-bright);color:var(--dark-void);box-shadow:0 16px 42px rgba(212,176,106,.22);}
-  .btn--gold:hover{transform:translateY(-2px);box-shadow:0 20px 50px rgba(212,176,106,.3);}
-  .btn--ghost{background:transparent;color:var(--ivory-on-dark);border:1px solid rgba(212,176,106,.32);font-weight:500;}
-  .btn--ghost:hover{background:rgba(212,176,106,.08);border-color:rgba(212,176,106,.55);}
-  .diag__note{margin-top:26px;font-family:var(--garamond);font-style:italic;font-size:13.5px;color:rgba(236,228,214,.45);}
+  /* Contact + footer */
+  .contact{padding:104px 0;background:var(--ink-2);}
+  .cm-grid{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  @media(max-width:560px){.cm-grid{grid-template-columns:1fr;}}
+  .cm{display:block;text-decoration:none;background:var(--ink-3);border:1px solid var(--line);border-radius:14px;padding:20px;transition:.25s;}
+  .cm:hover{border-color:var(--gold);transform:translateY(-2px);}
+  .cm__k{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);margin-bottom:5px;}
+  .cm__v{font-size:13.5px;color:var(--cream);}
+  footer{background:var(--void);padding:40px 0;text-align:center;}
+  footer p{font-size:12px;color:var(--muted-2);line-height:1.8;}
 
-  /* 10 FAQ */
-  .faq h2.t{font-size:clamp(24px,5.6vw,34px);margin-bottom:28px;}
-  .qa{border-bottom:1px solid var(--line);}
-  .qa__q{display:flex;width:100%;text-align:left;background:none;border:none;color:inherit;align-items:flex-start;gap:13px;padding:21px 2px;cursor:pointer;font-family:var(--serif);font-weight:700;font-size:16px;letter-spacing:-.01em;-webkit-tap-highlight-color:transparent;}
-  .qa__plus{margin-left:auto;color:var(--gold-deep);font-size:19px;line-height:1;transition:transform .35s;flex:0 0 auto;}
-  .qa__a{max-height:0;overflow:hidden;opacity:0;transition:max-height .5s var(--ease),opacity .4s,padding .5s;}
-  .qa__a p{margin:0;padding:0 2px 22px;font-size:14.5px;line-height:1.85;color:var(--ink-soft);}
-  .qa.open .qa__plus{transform:rotate(45deg);}.qa.open .qa__a{max-height:340px;opacity:1;}
-
-  /* 11 Contact */
-  .contact__methods{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px;}
-  @media(max-width:560px){.contact__methods{grid-template-columns:1fr;}}
-  .cm{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center;background:var(--card);transition:transform .25s,border-color .25s,box-shadow .25s;}
-  .cm:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 16px 38px rgba(36,30,24,.08);}
-  .cm__k{font-family:var(--garamond);font-style:italic;font-size:13px;color:var(--gold-deep);}
-  .cm__v{font-family:var(--serif);font-size:15.5px;font-weight:700;color:var(--ink);margin-top:7px;letter-spacing:-.01em;}
-
-  /* 푸터 */
-  footer{background:var(--dark-void);color:var(--ivory-on-dark);padding:70px 0 44px;}
-  .ft__mark{font-family:var(--serif);font-size:22px;font-weight:700;letter-spacing:-.01em;margin-bottom:14px;}
-  .ft__mark b{color:var(--gold-bright);}
-  .ft__line{font-size:14px;color:rgba(236,228,214,.6);line-height:1.85;max-width:24em;}
-  .ft__biz{padding-top:28px;margin-top:34px;border-top:1px solid rgba(212,176,106,.16);font-size:12px;color:rgba(236,228,214,.42);line-height:1.95;}
-  .ft__biz b{color:rgba(236,228,214,.7);font-weight:600;}
-  .ft__copy{margin-top:18px;font-family:var(--garamond);font-style:italic;font-size:12.5px;color:rgba(236,228,214,.34);}
-
-  @media(max-width:560px){
-    .hero__cta{flex-direction:column;}
-    .hero__cta .hbtn{text-align:center;}
-    .hero__bg{background:linear-gradient(180deg,rgba(247,241,230,.93) 0%,rgba(247,241,230,.82) 52%,var(--ivory) 100%),url("/img/weplace-hero-surface.jpg") top center/cover no-repeat;}
-    #webtoon.dark,#diagnosis.dark{background-position:top center;}
-  }
-  @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none;}.wt-cut{opacity:1!important;transform:none!important;}.dust,.hero__scroll::after{animation:none;}*{scroll-behavior:auto;}}
+  @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none;}*{scroll-behavior:auto;}}
 </style>
-<noscript><style>.r{opacity:1!important;transform:none!important;}.wt-cut{opacity:1!important;transform:none!important;}.nav{transform:none!important;background:rgba(250,247,241,.9)!important;}.qa__a{max-height:none!important;opacity:1!important;}</style></noscript>
+<noscript><style>.r{opacity:1!important;transform:none!important;}</style></noscript>
 </head>
 <body>
-<!-- 배경 이미지 슬롯 (없어도 그라데이션 폴백 동작) — Hero: /img/weplace-hero-surface.jpg · Webtoon: /img/weplace-webtoon-bg.jpg · Diagnosis: /img/weplace-diagnosis-bg.jpg · 각 권장 1920x1080, webp 가능, 용량 ≤300KB · Hero는 고정 배경이 아닌 일반 cover 배경 -->
-<div class="amb" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
-<div class="dust" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-<div class="progress" id="progress"></div>
-<div class="vlabel" aria-hidden="true">We, Place — 위플레이스</div>
+<nav class="nav top" id="nav">
+  <a href="#top" class="nav__b">We,&nbsp;<b>Place.</b></a>
+  <a href="#cta" class="nav__cta">1장 진단 받기</a>
+</nav>
 
 <nav class="dotnav" aria-label="섹션 이동">
-  <a href="#top" data-sec="top"><span class="n">home</span></a>
-  <a href="#choice" data-sec="choice"><span class="n">01 자각</span></a>
-  <a href="#mirror" data-sec="mirror"><span class="n">02 거울</span></a>
-  <a href="#funnel" data-sec="funnel"><span class="n">03 표면</span></a>
-  <a href="#webtoon" data-sec="webtoon"><span class="n">04 장면</span></a>
-  <a href="#essay" data-sec="essay"><span class="n">05 기록</span></a>
-  <a href="#trust" data-sec="trust"><span class="n">06 기준</span></a>
-  <a href="#industry" data-sec="industry"><span class="n">07 업종</span></a>
-  <a href="#diagnosis" data-sec="diagnosis"><span class="n">08 진단</span></a>
-  <a href="#contact" data-sec="contact"><span class="n">09 문의</span></a>
+  <a href="#top" data-sec="top"><span>home</span></a>
+  <a href="#screens" data-sec="screens"><span>고객 판단</span></a>
+  <a href="#ai-surface" data-sec="ai-surface"><span>AI 첫 표면</span></a>
+  <a href="#surface" data-sec="surface"><span>첫 표면 정리</span></a>
+  <a href="#eyes" data-sec="eyes"><span>두 시선</span></a>
+  <a href="#fields" data-sec="fields"><span>업종별</span></a>
+  <a href="#diagnosis-preview" data-sec="diagnosis-preview"><span>1장 진단서</span></a>
+  <a href="#self-check" data-sec="self-check"><span>자가진단</span></a>
+  <a href="#cta" data-sec="cta"><span>문의</span></a>
 </nav>
 
-<nav class="nav" id="nav">
-  <a href="#top" class="nav__brand">We,&nbsp;Place.</a>
-  <div class="nav__links">
-    <a href="#webtoon">웹툰</a>
-    <a href="#essay">에세이</a>
-    <a href="#industry">업종별</a>
-    <a href="#diagnosis">진단</a>
-    <a href="#contact">문의</a>
-  </div>
-  <a href="#diagnosis" class="nav__cta">진단 받기</a>
-</nav>
-
-<!-- 01 Hero -->
+<!-- Hero -->
 <header class="hero" id="top">
-  <div class="hero__bg" aria-hidden="true"></div>
   <div class="wrap">
-    <span class="kicker r">We,&nbsp;Place</span>
-    <h1 class="r d1">가게를 더 높이 올리지 않습니다.<br><span class="l2">제 자리에 놓습니다.</span></h1>
-    <p class="hero__sub r d2">손님은 가게에 닿기 전,<br>화면에서 먼저 마음을 정합니다.<br><br>네이버, 구글, 홈페이지, 리뷰, AI 검색.<br>흩어진 화면이 같은 가게로 읽히는지<br>먼저 봅니다.</p>
+    <span class="kicker on-paper r">Weplace · 매장 검색 표면 정리</span>
+    <span class="hero__sig r d1">손님은 이제 검색창뿐 아니라, AI에게도 묻습니다.</span>
+    <h1 class="r d1">광고비를 더 쓰기 전에,<br>손님이 매장을 이해하는 데 쓰는<br><em>에너지를 먼저 줄입니다.</em></h1>
+    <p class="hero__sub r d2">네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를, 하나의 매장처럼 읽히게 정리합니다.</p>
     <div class="hero__cta r d3">
-      <a href="#diagnosis" class="hbtn hbtn--solid">매장명으로 1장 진단 받기</a>
-      <a href="#choice" class="hbtn hbtn--ghost">먼저 화면으로 느껴보기</a>
+      <a href="#cta" class="btn btn-gold">매장명으로 1장 진단 받기</a>
+      <a href="#diagnosis-preview" class="btn btn-ghost on-paper">어떻게 보이는지 보기</a>
     </div>
-    <div class="hero__scroll r d4">아래로</div>
+    <div class="scrollcue r d4"><span class="ln"></span>SCROLL</div>
   </div>
 </header>
-<div class="div"></div>
 
-<!-- 02 Choice -->
-<section class="sec sec--cream" id="choice">
+<!-- 고객 판단 에너지 -->
+<section class="sec" id="screens">
   <div class="wrap">
-    <div class="secno r">Choose · 01</div>
-    <h2 class="t r d1">둘 중 한 곳만 눌러야 한다면,<br>어느 매장을 보시겠습니까?</h2>
-    <div class="choice__grid r d2">
-      <button class="chx chx--clear" data-chx type="button" aria-pressed="false">
-        <div class="chx__scr">
-          <div class="chx__row"><span>영업시간</span><b>매일 11–22시</b></div>
-          <div class="chx__row"><span>대표 메뉴</span><b>한눈에</b></div>
-          <div class="chx__row"><span>위치 · 예약</span><b>가능</b></div>
-        </div>
-        <div class="chx__t">한눈에 들어오는 가게</div>
-      </button>
-      <button class="chx chx--blur" data-chx type="button" aria-pressed="false">
-        <div class="chx__scr">
-          <div class="chx__row"><span>영업시간</span><b>정보 없음</b></div>
-          <div class="chx__row"><span>대표 메뉴</span><b>가격 문의</b></div>
-          <div class="chx__row"><span>위치</span><b>?</b></div>
-        </div>
-        <div class="chx__t">검색해도 흐릿한 가게</div>
-      </button>
+    <div class="kicker r">01 · 고객 판단 에너지</div>
+    <h2 class="r d1">손님은 한 화면만 보고<br>정하지 않습니다.</h2>
+    <p class="lead sec-lead r d2">선택 전, 손님은 네이버에서 보고 구글에서 확인하고 리뷰와 사진을 넘겨본 뒤 정합니다. 화면마다 말이 다르면, 손님은 같은 매장으로 읽지 못하고 그만큼 에너지를 씁니다.</p>
+    <div class="screens r d2">
+      <div class="scr"><span class="scr__n">i</span><div><div class="scr__t">네이버 플레이스</div><div class="scr__d">처음 눌렀을 때 매장의 인상이 정해집니다.</div></div></div>
+      <div class="scr"><span class="scr__n">ii</span><div><div class="scr__t">구글 비즈니스 프로필</div><div class="scr__d">외부 고객과 AI 검색이 참고하는 기본 정보입니다.</div></div></div>
+      <div class="scr"><span class="scr__n">iii</span><div><div class="scr__t">홈페이지</div><div class="scr__d">가게의 기준과 설명이 쌓이는 자리입니다.</div></div></div>
+      <div class="scr"><span class="scr__n">iv</span><div><div class="scr__t">리뷰</div><div class="scr__d">고객이 다른 고객의 말로 안심하는 자리입니다.</div></div></div>
+      <div class="scr"><span class="scr__n">v</span><div><div class="scr__t">AI 검색</div><div class="scr__d">정리된 정보를 바탕으로 매장을 설명합니다.</div></div></div>
     </div>
-    <p class="choice__rev" id="choiceRev">손님은 더 좋은 가게를 고른 것이 아닐 수 있습니다.<br>더 빨리 안심되는 <b>화면</b>을 고른 것입니다.<br>그 자리부터 같이 봅니다.</p>
+    <!-- 흐림 → 또렷 -->
+    <div class="ba r d2">
+      <div class="ba-col ba-col--b">
+        <div class="ba-lab">정리 전</div>
+        <div class="np np--blur">
+          <div class="np__cover np__cover--empty"><span>사진 없음</span></div>
+          <div class="np__body">
+            <div class="np__name">○○ 레스토랑</div>
+            <div class="np__cat">정보 없음</div>
+            <div class="np__rate np__rate--none">평점 없음</div>
+            <div class="np__empty">영업시간 · 메뉴 · 가격<br>주차 · 예약 — 비어 있음</div>
+          </div>
+        </div>
+      </div>
+      <div class="ba-arrow" aria-hidden="true">&#8594;</div>
+      <div class="ba-col ba-col--a">
+        <div class="ba-lab">정리 후</div>
+        <div class="stage">
+          <div class="np np--clear">
+            <div class="np__cover"><span class="np__heart">&#9825;</span></div>
+            <div class="np__body">
+              <div class="np__name">○○ 레스토랑</div>
+              <div class="np__cat">이탈리안 · 파스타 · 스테이크</div>
+              <div class="np__rate">&#9733; 4.6 <span>(612)</span></div>
+              <div class="np__acts"><span>전화</span><span>길찾기</span><span>예약</span><span>공유</span></div>
+              <div class="np__chips"><span>주차 가능</span><span>예약 가능</span></div>
+              <div class="np__menu">
+                <div class="np__mi"><span>스테이크</span><b>28,000</b></div>
+                <div class="np__mi"><span>봉골레 파스타</span><b>18,000</b></div>
+              </div>
+              <div class="np__cta">예약하기</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="ba-note r">흩어진 화면을 같은 매장처럼 맞추면,<br>손님은 더 적은 에너지로 매장을 이해합니다.</p>
   </div>
 </section>
-<div class="div"></div>
 
-<!-- 03 Mirror : 핵심문장 ① -->
-<section class="sec" id="mirror">
-  <div class="wrap">
-    <div class="secno r">Mirror · 02</div>
-    <h2 class="t r d1">고객은 매장을<br>분석하지 않습니다.</h2>
-    <p class="p r d2">결이 맞지 않으면 조용히 나갑니다.<br><br>나빠서가 아니라,<br>화면마다 다르게 보여서.<br><br>네이버에서는 괜찮은데,<br>구글에서는 비어 있고.<br><br>리뷰는 많은데,<br>정작 궁금한 답은 없습니다.</p>
+<!-- AI 시대의 첫 표면 정리 -->
+<section class="sec sec--void" id="ai-surface">
+  <div class="wrap creed">
+    <span class="signal r">사람도, AI도, 흐린 매장은 쉽게 설명하지 못합니다.</span>
+    <h2 class="r d1">손님은 이제<br><span class="g">AI에게도 묻습니다.</span></h2>
+    <p class="creed__body r d2">손님은 매장을 선택하기 전 네이버, 구글, 리뷰, 홈페이지, AI 답변을 오갑니다. 정보가 흩어져 있으면 사람도 헷갈리고, AI도 정확히 설명하지 못합니다. <b>Weplace는 AI에게만 잘 보이기 위한 작업을 하지 않습니다.</b> 사람과 AI가 동시에 이해할 수 있도록, 매장의 첫 표면을 정리합니다.</p>
+    <a href="#philosophy" class="essaylink r d3">왜 광고보다 '첫 표면'을 먼저 볼까요? — 철학 에세이 읽기 &#8594;</a>
   </div>
 </section>
-<div class="div"></div>
 
-<!-- 04 Funnel : 핵심문장 ② -->
-<section class="sec sec--cream" id="funnel">
+<!-- Surface -->
+<section class="sec sec--ink2" id="surface">
   <div class="wrap">
-    <div class="secno r">Funnel · 03</div>
-    <h2 class="t r d1">광고는, 마케팅 안의<br>한 표면입니다.</h2>
-    <p class="p r d2">손님은 한 화면만 보고 결정하지 않습니다.<br>하지만 한 화면에서 먼저 걸립니다.<br><br>광고가 손님을 데려와도,<br>그다음 화면이 흐리면<br>관심은 조용히 빠져나갑니다.</p>
-    <p class="sig r d2">사장님은 매장에서 손님을 보지만, 손님은 화면에서 사장님을 봅니다.</p>
+    <div class="kicker r">02 · 첫 표면 정리</div>
+    <h2 class="r d1">AI 검색 정리는,<br>쉽게 말하면 이렇습니다.</h2>
+    <div class="geo-note r d2"><b>GEO</b>, 즉 AI 검색 정리는 AI가 매장을 답변할 때 참고할 수 있도록, 온라인에 흩어진 정보를 정리하는 작업입니다.</div>
+    <p class="surface-key r d2">AI 검색 정리 자체가 매출을 바로 올리는 것은 아닙니다. 다만 그 과정에서 매장의 이름, 사진, 설명, 리뷰, 위치, FAQ가 한 기준으로 정리됩니다. <b>그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다.</b></p>
   </div>
 </section>
-<div class="div"></div>
 
-<!-- 05 Webtoon (다크 모먼트 #1) : 7컷 + 전후 슬라이더 -->
-<section class="sec dark on-dark" id="webtoon">
+<!-- Eyes -->
+<section class="sec" id="eyes">
   <div class="wrap">
-    <div class="secno r">Story · 04</div>
-    <h2 class="t r d1">대표님이 보는 매장과,<br>손님이 보는 화면은 다릅니다.</h2>
-    <p class="p r d2">손님이 매장에 닿기 전, 화면에서 일어나는 일을 짧게 그렸습니다.</p>
+    <div class="kicker r">03 · 두 개의 시선</div>
+    <h2 class="r d1">사람이 보는 화면을 정리합니다.<br>AI가 읽는 구조를 정리합니다.<br><span class="g">그리고 둘 사이의 말이 어긋나지 않게 맞춥니다.</span></h2>
+    <div class="eyes r d2">
+      <div class="eye">
+        <div class="eye__h">사람이 보는 것</div>
+        <div class="eye__sub">the human screen</div>
+        <ul>
+          <li>대표사진</li><li>첫 문장</li><li>가격 기준</li>
+          <li>리뷰 답변</li><li>예약 전 FAQ</li><li>위치와 주차 안내</li>
+        </ul>
+      </div>
+      <div class="eye">
+        <div class="eye__h">AI가 읽는 것</div>
+        <div class="eye__sub">the machine structure</div>
+        <ul>
+          <li>사업자 정보</li><li>카테고리</li><li>홈페이지 문장</li>
+          <li>리뷰의 반복 키워드</li><li>FAQ 구조</li><li>네이버·구글·홈페이지의 일관성</li>
+        </ul>
+      </div>
+    </div>
+    <p class="eyes-foot r">사람도 덜 헤매고,<br>AI도 덜 오해하게.</p>
+  </div>
+</section>
 
-    <!-- 웹툰 컷 스트립 — 9:16 실사 이미지, 모바일에서 화면 꾽 채 스크롤 -->
+<!-- Fields -->
+<section class="sec sec--ink2" id="fields">
+  <div class="wrap">
+    <div class="kicker r">04 · 업종별 적용</div>
+    <h2 class="r d1">업종마다, 손님이<br>먼저 보는 것이 다릅니다.</h2>
+    <div class="fields r d2">
+      <div class="field"><img src="img/ind-dining.jpg" alt="식당·카페" loading="lazy" width="1122" height="1402"><div class="field__veil"></div><div class="field__t"><div class="field__name">식당 · 카페</div><div class="field__d">맛보다 먼저, 오늘 목적에 맞는 곳인지를 봅니다.</div></div></div>
+      <div class="field"><img src="img/ind-spa.jpg" alt="마사지·에스테틱" loading="lazy" width="1122" height="1402"><div class="field__veil"></div><div class="field__t"><div class="field__name">마사지 · 에스테틱</div><div class="field__d">가격보다 먼저, 괜찮은 곳인지 확인받고 싶어 합니다.</div></div></div>
+      <div class="field"><img src="img/ind-stay.jpg" alt="펜션·숙소" loading="lazy" width="1122" height="1402"><div class="field__veil"></div><div class="field__t"><div class="field__name">펜션 · 숙소</div><div class="field__d">예약 전, 도착 동선과 분위기부터 상상합니다.</div></div></div>
+      <div class="field"><img src="img/ind-beauty.jpg" alt="미용·헤어" loading="lazy" width="1122" height="1402"><div class="field__veil"></div><div class="field__t"><div class="field__name">미용 · 헤어</div><div class="field__d">결과보다 먼저, 실패 불안을 덜고 싶어 합니다.</div></div></div>
+      <div class="field"><img src="img/ind-clinic.jpg" alt="병의원·피부과" loading="lazy" width="1122" height="1402"><div class="field__veil"></div><div class="field__t"><div class="field__name">병의원 · 피부과</div><div class="field__d">실력만큼, 설명의 안정감을 봅니다.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 웹툰 -->
+<section class="sec sec--void" id="webtoon">
+  <div class="wrap">
+    <div class="kicker r">대표님 시선 vs 손님 시선</div>
+    <h2 class="r d1">대표님이 보는 매장과,<br>손님이 보는 화면은 다릅니다.</h2>
+    <p class="lead sec-lead r d2">손님이 매장에 닿기 전, 화면에서 일어나는 일을 짧게 그렸습니다.</p>
     <div class="wt-strip">
-      <div class="wt-cut r">
-        <img src="/webtoon/episode-01/cut-01.jpg"
-             alt="대표님은 광고를 볕니다."
-             loading="lazy" width="1080" height="1920">
-      </div>
-      <div class="wt-cut r">
-        <img src="/webtoon/episode-01/cut-02.jpg"
-             alt="손님은 검색 화면을 볕니다."
-             loading="eager" width="1080" height="1920">
-      </div>
-      <div class="wt-cut r">
-        <img src="/webtoon/episode-01/cut-03.jpg"
-             alt="가격이 보이지 않습니다."
-             loading="lazy" width="1080" height="1920">
-      </div>
-      <div class="wt-cut r">
-        <img src="/webtoon/episode-01/cut-04.jpg"
-             alt="주차와 예약이 애매합니다."
-             loading="lazy" width="1080" height="1920">
-      </div>
-      <div class="wt-cut r">
-        <img src="/webtoon/episode-01/cut-05.jpg"
-             alt="손님은 조용히 다른 매장을 누릅니다."
-             loading="lazy" width="1080" height="1920">
-      </div>
-      <div class="wt-cut r">
-        <img src="/webtoon/episode-01/cut-06.jpg"
-             alt="정리되면, 같은 매장으로 읽힙니다."
-             loading="lazy" width="1080" height="1920">
-      </div>
-      <div class="wt-cut r">
-        <img src="/webtoon/episode-01/cut-07.jpg"
-             alt="같은 매장, 다른 첫인상."
-             loading="lazy" width="1080" height="1920">
-      </div>
+      <div class="wt-cut r"><div class="wt-cut__ph" aria-hidden="true">CUT 01</div><img src="webtoon/episode-01/cut-01.jpg" alt="대표님은 광고를 봅니다" loading="lazy" width="1080" height="1920" onerror="this.style.display='none'"></div>
+      <div class="wt-cut r"><div class="wt-cut__ph" aria-hidden="true">CUT 02</div><img src="webtoon/episode-01/cut-02.jpg" alt="손님은 검색 화면을 봅니다" loading="lazy" width="1080" height="1920" onerror="this.style.display='none'"></div>
+      <div class="wt-cut r"><div class="wt-cut__ph" aria-hidden="true">CUT 03</div><img src="webtoon/episode-01/cut-03.jpg" alt="가격이 보이지 않습니다" loading="lazy" width="1080" height="1920" onerror="this.style.display='none'"></div>
+      <div class="wt-cut r"><div class="wt-cut__ph" aria-hidden="true">CUT 04</div><img src="webtoon/episode-01/cut-04.jpg" alt="주차와 예약이 애매합니다" loading="lazy" width="1080" height="1920" onerror="this.style.display='none'"></div>
+      <div class="wt-cut r"><div class="wt-cut__ph" aria-hidden="true">CUT 05</div><img src="webtoon/episode-01/cut-05.jpg" alt="손님은 조용히 다른 매장을 누릅니다" loading="lazy" width="1080" height="1920" onerror="this.style.display='none'"></div>
+      <div class="wt-cut r"><div class="wt-cut__ph" aria-hidden="true">CUT 06</div><img src="webtoon/episode-01/cut-06.jpg" alt="정리되면 같은 매장으로 읽힙니다" loading="lazy" width="1080" height="1920" onerror="this.style.display='none'"></div>
+      <div class="wt-cut r"><div class="wt-cut__ph" aria-hidden="true">CUT 07</div><img src="webtoon/episode-01/cut-07.jpg" alt="같은 매장, 다른 첫인상" loading="lazy" width="1080" height="1920" onerror="this.style.display='none'"></div>
     </div>
-
-    <p class="cuts__punch r">고객은 더 좋은 곳보다,<br><b>덜 불안한 곳</b>을 먼저 누릅니다.</p>
-    <a href="/webtoon/" class="wt__more r">웹툰 전체 보기 →</a>
+    <p class="wt-punch r">고객은 더 싼 곳보다,<br><b>덜 불안한 곳</b>을 먼저 누릅니다.</p>
+    <div class="wt-more r"><a href="/webtoon/">웹툰 전체 보기 &#8594;</a></div>
   </div>
 </section>
-<div class="div"></div>
 
-<!-- 06 Essay Notes (입구·톤 다운) -->
-<section class="sec sec--deep essay" id="essay">
+<!-- 1장 진단서 -->
+<section class="sec" id="diagnosis-preview">
   <div class="wrap">
-    <span class="kicker r">WEPLACE NOTES</span>
-    <h2 class="t r d1">가게가 보이는 방식을<br>기록합니다.</h2>
-    <p class="p r d2">광고, 검색, 리뷰, 사진, 홈페이지.<br><br>각각은 따로 존재하지만,<br>손님에게는 하나의 가게로 읽힙니다.<br><br>Weplace의 에세이는<br>그 사이에서 손님이 멈추는 자리를 기록합니다.</p>
-    <div class="essay__notes r d2">
-      <a class="essay-card" href="/essay/customer-before-visit.html">
-        <span class="essay-card__k">NOTE 01 · 손님의 시선</span>
-        <div class="essay-card__t">고객은 가게에 닿기 전, 화면에서 먼저 마음을 정합니다.</div>
-        <div class="essay-card__d">손님은 방문 전 이미 많은 화면을 통과합니다.</div>
-      </a>
-      <a class="essay-card" href="/essay/right-place.html">
-        <span class="essay-card__k">NOTE 02 · 자리의 언어</span>
-        <div class="essay-card__t">가게를 올리지 않습니다. 제 자리에 놓습니다.</div>
-        <div class="essay-card__d">검색 1위보다 먼저, 같은 가게로 읽히는 자리를 봅니다.</div>
-      </a>
-      <a class="essay-card" href="/essay/clear-surface.html">
-        <span class="essay-card__k">NOTE 03 · 표면의 결</span>
-        <div class="essay-card__t">흐리면 멈추고, 선명하면 움직입니다.</div>
-        <div class="essay-card__d">정보가 정리될수록 손님이 쓰는 에너지는 줄어듭니다.</div>
-      </a>
-      <a class="essay-card" href="/essay/human-before-ai.html">
-        <span class="essay-card__k">NOTE 04 · AI 이전의 안심</span>
-        <div class="essay-card__t">AI가 읽기 전에,<br>사람이 먼저 안심해야 합니다.</div>
-        <div class="essay-card__d">AI도 결국 정리된 표면을 읽습니다.</div>
-      </a>
-    </div>
-    <a href="/essay/" class="essay__more r">에세이 더 보기 →</a>
-  </div>
-</section>
-<div class="div"></div>
-
-<!-- 07 Trust -->
-<section class="sec" id="trust">
-  <div class="wrap">
-    <div class="secno r">Trust · 06</div>
-    <h2 class="t r d1">세팅 한 번이 아니라,<br>남는 기준을 만듭니다.</h2>
-    <div class="trust__rows r d2">
-      <div class="trust__row"><div class="trust__k">같은 정보</div><div class="trust__v">네이버·구글·홈페이지·SNS를 한 매장으로.</div></div>
-      <div class="trust__row"><div class="trust__k">검색 가능한 기록</div><div class="trust__v">참고할 설명·FAQ·답글 기준을 남깁니다.</div></div>
-      <div class="trust__row"><div class="trust__k">운영 기준</div><div class="trust__v">사진·답글·예약·문의를 한 기준으로.</div></div>
+    <div class="kicker r">05 · 1장 진단서</div>
+    <h2 class="r d1">진단을 받으면<br>이런 걸 받습니다.</h2>
+    <p class="lead sec-lead r d2">매장 화면을 열어보고, 고객이 멈출 지점과 먼저 손볼 순서를 표시합니다.</p>
+    <div class="dxsheet r d2">
+      <div class="dxsheet__ttl">Weplace 1장 진단서</div>
+      <div class="dxsheet__meta">매장명 · ○○카페&nbsp;&nbsp;|&nbsp;&nbsp;지역 · 영등포</div>
+      <div class="dxstep">
+        <div class="dxstep__h"><span class="dxstep__n">01</span><span class="dxstep__t">처음 보이는 화면</span></div>
+        <div class="dxrow"><span class="chip chip--warn">보완 필요</span> 네이버 대표사진</div>
+        <div class="dxrow"><span class="chip chip--empty">비어 있음</span> 구글 정보</div>
+        <div class="dxrow"><span class="chip chip--ok">양호</span> 홈페이지 첫 문장</div>
+      </div>
+      <div class="dxstep">
+        <div class="dxstep__h"><span class="dxstep__n">02</span><span class="dxstep__t">고객이 멈추는 지점</span></div>
+        <div class="dxrow">위치 설명이 애매함</div>
+        <div class="dxrow">예약 전 질문 답변 없음</div>
+        <div class="dxrow">리뷰 답글 톤이 일정하지 않음</div>
+        <div class="dxrow">가격 기준이 흩어져 있음</div>
+      </div>
+      <div class="dxstep">
+        <div class="dxstep__h"><span class="dxstep__n">03</span><span class="dxstep__t">먼저 정리할 순서</span></div>
+        <div class="dxrow"><span class="ord">1순위</span> 대표사진 교체</div>
+        <div class="dxrow"><span class="ord">2순위</span> 소개문 첫 줄 수정</div>
+        <div class="dxrow"><span class="ord">3순위</span> FAQ 한 화면 구성</div>
+        <div class="dxrow"><span class="ord">4순위</span> 구글 정보 채우기</div>
+        <div class="dxrow"><span class="ord">5순위</span> 리뷰 답글 기준 만들기</div>
+      </div>
+      <p class="dxsheet__foot">이 진단서는 견적서가 아니라, 대표님이 현재 매장 화면을 이해하기 위한 지도입니다. 먼저 팔지 않습니다 — 어디서 고객이 멈추는지 함께 본 뒤, 정리할 범위를 제안합니다.</p>
     </div>
   </div>
 </section>
-<div class="div"></div>
 
-<!-- 08 Industry -->
-<section class="sec sec--cream" id="industry">
+<!-- 자가진단 -->
+<section class="sec sec--ink2" id="self-check">
   <div class="wrap">
-    <div class="secno r">By place · 07</div>
-    <h2 class="t r d1">Weplace는 모든 업종을<br>같은 방식으로 보지 않습니다.</h2>
-    <p class="p r d2">업종마다 손님이 먼저 보는 것이 다릅니다. 눌러서 그 자리로.</p>
-    <!-- 업종 링크: 현재 외부 Netlify. 추후 내부 경로 전환 가능 — /industries/massage/ /industries/stay/ /industries/dining/ /industries/beauty/ /industries/clinic/ -->
-    <div class="bizgrid r d2">
-      <a class="bcard" style="--bc:#9A6B3A" href="https://weplace-massage.netlify.app" target="_blank" rel="noopener">
-        <div class="bcard__top"><span class="bcard__no">01</span><span class="bcard__st live">열림</span></div>
-        <div class="bcard__t">마사지·에스테틱</div>
-        <p class="bcard__d">가격보다 먼저, <b>'괜찮은 곳인지'</b>를 확인받고 싶어 합니다.</p>
-        <span class="bcard__go">괜찮은 곳임을 보이는 화면으로 →</span>
-      </a>
-      <a class="bcard" style="--bc:#B0883C" href="https://weplace-stay.netlify.app" target="_blank" rel="noopener">
-        <div class="bcard__top"><span class="bcard__no">02</span><span class="bcard__st live">열림</span></div>
-        <div class="bcard__t">펜션·숙소</div>
-        <p class="bcard__d">예약 전, <b>도착 동선과 분위기</b>부터 상상합니다.</p>
-        <span class="bcard__go">사진과 실물을 맞추는 화면으로 →</span>
-      </a>
-      <a class="bcard" style="--bc:#9A7838" href="#diagnosis">
-        <div class="bcard__top"><span class="bcard__no">03</span><span class="bcard__st soon">준비 중</span></div>
-        <div class="bcard__t">식당·카페</div>
-        <p class="bcard__d">맛보다 먼저, <b>'오늘 목적에 맞는 곳인지'</b>를 봅니다.</p>
-        <span class="bcard__go">매장명으로 먼저 보내기 →</span>
-      </a>
-      <a class="bcard" style="--bc:#5A6B3A" href="#diagnosis">
-        <div class="bcard__top"><span class="bcard__no">04</span><span class="bcard__st soon">준비 중</span></div>
-        <div class="bcard__t">미용·헤어</div>
-        <p class="bcard__d">결과보다 먼저, <b>실패 불안</b>을 덜고 싶어 합니다.</p>
-        <span class="bcard__go">매장명으로 먼저 보내기 →</span>
-      </a>
-      <a class="bcard" style="--bc:#8A6A2E" href="#diagnosis">
-        <div class="bcard__top"><span class="bcard__no">05</span><span class="bcard__st soon">준비 중</span></div>
-        <div class="bcard__t">병의원·피부과</div>
-        <p class="bcard__d">실력만큼, <b>설명의 안정감</b>을 봅니다.</p>
-        <span class="bcard__go">매장명으로 먼저 보내기 →</span>
-      </a>
-      <a class="bcard" style="--bc:#7A6A3A" href="#diagnosis">
-        <div class="bcard__top"><span class="bcard__no">06</span><span class="bcard__st soon">준비 중</span></div>
-        <div class="bcard__t">스크린골프·액티비티</div>
-        <p class="bcard__d">시설과 <b>당일 예약 가능 여부</b>를 빠르게 봅니다.</p>
-        <span class="bcard__go">매장명으로 먼저 보내기 →</span>
-      </a>
-    </div>
-    <p class="biz__foot r">업종이 목록에 없으셔도 괜찮습니다. <a href="#diagnosis">매장명만 주시면</a> 그 자리부터 같이 봅니다.</p>
-  </div>
-</section>
-<div class="div"></div>
-
-<!-- 09 Diagnosis CTA (다크 모먼트 #2) : 핵심문장 ③ -->
-<section class="sec dark on-dark diag" id="diagnosis">
-  <div class="wrap">
-    <div class="secno r" style="justify-content:center">With you · 08</div>
-    <h2 class="t r d1">자리가 맞으면,<br>손님이 먼저 알아봅니다.</h2>
-    <p class="sig r d1">검색되는 매장에서, 추천되는 매장으로.</p>
-    <p class="p r d2" style="margin:14px auto 0;text-align:center">검색에서도, 사람에게도 — 같은 신호로 읽힙니다. 망설임이 줄면, 문의가 움직입니다.</p>
-    <div class="diag__rule r"></div>
-    <p class="diag__cta r">정리 안 돼도 됩니다. 막힌 자리 하나만 보내주세요.</p>
-    <p class="diag__sub r">매장명과 지역만 주시면,<br>손님이 멈추는 화면을 <b>한 장으로 정리</b>해 드립니다.</p>
-    <div class="btns r">
-      <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" class="btn btn--gold">막힌 자리 보내기 →</a>
-      <a href="tel:+821064616594" class="btn btn--ghost">통화가 편하시면 — 010-6461-6594</a>
-    </div>
-    <p class="diag__note r">받아보신 뒤 진행 여부는 천천히 정하셔도 됩니다.</p>
-  </div>
-</section>
-<div class="div"></div>
-
-<!-- 10 FAQ (GEO 1회) -->
-<section class="sec faq">
-  <div class="wrap">
-    <h2 class="t r">자주 묻는 질문</h2>
-    <div class="r">
-      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">검색 1위에 올려주시나요?<span class="qa__plus">+</span></button>
-        <div class="qa__a"><p>올려드린다고 말하지 않습니다. 가게가 제 자리에 놓이면 검색에서도 또렷하게 불립니다. 불리는 건 자리가 맞은 결과이지, 약속이 아닙니다.</p></div></div>
-      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">정리가 하나도 안 돼 있는데 괜찮나요?<span class="qa__plus">+</span></button>
-        <div class="qa__a"><p>괜찮습니다. 정리 안 된 상태가 출발점입니다. 막힌 자리 하나만 보여주시면 거기서부터 같이 봅니다.</p></div></div>
-      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">AI 검색에는 준비가 필요한가요?<span class="qa__plus">+</span></button>
-        <div class="qa__a"><p>AI도 결국 정리된 표면을 읽습니다. 같은 정보가 네이버·구글·홈페이지에 같게 적혀 있을수록 먼저 참고됩니다. 다만 특정 노출을 약속하지는 않습니다.</p></div></div>
-      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">어떤 가게에 맞나요?<span class="qa__plus">+</span></button>
-        <div class="qa__a"><p>검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다.</p></div></div>
+    <div class="kicker r">06 · 자가진단</div>
+    <h2 class="r d1">우리 매장의 첫 표면,<br>지금 몇 점일까요?</h2>
+    <p class="lead sec-lead r d2">맞는 항목을 눌러 보세요. 손님이 헤매지 않는 화면일수록 점수가 올라갑니다.</p>
+    <div class="selfcheck r d2" id="selfcheck">
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>대표사진이 지금 매장 분위기와 같다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>가격대를 화면에서 바로 알 수 있다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>위치·주차 안내가 정리되어 있다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>구글 정보가 비어 있지 않다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>리뷰 답글에 일정한 기준이 있다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>예약 전 질문에 답하는 FAQ가 있다</span></div>
+      <div class="sc-result">
+        <div class="sc-score" id="scScore">0 / 6</div>
+        <div class="sc-msg" id="scMsg">항목을 눌러 우리 매장의 첫 표면을 가늠해 보세요.</div>
+      </div>
     </div>
   </div>
 </section>
-<div class="div"></div>
 
-<!-- 11 Contact -->
-<section class="sec sec--cream" id="contact">
+<!-- FAQ -->
+<section class="sec" id="faq">
   <div class="wrap">
-    <div class="secno r">Contact · 09</div>
-    <h2 class="t r d1">문의</h2>
-    <p class="p r d2">막힌 자리 하나만 보내주시면, 거기서부터 같이 봅니다.</p>
-    <div class="contact__methods r d2">
-      <a class="cm" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener"><div class="cm__k">Kakao</div><div class="cm__v">카카오 채널</div></a>
+    <div class="kicker r">자주 묻는 질문</div>
+    <div class="r d1">
+      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">AI 검색에 잘 보이게 해주는 건가요?<span class="pl">+</span></button><div class="qa__a"><p>AI에게만 잘 보이기 위한 작업은 하지 않습니다. 사람과 AI가 동시에 이해할 수 있도록, 네이버·구글·홈페이지·리뷰에 흩어진 정보를 같은 매장처럼 정리합니다.</p></div></div>
+      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">상위에 올려주시나요?<span class="pl">+</span></button><div class="qa__a"><p>특정 노출을 약속하지 않습니다. 먼저 손님이 보는 첫 화면을 한 기준으로 정리합니다. 그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다.</p></div></div>
+      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">정리가 하나도 안 돼 있어도 되나요?<span class="pl">+</span></button><div class="qa__a"><p>괜찮습니다. 정리 안 된 상태가 출발점입니다. 매장명과 지역만 주시면 손님이 어디서 멈추는지부터 봅니다.</p></div></div>
+      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">어떤 매장에 잘 맞나요?<span class="pl">+</span></button><div class="qa__a"><p>검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA (야경 배경) -->
+<section class="cta" id="cta">
+  <div class="wrap">
+    <div class="kicker r">1장 진단</div>
+    <h2 class="r d1">정리 안 돼도 됩니다.<br><span class="g">매장명 한 줄이면 시작합니다.</span></h2>
+    <p class="cta__sub r d2">진단이 먼저, 작업은 그 다음입니다.</p>
+    <p class="cta__defense r d2">작업을 바로 맡기지 않아도 됩니다. 먼저 어디서 고객이 멈추는지부터 보겠습니다.</p>
+    <div class="cta__btns r d3">
+      <!-- 카카오 채널 URL: 변경 시 아래 href 교체 -->
+      <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" class="btn btn-gold">카카오톡으로 매장명 보내기</a>
+      <a href="tel:+821064616594" class="btn btn-ghost">전화 010-6461-6594</a>
+    </div>
+    <p class="cta__micro r">매장명·지역 보내고 1장 진단 받기</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker r">Contact · 문의</div>
+    <h2 class="r d1">매장명과 지역만<br>보내주세요.</h2>
+    <p class="lead sec-lead r d2">길게 설명하지 않으셔도 됩니다. 지금 운영 중인 매장명과 지역만 보내주시면, 첫 화면에서 손님이 멈출 수 있는 지점부터 같이 봅니다.</p>
+    <div class="cm-grid r d2">
+      <a class="cm" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener"><div class="cm__k">Kakao</div><div class="cm__v">카카오톡으로 보내기</div></a>
       <a class="cm" href="tel:+821064616594"><div class="cm__k">Call</div><div class="cm__v">010-6461-6594</div></a>
       <a class="cm" href="mailto:weplace25@gmail.com"><div class="cm__k">Mail</div><div class="cm__v">weplace25@gmail.com</div></a>
     </div>
@@ -595,69 +553,48 @@
 
 <footer>
   <div class="wrap">
-    <div class="ft__mark">We,&nbsp;<b>Place.</b></div>
-    <p class="ft__line">네이버에서 발견되고, 화면에서 안심하고,<br>구글과 AI에서 다시 같은 가게로 읽히도록.</p>
-    <div class="ft__biz">
-      <b>(주)위플레이스마케팅</b><br>
-      서울특별시 금천구 디지털로 178 퍼블릭가산C동<br>
-      대표 박규민<br>
-      weplace25@gmail.com
-    </div>
-    <p class="ft__copy">© 2025—2026 We Place.</p>
+    <p>(주)위플레이스마케팅 · 대표 박규민<br>서울 금천구 디지털로 178 퍼블릭가산 C동 · weplace25@gmail.com</p>
   </div>
 </footer>
 
 <script>
 (function(){
   'use strict';
-  /* Choice */
-  var rev=document.getElementById('choiceRev');
-  document.querySelectorAll('[data-chx]').forEach(function(b){
-    b.addEventListener('click',function(){
-      document.querySelectorAll('[data-chx]').forEach(function(o){var s=(o===b);o.classList.toggle('sel',s);o.setAttribute('aria-pressed',s?'true':'false');});
-      if(rev) rev.classList.add('show');
-    });
-  });
-
-  /* 전후 슬라이더 */
-  var ba=document.getElementById('ba'), grip=document.getElementById('baGrip');
-  if(ba && grip){
-    var dragging=false;
-    function setPos(p){p=Math.max(2,Math.min(98,p));ba.style.setProperty('--pos',p+'%');grip.setAttribute('aria-valuenow',Math.round(p));}
-    function fromX(x){var r=ba.getBoundingClientRect();setPos((x-r.left)/r.width*100);}
-    ba.addEventListener('pointerdown',function(e){dragging=true;fromX(e.clientX);try{ba.setPointerCapture(e.pointerId);}catch(_){}}); 
-    ba.addEventListener('pointermove',function(e){if(dragging)fromX(e.clientX);});
-    window.addEventListener('pointerup',function(){dragging=false;});
-    grip.addEventListener('keydown',function(e){var c=parseFloat(ba.style.getPropertyValue('--pos'))||50;
-      if(e.key==='ArrowLeft'){setPos(c-4);e.preventDefault();} if(e.key==='ArrowRight'){setPos(c+4);e.preventDefault();}});
-  }
-
-  /* FAQ */
-  document.querySelectorAll('[data-qa]').forEach(function(q){
-    var btn=q.querySelector('.qa__q');
-    btn.addEventListener('click',function(){var open=q.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
-  });
-
+  var nav=document.getElementById('nav');
+  /* 등장 + 점네비 */
   if('IntersectionObserver' in window){
-    /* 등장 */
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.16});
-    document.querySelectorAll('.r, .cuts').forEach(function(el){io.observe(el);});
-    /* 내비 등장 */
-    new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting && e.boundingClientRect.top<0) document.getElementById('nav').classList.add('show');});},{threshold:0}).observe(document.getElementById('choice'));
-    /* 점네비 추적 */
-    var dots=document.querySelectorAll('.dotnav a');
-    var byId={}; dots.forEach(function(a){byId[a.getAttribute('data-sec')]=a;});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+    document.querySelectorAll('.r').forEach(function(el){io.observe(el);});
+    var dots=document.querySelectorAll('.dotnav a'), byId={};
+    dots.forEach(function(a){byId[a.getAttribute('data-sec')]=a;});
     var dio=new IntersectionObserver(function(es){es.forEach(function(e){
       if(e.isIntersecting){var a=byId[e.target.id]; if(a){dots.forEach(function(d){d.classList.remove('active');}); a.classList.add('active');}}
     });},{rootMargin:'-45% 0px -45% 0px'});
     Object.keys(byId).forEach(function(id){var s=document.getElementById(id); if(s) dio.observe(s);});
-  }else{
-    document.querySelectorAll('.r, .cuts').forEach(function(el){el.classList.add('in');});
+  }else{document.querySelectorAll('.r').forEach(function(el){el.classList.add('in');});}
+  /* nav: 상단(투명·다크글자) ↔ 스크롤(블러) */
+  function onScroll(){var s=window.scrollY>80;nav.classList.toggle('show',s);nav.classList.toggle('top',!s);}
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  /* FAQ */
+  document.querySelectorAll('[data-qa]').forEach(function(q){
+    var b=q.querySelector('.qa__q');
+    b.addEventListener('click',function(){var o=q.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
+  });
+  /* 자가진단 */
+  var checks=document.querySelectorAll('#selfcheck [data-check]');
+  var msgs=['항목을 눌러 우리 매장의 첫 표면을 가늠해 보세요.',
+    '아직 손님이 헤매기 쉬운 화면입니다. 어디서 멈추는지부터 함께 보면 됩니다.',
+    '시작점은 잡혔습니다. 비어 있는 화면부터 채우면 손님의 에너지가 줄어듭니다.',
+    '절반은 정리되어 있습니다. 화면 사이 말이 어긋나는 곳만 맞추면 됩니다.',
+    '꽤 정돈된 편입니다. 한두 군데만 손보면 같은 매장으로 또렷하게 읽힙니다.',
+    '거의 또렷합니다. 마지막 디테일까지 맞추면 사람도 AI도 헷갈리지 않습니다.',
+    '첫 표면이 또렷합니다. 이 기준이 흔들리지 않게 남기는 일이 다음 단계입니다.'];
+  function update(){
+    var n=0; checks.forEach(function(c){if(c.classList.contains('on'))n++;});
+    document.getElementById('scScore').textContent=n+' / 6';
+    document.getElementById('scMsg').textContent=msgs[n];
   }
-
-  /* 진행바 */
-  var pb=document.getElementById('progress');
-  if(pb){window.addEventListener('scroll',function(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;pb.style.width=(m>0?h.scrollTop/m*100:0)+'%';},{passive:true});}
+  checks.forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('on');update();});});
 })();
 </script>
 </body>
