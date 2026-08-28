@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-H9B5F4HRDS');
 </script>
 <meta charset="UTF-8" />
@@ -38,27 +37,24 @@
 {"@context":"https://schema.org","@type":"Service","serviceType":"매장 검색 표면 정리","provider":{"@type":"Organization","name":"위플레이스마케팅"},"areaServed":"KR","description":"네이버·구글·홈페이지·리뷰·AI 검색의 매장 정보를 사람과 AI가 동시에 이해할 수 있도록 한 기준으로 정리합니다."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"AI 검색에 잘 보이게 해주는 건가요?","acceptedAnswer":{"@type":"Answer","text":"AI에게만 잘 보이기 위한 작업은 하지 않습니다. 사람과 AI가 동시에 이해할 수 있도록, 네이버·구글·홈페이지·리뷰에 흩어진 정보를 같은 매장처럼 정리합니다."}},
-{"@type":"Question","name":"상위에 올려주시나요?","acceptedAnswer":{"@type":"Answer","text":"특정 노출을 약속하지 않습니다. 먼저 손님이 보는 첫 화면을 한 기준으로 정리합니다. 그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다."}},
-{"@type":"Question","name":"정리가 하나도 안 돼 있어도 되나요?","acceptedAnswer":{"@type":"Answer","text":"괜찮습니다. 정리 안 된 상태가 출발점입니다. 매장명과 지역만 주시면 손님이 어디서 멈추는지부터 봅니다."}},
-{"@type":"Question","name":"어떤 매장에 잘 맞나요?","acceptedAnswer":{"@type":"Answer","text":"검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다."}}
-]}
+{
+  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"AI 검색에 잘 보이게 해주는 건가요?","acceptedAnswer":{"@type":"Answer","text":"AI에게만 잘 보이기 위한 작업은 하지 않습니다. 사람과 AI가 동시에 이해할 수 있도록, 네이버·구글·홈페이지·리뷰에 흩어진 정보를 같은 매장처럼 정리합니다."}},
+    {"@type":"Question","name":"상위에 올려주시나요?","acceptedAnswer":{"@type":"Answer","text":"특정 노출을 약속하지 않습니다. 먼저 손님이 보는 첫 화면을 한 기준으로 정리합니다. 그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다."}},
+    {"@type":"Question","name":"정리가 하나도 안 돼 있어도 되나요?","acceptedAnswer":{"@type":"Answer","text":"괜찮습니다. 정리 안 된 상태가 출발점입니다. 매장명과 지역만 주시면 손님이 어디서 멈추는지부터 봅니다."}},
+    {"@type":"Question","name":"어떤 매장에 잘 맞나요?","acceptedAnswer":{"@type":"Answer","text":"검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다."}}
+  ]
+}
 </script>
 
 <style>
   :root{
-    /* dark base */
     --ink:#14110B; --ink-2:#1A1610; --ink-3:#211B12; --void:#100D09;
     --cream:#EFE8D9; --cream-dim:#BEB39D; --muted:#8E8470; --muted-2:#6E6555;
-    /* warm ivory (hero · paper) */
     --paper:#F4EFE6; --paper-2:#FBF8F1; --on-paper:#241B12; --soft-paper:#574E42; --mute-paper:#8B8174;
-    /* gold */
     --gold:#CDAE68; --gold-deep:#A6813B; --gold-soft:#E2CE9C; --gold-paper:#8A6E3E; --gold-bg-paper:#EFE3C6;
-    /* lines */
     --line:rgba(226,206,156,.16); --line-soft:rgba(226,206,156,.08);
     --line-ivory:rgba(122,86,64,.18);
-    /* 진단 상태 */
     --ok:#86A66E; --warn:#CBA64E; --empty:#BE7B57;
     --serif:'Noto Serif KR',serif; --eng:'Cormorant Garamond',serif;
     --sans:'Pretendard Variable','Pretendard',-apple-system,'Apple SD Gothic Neo',system-ui,sans-serif;
@@ -76,7 +72,6 @@
   section{position:relative;z-index:1;}
   img{max-width:100%;display:block;}
 
-  /* type instruments */
   .kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:26px;}
   .kicker::before{content:"";width:24px;height:1px;background:var(--gold-deep);opacity:.7;}
   .kicker.on-paper{color:var(--gold-paper);}.kicker.on-paper::before{background:var(--gold-paper);}
@@ -90,7 +85,6 @@
   .r.in{opacity:1;transform:none;}
   .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.42s}
 
-  /* nav */
   .nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;padding:22px 30px;transition:.4s;}
   .nav.show{background:rgba(20,17,11,.72);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-soft);padding:14px 30px;}
   .nav__b{font-family:var(--serif);font-weight:500;font-size:18px;color:var(--cream);text-decoration:none;}
@@ -98,7 +92,6 @@
   .nav__cta{margin-left:auto;font-size:12.5px;font-weight:600;color:var(--cream);border:1px solid var(--line);border-radius:999px;padding:9px 17px;text-decoration:none;transition:.25s;}
   .nav__cta:hover{border-color:var(--gold);color:var(--gold-soft);}
 
-  /* dot nav (데스크탑 전용) */
   .dotnav{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:55;display:flex;flex-direction:column;gap:14px;}
   .dotnav a{width:8px;height:8px;border-radius:50%;background:rgba(226,206,156,.28);transition:.3s;position:relative;}
   .dotnav a.active{background:var(--gold);transform:scale(1.35);box-shadow:0 0 10px var(--gold);}
@@ -106,7 +99,6 @@
   .dotnav a:hover span{opacity:1;}
   @media(max-width:1080px){.dotnav{display:none;}}
 
-  /* buttons */
   .btn{font-size:14.5px;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:12px;display:inline-block;transition:transform .2s,box-shadow .25s,border-color .25s,color .25s,background .25s;}
   .btn-gold{background:linear-gradient(90deg,var(--gold-deep),var(--gold));color:#16110a;box-shadow:0 14px 40px rgba(166,129,59,.3);}
   .btn-gold:hover{transform:translateY(-2px);box-shadow:0 20px 52px rgba(166,129,59,.42);}
@@ -115,7 +107,6 @@
   .btn-ghost.on-paper{border-color:var(--line-ivory);color:var(--on-paper);}
   .btn-ghost.on-paper:hover{border-color:var(--gold-paper);color:var(--gold-paper);}
 
-  /* ===== HERO (따뜻한 아이보리 · 생성 이미지) ===== */
   .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 84px;background-color:var(--void);
     background-image:linear-gradient(96deg,rgba(16,13,9,.90) 0%,rgba(16,13,9,.60) 44%,rgba(16,13,9,.16) 74%,transparent 100%),linear-gradient(180deg,transparent 50%,rgba(16,13,9,.55) 82%,var(--void) 100%),url("img/weplace-hero-surface.jpg");
     background-size:cover;background-position:center;}
@@ -130,21 +121,17 @@
   @media(max-width:900px){.hero{background-image:linear-gradient(180deg,rgba(16,13,9,.58) 0%,rgba(16,13,9,.40) 38%,rgba(16,13,9,.82) 100%),url("img/weplace-hero-surface.jpg");background-position:center;}}
   @media(max-width:520px){.hero__cta{flex-direction:column;}.btn{text-align:center;}}
 
-  /* ===== 다크 콘텐츠 공통 ===== */
   .sec{padding:116px 0;}
   .sec--void{background:var(--void);} .sec--ink2{background:var(--ink-2);}
   .sec-lead{margin-top:20px;max-width:28em;}
 
-  /* 화면 5 — 에디토리얼 리스트 */
   .screens{margin-top:42px;border-top:1px solid var(--line-soft);}
   .scr{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:baseline;padding:18px 4px;border-bottom:1px solid var(--line-soft);transition:padding-left .35s var(--ease);}
   .scr:hover{padding-left:9px;}
   .scr__n{font-family:var(--eng);font-style:italic;font-size:18px;color:var(--gold-deep);}
   .scr__t{font-family:var(--serif);font-weight:500;font-size:16.5px;color:var(--cream);}
   .scr__d{font-size:12.5px;color:var(--muted);font-weight:300;margin-top:4px;line-height:1.6;}
-  .scr-merge{margin-top:30px;font-family:var(--serif);font-weight:400;font-size:clamp(16px,2.8vw,20px);color:var(--gold-soft);line-height:1.5;}
 
-  /* 흐림 → 또렷 (네이버형 화면 카드) */
   .ba{margin-top:48px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px;}
   .ba-col{display:flex;flex-direction:column;align-items:center;}
   .ba-lab{font-family:var(--eng);font-style:italic;font-size:15px;margin-bottom:14px;}
@@ -178,7 +165,30 @@
   .np--blur{box-shadow:0 26px 60px rgba(0,0,0,.45);} .np--blur .np__name{color:#9a917f;}
   .ba-note{margin-top:30px;text-align:center;font-size:14px;color:var(--cream-dim);line-height:1.7;}
 
-  /* AI 첫 표면 — 사색 밴드 */
+  /* 손님 눈으로 보기 — 자기발견 인터랙션 */
+  .customer-view{background:linear-gradient(180deg,var(--paper),#ECE3D5);color:var(--on-paper);}
+  .customer-view h2{color:var(--on-paper);}
+  .cv-lead{color:var(--soft-paper);max-width:31em;margin-top:20px;}
+  .cv-note{margin-top:16px;font-size:12.5px;color:var(--mute-paper);line-height:1.7;}
+  .cv-quiz{margin-top:40px;display:flex;flex-direction:column;gap:12px;}
+  .cv-q{background:rgba(255,255,255,.58);border:1px solid var(--line-ivory);border-radius:16px;padding:20px 18px;}
+  .cv-q__n{font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-paper);margin-bottom:7px;}
+  .cv-q__t{font-family:var(--serif);font-size:15px;font-weight:500;color:var(--on-paper);line-height:1.62;}
+  .cv-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:14px;}
+  .cv-opt{appearance:none;border:1px solid rgba(122,86,64,.18);background:rgba(255,255,255,.72);border-radius:9px;padding:10px 7px;font-family:var(--sans);font-size:11.5px;color:var(--soft-paper);cursor:pointer;transition:.2s;line-height:1.35;}
+  .cv-opt:hover{border-color:var(--gold-paper);}
+  .cv-opt.on{border-color:var(--gold-paper);background:var(--gold-bg-paper);color:#5B4726;font-weight:700;box-shadow:inset 0 0 0 1px rgba(138,110,62,.08);}
+  @media(max-width:520px){.cv-opts{grid-template-columns:1fr;}.cv-opt{text-align:left;padding:11px 12px;}}
+  .cv-result{margin-top:28px;background:var(--on-paper);border-radius:17px;padding:25px 22px;color:var(--cream);opacity:0;max-height:0;overflow:hidden;transform:translateY(10px);transition:opacity .5s var(--ease),max-height .7s var(--ease),transform .5s var(--ease);}
+  .cv-result.show{opacity:1;max-height:520px;transform:none;}
+  .cv-result__eyebrow{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);}
+  .cv-result__title{font-family:var(--serif);font-size:20px;font-weight:500;line-height:1.55;margin-top:8px;color:var(--cream);}
+  .cv-result__text{font-size:13.5px;color:var(--cream-dim);line-height:1.75;margin-top:10px;}
+  .cv-issues{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px;}
+  .cv-issue{font-size:11.5px;color:var(--gold-soft);border:1px solid rgba(226,206,156,.22);border-radius:999px;padding:6px 10px;}
+  .cv-proof{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.65;}
+  .cv-next{display:inline-block;margin-top:18px;color:var(--gold-soft);text-decoration:none;font-size:12.5px;border-bottom:1px solid rgba(226,206,156,.24);padding-bottom:2px;}
+
   .creed{text-align:center;}
   .creed .signal{display:block;margin-bottom:24px;}
   .creed h2{max-width:15em;margin:0 auto;}
@@ -187,13 +197,11 @@
   .essaylink{margin-top:34px;display:inline-flex;gap:8px;align-items:center;font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-soft);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.25s;}
   .essaylink:hover{color:var(--gold);border-color:var(--gold);}
 
-  /* Surface */
   .geo-note{margin-top:22px;background:linear-gradient(160deg,#1f1910,#161109);border:1px solid var(--line);border-left:2px solid var(--gold-deep);border-radius:13px;padding:18px 20px;font-size:13.5px;color:var(--cream-dim);line-height:1.75;max-width:30em;}
   .geo-note b{color:var(--gold-soft);font-weight:600;}
   .surface-key{margin-top:26px;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.9;max-width:30em;}
   .surface-key b{color:var(--cream);font-weight:500;}
 
-  /* Eyes — 두 시선 */
   .eyes{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
   @media(max-width:640px){.eyes{grid-template-columns:1fr;}}
   .eye{background:var(--ink-3);border:1px solid var(--line);border-radius:16px;padding:24px 22px;}
@@ -204,7 +212,6 @@
   .eye li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--gold-deep);}
   .eyes-foot{margin-top:30px;text-align:center;font-family:var(--serif);font-weight:400;font-size:clamp(16px,2.8vw,20px);color:var(--gold-soft);line-height:1.55;}
 
-  /* Fields — 업종 (생성 썸네일) */
   .fields{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
   @media(max-width:560px){.fields{grid-template-columns:1fr;}}
   .field{position:relative;display:block;text-decoration:none;min-height:200px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#241B12,#15110B);transition:transform .35s var(--ease),border-color .35s;}
@@ -218,18 +225,6 @@
   .field__d{font-size:11.5px;color:rgba(239,232,217,.82);margin-top:4px;line-height:1.5;}
   .fields-foot{margin-top:30px;text-align:center;font-size:14.5px;color:var(--cream-dim);line-height:1.75;max-width:27em;margin-left:auto;margin-right:auto;}
 
-  /* 웹툰 */
-  .wt-teaser{margin:40px auto 0;max-width:420px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-  .wt-t{position:relative;aspect-ratio:9/16;background:linear-gradient(160deg,#231a11,#0F0C08);border-radius:13px;overflow:hidden;border:1px solid var(--line);}
-  .wt-cut__ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--eng);font-style:italic;color:rgba(212,176,106,.34);font-size:12px;letter-spacing:.12em;}
-  .wt-t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
-  .wt-t figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:26px 11px 11px;font-size:11px;color:rgba(239,232,217,.92);line-height:1.4;background:linear-gradient(transparent,rgba(16,13,9,.88));}
-  .wt-punch{margin-top:34px;text-align:center;font-family:var(--serif);font-weight:400;font-size:clamp(17px,3vw,21px);color:var(--cream);line-height:1.5;}
-  .wt-punch b{color:var(--gold-soft);}
-  .wt-more{margin-top:22px;text-align:center;}
-  .wt-more a{font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-soft);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
-
-  /* 1장 진단서 — 페이퍼 카드 */
   .dxsheet{margin-top:40px;background:var(--paper-2);color:var(--on-paper);border-radius:18px;padding:30px 28px;box-shadow:0 40px 90px rgba(0,0,0,.4);max-width:540px;position:relative;}
   .dxsheet::before{content:"";position:absolute;top:0;left:28px;right:28px;height:2px;background:linear-gradient(90deg,var(--gold-paper),transparent);}
   .dxsheet__ttl{font-family:var(--serif);font-weight:600;font-size:17px;color:var(--on-paper);}
@@ -245,7 +240,6 @@
   .dxrow .ord{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-paper);min-width:46px;}
   .dxsheet__foot{margin-top:22px;font-size:12.5px;color:var(--mute-paper);line-height:1.7;font-style:italic;}
 
-  /* 자가진단 */
   .selfcheck{margin-top:40px;background:var(--ink-3);border:1px solid var(--line);border-radius:18px;padding:28px 26px;max-width:540px;}
   .sc-q{display:flex;align-items:center;gap:13px;padding:12px 0;border-bottom:1px solid var(--line-soft);cursor:pointer;user-select:none;}
   .sc-q:last-of-type{border-bottom:none;}
@@ -257,7 +251,6 @@
   .sc-score{font-family:var(--serif);font-weight:500;font-size:clamp(20px,4vw,26px);color:var(--gold-soft);}
   .sc-msg{margin-top:8px;font-size:13.5px;color:var(--cream-dim);line-height:1.7;min-height:2.6em;}
 
-  /* FAQ */
   .qa{border-bottom:1px solid var(--line-soft);}
   .qa__q{width:100%;background:none;border:none;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;
     padding:20px 2px;font-family:var(--sans);font-size:15px;font-weight:500;color:var(--cream);}
@@ -267,7 +260,6 @@
   .qa.open .qa__a{max-height:260px;}
   .qa__a p{padding:0 2px 22px;font-size:13.5px;color:var(--cream-dim);font-weight:300;line-height:1.8;}
 
-  /* CTA (야경 배경) */
   .cta{position:relative;padding:128px 0 134px;background-color:var(--void);
     background-image:linear-gradient(180deg,var(--void) 0%,rgba(16,13,9,.56) 26%,rgba(16,13,9,.64) 72%,var(--void) 100%),url("img/weplace-diagnosis-bg.jpg");
     background-size:cover;background-position:center;}
@@ -278,7 +270,6 @@
   .cta__micro{margin-top:16px;font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);}
   @media(max-width:520px){.cta__btns{flex-direction:column;}}
 
-  /* Contact + footer */
   .contact{padding:104px 0;background:var(--ink-2);}
   .cm-grid{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
   @media(max-width:560px){.cm-grid{grid-template-columns:1fr;}}
@@ -302,6 +293,7 @@
 <nav class="dotnav" aria-label="섹션 이동">
   <a href="#top" data-sec="top"><span>home</span></a>
   <a href="#screens" data-sec="screens"><span>고객 판단</span></a>
+  <a href="#customer-view" data-sec="customer-view"><span>손님 눈으로 보기</span></a>
   <a href="#ai-surface" data-sec="ai-surface"><span>AI 첫 표면</span></a>
   <a href="#surface" data-sec="surface"><span>첫 표면 정리</span></a>
   <a href="#eyes" data-sec="eyes"><span>두 시선</span></a>
@@ -311,7 +303,6 @@
   <a href="#cta" data-sec="cta"><span>문의</span></a>
 </nav>
 
-<!-- Hero -->
 <header class="hero" id="top">
   <div class="wrap">
     <span class="kicker r">Weplace · 매장 검색 표면 정리</span>
@@ -320,13 +311,12 @@
     <p class="hero__sub r d2">네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를, 하나의 매장처럼 읽히게 정리합니다.</p>
     <div class="hero__cta r d3">
       <a href="#cta" class="btn btn-gold">매장명으로 1장 진단 받기</a>
-      <a href="#diagnosis-preview" class="btn btn-ghost">어떻게 보이는지 보기</a>
+      <a href="#customer-view" class="btn btn-ghost">손님 눈으로 한번 보기</a>
     </div>
     <div class="scrollcue r d4"><span class="ln"></span>SCROLL</div>
   </div>
 </header>
 
-<!-- 고객 판단 에너지 -->
 <section class="sec" id="screens">
   <div class="wrap">
     <div class="kicker r">01 · 고객 판단 에너지</div>
@@ -339,7 +329,7 @@
       <div class="scr"><span class="scr__n">iv</span><div><div class="scr__t">리뷰</div><div class="scr__d">고객이 다른 고객의 말로 안심하는 자리입니다.</div></div></div>
       <div class="scr"><span class="scr__n">v</span><div><div class="scr__t">AI 검색</div><div class="scr__d">정리된 정보를 바탕으로 매장을 설명합니다.</div></div></div>
     </div>
-    <!-- 흐림 → 또렷 -->
+
     <div class="ba r d2">
       <div class="ba-col ba-col--b">
         <div class="ba-lab">정리 전</div>
@@ -379,18 +369,75 @@
   </div>
 </section>
 
-<!-- AI 시대의 첫 표면 정리 -->
+<section class="sec customer-view" id="customer-view">
+  <div class="wrap">
+    <div class="kicker on-paper r">TRY · 손님 눈으로 보기</div>
+    <h2 class="r d1">대표님은 매장을 알고 있습니다.<br>처음 보는 손님은<br>화면 몇 장만 봅니다.</h2>
+    <p class="lead cv-lead r d2">아래 네 가지를 손님 입장에서 한번 골라보세요. 맞고 틀림을 가르는 점수가 아니라, <b>한 번 더 확인해야 하는 자리</b>를 찾는 과정입니다.</p>
+    <p class="cv-note r d2">지금 답이 바로 떠오르지 않는 질문도 하나의 신호입니다.</p>
+
+    <div class="cv-quiz r d2" id="customerViewQuiz">
+      <div class="cv-q" data-cv-q="first" data-issue="첫인상">
+        <div class="cv-q__n">01 · FIRST LOOK</div>
+        <div class="cv-q__t">처음 보는 사람이 대표사진과 첫 문장만 보고, 무엇을 하는 매장인지 알 수 있나요?</div>
+        <div class="cv-opts">
+          <button class="cv-opt" type="button" data-cv-option data-friction="0">바로 알 수 있다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">한 번 더 봐야 한다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">잘 모르겠다</button>
+        </div>
+      </div>
+
+      <div class="cv-q" data-cv-q="price" data-issue="메뉴·가격">
+        <div class="cv-q__n">02 · CHOICE</div>
+        <div class="cv-q__t">대표 메뉴·서비스와 대략의 가격을, 다른 리뷰를 찾아보지 않고 확인할 수 있나요?</div>
+        <div class="cv-opts">
+          <button class="cv-opt" type="button" data-cv-option data-friction="0">한 화면에서 보인다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">조금 찾아야 한다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">잘 모르겠다</button>
+        </div>
+      </div>
+
+      <div class="cv-q" data-cv-q="visit" data-issue="방문·예약">
+        <div class="cv-q__n">03 · ARRIVAL</div>
+        <div class="cv-q__t">위치·주차·예약 방법처럼 방문 직전 필요한 답을 한 화면 안에서 찾을 수 있나요?</div>
+        <div class="cv-opts">
+          <button class="cv-opt" type="button" data-cv-option data-friction="0">바로 찾을 수 있다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">화면을 오가야 한다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">잘 모르겠다</button>
+        </div>
+      </div>
+
+      <div class="cv-q" data-cv-q="match" data-issue="정보 일치">
+        <div class="cv-q__n">04 · MATCH</div>
+        <div class="cv-q__t">네이버·Google·홈페이지의 영업시간·주소·대표 정보가 서로 같은지 확인해본 적이 있나요?</div>
+        <div class="cv-opts">
+          <button class="cv-opt" type="button" data-cv-option data-friction="0">확인했고 거의 같다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">군데군데 다르다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">확인해본 적 없다</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-result" id="customerViewResult" aria-live="polite">
+      <div class="cv-result__eyebrow">YOUR OWN SIGNAL</div>
+      <div class="cv-result__title" id="customerViewTitle"></div>
+      <div class="cv-result__text" id="customerViewText"></div>
+      <div class="cv-issues" id="customerViewIssues"></div>
+      <div class="cv-proof">이 결과는 Weplace가 임의로 매긴 점수가 아닙니다. 방금 대표님이 직접 고른 답에서 나온 신호입니다.</div>
+      <a class="cv-next" href="#ai-surface">이 다음 화면이 왜 중요한지 보기 &#8595;</a>
+    </div>
+  </div>
+</section>
+
 <section class="sec sec--void" id="ai-surface">
   <div class="wrap creed">
     <span class="signal r">사람도, AI도, 흐린 매장은 쉽게 설명하지 못합니다.</span>
     <h2 class="r d1">손님은 이제<br><span class="g">AI에게도 묻습니다.</span></h2>
     <p class="creed__body r d2">정보가 흩어져 있으면 사람도 헷갈리고, AI도 정확히 설명하지 못합니다. <b>Weplace는 AI에게만 잘 보이기 위한 작업을 하지 않습니다.</b> 사람과 AI가 동시에 이해할 수 있도록, 매장의 첫 표면을 정리합니다.</p>
-    <!-- 철학 에세이 페이지(/essay.html)는 추후 생성 -->
     <a href="/essay.html" class="essaylink r d3">왜 광고보다 '첫 표면'을 먼저 볼까요? — 철학 에세이 읽기 &#8594;</a>
   </div>
 </section>
 
-<!-- Surface -->
 <section class="sec sec--ink2" id="surface">
   <div class="wrap">
     <div class="kicker r">02 · 첫 표면 정리</div>
@@ -400,7 +447,6 @@
   </div>
 </section>
 
-<!-- Eyes -->
 <section class="sec" id="eyes">
   <div class="wrap">
     <div class="kicker r">03 · 두 개의 시선</div>
@@ -409,25 +455,18 @@
       <div class="eye">
         <div class="eye__h">사람이 보는 것</div>
         <div class="eye__sub">the human screen</div>
-        <ul>
-          <li>대표사진</li><li>첫 문장</li><li>가격 기준</li>
-          <li>리뷰 답변</li><li>예약 전 FAQ</li><li>위치와 주차 안내</li>
-        </ul>
+        <ul><li>대표사진</li><li>첫 문장</li><li>가격 기준</li><li>리뷰 답변</li><li>예약 전 FAQ</li><li>위치와 주차 안내</li></ul>
       </div>
       <div class="eye">
         <div class="eye__h">AI가 읽는 것</div>
         <div class="eye__sub">the machine structure</div>
-        <ul>
-          <li>사업자 정보</li><li>카테고리</li><li>홈페이지 문장</li>
-          <li>리뷰의 반복 키워드</li><li>FAQ 구조</li><li>네이버·구글·홈페이지의 일관성</li>
-        </ul>
+        <ul><li>사업자 정보</li><li>카테고리</li><li>홈페이지 문장</li><li>리뷰의 반복 키워드</li><li>FAQ 구조</li><li>네이버·구글·홈페이지의 일관성</li></ul>
       </div>
     </div>
     <p class="eyes-foot r">사람도 덜 헤매고,<br>AI도 덜 오해하게.</p>
   </div>
 </section>
 
-<!-- 1장 진단서 -->
 <section class="sec" id="diagnosis-preview">
   <div class="wrap">
     <div class="kicker r">05 · 1장 진단서</div>
@@ -462,7 +501,6 @@
   </div>
 </section>
 
-<!-- 자가진단 -->
 <section class="sec sec--ink2" id="self-check">
   <div class="wrap">
     <div class="kicker r">06 · 자가진단</div>
@@ -483,7 +521,6 @@
   </div>
 </section>
 
-<!-- Fields -->
 <section class="sec sec--ink2" id="fields">
   <div class="wrap">
     <div class="kicker r">04 · 업종별 적용</div>
@@ -499,22 +536,6 @@
   </div>
 </section>
 
-<!-- 웹툰 -->
-<section class="sec sec--void" id="webtoon">
-  <div class="wrap">
-    <div class="kicker r">대표님 시선 vs 손님 시선</div>
-    <h2 class="r d1">대표님이 보는 매장과,<br>손님이 보는 화면은 다릅니다.</h2>
-    <p class="lead sec-lead r d2">손님이 매장에 닿기 전, 화면에서 일어나는 일을 짧게 그렸습니다.</p>
-    <div class="wt-teaser r d2">
-      <figure class="wt-t"><div class="wt-cut__ph" aria-hidden="true">CUT 01</div><img src="webtoon/episode-01/cut-01.jpg" alt="대표님은 광고를 봅니다" loading="lazy" width="1080" height="1920" onerror="this.style.display='none'"><figcaption>대표님은 광고를 봅니다</figcaption></figure>
-      <figure class="wt-t"><div class="wt-cut__ph" aria-hidden="true">CUT 02</div><img src="webtoon/episode-01/cut-02.jpg" alt="손님은 검색 화면을 봅니다" loading="lazy" width="1080" height="1920" onerror="this.style.display='none'"><figcaption>손님은 검색 화면을 봅니다</figcaption></figure>
-    </div>
-    <p class="wt-punch r">고객은 더 싼 곳보다,<br><b>덜 불안한 곳</b>을 먼저 누릅니다.</p>
-    <div class="wt-more r"><a href="/webtoon/">웹툰 전체 보기 &#8594;</a></div>
-  </div>
-</section>
-
-<!-- FAQ -->
 <section class="sec" id="faq">
   <div class="wrap">
     <div class="kicker r">자주 묻는 질문</div>
@@ -527,7 +548,6 @@
   </div>
 </section>
 
-<!-- CTA (야경 배경) -->
 <section class="cta" id="cta">
   <div class="wrap">
     <div class="kicker r">1장 진단</div>
@@ -535,7 +555,6 @@
     <p class="cta__sub r d2">진단이 먼저, 작업은 그 다음입니다.</p>
     <p class="cta__defense r d2">작업을 바로 맡기지 않아도 됩니다. 먼저 어디서 고객이 멈추는지부터 보겠습니다.</p>
     <div class="cta__btns r d3">
-      <!-- 카카오 채널 URL: 변경 시 아래 href 교체 -->
       <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" class="btn btn-gold">카카오톡으로 매장명 보내기</a>
       <a href="tel:+821064616594" class="btn btn-ghost">전화 010-6461-6594</a>
     </div>
@@ -543,7 +562,6 @@
   </div>
 </section>
 
-<!-- Contact -->
 <section class="contact" id="contact">
   <div class="wrap">
     <div class="kicker r">Contact · 문의</div>
@@ -567,7 +585,7 @@
 (function(){
   'use strict';
   var nav=document.getElementById('nav');
-  /* 등장 + 점네비 */
+
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
     document.querySelectorAll('.r').forEach(function(el){io.observe(el);});
@@ -578,15 +596,77 @@
     });},{rootMargin:'-45% 0px -45% 0px'});
     Object.keys(byId).forEach(function(id){var s=document.getElementById(id); if(s) dio.observe(s);});
   }else{document.querySelectorAll('.r').forEach(function(el){el.classList.add('in');});}
-  /* nav: 상단(투명·다크글자) ↔ 스크롤(블러) */
+
   function onScroll(){var s=window.scrollY>80;nav.classList.toggle('show',s);nav.classList.toggle('top',!s);}
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
-  /* FAQ */
+
   document.querySelectorAll('[data-qa]').forEach(function(q){
     var b=q.querySelector('.qa__q');
     b.addEventListener('click',function(){var o=q.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
   });
-  /* 자가진단 */
+
+  /* 손님 눈으로 보기 */
+  var cv=document.getElementById('customer-view');
+  if(cv){
+    var answers={}, total=4, result=document.getElementById('customerViewResult');
+    var title=document.getElementById('customerViewTitle');
+    var text=document.getElementById('customerViewText');
+    var issuesEl=document.getElementById('customerViewIssues');
+
+    function renderCustomerView(){
+      if(Object.keys(answers).length<total)return;
+      var issues=[];
+      Object.keys(answers).forEach(function(k){if(answers[k].friction)issues.push(answers[k].issue);});
+      var n=issues.length;
+
+      if(n===0){
+        title.textContent='이미 꽤 또렷합니다.';
+        text.textContent='좋은 점이 첫 화면에서 늦지 않게 발견되는 상태입니다. 이제 그 기준이 다른 화면에서도 유지되는지만 확인하면 됩니다.';
+      }else if(n<=2){
+        title.textContent='좋은 점은 이미 있습니다. 한 번 더 확인해야 하는 자리가 '+n+'곳 보입니다.';
+        text.textContent='문제가 많다는 뜻이 아닙니다. 손님이 결정을 내리기 전에 조금 더 찾아야 하는 답이 있다는 뜻에 가깝습니다.';
+      }else{
+        title.textContent='매장이 부족한 게 아니라, 좋은 점이 화면에서 늦게 발견되는 상태에 가깝습니다.';
+        text.textContent='지금 있는 장점을 바꾸기보다, 처음 보는 사람이 더 빨리 이해할 수 있도록 순서와 정보를 맞추는 것부터 볼 수 있습니다.';
+      }
+
+      issuesEl.innerHTML='';
+      if(issues.length){
+        issues.forEach(function(issue){
+          var s=document.createElement('span');
+          s.className='cv-issue';
+          s.textContent=issue;
+          issuesEl.appendChild(s);
+        });
+      }else{
+        var s=document.createElement('span');
+        s.className='cv-issue';
+        s.textContent='현재 답변 기준 · 큰 걸림 없음';
+        issuesEl.appendChild(s);
+      }
+
+      result.classList.add('show');
+      if(!cv.dataset.tracked && typeof window.gtag==='function'){
+        window.gtag('event','customer_view_complete',{friction_count:n,friction_areas:issues.join('|')});
+        cv.dataset.tracked='1';
+      }
+    }
+
+    cv.querySelectorAll('[data-cv-option]').forEach(function(b){
+      b.setAttribute('aria-pressed','false');
+      b.addEventListener('click',function(){
+        var q=b.closest('[data-cv-q]');
+        q.querySelectorAll('[data-cv-option]').forEach(function(o){o.classList.remove('on');o.setAttribute('aria-pressed','false');});
+        b.classList.add('on'); b.setAttribute('aria-pressed','true');
+        answers[q.getAttribute('data-cv-q')]={
+          friction:b.getAttribute('data-friction')==='1',
+          issue:q.getAttribute('data-issue')
+        };
+        renderCustomerView();
+      });
+    });
+  }
+
   var checks=document.querySelectorAll('#selfcheck [data-check]');
   var msgs=['항목을 눌러 우리 매장의 첫 표면을 가늠해 보세요.',
     '아직 손님이 헤매기 쉬운 화면입니다. 어디서 멈추는지부터 함께 보면 됩니다.',
