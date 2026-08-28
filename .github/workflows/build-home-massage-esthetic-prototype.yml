@@ -22,6 +22,7 @@ jobs:
         run: |
           if [ -f /tmp/skip ]; then exit 0; fi
           python scripts/build_home_massage_esthetic_prototype.py
+          python scripts/postprocess_home_massage_esthetic_prototype.py
       - name: Commit prototype
         run: |
           if [ -f /tmp/skip ]; then exit 0; fi
