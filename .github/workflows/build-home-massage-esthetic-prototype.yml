@@ -25,7 +25,7 @@ jobs:
       - name: Commit prototype
         run: |
           if [ -f /tmp/skip ]; then exit 0; fi
-          if git diff --quiet -- prototype/home-massage-esthetic/index.html; then
+          if [ -z "$(git status --porcelain -- prototype/home-massage-esthetic/index.html)" ]; then
             echo "No prototype changes"
             exit 0
           fi
