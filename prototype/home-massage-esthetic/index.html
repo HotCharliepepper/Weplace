@@ -110,7 +110,7 @@
   .btn-ghost.on-paper:hover{border-color:var(--gold-paper);color:var(--gold-paper);}
 
   .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 84px;background-color:var(--void);
-    background-image:linear-gradient(96deg,rgba(16,13,9,.90) 0%,rgba(16,13,9,.60) 44%,rgba(16,13,9,.16) 74%,transparent 100%),linear-gradient(180deg,transparent 50%,rgba(16,13,9,.55) 82%,var(--void) 100%),url("img/weplace-hero-surface.jpg");
+    background-image:linear-gradient(96deg,rgba(16,13,9,.90) 0%,rgba(16,13,9,.60) 44%,rgba(16,13,9,.16) 74%,transparent 100%),linear-gradient(180deg,transparent 50%,rgba(16,13,9,.55) 82%,var(--void) 100%),url("/img/weplace-hero-surface.jpg");
     background-size:cover;background-position:center;}
   .hero .kicker{margin-bottom:24px;}
   .hero__sig{display:block;margin-bottom:18px;color:var(--gold-soft);font-style:italic;font-family:var(--eng);font-size:16px;}
@@ -120,7 +120,7 @@
   .hero__cta{margin-top:40px;display:flex;gap:13px;flex-wrap:wrap;}
   .scrollcue{margin-top:58px;font-size:10.5px;letter-spacing:.3em;color:var(--muted);text-transform:uppercase;display:flex;align-items:center;gap:10px;}
   .scrollcue .ln{width:1px;height:34px;background:linear-gradient(var(--gold-deep),transparent);}
-  @media(max-width:900px){.hero{background-image:linear-gradient(180deg,rgba(16,13,9,.58) 0%,rgba(16,13,9,.40) 38%,rgba(16,13,9,.82) 100%),url("img/weplace-hero-surface.jpg");background-position:center;}}
+  @media(max-width:900px){.hero{background-image:linear-gradient(180deg,rgba(16,13,9,.58) 0%,rgba(16,13,9,.40) 38%,rgba(16,13,9,.82) 100%),url("/img/weplace-hero-surface.jpg");background-position:center;}}
   @media(max-width:520px){.hero__cta{flex-direction:column;}.btn{text-align:center;}}
 
   .sec{padding:116px 0;}
@@ -263,7 +263,7 @@
   .qa__a p{padding:0 2px 22px;font-size:13.5px;color:var(--cream-dim);font-weight:300;line-height:1.8;}
 
   .cta{position:relative;padding:128px 0 134px;background-color:var(--void);
-    background-image:linear-gradient(180deg,var(--void) 0%,rgba(16,13,9,.56) 26%,rgba(16,13,9,.64) 72%,var(--void) 100%),url("img/weplace-diagnosis-bg.jpg");
+    background-image:linear-gradient(180deg,var(--void) 0%,rgba(16,13,9,.56) 26%,rgba(16,13,9,.64) 72%,var(--void) 100%),url("/img/weplace-diagnosis-bg.jpg");
     background-size:cover;background-position:center;}
   .cta h2{max-width:13em;}
   .cta__sub{margin-top:18px;font-size:15px;color:var(--cream-dim);font-weight:300;line-height:1.85;max-width:24em;}
@@ -296,6 +296,7 @@
   <a href="#top" data-sec="top"><span>home</span></a>
   <a href="#screens" data-sec="screens"><span>고객 판단</span></a>
   <a href="#customer-view" data-sec="customer-view"><span>손님 눈으로 보기</span></a>
+  <a href="#massage-esthetic-focus" data-sec="massage-esthetic-focus"><span>마사지·에스테틱</span></a>
   <a href="#ai-surface" data-sec="ai-surface"><span>AI 첫 표면</span></a>
   <a href="#surface" data-sec="surface"><span>첫 표면 정리</span></a>
   <a href="#eyes" data-sec="eyes"><span>두 시선</span></a>
@@ -350,7 +351,7 @@
         <div class="ba-lab">정리 후</div>
         <div class="stage">
           <div class="np np--clear">
-            <div class="np__cover"><img src="img/np-cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="np__heart">&#9825;</span></div>
+            <div class="np__cover"><img src="/img/np-cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="np__heart">&#9825;</span></div>
             <div class="np__body">
               <div class="np__name">○○ 레스토랑</div>
               <div class="np__cat">이탈리안 · 파스타 · 스테이크</div>
@@ -528,11 +529,11 @@
     <div class="kicker r">04 · 업종별 적용</div>
     <h2 class="r d1">업종마다, 손님이<br>먼저 보는 것이 다릅니다.</h2>
     <div class="fields r d2">
-      <a class="field" href="industries/dining.html"><img src="img/ind-dining.jpg" alt="식당·카페" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">식당 · 카페</div><div class="field__d">맛보다 먼저, 오늘 목적에 맞는 곳인지를 봅니다.</div></div></a>
-      <a class="field" href="/prototype/massage-esthetic/"><img src="img/ind-spa.jpg" alt="에스테틱·페이셜케어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">에스테틱 · 페이셜</div><div class="field__d">관리를 고르기 전에, 이해하고 예약할 수 있는지부터 봅니다.</div></div></a>
-      <a class="field" href="industries/stay.html"><img src="img/ind-stay.jpg" alt="펜션·숙소" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">펜션 · 숙소</div><div class="field__d">예약 전, 도착 동선과 분위기부터 상상합니다.</div></div></a>
-      <a class="field" href="industries/beauty.html"><img src="img/ind-beauty.jpg" alt="미용·헤어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">미용 · 헤어</div><div class="field__d">결과보다 먼저, 실패 불안을 덜고 싶어 합니다.</div></div></a>
-      <a class="field" href="industries/clinic.html"><img src="img/ind-clinic.jpg" alt="병의원·피부과" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">병의원 · 피부과</div><div class="field__d">실력만큼, 설명의 안정감을 봅니다.</div></div></a>
+      <a class="field" href="/industries/dining.html"><img src="/img/ind-dining.jpg" alt="식당·카페" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">식당 · 카페</div><div class="field__d">맛보다 먼저, 오늘 목적에 맞는 곳인지를 봅니다.</div></div></a>
+      <a class="field" href="/prototype/massage-esthetic/"><img src="/img/ind-spa.jpg" alt="에스테틱·페이셜케어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">에스테틱 · 페이셜</div><div class="field__d">관리를 고르기 전에, 이해하고 예약할 수 있는지부터 봅니다.</div></div></a>
+      <a class="field" href="/industries/stay.html"><img src="/img/ind-stay.jpg" alt="펜션·숙소" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">펜션 · 숙소</div><div class="field__d">예약 전, 도착 동선과 분위기부터 상상합니다.</div></div></a>
+      <a class="field" href="/industries/beauty.html"><img src="/img/ind-beauty.jpg" alt="미용·헤어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">미용 · 헤어</div><div class="field__d">결과보다 먼저, 실패 불안을 덜고 싶어 합니다.</div></div></a>
+      <a class="field" href="/industries/clinic.html"><img src="/img/ind-clinic.jpg" alt="병의원·피부과" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">병의원 · 피부과</div><div class="field__d">실력만큼, 설명의 안정감을 봅니다.</div></div></a>
     </div>
     <p class="fields-foot r">고급 매장만 보는 것이 아닙니다. 손님이 선택 전 확인하는 화면이 있다면, 모든 매장이 대상입니다.</p>
   </div>
