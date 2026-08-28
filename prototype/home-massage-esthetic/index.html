@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H9B5F4HRDS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H9B5F4HRDS');
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Weplace · Massage & Esthetic Focus Prototype</title>
+<meta name="description" content="네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 하나의 매장처럼 읽히게 정리합니다. 사람도 AI도 흐린 매장은 쉽게 설명하지 못합니다. 매장명과 지역만 보내주시면 1장 진단서로 먼저 보여드립니다." />
+<link rel="canonical" href="https://withweplace.kr/prototype/home-massage-esthetic/" />
+<meta name="robots" content="noindex,nofollow" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="손님이 보는 첫 화면을, 하나의 기준으로 정리합니다 | Weplace" />
+<meta property="og:description" content="네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 하나의 매장처럼 읽히게 정리합니다. 매장명 한 줄이면 시작합니다." />
+<meta property="og:url" content="https://withweplace.kr/prototype/home-massage-esthetic/" />
+<meta property="og:image" content="https://withweplace.kr/img/weplace-hero-surface.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="손님이 보는 첫 화면을, 하나의 기준으로" />
+<meta name="twitter:description" content="사람과 AI가 동시에 이해할 수 있도록 매장의 첫 표면을 정리합니다." />
+
+<link rel="preload" as="image" href="img/weplace-hero-surface.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Noto+Serif+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"위플레이스마케팅","alternateName":"Weplace","url":"https://withweplace.kr/","email":"weplace25@gmail.com","description":"네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 하나의 매장처럼 읽히게 정리하는 팀","address":{"@type":"PostalAddress","streetAddress":"선유로9길 10, 812호","addressLocality":"영등포구","addressRegion":"서울","addressCountry":"KR"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Weplace","url":"https://withweplace.kr/"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"매장 검색 표면 정리","provider":{"@type":"Organization","name":"위플레이스마케팅"},"areaServed":"KR","description":"네이버·구글·홈페이지·리뷰·AI 검색의 매장 정보를 사람과 AI가 동시에 이해할 수 있도록 한 기준으로 정리합니다."}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"AI 검색에 잘 보이게 해주는 건가요?","acceptedAnswer":{"@type":"Answer","text":"AI에게만 잘 보이기 위한 작업은 하지 않습니다. 사람과 AI가 동시에 이해할 수 있도록, 네이버·구글·홈페이지·리뷰에 흩어진 정보를 같은 매장처럼 정리합니다."}},
+    {"@type":"Question","name":"상위에 올려주시나요?","acceptedAnswer":{"@type":"Answer","text":"특정 노출을 약속하지 않습니다. 먼저 손님이 보는 첫 화면을 한 기준으로 정리합니다. 그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다."}},
+    {"@type":"Question","name":"정리가 하나도 안 돼 있어도 되나요?","acceptedAnswer":{"@type":"Answer","text":"괜찮습니다. 정리 안 된 상태가 출발점입니다. 매장명과 지역만 주시면 손님이 어디서 멈추는지부터 봅니다."}},
+    {"@type":"Question","name":"어떤 매장에 잘 맞나요?","acceptedAnswer":{"@type":"Answer","text":"검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다."}}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#14110B; --ink-2:#1A1610; --ink-3:#211B12; --void:#100D09;
+    --cream:#EFE8D9; --cream-dim:#BEB39D; --muted:#8E8470; --muted-2:#6E6555;
+    --paper:#F4EFE6; --paper-2:#FBF8F1; --on-paper:#241B12; --soft-paper:#574E42; --mute-paper:#8B8174;
+    --gold:#CDAE68; --gold-deep:#A6813B; --gold-soft:#E2CE9C; --gold-paper:#8A6E3E; --gold-bg-paper:#EFE3C6;
+    --line:rgba(226,206,156,.16); --line-soft:rgba(226,206,156,.08);
+    --line-ivory:rgba(122,86,64,.18);
+    --ok:#86A66E; --warn:#CBA64E; --empty:#BE7B57;
+    --serif:'Noto Serif KR',serif; --eng:'Cormorant Garamond',serif;
+    --sans:'Pretendard Variable','Pretendard',-apple-system,'Apple SD Gothic Neo',system-ui,sans-serif;
+    --maxw:640px; --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{font-family:var(--sans);background:var(--ink);color:var(--cream);line-height:1.75;letter-spacing:-.01em;
+    word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(1100px 700px at 84% 4%,rgba(176,138,66,.12),transparent 60%),radial-gradient(900px 700px at -5% 60%,rgba(58,44,30,.18),transparent 60%),radial-gradient(1000px 800px at 100% 100%,rgba(176,138,66,.07),transparent 60%);}
+  body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  .wrap{position:relative;z-index:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 26px;}
+  section{position:relative;z-index:1;}
+  img{max-width:100%;display:block;}
+
+  .kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:26px;}
+  .kicker::before{content:"";width:24px;height:1px;background:var(--gold-deep);opacity:.7;}
+  .kicker.on-paper{color:var(--gold-paper);}.kicker.on-paper::before{background:var(--gold-paper);}
+  h1,h2{font-family:var(--serif);letter-spacing:-.022em;line-height:1.34;}
+  h1{font-weight:500;font-size:clamp(31px,5.2vw,48px);}
+  h2{font-weight:500;font-size:clamp(24px,4vw,34px);color:var(--cream);}
+  h2 .g,h1 .g{color:var(--gold-soft);} h2 em,h1 em{font-style:normal;}
+  .lead{font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.88;}
+  .signal{font-family:var(--eng);font-style:italic;font-size:16px;color:var(--gold-soft);}
+  .r{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease);}
+  .r.in{opacity:1;transform:none;}
+  .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.42s}
+
+  .nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;padding:22px 30px;transition:.4s;}
+  .nav.show{background:rgba(20,17,11,.72);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-soft);padding:14px 30px;}
+  .nav__b{font-family:var(--serif);font-weight:500;font-size:18px;color:var(--cream);text-decoration:none;}
+  .nav__b b{color:var(--gold-soft);font-weight:600;}
+  .nav__cta{margin-left:auto;font-size:12.5px;font-weight:600;color:var(--cream);border:1px solid var(--line);border-radius:999px;padding:9px 17px;text-decoration:none;transition:.25s;}
+  .nav__cta:hover{border-color:var(--gold);color:var(--gold-soft);}
+
+  .dotnav{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:55;display:flex;flex-direction:column;gap:14px;}
+  .dotnav a{width:8px;height:8px;border-radius:50%;background:rgba(226,206,156,.28);transition:.3s;position:relative;}
+  .dotnav a.active{background:var(--gold);transform:scale(1.35);box-shadow:0 0 10px var(--gold);}
+  .dotnav a span{position:absolute;right:18px;top:50%;transform:translateY(-50%);white-space:nowrap;font-size:10.5px;letter-spacing:.05em;color:var(--cream-dim);opacity:0;pointer-events:none;transition:.3s;}
+  .dotnav a:hover span{opacity:1;}
+  @media(max-width:1080px){.dotnav{display:none;}}
+
+  .btn{font-size:14.5px;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:12px;display:inline-block;transition:transform .2s,box-shadow .25s,border-color .25s,color .25s,background .25s;}
+  .btn-gold{background:linear-gradient(90deg,var(--gold-deep),var(--gold));color:#16110a;box-shadow:0 14px 40px rgba(166,129,59,.3);}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 20px 52px rgba(166,129,59,.42);}
+  .btn-ghost{background:transparent;border:1px solid var(--line);color:var(--cream);font-weight:600;}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft);transform:translateY(-2px);}
+  .btn-ghost.on-paper{border-color:var(--line-ivory);color:var(--on-paper);}
+  .btn-ghost.on-paper:hover{border-color:var(--gold-paper);color:var(--gold-paper);}
+
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 84px;background-color:var(--void);
+    background-image:linear-gradient(96deg,rgba(16,13,9,.90) 0%,rgba(16,13,9,.60) 44%,rgba(16,13,9,.16) 74%,transparent 100%),linear-gradient(180deg,transparent 50%,rgba(16,13,9,.55) 82%,var(--void) 100%),url("img/weplace-hero-surface.jpg");
+    background-size:cover;background-position:center;}
+  .hero .kicker{margin-bottom:24px;}
+  .hero__sig{display:block;margin-bottom:18px;color:var(--gold-soft);font-style:italic;font-family:var(--eng);font-size:16px;}
+  .hero h1{color:var(--cream);text-shadow:0 2px 30px rgba(0,0,0,.5);}
+  .hero h1 em{font-style:normal;color:var(--gold-soft);}
+  .hero__sub{margin-top:26px;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.85;max-width:24em;text-shadow:0 2px 24px rgba(0,0,0,.45);}
+  .hero__cta{margin-top:40px;display:flex;gap:13px;flex-wrap:wrap;}
+  .scrollcue{margin-top:58px;font-size:10.5px;letter-spacing:.3em;color:var(--muted);text-transform:uppercase;display:flex;align-items:center;gap:10px;}
+  .scrollcue .ln{width:1px;height:34px;background:linear-gradient(var(--gold-deep),transparent);}
+  @media(max-width:900px){.hero{background-image:linear-gradient(180deg,rgba(16,13,9,.58) 0%,rgba(16,13,9,.40) 38%,rgba(16,13,9,.82) 100%),url("img/weplace-hero-surface.jpg");background-position:center;}}
+  @media(max-width:520px){.hero__cta{flex-direction:column;}.btn{text-align:center;}}
+
+  .sec{padding:116px 0;}
+  .sec--void{background:var(--void);} .sec--ink2{background:var(--ink-2);}
+  .sec-lead{margin-top:20px;max-width:28em;}
+
+  .screens{margin-top:42px;border-top:1px solid var(--line-soft);}
+  .scr{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:baseline;padding:18px 4px;border-bottom:1px solid var(--line-soft);transition:padding-left .35s var(--ease);}
+  .scr:hover{padding-left:9px;}
+  .scr__n{font-family:var(--eng);font-style:italic;font-size:18px;color:var(--gold-deep);}
+  .scr__t{font-family:var(--serif);font-weight:500;font-size:16.5px;color:var(--cream);}
+  .scr__d{font-size:12.5px;color:var(--muted);font-weight:300;margin-top:4px;line-height:1.6;}
+
+  .ba{margin-top:48px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px;}
+  .ba-col{display:flex;flex-direction:column;align-items:center;}
+  .ba-lab{font-family:var(--eng);font-style:italic;font-size:15px;margin-bottom:14px;}
+  .ba-col--b .ba-lab{color:var(--muted);} .ba-col--a .ba-lab{color:var(--gold-soft);}
+  .ba-arrow{font-size:21px;color:var(--gold-deep);}
+  @media(max-width:560px){.ba{grid-template-columns:1fr;gap:34px;}.ba-arrow{transform:rotate(90deg);}}
+  .stage{position:relative;display:flex;justify-content:center;}
+  .stage::before{content:"";position:absolute;width:92%;height:80%;top:10%;left:4%;border-radius:50%;background:radial-gradient(circle,rgba(205,174,104,.16),transparent 66%);filter:blur(34px);}
+  .np{position:relative;z-index:1;width:268px;max-width:80vw;border-radius:22px;background:#FCFAF5;overflow:hidden;border:1px solid rgba(255,255,255,.06);box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 56px rgba(205,174,104,.12);}
+  .np__cover{height:120px;position:relative;display:flex;align-items:flex-end;padding:11px 13px;}
+  .np__cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+  .np--clear .np__cover{background:linear-gradient(135deg,#C7A463,#9A7838 56%,#6f5526);}
+  .np--clear .np__cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(0,0,0,.35));}
+  .np__heart{position:absolute;top:11px;right:13px;z-index:2;color:rgba(255,255,255,.9);font-size:13px;}
+  .np__cover--empty{background:#e7ddc9;border-bottom:1px dashed #cdbfa3;align-items:center;justify-content:center;}
+  .np__cover--empty span{color:#9a917f;font-size:11.5px;letter-spacing:.04em;}
+  .np__body{padding:14px 14px 16px;color:#15120e;}
+  .np__name{font-family:var(--serif);font-weight:600;font-size:15.5px;color:#15120e;}
+  .np__cat{font-size:11px;color:#8b8174;margin-top:3px;}
+  .np__rate{margin-top:8px;font-size:12px;color:#8A6E3E;font-weight:600;}
+  .np__rate span{color:#9a917f;font-weight:400;} .np__rate--none{color:#9a917f;font-weight:400;}
+  .np__acts{display:flex;gap:5px;margin-top:11px;}
+  .np__acts span{flex:1;text-align:center;font-size:9.5px;color:#574f43;background:#efe7d6;border-radius:7px;padding:7px 0;}
+  .np__chips{display:flex;gap:5px;margin-top:8px;}
+  .np__chips span{font-size:9px;color:#8A6E3E;background:#efe1bd;border-radius:6px;padding:4px 7px;}
+  .np__menu{margin-top:11px;border-top:1px solid #eee6d7;padding-top:9px;}
+  .np__mi{display:flex;justify-content:space-between;font-size:11px;padding:3px 0;}
+  .np__mi span{color:#574f43;} .np__mi b{color:#15120e;font-weight:600;}
+  .np__cta{margin-top:11px;text-align:center;font-size:11.5px;font-weight:700;color:#3a2c12;background:linear-gradient(90deg,#D8BC84,#b8965b);border-radius:8px;padding:9px 0;}
+  .np__empty{margin-top:10px;border-top:1px solid #eee6d7;padding-top:10px;font-size:11px;color:#9a917f;line-height:1.7;}
+  .np--blur{box-shadow:0 26px 60px rgba(0,0,0,.45);} .np--blur .np__name{color:#9a917f;}
+  .ba-note{margin-top:30px;text-align:center;font-size:14px;color:var(--cream-dim);line-height:1.7;}
+
+  /* 손님 눈으로 보기 — 자기발견 인터랙션 */
+  .customer-view{background:linear-gradient(180deg,var(--paper),#ECE3D5);color:var(--on-paper);}
+  .customer-view h2{color:var(--on-paper);}
+  .cv-lead{color:var(--soft-paper);max-width:31em;margin-top:20px;}
+  .cv-note{margin-top:16px;font-size:12.5px;color:var(--mute-paper);line-height:1.7;}
+  .cv-quiz{margin-top:40px;display:flex;flex-direction:column;gap:12px;}
+  .cv-q{background:rgba(255,255,255,.58);border:1px solid var(--line-ivory);border-radius:16px;padding:20px 18px;}
+  .cv-q__n{font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-paper);margin-bottom:7px;}
+  .cv-q__t{font-family:var(--serif);font-size:15px;font-weight:500;color:var(--on-paper);line-height:1.62;}
+  .cv-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:14px;}
+  .cv-opt{appearance:none;border:1px solid rgba(122,86,64,.18);background:rgba(255,255,255,.72);border-radius:9px;padding:10px 7px;font-family:var(--sans);font-size:11.5px;color:var(--soft-paper);cursor:pointer;transition:.2s;line-height:1.35;}
+  .cv-opt:hover{border-color:var(--gold-paper);}
+  .cv-opt.on{border-color:var(--gold-paper);background:var(--gold-bg-paper);color:#5B4726;font-weight:700;box-shadow:inset 0 0 0 1px rgba(138,110,62,.08);}
+  @media(max-width:520px){.cv-opts{grid-template-columns:1fr;}.cv-opt{text-align:left;padding:11px 12px;}}
+  .cv-result{margin-top:28px;background:var(--on-paper);border-radius:17px;padding:25px 22px;color:var(--cream);opacity:0;max-height:0;overflow:hidden;transform:translateY(10px);transition:opacity .5s var(--ease),max-height .7s var(--ease),transform .5s var(--ease);}
+  .cv-result.show{opacity:1;max-height:520px;transform:none;}
+  .cv-result__eyebrow{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);}
+  .cv-result__title{font-family:var(--serif);font-size:20px;font-weight:500;line-height:1.55;margin-top:8px;color:var(--cream);}
+  .cv-result__text{font-size:13.5px;color:var(--cream-dim);line-height:1.75;margin-top:10px;}
+  .cv-issues{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px;}
+  .cv-issue{font-size:11.5px;color:var(--gold-soft);border:1px solid rgba(226,206,156,.22);border-radius:999px;padding:6px 10px;}
+  .cv-proof{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.65;}
+  .cv-next{display:inline-block;margin-top:18px;color:var(--gold-soft);text-decoration:none;font-size:12.5px;border-bottom:1px solid rgba(226,206,156,.24);padding-bottom:2px;}
+
+  .creed{text-align:center;}
+  .creed .signal{display:block;margin-bottom:24px;}
+  .creed h2{max-width:15em;margin:0 auto;}
+  .creed__body{margin-top:28px;max-width:26em;margin-left:auto;margin-right:auto;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.9;}
+  .creed__body b{color:var(--cream);font-weight:500;}
+  .essaylink{margin-top:34px;display:inline-flex;gap:8px;align-items:center;font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-soft);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.25s;}
+  .essaylink:hover{color:var(--gold);border-color:var(--gold);}
+
+  .geo-note{margin-top:22px;background:linear-gradient(160deg,#1f1910,#161109);border:1px solid var(--line);border-left:2px solid var(--gold-deep);border-radius:13px;padding:18px 20px;font-size:13.5px;color:var(--cream-dim);line-height:1.75;max-width:30em;}
+  .geo-note b{color:var(--gold-soft);font-weight:600;}
+  .surface-key{margin-top:26px;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.9;max-width:30em;}
+  .surface-key b{color:var(--cream);font-weight:500;}
+
+  .eyes{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:640px){.eyes{grid-template-columns:1fr;}}
+  .eye{background:var(--ink-3);border:1px solid var(--line);border-radius:16px;padding:24px 22px;}
+  .eye__h{font-family:var(--serif);font-weight:500;font-size:16px;color:var(--cream);margin-bottom:4px;}
+  .eye__sub{font-family:var(--eng);font-style:italic;font-size:13px;color:var(--gold-soft);margin-bottom:16px;}
+  .eye ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+  .eye li{font-size:13px;color:var(--cream-dim);padding-left:16px;position:relative;line-height:1.5;}
+  .eye li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--gold-deep);}
+  .eyes-foot{margin-top:30px;text-align:center;font-family:var(--serif);font-weight:400;font-size:clamp(16px,2.8vw,20px);color:var(--gold-soft);line-height:1.55;}
+
+  .fields{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:560px){.fields{grid-template-columns:1fr;}}
+  .field{position:relative;display:block;text-decoration:none;min-height:200px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#241B12,#15110B);transition:transform .35s var(--ease),border-color .35s;}
+  .field:hover{transform:translateY(-3px);border-color:var(--gold);}
+  .field img{transition:transform .6s var(--ease);}
+  .field:hover img{transform:scale(1.05);}
+  .field img{width:100%;height:200px;object-fit:cover;display:block;}
+  .field__veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(16,13,9,.55) 70%,rgba(16,13,9,.92));}
+  .field__t{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;}
+  .field__name{font-family:var(--serif);font-weight:500;font-size:16px;color:#fff;}
+  .field__d{font-size:11.5px;color:rgba(239,232,217,.82);margin-top:4px;line-height:1.5;}
+  .fields-foot{margin-top:30px;text-align:center;font-size:14.5px;color:var(--cream-dim);line-height:1.75;max-width:27em;margin-left:auto;margin-right:auto;}
+
+  .dxsheet{margin-top:40px;background:var(--paper-2);color:var(--on-paper);border-radius:18px;padding:30px 28px;box-shadow:0 40px 90px rgba(0,0,0,.4);max-width:540px;position:relative;}
+  .dxsheet::before{content:"";position:absolute;top:0;left:28px;right:28px;height:2px;background:linear-gradient(90deg,var(--gold-paper),transparent);}
+  .dxsheet__ttl{font-family:var(--serif);font-weight:600;font-size:17px;color:var(--on-paper);}
+  .dxsheet__meta{font-size:12.5px;color:var(--mute-paper);margin:5px 0 22px;padding-bottom:18px;border-bottom:1px dashed var(--line-ivory);}
+  .dxstep{padding:16px 0;border-bottom:1px dashed var(--line-ivory);}
+  .dxstep:last-child{border-bottom:none;padding-bottom:2px;}
+  .dxstep__h{display:flex;align-items:baseline;gap:10px;margin-bottom:12px;}
+  .dxstep__n{font-family:var(--eng);font-style:italic;font-size:17px;color:var(--gold-paper);}
+  .dxstep__t{font-family:var(--serif);font-weight:500;font-size:14.5px;color:var(--on-paper);}
+  .dxrow{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--soft-paper);padding:5px 0;}
+  .chip{font-size:10px;font-weight:700;border-radius:6px;padding:3px 8px;white-space:nowrap;letter-spacing:.02em;}
+  .chip--ok{background:#e7efdf;color:#5d7b48;} .chip--warn{background:#f6eccf;color:#937329;} .chip--empty{background:#f3e2d6;color:#9c5a3a;}
+  .dxrow .ord{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-paper);min-width:46px;}
+  .dxsheet__foot{margin-top:22px;font-size:12.5px;color:var(--mute-paper);line-height:1.7;font-style:italic;}
+
+  .selfcheck{margin-top:40px;background:var(--ink-3);border:1px solid var(--line);border-radius:18px;padding:28px 26px;max-width:540px;}
+  .sc-q{display:flex;align-items:center;gap:13px;padding:12px 0;border-bottom:1px solid var(--line-soft);cursor:pointer;user-select:none;}
+  .sc-q:last-of-type{border-bottom:none;}
+  .sc-box{width:22px;height:22px;border-radius:7px;border:1.5px solid var(--gold-deep);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:.2s;color:transparent;font-size:13px;font-weight:700;}
+  .sc-q.on .sc-box{background:var(--gold);border-color:var(--gold);color:#16110a;}
+  .sc-q span{font-size:13.5px;color:var(--cream-dim);line-height:1.5;}
+  .sc-q.on span{color:var(--cream);}
+  .sc-result{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);text-align:center;}
+  .sc-score{font-family:var(--serif);font-weight:500;font-size:clamp(20px,4vw,26px);color:var(--gold-soft);}
+  .sc-msg{margin-top:8px;font-size:13.5px;color:var(--cream-dim);line-height:1.7;min-height:2.6em;}
+
+  .qa{border-bottom:1px solid var(--line-soft);}
+  .qa__q{width:100%;background:none;border:none;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:20px 2px;font-family:var(--sans);font-size:15px;font-weight:500;color:var(--cream);}
+  .qa__q .pl{color:var(--gold);font-size:18px;transition:transform .3s;}
+  .qa.open .qa__q .pl{transform:rotate(45deg);}
+  .qa__a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease);}
+  .qa.open .qa__a{max-height:260px;}
+  .qa__a p{padding:0 2px 22px;font-size:13.5px;color:var(--cream-dim);font-weight:300;line-height:1.8;}
+
+  .cta{position:relative;padding:128px 0 134px;background-color:var(--void);
+    background-image:linear-gradient(180deg,var(--void) 0%,rgba(16,13,9,.56) 26%,rgba(16,13,9,.64) 72%,var(--void) 100%),url("img/weplace-diagnosis-bg.jpg");
+    background-size:cover;background-position:center;}
+  .cta h2{max-width:13em;}
+  .cta__sub{margin-top:18px;font-size:15px;color:var(--cream-dim);font-weight:300;line-height:1.85;max-width:24em;}
+  .cta__defense{margin-top:14px;font-size:13px;color:var(--muted);line-height:1.7;max-width:25em;}
+  .cta__btns{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;}
+  .cta__micro{margin-top:16px;font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);}
+  @media(max-width:520px){.cta__btns{flex-direction:column;}}
+
+  .contact{padding:104px 0;background:var(--ink-2);}
+  .cm-grid{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  @media(max-width:560px){.cm-grid{grid-template-columns:1fr;}}
+  .cm{display:block;text-decoration:none;background:var(--ink-3);border:1px solid var(--line);border-radius:14px;padding:20px;transition:.25s;}
+  .cm:hover{border-color:var(--gold);transform:translateY(-2px);}
+  .cm__k{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);margin-bottom:5px;}
+  .cm__v{font-size:13.5px;color:var(--cream);}
+  footer{background:var(--void);padding:40px 0;text-align:center;}
+  footer p{font-size:12px;color:var(--muted-2);line-height:1.8;}
+
+  @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none;}*{scroll-behavior:auto;}}
+</style>
+<noscript><style>.r{opacity:1!important;transform:none!important;}</style></noscript>
+</head>
+<body>
+<nav class="nav top" id="nav">
+  <a href="#top" class="nav__b">We,&nbsp;<b>Place.</b></a>
+  <a href="#cta" class="nav__cta">1장 진단 받기</a>
+</nav>
+
+<nav class="dotnav" aria-label="섹션 이동">
+  <a href="#top" data-sec="top"><span>home</span></a>
+  <a href="#screens" data-sec="screens"><span>고객 판단</span></a>
+  <a href="#customer-view" data-sec="customer-view"><span>손님 눈으로 보기</span></a>
+  <a href="#ai-surface" data-sec="ai-surface"><span>AI 첫 표면</span></a>
+  <a href="#surface" data-sec="surface"><span>첫 표면 정리</span></a>
+  <a href="#eyes" data-sec="eyes"><span>두 시선</span></a>
+  <a href="#diagnosis-preview" data-sec="diagnosis-preview"><span>1장 진단서</span></a>
+  <a href="#self-check" data-sec="self-check"><span>자가진단</span></a>
+  <a href="#fields" data-sec="fields"><span>업종별</span></a>
+  <a href="#cta" data-sec="cta"><span>문의</span></a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker r">Weplace · 매장 검색 표면 정리</span>
+    <span class="hero__sig r d1">손님은 이제 검색창뿐 아니라, AI에게도 묻습니다.</span>
+    <h1 class="r d1">광고비를 더 쓰기 전에,<br>손님이 매장을 이해하는<br><em>에너지부터 줄입니다.</em></h1>
+    <p class="hero__sub r d2">네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를, 하나의 매장처럼 읽히게 정리합니다.</p>
+    <div class="hero__cta r d3">
+      <a href="#cta" class="btn btn-gold">매장명으로 1장 진단 받기</a>
+      <a href="#customer-view" class="btn btn-ghost">손님 눈으로 한번 보기</a>
+    </div>
+    <div class="scrollcue r d4"><span class="ln"></span>SCROLL</div>
+  </div>
+</header>
+
+<section class="sec" id="screens">
+  <div class="wrap">
+    <div class="kicker r">01 · 고객 판단 에너지</div>
+    <h2 class="r d1">손님은 한 화면만 보고<br>정하지 않습니다.</h2>
+    <p class="lead sec-lead r d2">선택 전, 손님은 네이버·구글·리뷰를 오가며 확인합니다. 화면마다 말이 다르면, 같은 매장으로 읽지 못하고 에너지를 씁니다.</p>
+    <div class="screens r d2">
+      <div class="scr"><span class="scr__n">i</span><div><div class="scr__t">네이버 플레이스</div><div class="scr__d">처음 눌렀을 때 매장의 인상이 정해집니다.</div></div></div>
+      <div class="scr"><span class="scr__n">ii</span><div><div class="scr__t">구글 비즈니스 프로필</div><div class="scr__d">외부 고객과 AI 검색이 참고하는 기본 정보입니다.</div></div></div>
+      <div class="scr"><span class="scr__n">iii</span><div><div class="scr__t">홈페이지</div><div class="scr__d">가게의 기준과 설명이 쌓이는 자리입니다.</div></div></div>
+      <div class="scr"><span class="scr__n">iv</span><div><div class="scr__t">리뷰</div><div class="scr__d">고객이 다른 고객의 말로 안심하는 자리입니다.</div></div></div>
+      <div class="scr"><span class="scr__n">v</span><div><div class="scr__t">AI 검색</div><div class="scr__d">정리된 정보를 바탕으로 매장을 설명합니다.</div></div></div>
+    </div>
+
+    <div class="ba r d2">
+      <div class="ba-col ba-col--b">
+        <div class="ba-lab">정리 전</div>
+        <div class="np np--blur">
+          <div class="np__cover np__cover--empty"><span>사진 없음</span></div>
+          <div class="np__body">
+            <div class="np__name">○○ 레스토랑</div>
+            <div class="np__cat">정보 없음</div>
+            <div class="np__rate np__rate--none">평점 없음</div>
+            <div class="np__empty">영업시간 · 메뉴 · 가격<br>주차 · 예약 — 비어 있음</div>
+          </div>
+        </div>
+      </div>
+      <div class="ba-arrow" aria-hidden="true">&#8594;</div>
+      <div class="ba-col ba-col--a">
+        <div class="ba-lab">정리 후</div>
+        <div class="stage">
+          <div class="np np--clear">
+            <div class="np__cover"><img src="img/np-cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="np__heart">&#9825;</span></div>
+            <div class="np__body">
+              <div class="np__name">○○ 레스토랑</div>
+              <div class="np__cat">이탈리안 · 파스타 · 스테이크</div>
+              <div class="np__rate">&#9733; 4.6 <span>(612)</span></div>
+              <div class="np__acts"><span>전화</span><span>길찾기</span><span>예약</span><span>공유</span></div>
+              <div class="np__chips"><span>주차 가능</span><span>예약 가능</span></div>
+              <div class="np__menu">
+                <div class="np__mi"><span>스테이크</span><b>28,000</b></div>
+                <div class="np__mi"><span>봉골레 파스타</span><b>18,000</b></div>
+              </div>
+              <div class="np__cta">예약하기</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="ba-note r">흩어진 화면을 같은 매장처럼 맞추면,<br>손님은 더 적은 에너지로 매장을 이해합니다.</p>
+  </div>
+</section>
+
+<section class="sec customer-view" id="customer-view">
+  <div class="wrap">
+    <div class="kicker on-paper r">TRY · 손님 눈으로 보기</div>
+    <h2 class="r d1">대표님은 매장을 알고 있습니다.<br>처음 보는 손님은<br>화면 몇 장만 봅니다.</h2>
+    <p class="lead cv-lead r d2">아래 네 가지를 손님 입장에서 한번 골라보세요. 맞고 틀림을 가르는 점수가 아니라, <b>한 번 더 확인해야 하는 자리</b>를 찾는 과정입니다.</p>
+    <p class="cv-note r d2">지금 답이 바로 떠오르지 않는 질문도 하나의 신호입니다.</p>
+
+    <div class="cv-quiz r d2" id="customerViewQuiz">
+      <div class="cv-q" data-cv-q="first" data-issue="첫인상">
+        <div class="cv-q__n">01 · FIRST LOOK</div>
+        <div class="cv-q__t">처음 보는 사람이 대표사진과 첫 문장만 보고, 무엇을 하는 매장인지 알 수 있나요?</div>
+        <div class="cv-opts">
+          <button class="cv-opt" type="button" data-cv-option data-friction="0">바로 알 수 있다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">한 번 더 봐야 한다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">잘 모르겠다</button>
+        </div>
+      </div>
+
+      <div class="cv-q" data-cv-q="price" data-issue="메뉴·가격">
+        <div class="cv-q__n">02 · CHOICE</div>
+        <div class="cv-q__t">대표 메뉴·서비스와 대략의 가격을, 다른 리뷰를 찾아보지 않고 확인할 수 있나요?</div>
+        <div class="cv-opts">
+          <button class="cv-opt" type="button" data-cv-option data-friction="0">한 화면에서 보인다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">조금 찾아야 한다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">잘 모르겠다</button>
+        </div>
+      </div>
+
+      <div class="cv-q" data-cv-q="visit" data-issue="방문·예약">
+        <div class="cv-q__n">03 · ARRIVAL</div>
+        <div class="cv-q__t">위치·주차·예약 방법처럼 방문 직전 필요한 답을 한 화면 안에서 찾을 수 있나요?</div>
+        <div class="cv-opts">
+          <button class="cv-opt" type="button" data-cv-option data-friction="0">바로 찾을 수 있다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">화면을 오가야 한다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">잘 모르겠다</button>
+        </div>
+      </div>
+
+      <div class="cv-q" data-cv-q="match" data-issue="정보 일치">
+        <div class="cv-q__n">04 · MATCH</div>
+        <div class="cv-q__t">네이버·Google·홈페이지의 영업시간·주소·대표 정보가 서로 같은지 확인해본 적이 있나요?</div>
+        <div class="cv-opts">
+          <button class="cv-opt" type="button" data-cv-option data-friction="0">확인했고 거의 같다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">군데군데 다르다</button>
+          <button class="cv-opt" type="button" data-cv-option data-friction="1">확인해본 적 없다</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-result" id="customerViewResult" aria-live="polite">
+      <div class="cv-result__eyebrow">YOUR OWN SIGNAL</div>
+      <div class="cv-result__title" id="customerViewTitle"></div>
+      <div class="cv-result__text" id="customerViewText"></div>
+      <div class="cv-issues" id="customerViewIssues"></div>
+      <div class="cv-proof">이 결과는 Weplace가 임의로 매긴 점수가 아닙니다. 방금 대표님이 직접 고른 답에서 나온 신호입니다.</div>
+      <a class="cv-next" href="#ai-surface">이 다음 화면이 왜 중요한지 보기 &#8595;</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--void" id="ai-surface">
+  <div class="wrap creed">
+    <span class="signal r">사람도, AI도, 흐린 매장은 쉽게 설명하지 못합니다.</span>
+    <h2 class="r d1">손님은 이제<br><span class="g">AI에게도 묻습니다.</span></h2>
+    <p class="creed__body r d2">정보가 흩어져 있으면 사람도 헷갈리고, AI도 정확히 설명하지 못합니다. <b>Weplace는 AI에게만 잘 보이기 위한 작업을 하지 않습니다.</b> 사람과 AI가 동시에 이해할 수 있도록, 매장의 첫 표면을 정리합니다.</p>
+    <a href="/essay.html" class="essaylink r d3">왜 광고보다 '첫 표면'을 먼저 볼까요? — 철학 에세이 읽기 &#8594;</a>
+  </div>
+</section>
+
+<section class="sec sec--ink2" id="surface">
+  <div class="wrap">
+    <div class="kicker r">02 · 첫 표면 정리</div>
+    <h2 class="r d1">AI가 읽기 전에,<br>손님이 먼저 봅니다.</h2>
+    <div class="geo-note r d2"><b>GEO</b>, 즉 AI 검색 정리는 AI가 매장을 답변할 때 참고할 수 있도록, 온라인에 흩어진 정보를 정리하는 작업입니다.</div>
+    <p class="surface-key r d2">AI 검색 정리 자체가 매출을 바로 올리지는 않습니다. 다만 이름·사진·설명·리뷰·위치·FAQ가 한 기준으로 정리됩니다. <b>그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다.</b></p>
+  </div>
+</section>
+
+<section class="sec" id="eyes">
+  <div class="wrap">
+    <div class="kicker r">03 · 두 개의 시선</div>
+    <h2 class="r d1">사람이 보는 화면을 정리합니다.<br>AI가 읽는 구조를 정리합니다.<br><span class="g">그리고 둘 사이의 말이 어긋나지 않게 맞춥니다.</span></h2>
+    <div class="eyes r d2">
+      <div class="eye">
+        <div class="eye__h">사람이 보는 것</div>
+        <div class="eye__sub">the human screen</div>
+        <ul><li>대표사진</li><li>첫 문장</li><li>가격 기준</li><li>리뷰 답변</li><li>예약 전 FAQ</li><li>위치와 주차 안내</li></ul>
+      </div>
+      <div class="eye">
+        <div class="eye__h">AI가 읽는 것</div>
+        <div class="eye__sub">the machine structure</div>
+        <ul><li>사업자 정보</li><li>카테고리</li><li>홈페이지 문장</li><li>리뷰의 반복 키워드</li><li>FAQ 구조</li><li>네이버·구글·홈페이지의 일관성</li></ul>
+      </div>
+    </div>
+    <p class="eyes-foot r">사람도 덜 헤매고,<br>AI도 덜 오해하게.</p>
+  </div>
+</section>
+
+<section class="sec" id="diagnosis-preview">
+  <div class="wrap">
+    <div class="kicker r">05 · 1장 진단서</div>
+    <h2 class="r d1">진단을 받으면<br>이런 걸 받습니다.</h2>
+    <p class="lead sec-lead r d2">매장 화면을 열어보고, 고객이 멈출 지점과 먼저 손볼 순서를 표시합니다.</p>
+    <div class="dxsheet r d2">
+      <div class="dxsheet__ttl">Weplace 1장 진단서</div>
+      <div class="dxsheet__meta">매장명 · ○○카페&nbsp;&nbsp;|&nbsp;&nbsp;지역 · 영등포</div>
+      <div class="dxstep">
+        <div class="dxstep__h"><span class="dxstep__n">01</span><span class="dxstep__t">처음 보이는 화면</span></div>
+        <div class="dxrow"><span class="chip chip--warn">보완 필요</span> 네이버 대표사진</div>
+        <div class="dxrow"><span class="chip chip--empty">비어 있음</span> 구글 정보</div>
+        <div class="dxrow"><span class="chip chip--ok">양호</span> 홈페이지 첫 문장</div>
+      </div>
+      <div class="dxstep">
+        <div class="dxstep__h"><span class="dxstep__n">02</span><span class="dxstep__t">고객이 멈추는 지점</span></div>
+        <div class="dxrow">위치 설명이 애매함</div>
+        <div class="dxrow">예약 전 질문 답변 없음</div>
+        <div class="dxrow">리뷰 답글 톤이 일정하지 않음</div>
+        <div class="dxrow">가격 기준이 흩어져 있음</div>
+      </div>
+      <div class="dxstep">
+        <div class="dxstep__h"><span class="dxstep__n">03</span><span class="dxstep__t">먼저 정리할 순서</span></div>
+        <div class="dxrow"><span class="ord">1순위</span> 대표사진 교체</div>
+        <div class="dxrow"><span class="ord">2순위</span> 소개문 첫 줄 수정</div>
+        <div class="dxrow"><span class="ord">3순위</span> FAQ 한 화면 구성</div>
+        <div class="dxrow"><span class="ord">4순위</span> 구글 정보 채우기</div>
+        <div class="dxrow"><span class="ord">5순위</span> 리뷰 답글 기준 만들기</div>
+      </div>
+      <p class="dxsheet__foot">이 진단서는 견적서가 아니라, 대표님이 현재 매장 화면을 이해하기 위한 지도입니다. 먼저 팔지 않습니다 — 어디서 고객이 멈추는지 함께 본 뒤, 정리할 범위를 제안합니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--ink2" id="self-check">
+  <div class="wrap">
+    <div class="kicker r">06 · 자가진단</div>
+    <h2 class="r d1">우리 매장의 첫 표면,<br>지금 몇 점일까요?</h2>
+    <p class="lead sec-lead r d2">맞는 항목을 눌러 보세요. 손님이 헤매지 않는 화면일수록 점수가 올라갑니다.</p>
+    <div class="selfcheck r d2" id="selfcheck">
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>대표사진이 지금 매장 분위기와 같다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>가격대를 화면에서 바로 알 수 있다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>위치·주차 안내가 정리되어 있다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>구글 정보가 비어 있지 않다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>리뷰 답글에 일정한 기준이 있다</span></div>
+      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>예약 전 질문에 답하는 FAQ가 있다</span></div>
+      <div class="sc-result">
+        <div class="sc-score" id="scScore">0 / 6</div>
+        <div class="sc-msg" id="scMsg">항목을 눌러 우리 매장의 첫 표면을 가늠해 보세요.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--ink2" id="fields">
+  <div class="wrap">
+    <div class="kicker r">04 · 업종별 적용</div>
+    <h2 class="r d1">업종마다, 손님이<br>먼저 보는 것이 다릅니다.</h2>
+    <div class="fields r d2">
+      <a class="field" href="industries/dining.html"><img src="img/ind-dining.jpg" alt="식당·카페" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">식당 · 카페</div><div class="field__d">맛보다 먼저, 오늘 목적에 맞는 곳인지를 봅니다.</div></div></a>
+      <a class="field" href="/prototype/massage-esthetic/"><img src="img/ind-spa.jpg" alt="에스테틱·페이셜케어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">에스테틱 · 페이셜</div><div class="field__d">관리를 고르기 전에, 이해하고 예약할 수 있는지부터 봅니다.</div></div></a>
+      <a class="field" href="industries/stay.html"><img src="img/ind-stay.jpg" alt="펜션·숙소" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">펜션 · 숙소</div><div class="field__d">예약 전, 도착 동선과 분위기부터 상상합니다.</div></div></a>
+      <a class="field" href="industries/beauty.html"><img src="img/ind-beauty.jpg" alt="미용·헤어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">미용 · 헤어</div><div class="field__d">결과보다 먼저, 실패 불안을 덜고 싶어 합니다.</div></div></a>
+      <a class="field" href="industries/clinic.html"><img src="img/ind-clinic.jpg" alt="병의원·피부과" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">병의원 · 피부과</div><div class="field__d">실력만큼, 설명의 안정감을 봅니다.</div></div></a>
+    </div>
+    <p class="fields-foot r">고급 매장만 보는 것이 아닙니다. 손님이 선택 전 확인하는 화면이 있다면, 모든 매장이 대상입니다.</p>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="kicker r">자주 묻는 질문</div>
+    <div class="r d1">
+      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">AI 검색에 잘 보이게 해주는 건가요?<span class="pl">+</span></button><div class="qa__a"><p>AI에게만 잘 보이기 위한 작업은 하지 않습니다. 사람과 AI가 동시에 이해할 수 있도록, 네이버·구글·홈페이지·리뷰에 흩어진 정보를 같은 매장처럼 정리합니다.</p></div></div>
+      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">상위에 올려주시나요?<span class="pl">+</span></button><div class="qa__a"><p>특정 노출을 약속하지 않습니다. 먼저 손님이 보는 첫 화면을 한 기준으로 정리합니다. 그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다.</p></div></div>
+      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">정리가 하나도 안 돼 있어도 되나요?<span class="pl">+</span></button><div class="qa__a"><p>괜찮습니다. 정리 안 된 상태가 출발점입니다. 매장명과 지역만 주시면 손님이 어디서 멈추는지부터 봅니다.</p></div></div>
+      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">어떤 매장에 잘 맞나요?<span class="pl">+</span></button><div class="qa__a"><p>검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="wrap">
+    <div class="kicker r">1장 진단</div>
+    <h2 class="r d1">정리 안 돼도 됩니다.<br><span class="g">매장명 한 줄이면 시작합니다.</span></h2>
+    <p class="cta__sub r d2">진단이 먼저, 작업은 그 다음입니다.</p>
+    <p class="cta__defense r d2">작업을 바로 맡기지 않아도 됩니다. 먼저 어디서 고객이 멈추는지부터 보겠습니다.</p>
+    <div class="cta__btns r d3">
+      <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" class="btn btn-gold">카카오톡으로 매장명 보내기</a>
+      <a href="tel:+821064616594" class="btn btn-ghost">전화 010-6461-6594</a>
+    </div>
+    <p class="cta__micro r">매장명·지역 보내고 1장 진단 받기</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker r">Contact · 문의</div>
+    <h2 class="r d1">매장명과 지역만<br>보내주세요.</h2>
+    <p class="lead sec-lead r d2">길게 설명하지 않으셔도 됩니다. 매장명과 지역만 보내주시면, 손님이 멈추는 지점부터 같이 봅니다.</p>
+    <div class="cm-grid r d2">
+      <a class="cm" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener"><div class="cm__k">Kakao</div><div class="cm__v">카카오톡으로 보내기</div></a>
+      <a class="cm" href="tel:+821064616594"><div class="cm__k">Call</div><div class="cm__v">010-6461-6594</div></a>
+      <a class="cm" href="mailto:weplace25@gmail.com"><div class="cm__k">Mail</div><div class="cm__v">weplace25@gmail.com</div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>(주)위플레이스마케팅 · 대표 박규민<br>서울 영등포구 선유로9길 10, 812호 · weplace25@gmail.com</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  var nav=document.getElementById('nav');
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+    document.querySelectorAll('.r').forEach(function(el){io.observe(el);});
+    var dots=document.querySelectorAll('.dotnav a'), byId={};
+    dots.forEach(function(a){byId[a.getAttribute('data-sec')]=a;});
+    var dio=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){var a=byId[e.target.id]; if(a){dots.forEach(function(d){d.classList.remove('active');}); a.classList.add('active');}}
+    });},{rootMargin:'-45% 0px -45% 0px'});
+    Object.keys(byId).forEach(function(id){var s=document.getElementById(id); if(s) dio.observe(s);});
+  }else{document.querySelectorAll('.r').forEach(function(el){el.classList.add('in');});}
+
+  function onScroll(){var s=window.scrollY>80;nav.classList.toggle('show',s);nav.classList.toggle('top',!s);}
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  document.querySelectorAll('[data-qa]').forEach(function(q){
+    var b=q.querySelector('.qa__q');
+    b.addEventListener('click',function(){var o=q.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
+  });
+
+  /* 손님 눈으로 보기 */
+  var cv=document.getElementById('customer-view');
+  if(cv){
+    var answers={}, total=4, result=document.getElementById('customerViewResult');
+    var title=document.getElementById('customerViewTitle');
+    var text=document.getElementById('customerViewText');
+    var issuesEl=document.getElementById('customerViewIssues');
+
+    function renderCustomerView(){
+      if(Object.keys(answers).length<total)return;
+      var issues=[];
+      Object.keys(answers).forEach(function(k){if(answers[k].friction)issues.push(answers[k].issue);});
+      var n=issues.length;
+
+      if(n===0){
+        title.textContent='이미 꽤 또렷합니다.';
+        text.textContent='좋은 점이 첫 화면에서 늦지 않게 발견되는 상태입니다. 이제 그 기준이 다른 화면에서도 유지되는지만 확인하면 됩니다.';
+      }else if(n<=2){
+        title.textContent='좋은 점은 이미 있습니다. 한 번 더 확인해야 하는 자리가 '+n+'곳 보입니다.';
+        text.textContent='문제가 많다는 뜻이 아닙니다. 손님이 결정을 내리기 전에 조금 더 찾아야 하는 답이 있다는 뜻에 가깝습니다.';
+      }else{
+        title.textContent='매장이 부족한 게 아니라, 좋은 점이 화면에서 늦게 발견되는 상태에 가깝습니다.';
+        text.textContent='지금 있는 장점을 바꾸기보다, 처음 보는 사람이 더 빨리 이해할 수 있도록 순서와 정보를 맞추는 것부터 볼 수 있습니다.';
+      }
+
+      issuesEl.innerHTML='';
+      if(issues.length){
+        issues.forEach(function(issue){
+          var s=document.createElement('span');
+          s.className='cv-issue';
+          s.textContent=issue;
+          issuesEl.appendChild(s);
+        });
+      }else{
+        var s=document.createElement('span');
+        s.className='cv-issue';
+        s.textContent='현재 답변 기준 · 큰 걸림 없음';
+        issuesEl.appendChild(s);
+      }
+
+      result.classList.add('show');
+      if(!cv.dataset.tracked && typeof window.gtag==='function'){
+        window.gtag('event','customer_view_complete',{friction_count:n,friction_areas:issues.join('|')});
+        cv.dataset.tracked='1';
+      }
+    }
+
+    cv.querySelectorAll('[data-cv-option]').forEach(function(b){
+      b.setAttribute('aria-pressed','false');
+      b.addEventListener('click',function(){
+        var q=b.closest('[data-cv-q]');
+        q.querySelectorAll('[data-cv-option]').forEach(function(o){o.classList.remove('on');o.setAttribute('aria-pressed','false');});
+        b.classList.add('on'); b.setAttribute('aria-pressed','true');
+        answers[q.getAttribute('data-cv-q')]={
+          friction:b.getAttribute('data-friction')==='1',
+          issue:q.getAttribute('data-issue')
+        };
+        renderCustomerView();
+      });
+    });
+  }
+
+  var checks=document.querySelectorAll('#selfcheck [data-check]');
+  var msgs=['항목을 눌러 우리 매장의 첫 표면을 가늠해 보세요.',
+    '아직 손님이 헤매기 쉬운 화면입니다. 어디서 멈추는지부터 함께 보면 됩니다.',
+    '시작점은 잡혔습니다. 비어 있는 화면부터 채우면 손님의 에너지가 줄어듭니다.',
+    '절반은 정리되어 있습니다. 화면 사이 말이 어긋나는 곳만 맞추면 됩니다.',
+    '꽤 정돈된 편입니다. 한두 군데만 손보면 같은 매장으로 또렷하게 읽힙니다.',
+    '거의 또렷합니다. 마지막 디테일까지 맞추면 사람도 AI도 헷갈리지 않습니다.',
+    '첫 표면이 또렷합니다. 이 기준이 흔들리지 않게 남기는 일이 다음 단계입니다.'];
+  function update(){
+    var n=0; checks.forEach(function(c){if(c.classList.contains('on'))n++;});
+    document.getElementById('scScore').textContent=n+' / 6';
+    document.getElementById('scMsg').textContent=msgs[n];
+  }
+  checks.forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('on');update();});});
+})();
+</script>
+</body>
+</html>
