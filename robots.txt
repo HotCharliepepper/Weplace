@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://withweplace.kr/sitemap.xml
