@@ -1,687 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H9B5F4HRDS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-H9B5F4HRDS');
-</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Weplace · 손님이 보는 첫 화면을, 하나의 기준으로 정리합니다</title>
-<meta name="description" content="네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 하나의 매장처럼 읽히게 정리합니다. 사람도 AI도 흐린 매장은 쉽게 설명하지 못합니다. 매장명과 지역만 보내주시면 1장 진단서로 먼저 보여드립니다." />
-<link rel="canonical" href="https://withweplace.kr/" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="손님이 보는 첫 화면을, 하나의 기준으로 정리합니다 | Weplace" />
-<meta property="og:description" content="네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 하나의 매장처럼 읽히게 정리합니다. 매장명 한 줄이면 시작합니다." />
-<meta property="og:url" content="https://withweplace.kr/" />
-<meta property="og:image" content="https://withweplace.kr/img/weplace-hero-surface.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="손님이 보는 첫 화면을, 하나의 기준으로" />
-<meta name="twitter:description" content="사람과 AI가 동시에 이해할 수 있도록 매장의 첫 표면을 정리합니다." />
-
-<link rel="preload" as="image" href="img/weplace-hero-surface.jpg" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7f8f5">
+<title>Weplace — 손님이 움직이는 이유를, 화면에 담습니다</title>
+<meta name="description" content="좋은 매장이 검색과 예약의 순간에도 제대로 보이도록. 위플레이스는 네이버·구글·홈페이지·리뷰의 정보와 고객 경험을 정리합니다. 업종별 사례를 탐색하고 우리 매장의 첫 화면을 진단해 보세요.">
+<link rel="canonical" href="https://withweplace.kr/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Weplace"><meta property="og:title" content="손님이 움직이는 이유를, 화면에 담습니다 — Weplace"><meta property="og:description" content="우리 매장의 첫 화면, 손님은 어떻게 볼까요? 업종을 선택하고 직접 탐색해 보세요."><meta property="og:url" content="https://withweplace.kr/"><meta property="og:image" content="https://withweplace.kr/img/weplace-hero-surface.jpg"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Noto+Serif+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"위플레이스마케팅","alternateName":"Weplace","url":"https://withweplace.kr/","email":"weplace25@gmail.com","description":"네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를 하나의 매장처럼 읽히게 정리하는 팀","address":{"@type":"PostalAddress","streetAddress":"선유로9길 10, 812호","addressLocality":"영등포구","addressRegion":"서울","addressCountry":"KR"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Weplace","url":"https://withweplace.kr/"}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","serviceType":"매장 검색 표면 정리","provider":{"@type":"Organization","name":"위플레이스마케팅"},"areaServed":"KR","description":"네이버·구글·홈페이지·리뷰·AI 검색의 매장 정보를 사람과 AI가 동시에 이해할 수 있도록 한 기준으로 정리합니다."}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"AI 검색에 잘 보이게 해주는 건가요?","acceptedAnswer":{"@type":"Answer","text":"AI에게만 잘 보이기 위한 작업은 하지 않습니다. 사람과 AI가 동시에 이해할 수 있도록, 네이버·구글·홈페이지·리뷰에 흩어진 정보를 같은 매장처럼 정리합니다."}},
-    {"@type":"Question","name":"상위에 올려주시나요?","acceptedAnswer":{"@type":"Answer","text":"특정 노출을 약속하지 않습니다. 먼저 손님이 보는 첫 화면을 한 기준으로 정리합니다. 그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다."}},
-    {"@type":"Question","name":"정리가 하나도 안 돼 있어도 되나요?","acceptedAnswer":{"@type":"Answer","text":"괜찮습니다. 정리 안 된 상태가 출발점입니다. 매장명과 지역만 주시면 손님이 어디서 멈추는지부터 봅니다."}},
-    {"@type":"Question","name":"어떤 매장에 잘 맞나요?","acceptedAnswer":{"@type":"Answer","text":"검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다."}}
-  ]
-}
-</script>
-
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H9B5F4HRDS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-H9B5F4HRDS');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"위플레이스마케팅","alternateName":"Weplace","url":"https://withweplace.kr/","email":"weplace25@gmail.com"}</script>
 <style>
-  :root{
-    --ink:#14110B; --ink-2:#1A1610; --ink-3:#211B12; --void:#100D09;
-    --cream:#EFE8D9; --cream-dim:#BEB39D; --muted:#8E8470; --muted-2:#6E6555;
-    --paper:#F4EFE6; --paper-2:#FBF8F1; --on-paper:#241B12; --soft-paper:#574E42; --mute-paper:#8B8174;
-    --gold:#CDAE68; --gold-deep:#A6813B; --gold-soft:#E2CE9C; --gold-paper:#8A6E3E; --gold-bg-paper:#EFE3C6;
-    --line:rgba(226,206,156,.16); --line-soft:rgba(226,206,156,.08);
-    --line-ivory:rgba(122,86,64,.18);
-    --ok:#86A66E; --warn:#CBA64E; --empty:#BE7B57;
-    --serif:'Noto Serif KR',serif; --eng:'Cormorant Garamond',serif;
-    --sans:'Pretendard Variable','Pretendard',-apple-system,'Apple SD Gothic Neo',system-ui,sans-serif;
-    --maxw:640px; --ease:cubic-bezier(.22,.61,.36,1);
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
-  body{font-family:var(--sans);background:var(--ink);color:var(--cream);line-height:1.75;letter-spacing:-.01em;
-    word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
-    background:radial-gradient(1100px 700px at 84% 4%,rgba(176,138,66,.12),transparent 60%),radial-gradient(900px 700px at -5% 60%,rgba(58,44,30,.18),transparent 60%),radial-gradient(1000px 800px at 100% 100%,rgba(176,138,66,.07),transparent 60%);}
-  body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
-  .wrap{position:relative;z-index:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 26px;}
-  section{position:relative;z-index:1;}
-  img{max-width:100%;display:block;}
-
-  .kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:26px;}
-  .kicker::before{content:"";width:24px;height:1px;background:var(--gold-deep);opacity:.7;}
-  .kicker.on-paper{color:var(--gold-paper);}.kicker.on-paper::before{background:var(--gold-paper);}
-  h1,h2{font-family:var(--serif);letter-spacing:-.022em;line-height:1.34;}
-  h1{font-weight:500;font-size:clamp(31px,5.2vw,48px);}
-  h2{font-weight:500;font-size:clamp(24px,4vw,34px);color:var(--cream);}
-  h2 .g,h1 .g{color:var(--gold-soft);} h2 em,h1 em{font-style:normal;}
-  .lead{font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.88;}
-  .signal{font-family:var(--eng);font-style:italic;font-size:16px;color:var(--gold-soft);}
-  .r{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease);}
-  .r.in{opacity:1;transform:none;}
-  .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.42s}
-
-  .nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;padding:22px 30px;transition:.4s;}
-  .nav.show{background:rgba(20,17,11,.72);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-soft);padding:14px 30px;}
-  .nav__b{font-family:var(--serif);font-weight:500;font-size:18px;color:var(--cream);text-decoration:none;}
-  .nav__b b{color:var(--gold-soft);font-weight:600;}
-  .nav__cta{margin-left:auto;font-size:12.5px;font-weight:600;color:var(--cream);border:1px solid var(--line);border-radius:999px;padding:9px 17px;text-decoration:none;transition:.25s;}
-  .nav__cta:hover{border-color:var(--gold);color:var(--gold-soft);}
-
-  .dotnav{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:55;display:flex;flex-direction:column;gap:14px;}
-  .dotnav a{width:8px;height:8px;border-radius:50%;background:rgba(226,206,156,.28);transition:.3s;position:relative;}
-  .dotnav a.active{background:var(--gold);transform:scale(1.35);box-shadow:0 0 10px var(--gold);}
-  .dotnav a span{position:absolute;right:18px;top:50%;transform:translateY(-50%);white-space:nowrap;font-size:10.5px;letter-spacing:.05em;color:var(--cream-dim);opacity:0;pointer-events:none;transition:.3s;}
-  .dotnav a:hover span{opacity:1;}
-  @media(max-width:1080px){.dotnav{display:none;}}
-
-  .btn{font-size:14.5px;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:12px;display:inline-block;transition:transform .2s,box-shadow .25s,border-color .25s,color .25s,background .25s;}
-  .btn-gold{background:linear-gradient(90deg,var(--gold-deep),var(--gold));color:#16110a;box-shadow:0 14px 40px rgba(166,129,59,.3);}
-  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 20px 52px rgba(166,129,59,.42);}
-  .btn-ghost{background:transparent;border:1px solid var(--line);color:var(--cream);font-weight:600;}
-  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft);transform:translateY(-2px);}
-  .btn-ghost.on-paper{border-color:var(--line-ivory);color:var(--on-paper);}
-  .btn-ghost.on-paper:hover{border-color:var(--gold-paper);color:var(--gold-paper);}
-
-  .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 84px;background-color:var(--void);
-    background-image:linear-gradient(96deg,rgba(16,13,9,.90) 0%,rgba(16,13,9,.60) 44%,rgba(16,13,9,.16) 74%,transparent 100%),linear-gradient(180deg,transparent 50%,rgba(16,13,9,.55) 82%,var(--void) 100%),url("img/weplace-hero-surface.jpg");
-    background-size:cover;background-position:center;}
-  .hero .kicker{margin-bottom:24px;}
-  .hero__sig{display:block;margin-bottom:18px;color:var(--gold-soft);font-style:italic;font-family:var(--eng);font-size:16px;}
-  .hero h1{color:var(--cream);text-shadow:0 2px 30px rgba(0,0,0,.5);}
-  .hero h1 em{font-style:normal;color:var(--gold-soft);}
-  .hero__sub{margin-top:26px;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.85;max-width:24em;text-shadow:0 2px 24px rgba(0,0,0,.45);}
-  .hero__cta{margin-top:40px;display:flex;gap:13px;flex-wrap:wrap;}
-  .scrollcue{margin-top:58px;font-size:10.5px;letter-spacing:.3em;color:var(--muted);text-transform:uppercase;display:flex;align-items:center;gap:10px;}
-  .scrollcue .ln{width:1px;height:34px;background:linear-gradient(var(--gold-deep),transparent);}
-  @media(max-width:900px){.hero{background-image:linear-gradient(180deg,rgba(16,13,9,.58) 0%,rgba(16,13,9,.40) 38%,rgba(16,13,9,.82) 100%),url("img/weplace-hero-surface.jpg");background-position:center;}}
-  @media(max-width:520px){.hero__cta{flex-direction:column;}.btn{text-align:center;}}
-
-  .sec{padding:116px 0;}
-  .sec--void{background:var(--void);} .sec--ink2{background:var(--ink-2);}
-  .sec-lead{margin-top:20px;max-width:28em;}
-
-  .screens{margin-top:42px;border-top:1px solid var(--line-soft);}
-  .scr{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:baseline;padding:18px 4px;border-bottom:1px solid var(--line-soft);transition:padding-left .35s var(--ease);}
-  .scr:hover{padding-left:9px;}
-  .scr__n{font-family:var(--eng);font-style:italic;font-size:18px;color:var(--gold-deep);}
-  .scr__t{font-family:var(--serif);font-weight:500;font-size:16.5px;color:var(--cream);}
-  .scr__d{font-size:12.5px;color:var(--muted);font-weight:300;margin-top:4px;line-height:1.6;}
-
-  .ba{margin-top:48px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px;}
-  .ba-col{display:flex;flex-direction:column;align-items:center;}
-  .ba-lab{font-family:var(--eng);font-style:italic;font-size:15px;margin-bottom:14px;}
-  .ba-col--b .ba-lab{color:var(--muted);} .ba-col--a .ba-lab{color:var(--gold-soft);}
-  .ba-arrow{font-size:21px;color:var(--gold-deep);}
-  @media(max-width:560px){.ba{grid-template-columns:1fr;gap:34px;}.ba-arrow{transform:rotate(90deg);}}
-  .stage{position:relative;display:flex;justify-content:center;}
-  .stage::before{content:"";position:absolute;width:92%;height:80%;top:10%;left:4%;border-radius:50%;background:radial-gradient(circle,rgba(205,174,104,.16),transparent 66%);filter:blur(34px);}
-  .np{position:relative;z-index:1;width:268px;max-width:80vw;border-radius:22px;background:#FCFAF5;overflow:hidden;border:1px solid rgba(255,255,255,.06);box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 56px rgba(205,174,104,.12);}
-  .np__cover{height:120px;position:relative;display:flex;align-items:flex-end;padding:11px 13px;}
-  .np__cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
-  .np--clear .np__cover{background:linear-gradient(135deg,#C7A463,#9A7838 56%,#6f5526);}
-  .np--clear .np__cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(0,0,0,.35));}
-  .np__heart{position:absolute;top:11px;right:13px;z-index:2;color:rgba(255,255,255,.9);font-size:13px;}
-  .np__cover--empty{background:#e7ddc9;border-bottom:1px dashed #cdbfa3;align-items:center;justify-content:center;}
-  .np__cover--empty span{color:#9a917f;font-size:11.5px;letter-spacing:.04em;}
-  .np__body{padding:14px 14px 16px;color:#15120e;}
-  .np__name{font-family:var(--serif);font-weight:600;font-size:15.5px;color:#15120e;}
-  .np__cat{font-size:11px;color:#8b8174;margin-top:3px;}
-  .np__rate{margin-top:8px;font-size:12px;color:#8A6E3E;font-weight:600;}
-  .np__rate span{color:#9a917f;font-weight:400;} .np__rate--none{color:#9a917f;font-weight:400;}
-  .np__acts{display:flex;gap:5px;margin-top:11px;}
-  .np__acts span{flex:1;text-align:center;font-size:9.5px;color:#574f43;background:#efe7d6;border-radius:7px;padding:7px 0;}
-  .np__chips{display:flex;gap:5px;margin-top:8px;}
-  .np__chips span{font-size:9px;color:#8A6E3E;background:#efe1bd;border-radius:6px;padding:4px 7px;}
-  .np__menu{margin-top:11px;border-top:1px solid #eee6d7;padding-top:9px;}
-  .np__mi{display:flex;justify-content:space-between;font-size:11px;padding:3px 0;}
-  .np__mi span{color:#574f43;} .np__mi b{color:#15120e;font-weight:600;}
-  .np__cta{margin-top:11px;text-align:center;font-size:11.5px;font-weight:700;color:#3a2c12;background:linear-gradient(90deg,#D8BC84,#b8965b);border-radius:8px;padding:9px 0;}
-  .np__empty{margin-top:10px;border-top:1px solid #eee6d7;padding-top:10px;font-size:11px;color:#9a917f;line-height:1.7;}
-  .np--blur{box-shadow:0 26px 60px rgba(0,0,0,.45);} .np--blur .np__name{color:#9a917f;}
-  .ba-note{margin-top:30px;text-align:center;font-size:14px;color:var(--cream-dim);line-height:1.7;}
-
-  /* 손님 눈으로 보기 — 자기발견 인터랙션 */
-  .customer-view{background:linear-gradient(180deg,var(--paper),#ECE3D5);color:var(--on-paper);}
-  .customer-view h2{color:var(--on-paper);}
-  .cv-lead{color:var(--soft-paper);max-width:31em;margin-top:20px;}
-  .cv-note{margin-top:16px;font-size:12.5px;color:var(--mute-paper);line-height:1.7;}
-  .cv-quiz{margin-top:40px;display:flex;flex-direction:column;gap:12px;}
-  .cv-q{background:rgba(255,255,255,.58);border:1px solid var(--line-ivory);border-radius:16px;padding:20px 18px;}
-  .cv-q__n{font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-paper);margin-bottom:7px;}
-  .cv-q__t{font-family:var(--serif);font-size:15px;font-weight:500;color:var(--on-paper);line-height:1.62;}
-  .cv-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:14px;}
-  .cv-opt{appearance:none;border:1px solid rgba(122,86,64,.18);background:rgba(255,255,255,.72);border-radius:9px;padding:10px 7px;font-family:var(--sans);font-size:11.5px;color:var(--soft-paper);cursor:pointer;transition:.2s;line-height:1.35;}
-  .cv-opt:hover{border-color:var(--gold-paper);}
-  .cv-opt.on{border-color:var(--gold-paper);background:var(--gold-bg-paper);color:#5B4726;font-weight:700;box-shadow:inset 0 0 0 1px rgba(138,110,62,.08);}
-  @media(max-width:520px){.cv-opts{grid-template-columns:1fr;}.cv-opt{text-align:left;padding:11px 12px;}}
-  .cv-result{margin-top:28px;background:var(--on-paper);border-radius:17px;padding:25px 22px;color:var(--cream);opacity:0;max-height:0;overflow:hidden;transform:translateY(10px);transition:opacity .5s var(--ease),max-height .7s var(--ease),transform .5s var(--ease);}
-  .cv-result.show{opacity:1;max-height:520px;transform:none;}
-  .cv-result__eyebrow{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);}
-  .cv-result__title{font-family:var(--serif);font-size:20px;font-weight:500;line-height:1.55;margin-top:8px;color:var(--cream);}
-  .cv-result__text{font-size:13.5px;color:var(--cream-dim);line-height:1.75;margin-top:10px;}
-  .cv-issues{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px;}
-  .cv-issue{font-size:11.5px;color:var(--gold-soft);border:1px solid rgba(226,206,156,.22);border-radius:999px;padding:6px 10px;}
-  .cv-proof{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.65;}
-  .cv-next{display:inline-block;margin-top:18px;color:var(--gold-soft);text-decoration:none;font-size:12.5px;border-bottom:1px solid rgba(226,206,156,.24);padding-bottom:2px;}
-
-  .creed{text-align:center;}
-  .creed .signal{display:block;margin-bottom:24px;}
-  .creed h2{max-width:15em;margin:0 auto;}
-  .creed__body{margin-top:28px;max-width:26em;margin-left:auto;margin-right:auto;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.9;}
-  .creed__body b{color:var(--cream);font-weight:500;}
-  .essaylink{margin-top:34px;display:inline-flex;gap:8px;align-items:center;font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-soft);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:.25s;}
-  .essaylink:hover{color:var(--gold);border-color:var(--gold);}
-
-  .geo-note{margin-top:22px;background:linear-gradient(160deg,#1f1910,#161109);border:1px solid var(--line);border-left:2px solid var(--gold-deep);border-radius:13px;padding:18px 20px;font-size:13.5px;color:var(--cream-dim);line-height:1.75;max-width:30em;}
-  .geo-note b{color:var(--gold-soft);font-weight:600;}
-  .surface-key{margin-top:26px;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.9;max-width:30em;}
-  .surface-key b{color:var(--cream);font-weight:500;}
-
-  .eyes{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-  @media(max-width:640px){.eyes{grid-template-columns:1fr;}}
-  .eye{background:var(--ink-3);border:1px solid var(--line);border-radius:16px;padding:24px 22px;}
-  .eye__h{font-family:var(--serif);font-weight:500;font-size:16px;color:var(--cream);margin-bottom:4px;}
-  .eye__sub{font-family:var(--eng);font-style:italic;font-size:13px;color:var(--gold-soft);margin-bottom:16px;}
-  .eye ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
-  .eye li{font-size:13px;color:var(--cream-dim);padding-left:16px;position:relative;line-height:1.5;}
-  .eye li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--gold-deep);}
-  .eyes-foot{margin-top:30px;text-align:center;font-family:var(--serif);font-weight:400;font-size:clamp(16px,2.8vw,20px);color:var(--gold-soft);line-height:1.55;}
-
-  .fields{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-  @media(max-width:560px){.fields{grid-template-columns:1fr;}}
-  .field{position:relative;display:block;text-decoration:none;min-height:200px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#241B12,#15110B);transition:transform .35s var(--ease),border-color .35s;}
-  .field:hover{transform:translateY(-3px);border-color:var(--gold);}
-  .field img{transition:transform .6s var(--ease);}
-  .field:hover img{transform:scale(1.05);}
-  .field img{width:100%;height:200px;object-fit:cover;display:block;}
-  .field__veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(16,13,9,.55) 70%,rgba(16,13,9,.92));}
-  .field__t{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;}
-  .field__name{font-family:var(--serif);font-weight:500;font-size:16px;color:#fff;}
-  .field__d{font-size:11.5px;color:rgba(239,232,217,.82);margin-top:4px;line-height:1.5;}
-  .fields-foot{margin-top:30px;text-align:center;font-size:14.5px;color:var(--cream-dim);line-height:1.75;max-width:27em;margin-left:auto;margin-right:auto;}
-
-  .dxsheet{margin-top:40px;background:var(--paper-2);color:var(--on-paper);border-radius:18px;padding:30px 28px;box-shadow:0 40px 90px rgba(0,0,0,.4);max-width:540px;position:relative;}
-  .dxsheet::before{content:"";position:absolute;top:0;left:28px;right:28px;height:2px;background:linear-gradient(90deg,var(--gold-paper),transparent);}
-  .dxsheet__ttl{font-family:var(--serif);font-weight:600;font-size:17px;color:var(--on-paper);}
-  .dxsheet__meta{font-size:12.5px;color:var(--mute-paper);margin:5px 0 22px;padding-bottom:18px;border-bottom:1px dashed var(--line-ivory);}
-  .dxstep{padding:16px 0;border-bottom:1px dashed var(--line-ivory);}
-  .dxstep:last-child{border-bottom:none;padding-bottom:2px;}
-  .dxstep__h{display:flex;align-items:baseline;gap:10px;margin-bottom:12px;}
-  .dxstep__n{font-family:var(--eng);font-style:italic;font-size:17px;color:var(--gold-paper);}
-  .dxstep__t{font-family:var(--serif);font-weight:500;font-size:14.5px;color:var(--on-paper);}
-  .dxrow{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--soft-paper);padding:5px 0;}
-  .chip{font-size:10px;font-weight:700;border-radius:6px;padding:3px 8px;white-space:nowrap;letter-spacing:.02em;}
-  .chip--ok{background:#e7efdf;color:#5d7b48;} .chip--warn{background:#f6eccf;color:#937329;} .chip--empty{background:#f3e2d6;color:#9c5a3a;}
-  .dxrow .ord{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-paper);min-width:46px;}
-  .dxsheet__foot{margin-top:22px;font-size:12.5px;color:var(--mute-paper);line-height:1.7;font-style:italic;}
-
-  .selfcheck{margin-top:40px;background:var(--ink-3);border:1px solid var(--line);border-radius:18px;padding:28px 26px;max-width:540px;}
-  .sc-q{display:flex;align-items:center;gap:13px;padding:12px 0;border-bottom:1px solid var(--line-soft);cursor:pointer;user-select:none;}
-  .sc-q:last-of-type{border-bottom:none;}
-  .sc-box{width:22px;height:22px;border-radius:7px;border:1.5px solid var(--gold-deep);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:.2s;color:transparent;font-size:13px;font-weight:700;}
-  .sc-q.on .sc-box{background:var(--gold);border-color:var(--gold);color:#16110a;}
-  .sc-q span{font-size:13.5px;color:var(--cream-dim);line-height:1.5;}
-  .sc-q.on span{color:var(--cream);}
-  .sc-result{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);text-align:center;}
-  .sc-score{font-family:var(--serif);font-weight:500;font-size:clamp(20px,4vw,26px);color:var(--gold-soft);}
-  .sc-msg{margin-top:8px;font-size:13.5px;color:var(--cream-dim);line-height:1.7;min-height:2.6em;}
-
-  .qa{border-bottom:1px solid var(--line-soft);}
-  .qa__q{width:100%;background:none;border:none;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;
-    padding:20px 2px;font-family:var(--sans);font-size:15px;font-weight:500;color:var(--cream);}
-  .qa__q .pl{color:var(--gold);font-size:18px;transition:transform .3s;}
-  .qa.open .qa__q .pl{transform:rotate(45deg);}
-  .qa__a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease);}
-  .qa.open .qa__a{max-height:260px;}
-  .qa__a p{padding:0 2px 22px;font-size:13.5px;color:var(--cream-dim);font-weight:300;line-height:1.8;}
-
-  .cta{position:relative;padding:128px 0 134px;background-color:var(--void);
-    background-image:linear-gradient(180deg,var(--void) 0%,rgba(16,13,9,.56) 26%,rgba(16,13,9,.64) 72%,var(--void) 100%),url("img/weplace-diagnosis-bg.jpg");
-    background-size:cover;background-position:center;}
-  .cta h2{max-width:13em;}
-  .cta__sub{margin-top:18px;font-size:15px;color:var(--cream-dim);font-weight:300;line-height:1.85;max-width:24em;}
-  .cta__defense{margin-top:14px;font-size:13px;color:var(--muted);line-height:1.7;max-width:25em;}
-  .cta__btns{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;}
-  .cta__micro{margin-top:16px;font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);}
-  @media(max-width:520px){.cta__btns{flex-direction:column;}}
-
-  .contact{padding:104px 0;background:var(--ink-2);}
-  .cm-grid{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
-  @media(max-width:560px){.cm-grid{grid-template-columns:1fr;}}
-  .cm{display:block;text-decoration:none;background:var(--ink-3);border:1px solid var(--line);border-radius:14px;padding:20px;transition:.25s;}
-  .cm:hover{border-color:var(--gold);transform:translateY(-2px);}
-  .cm__k{font-family:var(--eng);font-style:italic;font-size:14px;color:var(--gold-soft);margin-bottom:5px;}
-  .cm__v{font-size:13.5px;color:var(--cream);}
-  footer{background:var(--void);padding:40px 0;text-align:center;}
-  footer p{font-size:12px;color:var(--muted-2);line-height:1.8;}
-
-  @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none;}*{scroll-behavior:auto;}}
+:root{--paper:#f7f8f5;--white:#fff;--ink:#152a26;--ink2:#304840;--muted:#62746c;--line:#dfe6de;--line2:#eaf0e9;--green:#285b4d;--bright:#dcebe0;--moss:#879c82;--sand:#e8dfca;--contrast:#132722;--serif:'Noto Serif KR',serif;--sans:'Pretendard Variable','Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',system-ui,sans-serif;--eng:'DM Sans',sans-serif;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;letter-spacing:-.02em;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}p{margin:0}h1,h2,h3{margin:0;letter-spacing:-.05em;font-weight:600;line-height:1.28}h1{font-size:clamp(39px,4.8vw,70px)}h2{font-size:clamp(31px,3.9vw,50px)}h3{font-size:clamp(21px,2.2vw,28px)}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip{position:fixed;z-index:1000;left:12px;top:-100px;background:var(--ink);color:#fff;padding:12px 20px;border-radius:6px}.skip:focus{top:12px}.wrap{width:min(var(--max),calc(100% - 68px));margin-inline:auto}.section{padding:120px 0;scroll-margin-top:80px}.eyebrow{font:700 11px/1.4 var(--eng);letter-spacing:.17em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:13px;margin-bottom:22px}.eyebrow:before{content:'';width:23px;height:1px;background:var(--moss)}.lede{font-size:clamp(17px,1.8vw,21px);line-height:1.75;color:var(--muted);max-width:620px}.subtle{color:var(--muted)}.bold{font-weight:700}.section-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}.section-head h2{max-width:740px}.linkline{display:inline-flex;gap:9px;align-items:center;color:var(--green);font-weight:700;font-size:14px;border-bottom:1px solid #8aaba0;padding-bottom:5px;white-space:nowrap}.linkline:hover{color:#0a3c2b}.linkline:focus-visible,.button:focus-visible,.choice:focus-visible,.case-btn:focus-visible,.audit-opt:focus-visible,.nav-btn:focus-visible{outline:3px solid #45a78a;outline-offset:3px}.button{display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:54px;padding:14px 23px;border-radius:11px;font-size:14px;font-weight:700;letter-spacing:-.02em;border:1px solid transparent;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px)}.button-dark{background:var(--green);color:white}.button-dark:hover{background:#183d32}.button-light{background:#fff;border-color:#ccd8cf;color:var(--ink)}.button-light:hover{background:#edf3ed}.button-outline{border-color:#a7bbae;color:var(--ink);background:transparent}.fine{font-size:12px;color:var(--muted);line-height:1.6}.darkfine{font-size:12px;color:#a9c7b9;line-height:1.65}
+/* Header & navigation */
+.progress{position:fixed;z-index:103;top:0;left:0;width:0%;height:3px;background:#6bb497;pointer-events:none}.header{position:sticky;top:0;z-index:101;background:rgba(247,248,245,.96);border-bottom:1px solid rgba(27,53,44,.09);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}.header-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font:700 24px/1 var(--eng);letter-spacing:-.075em;flex-shrink:0}.brand-mark{width:24px;height:24px;background:var(--green);border-radius:7px 7px 7px 2px;transform:rotate(-13deg);position:relative}.brand-mark:after{content:'';position:absolute;top:7px;left:7px;width:10px;height:10px;border:2px solid #dcefe1;border-radius:50%}.brand em{color:var(--green);font-style:normal}.nav-links{display:flex;align-items:center;gap:30px;font-size:13px;font-weight:650;color:#556a5c}.nav-links a:hover{color:var(--green)}.nav-cta{font-size:13px;font-weight:700;background:var(--ink);color:#fff;padding:11px 18px;border-radius:9px}.nav-cta:hover{background:var(--green)}.nav-btn{display:none;background:none;border:1px solid var(--line);border-radius:9px;width:42px;height:42px;font-size:20px;color:var(--ink)}
+/* Hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 25%,#e1ece0 0,transparent 47%),linear-gradient(180deg,#f7f8f5,#eff4ef);min-height:695px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:65px;padding-block:90px 106px}.hero h1{margin-bottom:26px}.hero h1 em{font-style:normal;color:var(--green)}.hero .lede{max-width:500px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0 28px}.hero-rule{display:flex;align-items:center;gap:12px;color:#677b70;font-size:12px;font-weight:600}.hero-rule span{width:21px;height:1px;background:#a2b8ac}.hero-stage{height:475px;display:grid;align-items:center;position:relative}.hero-note{position:absolute;top:0;right:2px;font:600 11px var(--eng);letter-spacing:.16em;color:#6d8379}.stage-card{margin-top:45px;margin-left:12px;border:1px solid #dbe5dc;box-shadow:0 25px 65px rgba(20,48,35,.12);border-radius:22px;background:#fff;overflow:hidden;transform:rotate(-2deg);max-width:530px}.stage-top{padding:16px 19px;display:flex;justify-content:space-between;align-items:center;background:#f9faf7;border-bottom:1px solid #e4ebe4}.dots{display:flex;gap:5px}.dots i{display:block;width:7px;height:7px;background:#bac9bd;border-radius:50%}.stage-url{font:600 11px var(--eng);letter-spacing:.02em;color:#708275}.stage-body{padding:30px 27px 32px}.stage-tag{font:700 10px var(--eng);letter-spacing:.15em;color:#367961}.stage-body h3{font-size:30px;line-height:1.4;margin:13px 0 17px}.stage-body h3 strong{color:#3c8567}.stage-panel{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.stage-panel div{background:#f0f5f0;padding:13px;border:1px solid #dce7de;border-radius:9px}.stage-panel span{display:block;color:#718476;font-size:10px;margin-bottom:9px}.stage-panel b{font-size:13px}.stage-footer{border-top:1px solid #e5eae5;margin-top:20px;padding-top:15px;font-size:13px;color:#48675a}.floating-tip{position:absolute;bottom:0;right:-12px;max-width:230px;padding:17px 20px;background:#1c4034;color:#fff;box-shadow:0 10px 35px #143a292c;border-radius:15px;font-size:14px;line-height:1.6;transform:rotate(3deg)}.floating-tip span{display:block;color:#b7d6be;font-size:11px;margin-bottom:6px}.micro-band{background:#e8eee8;border-block:1px solid #dbe4da}.micro-grid{padding:23px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.micro-grid div{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;color:#3c5b4b}.micro-grid b{font:600 11px var(--eng);letter-spacing:.08em;color:#779a85}
+/* Journey */
+.journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:stretch}.journey-intro h2{margin-bottom:24px}.journey-intro p{font-size:17px;color:var(--muted);max-width:480px}.journey-steps{display:grid;gap:10px}.journey-step{background:white;border:1px solid var(--line);border-radius:13px;padding:20px 22px;display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}.journey-n{font:700 13px var(--eng);color:var(--green);letter-spacing:.05em}.journey-step h3{font-size:17px;margin-bottom:4px}.journey-step p{font-size:14px;color:var(--muted)}
+/* interactive lens */
+.lens-section{background:#ebf1eb}.lens-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:55px;align-items:start}.lens-controls h2{margin-bottom:20px}.lens-controls>.lede{margin-bottom:27px}.lens-choices{display:flex;flex-wrap:wrap;gap:9px}.choice{background:#fff;color:#4a6356;border:1px solid #d5e1d7;border-radius:100px;padding:11px 17px;font-weight:650;font-size:13px;transition:background .18s,color .18s}.choice[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}.lens-output{border:1px solid #dbe5db;background:white;border-radius:22px;overflow:hidden;box-shadow:0 18px 55px rgba(37,75,51,.07)}.lens-header{display:flex;justify-content:space-between;align-items:center;padding:16px 23px;border-bottom:1px solid var(--line2);font:700 11px var(--eng);letter-spacing:.14em;color:#809189}.lens-screen{padding:28px}.lens-screen .question-label{font-size:12px;color:#557968;font-weight:750;margin-bottom:7px}.lens-screen h3{font:600 clamp(24px,2.5vw,34px)/1.42 var(--serif);letter-spacing:-.035em;min-height:93px}.lens-screen .question-sub{font-size:14px;color:#657c6e;margin-top:10px;min-height:51px}.lens-signals{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:22px}.lens-signals div{background:#eff5ef;border-radius:10px;padding:15px}.lens-signals span{display:block;font-size:11px;color:#718477;margin-bottom:6px}.lens-signals strong{font-size:14px;font-weight:700}.lens-bottom{padding:18px 28px 26px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line2)}.lens-bottom .button{min-height:42px;font-size:12px;padding:10px 14px}.lens-disclaimer{font-size:11px;color:#7f9386}
+/* Before/after */
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.compare-card{border:1px solid var(--line);background:#fff;border-radius:18px;overflow:hidden}.compare-card header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line2);font-size:13px;font-weight:700}.compare-card header small{font-size:11px;font-weight:600;color:#74877b}.compare-mock{margin:23px;border:1px solid var(--line);border-radius:12px;padding:20px;min-height:260px}.mock-name{font-size:17px;font-weight:750;margin-bottom:12px}.mock-photo{height:72px;background:#e0e5e1;border-radius:8px;margin-bottom:14px}.mock-lines{display:grid;gap:9px}.mock-lines i{display:block;height:7px;background:#dfe6e1;border-radius:4px;width:90%}.mock-lines i:last-child{width:61%}.compare-card.good .mock-photo{background:linear-gradient(115deg,#b4d4bd,#e7eee2)}.compare-card.good .mock-lines{font-size:13px;color:#365d48;gap:8px}.compare-copy{padding:0 23px 23px;font-size:14px;color:var(--muted)}.compare-copy b{color:var(--ink)}.compare-footnote{margin-top:15px;font-size:12px;color:var(--muted)}
+/* Sectors */
+.industries{background:#f1f4ef}.industry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.industry-card{display:block;background:white;border:1px solid #dfe7df;border-radius:17px;overflow:hidden;transition:transform .25s,box-shadow .25s}.industry-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px #203e261a}.industry-img{height:215px;overflow:hidden;background:#dae7da}.industry-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.industry-card:hover img{transform:scale(1.04)}.industry-copy{padding:24px}.industry-copy .eyebrow{margin-bottom:10px}.industry-copy .eyebrow:before{display:none}.industry-copy h3{margin-bottom:7px;font-size:24px}.industry-copy p{font-size:14px;color:var(--muted);min-height:53px}.industry-foot{display:flex;justify-content:space-between;align-items:center;margin-top:23px;color:var(--green);font-size:13px;font-weight:700}
+/* work */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.process-card{border-top:2px solid #98b7a3;padding-top:18px}.process-card .num{font:700 12px var(--eng);color:#7b9a86;letter-spacing:.08em}.process-card h3{margin:18px 0 9px;font-size:20px}.process-card p{font-size:14px;color:var(--muted)}.result-banner{margin-top:58px;border:1px solid #cddfd0;border-radius:16px;background:#edf3ed;padding:26px 31px;display:flex;align-items:center;justify-content:space-between;gap:20px}.result-banner h3{font-size:19px}.result-banner p{margin-top:4px;font-size:14px;color:#567262}
+/* audit */
+.audit-section{background:var(--contrast);color:#f0f6ee}.audit-section .eyebrow{color:#b7d5bd}.audit-section .eyebrow:before{background:#8aaa96}.audit-head{display:flex;justify-content:space-between;gap:20px;align-items:end}.audit-section h2{max-width:810px}.audit-section .lede{color:#bacfc3;margin-top:21px}.audit-box{margin-top:42px;border-radius:20px;background:#1b372d;border:1px solid #365447;padding:29px}.audit-counter{font:700 11px var(--eng);color:#adccb7;letter-spacing:.14em}.audit-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}.audit-opt{border:1px solid #527262;border-radius:9px;color:#d0e2d3;background:#214333;padding:16px;text-align:left;min-height:82px;font-size:14px;display:flex;align-items:center;gap:11px}.audit-opt b{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:22px;height:22px;border:1px solid #688f75;border-radius:6px;font-size:13px;color:transparent}.audit-opt[aria-pressed="true"]{background:#dcebe0;color:#173a2a;border-color:#dcebe0}.audit-opt[aria-pressed="true"] b{background:#2f7255;color:white;border-color:#2f7255}.audit-status{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:25px;margin-top:22px;border-top:1px solid #3b594a}.audit-result strong{display:block;font-size:20px}.audit-result p{font-size:13px;color:#b5cebc}.audit-score{font:600 28px var(--eng);white-space:nowrap;color:#dcebe0}.audit-foot{font-size:11px;margin-top:13px;color:#9bb9a6}
+/* FAQ & bottom */
+.faq-list{border-top:1px solid var(--line)}details.faq-item{border-bottom:1px solid var(--line);padding:19px 0}details.faq-item summary{cursor:pointer;list-style:none;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:14px}details.faq-item summary::-webkit-details-marker{display:none}details.faq-item summary:after{content:'+';font-size:24px;font-weight:300;color:var(--green)}details.faq-item[open] summary:after{content:'−'}details.faq-item p{padding:14px 30px 8px 0;color:var(--muted);font-size:14px}.contact-section{background:#e6eee6}.contact-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:48px}.contact-grid h2{margin-bottom:20px}.contact-grid .lede{margin-bottom:32px}.contact-card{background:#fff;border:1px solid #d5e0d5;border-radius:19px;padding:30px}.contact-card h3{margin-bottom:13px}.contact-card p{color:var(--muted);font-size:14px;margin-bottom:22px}.contact-card .button{width:100%;margin-bottom:10px}.contact-card .fine{margin-top:9px}.contact-card a:not(.button){text-decoration:underline}.footer{background:#142a24;color:#dce8db;padding:52px 0}.footer-grid{display:flex;align-items:start;justify-content:space-between;gap:25px}.footer .brand{color:#fff}.footer p{font-size:12px;line-height:1.8;color:#99b2a1;margin-top:16px}.footer-links{display:flex;gap:19px;font-size:13px}.footer-links a:hover{color:#fff}.mobile-sticky{display:none}
+@media(max-width:1000px){.hero-grid{gap:30px}.hero-stage{height:410px}.floating-tip{right:0}.industry-img{height:170px}.process-grid{grid-template-columns:repeat(2,1fr)}.industry-copy{padding:21px}}
+@media(max-width:760px){.wrap{width:min(100% - 40px,560px)}.section{padding:82px 0}.header-inner{height:65px}.nav-links,.nav-cta{display:none}.nav-btn{display:block}.header.open .nav-links{display:flex;position:absolute;left:0;right:0;top:64px;flex-direction:column;align-items:stretch;padding:19px 24px 27px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 10px 23px #142f2017;gap:0}.header.open .nav-links a{padding:11px 0;border-bottom:1px solid #eaf0e9}.hero{min-height:unset}.hero-grid{grid-template-columns:1fr;gap:36px;padding-block:67px 95px}.hero-stage{height:auto;min-height:350px}.stage-card{margin:0 22px 30px 0;transform:rotate(-1deg)}.floating-tip{bottom:0;right:-5px}.micro-grid{grid-template-columns:repeat(2,1fr);gap:13px}.micro-grid div{font-size:12px}.journey-grid,.lens-grid,.compare-grid,.contact-grid{grid-template-columns:1fr}.journey-grid,.lens-grid{gap:30px}.journey-intro h2{margin-bottom:17px}.industry-grid{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column;gap:18px}.industry-img{height:160px}.result-banner{flex-direction:column;align-items:start}.audit-options{grid-template-columns:repeat(2,1fr)}.audit-head{flex-direction:column;align-items:start}.mobile-sticky{display:flex;position:fixed;z-index:100;bottom:0;left:0;right:0;padding:9px 20px max(9px,env(safe-area-inset-bottom));background:rgba(248,249,246,.97);border-top:1px solid #dce6da;justify-content:space-between;align-items:center;box-shadow:0 -8px 25px #19331a12}.mobile-sticky span{font-weight:700;font-size:12px}.mobile-sticky a{padding:9px 16px;border-radius:7px;background:var(--green);color:#fff;font-weight:750;font-size:12px}.footer{padding-bottom:115px}}
+@media(max-width:500px){.wrap{width:calc(100% - 38px)}h1{font-size:clamp(38px,11vw,54px)}h2{font-size:clamp(28px,8vw,39px)}.hero-grid{padding-top:55px}.hero-actions .button{width:100%}.hero-note{display:none}.stage-card{margin-right:8px}.stage-body{padding:24px 17px}.stage-body h3{font-size:24px}.stage-panel{gap:5px}.stage-panel div{padding:9px}.stage-panel b{font-size:11px}.floating-tip{position:relative;bottom:auto;right:auto;transform:none;margin:-10px 0 0 auto;max-width:230px;font-size:13px}.hero-stage{min-height:0}.micro-grid{grid-template-columns:repeat(2,1fr)}.industry-grid{grid-template-columns:1fr}.industry-img{height:220px}.industry-copy p{min-height:0}.audit-options{grid-template-columns:1fr}.audit-box{padding:20px}.audit-status{align-items:start}.audit-score{font-size:23px}.lens-screen{padding:22px}.lens-bottom{padding:15px 22px 21px}.compare-mock{margin:15px}.contact-card{padding:23px}.footer-grid{display:block}.footer-links{margin-top:21px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
-<noscript><style>.r{opacity:1!important;transform:none!important;}</style></noscript>
 </head>
 <body>
-<nav class="nav top" id="nav">
-  <a href="#top" class="nav__b">We,&nbsp;<b>Place.</b></a>
-  <a href="#cta" class="nav__cta">1장 진단 받기</a>
-</nav>
-
-<nav class="dotnav" aria-label="섹션 이동">
-  <a href="#top" data-sec="top"><span>home</span></a>
-  <a href="#screens" data-sec="screens"><span>고객 판단</span></a>
-  <a href="#customer-view" data-sec="customer-view"><span>손님 눈으로 보기</span></a>
-  <a href="#ai-surface" data-sec="ai-surface"><span>AI 첫 표면</span></a>
-  <a href="#surface" data-sec="surface"><span>첫 표면 정리</span></a>
-  <a href="#eyes" data-sec="eyes"><span>두 시선</span></a>
-  <a href="#diagnosis-preview" data-sec="diagnosis-preview"><span>1장 진단서</span></a>
-  <a href="#self-check" data-sec="self-check"><span>자가진단</span></a>
-  <a href="#fields" data-sec="fields"><span>업종별</span></a>
-  <a href="#cta" data-sec="cta"><span>문의</span></a>
-</nav>
-
-<header class="hero" id="top">
-  <div class="wrap">
-    <span class="kicker r">Weplace · 매장 검색 표면 정리</span>
-    <span class="hero__sig r d1">손님은 이제 검색창뿐 아니라, AI에게도 묻습니다.</span>
-    <h1 class="r d1">광고비를 더 쓰기 전에,<br>손님이 매장을 이해하는<br><em>에너지부터 줄입니다.</em></h1>
-    <p class="hero__sub r d2">네이버·구글·홈페이지·리뷰·AI 검색에 흩어진 정보를, 하나의 매장처럼 읽히게 정리합니다.</p>
-    <div class="hero__cta r d3">
-      <a href="#cta" class="btn btn-gold">매장명으로 1장 진단 받기</a>
-      <a href="#customer-view" class="btn btn-ghost">손님 눈으로 한번 보기</a>
-    </div>
-    <div class="scrollcue r d4"><span class="ln"></span>SCROLL</div>
-  </div>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<div id="readProgress" class="progress" aria-hidden="true"></div>
+<header id="siteHeader" class="header">
+ <div class="wrap header-inner">
+  <a href="#top" class="brand" aria-label="Weplace 홈페이지 첫 화면"><span class="brand-mark" aria-hidden="true"></span><span>We,<em>place.</em></span></a>
+  <nav id="mainNav" class="nav-links" aria-label="주요 메뉴"><a href="#journey">손님은 어떻게 고를까</a><a href="#experience">직접 살펴보기</a><a href="#industries">업종별 시스템</a><a href="#how">작업 방식</a></nav>
+  <a href="#contact" class="nav-cta" data-lead="header">1장 진단 문의 ↗</a>
+  <button type="button" id="menuBtn" class="nav-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mainNav">☰</button>
+ </div>
 </header>
-
-<section class="sec" id="screens">
-  <div class="wrap">
-    <div class="kicker r">01 · 고객 판단 에너지</div>
-    <h2 class="r d1">손님은 한 화면만 보고<br>정하지 않습니다.</h2>
-    <p class="lead sec-lead r d2">선택 전, 손님은 네이버·구글·리뷰를 오가며 확인합니다. 화면마다 말이 다르면, 같은 매장으로 읽지 못하고 에너지를 씁니다.</p>
-    <div class="screens r d2">
-      <div class="scr"><span class="scr__n">i</span><div><div class="scr__t">네이버 플레이스</div><div class="scr__d">처음 눌렀을 때 매장의 인상이 정해집니다.</div></div></div>
-      <div class="scr"><span class="scr__n">ii</span><div><div class="scr__t">구글 비즈니스 프로필</div><div class="scr__d">외부 고객과 AI 검색이 참고하는 기본 정보입니다.</div></div></div>
-      <div class="scr"><span class="scr__n">iii</span><div><div class="scr__t">홈페이지</div><div class="scr__d">가게의 기준과 설명이 쌓이는 자리입니다.</div></div></div>
-      <div class="scr"><span class="scr__n">iv</span><div><div class="scr__t">리뷰</div><div class="scr__d">고객이 다른 고객의 말로 안심하는 자리입니다.</div></div></div>
-      <div class="scr"><span class="scr__n">v</span><div><div class="scr__t">AI 검색</div><div class="scr__d">정리된 정보를 바탕으로 매장을 설명합니다.</div></div></div>
-    </div>
-
-    <div class="ba r d2">
-      <div class="ba-col ba-col--b">
-        <div class="ba-lab">정리 전</div>
-        <div class="np np--blur">
-          <div class="np__cover np__cover--empty"><span>사진 없음</span></div>
-          <div class="np__body">
-            <div class="np__name">○○ 레스토랑</div>
-            <div class="np__cat">정보 없음</div>
-            <div class="np__rate np__rate--none">평점 없음</div>
-            <div class="np__empty">영업시간 · 메뉴 · 가격<br>주차 · 예약 — 비어 있음</div>
-          </div>
-        </div>
-      </div>
-      <div class="ba-arrow" aria-hidden="true">&#8594;</div>
-      <div class="ba-col ba-col--a">
-        <div class="ba-lab">정리 후</div>
-        <div class="stage">
-          <div class="np np--clear">
-            <div class="np__cover"><img src="img/np-cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span class="np__heart">&#9825;</span></div>
-            <div class="np__body">
-              <div class="np__name">○○ 레스토랑</div>
-              <div class="np__cat">이탈리안 · 파스타 · 스테이크</div>
-              <div class="np__rate">&#9733; 4.6 <span>(612)</span></div>
-              <div class="np__acts"><span>전화</span><span>길찾기</span><span>예약</span><span>공유</span></div>
-              <div class="np__chips"><span>주차 가능</span><span>예약 가능</span></div>
-              <div class="np__menu">
-                <div class="np__mi"><span>스테이크</span><b>28,000</b></div>
-                <div class="np__mi"><span>봉골레 파스타</span><b>18,000</b></div>
-              </div>
-              <div class="np__cta">예약하기</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="ba-note r">흩어진 화면을 같은 매장처럼 맞추면,<br>손님은 더 적은 에너지로 매장을 이해합니다.</p>
+<main id="main">
+<section class="hero" id="top">
+<div class="wrap hero-grid">
+ <div>
+  <div class="eyebrow">WEPLACE · HUMAN-FIRST LOCAL EXPERIENCE</div>
+  <h1>좋은 매장인데,<br>손님은 <em>어디에서<br>망설일까요?</em></h1>
+  <p class="lede">사진을 보고, 리뷰를 읽고, 가격을 비교하고, 한 번 더 검색합니다. 위플레이스는 손님이 안심하고 선택할 수 있도록 그 사이의 화면을 정리합니다.</p>
+  <div class="hero-actions"><a class="button button-dark" href="#experience" data-intent="hero_experience">손님 입장에서 체험하기 <span aria-hidden="true">↗</span></a><a class="button button-light" href="#industries">우리 업종 찾아보기 <span aria-hidden="true">↘</span></a></div>
+  <div class="hero-rule"><span></span>순위보다 먼저, 선택의 이유를 살펴봅니다.</div>
+ </div>
+ <div class="hero-stage" aria-label="고객이 보고 싶어 하는 매장 정보 구성의 예시">
+  <div class="hero-note">FROM INFORMATION TO CONFIDENCE</div>
+  <div class="stage-card">
+    <div class="stage-top"><div class="dots" aria-hidden="true"><i></i><i></i><i></i></div><span class="stage-url">CUSTOMER VIEW · EXAMPLE</span></div>
+    <div class="stage-body"><div class="stage-tag">고객에게 먼저 필요한 것</div><h3>괜찮아 보이는데,<br><strong>내가 가도 편할까?</strong></h3><div class="stage-panel"><div><span>01. 정보</span><b>가격이 명확한가</b></div><div><span>02. 경험</span><b>사진과 실제가 같은가</b></div><div><span>03. 행동</span><b>예약이 쉬운가</b></div></div><div class="stage-footer">한 번 더 검색하지 않아도, 답을 찾을 수 있도록.</div></div>
   </div>
+  <div class="floating-tip"><span>WEPLACE INSIGHT</span>고객은 매장의 모든 것을 알 필요가 없습니다. <b>지금 궁금한 것을</b> 알면 됩니다.</div>
+ </div>
+</div>
 </section>
-
-<section class="sec customer-view" id="customer-view">
-  <div class="wrap">
-    <div class="kicker on-paper r">TRY · 손님 눈으로 보기</div>
-    <h2 class="r d1">대표님은 매장을 알고 있습니다.<br>처음 보는 손님은<br>화면 몇 장만 봅니다.</h2>
-    <p class="lead cv-lead r d2">아래 네 가지를 손님 입장에서 한번 골라보세요. 맞고 틀림을 가르는 점수가 아니라, <b>한 번 더 확인해야 하는 자리</b>를 찾는 과정입니다.</p>
-    <p class="cv-note r d2">지금 답이 바로 떠오르지 않는 질문도 하나의 신호입니다.</p>
-
-    <div class="cv-quiz r d2" id="customerViewQuiz">
-      <div class="cv-q" data-cv-q="first" data-issue="첫인상">
-        <div class="cv-q__n">01 · FIRST LOOK</div>
-        <div class="cv-q__t">처음 보는 사람이 대표사진과 첫 문장만 보고, 무엇을 하는 매장인지 알 수 있나요?</div>
-        <div class="cv-opts">
-          <button class="cv-opt" type="button" data-cv-option data-friction="0">바로 알 수 있다</button>
-          <button class="cv-opt" type="button" data-cv-option data-friction="1">한 번 더 봐야 한다</button>
-          <button class="cv-opt" type="button" data-cv-option data-friction="1">잘 모르겠다</button>
-        </div>
-      </div>
-
-      <div class="cv-q" data-cv-q="price" data-issue="메뉴·가격">
-        <div class="cv-q__n">02 · CHOICE</div>
-        <div class="cv-q__t">대표 메뉴·서비스와 대략의 가격을, 다른 리뷰를 찾아보지 않고 확인할 수 있나요?</div>
-        <div class="cv-opts">
-          <button class="cv-opt" type="button" data-cv-option data-friction="0">한 화면에서 보인다</button>
-          <button class="cv-opt" type="button" data-cv-option data-friction="1">조금 찾아야 한다</button>
-          <button class="cv-opt" type="button" data-cv-option data-friction="1">잘 모르겠다</button>
-        </div>
-      </div>
-
-      <div class="cv-q" data-cv-q="visit" data-issue="방문·예약">
-        <div class="cv-q__n">03 · ARRIVAL</div>
-        <div class="cv-q__t">위치·주차·예약 방법처럼 방문 직전 필요한 답을 한 화면 안에서 찾을 수 있나요?</div>
-        <div class="cv-opts">
-          <button class="cv-opt" type="button" data-cv-option data-friction="0">바로 찾을 수 있다</button>
-          <button class="cv-opt" type="button" data-cv-option data-friction="1">화면을 오가야 한다</button>
-          <button class="cv-opt" type="button" data-cv-option data-friction="1">잘 모르겠다</button>
-        </div>
-      </div>
-
-      <div class="cv-q" data-cv-q="match" data-issue="정보 일치">
-        <div class="cv-q__n">04 · MATCH</div>
-        <div class="cv-q__t">네이버·Google·홈페이지의 영업시간·주소·대표 정보가 서로 같은지 확인해본 적이 있나요?</div>
-        <div class="cv-opts">
-          <button class="cv-opt" type="button" data-cv-option data-friction="0">확인했고 거의 같다</button>
-          <button class="cv-opt" type="button" data-cv-option data-friction="1">군데군데 다르다</button>
-          <button class="cv-opt" type="button" data-cv-option data-friction="1">확인해본 적 없다</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="cv-result" id="customerViewResult" aria-live="polite">
-      <div class="cv-result__eyebrow">YOUR OWN SIGNAL</div>
-      <div class="cv-result__title" id="customerViewTitle"></div>
-      <div class="cv-result__text" id="customerViewText"></div>
-      <div class="cv-issues" id="customerViewIssues"></div>
-      <div class="cv-proof">이 결과는 Weplace가 임의로 매긴 점수가 아닙니다. 방금 대표님이 직접 고른 답에서 나온 신호입니다.</div>
-      <a class="cv-next" href="#ai-surface">이 다음 화면이 왜 중요한지 보기 &#8595;</a>
-    </div>
-  </div>
-</section>
-
-<section class="sec sec--void" id="ai-surface">
-  <div class="wrap creed">
-    <span class="signal r">사람도, AI도, 흐린 매장은 쉽게 설명하지 못합니다.</span>
-    <h2 class="r d1">손님은 이제<br><span class="g">AI에게도 묻습니다.</span></h2>
-    <p class="creed__body r d2">정보가 흩어져 있으면 사람도 헷갈리고, AI도 정확히 설명하지 못합니다. <b>Weplace는 AI에게만 잘 보이기 위한 작업을 하지 않습니다.</b> 사람과 AI가 동시에 이해할 수 있도록, 매장의 첫 표면을 정리합니다.</p>
-    <a href="/essay.html" class="essaylink r d3">왜 광고보다 '첫 표면'을 먼저 볼까요? — 철학 에세이 읽기 &#8594;</a>
-  </div>
-</section>
-
-<section class="sec sec--ink2" id="surface">
-  <div class="wrap">
-    <div class="kicker r">02 · 첫 표면 정리</div>
-    <h2 class="r d1">AI가 읽기 전에,<br>손님이 먼저 봅니다.</h2>
-    <div class="geo-note r d2"><b>GEO</b>, 즉 AI 검색 정리는 AI가 매장을 답변할 때 참고할 수 있도록, 온라인에 흩어진 정보를 정리하는 작업입니다.</div>
-    <p class="surface-key r d2">AI 검색 정리 자체가 매출을 바로 올리지는 않습니다. 다만 이름·사진·설명·리뷰·위치·FAQ가 한 기준으로 정리됩니다. <b>그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다.</b></p>
-  </div>
-</section>
-
-<section class="sec" id="eyes">
-  <div class="wrap">
-    <div class="kicker r">03 · 두 개의 시선</div>
-    <h2 class="r d1">사람이 보는 화면을 정리합니다.<br>AI가 읽는 구조를 정리합니다.<br><span class="g">그리고 둘 사이의 말이 어긋나지 않게 맞춥니다.</span></h2>
-    <div class="eyes r d2">
-      <div class="eye">
-        <div class="eye__h">사람이 보는 것</div>
-        <div class="eye__sub">the human screen</div>
-        <ul><li>대표사진</li><li>첫 문장</li><li>가격 기준</li><li>리뷰 답변</li><li>예약 전 FAQ</li><li>위치와 주차 안내</li></ul>
-      </div>
-      <div class="eye">
-        <div class="eye__h">AI가 읽는 것</div>
-        <div class="eye__sub">the machine structure</div>
-        <ul><li>사업자 정보</li><li>카테고리</li><li>홈페이지 문장</li><li>리뷰의 반복 키워드</li><li>FAQ 구조</li><li>네이버·구글·홈페이지의 일관성</li></ul>
-      </div>
-    </div>
-    <p class="eyes-foot r">사람도 덜 헤매고,<br>AI도 덜 오해하게.</p>
-  </div>
-</section>
-
-<section class="sec" id="diagnosis-preview">
-  <div class="wrap">
-    <div class="kicker r">05 · 1장 진단서</div>
-    <h2 class="r d1">진단을 받으면<br>이런 걸 받습니다.</h2>
-    <p class="lead sec-lead r d2">매장 화면을 열어보고, 고객이 멈출 지점과 먼저 손볼 순서를 표시합니다.</p>
-    <div class="dxsheet r d2">
-      <div class="dxsheet__ttl">Weplace 1장 진단서</div>
-      <div class="dxsheet__meta">매장명 · ○○카페&nbsp;&nbsp;|&nbsp;&nbsp;지역 · 영등포</div>
-      <div class="dxstep">
-        <div class="dxstep__h"><span class="dxstep__n">01</span><span class="dxstep__t">처음 보이는 화면</span></div>
-        <div class="dxrow"><span class="chip chip--warn">보완 필요</span> 네이버 대표사진</div>
-        <div class="dxrow"><span class="chip chip--empty">비어 있음</span> 구글 정보</div>
-        <div class="dxrow"><span class="chip chip--ok">양호</span> 홈페이지 첫 문장</div>
-      </div>
-      <div class="dxstep">
-        <div class="dxstep__h"><span class="dxstep__n">02</span><span class="dxstep__t">고객이 멈추는 지점</span></div>
-        <div class="dxrow">위치 설명이 애매함</div>
-        <div class="dxrow">예약 전 질문 답변 없음</div>
-        <div class="dxrow">리뷰 답글 톤이 일정하지 않음</div>
-        <div class="dxrow">가격 기준이 흩어져 있음</div>
-      </div>
-      <div class="dxstep">
-        <div class="dxstep__h"><span class="dxstep__n">03</span><span class="dxstep__t">먼저 정리할 순서</span></div>
-        <div class="dxrow"><span class="ord">1순위</span> 대표사진 교체</div>
-        <div class="dxrow"><span class="ord">2순위</span> 소개문 첫 줄 수정</div>
-        <div class="dxrow"><span class="ord">3순위</span> FAQ 한 화면 구성</div>
-        <div class="dxrow"><span class="ord">4순위</span> 구글 정보 채우기</div>
-        <div class="dxrow"><span class="ord">5순위</span> 리뷰 답글 기준 만들기</div>
-      </div>
-      <p class="dxsheet__foot">이 진단서는 견적서가 아니라, 대표님이 현재 매장 화면을 이해하기 위한 지도입니다. 먼저 팔지 않습니다 — 어디서 고객이 멈추는지 함께 본 뒤, 정리할 범위를 제안합니다.</p>
-    </div>
-  </div>
-</section>
-
-<section class="sec sec--ink2" id="self-check">
-  <div class="wrap">
-    <div class="kicker r">06 · 자가진단</div>
-    <h2 class="r d1">우리 매장의 첫 표면,<br>지금 몇 점일까요?</h2>
-    <p class="lead sec-lead r d2">맞는 항목을 눌러 보세요. 손님이 헤매지 않는 화면일수록 점수가 올라갑니다.</p>
-    <div class="selfcheck r d2" id="selfcheck">
-      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>대표사진이 지금 매장 분위기와 같다</span></div>
-      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>가격대를 화면에서 바로 알 수 있다</span></div>
-      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>위치·주차 안내가 정리되어 있다</span></div>
-      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>구글 정보가 비어 있지 않다</span></div>
-      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>리뷰 답글에 일정한 기준이 있다</span></div>
-      <div class="sc-q" data-check><span class="sc-box">&#10003;</span><span>예약 전 질문에 답하는 FAQ가 있다</span></div>
-      <div class="sc-result">
-        <div class="sc-score" id="scScore">0 / 6</div>
-        <div class="sc-msg" id="scMsg">항목을 눌러 우리 매장의 첫 표면을 가늠해 보세요.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec sec--ink2" id="fields">
-  <div class="wrap">
-    <div class="kicker r">04 · 업종별 적용</div>
-    <h2 class="r d1">업종마다, 손님이<br>먼저 보는 것이 다릅니다.</h2>
-    <div class="fields r d2">
-      <a class="field" href="industries/dining.html"><img src="img/ind-dining.jpg" alt="식당·카페" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">식당 · 카페</div><div class="field__d">맛보다 먼저, 오늘 목적에 맞는 곳인지를 봅니다.</div></div></a>
-      <a class="field" href="/industries/esthetic/"><img src="img/ind-spa.jpg" alt="에스테틱·페이셜케어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">에스테틱 · 페이셜</div><div class="field__d">관리를 고르기 전에, 이해하고 예약할 수 있는지부터 봅니다.</div></div></a>
-      <a class="field" href="industries/stay.html"><img src="img/ind-stay.jpg" alt="펜션·숙소" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">펜션 · 숙소</div><div class="field__d">예약 전, 도착 동선과 분위기부터 상상합니다.</div></div></a>
-      <a class="field" href="industries/beauty.html"><img src="img/ind-beauty.jpg" alt="미용·헤어" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">미용 · 헤어</div><div class="field__d">결과보다 먼저, 실패 불안을 덜고 싶어 합니다.</div></div></a>
-      <a class="field" href="industries/clinic.html"><img src="img/ind-clinic.jpg" alt="병의원·피부과" loading="lazy" width="1122" height="1402" onerror="this.style.display='none'"><div class="field__veil"></div><div class="field__t"><div class="field__name">병의원 · 피부과</div><div class="field__d">실력만큼, 설명의 안정감을 봅니다.</div></div></a>
-    </div>
-    <p class="fields-foot r">고급 매장만 보는 것이 아닙니다. 손님이 선택 전 확인하는 화면이 있다면, 모든 매장이 대상입니다.</p>
-  </div>
-</section>
-
-<section class="sec" id="faq">
-  <div class="wrap">
-    <div class="kicker r">자주 묻는 질문</div>
-    <div class="r d1">
-      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">AI 검색에 잘 보이게 해주는 건가요?<span class="pl">+</span></button><div class="qa__a"><p>AI에게만 잘 보이기 위한 작업은 하지 않습니다. 사람과 AI가 동시에 이해할 수 있도록, 네이버·구글·홈페이지·리뷰에 흩어진 정보를 같은 매장처럼 정리합니다.</p></div></div>
-      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">상위에 올려주시나요?<span class="pl">+</span></button><div class="qa__a"><p>특정 노출을 약속하지 않습니다. 먼저 손님이 보는 첫 화면을 한 기준으로 정리합니다. 그 표면을 본 고객은 더 적은 에너지로 매장을 이해합니다.</p></div></div>
-      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">정리가 하나도 안 돼 있어도 되나요?<span class="pl">+</span></button><div class="qa__a"><p>괜찮습니다. 정리 안 된 상태가 출발점입니다. 매장명과 지역만 주시면 손님이 어디서 멈추는지부터 봅니다.</p></div></div>
-      <div class="qa" data-qa><button class="qa__q" type="button" aria-expanded="false">어떤 매장에 잘 맞나요?<span class="pl">+</span></button><div class="qa__a"><p>검색, 지도, 리뷰, 사진이 선택에 직접 닿는 매장에 잘 맞습니다. 식당, 카페, 마사지, 미용, 숙박, 병의원처럼 방문 전 확인할 것이 많은 업종부터 봅니다.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="cta" id="cta">
-  <div class="wrap">
-    <div class="kicker r">1장 진단</div>
-    <h2 class="r d1">정리 안 돼도 됩니다.<br><span class="g">매장명 한 줄이면 시작합니다.</span></h2>
-    <p class="cta__sub r d2">진단이 먼저, 작업은 그 다음입니다.</p>
-    <p class="cta__defense r d2">작업을 바로 맡기지 않아도 됩니다. 먼저 어디서 고객이 멈추는지부터 보겠습니다.</p>
-    <div class="cta__btns r d3">
-      <a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" class="btn btn-gold">카카오톡으로 매장명 보내기</a>
-      <a href="tel:+821064616594" class="btn btn-ghost">전화 010-6461-6594</a>
-    </div>
-    <p class="cta__micro r">매장명·지역 보내고 1장 진단 받기</p>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="wrap">
-    <div class="kicker r">Contact · 문의</div>
-    <h2 class="r d1">매장명과 지역만<br>보내주세요.</h2>
-    <p class="lead sec-lead r d2">길게 설명하지 않으셔도 됩니다. 매장명과 지역만 보내주시면, 손님이 멈추는 지점부터 같이 봅니다.</p>
-    <div class="cm-grid r d2">
-      <a class="cm" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener"><div class="cm__k">Kakao</div><div class="cm__v">카카오톡으로 보내기</div></a>
-      <a class="cm" href="tel:+821064616594"><div class="cm__k">Call</div><div class="cm__v">010-6461-6594</div></a>
-      <a class="cm" href="mailto:weplace25@gmail.com"><div class="cm__k">Mail</div><div class="cm__v">weplace25@gmail.com</div></a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <p>(주)위플레이스마케팅 · 대표 박규민<br>서울 영등포구 선유로9길 10, 812호 · weplace25@gmail.com</p>
-  </div>
-</footer>
-
+<div class="micro-band"><div class="wrap micro-grid" aria-label="고객이 매장을 선택하는 네 단계"><div><b>01</b> 발견하는 순간</div><div><b>02</b> 다시 확인하는 순간</div><div><b>03</b> 안심하는 순간</div><div><b>04</b> 방문을 결정하는 순간</div></div></div>
+<section class="section" id="journey"><div class="wrap journey-grid"><div class="journey-intro"><div class="eyebrow">HOW PEOPLE REALLY CHOOSE</div><h2>방문은 매장 앞이 아니라,<br>검색 화면에서<br>시작됩니다.</h2><p>대표님은 매장을 알고 있지만, 처음 보는 고객은 몇 장의 화면만 가지고 판단합니다. 그 사이에서 어떤 질문이 생기고, 어디서 다시 확인하는지 살펴봅니다.</p></div><div class="journey-steps"><div class="journey-step"><span class="journey-n">01</span><div><h3>발견</h3><p>이 매장이 어떤 곳인지, 내 목적에 맞는지 알아봅니다.</p></div></div><div class="journey-step"><span class="journey-n">02</span><div><h3>확인</h3><p>사진·위치·가격·리뷰가 같은 이야기를 하는지 확인합니다.</p></div></div><div class="journey-step"><span class="journey-n">03</span><div><h3>안심</h3><p>실패할 가능성이 낮아졌다고 느낄 근거를 찾습니다.</p></div></div><div class="journey-step"><span class="journey-n">04</span><div><h3>행동</h3><p>전화, 예약, 길찾기 중 가장 편한 다음 행동을 선택합니다.</p></div></div></div></div></section>
+<section class="section lens-section" id="experience"><div class="wrap lens-grid"><div class="lens-controls"><div class="eyebrow">TRY IT YOURSELF · 30-SECOND EXPLORER</div><h2>손님의 머릿속으로<br>잠깐 들어가 보세요.</h2><p class="lede">업종을 선택하면 고객이 방문 전에 자주 확인하는 질문이 바뀝니다. 정답을 정해 두는 대신, 대표님 매장이라면 어떤 답이 먼저 보여야 할지 생각해 보세요.</p><div class="lens-choices" role="group" aria-label="업종 선택"><button type="button" class="choice" data-industry="dining" aria-pressed="true">식당 · 카페</button><button type="button" class="choice" data-industry="stay" aria-pressed="false">호텔 · 숙소</button><button type="button" class="choice" data-industry="beauty" aria-pressed="false">뷰티 · 케어</button><button type="button" class="choice" data-industry="general" aria-pressed="false">그 외 업종</button></div><p class="fine" style="margin-top:18px">업종별 대표적인 질문을 이해하기 위한 예시입니다. 실제 고객 조사 결과를 의미하지는 않습니다.</p></div><div class="lens-output" aria-live="polite" aria-atomic="true"><div class="lens-header"><span>손님의 첫 질문</span><span id="lensLabel">DINING EXPERIENCE</span></div><div class="lens-screen"><div class="question-label">손님이라면, 이렇게 묻습니다.</div><h3 id="lensQuestion">“오늘 가도 자리 있을까?<br>메뉴와 가격은 어떨까?”</h3><p class="question-sub" id="lensDescription">가격·메뉴·영업시간·웨이팅 정보를 한 번에 알 수 있으면 다시 검색할 이유가 줄어듭니다.</p><div class="lens-signals"><div><span>먼저 필요한 정보</span><strong id="lensSignal1">메뉴와 가격</strong></div><div><span>안심을 주는 단서</span><strong id="lensSignal2">최근 사진과 리뷰</strong></div></div></div><div class="lens-bottom"><span class="lens-disclaimer">Weplace · 고객 관점 예시</span><a id="lensLink" class="button button-dark" href="/industries/dining.html">해당 업종 살펴보기 ↗</a></div></div></div></section>
+<section class="section" id="difference"><div class="wrap"><div class="section-head"><div><div class="eyebrow">BEFORE / AFTER · CONCEPT EXAMPLE</div><h2>똑같은 매장도<br>화면의 순서가 다르면 다르게 읽힙니다.</h2></div><p class="lede" style="font-size:16px;max-width:320px">가치가 없어서가 아니라, 지금 필요한 정보가 보이지 않아 망설이는 경우가 있습니다.</p></div><div class="compare-grid"><article class="compare-card"><header><span>BEFORE · 다시 검색하게 되는 화면</span><small>가상 예시</small></header><div class="compare-mock"><div class="mock-name">아늑한 공간에서 특별한 시간</div><div class="mock-photo"></div><div class="mock-lines" aria-hidden="true"><i></i><i></i><i></i></div><p class="fine" style="margin-top:18px">가격이 어디 있지? 주차가 될까? 사진은 언제 찍은 걸까?</p></div><p class="compare-copy">말은 좋지만 <b>나에게 필요한 사실</b>을 다시 찾아야 합니다.</p></article><article class="compare-card good"><header><span>AFTER · 바로 이해되는 화면</span><small>가상 예시</small></header><div class="compare-mock"><div class="mock-name">이용 전 꼭 확인할 세 가지</div><div class="mock-photo"></div><div class="mock-lines"><span>✓ 가격 및 이용 기준을 첫 화면에</span><span>✓ 최근 사진과 실제 공간 안내</span><span>✓ 주차·위치·예약 방법을 한곳에</span></div><p class="fine" style="margin-top:18px">찾던 정보가 보여, 다음 행동을 고를 수 있습니다.</p></div><p class="compare-copy">고객이 <b>안심하고 판단할 근거</b>를 빠르게 찾습니다.</p></article></div><p class="compare-footnote">* 위 화면은 정보 구조를 설명하기 위한 제작 예시이며, 특정 매장의 실제 전환 결과가 아닙니다.</p></div></section>
+<section class="section industries" id="industries"><div class="wrap"><div class="section-head"><div><div class="eyebrow">INDUSTRY EXPERIENCE SYSTEMS</div><h2>업종마다 고객의<br>망설임은 다릅니다.</h2></div><p class="lede" style="font-size:16px;max-width:330px">같은 방식의 광고가 아니라, 각각의 업종에서 고객이 필요로 하는 정보를 먼저 살펴봅니다.</p></div><div class="industry-grid"><a class="industry-card" href="/industries/dining.html" data-sector="dining"><div class="industry-img"><img src="/img/ind-dining.jpg" alt="식당에서 음식과 공간을 경험하는 장면" loading="lazy"></div><div class="industry-copy"><div class="eyebrow">FOOD & DINING</div><h3>식당 · 카페</h3><p>가격, 메뉴, 분위기부터 방문 결정까지. 손님이 다시 확인하는 일을 줄입니다.</p><div class="industry-foot"><span>고객유입 시스템 보기</span><span aria-hidden="true">↗</span></div></div></a><a class="industry-card" href="/industries/stay.html" data-sector="stay"><div class="industry-img"><img src="/img/ind-stay.jpg" alt="숙소 공간과 침구, 객실 분위기" loading="lazy"></div><div class="industry-copy"><div class="eyebrow">STAY & HOSPITALITY</div><h3>호텔 · 숙소</h3><p>객실·주차·도착·예약 안내를 연결해 낯선 여행지에서도 선택하기 쉽게 만듭니다.</p><div class="industry-foot"><span>고객유입 시스템 보기</span><span aria-hidden="true">↗</span></div></div></a><a class="industry-card" href="/industries/beauty/" data-sector="beauty"><div class="industry-img"><img src="/img/ind-beauty.jpg" alt="뷰티 공간의 차분한 인테리어" loading="lazy"></div><div class="industry-copy"><div class="eyebrow">BEAUTY & CARE</div><h3>뷰티 · 케어</h3><p>결과에 대한 기대와 불안을 함께 이해하는 사진, 설명, 예약의 흐름을 정리합니다.</p><div class="industry-foot"><span>업종별 관점 보기</span><span aria-hidden="true">↗</span></div></div></a></div><p class="fine" style="margin-top:18px">숙박·요식업 페이지에는 콘셉트 이미지, 출처를 밝힌 공공 통계, 가정값 기반 계산기와 자가진단이 포함됩니다. 실제 매장 사례 또는 실적을 의미하지 않습니다.</p></div></section>
+<section class="section" id="how"><div class="wrap"><div class="section-head"><div><div class="eyebrow">HOW WE WORK</div><h2>감각을 진단하고,<br>작업을 구조로 남깁니다.</h2></div><p class="lede" style="font-size:16px;max-width:340px">좋아 보이는 화면을 만드는 데서 끝나지 않습니다. 다음 사람도 같은 기준으로 관리할 수 있도록 정리합니다.</p></div><div class="process-grid"><div class="process-card"><span class="num">STEP 01 / OBSERVE</span><h3>현재 화면 관찰</h3><p>홈페이지, 네이버, 구글, 리뷰, 사진에서 고객이 멈추는 장면을 기록합니다.</p></div><div class="process-card"><span class="num">STEP 02 / PRIORITIZE</span><h3>작업 우선순위</h3><p>불일치, 빠진 정보, 예약 전 질문을 찾고 먼저 바꿀 부분을 합의합니다.</p></div><div class="process-card"><span class="num">STEP 03 / BUILD</span><h3>표면 개선 실행</h3><p>사진, 설명, 메뉴·가격, FAQ, 위치 안내, 문의·예약 흐름을 정돈합니다.</p></div><div class="process-card"><span class="num">STEP 04 / LEARN</span><h3>실제 반응 확인</h3><p>노출이 아닌 전화·길찾기·문의·예약 등 확인 가능한 행동을 살펴봅니다.</p></div></div><div class="result-banner"><div><h3>성과를 과장하지 않고, 달라진 화면과 행동을 기록합니다.</h3><p>진단서 · 실행 체크리스트 · 수정 이력 · 측정 기준을 남겨 다음 개선의 근거로 사용합니다.</p></div><a href="#audit" class="linkline">내 매장부터 살펴보기 ↗</a></div></div></section>
+<section class="section audit-section" id="audit"><div class="wrap"><div class="audit-head"><div><div class="eyebrow">QUICK AUDIT · SELF CHECK</div><h2>우리 매장의 첫 화면,<br>손님이 덜 헤매게 돕고 있을까요?</h2><p class="lede">확신할 수 있는 항목을 선택해 보세요. 점수보다 중요한 것은 아직 확인하지 못한 고객의 질문입니다.</p></div><a href="#contact" class="button button-outline" style="color:#f2f8f1;border-color:#799b84">전문 진단 문의 ↗</a></div><div class="audit-box"><span class="audit-counter">6 SIGNALS OF CUSTOMER CONFIDENCE</span><div class="audit-options" id="auditOptions" role="group" aria-label="매장 온라인 정보 점검 항목"><button type="button" class="audit-opt" aria-pressed="false" data-audit="최근 사진"><b aria-hidden="true">✓</b>대표사진이 현재 모습과 같습니다</button><button type="button" class="audit-opt" aria-pressed="false" data-audit="가격"><b aria-hidden="true">✓</b>가격·메뉴·이용 기준이 명확합니다</button><button type="button" class="audit-opt" aria-pressed="false" data-audit="주차와 위치"><b aria-hidden="true">✓</b>주차·위치·방문 안내가 있습니다</button><button type="button" class="audit-opt" aria-pressed="false" data-audit="정보 일치"><b aria-hidden="true">✓</b>플랫폼마다 주요 정보가 같습니다</button><button type="button" class="audit-opt" aria-pressed="false" data-audit="리뷰"><b aria-hidden="true">✓</b>최근 리뷰와 답변을 관리합니다</button><button type="button" class="audit-opt" aria-pressed="false" data-audit="예약 동선"><b aria-hidden="true">✓</b>예약·문의 방법을 쉽게 찾습니다</button></div><div class="audit-status" aria-live="polite"><div class="audit-result"><strong id="auditMessage">아는 것부터 확인해 보세요.</strong><p id="auditHint">선택하지 않은 항목이 자동으로 문제라는 뜻은 아닙니다.</p></div><div class="audit-score" id="auditScore">0 / 6</div></div></div><p class="audit-foot">자가점검은 공식 평가나 실제 매장 진단이 아닙니다. 판단이 어려운 항목은 위플레이스와 함께 확인할 수 있습니다.</p></div></section>
+<section class="section" id="faq"><div class="wrap" style="max-width:910px"><div class="eyebrow">FREQUENTLY ASKED QUESTIONS</div><h2 style="margin-bottom:39px">궁금한 것은 먼저 확인해 보세요.</h2><div class="faq-list"><details class="faq-item"><summary>광고를 대신해 주는 회사인가요?</summary><p>광고 집행도 상황에 따라 검토할 수 있지만, 먼저 고객이 검색·비교·문의하는 과정에서 필요한 정보가 잘 보이는지 살펴봅니다. 바꿀 지점을 찾은 뒤 실제 작업 범위를 제안합니다.</p></details><details class="faq-item"><summary>검색 순위를 올려 주나요?</summary><p>특정 순위나 매출을 보장하지 않습니다. 검색 플랫폼과 홈페이지의 정보를 같은 기준으로 정리하고, 고객이 쉽게 이해하는 화면을 만들기 위해 노력합니다.</p></details><details class="faq-item"><summary>자료가 거의 없어도 시작할 수 있나요?</summary><p>가능합니다. 매장명과 지역, 현재 사용하는 채널을 확인한 뒤 우선순위를 정합니다. 사진이나 가격 안내 등 필요한 자료와 역할은 작업 전에 함께 합의합니다.</p></details><details class="faq-item"><summary>비용은 어느 정도인가요?</summary><p>매장 규모, 현재 정보의 상태, 촬영·제작·운영 범위에 따라 달라집니다. 먼저 진단으로 필요한 작업을 확인한 뒤 범위와 비용, 일정을 구분해 제안합니다.</p></details></div></div></section>
+<section class="section contact-section" id="contact"><div class="wrap contact-grid"><div><div class="eyebrow">NEXT MOVE · 1-PAGE DIAGNOSIS</div><h2>매장명 한 줄에서<br>시작하겠습니다.</h2><p class="lede">어떤 서비스를 구매할지 지금 결정하지 않으셔도 됩니다. 고객이 첫 화면에서 어떤 질문을 하는지부터 함께 살펴보겠습니다.</p><div class="hero-rule"><span></span>관찰 → 진단 → 우선순위 → 실행</div></div><div class="contact-card"><h3>우리 매장도 한번 살펴볼까요?</h3><p>매장명과 지역만 알려주세요. 필요한 내용과 진단 범위부터 안내드립니다.</p><a class="button button-dark" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener" data-lead="kakao_contact">카카오톡으로 매장명 보내기 ↗</a><a class="button button-light" href="mailto:weplace25@gmail.com?subject=Weplace%20%EB%A7%A4%EC%9E%A5%20%EC%A7%84%EB%8B%A8%20%EB%AC%B8%EC%9D%98" data-lead="email_contact">이메일로 문의하기 ↗</a><p class="fine">전화 <a href="tel:+821064616594" data-lead="telephone">010-6461-6594</a> · 답변 가능한 내용부터 안내드립니다.</p></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-grid"><div><div class="brand"><span class="brand-mark" aria-hidden="true"></span>We,place.</div><p>(주)위플레이스마케팅 · 대표 박규민<br>서울 영등포구 선유로9길 10, 812호<br>weplace25@gmail.com</p></div><div class="footer-links"><a href="#journey">고객 여정</a><a href="#industries">업종별</a><a href="#contact">문의</a></div></div></footer>
+<div class="mobile-sticky"><span>우리 매장도 살펴볼까요?</span><a href="#contact" data-lead="mobile_sticky">1장 진단 ↗</a></div>
 <script>
-(function(){
-  'use strict';
-  var nav=document.getElementById('nav');
-
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
-    document.querySelectorAll('.r').forEach(function(el){io.observe(el);});
-    var dots=document.querySelectorAll('.dotnav a'), byId={};
-    dots.forEach(function(a){byId[a.getAttribute('data-sec')]=a;});
-    var dio=new IntersectionObserver(function(es){es.forEach(function(e){
-      if(e.isIntersecting){var a=byId[e.target.id]; if(a){dots.forEach(function(d){d.classList.remove('active');}); a.classList.add('active');}}
-    });},{rootMargin:'-45% 0px -45% 0px'});
-    Object.keys(byId).forEach(function(id){var s=document.getElementById(id); if(s) dio.observe(s);});
-  }else{document.querySelectorAll('.r').forEach(function(el){el.classList.add('in');});}
-
-  function onScroll(){var s=window.scrollY>80;nav.classList.toggle('show',s);nav.classList.toggle('top',!s);}
-  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
-
-  document.querySelectorAll('[data-qa]').forEach(function(q){
-    var b=q.querySelector('.qa__q');
-    b.addEventListener('click',function(){var o=q.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
-  });
-
-  /* 손님 눈으로 보기 */
-  var cv=document.getElementById('customer-view');
-  if(cv){
-    var answers={}, total=4, result=document.getElementById('customerViewResult');
-    var title=document.getElementById('customerViewTitle');
-    var text=document.getElementById('customerViewText');
-    var issuesEl=document.getElementById('customerViewIssues');
-
-    function renderCustomerView(){
-      if(Object.keys(answers).length<total)return;
-      var issues=[];
-      Object.keys(answers).forEach(function(k){if(answers[k].friction)issues.push(answers[k].issue);});
-      var n=issues.length;
-
-      if(n===0){
-        title.textContent='이미 꽤 또렷합니다.';
-        text.textContent='좋은 점이 첫 화면에서 늦지 않게 발견되는 상태입니다. 이제 그 기준이 다른 화면에서도 유지되는지만 확인하면 됩니다.';
-      }else if(n<=2){
-        title.textContent='좋은 점은 이미 있습니다. 한 번 더 확인해야 하는 자리가 '+n+'곳 보입니다.';
-        text.textContent='문제가 많다는 뜻이 아닙니다. 손님이 결정을 내리기 전에 조금 더 찾아야 하는 답이 있다는 뜻에 가깝습니다.';
-      }else{
-        title.textContent='매장이 부족한 게 아니라, 좋은 점이 화면에서 늦게 발견되는 상태에 가깝습니다.';
-        text.textContent='지금 있는 장점을 바꾸기보다, 처음 보는 사람이 더 빨리 이해할 수 있도록 순서와 정보를 맞추는 것부터 볼 수 있습니다.';
-      }
-
-      issuesEl.innerHTML='';
-      if(issues.length){
-        issues.forEach(function(issue){
-          var s=document.createElement('span');
-          s.className='cv-issue';
-          s.textContent=issue;
-          issuesEl.appendChild(s);
-        });
-      }else{
-        var s=document.createElement('span');
-        s.className='cv-issue';
-        s.textContent='현재 답변 기준 · 큰 걸림 없음';
-        issuesEl.appendChild(s);
-      }
-
-      result.classList.add('show');
-      if(!cv.dataset.tracked && typeof window.gtag==='function'){
-        window.gtag('event','customer_view_complete',{friction_count:n,friction_areas:issues.join('|')});
-        cv.dataset.tracked='1';
-      }
-    }
-
-    cv.querySelectorAll('[data-cv-option]').forEach(function(b){
-      b.setAttribute('aria-pressed','false');
-      b.addEventListener('click',function(){
-        var q=b.closest('[data-cv-q]');
-        q.querySelectorAll('[data-cv-option]').forEach(function(o){o.classList.remove('on');o.setAttribute('aria-pressed','false');});
-        b.classList.add('on'); b.setAttribute('aria-pressed','true');
-        answers[q.getAttribute('data-cv-q')]={
-          friction:b.getAttribute('data-friction')==='1',
-          issue:q.getAttribute('data-issue')
-        };
-        renderCustomerView();
-      });
-    });
-  }
-
-  var checks=document.querySelectorAll('#selfcheck [data-check]');
-  var msgs=['항목을 눌러 우리 매장의 첫 표면을 가늠해 보세요.',
-    '아직 손님이 헤매기 쉬운 화면입니다. 어디서 멈추는지부터 함께 보면 됩니다.',
-    '시작점은 잡혔습니다. 비어 있는 화면부터 채우면 손님의 에너지가 줄어듭니다.',
-    '절반은 정리되어 있습니다. 화면 사이 말이 어긋나는 곳만 맞추면 됩니다.',
-    '꽤 정돈된 편입니다. 한두 군데만 손보면 같은 매장으로 또렷하게 읽힙니다.',
-    '거의 또렷합니다. 마지막 디테일까지 맞추면 사람도 AI도 헷갈리지 않습니다.',
-    '첫 표면이 또렷합니다. 이 기준이 흔들리지 않게 남기는 일이 다음 단계입니다.'];
-  function update(){
-    var n=0; checks.forEach(function(c){if(c.classList.contains('on'))n++;});
-    document.getElementById('scScore').textContent=n+' / 6';
-    document.getElementById('scMsg').textContent=msgs[n];
-  }
-  checks.forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('on');update();});});
+(function(){'use strict';
+var header=document.getElementById('siteHeader'),menu=document.getElementById('menuBtn'),progress=document.getElementById('readProgress');
+function send(event,params){if(typeof window.gtag==='function')window.gtag('event',event,params||{});}
+menu.addEventListener('click',function(){var open=header.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');menu.textContent=open?'✕':'☰';});
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){header.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','메뉴 열기');menu.textContent='☰';});});
+var ticking=false;window.addEventListener('scroll',function(){if(ticking)return;ticking=true;requestAnimationFrame(function(){var max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?Math.min(100,scrollY/max*100):0)+'%';ticking=false;});},{passive:true});
+var views={dining:{label:'DINING EXPERIENCE',question:'“오늘 가도 자리 있을까?<br>메뉴와 가격은 어떨까?”',description:'가격·메뉴·영업시간·웨이팅 정보를 한 번에 알 수 있으면 다시 검색할 이유가 줄어듭니다.',one:'메뉴와 가격',two:'최근 사진과 리뷰',link:'/industries/dining.html'},stay:{label:'STAY EXPERIENCE',question:'“주차는 편할까?<br>실제 객실은 사진과 같을까?”',description:'도착 동선, 객실 타입, 체크인 시간과 예약 조건을 비교할 수 있으면 낯선 여행지에서도 안심할 수 있습니다.',one:'객실과 요금 기준',two:'주차·체크인 안내',link:'/industries/stay.html'},beauty:{label:'BEAUTY EXPERIENCE',question:'“내가 원하는 분위기와<br>결과를 기대할 수 있을까?”',description:'서비스와 비용, 실제 작업 사례, 상담·예약 전 준비사항을 쉽게 찾을수록 선택 부담이 줄어듭니다.',one:'시술·서비스 설명',two:'실제 사례와 상담 방법',link:'/industries/beauty/'},general:{label:'LOCAL BUSINESS EXPERIENCE',question:'“여기가 나에게 맞을까?<br>가기 전에 뭘 알아야 할까?”',description:'업종은 달라도 고객은 자신의 상황에 필요한 근거를 확인합니다. 사진·가격·위치·연락처부터 살펴보세요.',one:'서비스와 이용 기준',two:'위치·리뷰·연락',link:'#audit'}};
+var lens=document.getElementById('experience');document.querySelectorAll('[data-industry]').forEach(function(b){b.addEventListener('click',function(){var id=b.dataset.industry,v=views[id];document.querySelectorAll('[data-industry]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});document.getElementById('lensLabel').textContent=v.label;document.getElementById('lensQuestion').innerHTML=v.question;document.getElementById('lensDescription').textContent=v.description;document.getElementById('lensSignal1').textContent=v.one;document.getElementById('lensSignal2').textContent=v.two;var a=document.getElementById('lensLink');a.setAttribute('href',v.link);a.textContent=id==='general'?'매장 점검하기 ↗':'해당 업종 살펴보기 ↗';send('weplace_experience_select',{industry:id});});});
+var options=[].slice.call(document.querySelectorAll('[data-audit]')),completed=false;
+function updateAudit(){var n=options.filter(function(x){return x.getAttribute('aria-pressed')==='true'}).length;document.getElementById('auditScore').textContent=n+' / 6';var msg,hint;if(n===0){msg='아는 것부터 확인해 보세요.';hint='선택하지 않은 항목이 자동으로 문제라는 뜻은 아닙니다.';}else if(n<3){msg='고객이 다시 확인할 정보가 있는지 살펴볼 때입니다.';hint='답을 찾기 어려운 항목부터 점검해 보세요.';}else if(n<6){msg='기본은 잡혀 있습니다. 남은 질문도 확인해 보세요.';hint='플랫폼 간 정보가 일치하는지 직접 비교해 보는 것이 좋습니다.';}else{msg='여섯 항목을 모두 확인했습니다.';hint='현재 상태가 실제 화면에서도 유지되는지 점검할 차례입니다.';}document.getElementById('auditMessage').textContent=msg;document.getElementById('auditHint').textContent=hint;if(n===6&&!completed){completed=true;send('weplace_audit_all_checked',{audit_type:'homepage_selfcheck'});}}
+options.forEach(function(b){b.addEventListener('click',function(){var val=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',String(val));updateAudit();});});
+document.querySelectorAll('[data-intent]').forEach(function(a){a.addEventListener('click',function(){send('weplace_experience_start',{placement:a.dataset.intent});});});
+document.querySelectorAll('[data-sector]').forEach(function(a){a.addEventListener('click',function(){send('weplace_industry_open',{industry:a.dataset.sector});});});
+document.querySelectorAll('[data-lead]').forEach(function(a){a.addEventListener('click',function(){send('weplace_consult_click',{placement:a.dataset.lead});});});
 })();
 </script>
 </body>
