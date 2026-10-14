@@ -20,7 +20,7 @@ form.addEventListener('submit',event=>{event.preventDefault();const a=answers(),
  const allYes=a.every(v=>v==='yes'),q=questions[first];
  const title=allYes?'기본 흐름을 갖춘 매장':no!==-1?({발견:'찾는 순간을 다듬을 매장',안심:'선택할 근거를 쌓을 매장',행동:'예약의 마지막 한 걸음을 이을 매장'}[q.group]):unknown!==-1?'손님의 화면부터 확인할 매장':'잘 갖춘 부분을 연결할 매장';
  const reason=allYes?'여섯 항목 모두 잘 갖춰져 있다고 답하셨어요. 이제 실제 화면과 고객의 행동에서도 같은 흐름이 이어지는지 확인해 볼 차례입니다.':'‘'+q.short+'’에 ‘'+labels[a[first]]+'’라고 답하셨어요. '+(a[first]==='unknown'?'부족하다고 단정하기보다, 실제 화면을 확인하는 일부터 제안합니다.':'이 부분부터 살펴보면 다음 작업의 범위를 정하기 쉽습니다.');
- const strength=strong!==-1?'‘'+questions[strong].short+'’는 잘 갖춰져 있다고 답하셨어요. 실제 화면에서도 유지되는지 확인하며 이어가세요.':'아직 강점이라고 판단할 만큼 확실한 답변이 없습니다. 현재 화면을 함께 확인하고 잘된 부분부터 찾아보세요.';
+ const strength=strong!==-1?'‘'+questions[strong].short+'’ 항목은 잘 갖춰져 있다고 답하셨어요. 실제 화면에서도 유지되는지 확인하며 이어가세요.':'아직 강점이라고 판단할 만큼 확실한 답변이 없습니다. 현재 화면을 함께 확인하고 잘된 부분부터 찾아보세요.';
  const priority=allYes?'정보를 바꾼 뒤에도 모든 채널에서 같은 내용이 보이는지, 예약 경로가 작동하는지 확인하세요.':q.action;
  const actions=[priority,industry.tip,'바꾼 화면과 날짜를 남기고, 다음 주에 같은 화면을 다시 확인하세요. 문의·예약 변화를 비교할 때는 기간과 집계 기준을 함께 기록해 주세요.'];
  $('resultTitle').textContent=title;$('resultReason').textContent=reason;$('resultStrength').textContent=strength;$('resultPriority').textContent=priority;$('resultActions').replaceChildren();actions.forEach(text=>{const li=document.createElement('li');li.textContent=text;$('resultActions').append(li);});$('resultAnswers').replaceChildren();questions.forEach((question,i)=>{const li=document.createElement('li');li.textContent=question.short+' — '+labels[a[i]];$('resultAnswers').append(li);});
