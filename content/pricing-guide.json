@@ -1,0 +1,23 @@
+{
+  "status": "draft",
+  "currency": "KRW",
+  "vat": "excluded",
+  "updated": "2026-10-14",
+  "services": [
+    {
+      "id": "advertising", "amount": 500000, "unit": "month",
+      "ko": {"name":"광고대행","question":"보여줄 준비는 됐는데, 원하는 손님에게 닿고 있나요?","includes":["매장 1곳 · 광고 매체 1개 · 캠페인 1개 기준","기존 자료를 활용한 광고 문구 2안","주간 집행 점검 · 월간 결과 요약 1회"],"excludes":"광고 집행비, 초기 계정·전환 설정, 촬영·영상·신규 디자인 제작은 별도 협의합니다."},
+      "en": {"name":"Advertising","question":"Ready to be seen, but not reaching the people you want?","includes":["One location, one ad platform, one campaign","Two copy variants using existing materials","Weekly campaign checks and one monthly summary"],"excludes":"Media spend, initial account or conversion setup, photography, video and new design production are quoted separately."}
+    },
+    {
+      "id": "branding", "amount": 1500000, "unit": "project",
+      "ko": {"name":"브랜딩","question":"좋은 점은 많은데, 우리답게 설명하는 말과 모습이 있나요?","includes":["브랜드 인터뷰 1회 · 핵심 포지셔닝 1안","소개 문안 · 핵심 메시지 · 색상·서체 방향","기본 브랜드 가이드 1종 · 통합 수정 2회"],"excludes":"네이밍, 로고 개발, 상표 검토, 촬영, 웹사이트·인쇄물 제작은 별도 범위로 제안합니다."},
+      "en": {"name":"Branding","question":"You know what makes you good. Does your message and identity show it?","includes":["One brand interview and one positioning direction","Introduction, core messages, colour and type direction","One basic brand guide and two consolidated revision rounds"],"excludes":"Naming, logo development, trademark review, photography, website production and printed materials are scoped separately."}
+    },
+    {
+      "id": "marketing", "amount": 1000000, "unit": "month",
+      "ko": {"name":"마케팅","question":"검색·사진·리뷰·예약이 하나의 방문 경험으로 이어지나요?","includes":["매장 1곳 · 기존 채널 최대 2개 운영 기준","월 콘텐츠 4건 · 핵심 정보·FAQ 점검","월간 실행 계획 · 문의·예약 지표 검토 1회"],"excludes":"광고 집행·운영, 초기 채널 구축, 촬영·영상, 번역 감수, 새 홈페이지 제작은 별도 협의합니다. 콘텐츠는 제공 자료 기준입니다."},
+      "en": {"name":"Marketing","question":"Do search, photos, reviews and booking connect into one clear journey?","includes":["One location and up to two existing channels","Four content items per month, key fact and FAQ checks","Monthly action plan and one enquiry/booking metric review"],"excludes":"Paid media and ad management, initial channel setup, photography, video, translation review and new websites are quoted separately. Content uses supplied materials."}
+    }
+  ]
+}
