@@ -1,4 +1,7 @@
 /card  /?utm_source=business_card&utm_medium=qr&utm_campaign=weplace_card  302
 /api/weplace-journal  https://weplace-flow-mino-review.netlify.app/.netlify/functions/public-journal  200!
-/team  https://weplace-flow-mino-review.netlify.app/  302
-/team/*  https://weplace-flow-mino-review.netlify.app/:splat  302
+/team  https://flow.withweplace.kr/  302
+/team/*  https://flow.withweplace.kr/:splat  302
+/api/weplace-industries  https://weplace-flow-mino-review.netlify.app/.netlify/functions/public-industries  200!
+/client  https://flow.withweplace.kr/client  302
+/client/*  https://flow.withweplace.kr/client/:splat  302
