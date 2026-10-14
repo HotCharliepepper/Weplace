@@ -2,3 +2,6 @@
 /api/weplace-journal  https://weplace-flow-mino-review.netlify.app/.netlify/functions/public-journal  200!
 /team  https://weplace-flow-mino-review.netlify.app/  302
 /team/*  https://weplace-flow-mino-review.netlify.app/:splat  302
+/api/weplace-industries  https://weplace-flow-mino-review.netlify.app/.netlify/functions/public-industries  200!
+/client  https://weplace-flow-mino-review.netlify.app/client  302
+/client/*  https://weplace-flow-mino-review.netlify.app/client/:splat  302
