@@ -131,6 +131,10 @@
         folder.dataset.industry = guide.theme;
         folder.open = opened.has(guide.theme);
         const summary = el('summary');
+        // Only an intentional native toggle animates. A minute refresh restoring
+        // `open` must not replay the entrance or change focus/approval expiry.
+        let openingByUser = false;
+        summary.addEventListener('click', () => { openingByUser = !folder.open; });
         summary.dataset.focus = 'folder-' + guide.theme;
         summary.append(el('span', 'wp-folder-tab', String(index + 1).padStart(2, '0') + ' / CUSTOMER’S VIEW'));
         const top = el('div', 'wp-folder-top');
@@ -150,6 +154,11 @@
         summary.append(expand);
         folder.append(summary);
         const body = el('div', 'wp-folder-body');
+        folder.addEventListener('toggle', () => {
+          if (folder.open && openingByUser) window.WeplaceMotion?.play(body, 'expand');
+          else if (!folder.open) window.WeplaceMotion?.cancel(body);
+          openingByUser = false;
+        });
         body.append(el('h4', '', '어디에서 망설일까요?'), el('p', '', guide.hesitation), el('h4', '', '이 질문에 답하는 안내'));
         const evidence = el('ul', 'wp-folder-evidence');
         guide.evidence.forEach(item => evidence.append(el('li', '', item)));
@@ -213,6 +222,7 @@
         retry.addEventListener('click', () => this.load());
         shell.append(retry);
       }
+      this.querySelectorAll('.wp-folder-body').forEach(node => window.WeplaceMotion?.cancel(node));
       this.replaceChildren(shell);
       if (focusKey) [...this.querySelectorAll('[data-focus]')].find(node => node.dataset.focus === focusKey)?.focus({ preventScroll: true });
     }

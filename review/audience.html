@@ -11,12 +11,23 @@
 <body>
   <header><strong>WEPLACE 화면 검토</strong><div role="group" aria-label="화면 폭"><button data-width="360" aria-pressed="false">360</button><button data-width="390" aria-pressed="true">390</button><button data-width="430" aria-pressed="false">430</button><button data-width="768" aria-pressed="false">768</button><button data-width="1024" aria-pressed="false">1024</button><button data-width="1440" aria-pressed="false">1440px</button></div><div role="group" aria-label="페이지"><button data-page="/" aria-pressed="true">홈</button><button data-page="/industries/" aria-pressed="false">업종</button><button data-page="/check/" aria-pressed="false">자가진단</button><button data-page="/meeting/" aria-pressed="false">미팅</button><button data-page="/my-store/" aria-pressed="false">내 매장 관리</button><button data-page="/field-notes/" aria-pressed="false">공개 기록</button><button data-page="/privacy/" aria-pressed="false">개인정보 검토</button><button data-page="/review/case-layout.html" aria-pressed="false">사례 구조 예시</button></div><a class="api-link" href="/review/integration.html">공개 API 테스트 →</a></header>
   <div class="scene-controls"><span>홈 장면 바로 보기</span><div role="group" aria-label="홈 장면"><button data-scene="top" aria-pressed="false">첫 화면</button><button data-scene="what-we-make" aria-pressed="false">만드는 것</button><button data-scene="experience" aria-pressed="false">고객 체험</button><button data-scene="how" aria-pressed="false">진행 과정</button><button data-scene="contact" aria-pressed="false">상담</button><button data-scene="site-footer" aria-pressed="false">회사 정보</button></div><span id="reviewState" role="status">390px · 홈</span></div>
-  <p class="review-note">검토용 화면입니다. 실제 상담·예약·계약이 생성되지 않습니다. 폭 선택은 해당 기기 검수 완료를 뜻하지 않습니다. 사례 구조는 가상 예시이며, 개인정보 안내의 미확정 항목은 운영 공개 전 확인이 필요합니다.</p>
+  <div class="scene-controls"><span>표시 조건</span><button type="button" id="reviewNoScript" aria-pressed="false">자바스크립트 없이 보기</button><span id="reviewModeNote">움직임은 홈 체험 아래 ‘움직임 줄이기’로 끌 수 있습니다.</span></div>
+  <p class="review-note">검토용 화면입니다. 실제 상담·예약·계약이 생성되지 않습니다. 폭 선택은 해당 기기 검수 완료를 뜻하지 않습니다. 사례 구조는 가상 예시이며, 개인정보 안내의 미확정 항목은 운영 공개 전 확인이 필요합니다. 자바스크립트 끄기는 iframe sandbox로 검토하며 실제 기기·브라우저 설정 검수와 구분합니다.</p>
   <main><iframe id="reviewFrame" title="홈 · 390px 미리보기" src="/" referrerpolicy="no-referrer"></iframe></main>
   <script>
     (function(){'use strict';
       const frame=document.getElementById('reviewFrame');
       const state=document.getElementById('reviewState');
+      const noScript=document.getElementById('reviewNoScript');
+      noScript.addEventListener('click',()=>{
+        const disabled=noScript.getAttribute('aria-pressed')!=='true';
+        noScript.setAttribute('aria-pressed',String(disabled));
+        noScript.textContent=disabled?'자바스크립트 다시 켜기':'자바스크립트 없이 보기';
+        if(disabled)frame.setAttribute('sandbox','allow-same-origin');else frame.removeAttribute('sandbox');
+        // Reload our review page to apply sandbox, without changing browser settings.
+        frame.src='/';pageName='홈';mark('[data-page]',document.querySelector('[data-page="/"]'));mark('[data-scene]',null);describe();
+        document.getElementById('reviewModeNote').textContent=disabled?'스크립트 차단: 제작 예시 3개·본문·정책·미팅 링크를 확인하세요.':'움직임은 홈 체험 아래 ‘움직임 줄이기’로 끌 수 있습니다.';
+      });
       let width='390',pageName='홈';
       function describe(){state.textContent=width+'px · '+pageName;frame.title=pageName+' · '+width+'px 미리보기';}
       function fitHeight(){const top=frame.getBoundingClientRect().top+window.scrollY;frame.style.height=Math.max(600,window.innerHeight-top-16)+'px';}

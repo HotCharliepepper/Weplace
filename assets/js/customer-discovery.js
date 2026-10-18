@@ -28,6 +28,8 @@
   var header = el('siteHeader');
   var menu = el('menuBtn');
   var nav = el('mainNav');
+  function animate(node, kind, direction) { if (window.WeplaceMotion) window.WeplaceMotion.play(node, kind, direction); }
+  function cancelMotion(node) { if (window.WeplaceMotion) window.WeplaceMotion.cancel(node); }
   function metric(name, placement) {
     if (window.WeplaceMetrics) window.WeplaceMetrics.emit(name, {industry: selectedIndustry, placement: placement});
   }
@@ -52,12 +54,16 @@
     document.querySelectorAll('[data-meeting-link]').forEach(function (a) { a.href = '/meeting/' + suffix; });
   }
   function emptyScreen(message, hint) {
+    cancelMotion(el('exampleScreen').firstElementChild);
+    el('exampleScreen').style.minHeight = '';
+    el('comparisonStatus').textContent = message;
     var root = document.createElement('div'); root.className = 'empty-screen';
     var p = document.createElement('p'); p.textContent = message;
     var span = document.createElement('span'); span.textContent = hint;
     root.append(p, span); el('exampleScreen').replaceChildren(root);
   }
   function hideResult() {
+    cancelMotion(el('discoveryResult'));
     el('discoveryResult').hidden = true;
     el('summaryStatus').textContent = '';
     el('copyFallback').hidden = true;
@@ -95,12 +101,18 @@
     document.querySelectorAll('[data-purpose]').forEach(function (button) { button.setAttribute('aria-pressed', String(Number(button.dataset.purpose) === index)); });
     var scenario = scenarios[selectedIndustry].purposes[index];
     el('customerQuestion').textContent = scenario.question;
+    animate(el('customerQuestion'), 'switch');
+    el('exampleScreen').style.minHeight = '';
     clearView();
     renderView('before');
   }
   function addText(tag, className, text) { var node = document.createElement(tag); if (className) node.className = className; node.textContent = text; return node; }
   function renderView(view) {
     if (!selectedIndustry || selectedPurpose === null || (view !== 'before' && view !== 'after')) return;
+    if (selectedView === view) return;
+    var previousView = selectedView;
+    var previousHeight = el('exampleScreen').getBoundingClientRect().height;
+    cancelMotion(el('exampleScreen').firstElementChild);
     selectedView = view;
     var scenario = scenarios[selectedIndustry].purposes[selectedPurpose];
     var industry = scenarios[selectedIndustry];
@@ -111,8 +123,13 @@
     var list = document.createElement('dl'); list.className = 'screen-detail-list';
     scenario[view].forEach(function (row, index) { var item = document.createElement('div'); item.className = 'screen-row' + (view === 'before' && index > 0 ? ' is-missing' : ''); item.append(addText('dt', '', row[0]), addText('dd', '', row[1])); list.append(item); });
     body.append(list, addText('p', 'screen-note', view === 'before' ? scenario.beforeNote : scenario.afterNote)); screen.append(top, body); el('exampleScreen').replaceChildren(screen);
+    // Reserve only a minimum: enlarged text can always grow; no clipped fixed height.
+    if (previousView && previousHeight) el('exampleScreen').style.minHeight = Math.max(previousHeight, el('exampleScreen').getBoundingClientRect().height) + 'px';
+    if (previousView) animate(screen, 'wipe', view);
+    el('comparisonStatus').textContent = industry.label + ' · ' + scenario.label + ' · ' + (view === 'before' ? '정리 전 예시입니다.' : '정리 후 예시입니다. 아래에서 좋은 점, 확인할 점과 다음 행동을 볼 수 있습니다.');
     el('resultGood').textContent = scenario.good; el('resultCheck').textContent = scenario.check; el('resultNext').textContent = scenario.next;
     el('discoveryResult').hidden = view !== 'after';
+    if (view !== 'after') cancelMotion(el('discoveryResult'));
     if (view === 'after') {
       var completionKey = selectedIndustry + ':' + selectedPurpose;
       if (!completedExamples.has(completionKey)) {
@@ -129,6 +146,15 @@
   }
   document.querySelectorAll('[data-industry]').forEach(function (button) { button.addEventListener('click', function () { selectIndustry(button.dataset.industry, true); }); });
   document.querySelectorAll('[data-view]').forEach(function (button) { button.addEventListener('click', function () { renderView(button.dataset.view); }); });
+  document.querySelector('.comparison-tabs').addEventListener('keydown', function (event) {
+    var keys = ['ArrowLeft', 'ArrowRight', 'Home', 'End'];
+    if (keys.indexOf(event.key) < 0 || !event.target.matches('[data-view]') || event.target.disabled) return;
+    event.preventDefault();
+    var buttons = Array.from(document.querySelectorAll('[data-view]'));
+    var next = event.key === 'Home' ? 0 : event.key === 'End' ? 1 : (buttons.indexOf(event.target) + 1) % buttons.length;
+    buttons[next].focus(); renderView(buttons[next].dataset.view);
+  });
+  window.addEventListener('resize', function () { el('exampleScreen').style.minHeight = ''; });
   el('experienceReset').addEventListener('click', function () {
     selectedIndustry = null; selectedPurpose = null; clearView();
     document.querySelectorAll('[data-industry]').forEach(function (button) { button.setAttribute('aria-pressed', 'false'); });
@@ -141,7 +167,8 @@
     var industry = event.detail && event.detail.industry;
     if (typeof industry !== 'string' || !selectIndustry(industry, true)) return;
     el('experienceTitle').focus({preventScroll: true});
-    el('experience').scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start'});
+    var reduced = window.WeplaceMotion ? window.WeplaceMotion.isReduced() : window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el('experience').scrollIntoView({behavior: reduced ? 'auto' : 'smooth', block: 'start'});
   });
   el('copySummary').addEventListener('click', async function () {
     var text = summaryText(); if (!text) return;
@@ -158,4 +185,33 @@
   // All other query keys are ignored, and no query is copied into outgoing links.
   var queryIndustry = new URLSearchParams(window.location.search).get('industry');
   if (queryIndustry && Object.prototype.hasOwnProperty.call(scenarios, queryIndustry)) selectIndustry(queryIndustry, false);
+
+  // Progressive enhancement: without JS all three original examples remain readable.
+  var makingTabs = el('makingTabs'), makingBoard = el('makingBoard');
+  if (makingTabs && makingBoard) {
+    var tabs = Array.from(makingTabs.querySelectorAll('[data-making-tab]'));
+    var panels = Array.from(makingBoard.querySelectorAll('[data-making-panel]'));
+    var makingSelected = 'before';
+    panels.forEach(function (panel) { panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', 'makingTab-' + panel.dataset.makingPanel); panel.tabIndex = 0; panel.hidden = panel.dataset.makingPanel !== makingSelected; });
+    makingBoard.classList.add('is-enhanced'); makingTabs.hidden = false; el('makingStageNote').hidden = false;
+    function chooseStage(button) {
+      var next = button.dataset.makingTab;
+      if (makingSelected === next) return;
+      var previousHeight = makingBoard.getBoundingClientRect().height;
+      panels.forEach(function (panel) { cancelMotion(panel); panel.hidden = panel.dataset.makingPanel !== next; });
+      tabs.forEach(function (tab) { var current = tab === button; tab.setAttribute('aria-selected', String(current)); tab.tabIndex = current ? 0 : -1; });
+      var nextPanel = el('making-' + next);
+      if (previousHeight) makingBoard.style.minHeight = Math.max(previousHeight, makingBoard.getBoundingClientRect().height) + 'px';
+      animate(nextPanel, 'switch', tabs.indexOf(button) < tabs.findIndex(function (tab) { return tab.dataset.makingTab === makingSelected; }) ? 'before' : 'after');
+      makingSelected = next;
+    }
+    tabs.forEach(function (tab) { tab.addEventListener('click', function () { chooseStage(tab); }); });
+    makingTabs.addEventListener('keydown', function (event) {
+      var index = tabs.indexOf(event.target); if (index < 0) return;
+      var next = event.key === 'ArrowRight' ? (index + 1) % tabs.length : event.key === 'ArrowLeft' ? (index + tabs.length - 1) % tabs.length : event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : -1;
+      if (next < 0) return;
+      event.preventDefault(); tabs[next].focus(); chooseStage(tabs[next]);
+    });
+    window.addEventListener('resize', function () { makingBoard.style.minHeight = ''; });
+  }
 })();
