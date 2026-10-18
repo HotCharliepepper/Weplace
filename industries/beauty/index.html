@@ -1,525 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-
-<title>미용·뷰티 — 손님은 맡겨도 되는 곳인지 화면에서 먼저 정합니다 | Weplace</title>
-<meta name="description" content="미용·웰니스 손님은 시술 실력을 따지기 전에 '맡겨도 괜찮을까'에서 멈춥니다. 사진·후기·가격·디자이너 정보가 같은 결로 읽히도록 매장의 첫 표면을 정리합니다." />
-<link rel="canonical" href="https://withweplace.kr/industries/beauty/" />
-<meta name="theme-color" content="#100C0A" />
-<meta name="last-modified" content="2026-06-03" />
-
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="We Place" />
-<meta property="og:title" content="미용·뷰티 — 손님은 맡겨도 되는 곳인지 화면에서 먼저 정합니다 | Weplace" />
-<meta property="og:description" content="미용·웰니스 손님이 멈추는 자리를 먼저 봅니다. 사진·후기·가격·디자이너 정보를 한 기준으로 정리합니다." />
-<meta property="og:url" content="https://withweplace.kr/industries/beauty/" />
-<meta property="og:image" content="https://withweplace.kr/og-image.png" />
-<meta property="og:locale" content="ko_KR" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Weplace 미용·뷰티" />
-<meta name="twitter:description" content="손님은 맡겨도 되는 곳인지 화면에서 먼저 정합니다." />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700;900&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
-
-<!-- ████ 미리보기 전용 — 배포 시 이 <style id="preview-css">와 본문 끝의 <script id="preview-js"> 두 블록을 삭제하세요. 아래 <link>/외부 weplace.js가 정본을 불러옵니다(단일 CSS·단일 JS). ████ -->
-<style id="preview-css">
-/* =======================================================================
-   Weplace — shared hub styles
-   메인(index.html)과 동일한 토큰·골드·명조. 허브 페이지(에세이·웹툰·업종·문제·진단) 공용.
-   따뜻한 다크 + 골드(안심) + teal(신뢰) 희소 + 명조 디스플레이 + 넉넉한 여백.
-   ======================================================================= */
-:root{
-  --void:#100C0A; --void-2:#16110D; --char:#1C1611;
-  --ivory:#F3ECDF; --ivory-soft:#FBF6EE; --cream:#EFE6D6;
-  --gold:#C49A5A; --gold-deep:#9A7838; --gold-line:#CBA968; --champagne:#E9D6A8;
-  --teal:#7FB1A8; --teal-deep:#3E6F68;
-  --ink:#241E18; --ink-soft:#5E5247; --ink-faint:#8A7E70; --brown:#6B4D3A;
-  --line-ivory:#E4D8C2;
-  --txt:#F0E9DC; --txt-soft:rgba(240,233,220,.6); --txt-faint:rgba(240,233,220,.4);
-  --serif:'Noto Serif KR','Nanum Myeongjo',serif;
-  --eng:'EB Garamond','Noto Serif KR',serif;
-  --sans:'Pretendard Variable','Pretendard',-apple-system,'Apple SD Gothic Neo',system-ui,sans-serif;
-  --wrap:860px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--sans);background:var(--void);color:var(--txt);line-height:1.78;
-  letter-spacing:-.01em;word-break:keep-all;overflow-wrap:break-word;
-  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
-::selection{background:rgba(196,154,90,.32);color:#fff}
-a{color:inherit}
-img{display:block;max-width:100%}
-
-/* atmosphere */
-.amb{position:fixed;inset:-20vh 0;z-index:0;pointer-events:none;
-  background:
-    radial-gradient(60% 40% at 78% 14%,rgba(196,154,90,.13),transparent 60%),
-    radial-gradient(55% 40% at 12% 92%,rgba(107,77,58,.16),transparent 62%)}
-.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.045;mix-blend-mode:overlay;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.dust{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
-.dust i{position:absolute;border-radius:50%;background:radial-gradient(circle,var(--champagne),rgba(233,214,168,0));
-  opacity:0;animation:float linear infinite}
-@keyframes float{0%{opacity:0;transform:translateY(12px)}15%{opacity:.5}85%{opacity:.5}100%{opacity:0;transform:translateY(-60px)}}
-
-/* ===== Site header bar (hub pages) ===== */
-.site-head{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
-  padding:16px 26px;background:rgba(16,12,10,.72);backdrop-filter:blur(10px);
-  border-bottom:1px solid rgba(203,169,104,.16)}
-.brand{font-family:var(--serif);font-size:15px;letter-spacing:.22em;color:var(--cream);text-decoration:none;font-weight:700;line-height:1.1}
-.brand small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.06em;color:var(--txt-faint);font-weight:400;margin-top:4px}
-
-/* ===== Global menu (shared with main) ===== */
-.gnav{display:flex;align-items:center}
-.gnav__menu{display:flex;align-items:center;gap:22px}
-.gnav__menu a{font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:.01em;
-  color:var(--txt-soft);text-decoration:none;transition:color .22s;white-space:nowrap;position:relative}
-.gnav__menu a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--gold-line);
-  transform:scaleX(0);transform-origin:left;transition:transform .25s}
-.gnav__menu a:hover{color:var(--cream)}
-.gnav__menu a:hover::after{transform:scaleX(1)}
-.gnav__menu a[aria-current="page"]{color:var(--champagne)}
-.gnav__menu a.gnav__cta{color:var(--champagne);border:1px solid rgba(203,169,104,.4);padding:8px 16px;border-radius:999px}
-.gnav__menu a.gnav__cta::after{display:none}
-.gnav__menu a.gnav__cta:hover{background:rgba(196,154,90,.12);color:var(--ivory-soft)}
-.gnav__toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;
-  background:rgba(16,12,10,.5);border:1px solid rgba(203,169,104,.3);border-radius:12px;cursor:pointer;
-  -webkit-appearance:none;appearance:none;padding:0;transition:border-color .2s}
-.gnav__toggle span{display:block;width:18px;height:1.6px;background:var(--cream);margin:0 auto;transition:transform .28s,opacity .2s}
-.gnav__toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6.6px) rotate(45deg)}
-.gnav__toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
-.gnav__toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.6px) rotate(-45deg)}
-@media(max-width:960px){
-  .gnav__toggle{display:flex}
-  .gnav__menu{position:fixed;inset:0;z-index:54;flex-direction:column;justify-content:center;gap:8px;
-    background:linear-gradient(168deg,#16110D,#100B09);opacity:0;pointer-events:none;transition:opacity .32s;padding:80px 26px}
-  .gnav__menu.open{opacity:1;pointer-events:auto}
-  .gnav__menu a{font-family:var(--serif);font-size:23px;font-weight:700;color:var(--cream);padding:12px 0}
-  .gnav__menu a::after{display:none}
-  .gnav__menu a.gnav__cta{margin-top:14px;font-size:17px;padding:14px 30px}
-}
-
-/* ===== layout ===== */
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 26px;position:relative;z-index:2}
-.section{padding:64px 0}
-.section--tight{padding:40px 0}
-
-/* breadcrumb */
-.crumbs{padding:26px 0 0;position:relative;z-index:2}
-.crumbs ol{list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:12.5px;color:var(--txt-faint)}
-.crumbs a{color:var(--txt-soft);text-decoration:none;transition:color .2s}
-.crumbs a:hover{color:var(--champagne)}
-.crumbs li+li::before{content:"›";margin-right:8px;color:var(--gold-line)}
-.crumbs [aria-current="page"]{color:var(--cream)}
-
-/* hub hero / lede */
-.lede{padding:56px 0 30px}
-.eyebrow{font-family:var(--serif);font-size:12px;letter-spacing:.32em;color:var(--champagne);display:inline-block;margin-bottom:26px}
-.eyebrow::before{content:"";display:inline-block;width:24px;height:1px;background:var(--gold-line);vertical-align:middle;margin-right:13px;transform:translateY(-3px)}
-.h1{font-family:var(--serif);font-weight:800;letter-spacing:-.03em;line-height:1.26;
-  font-size:clamp(28px,6.2vw,50px);color:var(--txt)}
-.h2{font-family:var(--serif);font-weight:700;letter-spacing:-.022em;line-height:1.34;
-  font-size:clamp(22px,4.4vw,32px);color:var(--txt)}
-.lead{font-size:clamp(15px,2.3vw,17px);line-height:1.82;color:var(--txt-soft);max-width:38em;margin-top:22px}
-.hl{color:var(--champagne)} .teal{color:var(--teal)} .dim{color:var(--txt-faint)}
-.kicker{font-family:var(--eng);font-style:italic;font-size:14px;letter-spacing:.06em;color:var(--champagne)}
-.note{font-size:13px;color:var(--txt-faint);line-height:1.7}
-.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(203,169,104,.3),transparent);margin:8px 0}
-
-/* buttons (same as main) */
-.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-size:15.5px;font-weight:700;
-  text-decoration:none;padding:16px 28px;border-radius:999px;border:1.5px solid transparent;cursor:pointer;
-  -webkit-appearance:none;appearance:none;transition:transform .22s,box-shadow .22s,background .22s,border-color .22s;
-  touch-action:manipulation;line-height:1;position:relative;overflow:hidden}
-.btn--gold{background:linear-gradient(145deg,var(--gold),var(--gold-deep));color:#23170B}
-.btn--gold:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(154,120,56,.4)}
-.btn--ghost{background:rgba(240,233,220,.05);color:var(--cream);border-color:rgba(203,169,104,.4)}
-.btn--ghost:hover{background:rgba(240,233,220,.1)}
-.btn--lg{padding:18px 32px;font-size:16.5px}
-.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-
-/* ===== card grid (hub listings) ===== */
-.hcards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:8px}
-.hcards--3{grid-template-columns:repeat(3,1fr)}
-.hcard{display:flex;flex-direction:column;background:rgba(240,233,220,.04);border:1px solid rgba(203,169,104,.2);
-  border-radius:18px;padding:26px 24px;text-decoration:none;transition:transform .28s,border-color .28s,background .28s}
-.hcard:hover{transform:translateY(-3px);border-color:rgba(203,169,104,.5);background:rgba(240,233,220,.06)}
-.hcard__no{font-family:var(--eng);font-style:italic;font-size:14px;letter-spacing:.05em;color:var(--champagne);margin-bottom:14px}
-.hcard__t{font-family:var(--serif);font-size:18px;font-weight:700;color:var(--ivory-soft);line-height:1.42}
-.hcard__p{font-size:13.5px;color:var(--txt-soft);line-height:1.7;margin-top:12px;flex:1}
-.hcard__stop{font-size:13px;color:var(--cream);line-height:1.6;margin-top:14px;padding-left:14px;position:relative}
-.hcard__stop::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--gold-line)}
-.hcard__go{font-size:13px;font-weight:700;color:var(--champagne);margin-top:18px}
-.hcard:hover .hcard__go{color:var(--cream)}
-.hcard__soon{font-size:11.5px;font-weight:700;color:var(--txt-faint);margin-top:18px;letter-spacing:.04em}
-@media(max-width:680px){.hcards,.hcards--3{grid-template-columns:1fr}}
-
-/* article list (essay / webtoon episodes) */
-.alist{list-style:none;display:flex;flex-direction:column;margin-top:10px}
-.aitem{border-top:1px solid rgba(203,169,104,.16)}
-.aitem:last-child{border-bottom:1px solid rgba(203,169,104,.16)}
-.aitem a{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:baseline;
-  padding:22px 4px;text-decoration:none;transition:background .2s,padding .2s}
-.aitem a:hover{background:rgba(240,233,220,.03);padding-left:12px}
-.aitem__no{font-family:var(--eng);font-style:italic;font-size:15px;color:var(--gold-deep);white-space:nowrap}
-.aitem__t{font-family:var(--serif);font-size:17.5px;font-weight:700;color:var(--ivory-soft);line-height:1.45}
-.aitem__d{display:block;font-family:var(--sans);font-size:13px;color:var(--txt-soft);line-height:1.6;margin-top:6px;font-weight:400}
-.aitem__go{font-size:18px;color:var(--gold-line);white-space:nowrap}
-.aitem--soon a{cursor:default}
-.aitem--soon a:hover{background:none;padding-left:4px}
-.aitem--soon .aitem__go{font-size:11.5px;font-weight:700;color:var(--txt-faint);font-family:var(--sans)}
-@media(max-width:560px){.aitem a{grid-template-columns:auto 1fr;gap:12px}.aitem__go{grid-column:2;justify-self:start;margin-top:8px}}
-
-/* lit block — warm light panel for emphasis (진단 CTA strip 등) */
-.lit-block{background:radial-gradient(120% 130% at 50% 0%,#FBF6EE,#F1E7D6 70%,#E7DAC2 100%);
-  border-radius:24px;padding:48px 32px;text-align:center;color:var(--ink);margin:8px 0}
-.lit-block .h2{color:var(--ink)}
-.lit-block .lead{color:var(--ink-soft);margin-left:auto;margin-right:auto}
-.lit-block .kicker{color:var(--gold-deep)}
-.lit-block .hl{color:var(--gold-deep)} .lit-block .teal{color:var(--teal-deep)}
-.lit-block .btn-row{justify-content:center}
-.lit-block .note{color:var(--ink-faint)}
-.btn--ink{background:var(--ink);color:var(--ivory-soft)}
-.btn--ink:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(36,30,24,.3)}
-
-/* faq (same as main) */
-.faq{margin-top:14px;text-align:left}
-.faq details{border-bottom:1px solid rgba(203,169,104,.2)}
-.faq summary{list-style:none;cursor:pointer;padding:19px 34px 19px 0;position:relative;
-  font-family:var(--serif);font-size:16px;color:var(--cream);line-height:1.45}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:2px;top:19px;font-family:var(--serif);font-size:19px;color:var(--gold-line)}
-.faq details[open] summary::after{content:"\2212"}
-.faq__b{padding:0 34px 22px 0;color:var(--txt-soft);font-size:14.5px;line-height:1.78}
-
-/* signature line */
-.sig{font-family:var(--serif);font-size:clamp(19px,3.6vw,26px);font-weight:700;line-height:1.5;color:var(--ivory-soft);
-  border-left:2px solid var(--gold-line);padding-left:22px;margin:8px 0}
-
-/* footer (same as main) */
-.foot{background:#0A0705;color:var(--txt-faint);padding:46px 26px;text-align:center;position:relative;z-index:2;margin-top:24px}
-.foot__b{font-family:var(--serif);font-size:17px;color:var(--cream);letter-spacing:.06em}
-.foot__l{margin-top:12px;font-size:12.5px;line-height:1.9;max-width:44ch;margin-left:auto;margin-right:auto}
-.foot__nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;margin-top:22px}
-.foot__nav a{font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--cream);text-decoration:none;transition:color .2s}
-.foot__nav a:hover{color:var(--champagne)}
-.foot__n{margin-top:18px;font-size:12px;color:var(--txt-faint);line-height:1.8}
-.foot__m{margin-top:16px;font-family:var(--sans);font-size:11px;color:rgba(240,233,220,.28);letter-spacing:.04em}
-
-/* toast */
-.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(18px);
-  background:var(--ink);color:var(--ivory-soft);padding:13px 22px;border-radius:999px;font-size:14px;
-  box-shadow:0 16px 44px rgba(8,5,3,.5);opacity:0;pointer-events:none;transition:all .3s;z-index:80;max-width:88vw}
-.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
-
-/* rise reveal */
-.rise{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
-.rise.in{opacity:1;transform:none}
-
-@media(prefers-reduced-motion:reduce){.rise{opacity:1;transform:none;transition:none}.dust{display:none}*{scroll-behavior:auto;animation:none!important}}
-@media(max-width:560px){.lit-block{padding:38px 22px}.section{padding:48px 0}}
-
-</style>
-<link rel="stylesheet" href="/assets/weplace.css" />
-
-<!-- 스키마 4종: Organization · BreadcrumbList · Service · FAQPage -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"Organization",
-  "name":"We Place","alternateName":"위플레이스","legalName":"(주)위플레이스마케팅",
-  "url":"https://withweplace.kr/","logo":"https://withweplace.kr/og-image.png",
-  "foundingDate":"2025","founder":{"@type":"Person","name":"박규민"},
-  "address":{"@type":"PostalAddress","streetAddress":"디지털로 178 퍼블릭가산C동","addressLocality":"금천구","addressRegion":"서울특별시","addressCountry":"KR"},
-  "contactPoint":{"@type":"ContactPoint","telephone":"+82-10-6461-6594","email":"weplace25@gmail.com","contactType":"customer service","areaServed":"KR","availableLanguage":["Korean","English"]}
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"BreadcrumbList",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"홈","item":"https://withweplace.kr/"},
-    {"@type":"ListItem","position":2,"name":"업종별","item":"https://withweplace.kr/industries/"},
-    {"@type":"ListItem","position":3,"name":"미용·뷰티","item":"https://withweplace.kr/industries/beauty/"}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"Service",
-  "serviceType":"미용·뷰티 매장 첫 표면 정리 (GEO·검색 신뢰 구조)",
-  "provider":{"@type":"Organization","name":"We Place","url":"https://withweplace.kr/"},
-  "areaServed":{"@type":"Country","name":"KR"},
-  "audience":{"@type":"BusinessAudience","name":"미용실·뷰티·웰니스 매장 운영자"},
-  "description":"미용·웰니스 손님이 검색에서 먼저 보는 사진·후기·가격·디자이너 정보를 한 기준으로 정리해, 손님이 덜 헤매고 더 빨리 안심하도록 매장의 첫 표면을 정돈합니다."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"미용실인데 시술 사진을 매번 찍는 게 부담스럽습니다.","acceptedAnswer":{"@type":"Answer","text":"전부 다 찍을 필요는 없습니다. 대표 시술 두세 가지만 같은 기준으로 쌓아도 첫 화면이 정리됩니다. 매번이 아니라 기준이 중요합니다."}},
-    {"@type":"Question","name":"가격을 화면에 다 적으면 손님이 보고 안 올 것 같아 걱정됩니다.","acceptedAnswer":{"@type":"Answer","text":"정확한 표가 아니라 범위면 됩니다. 가격이 아예 없으면 손님은 더 신중해지는 게 아니라 비교 후보에서 빠집니다. 범위가 오히려 문의를 늘립니다."}},
-    {"@type":"Question","name":"네이버만 잘해두면 되지 않나요?","acceptedAnswer":{"@type":"Answer","text":"신규·외국인 손님은 구글과 AI 검색에서 먼저 확인합니다. 네이버만 정리돼 있으면 다른 화면에서는 다른 매장처럼 읽힐 수 있습니다."}}
-  ]
-}
-</script>
-<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/assets/css/brand.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>뷰티 손님이 선택 전에 확인하는 것 | Weplace</title>
+<meta name="description" content="가격과 진행 순서, 실제 서비스 사례를 살펴보며 첫 예약 전에 궁금한 것을 정리합니다.">
+<meta name="theme-color" content="#183c32">
+<link rel="canonical" href="https://withweplace.kr/industries/beauty/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Weplace">
+<meta property="og:title" content="뷰티 손님이 선택 전에 확인하는 것 | Weplace">
+<meta property="og:description" content="가격과 진행 순서, 실제 서비스 사례를 살펴보며 첫 예약 전에 궁금한 것을 정리합니다.">
+<meta property="og:url" content="https://withweplace.kr/industries/beauty/">
+<meta property="og:image" content="https://withweplace.kr/og-image.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/industries/surface.css">
+<link rel="stylesheet" href="/assets/css/brand.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "뷰티 손님이 선택 전에 확인하는 것 | Weplace", "description": "가격과 진행 순서, 실제 서비스 사례를 살펴보며 첫 예약 전에 궁금한 것을 정리합니다.", "url": "https://withweplace.kr/industries/beauty/", "inLanguage": "ko-KR", "isPartOf": {"@type": "WebSite", "name": "Weplace", "url": "https://withweplace.kr/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://withweplace.kr/"}, {"@type": "ListItem", "position": 2, "name": "업종별", "item": "https://withweplace.kr/industries/"}, {"@type": "ListItem", "position": 3, "name": "뷰티 손님이 선택 전에 확인하는 것", "item": "https://withweplace.kr/industries/beauty/"}]}]}</script>
 </head>
 <body>
-<div class="amb" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
-<div class="dust" id="dust" aria-hidden="true"></div>
-
-<!-- ===== 공통 헤더(스포크 동일) ===== -->
+<a class="skip" href="#main">본문으로 건너뛰기</a>
 <header class="site-head">
-  <a href="/" class="w-brand brand"><img src="/apple-touch-icon.png" width="36" height="36" alt=""><span class="w-wordmark">We,place.</span></a>
-  <nav class="gnav" aria-label="주요 메뉴">
-    <button class="gnav__toggle" id="gnavToggle" type="button" aria-expanded="false" aria-controls="gnavMenu" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
-    <div class="gnav__menu" id="gnavMenu">
-      <a href="/diagnosis/">첫 표면 진단</a>
-      <a href="/industries/" aria-current="page">업종별</a>
-      <a href="/essay/">에세이</a>
-      <a href="/webtoon/">웹툰</a>
-      <a href="/problems/">문제별</a>
-      <a href="/#contact" class="gnav__cta">문의</a>
-    </div>
-  </nav>
-</header>
-
-<!-- ◆◆ 복제 시 바꾸는 곳: 마지막 항목명 ◆◆ -->
-<nav class="crumbs wrap" aria-label="현재 위치">
-  <ol>
-    <li><a href="/">홈</a></li>
-    <li><a href="/industries/">업종별</a></li>
-    <li aria-current="page">미용·뷰티</li>
-  </ol>
+<div class="wrap head-inner">
+<a class="w-brand" href="/" aria-label="Weplace 홈">
+<img src="/apple-touch-icon.png" alt="" width="36" height="36">
+<span class="w-wordmark">We,place.</span>
+</a>
+<nav class="nav" aria-label="주요 메뉴">
+<a href="/industries/" aria-current="page">업종별</a>
+<a href="/start/">진행 방식</a>
+<a href="/my-store/">내 매장 관리</a>
+<a class="nav-cta" href="/check/">내 매장 진단하기</a>
 </nav>
-
-<main>
-
-  <!-- 01 · LEDE (◆◆ 업종별 교체: eyebrow · h1 · lead · 카카오 data-msg ◆◆) -->
-  <section class="wrap lede reveal">
-    <span class="eyebrow rise">BEAUTY · 미용 · 웰니스</span>
-    <h1 class="h1 rise">낯선 손에 몸을 맡기는 일,<br><span class="hl">화면에서 먼저</span> 안심합니다.</h1>
-    <p class="lead rise">
-      미용·웰니스 손님은 시술 실력을 따지기 전에 "이 사람한테 맡겨도 괜찮을까"에서 멈춥니다.
-      사진·후기·가격·디자이너 정보가 그 자리에서 안심을 주지 못하면, 좋은 매장도 예약 버튼 앞에서 조용히 닫힙니다.
-    </p>
-    <div class="btn-row rise">
-      <button class="btn btn--gold btn--lg" type="button" data-msg="[미용·뷰티] 매장명: / 지역: / 지금 가장 아쉬운 화면(사진·후기·가격·디자이너): " onclick="wpKakao(this)">매장명·지역 보내기</button>
-      <a href="/diagnosis/" class="btn btn--ghost btn--lg">첫 표면 진단 받기</a>
-    </div>
-  </section>
-
-  <!-- 02 · 첫 표면 — 세 자리 -->
-  <section class="wrap section reveal">
-    <span class="kicker rise">첫 표면</span>
-    <h2 class="h2 rise" style="margin-top:14px">손님은 세 자리에서 의심을 풉니다.<br>한 자리만 비어도, 예약 버튼은 안 눌립니다.</h2>
-    <div class="hcards hcards--3 rise" style="margin-top:22px">
-      <div class="hcard">
-        <span class="hcard__no">01</span>
-        <span class="hcard__t">손님이 가장 먼저 보는 자리</span>
-        <span class="hcard__p">대표 사진과 시술 결과. 무슨 시술을 어떤 결로 하는 곳인지 0.5초 안에 읽혀야 합니다.</span>
-      </div>
-      <div class="hcard">
-        <span class="hcard__no">02</span>
-        <span class="hcard__t">신뢰가 만들어지는 자리</span>
-        <span class="hcard__p">후기의 첫 세 줄과 디자이너 정보. "이 사람"이 보이면 망설임이 줄어듭니다.</span>
-      </div>
-      <div class="hcard">
-        <span class="hcard__no">03</span>
-        <span class="hcard__t">의심이 사라지는 자리</span>
-        <span class="hcard__p">가격과 예약 방법. 범위라도 보이면, 손님은 비교를 멈추고 움직입니다.</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 03 · 자가 점검 — 여섯 가지(아코디언) -->
-  <section class="wrap section reveal">
-    <span class="kicker rise">자가 점검</span>
-    <h2 class="h2 rise" style="margin-top:14px">예약이 줄거나 신규 손님이 안 오면,<br>대체로 이 여섯 가지입니다.</h2>
-    <div class="faq rise" style="margin-top:18px">
-      <details><summary>대표 사진이 시술 결과가 아니라 인테리어·외관입니다.</summary><div class="faq__b">썸네일에서 무슨 시술을 하는 곳인지 안 읽히면, 손님은 열어보기 전에 지나갑니다. 첫 장은 대표 시술 결과 한 컷이 안전합니다.</div></details>
-      <details><summary>Before/After가 없거나, 각도·조명이 제각각입니다.</summary><div class="faq__b">비교가 안 되는 사진은 신뢰를 만들지 못합니다. 같은 각도·같은 조명 두 컷이 한 세트로 보여야 합니다.</div></details>
-      <details><summary>가격이 어디에도 없습니다.</summary><div class="faq__b">가격 비공개는 신중함이 아니라 이탈 신호로 읽힙니다. 범위로라도 화면에 적어두면 비교의 자리에서 손해를 덜 봅니다.</div></details>
-      <details><summary>후기는 많은데 첫 세 줄이 매장과 따로 놉니다.</summary><div class="faq__b">손님은 후기 전체가 아니라 첫 세 줄을 읽습니다. 그 세 줄이 사진·소개와 같은 결이어야 안심이 이어집니다.</div></details>
-      <details><summary>디자이너·원장이 누구인지 화면에 없습니다.</summary><div class="faq__b">"누구에게 맡기는가"가 미용의 핵심 안심입니다. 프로필 자리가 비면 신뢰의 자리가 함께 빕니다.</div></details>
-      <details><summary>네이버는 정리됐는데 구글·지도가 비어 있습니다.</summary><div class="faq__b">신규·외국인 손님은 구글에서 먼저 확인합니다. 화면마다 정보가 다르면 다른 매장처럼 읽힙니다.</div></details>
-    </div>
-  </section>
-
-  <!-- 04 · 우리가 보는 것 + GEO 재정의(의무 문단, 변형 금지) -->
-  <section class="wrap section reveal">
-    <span class="kicker rise">우리가 보는 것</span>
-    <h2 class="h2 rise" style="margin-top:14px">시술이 아니라,<br>손님의 <span class="hl">의심</span>을 봅니다.</h2>
-    <p class="lead rise">
-      GEO 자체가 매출을 올리는 것은 아닙니다. GEO를 하는 과정에서 매장의 표면이 정리되고, 그 표면을 본 고객이 더 적은 감각 에너지로 매장을 이해하게 됩니다.
-      이 과정이 흐리면 고객은 멈춥니다. 이 과정이 선명하면 고객은 움직입니다.
-      GEO는 AI에게만 잘 보이기 위한 작업이 아닙니다. 사람과 AI가 동시에 이해할 수 있도록 매장의 첫 표면을 정리하는 일입니다.
-    </p>
-    <div class="hcards hcards--3 rise" style="margin-top:22px">
-      <div class="hcard">
-        <span class="hcard__no">01</span>
-        <span class="hcard__t">시술 결과를 의심 없이 보여줍니다</span>
-        <span class="hcard__p">첫 화면의 사진과 결과 컷을 같은 기준으로 정리합니다.</span>
-      </div>
-      <div class="hcard">
-        <span class="hcard__no">02</span>
-        <span class="hcard__t">후기의 첫 세 줄을 다음 손님이 읽게 만듭니다</span>
-        <span class="hcard__p">응대와 후기 노출을 사진·소개와 같은 결로 맞춥니다.</span>
-      </div>
-      <div class="hcard">
-        <span class="hcard__no">03</span>
-        <span class="hcard__t">결정한 순간 예약이 눌리게 합니다</span>
-        <span class="hcard__p">가격과 예약 동선을 헤매지 않게 정리합니다.</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 05 · 비교의 순간 + 시그니처 명제 -->
-  <section class="wrap section reveal">
-    <span class="kicker rise">비교의 순간</span>
-    <h2 class="h2 rise" style="margin-top:14px">손님은 시술받기 전에<br>매장 다섯 곳을 비교합니다.</h2>
-    <p class="lead rise">예약 한 번을 위해 손님은 평균 다섯 곳을 같은 기준으로 훑습니다. 그 비교에서 한 자리만 흐려도 후보에서 조용히 빠집니다.</p>
-    <div class="hcards rise" style="margin-top:22px">
-      <div class="hcard">
-        <span class="hcard__t">손님은 평균 다섯 곳을 비교합니다</span>
-        <span class="hcard__p">비교는 분석이 아니라 인상으로 끝납니다. 사진·가격·후기·디자이너가 같은 결일 때 후보로 남습니다.</span>
-      </div>
-      <div class="hcard">
-        <span class="hcard__t">가격 비공개는 신뢰의 자리에서 손해를 봅니다</span>
-        <span class="hcard__p">가격이 없으면 손님은 신중해지는 게 아니라 다음 후보로 넘어갑니다. 범위라도 보여주는 편이 안전합니다.</span>
-      </div>
-    </div>
-    <p class="sig rise" style="margin-top:30px">고객은 매장을 분석하지 않습니다.<br>그냥 느낌이 맞지 않으면 나갑니다.</p>
-  </section>
-
-  <!-- 06 · 셀프 정비 — 네 가지(아코디언) -->
-  <section class="wrap section reveal">
-    <span class="kicker rise">셀프 정비</span>
-    <h2 class="h2 rise" style="margin-top:14px">셀프로 정비할 때<br>자주 빠뜨리는 네 가지.</h2>
-    <p class="lead rise">대행을 맡기기 전에, 대표님이 직접 손볼 수 있는 것부터.</p>
-    <div class="faq rise" style="margin-top:18px">
-      <details><summary>시술 사진은 자연광 시간대에, 같은 자리에서 찍으세요.</summary><div class="faq__b">조명·배경이 매번 다르면 같은 매장 사진도 따로 놉니다. 시간대와 자리를 고정하면 결이 모입니다.</div></details>
-      <details><summary>Before/After는 같은 각도·같은 조명으로 두 컷 모두 찍으세요.</summary><div class="faq__b">한 컷만 있거나 조건이 다르면 비교가 안 되고, 비교가 안 되면 신뢰도 생기지 않습니다.</div></details>
-      <details><summary>가격은 범위로라도 화면에 적어두세요.</summary><div class="faq__b">정확한 금액이 아니어도 됩니다. "대략 어느 정도"가 보이면 손님은 비교를 멈추고 다음으로 움직입니다.</div></details>
-      <details><summary>디자이너·원장 프로필 자리를 잡아 두세요.</summary><div class="faq__b">경력 한 줄, 얼굴 한 장이면 충분합니다. "누구에게 맡기는가"가 보이면 망설임이 줄어듭니다.</div></details>
-    </div>
-  </section>
-
-  <!-- 07 · FAQ(화면 + FAQPage 스키마 동일) -->
-  <section class="wrap section reveal">
-    <span class="kicker rise">자주 묻는 질문</span>
-    <h2 class="h2 rise" style="margin-top:14px">미용 매장 운영자가<br>자주 묻는 질문들</h2>
-    <div class="faq rise" style="margin-top:18px">
-      <details><summary>미용실인데 시술 사진을 매번 찍는 게 부담스럽습니다.</summary><div class="faq__b">전부 다 찍을 필요는 없습니다. 대표 시술 두세 가지만 같은 기준으로 쌓아도 첫 화면이 정리됩니다. 매번이 아니라 기준이 중요합니다.</div></details>
-      <details><summary>가격을 화면에 다 적으면 손님이 보고 안 올 것 같아 걱정됩니다.</summary><div class="faq__b">정확한 표가 아니라 범위면 됩니다. 가격이 아예 없으면 손님은 더 신중해지는 게 아니라 비교 후보에서 빠집니다. 범위가 오히려 문의를 늘립니다.</div></details>
-      <details><summary>네이버만 잘해두면 되지 않나요?</summary><div class="faq__b">신규·외국인 손님은 구글과 AI 검색에서 먼저 확인합니다. 네이버만 정리돼 있으면 다른 화면에서는 다른 매장처럼 읽힐 수 있습니다.</div></details>
-    </div>
-  </section>
-
-  <!-- 08 · 진단 CTA (lit-block) -->
-  <section class="wrap section reveal">
-    <div class="lit-block rise">
-      <span class="kicker">다음 한 걸음</span>
-      <h2 class="h2" style="margin-top:12px">정리할 순서부터,<br>같이 봅니다.</h2>
-      <p class="lead">매장명·지역과 지금 가장 아쉬운 화면 한 줄이면 됩니다. 네이버·구글·홈페이지·후기를 같이 열어, 미용 손님이 어디서 멈추는지 먼저 봅니다.</p>
-      <div class="btn-row">
-        <button class="btn btn--gold btn--lg" type="button" data-msg="[미용·뷰티] 매장명: / 지역: / 지금 가장 아쉬운 화면(사진·후기·가격·디자이너): " onclick="wpKakao(this)">매장명·지역 보내기</button>
-        <a href="tel:+821064616594" class="btn btn--ink btn--lg">전화 010-6461-6594</a>
-      </div>
-      <p class="note">업종·매장 규모·기존 상태에 따라 정리 범위는 달라집니다 · 정보 갱신일 2026-06-03</p>
-    </div>
-  </section>
-
-  <!-- 09 · 이어서 보기 (◆◆ 복제 시 관련 링크 교체 ◆◆) -->
-  <section class="wrap section reveal">
-    <span class="kicker rise">이어서 보기</span>
-    <h2 class="h2 rise" style="margin-top:14px">같이 보면 좋은 것</h2>
-    <div class="hcards hcards--3 rise" style="margin-top:22px">
-      <a class="hcard" href="/industries/restaurant/">
-        <span class="hcard__t">식당 · 카페</span>
-        <span class="hcard__stop">"맛있나"보다 먼저 "지금 내 목적에 맞나"에서 멈추는 손님</span>
-        <span class="hcard__soon">페이지 준비 중</span>
-      </a>
-      <a class="hcard" href="/industries/massage/">
-        <span class="hcard__t">마사지 · 테라피</span>
-        <span class="hcard__stop">가격보다 먼저 "여기 괜찮은 곳인가"라는 신뢰에서 멈추는 손님</span>
-        <span class="hcard__soon">페이지 준비 중</span>
-      </a>
-      <a class="hcard" href="/problems/google-business-profile/">
-        <span class="hcard__t">구글·지도가 비어 있다면</span>
-        <span class="hcard__stop">네이버는 정리됐는데 구글에서 다른 매장처럼 읽힐 때</span>
-        <span class="hcard__go">자세히 보기 →</span>
-      </a>
-    </div>
-  </section>
-
+</div>
+</header>
+<main id="main" class="wrap">
+<div class="crumbs" aria-label="현재 위치">
+<a href="/">홈</a>
+<span aria-hidden="true">/</span>
+<a href="/industries/">업종별</a>
+</div>
+<section class="hero split" id="top">
+<div>
+<span class="eyebrow">BEAUTY · CUSTOMER VIEW</span>
+<h1>처음 맡겨도, 과정을 알 수 있을까요?</h1>
+<p class="lead">가격과 진행 순서, 실제 서비스 사례를 살펴보며 첫 예약 전에 궁금한 것을 정리합니다.</p>
+<div class="actions">
+<a class="btn" href="/?industry=beauty#experience">30초 고객 시선 체험 <span aria-hidden="true">↗</span>
+</a>
+<a class="btn secondary" href="/check/?industry=beauty">내 매장 진단하기 <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+<figure class="hero-visual">
+<img src="/assets/img/industry-beauty.svg" alt="뷰티 고객 시선을 설명하는 공간 구성 예시" width="640" height="640">
+<figcaption>업종 이해를 위한 예시 · 실제 고객 매장이나 성과 사례가 아닙니다.</figcaption>
+</figure>
+</section>
+<div class="anchor-alias" id="insight">
+</div>
+<div class="anchor-alias" id="why">
+</div>
+<div class="anchor-alias" id="first-screen">
+</div>
+<div class="anchor-alias" id="before-booking">
+</div>
+<section class="section" id="work">
+<span class="eyebrow">A QUESTION BEFORE VISITING</span>
+<div class="section-head">
+<h2>가격·진행 절차·서비스 사례·예약 전 준비사항이 보이나요?</h2>
+<p>결과 사진만 있고 가격 기준이나 진행 과정이 없으면, 손님은 자신에게 맞는 서비스인지 판단하기 어렵습니다.</p>
+</div>
+<div class="checklist">
+<article class="item">
+<span class="number">01</span>
+<h3>서비스·가격 적용 기준</h3>
+<p>서비스 설명과 조건이 일치하는 사례</p>
+</article>
+<article class="item">
+<span class="number">02</span>
+<h3>진행 과정·예상 소요시간</h3>
+<p>가격 기준과 별도 비용을 구분</p>
+</article>
+<article class="item">
+<span class="number">03</span>
+<h3>사례 사용 동의·준비사항</h3>
+<p>진행 순서와 예약 전 확인사항 안내</p>
+</article>
+</div>
+</section>
+<div class="anchor-alias" id="self-discovery">
+</div>
+<div class="anchor-alias" id="discover">
+</div>
+<div class="anchor-alias" id="surfaces">
+</div>
+<section class="section" id="system">
+<span class="eyebrow">BEFORE / AFTER · INFORMATION EXAMPLE</span>
+<div class="section-head">
+<h2>다시 묻기 전에,<br>필요한 정보를 찾도록.</h2>
+<p>예시 화면입니다. 실제 해당 매장 점검 결과나 개선 성과가 아닙니다.</p>
+</div>
+<div class="comparison">
+<div>
+<span class="tag">BEFORE · 정보가 흩어져 있을 때</span>
+<h3>“여기에 가도 괜찮을까?”</h3>
+<ul>
+<li>결과 사진만 있고 서비스 설명이 없음</li>
+<li>가격에 어떤 항목이 포함되는지 모호함</li>
+<li>예약 전 준비사항을 알기 어려움</li>
+</ul>
+</div>
+<div>
+<span class="tag">AFTER · 정보를 정리한 예시</span>
+<h3>“필요한 것을 확인할 수 있네요.”</h3>
+<ul>
+<li>서비스 설명과 조건이 일치하는 사례</li>
+<li>가격 기준과 별도 비용을 구분</li>
+<li>진행 순서와 예약 전 확인사항 안내</li>
+</ul>
+<p class="found">확인할 점 · 가격이 달라지는 조건과 첫 방문 준비사항을 확인해 보세요.</p>
+</div>
+</div>
+</section>
+<div class="anchor-alias" id="trust-strip">
+</div>
+<div class="anchor-alias" id="misses">
+</div>
+<div class="anchor-alias" id="metrics">
+</div>
+<div class="anchor-alias" id="calculator">
+</div>
+<div class="anchor-alias" id="delivery">
+</div>
+<section class="section" id="diagnosis">
+<div class="section-head">
+<h2>이제, 우리 매장에서는<br>어떻게 보일까요?</h2>
+<p>대표님만의 서비스 방식과 고객을 살피는 기준이 있습니다.<br>실제 화면과 응답을 비교해야 지금의 우선순위가 보입니다.</p>
+</div>
+<div class="notice">
+<strong>6문항 자가진단에서 함께 확인합니다.</strong>
+<br>응답을 바탕으로 잘 전달되는 점, 확인할 점, 다음 행동을 정리합니다. 실측 점수나 매출 예측은 만들지 않습니다. 이 페이지는 진단 응답을 수집하지 않습니다.</div>
+<div class="actions">
+<a class="btn" href="/check/?industry=beauty">뷰티 자가진단 시작하기 <span aria-hidden="true">↗</span>
+</a>
+<a class="btn secondary" href="/start/">상담·미팅 진행 방식 <span aria-hidden="true">↗</span>
+</a>
+</div>
+</section>
+<div class="anchor-alias" id="gbp-start">
+</div>
+<div class="anchor-alias" id="next">
+</div>
+<section class="section" id="service-faq">
+<span class="eyebrow">BEFORE WE START</span>
+<div class="section-head">
+<h2>시작 전에 확인할 것</h2>
+<p>실제 작업의 범위와 조건은<br>대표님이 확인한 뒤 결정합니다.</p>
+</div>
+<div class="question-list">
+<details>
+<summary>가격과 계약 기간은 어디서 확인하나요?</summary>
+<div class="answer">현재 공개 요금은 검토 중이며 확정 요금표가 아닙니다. 실제 작업 범위를 확인한 뒤 가격·부가세·기간·수정 횟수·해지 및 환불 기준을 제안서에서 안내하고 합의합니다.</div>
+</details>
+<details>
+<summary>자가진단을 하면 상담 신청이나 저장이 되나요?</summary>
+<div class="answer">아니요. 자가진단은 브라우저 메모리에서만 진행합니다. 새로고침하면 응답이 사라집니다. 상담은 본인이 카카오 채널에서 직접 메시지를 보내야 시작됩니다.</div>
+</details>
+<details>
+<summary>검색 순위나 예약 증가를 보장하나요?</summary>
+<div class="answer">특정 검색 순위, AI 추천, 예약이나 매출의 증가를 보장하지 않습니다. 실제 운영 사실과 고객이 확인하는 화면을 비교하고, 합의한 작업과 확인 가능한 반응을 나누어 살펴봅니다.</div>
+</details>
+</div>
+<a class="text-link" href="/problems/google-business-profile/">구글 지도 정보가 다르게 보인다면 →</a>
+</section>
+<section class="band" id="contact" aria-labelledby="contact-title">
+<div>
+<span class="eyebrow">NEXT CONVERSATION</span>
+<h2 id="contact-title">우리 매장 화면도<br>같이 볼까요?</h2>
+<p>먼저 자가진단으로 확인할 점 하나를 정리하거나,<br>카카오 채널에서 현재 고민부터 이야기해 주세요.</p>
+<div class="actions">
+<a class="btn" href="/check/?industry=beauty">내 매장 진단하기 <span aria-hidden="true">↗</span>
+</a>
+<a class="btn secondary" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 상담 열기 <span aria-hidden="true">↗</span>
+</a>
+</div>
+<p>상담창을 여는 것만으로 문의가 접수되지는 않습니다. 직접 메시지를 보내면 대화가 시작됩니다.</p>
+</div>
+<div>
+<span class="eyebrow">WHAT WE LOOK AT</span>
+<ul>
+<li>현재 검색·지도·예약 화면</li>
+<li>손님이 다시 확인하는 질문</li>
+<li>먼저 정리할 정보와 필요한 자료</li>
+<li>미팅에서 합의할 작업 범위·일정·비용</li>
+</ul>
+<p>
+<a href="/start/">상담부터 작업 관리까지, 진행 방식 보기 →</a>
+</p>
+</div>
+</section>
 </main>
-
-<footer class="foot">
-  <div class="foot__b">We Place · 위플레이스</div>
-  <p class="foot__l">사람과 AI가 동시에 이해하도록, 매장의 첫 표면을 정리합니다.</p>
-  <nav class="foot__nav" aria-label="페이지 이동">
-    <a href="/diagnosis/">첫 표면 진단</a><a href="/industries/">업종별</a><a href="/essay/">에세이</a><a href="/webtoon/">웹툰</a><a href="/problems/">문제별</a><a href="/#contact">문의</a>
-  </nav>
-  <p class="foot__n">(주)위플레이스마케팅 · 서울특별시 금천구 디지털로 178 퍼블릭가산C동 · 전화 010-6461-6594 · weplace25@gmail.com</p>
-  <p class="foot__m">정보 갱신일 2026-06-03 · © We Place</p>
+<footer class="footer">
+<div class="wrap">
+<div class="footer-inner">
+<div>
+<a class="w-brand" href="/">
+<img src="/apple-touch-icon.png" alt="" width="36" height="36">
+<span class="w-wordmark">We,place.</span>
+</a>
+<p class="fine">좋은 매장이, 검색 화면에서도 제대로 전해지도록.</p>
+</div>
+<nav class="footer-links" aria-label="하단 메뉴">
+<a href="/field-notes/">현장 기록</a>
+<a href="/my-store/">내 매장 관리</a>
+<a href="/problems/">확인할 문제</a>
+<a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 상담 ↗</a>
+</nav>
+</div>
+<p class="fine">© 2026 Weplace · 공개 연락 경로: 카카오 채널 · 검토 기준 2026.10.19</p>
+</div>
 </footer>
-
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-<!-- ████ 미리보기 전용 JS — 배포 시 이 블록 삭제. 외부 weplace.js가 동일 동작(reveal·먼지·카카오·메뉴). ████ -->
-<script id="preview-js">
-/* Weplace shared hub script — menu toggle · kakao copy · gold dust · scroll reveal */
-(function(){
-  /* ===== 카카오톡 채널 (메인과 동일 값) ===== */
-  var KAKAO_LINK = "https://pf.kakao.com/_mxbexhX";
-
-  function toast(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('on');
-    clearTimeout(window.__wpt);window.__wpt=setTimeout(function(){t.classList.remove('on')},3200);}
-  function fallbackCopy(t){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';
-    document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);}
-  window.wpKakao=function(btn){var msg=btn.getAttribute('data-msg')||"";
-    fallbackCopy(msg);
-    if(navigator.clipboard&&navigator.clipboard.writeText){try{navigator.clipboard.writeText(msg);}catch(e){}}
-    if(KAKAO_LINK){toast("매장명·지역을 복사했어요. 카카오톡 채널을 엽니다.");window.open(KAKAO_LINK,"_blank","noopener");}
-    else{toast("메시지가 복사됐어요. 카카오톡에 붙여넣어 보내주세요.");}};
-
-  /* ===== 글로벌 메뉴 토글 ===== */
-  var t=document.getElementById('gnavToggle'),m=document.getElementById('gnavMenu');
-  if(t&&m){
-    var close=function(){m.classList.remove('open');t.setAttribute('aria-expanded','false');t.setAttribute('aria-label','메뉴 열기');document.body.style.overflow='';};
-    var open=function(){m.classList.add('open');t.setAttribute('aria-expanded','true');t.setAttribute('aria-label','메뉴 닫기');document.body.style.overflow='hidden';};
-    t.addEventListener('click',function(){m.classList.contains('open')?close():open();});
-    m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
-    window.addEventListener('resize',function(){if(window.innerWidth>960)close();});
-  }
-
-  /* ===== 골드 먼지 ===== */
-  var d=document.getElementById('dust');
-  if(d){var n=window.innerWidth<600?10:16;
-    for(var i=0;i<n;i++){var s=document.createElement('i');var sz=2+Math.random()*4;
-      s.style.width=s.style.height=sz+'px';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';
-      s.style.animationDuration=(9+Math.random()*12)+'s';s.style.animationDelay=(-Math.random()*12)+'s';d.appendChild(s);}}
-
-  /* ===== 등장 스태거 ===== */
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){
-      if(e.isIntersecting){var rs=e.target.querySelectorAll('.rise');
-        if(e.target.classList.contains('rise'))e.target.classList.add('in');
-        rs.forEach(function(r,i){r.style.transitionDelay=(i*0.07)+'s';r.classList.add('in');});
-        io.unobserve(e.target);}});},{threshold:0.14});
-    document.querySelectorAll('.reveal,.rise').forEach(function(p){io.observe(p);});
-  }else{document.querySelectorAll('.rise').forEach(function(r){r.classList.add('in');});}
-})();
-
-</script>
-<script src="/assets/weplace.js"></script>
 </body>
 </html>

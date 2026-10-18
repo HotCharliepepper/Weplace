@@ -1,0 +1,10 @@
+/meeting/*
+  X-Robots-Tag: noindex, nofollow
+/review/*
+  X-Robots-Tag: noindex, nofollow
+/prototype/*
+  X-Robots-Tag: noindex, nofollow
+/docs/*
+  X-Robots-Tag: noindex, nofollow
+/tests/*
+  X-Robots-Tag: noindex, nofollow
