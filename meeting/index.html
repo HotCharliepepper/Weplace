@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/meeting.css">
   <script src="/assets/js/meeting.js" defer></script>
+<link rel="stylesheet" href="/assets/css/company-info.css">
 </head>
 <body>
   <a class="oe-skip" href="#main">본문으로 건너뛰기</a>
@@ -77,13 +78,22 @@
           <fieldset class="meeting-decisions"><legend>다음 대화에서 다루고 싶은 내용</legend><label><input type="radio" name="meetingDecision" value="screen" autocomplete="off">현재 화면을 먼저 함께 살펴보고 싶습니다</label><label><input type="radio" name="meetingDecision" value="proposal" autocomplete="off">작업 범위와 조건이 담긴 제안을 받고 싶습니다</label><label><input type="radio" name="meetingDecision" value="self" autocomplete="off">직접 정리한 뒤 다시 이야기하겠습니다</label></fieldset>
           <p class="oe-fine">선택은 이 화면에서만 정리됩니다. 상담 접수·미팅 확정·계약 동의로 처리되지 않습니다.</p>
           <label class="meeting-review"><input type="checkbox" data-review="decision" autocomplete="off">다음에 이야기할 내용을 짚었습니다</label>
-          <div class="meeting-summary"><label for="meetingSummary">대화 준비 요약</label><textarea id="meetingSummary" readonly aria-describedby="summaryHelp"></textarea><p id="summaryHelp" class="oe-fine">복사한 내용은 원하실 때 카카오톡에 직접 붙여 넣어 주세요. 상담 가능 일정은 채널에서 별도로 확인합니다.</p><div class="oe-actions"><button class="oe-button light" id="copyMeeting" type="button">준비 내용 복사</button><button class="oe-button light" id="printMeeting" type="button">확인표 인쇄</button><a class="oe-button" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오톡에서 이야기하기 ↗</a></div><p id="meetingStatus" role="status" class="oe-fine"></p></div>
+          <div class="meeting-summary"><p class="oe-fine">입력 내용은 이 화면에서만 정리합니다. 직접 전송할 경우의 처리와 접속 기록은 <a href="/privacy/">개인정보 안내 검토 초안</a>에서 구분해 설명합니다.</p><label for="meetingSummary">대화 준비 요약</label><textarea id="meetingSummary" readonly aria-describedby="summaryHelp"></textarea><p id="summaryHelp" class="oe-fine">복사한 내용은 원하실 때 카카오톡에 직접 붙여 넣어 주세요. 상담 가능 일정은 채널에서 별도로 확인합니다.</p><div class="oe-actions"><button class="oe-button light" id="copyMeeting" type="button">준비 내용 복사</button><button class="oe-button light" id="printMeeting" type="button">확인표 인쇄</button><a class="oe-button" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오톡에서 이야기하기 ↗</a></div><p id="meetingStatus" role="status" class="oe-fine"></p></div>
           <p class="oe-fine">계약과 계정 연결 이후의 흐름은 <a href="/my-store/">내 매장 관리 안내</a>에서 확인하세요.</p>
         </section>
       </div>
     </div>
     <noscript><p class="oe-callout">항목은 그대로 읽을 수 있습니다. 업종별 예시·체크 요약·복사를 이용하려면 JavaScript를 켜 주세요. 이 화면에서는 어떤 선택도 전송되지 않습니다.</p></noscript>
   </main>
-  <footer class="oe-footer"><span>We,place. · 좋은 매장이 선택되는 과정</span><div><a href="/">홈으로</a><a href="/my-store/">내 매장 관리</a></div></footer>
+  <!-- WEPLACE_COMPANY_FOOTER -->
+<footer id="site-footer" class="company-footer" data-company-version="2026-10-19-review-1" aria-label="회사 정보와 개인정보 안내">
+<div class="company-inner"><div class="company-heading"><a class="w-brand" href="/"><img src="/apple-touch-icon.png" alt="" width="36" height="36"><span class="w-wordmark">We,place.</span></a><p>현장을 이해하고, 필요한 것을 만듭니다.</p></div>
+<p class="company-review-note">회사 정보 검토안 · 기존 공개 표기를 모았으며 최신 서류와 운영 담당자의 확인 후 확정합니다.</p>
+<dl class="company-facts"><div><dt>서비스 제공·운영</dt><dd>(주)위플레이스마케팅</dd></div><div><dt>대표자</dt><dd>박규민</dd></div></dl>
+<div class="company-contact"><span>기존 공개 문의 경로</span><a href="mailto:weplace25@gmail.com">weplace25@gmail.com</a><a href="tel:01064616594">010-6461-6594</a><a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 문의 ↗</a></div>
+<nav class="company-links" aria-label="법률 및 이용 안내"><a href="/privacy/">개인정보처리방침 (검토 초안)</a><a href="/start/#geo-pricing">서비스·계약 조건 안내</a><a href="/my-store/">내 매장 관리</a><a href="/field-notes/">공개 현장 기록</a><a href="/client">고객 로그인</a><a href="/team">직원 로그인</a><a href="https://mashcore.netlify.app/about/" target="_blank" rel="noopener noreferrer">브랜드 관점과 연구 · Mashcore Lab ↗</a></nav>
+<p class="company-note">Mashcore 링크는 콘텐츠 탐색 경로입니다. 고객 계정이나 상담 기록을 연결하지 않습니다.</p><p class="company-note">© 2026 Weplace</p></div>
+</footer>
+<!-- /WEPLACE_COMPANY_FOOTER -->
 </body>
 </html>

@@ -134,7 +134,7 @@
     document.querySelectorAll('[data-industry]').forEach(function (button) { button.setAttribute('aria-pressed', 'false'); });
     el('purposeGroup').disabled = true; el('purposeHint').hidden = false; el('purposeChoices').replaceChildren();
     el('customerQuestion').textContent = '“가기 전에, 무엇을 확인하고 싶을까?”';
-    el('experienceReset').hidden = true; emptyScreen('손님이 찾아볼 화면을 준비합니다.', '업종과 방문 목적을 골라주세요.'); setContextLinks();
+    el('experienceReset').hidden = true; emptyScreen('손님이 찾아볼 화면을 준비합니다.', '업종과 방문 목적을 먼저 골라주세요.'); setContextLinks();
     document.querySelector('[data-industry]').focus();
   });
   document.addEventListener('weplace:industry', function (event) {
