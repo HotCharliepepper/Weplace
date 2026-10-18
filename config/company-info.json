@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-10-19-review-1",
+  "publicationState": "review",
+  "releaseApproved": false,
+  "approvedBy": null,
+  "approvedAt": null,
+  "fields": {
+    "brand": {"value": "Weplace", "status": "confirmed", "evidence": "User project brief and existing public-site symbol"},
+    "legalName": {"value": "(주)위플레이스마케팅", "status": "legacy-unverified", "evidence": "Existing main footer; no current registration certificate found"},
+    "representative": {"value": "박규민", "status": "legacy-unverified", "evidence": "Existing main footer; no current registration certificate found"},
+    "businessNumber": {"value": null, "status": "unverified", "evidence": null},
+    "businessAddress": {"value": null, "status": "unverified", "evidence": null},
+    "email": {"value": "weplace25@gmail.com", "status": "legacy-unverified", "evidence": "Existing website contact; operational owner confirmation pending"},
+    "telephone": {"value": "010-6461-6594", "status": "legacy-unverified", "evidence": "Existing website contact; operational owner confirmation pending"},
+    "privacyContactDepartment": {"value": null, "status": "unverified", "evidence": null}
+  },
+  "links": {
+    "privacy": "/privacy/",
+    "client": "/my-store/",
+    "kakao": "https://pf.kakao.com/_mxbexhX",
+    "mashcore": "https://mashcore.netlify.app/about/"
+  },
+  "mashcoreRelationship": "Content link only; no account or personal-data sharing implied. Legal relationship is unverified.",
+  "candidateEvidenceFile": "docs/company-source-of-truth.md"
+}

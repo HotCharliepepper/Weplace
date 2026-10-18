@@ -1,347 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>매장이 겪는 검색 문제들 — 문제별 해결 | We Place</title>
-  <meta name="description" content="구글 지도에 안 보이는 문제, 홈페이지가 검색에서 사라지는 문제. 위플레이스는 자영업 매장이 자주 겪는 검색 문제를 하나씩 정렬합니다." />
-  <link rel="canonical" href="https://withweplace.kr/problems/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="We Place" />
-  <meta property="og:title" content="매장이 겪는 검색 문제들 — 문제별 해결 | We Place" />
-  <meta property="og:description" content="검색에서 사라진 매장, 어디서부터 문제인지 먼저 찾습니다." />
-  <meta property="og:url" content="https://withweplace.kr/problems/" />
-  <meta property="og:image" content="https://withweplace.kr/og-image.png" />
-  <meta property="og:locale" content="ko_KR" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="매장이 겪는 검색 문제들 | We Place" />
-  <meta name="twitter:description" content="검색에서 사라진 매장, 어디서부터 문제인지 먼저 찾습니다." />
-
-  <!-- Last modified -->
-  <meta property="article:published_time" content="2025-12-15T00:00:00+09:00" />
-  <meta property="article:modified_time" content="2026-04-25T00:00:00+09:00" />
-  <meta name="last-modified" content="2026-04-25" />
-
-  <!-- Favicon -->
-  
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/common.css" />
-
-  <!-- JSON-LD: CollectionPage Schema (GEO용) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "매장이 겪는 검색 문제들",
-    "description": "자영업 매장이 검색 발견성과 문의 전환에서 자주 겪는 문제들의 정렬 방식을 다루는 문제별 페이지 모음.",
-    "url": "https://withweplace.kr/problems/",
-    "publisher": {
-      "@type": "Organization",
-      "name": "We Place",
-      "url": "https://withweplace.kr/"
-    }
-  }
-  </script>
-
-  <!-- JSON-LD: ItemList (카드 2개를 컬렉션으로 인식) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "매장이 자주 겪는 검색 문제 모음",
-    "url": "https://withweplace.kr/problems/",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "네이버엔 있는데, 구글엔 없을 때",
-        "url": "https://withweplace.kr/problems/google-business-profile/",
-        "description": "네이버 플레이스와 구글 비즈니스 프로필을 하나의 구조로 정렬합니다."
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "홈페이지는 있는데, 검색에선 안 보일 때",
-        "description": "구글과 네이버 양쪽에서 잘 잡히도록 홈페이지를 다시 정렬합니다. (페이지 준비 중)"
-      }
-    ]
-  }
-  </script>
-
-  <!-- JSON-LD: Organization (사이트 일관성) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "We Place",
-    "alternateName": "위플레이스",
-    "legalName": "(주)위플레이스마케팅",
-    "url": "https://withweplace.kr/",
-    "logo": "https://withweplace.kr/og-image.png",
-    "description": "매장을 직접 보고, 손님의 눈으로 화면을 함께 읽고, 발견되는 입구부터 문의까지 이어지는 흐름을 함께 정렬하는 팀.",
-    "founder": {
-      "@type": "Person",
-      "name": "박규민"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "디지털로 178 퍼블릭가산C동",
-      "addressLocality": "금천구",
-      "addressRegion": "서울특별시",
-      "addressCountry": "KR"
-    },
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "telephone": "+82-10-6461-6594",
-      "email": "weplace25@gmail.com",
-      "areaServed": "KR",
-      "availableLanguage": ["ko", "en"]
-    }],
-    "taxID": "145-88-03119"
-  }
-  </script>
-
-  <!-- JSON-LD: FAQPage (미니 FAQ 3개) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "구글 문제부터 봐야 하는지, 홈페이지부터 봐야 하는지 모르겠습니다.",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "외국인 손님이 늘어나는 상권이거나 구글맵에 매장이 안 뜨는 상황이라면 구글부터 봅니다. 홈페이지는 있는데 검색에서 거의 안 잡히는 경우라면 홈페이지부터 봅니다. 판단이 헷갈리시면 매장 상호만 알려주세요. 어디부터 보면 좋을지 같이 봐드립니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "여기 없는 문제는 어디서 물어볼 수 있나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "위 두 가지가 매장에서 가장 자주 부딪히는 자리라 먼저 페이지로 만들어 두었습니다. 리뷰 응대, 블로그에서 매장으로 이어지지 않는 흐름, 외국인 손님 동선처럼 다른 자리가 신경 쓰이시면 카카오톡으로 매장 상황을 보내주세요. 같이 봅니다."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "두 가지 다 해당될 때는 어떻게 하나요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "둘 다 해당되는 매장이 더 많습니다. 보통 구글 비즈니스 프로필부터 먼저 정렬한 뒤 홈페이지를 손봅니다. 구글 쪽이 외부 연결 없이도 빠르게 자리가 잡히기 때문이에요. 매장 상황을 알려주시면 순서를 같이 정합니다."
-        }
-      }
-    ]
-  }
-  </script>
-<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/assets/css/brand.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>우리 매장 화면에서 확인할 문제 | Weplace</title>
+<meta name="description" content="구글 지도 정보, 플랫폼 간 불일치, 사진·가격·예약 안내 등 고객이 다시 확인하게 되는 문제를 살펴봅니다.">
+<meta name="theme-color" content="#183c32">
+<link rel="canonical" href="https://withweplace.kr/problems/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Weplace">
+<meta property="og:title" content="우리 매장 화면에서 확인할 문제 | Weplace">
+<meta property="og:description" content="구글 지도 정보, 플랫폼 간 불일치, 사진·가격·예약 안내 등 고객이 다시 확인하게 되는 문제를 살펴봅니다.">
+<meta property="og:url" content="https://withweplace.kr/problems/">
+<meta property="og:image" content="https://withweplace.kr/og-image.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/industries/surface.css">
+<link rel="stylesheet" href="/assets/css/brand.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"우리 매장 화면에서 확인할 문제 | Weplace","description":"구글 지도 정보, 플랫폼 간 불일치, 사진·가격·예약 안내 등 고객이 다시 확인하게 되는 문제를 살펴봅니다.","url":"https://withweplace.kr/problems/","inLanguage":"ko-KR","isPartOf":{"@type":"WebSite","name":"Weplace","url":"https://withweplace.kr/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://withweplace.kr/"},{"@type":"ListItem","position":2,"name":"우리 매장 화면에서 확인할 문제","item":"https://withweplace.kr/problems/"}]}]}</script>
+<link rel="stylesheet" href="/assets/css/company-info.css">
 </head>
-
-<body class="tone-default">
-
-<!-- ========== Header ========== -->
-<header class="site-header">
-  <div class="site-header__inner">
-    <a href="/" class="w-brand site-logo" aria-label="We Place 홈"><img src="/apple-touch-icon.png" width="36" height="36" alt=""><span class="w-wordmark">We,place.</span></a>
-    <nav class="site-nav" aria-label="주요 메뉴">
-      <a href="/industries/">업종별</a>
-      <a href="/problems/">문제별</a>
-      <a href="/#how-we-see">우리가 보는 방식</a>
-      <a href="/#contact" class="t-accent">매장명 보내기</a>
-    </nav>
-  </div>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site-head">
+<div class="wrap head-inner">
+<a class="w-brand" href="/" aria-label="Weplace 홈">
+<img src="/apple-touch-icon.png" alt="" width="36" height="36">
+<span class="w-wordmark">We,place.</span>
+</a>
+<nav class="nav" aria-label="주요 메뉴">
+<a href="/industries/">업종별</a>
+<a href="/start/">진행 방식</a>
+<a href="/my-store/">내 매장 관리</a>
+<a class="nav-cta" href="/check/">내 매장 진단하기</a>
+</nav>
+</div>
 </header>
-
-<main>
-
-  <!-- ========== Hero ========== -->
-  <section class="hero bg-paper">
-    <div class="container-narrow fade-in">
-      <span class="t-eyebrow">Problem Index</span>
-      <h1 class="hero__title keep-all">
-        지금 매장이 겪는 <span class="t-accent">문제</span>부터<br class="br-d">
-        먼저 고르세요.
-      </h1>
-      <p class="hero__lead keep-all">
-        문제는 매장마다 다릅니다.<br class="br-d">
-        어떤 매장은 구글에 안 뜨고, 어떤 매장은 홈페이지는 있는데 검색에서 사라집니다.<br class="br-d">
-        증상에 따라 접근 방식이 달라야 합니다.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- ========== Problem Cards ========== -->
-  <section class="section bg-paper-soft">
-    <div class="container">
-      <div class="text-center mb-lg">
-        <span class="t-eyebrow">지금 다루는 문제들</span>
-        <h2 class="t-h2 keep-all">증상별로 하나씩 정리합니다.</h2>
-      </div>
-
-      <div class="grid grid-2">
-
-        <!-- 1. Google Business Profile -->
-        <a href="/problems/google-business-profile/" class="card" style="text-decoration:none; display:block;">
-          <span class="t-eyebrow" style="color: var(--color-accent);">Problem · Google</span>
-          <h3 class="t-h3 keep-all" style="margin-top:4px;">네이버엔 있는데, 구글엔 없다?</h3>
-          <p class="card-body keep-all">
-            외국인 관광객 1,740만 시대. 구글맵에 보이지 않는 매장은,
-            외국인 손님에게 존재하지 않는 가게와 같습니다.
-            네이버 플레이스와 구글 비즈니스 프로필을 하나의 구조로 정렬합니다.
-          </p>
-          <p class="t-caption mt-sm" style="color: var(--color-accent); font-weight:600;">
-            자세히 보기 →
-          </p>
-        </a>
-
-        <!-- 2. 홈페이지 검색 노출 문제 (준비 중) -->
-        <div class="card" style="background: var(--color-paper); border-style: dashed; opacity: 0.7;">
-          <span class="t-eyebrow" style="color: var(--color-ink-mute);">Problem · Homepage</span>
-          <h3 class="t-h3 keep-all" style="margin-top:4px; color: var(--color-ink-soft);">
-            홈페이지는 있는데, 검색에선 안 보일 때
-          </h3>
-          <p class="card-body keep-all">
-            홈페이지는 만들었는데 구글·네이버 검색에서 존재감이 없을 때.
-            구글과 네이버 양쪽에서 잘 잡히도록 홈페이지를 다시 정렬합니다.
-          </p>
-          <p class="t-caption mt-sm">준비 중 · 곧 공개됩니다</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========== Mini FAQ — 고르기 전 자주 받는 질문 (2층) ========== -->
-  <section class="section bg-paper">
-    <div class="container-narrow">
-      <div class="text-center mb-lg">
-        <span class="t-eyebrow">Before You Pick</span>
-        <h2 class="t-h2 keep-all">고르기 전에 자주 받는 질문 세 가지.</h2>
-      </div>
-
-      <div class="faq-list">
-
-        <details class="faq-item">
-          <summary class="keep-all">구글 문제부터 봐야 하는지, 홈페이지부터 봐야 하는지 모르겠습니다.</summary>
-          <div class="faq-item__body keep-all">
-            외국인 손님이 늘어나는 상권이거나 구글맵에 매장이 안 뜨는 상황이라면 구글부터 봅니다.
-            홈페이지는 있는데 검색에서 거의 안 잡히는 경우라면 홈페이지부터 봅니다.
-
-            판단이 헷갈리시면 매장 상호만 알려주세요. 어디부터 보면 좋을지 같이 봐드립니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="keep-all">여기 없는 문제는 어디서 물어볼 수 있나요?</summary>
-          <div class="faq-item__body keep-all">
-            위 두 가지가 매장에서 가장 자주 부딪히는 자리라 먼저 페이지로 만들어 두었습니다.
-            리뷰 응대, 블로그에서 매장으로 이어지지 않는 흐름, 외국인 손님 동선처럼 다른 자리가 신경 쓰이시면
-            카카오톡으로 매장 상황을 보내주세요. 같이 봅니다.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="keep-all">두 가지 다 해당될 때는 어떻게 하나요?</summary>
-          <div class="faq-item__body keep-all">
-            둘 다 해당되는 매장이 더 많습니다. 보통 구글 비즈니스 프로필부터 먼저 정렬한 뒤 홈페이지를 손봅니다.
-            구글 쪽이 외부 연결 없이도 빠르게 자리가 잡히기 때문이에요.
-
-            매장 상황을 알려주시면 순서를 같이 정합니다.
-          </div>
-        </details>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========== Related Links ========== -->
-  <section class="related-links">
-    <div class="container">
-      <p class="related-links__title">다른 경로</p>
-
-      <div class="related-links__grid">
-        <a href="/" class="related-link">
-          <div class="related-link__label">Main</div>
-          <div class="related-link__title">위플레이스가 일하는 방식 전체 보기</div>
-        </a>
-
-        <a href="/industries/restaurant/" class="related-link">
-          <div class="related-link__label">Industry</div>
-          <div class="related-link__title">식당 업종을 위한 검색 설계</div>
-        </a>
-
-        <a href="/#contact" class="related-link">
-          <div class="related-link__label">Contact</div>
-          <div class="related-link__title">우리 매장 상황부터 이야기해보기</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
+<main id="main" class="wrap">
+<div class="crumbs" aria-label="현재 위치">
+<a href="/">홈</a>
+<span aria-hidden="true">/</span>
+<a href="/problems/">확인할 문제</a>
+</div>
+<section class="hero" id="top">
+<span class="eyebrow">START WITH WHAT YOU SEE</span>
+<h1>손님이 다시 묻는 곳부터<br>살펴볼까요?</h1>
+<p class="lead">매장마다 먼저 확인할 곳은 다릅니다.<br>지금 보이는 화면과 실제 운영 사이에 어떤 차이가 있는지 찾아봅니다.</p>
+</section>
+<section class="section">
+<div class="section-head">
+<h2>지금 확인할 수 있는 질문</h2>
+<p>모든 문제를 한 번에 고치기보다,<br>방문 전에 꼭 필요한 정보부터 정리합니다.</p>
+</div>
+<div class="link-cards">
+<a class="link-card" href="/problems/google-business-profile/">
+<b>구글 지도의 정보가 다른가요? →</b>
+<span>상호·지도 위치·영업시간·사진을 실제 운영과 비교합니다.</span>
+</a>
+<a class="link-card" href="/check/">
+<b>어느 부분부터 볼지 모르겠나요? →</b>
+<span>6문항 자가진단으로 잘 전달되는 점과 확인할 점을 정리합니다.</span>
+</a>
+<a class="link-card" href="/industries/">
+<b>우리 업종 손님은 무엇을 볼까요? →</b>
+<span>메뉴·자리·객실·서비스별로 고객 질문을 살펴봅니다.</span>
+</a>
+</div>
+</section>
+<section class="section">
+<div class="section-head">
+<h2>같은 매장이,<br>같은 정보로 보이는지.</h2>
+<p>홈페이지와 플랫폼은 표현 방식이 달라도<br>같은 운영 사실을 안내해야 합니다.</p>
+</div>
+<div class="question-list">
+<details>
+<summary>구글부터 볼지, 홈페이지부터 볼지 모르겠습니다.</summary>
+<div class="answer">손님이 실제로 들어오는 경로와 반복해서 묻는 질문을 먼저 확인합니다. 잘못된 영업시간·주소·가격처럼 헛걸음을 만들 수 있는 정보가 있으면 우선순위로 검토합니다. 모든 매장에 같은 순서를 적용하지 않습니다.</div>
+</details>
+<details>
+<summary>사진이나 리뷰가 적으면 바로 작업해야 하나요?</summary>
+<div class="answer">숫자만으로 판단하지 않습니다. 현재 매장의 모습을 제대로 보여주는 사진인지, 실제 경험에 대한 질문에 답할 정보가 있는지 함께 봅니다. 리뷰 수나 검색 순위의 상승을 보장하지 않습니다.</div>
+</details>
+<details>
+<summary>어떤 작업을 맡길지 정하지 않아도 상담할 수 있나요?</summary>
+<div class="answer">지금 고민하는 상황부터 이야기할 수 있습니다. 실제 화면을 함께 확인한 뒤 필요한 작업과 범위·비용·일정을 제안서에서 검토합니다.</div>
+</details>
+</div>
+</section>
+<section class="band" id="contact" aria-labelledby="contact-title">
+<div>
+<span class="eyebrow">NEXT CONVERSATION</span>
+<h2 id="contact-title">우리 매장 화면도<br>같이 볼까요?</h2>
+<p>먼저 자가진단으로 확인할 점 하나를 정리하거나,<br>카카오 채널에서 현재 고민부터 이야기해 주세요.</p>
+<div class="actions">
+<a class="btn" href="/check/">내 매장 진단하기 <span aria-hidden="true">↗</span>
+</a>
+<a class="btn secondary" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 상담 열기 <span aria-hidden="true">↗</span>
+</a>
+</div>
+<p>상담창을 여는 것만으로 문의가 접수되지는 않습니다. 직접 메시지를 보내면 대화가 시작됩니다.</p>
+</div>
+<div>
+<span class="eyebrow">WHAT WE LOOK AT</span>
+<ul>
+<li>현재 검색·지도·예약 화면</li>
+<li>손님이 다시 확인하는 질문</li>
+<li>먼저 정리할 정보와 필요한 자료</li>
+<li>미팅에서 합의할 작업 범위·일정·비용</li>
+</ul>
+<p>
+<a href="/start/">상담부터 작업 관리까지, 진행 방식 보기 →</a>
+</p>
+</div>
+</section>
 </main>
-
-
-<!-- ========== Footer ========== -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="site-footer__cols">
-      <div>
-        <div class="w-brand"><img src="/apple-touch-icon.png" width="36" height="36" alt=""><span class="w-wordmark">We,place.</span></div>
-        <p style="color:rgba(255,255,255,.6); max-width: 36ch;">
-          매장을 함께 읽는 팀. 네이버·구글·홈페이지를 하나의 구조로 정렬해
-          검색 발견성과 문의 전환을 설계합니다.
-        </p>
-      </div>
-
-      <div>
-        <p class="site-footer__title">업종별</p>
-        <ul class="site-footer__links">
-          <li><a href="/industries/restaurant/">식당</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="site-footer__title">문제별</p>
-        <ul class="site-footer__links">
-          <li><a href="/problems/google-business-profile/">구글 노출</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="site-footer__title">Contact</p>
-        <ul class="site-footer__links">
-          <li><a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">카카오톡 상담</a></li>
-          <li><a href="mailto:weplace25@gmail.com">weplace25@gmail.com</a></li>
-          <li><a href="tel:010-6461-6594">010-6461-6594</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="site-footer__bottom" style="flex-direction: column; align-items: flex-start; gap: 6px; font-size: 12px; line-height: 1.6;">
-      <span style="color: rgba(255,255,255,.4); font-size: 11px; letter-spacing: 0.03em;">
-        마지막 업데이트: 2026년 4월 &nbsp;·&nbsp; 다음 예정 업데이트: 2026년 6월
-      </span>
-      <span>© 2025 We Place. All rights reserved.</span>
-      <span>
-        상호 (주)위플레이스마케팅 &middot; 대표 박규민 &middot; 사업자등록번호 145-88-03119<br>
-        주소 서울특별시 금천구 디지털로 178 퍼블릭가산C동 &middot;
-        이메일 weplace25@gmail.com &middot;
-        전화 010-6461-6594
-      </span>
-    </div>
-  </div>
+<!-- WEPLACE_COMPANY_FOOTER -->
+<footer id="site-footer" class="company-footer" data-company-version="2026-10-19-review-1" aria-label="회사 정보와 개인정보 안내">
+<div class="company-inner"><div class="company-heading"><a class="w-brand" href="/"><img src="/apple-touch-icon.png" alt="" width="36" height="36"><span class="w-wordmark">We,place.</span></a><p>현장을 이해하고, 필요한 것을 만듭니다.</p></div>
+<p class="company-review-note">회사 정보 검토안 · 기존 공개 표기를 모았으며 최신 서류와 운영 담당자의 확인 후 확정합니다.</p>
+<dl class="company-facts"><div><dt>서비스 제공·운영</dt><dd>(주)위플레이스마케팅</dd></div><div><dt>대표자</dt><dd>박규민</dd></div></dl>
+<div class="company-contact"><span>기존 공개 문의 경로</span><a href="mailto:weplace25@gmail.com">weplace25@gmail.com</a><a href="tel:01064616594">010-6461-6594</a><a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 문의 ↗</a></div>
+<nav class="company-links" aria-label="법률 및 이용 안내"><a href="/privacy/">개인정보처리방침 (검토 초안)</a><a href="/start/#geo-pricing">서비스·계약 조건 안내</a><a href="/my-store/">내 매장 관리</a><a href="/field-notes/">공개 현장 기록</a><a href="/client">고객 로그인</a><a href="/team">직원 로그인</a><a href="https://mashcore.netlify.app/about/" target="_blank" rel="noopener noreferrer">브랜드 관점과 연구 · Mashcore Lab ↗</a></nav>
+<p class="company-note">Mashcore 링크는 콘텐츠 탐색 경로입니다. 고객 계정이나 상담 기록을 연결하지 않습니다.</p><p class="company-note">© 2026 Weplace</p></div>
 </footer>
-
+<!-- /WEPLACE_COMPANY_FOOTER -->
 </body>
 </html>
