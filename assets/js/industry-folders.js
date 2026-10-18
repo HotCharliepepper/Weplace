@@ -6,10 +6,10 @@
   // before projecting these fields. Never use the private client API.
   const REFRESH_MS = 60000;
   const guides = [
-    { industry: '요식업', theme: 'dining', question: '부모님 모시고 가도 괜찮을까?', hesitation: '음식 사진은 좋은데, 조용한 자리와 주차 방법을 다시 찾아봅니다.', evidence: ['함께 앉을 자리와 인원', '메뉴·가격·주차 안내'], start: '식당 손님의 시선으로 보기' },
-    { industry: '카페', theme: 'cafe', question: '여기서 편하게 머물 수 있을까?', hesitation: '예쁜 공간 다음에는 좌석, 이용 시간, 머무는 분위기가 궁금해집니다.', evidence: ['좌석 간격과 공간 분위기', '메뉴·이용 시간·방문 안내'], start: '카페 손님의 시선으로 보기' },
-    { industry: '숙박', theme: 'stay', question: '사진 속 방이 내가 예약할 방일까?', hesitation: '객실 이름과 사진이 이어지지 않으면 예약 직전에도 다른 곳을 확인합니다.', evidence: ['객실별 실제 시설과 포함 항목', '도착·주차·체크인 안내'], start: '숙박 손님의 시선으로 보기' },
-    { industry: '뷰티', theme: 'beauty', question: '나에게 맞는 상담을 받을 수 있을까?', hesitation: '좋은 후기만으로는 내 상황에 맞는 관리와 비용을 가늠하기 어렵습니다.', evidence: ['관리 범위·소요 시간·가격 기준', '상담 순서와 예약 전 확인사항'], start: '뷰티 손님의 시선으로 보기' }
+    { industry: '요식업', theme: 'dining', question: '부모님 모시고 갈 식당, 8명도 편하게 앉을까?', hesitation: '음식은 마음에 드는데 함께 앉을 자리가 보이지 않는다면, 모임을 정하기 전에 한 번 더 물어봐야 합니다.', evidence: ['룸·테이블별 이용 인원', '주차 위치와 예약 방법'], start: '식사 자리 고르는 손님 따라가기', scene: '테이블 배치와 식사 공간을 그린 요식업 예시', scope: '8명은 모임 상황의 예시입니다. 실제 수용 인원·룸 이용 조건·메뉴 가격은 매장 자료로 확인해야 합니다.' },
+    { industry: '카페', theme: 'cafe', question: '둘이 대화하기 좋은 자리일까?', hesitation: '음료 사진은 마음에 드는데 좌석이 보이지 않는다면, 둘이 마주 앉아 이야기할 곳인지 알기 어렵습니다.', evidence: ['마주 앉을 좌석과 테이블 간격', '메뉴와 공간 이용 시간'], start: '카페를 고르는 손님 따라가기', scene: '커피와 창가 좌석을 그린 카페 예시', scope: '좌석과 머무는 상황을 설명하는 예시입니다. 실제 좌석 배치·이용 시간·영업시간은 매장마다 확인해야 합니다.' },
+    { industry: '숙박', theme: 'stay', question: '늦게 도착해도 주차하고 체크인할 수 있을까?', hesitation: '마음에 드는 객실을 찾았어도 도착 시간에 이용할 수 있는지 모르면 예약을 결정하기 어렵습니다.', evidence: ['예약할 객실의 사진과 포함 시설', '주차 위치와 체크인 가능 시간'], start: '숙소 예약 전 화면 확인하기', scene: '객실과 도착 안내를 함께 그린 숙박 예시', scope: '도착 시간을 확인하는 상황의 예시입니다. 늦은 체크인이 가능하다는 뜻은 아닙니다. 추가요금·취소조건도 실제 예약 기준을 확인해야 합니다.' },
+    { industry: '뷰티', theme: 'beauty', question: '어떤 관리를 얼마에 받을 수 있을까?', hesitation: '관심 있는 관리를 찾았어도 포함 항목과 추가 비용이 불분명하면 첫 예약을 망설일 수 있습니다.', evidence: ['관리별 포함 항목과 가격 기준', '상담부터 예약까지의 순서'], start: '첫 방문 고객의 시선 따라가기', scene: '거울과 상담 안내를 그린 뷰티 예시', scope: '상담과 관리 안내를 설명하는 예시입니다. 효과나 결과를 보여주는 자료가 아닙니다. 사례 사진은 사용 동의를 확인한 뒤 공개합니다.' }
   ];
   const el = (tag, className, text) => {
     const node = document.createElement(tag);
@@ -111,10 +111,12 @@
     }
 
     render(data, error = false) {
-      const opened = new Set([...this.querySelectorAll('details[open]')].map(node => node.dataset.industry));
+      const opened = new Set([...this.querySelectorAll('details[open]')].map(node => node.dataset.disclosure || node.dataset.industry));
       const focused = document.activeElement;
       const focusKey = this.contains(focused) ? focused?.dataset?.focus : null;
+      const focusIndustry = focusKey ? focused.closest('.wp-folder-card')?.querySelector('.wp-folder')?.dataset.industry : null;
       const shell = el('div', 'wp-folders-shell');
+      shell.append(el('p', 'wp-folders-intro', '업종별 고객 질문을 살펴보는 예시입니다. 실제 관리 현황은 공개가 승인되고 확인된 경우에만 표시합니다.'));
       const grid = el('div', 'wp-folders');
       const rows = isRecord(data) && Array.isArray(data.industries) ? data.industries : [];
       let hasPublicData = false;
@@ -127,6 +129,7 @@
         const metrics = approvedMetrics(row);
         const updates = publicUpdates(row);
         hasPublicData = hasPublicData || !!metrics || updates.length > 0;
+        const card = el('article', 'wp-folder-card wp-folder-' + guide.theme);
         const folder = el('details', 'wp-folder wp-folder-' + guide.theme);
         folder.dataset.industry = guide.theme;
         folder.open = opened.has(guide.theme);
@@ -143,14 +146,14 @@
         const figure = el('figure', 'wp-folder-image');
         const img = el('img');
         img.src = '/assets/img/industry-' + guide.theme + '.svg';
-        img.alt = '';
+        img.alt = guide.scene;
         img.loading = 'lazy';
         img.width = 500;
         img.height = 320;
         figure.append(img, el('figcaption', '', '업종 이해를 위한 예시'));
         summary.append(figure, el('p', 'wp-folder-question', guide.question));
         const expand = el('span', 'wp-folder-expand');
-        expand.append(el('span', 'wp-folder-closed', '손님이 확인할 것 +'), el('span', 'wp-folder-opened', '접어두기 −'));
+        expand.append(el('span', 'wp-folder-closed', '이 손님이 확인할 것 +'), el('span', 'wp-folder-opened', '내용 접기 −'));
         summary.append(expand);
         folder.append(summary);
         const body = el('div', 'wp-folder-body');
@@ -159,21 +162,34 @@
           else if (!folder.open) window.WeplaceMotion?.cancel(body);
           openingByUser = false;
         });
-        body.append(el('h4', '', '어디에서 망설일까요?'), el('p', '', guide.hesitation), el('h4', '', '이 질문에 답하는 안내'));
+        body.append(el('p', 'wp-folder-finding', guide.hesitation), el('h4', '', '화면에서 확인할 두 가지'));
         const evidence = el('ul', 'wp-folder-evidence');
         guide.evidence.forEach(item => evidence.append(el('li', '', item)));
         body.append(evidence);
+        const scope = el('details', 'wp-folder-extra');
+        scope.dataset.disclosure = 'scope-' + guide.theme;
+        scope.open = opened.has(scope.dataset.disclosure);
+        const scopeSummary = el('summary', '', '실제 매장에 적용하기 전에');
+        scopeSummary.dataset.focus = scope.dataset.disclosure;
+        scope.append(scopeSummary, el('p', '', guide.scope));
+        body.append(scope);
+        const publicInfo = el('details', 'wp-folder-extra wp-folder-public');
+        publicInfo.dataset.disclosure = 'public-' + guide.theme;
+        publicInfo.open = opened.has(publicInfo.dataset.disclosure);
+        const publicSummary = el('summary', '', '공개가 승인된 관리 현황·기록');
+        publicSummary.dataset.focus = publicInfo.dataset.disclosure;
+        publicInfo.append(publicSummary);
         if (updates.length) {
-          body.append(el('h4', '', '공개 승인된 현장 기록'));
+          publicInfo.append(el('h4', '', '공개 승인된 현장 기록'));
           updates.forEach(update => {
             const item = el('div', 'wp-folder-update');
             item.append(el('p', '', update.summary), el('small', '', '기록 확인 ' + date(update.updatedAt)));
-            body.append(item);
+            publicInfo.append(item);
           });
           const notes = el('a', 'wp-folder-record-link', '공개 작업 기록 더 보기 →');
           notes.href = '/field-notes/';
           notes.dataset.focus = 'records-' + guide.theme;
-          body.append(notes);
+          publicInfo.append(notes);
         }
         if (metrics) {
           const stat = el('aside', 'wp-folder-metrics');
@@ -184,8 +200,9 @@
             if (metrics.remaining === 0) stat.append(el('p', '', '신규 착수 일정은 상담으로 확인합니다.'));
           }
           stat.append(el('small', '', '확인 ' + date(metrics.reviewedAt) + ' · 공개 기한 ' + metrics.activeUntil));
-          body.append(stat);
+          publicInfo.append(stat);
         }
+        if (updates.length || metrics) body.append(publicInfo);
         const links = el('div', 'wp-folder-links');
         const start = el('a', '', guide.start + ' →');
         const atHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
@@ -204,16 +221,17 @@
           }
         });
         links.append(start);
-        body.append(links);
         folder.append(body);
-        grid.append(folder);
+        card.append(folder, links);
+        grid.append(card);
       });
       shell.append(grid);
       const status = el('p', 'wp-folders-status');
       status.setAttribute('role', 'status');
       status.textContent = error ? '공개 기록을 불러오지 못했습니다. 업종별 체험은 계속 이용할 수 있습니다.' :
         hasPublicData ? '관리 현황과 작업 기록은 공개 확인된 범위에서만 표시합니다. 실제 착수 일정은 상담 후 확정합니다.' :
-          '위 장면은 업종별 이해를 돕는 예시입니다. 우리 매장에 필요한 안내를 직접 확인해 보세요.';
+          '';
+      status.hidden = !status.textContent;
       shell.append(status);
       if (error) {
         const retry = el('button', 'wp-folder-retry', '공개 기록 다시 불러오기');
@@ -224,7 +242,14 @@
       }
       this.querySelectorAll('.wp-folder-body').forEach(node => window.WeplaceMotion?.cancel(node));
       this.replaceChildren(shell);
-      if (focusKey) [...this.querySelectorAll('[data-focus]')].find(node => node.dataset.focus === focusKey)?.focus({ preventScroll: true });
+      if (focusKey) {
+        const controls = [...this.querySelectorAll('[data-focus]')];
+        // A record can vanish on expiry. Return to its visible sector heading
+        // instead of stranding keyboard focus on the document body.
+        const nextFocus = controls.find(node => node.dataset.focus === focusKey) ||
+          controls.find(node => node.dataset.focus === 'folder-' + focusIndustry);
+        nextFocus?.focus({ preventScroll: true });
+      }
     }
   }
   customElements.define('weplace-industries', IndustryFolders);

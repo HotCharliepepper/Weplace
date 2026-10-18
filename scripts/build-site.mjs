@@ -3,7 +3,7 @@ import { resolve, join } from 'node:path';
 import {companyReleaseIssues, replaceCompanyFooter, footerStart, reconcileCompanyStructuredData} from './company-info.mjs';
 const root = resolve(import.meta.dirname, '..');
 const out = join(root, 'dist');
-const folders = ['assets','check','field-notes','img','industries','meeting','my-store','privacy','problems','prototype','review','start','webtoon'];
+const folders = ['assets','check','field-notes','global','img','industries','meeting','my-store','privacy','problems','prototype','review','start','webtoon'];
 const production = process.env.CONTEXT === 'production' || process.argv.includes('--production');
 const issues = companyReleaseIssues();
 const privacySource = await readFile(join(root,'privacy/index.html'),'utf8');
@@ -23,6 +23,11 @@ for (const name of await readdir(root)) {
       (info.isFile() && (/\.(html|png|jpg|jpeg|webp|ico|mp4|svg)$/.test(name) || ['_headers','_redirects','robots.txt','sitemap.xml'].includes(name)))) {
     await cp(path, join(out,name), {recursive:true});
   }
+}
+// Include only the reviewed /en/global pilot, never PR #5's /en home or prices.
+if (await stat(join(root,'en/global')).then(s=>s.isDirectory()).catch(()=>false)) {
+  await mkdir(join(out,'en'),{recursive:true});
+  await cp(join(root,'en/global'),join(out,'en/global'),{recursive:true});
 }
 // Shared footer is rendered at build time: no client fetch, identity access or
 // legal-state config is shipped. Marked source pages remain readable without JS.

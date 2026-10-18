@@ -3,3 +3,23 @@
 @media(max-width:900px){.head-inner{align-items:flex-start;padding-block:20px}.nav{gap:5px 18px;justify-content:flex-end}.hero.split{gap:30px}.hero-visual img{height:340px}.checklist{grid-template-columns:1fr}.band{gap:30px}.section-head{align-items:flex-start;flex-direction:column}.step-list li{grid-template-columns:50px 1fr}.step-note{grid-column:2}.footer-inner{flex-direction:column}.link-cards{grid-template-columns:1fr}}
 @media(max-width:600px){.wrap{width:calc(100% - 40px)}.head-inner{display:block}.nav{justify-content:flex-start;margin-top:15px;gap:0 19px}.nav a{font-size:12px}.nav .nav-cta{padding:3px 12px}.hero{padding:44px 0 50px}.hero.split{display:flex;flex-direction:column;align-items:stretch}.hero-visual img{height:230px}.lead{font-size:15px}.grid{grid-template-columns:1fr;gap:20px}.sector img{height:210px}.sector-body{padding:25px}.section{padding:45px 0}.band{display:block;padding:30px 25px;margin-bottom:45px}.band>div+div{margin-top:30px}.band h2{font-size:27px}.comparison{grid-template-columns:1fr}.comparison>div{padding:26px}.comparison>div+div{border-left:0;border-top:1px solid var(--line)}.actions{flex-direction:column;align-items:stretch}.actions .btn{width:100%;text-align:center}.step-list li{gap:14px;grid-template-columns:34px 1fr}.step-note{padding-left:0;border-left:0}.item{padding:24px}.footer-links{gap:6px 22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* v1.4 industry reading layer; scoped so shared non-industry pages keep their layout. */
+.industry-page .pair-checklist{grid-template-columns:repeat(2,minmax(0,1fr))}
+.industry-page .section-head p,.industry-page .item p,.industry-page .comparison ul,.industry-page .answer,.industry-index .sector p{font-size:16px;line-height:1.85}
+.industry-page .detail-note,.industry-index .detail-note{margin-top:26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.industry-page .detail-note>summary,.industry-index .detail-note>summary{min-height:56px;padding:16px 34px 16px 0;line-height:1.6;list-style:none}
+.industry-page .detail-note>summary:after,.industry-index .detail-note>summary:after{top:13px}
+.industry-page .detail-note .answer,.industry-index .detail-note .answer{max-width:none;padding:0 6px 22px 0}
+.industry-page .comparison-detail .comparison{margin-bottom:22px}
+.industry-page .hero-visual img{height:auto;aspect-ratio:500/320;object-fit:contain}
+.industry-page .hero-visual figcaption{font-size:12px;line-height:1.7}
+.industry-page .fine,.industry-page .scope-note,.industry-index .scope-note{font-size:14px;line-height:1.85}
+.industry-index .sector h2{font-family:var(--sans);font-size:24px;line-height:1.55;font-weight:600;letter-spacing:-.04em}
+.industry-index .sector-label{font-size:13px;letter-spacing:.03em}
+.industry-index .sector .detail-note{margin-top:22px}
+.industry-index .sector .text-link{font-size:15px;line-height:1.7;min-height:48px;margin-top:15px}
+.industry-index .sector-evidence{margin:18px 0 0;padding-left:20px;font-size:16px}
+.industry-index .sector-evidence li+li{margin-top:8px}
+.industry-page .question-list .answer{font-size:15px}
+@media(max-width:600px){.industry-page .pair-checklist{grid-template-columns:1fr}.industry-page .lead,.industry-index .lead{font-size:17px;line-height:1.85}.industry-page .hero.split h1{font-size:34px}.industry-index .sector h2{font-size:23px}.industry-page .hero-visual img{height:auto}.industry-page .detail-note>summary,.industry-index .detail-note>summary{font-size:16px}.industry-page .notice{padding:20px;font-size:15px}.industry-page .comparison h3{font-size:20px;line-height:1.6}}
