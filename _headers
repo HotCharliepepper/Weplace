@@ -1,0 +1,5 @@
+/flow-preview/*
+  X-Robots-Tag: noindex, nofollow
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'; frame-src 'none'; frame-ancestors 'self'

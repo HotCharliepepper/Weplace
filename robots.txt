@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /flow-preview/
 
 Sitemap: https://withweplace.kr/sitemap.xml
