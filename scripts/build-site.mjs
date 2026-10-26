@@ -3,7 +3,7 @@ import { resolve, join } from 'node:path';
 import {companyReleaseIssues, replaceCompanyFooter, footerStart, reconcileCompanyStructuredData} from './company-info.mjs';
 const root = resolve(import.meta.dirname, '..');
 const out = join(root, 'dist');
-const folders = ['assets','check','field-notes','global','img','industries','meeting','my-store','privacy','problems','prototype','review','start','webtoon'];
+const folders = ['enterprise','process','flow-preview','assets','check','field-notes','global','img','industries','meeting','my-store','privacy','problems','prototype','review','start','webtoon'];
 const production = process.env.CONTEXT === 'production' || process.argv.includes('--production');
 const issues = companyReleaseIssues();
 const privacySource = await readFile(join(root,'privacy/index.html'),'utf8');

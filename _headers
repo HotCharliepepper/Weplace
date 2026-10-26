@@ -8,3 +8,7 @@
   X-Robots-Tag: noindex, nofollow
 /tests/*
   X-Robots-Tag: noindex, nofollow
+
+/flow-preview/*
+  X-Robots-Tag: noindex, nofollow
+  Referrer-Policy: no-referrer
