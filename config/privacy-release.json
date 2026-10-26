@@ -1,0 +1,23 @@
+{
+  "version": "2026-10-19-draft-1",
+  "publicationState": "draft",
+  "releaseApproved": false,
+  "effectiveDate": null,
+  "approvedBy": null,
+  "approvedAt": null,
+  "verified": {
+    "controllerAndContact": false,
+    "purposesAndLegalBases": false,
+    "fieldsAndRequiredOptional": false,
+    "retentionAndLegalPreservation": false,
+    "deletionAndBackups": false,
+    "processorsAndSubprocessors": false,
+    "thirdPartyProvision": false,
+    "internationalTransfers": false,
+    "cookiesAnalyticsAndSecurityLogs": false,
+    "rightsRequestWorkflow": false,
+    "securityMeasuresAndIncidentProcess": false,
+    "flowCollectionTimeNotice": false,
+    "termsAndPolicySeparation": false
+  }
+}

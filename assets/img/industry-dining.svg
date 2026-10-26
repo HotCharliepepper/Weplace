@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="320" viewBox="0 0 500 320" role="img" aria-labelledby="title">
+<title id="title">식사 자리와 메뉴를 표현한 업종 예시</title>
+<!-- Original code-authored illustration for this website. No client premises depicted. -->
+<rect width="500" height="320" fill="#f3f1e7"/>
+<path d="M0 249h500v71H0z" fill="#e4e5d9"/>
+<rect x="51" y="36" width="106" height="138" rx="48" fill="#d6decf"/>
+<path d="M104 37v136M53 105h102" fill="none" stroke="#f3f1e7" stroke-width="5"/>
+<path d="M379 0v72" stroke="#556653" stroke-width="3"/>
+<path d="M345 77a34 34 0 0 1 68 0z" fill="#bd8f63"/>
+<ellipse cx="257" cy="207" rx="156" ry="42" fill="#b4bfa9"/>
+<path d="M143 227v49m225-49v49" stroke="#67765f" stroke-width="9"/>
+<ellipse cx="218" cy="202" rx="41" ry="18" fill="#fffdf5"/>
+<ellipse cx="218" cy="202" rx="27" ry="11" fill="none" stroke="#d6d5c7" stroke-width="2"/>
+<ellipse cx="317" cy="211" rx="35" ry="15" fill="#fffdf5"/>
+<rect x="270" y="145" width="28" height="40" rx="3" fill="#fffdf5" stroke="#c7c9b7" stroke-width="2"/>
+<path d="M277 157h14m-14 7h10" stroke="#6a7b60" stroke-width="2"/>
+<path d="M173 188v29m-7-29v10m14-10v10m-14 0h14" fill="none" stroke="#67765f" stroke-width="2"/>
+<path d="M363 191v28" stroke="#67765f" stroke-width="3"/>
+<path d="M66 204v52h45v-52m274 20v44h46v-44" fill="none" stroke="#8d9b80" stroke-width="10" stroke-linejoin="round"/>
+</svg>

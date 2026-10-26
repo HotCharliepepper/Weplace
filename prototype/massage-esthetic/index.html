@@ -30,6 +30,7 @@
 .limit{margin-top:23px;border-left:1px solid var(--gold2);padding-left:14px;color:var(--muted);font-size:12.5px;line-height:1.75}.cta{padding:122px 0 128px;background:linear-gradient(180deg,#100d09 0%,rgba(16,13,9,.65),#0f0c08),url('/img/weplace-diagnosis-bg.jpg') center/cover no-repeat}.cta__sub{margin-top:18px;color:var(--cream2);font-size:14.5px;line-height:1.85;max-width:31em}footer{padding:38px 0;background:#0d0a07;text-align:center}footer p{font-size:11.5px;color:#6f6658;line-height:1.8}footer a{color:#9d8f79;text-decoration:none}@media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}}
 </style>
 <noscript><style>.r{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="stylesheet" href="/assets/css/company-info.css">
 </head>
 <body>
 <header class="sitehead" id="sitehead"><a class="brand" href="/"><span>We, </span><b>Place.</b></a><span class="proto">prototype</span><a class="headcta" href="#self">손님 눈으로 보기</a></header>
@@ -97,7 +98,16 @@
 
 <section class="cta"><div class="wrap"><div class="kicker r">ONE PAGE CHECK</div><h2 class="r">대표님 매장이<br>처음 보는 손님에게 어떻게 읽히는지<br><span class="g">화면부터 같이 봅니다.</span></h2><p class="cta__sub r">매장명과 지역만 있어도 됩니다. 현재 화면에서 이미 좋은 부분과 조금 아까운 부분을 나눠보는 것부터 시작합니다.</p><div class="btnrow r"><a class="btn btn--gold" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener">카카오톡으로 매장명 보내기</a><a class="btn btn--ghost" href="/">Weplace 메인 보기</a></div></div></section>
 </main>
-<footer><div class="wrap"><p><a href="/">We, Place.</a> · Prototype · Massage & Esthetic<br>(주)위플레이스마케팅 · 서울 영등포구 선유로9길 10, 812호</p></div></footer>
+<!-- WEPLACE_COMPANY_FOOTER -->
+<footer id="site-footer" class="company-footer" data-company-version="2026-10-19-review-1" aria-label="회사 정보와 개인정보 안내">
+<div class="company-inner"><div class="company-heading"><a class="w-brand" href="/"><img src="/apple-touch-icon.png" alt="" width="36" height="36"><span class="w-wordmark">We,place.</span></a><p>현장을 이해하고, 필요한 것을 만듭니다.</p></div>
+<p class="company-review-note">회사 정보 검토안 · 기존 공개 표기를 모았으며 최신 서류와 운영 담당자의 확인 후 확정합니다.</p>
+<dl class="company-facts"><div><dt>서비스 제공·운영</dt><dd>(주)위플레이스마케팅</dd></div><div><dt>대표자</dt><dd>박규민</dd></div></dl>
+<div class="company-contact"><span>기존 공개 문의 경로</span><a href="mailto:weplace25@gmail.com">weplace25@gmail.com</a><a href="tel:01064616594">010-6461-6594</a><a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 문의 ↗</a></div>
+<nav class="company-links" aria-label="법률 및 이용 안내"><a href="/privacy/">개인정보처리방침 (검토 초안)</a><a href="/start/#geo-pricing">서비스·계약 조건 안내</a><a href="/my-store/">내 매장 관리</a><a href="/field-notes/">공개 현장 기록</a><a href="/client">고객 로그인</a><a href="/team">직원 로그인</a><a href="https://mashcore.netlify.app/about/" target="_blank" rel="noopener noreferrer">브랜드 관점과 연구 · Mashcore Lab ↗</a></nav>
+<p class="company-note">Mashcore 링크는 콘텐츠 탐색 경로입니다. 고객 계정이나 상담 기록을 연결하지 않습니다.</p><p class="company-note">© 2026 Weplace</p></div>
+</footer>
+<!-- /WEPLACE_COMPANY_FOOTER -->
 <script>
 (function(){'use strict';var h=document.getElementById('sitehead');function s(){h.classList.toggle('sc',scrollY>60)}addEventListener('scroll',s,{passive:true});s();if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.r').forEach(function(e){io.observe(e)})}else document.querySelectorAll('.r').forEach(function(e){e.classList.add('in')});var qs=[].slice.call(document.querySelectorAll('[data-q]'));qs.forEach(function(q){q.querySelectorAll('[data-opt]').forEach(function(b){b.addEventListener('click',function(){q.querySelectorAll('[data-opt]').forEach(function(x){x.classList.remove('on')});b.classList.add('on');q.dataset.answered='1';q.dataset.friction=b.getAttribute('data-friction')||'0';u()})})});function u(){var a=qs.filter(function(q){return q.dataset.answered==='1'}).length;if(a!==qs.length)return;var is=qs.filter(function(q){return q.dataset.friction==='1'}).map(function(q){return q.getAttribute('data-issue')});var r=document.getElementById('dresult'),t=document.getElementById('dtitle'),x=document.getElementById('dtext'),c=document.getElementById('dchips');c.innerHTML='';if(!is.length){t.textContent='손님이 필요한 기본 답이 꽤 또렷하게 보입니다.';x.textContent='지금 기준이 네이버·Google·홈페이지에서도 계속 같은지 유지 여부를 확인해볼 만합니다.'}else{t.textContent='잘하고 있는 부분 위에, 한 번 더 확인할 자리가 '+is.length+'곳 보입니다.';x.textContent='문제가 많은 매장이라는 뜻이 아니라, 처음 보는 고객이 답을 찾기 위해 한 번 더 움직일 수 있는 자리입니다.';is.forEach(function(v){var z=document.createElement('span');z.className='chip';z.textContent=v;c.appendChild(z)})}r.classList.add('on');if(window.gtag)gtag('event','massage_esthetic_prototype_complete',{friction_count:is.length,frictions:is.join('|')})}})();
 </script>
