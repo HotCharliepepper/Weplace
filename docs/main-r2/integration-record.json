@@ -9,7 +9,7 @@
   "branch": "draft/weplace-main-r2-20261029",
   "integration": "R2 replaces root index; PR 11 source preserved as parent; existing interactive customer-view tool moved to /experience/ without removing assertions.",
   "unchanged": [
-    "existing subpages",
+    "existing subpage content and behavior; experience navigation targets updated",
     "FLOW authentication",
     "public journal bundle",
     "all seven redirects",
@@ -25,11 +25,17 @@
     "note": "Pretendard subsets include visible HTML, dynamic messages, ASCII, footer configuration. Other user-input glyphs fall back to system fonts. OFL retained."
   },
   "automated": {
-    "tests": 73,
-    "pass": 73,
+    "tests": 74,
+    "pass": 74,
     "html": 34,
     "references": 1053,
     "localLinkDefects": 0
   },
-  "release": "Review only. 22 company/privacy checks remain unapproved; no merge, production publish, DB or identity changes."
+  "release": "Review only. 22 company/privacy checks remain unapproved; no merge, production publish, DB or identity changes.",
+  "delivery": {
+    "draftPr": "https://github.com/HotCharliepepper/Weplace/pull/12",
+    "netlifyPreview": "https://deploy-preview-12--weplace.netlify.app/",
+    "baseBranch": "main",
+    "r2DeltaBase": "3c1278c378b939ceb0741140705e93816bab438f"
+  }
 }

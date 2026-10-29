@@ -69,3 +69,9 @@ test('optional animation failure does not disable controls; reduced motion creat
 test('Escape closes mobile navigation and returns focus to the menu trigger',()=>{
  const c=setup();try{c.d.querySelector('.mobile-menu').open=true;c.d.dispatchEvent(new c.w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));assert.equal(c.d.querySelector('.mobile-menu').open,false);assert.equal(c.d.activeElement,c.d.querySelector('.mobile-menu summary'))}finally{c.close()}
 });
+
+test('industry detail calls to action retain the chosen sector at the preserved tool',()=>{
+ for(const [file,sector] of [['restaurant/index.html','dining'],['dining.html','dining'],['cafe/index.html','cafe'],['beauty/index.html','beauty'],['esthetic/index.html','beauty'],['stay.html','stay'],['hospitality.html','stay']]){
+  const d=new JSDOM(fs.readFileSync('industries/'+file,'utf8')).window.document;assert.ok(d.querySelector('a[href="/experience/?industry='+sector+'#experience"]'),file);assert.equal(d.querySelector('a[href^="/?industry="]'),null);
+ }
+});

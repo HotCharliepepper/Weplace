@@ -30,7 +30,7 @@ test('four static industry cards lead to distinct matching questions, illustrati
         assert.equal(dd.querySelectorAll('#work .pair-checklist > article.item').length,2);
         const evidence=[...dd.querySelectorAll('#work .pair-checklist h3')].map(text);
         assert.deepEqual(evidence,[...card.querySelectorAll('.sector-evidence > li')].map(text));
-        for(const href of ['/?industry='+industry+'#experience','/check/?industry='+industry,'/privacy/']){
+        for(const href of ['/experience/?industry='+industry+'#experience','/check/?industry='+industry,'/privacy/']){
           const link=dd.querySelector('a[href="'+href+'"]');assert.ok(link,file+': '+href);assert.equal(link.closest('details'),null);
         }
         for(const disclosure of dd.querySelectorAll('details')){
