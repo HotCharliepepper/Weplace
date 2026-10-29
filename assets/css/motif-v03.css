@@ -1,0 +1,48 @@
+/* Shared Ribbon v0.3: decorative section art, separate from observed data. */
+.home-r2 .wp-ribbon-aside {
+  flex: 0 1 300px;
+  min-width: 0;
+}
+.home-r2 .wp-ribbon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+.home-r2 .wp-ribbon--fold {
+  width: 240px;
+  margin: 0 0 16px auto;
+}
+.home-r2 .wp-ribbon--signal {
+  width: 144px;
+  margin: 0 0 12px auto;
+}
+.home-r2 .recognition-note {
+  margin-top: 22px;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: -.015em;
+  color: var(--muted);
+}
+@media (max-width: 767px) {
+  .home-r2 .wp-ribbon-aside {
+    margin-top: 22px;
+  }
+  .home-r2 .wp-ribbon--fold {
+    width: 180px;
+    margin: 0 0 8px;
+  }
+  .home-r2 .wp-ribbon--signal {
+    width: 120px;
+    margin: 0 0 8px;
+  }
+  .home-r2 .wp-ribbon-aside .section-lead {
+    max-width: 320px;
+  }
+  .home-r2 .recognition-note {
+    margin-top: 16px;
+    font-size: 13px;
+  }
+}
+/* Deliberately no animation, event handlers or visibility-dependent reveal. */

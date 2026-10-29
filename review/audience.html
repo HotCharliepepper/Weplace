@@ -1,1 +1,52 @@
-<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>WEPLACE 화면 검토</title><style>body{margin:0;background:#e8e5df;color:#302e29;font:14px system-ui,sans-serif}header{padding:12px 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}button,a{font:inherit;color:inherit}button{padding:8px 12px;cursor:pointer}main{overflow:auto;padding:0 16px 16px}iframe{display:block;width:390px;height:844px;border:1px solid #c8c3b7;background:white;margin:auto}</style><header><strong>WEPLACE 화면 검토</strong><button data-width="320">모바일 320px</button><button data-width="390">모바일 390px</button><button data-width="768">태블릿 768px</button><button data-width="1440">PC 1440px</button><button data-page="/">홈페이지</button><button data-page="/field-notes/">작업·변화 기록</button></header><main><iframe title="검토 화면" src="/"></iframe></main><script>document.querySelectorAll("button[data-width]").forEach(b=>b.addEventListener("click",()=>document.querySelector("iframe").style.width=b.dataset.width+"px"));document.querySelectorAll("button[data-page]").forEach(b=>b.addEventListener("click",()=>document.querySelector("iframe").src=b.dataset.page));</script></html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+  <title>WEPLACE · 화면 검토</title>
+  <style>
+    body{margin:0;background:#e8e5df;color:#243d31;font:14px/1.6 system-ui,sans-serif}header{padding:12px 20px 6px;display:flex;gap:8px 14px;align-items:center;flex-wrap:wrap}header>strong{white-space:nowrap}button,a{font:inherit;color:inherit}button{padding:7px 10px;min-height:44px;cursor:pointer;border:1px solid #aebbb0;border-radius:5px;background:white}button[aria-pressed=true]{background:#244c3d;color:white}button:focus-visible,a:focus-visible{outline:3px solid #276eb4;outline-offset:3px}[role=group]{display:flex;gap:5px;flex-wrap:wrap;align-items:center}.scene-controls{padding:0 20px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.scene-controls>span{font-size:12px;color:#536a5b}.scene-controls button{padding:4px 9px;min-height:36px;font-size:12px}main{overflow:auto;padding:0 16px 16px}iframe{display:block;width:390px;height:calc(100vh - 170px);min-height:600px;border:1px solid #adb8a8;background:white;margin:auto}.review-note{margin:8px 20px 10px;font-size:12px;max-width:1200px}.api-link{min-height:44px;display:inline-flex;align-items:center}#reviewState{font-size:12px;color:#536a5b;white-space:nowrap}@media(max-width:760px){header{padding:12px 16px 8px;gap:8px}.scene-controls{padding:0 16px}.review-note{margin:10px 16px}.scene-controls button{min-height:44px}main{padding-left:12px;padding-right:12px}}
+  </style>
+<link rel="stylesheet" href="/assets/css/company-info.css">
+</head>
+<body>
+  <header><strong>WEPLACE 화면 검토</strong><div role="group" aria-label="화면 폭"><button data-width="360" aria-pressed="false">360</button><button data-width="390" aria-pressed="true">390</button><button data-width="430" aria-pressed="false">430</button><button data-width="768" aria-pressed="false">768</button><button data-width="1024" aria-pressed="false">1024</button><button data-width="1440" aria-pressed="false">1440px</button></div><div role="group" aria-label="페이지"><button data-page="/" aria-pressed="true">홈</button><button data-page="/industries/" aria-pressed="false">업종</button><button data-page="/check/" aria-pressed="false">자가진단</button><button data-page="/meeting/" aria-pressed="false">미팅</button><button data-page="/my-store/" aria-pressed="false">내 매장 관리</button><button data-page="/global/" aria-pressed="false">글로벌 KO</button><button data-page="/en/global/" aria-pressed="false">Global EN</button><button data-page="/field-notes/" aria-pressed="false">공개 기록</button><button data-page="/privacy/" aria-pressed="false">개인정보 검토</button><button data-page="/review/case-layout.html" aria-pressed="false">사례 구조 예시</button></div><a class="api-link" href="/review/integration.html">공개 API 테스트 →</a></header>
+  <div class="scene-controls"><span>홈 장면 바로 보기</span><div role="group" aria-label="홈 장면"><button data-scene="top" aria-pressed="false">첫 화면</button><button data-scene="what-we-make" aria-pressed="false">만드는 것</button><button data-scene="working-industries" aria-pressed="false">업종 카드</button><button data-scene="global-directions" aria-pressed="false">두 글로벌 방향</button><button data-scene="experience" aria-pressed="false">고객 체험</button><button data-scene="how" aria-pressed="false">진행 과정</button><button data-scene="contact" aria-pressed="false">상담</button><button data-scene="site-footer" aria-pressed="false">회사 정보</button></div><span id="reviewState" role="status">390px · 홈</span></div>
+  <div class="scene-controls"><span>표시 조건</span><button type="button" id="reviewNoScript" aria-pressed="false">자바스크립트 없이 보기</button><span id="reviewModeNote">움직임은 홈 체험 아래 ‘움직임 줄이기’로 끌 수 있습니다.</span></div>
+  <p class="review-note">검토용 화면입니다. 실제 상담·예약·계약이 생성되지 않습니다. 폭 선택은 해당 기기 검수 완료를 뜻하지 않습니다. 사례 구조는 가상 예시이며, 개인정보 안내의 미확정 항목은 운영 공개 전 확인이 필요합니다. 자바스크립트 끄기는 iframe sandbox로 검토하며 실제 기기·브라우저 설정 검수와 구분합니다.</p>
+  <main><iframe id="reviewFrame" title="홈 · 390px 미리보기" src="/" referrerpolicy="no-referrer"></iframe></main>
+  <script>
+    (function(){'use strict';
+      const frame=document.getElementById('reviewFrame');
+      const state=document.getElementById('reviewState');
+      const noScript=document.getElementById('reviewNoScript');
+      noScript.addEventListener('click',()=>{
+        const disabled=noScript.getAttribute('aria-pressed')!=='true';
+        noScript.setAttribute('aria-pressed',String(disabled));
+        noScript.textContent=disabled?'자바스크립트 다시 켜기':'자바스크립트 없이 보기';
+        if(disabled)frame.setAttribute('sandbox','allow-same-origin');else frame.removeAttribute('sandbox');
+        // Reload our review page to apply sandbox, without changing browser settings.
+        frame.src='/';pageName='홈';mark('[data-page]',document.querySelector('[data-page="/"]'));mark('[data-scene]',null);describe();
+        document.getElementById('reviewModeNote').textContent=disabled?'스크립트 차단: 제작 예시 3개·본문·정책·미팅 링크를 확인하세요.':'움직임은 홈 체험 아래 ‘움직임 줄이기’로 끌 수 있습니다.';
+      });
+      let width='390',pageName='홈';
+      function describe(){state.textContent=width+'px · '+pageName;frame.title=pageName+' · '+width+'px 미리보기';}
+      function fitHeight(){const top=frame.getBoundingClientRect().top+window.scrollY;frame.style.height=Math.max(600,window.innerHeight-top-16)+'px';}
+      function mark(selector,selected){document.querySelectorAll(selector).forEach(button=>button.setAttribute('aria-pressed',String(button===selected)));}
+      document.querySelectorAll('[data-width]').forEach(button=>button.addEventListener('click',()=>{width=button.dataset.width;frame.style.width=width+'px';mark('[data-width]',button);describe();fitHeight();}));
+      document.querySelectorAll('[data-page]').forEach(button=>button.addEventListener('click',()=>{frame.src=button.dataset.page;pageName=button.textContent;mark('[data-page]',button);mark('[data-scene]',null);describe();}));
+      document.querySelectorAll('[data-scene]').forEach(button=>button.addEventListener('click',()=>{frame.src='/#'+button.dataset.scene;pageName='홈 · '+button.textContent;mark('[data-page]',document.querySelector('[data-page="/"]'));mark('[data-scene]',button);describe();}));
+      window.addEventListener('resize',fitHeight);frame.addEventListener('load',fitHeight);fitHeight();
+    })();
+  </script>
+<!-- WEPLACE_COMPANY_FOOTER -->
+<footer id="site-footer" class="company-footer" data-company-version="2026-10-19-review-1" aria-label="회사 정보와 개인정보 안내">
+<div class="company-inner"><div class="company-heading"><a class="w-brand" href="/"><img src="/apple-touch-icon.png" alt="" width="36" height="36"><span class="w-wordmark">We,place.</span></a><p>현장을 이해하고, 필요한 것을 만듭니다.</p></div>
+<p class="company-review-note">회사 정보 검토안 · 기존 공개 표기를 모았으며 최신 서류와 운영 담당자의 확인 후 확정합니다.</p>
+<dl class="company-facts"><div><dt>서비스 제공·운영</dt><dd>(주)위플레이스마케팅</dd></div><div><dt>대표자</dt><dd>박규민</dd></div></dl>
+<div class="company-contact"><span>기존 공개 문의 경로</span><a href="mailto:weplace25@gmail.com">weplace25@gmail.com</a><a href="tel:01064616594">010-6461-6594</a><a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 문의 ↗</a></div>
+<nav class="company-links" aria-label="법률 및 이용 안내"><a href="/privacy/">개인정보처리방침 (검토 초안)</a><a href="/start/#geo-pricing">서비스·계약 조건 안내</a><a href="/my-store/">내 매장 관리</a><a href="/field-notes/">공개 현장 기록</a><a href="/client">고객 로그인</a><a href="/team">직원 로그인</a><a href="https://mashcore.co.kr/" target="_blank" rel="noopener noreferrer">브랜드 관점과 연구 · Mashcore Lab ↗</a></nav>
+<p class="company-note">Mashcore 링크는 콘텐츠 탐색 경로입니다. 고객 계정이나 상담 기록을 연결하지 않습니다.</p><p class="company-note">© 2026 Weplace</p></div>
+</footer>
+<!-- /WEPLACE_COMPANY_FOOTER -->
+</body>
+</html>

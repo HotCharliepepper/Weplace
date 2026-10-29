@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-29",
+  "baseline": "afaaa22fc3b4df4bf5f06bf4e67d29a6029e108c",
+  "branch": "draft/weplace-ribbon-v03-20261029",
+  "automated": {
+    "command": "npm run verify",
+    "testsPassed": 74,
+    "testsFailed": 0,
+    "htmlPages": 34,
+    "references": 1056,
+    "localLinkDefects": 0
+  },
+  "browser": {
+    "engine": "Desktop Chromium through CUA",
+    "viewportMethod": "Built-page iframe CSS viewports; no physical device claim",
+    "nominalWidths": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "horizontalOverflow": "none in all four iframe documents",
+    "shortViewport": "320x390: synthetic request prepared; status explicitly says not sent",
+    "keyboard": "before/after ArrowRight selects correct tab; mobile Enter/Escape opens/closes menu",
+    "reducedMotion": "Existing same-origin review control enabled data-review-reduced; reduced media-query branch separately covered by regression tests. New motifs are static with no animation rules.",
+    "noJavaScript": "320px iframe with sandbox allow-same-origin and scripts omitted: disabled form, visible noscript and direct Kakao alternative",
+    "imageFailure": "Both motif URLs changed to deliberately missing local fixture files; A naturalWidth=0, title readable, tab switching works, no horizontal overflow",
+    "zoom200": "CSS zoom 2 with a 720px iframe / 1440px rendered target checked. Native browser 200% zoom NOT RUN: browser key shortcut was not available through this interface.",
+    "fixtures": "Local QA only; not tracked or deployed"
+  },
+  "protected": "Byte-identical DOM for hero proof, cases, FLOW, request form, photo comparison, industry tabs/panel, main navigation; byte-identical identity assets, main JS, redirects, headers, Netlify config and privacy-release config.",
+  "language": {
+    "skill": "humanize-korean v2.3-codex from user-provided im-not-ai ZIP",
+    "route": "light",
+    "scope": "Homepage marketing headings and explanatory paragraphs, excluding chart bodies and UI examples; all text findings examined",
+    "punctuationEditsApplied": 10,
+    "characterChangeRate": 0.0027,
+    "sentenceTouchRate": 0.122,
+    "status": "accept with explicit protected-scope warnings",
+    "grade": "C",
+    "selfCheck": "5/6",
+    "warnings": "Two C-11 comma findings remain in protected case/evidence text by design. No number/modality loss.",
+    "newEditorialCopyOutsideMetric": "손님이 묻지 않는다고 궁금한 게 없는 건 아닙니다."
+  },
+  "assets": {
+    "newMotifs": [
+      "A_FOLD_ROUTE__WEPLACE.svg",
+      "C_DOUBLE_SIGNAL__WEPLACE.svg"
+    ],
+    "placements": {
+      "A": "#changes .section-head",
+      "C": "#process .section-head"
+    },
+    "officialLogoAndFavicon": "unchanged; ZIP has no approved replacement or 24–32px CI variant",
+    "fonts": "Same Pretendard faces; existing glyphs plus 궁, 묻, 없; combined subset size 85,444 bytes; OFL retained."
+  },
+  "remaining": [
+    "Production blocked by missing company/privacy evidence (see release-readiness.json).",
+    "Native 200% browser zoom, physical mobile/Safari and real-account auth checks not run."
+  ],
+  "screenshots": [
+    "Ribbon-A-desktop-1440.jpg",
+    "Ribbon-C-desktop-1440.jpg",
+    "Ribbon-A-tablet-768.jpg",
+    "Ribbon-A-mobile-390.jpg",
+    "Ribbon-C-mobile-390.jpg",
+    "Ribbon-A-mobile-320-reduced.jpg",
+    "Ribbon-no-JavaScript-320.jpg",
+    "Ribbon-200percent-reflow-proxy.jpg"
+  ]
+}
