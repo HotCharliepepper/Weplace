@@ -11,7 +11,7 @@ const {JSDOM} = require('jsdom');
 const root = path.resolve(__dirname, '..');
 
 test('changing industry invalidates the prior result and export instead of carrying a stale customer situation', async () => {
-  const dom = new JSDOM(fs.readFileSync(path.join(root, 'index.html'), 'utf8'), {
+  const dom = new JSDOM(fs.readFileSync(path.join(root, 'experience/index.html'), 'utf8'), {
     url: 'https://deploy-preview.example.invalid/?industry=cafe&contact=PRIVATE_FIXTURE_ONLY', runScripts: 'outside-only'
   });
   const w = dom.window, d = w.document, copied = [], requests = [], writes = [];
@@ -61,7 +61,7 @@ test('existing FLOW staff/client paths and public proxy contracts remain exact',
 });
 
 test('homepage presents the new work scene as an example and does not publish the unapproved named case', () => {
-  const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  const html = fs.readFileSync(path.join(root, 'experience/index.html'), 'utf8');
   const dom = new JSDOM(html), d = dom.window.document;
   assert.doesNotMatch(html, /설마중|seolmajung/i);
   assert.match(d.getElementById('what-we-make').textContent, /가상.*예시/);

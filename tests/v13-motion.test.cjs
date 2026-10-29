@@ -9,7 +9,7 @@ const root = path.resolve(__dirname, '..');
 const read = name => fs.readFileSync(path.join(root, name), 'utf8');
 const flush = () => new Promise(resolve => setTimeout(resolve, 0));
 function setup(options = {}) {
-  const dom = new JSDOM(read('index.html'), {url: 'https://preview.example.invalid/', runScripts: 'outside-only', pretendToBeVisual: true});
+  const dom = new JSDOM(read('experience/index.html'), {url: 'https://preview.example.invalid/', runScripts: 'outside-only', pretendToBeVisual: true});
   const w = dom.window, d = w.document, animations = [], events = [], writes = [], requests = [];
   const media = {matches: !!options.reduce, addEventListener: (_, fn) => { media.change = fn; }};
   w.matchMedia = () => media;
@@ -137,7 +137,7 @@ test('keyboard story tabs expose exactly one selected panel and comparison arrow
 });
 
 test('without JavaScript the three scenes and policy/meeting links remain in the readable document', () => {
-  const dom=new JSDOM(read('index.html'));try {
+  const dom=new JSDOM(read('experience/index.html'));try {
     const d=dom.window.document;
     assert.equal(d.getElementById('makingTabs').hidden,true);
     assert.equal(d.querySelectorAll('[data-making-panel]').length,3);

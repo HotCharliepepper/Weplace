@@ -13,7 +13,7 @@ const row = overrides => ({industry: '요식업', count: 0, managedCount: 2, cap
 const payload = rows => ({industries: rows, updatedAt: '2026-10-18T08:00:00.000Z'});
 async function setup(data, options = {}) {
   const dom = new JSDOM('<main><section id="experience"></section><weplace-industries></weplace-industries></main>', {
-    url: options.url || 'https://withweplace.kr/', runScripts: 'outside-only', pretendToBeVisual: true
+    url: options.url || 'https://withweplace.kr/experience/', runScripts: 'outside-only', pretendToBeVisual: true
   });
   let now = options.now || NOW;
   const RealDate = Date;
@@ -199,7 +199,7 @@ test('home sector link emits the allowlisted event and optional metric; no perso
     ctx.doc.addEventListener('weplace:industry',event=>events.push(event.detail));
     ctx.dom.window.WeplaceMetrics={emit:(name,detail)=>metrics.push({name,detail})};
     const start=ctx.doc.querySelector('[data-focus="start-cafe"]');
-    assert.equal(start.getAttribute('href'),'/#experience');
+    assert.equal(start.getAttribute('href'),'/experience/#experience');
     start.click();
     assert.equal(events[0].industry,'cafe');
     assert.deepEqual(Object.keys(events[0]),['industry']);
@@ -217,7 +217,7 @@ test('home sector link emits the allowlisted event and optional metric; no perso
 test('non-home sectors use explicit public query links; modified clicks do not hijack navigation', async () => {
   const ctx=await setup(payload([]),{url:'https://withweplace.kr/industries/stay.html'});
   try {
-    assert.equal(ctx.doc.querySelector('[data-focus="start-stay"]').getAttribute('href'),'/?industry=stay#experience');
+    assert.equal(ctx.doc.querySelector('[data-focus="start-stay"]').getAttribute('href'),'/experience/?industry=stay#experience');
     let called=false;
     ctx.doc.addEventListener('weplace:industry',()=>{called=true;});
     const event=new ctx.dom.window.MouseEvent('click',{bubbles:true,cancelable:true,ctrlKey:true});

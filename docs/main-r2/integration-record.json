@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-29",
+  "source": {
+    "main": "42562ec1a3dedec0e97b4fef1944aef4d84a6a49",
+    "homepage_pr_11": "3c1278c378b939ceb0741140705e93816bab438f",
+    "invitation_pr_1": "30477f12acd40d9d6590702f032b5e660b686d7a",
+    "flow_pr_17": "386ee24f8458263c435e98947eac47be568e1596"
+  },
+  "branch": "draft/weplace-main-r2-20261029",
+  "integration": "R2 replaces root index; PR 11 source preserved as parent; existing interactive customer-view tool moved to /experience/ without removing assertions.",
+  "unchanged": [
+    "existing subpages",
+    "FLOW authentication",
+    "public journal bundle",
+    "all seven redirects",
+    "company/privacy config and release gates",
+    "analytics allowlist"
+  ],
+  "intake": "local text preparation, manual copy and user-initiated Kakao send; no API/CRM intake",
+  "homeFeed": "No new client or journal fetch on root. Existing public /field-notes/ retained. Home cards use supplied anonymous A/B figures, not guessed journal matches.",
+  "media": "Example-space is a single existing Invitation photo, explicit fictional layout comparison. No actual renovation attribution.",
+  "fonts": {
+    "originalBytes": 1551748,
+    "subsetBytes": 69328,
+    "note": "Pretendard subsets include visible HTML, dynamic messages, ASCII, footer configuration. Other user-input glyphs fall back to system fonts. OFL retained."
+  },
+  "automated": {
+    "tests": 73,
+    "pass": 73,
+    "html": 34,
+    "references": 1053,
+    "localLinkDefects": 0
+  },
+  "release": "Review only. 22 company/privacy checks remain unapproved; no merge, production publish, DB or identity changes."
+}

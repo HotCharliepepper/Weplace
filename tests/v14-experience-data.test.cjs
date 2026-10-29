@@ -8,7 +8,7 @@ const root=path.resolve(__dirname,'..');
 const read=file=>fs.readFileSync(path.join(root,file),'utf8');
 const text=node=>node.textContent.trim().replace(/\s+/g,' ');
 function home(){
-  const dom=new JSDOM(read('index.html'),{url:'https://deploy-preview.example.invalid/',runScripts:'outside-only'});
+  const dom=new JSDOM(read('experience/index.html'),{url:'https://deploy-preview.example.invalid/',runScripts:'outside-only'});
   const w=dom.window,d=w.document,requests=[],writes=[];
   w.matchMedia=()=>({matches:true});
   w.fetch=(...args)=>{requests.push(args);throw Error('No requests are needed for an illustrative experience.');};
@@ -76,7 +76,7 @@ test('optional comparison table matches both rendered states across all eight si
 });
 
 test('initial homepage offers all four static industry routes when enhancement or its public API is unavailable',()=>{
-  const dom=new JSDOM(read('index.html'),{url:'https://withweplace.kr/'}),d=dom.window.document;
+  const dom=new JSDOM(read('experience/index.html'),{url:'https://withweplace.kr/'}),d=dom.window.document;
   try {
     const links=[...d.querySelectorAll('weplace-industries .industry-static-fallback a[data-industry-guide]')];
     assert.equal(links.length,4);

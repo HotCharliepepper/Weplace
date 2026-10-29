@@ -12,7 +12,7 @@ const approved = {industries: [{industry:'요식업', count:1, managedCount:2, c
   updates:[{summary:'SYNTHETIC_PUBLIC_DESCRIPTION', updatedAt:'2026-10-18T08:00:00.000Z'}]}]};
 async function setup() {
   const dom = new JSDOM('<main><section id="experience"></section><weplace-industries></weplace-industries></main>',
-    {url:'https://deploy-preview.example.invalid/', runScripts:'outside-only', pretendToBeVisual:true});
+    {url:'https://deploy-preview.example.invalid/experience/', runScripts:'outside-only', pretendToBeVisual:true});
   const w=dom.window, d=w.document, intervals=[], timeouts=new Map(); let timer=0;
   const RealDate=Date;
   w.Date=class extends RealDate { constructor(...args){super(...(args.length?args:[now]));} static now(){return now;} };

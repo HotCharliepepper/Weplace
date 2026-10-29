@@ -39,7 +39,7 @@ function answer(p, values, industry = 'dining') {
 function submit(p) { p.d.getElementById('storeCheck').dispatchEvent(new p.w.Event('submit', {bubbles: true, cancelable: true})); }
 
 function home(query = '') {
-  const dom = new JSDOM(fs.readFileSync(path.join(root, 'index.html'), 'utf8'), {url: 'https://preview.example.invalid/' + query, runScripts: 'outside-only'});
+  const dom = new JSDOM(fs.readFileSync(path.join(root, 'experience/index.html'), 'utf8'), {url: 'https://preview.example.invalid/' + query, runScripts: 'outside-only'});
   const w = dom.window, copied = [], downloads = [], revoked = [], scrolled = [];
   w.matchMedia = () => ({matches: true});
   w.HTMLElement.prototype.scrollIntoView = function(options) { scrolled.push({id: this.id, options}); };

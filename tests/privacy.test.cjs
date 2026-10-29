@@ -39,7 +39,7 @@ function change(p, input, value = true) {
 }
 
 test('homepage preview collects no analytics or storage and never copies arbitrary URL data', async () => {
-  const p = instrument('', 'https://deploy-preview.example.invalid');
+  const p = instrument('experience', 'https://deploy-preview.example.invalid');
   p.w.eval(fs.readFileSync(path.join(root, 'assets/js/site-metrics.js'), 'utf8'));
   p.w.eval(fs.readFileSync(path.join(root, 'assets/js/customer-discovery.js'), 'utf8'));
   for (const sector of ['dining', 'cafe', 'stay', 'beauty']) {

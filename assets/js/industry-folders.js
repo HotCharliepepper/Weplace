@@ -205,8 +205,8 @@
         if (updates.length || metrics) body.append(publicInfo);
         const links = el('div', 'wp-folder-links');
         const start = el('a', '', guide.start + ' →');
-        const atHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
-        start.href = atHome ? '/#experience' : '/?industry=' + guide.theme + '#experience';
+        const atHome = /^\/experience(?:\/|\/index\.html)?$/.test(window.location.pathname);
+        start.href = atHome ? '/experience/#experience' : '/experience/?industry=' + guide.theme + '#experience';
         start.dataset.focus = 'start-' + guide.theme;
         start.addEventListener('click', event => {
           if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
