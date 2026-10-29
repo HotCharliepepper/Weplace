@@ -1,0 +1,111 @@
+{
+  "project": "WEPLACE x MASHCORE / SHARED RIBBON DNA",
+  "version": "v0.3",
+  "date": "2026-10-29",
+  "status": "PROPOSED / NOT OFFICIAL CI",
+  "figma": {
+    "master": "https://www.figma.com/design/XN4tslN2fHvNcJeaAsjXxc",
+    "comparison": "https://www.figma.com/design/XN4tslN2fHvNcJeaAsjXxc?node-id=26-2",
+    "applications": "https://www.figma.com/design/XN4tslN2fHvNcJeaAsjXxc?node-id=27-3",
+    "components": {
+      "A": "24:9",
+      "B": "24:15",
+      "C": "24:20"
+    }
+  },
+  "source": {
+    "Weplace": "Screenshot-crop reference; metallic ribbon W with separate circular gold dot",
+    "Mashcore": "Screenshot-crop reference; two ascending M ribbon folds; no originals vectors available"
+  },
+  "colors": {
+    "weplace": {
+      "base": "#729783",
+      "accent": "#C9A36D",
+      "glint": "#E6D4B1",
+      "background": "#071B15",
+      "text": "#F6F2E9"
+    },
+    "mashcore": {
+      "base": "#10382B",
+      "accent": "#BA915D",
+      "glint": "#799084",
+      "background": "#F6F2E9",
+      "text": "#10382B"
+    }
+  },
+  "motifs": [
+    {
+      "id": "A_FOLD_ROUTE",
+      "label": "Fold Route",
+      "meaning": "발견 → 확인 → 안심으로 이어지는 하나의 흐름",
+      "use": "Weplace 섹션 그래픽과 두 브랜드 공통 연결 요소",
+      "priority": "shared proposal"
+    },
+    {
+      "id": "B_TWIN_RISE",
+      "label": "Twin Rise",
+      "meaning": "높낮이가 다른 두 번의 상승",
+      "use": "Mashcore 에디토리얼의 큰 리본 장식",
+      "priority": "editorial proposal"
+    },
+    {
+      "id": "C_DOUBLE_SIGNAL",
+      "label": "Double Signal",
+      "meaning": "짧은 연결과 전환을 표시하는 신호",
+      "use": "챕터 장식, 콘텐츠 장면 전환",
+      "priority": "accent proposal"
+    }
+  ],
+  "exports": [
+    {
+      "motif": "A_FOLD_ROUTE",
+      "brand": "weplace",
+      "svg": "assets/export/A_FOLD_ROUTE__WEPLACE.svg",
+      "png": "assets/export/A_FOLD_ROUTE__WEPLACE.png"
+    },
+    {
+      "motif": "A_FOLD_ROUTE",
+      "brand": "mashcore",
+      "svg": "assets/export/A_FOLD_ROUTE__MASHCORE.svg",
+      "png": "assets/export/A_FOLD_ROUTE__MASHCORE.png"
+    },
+    {
+      "motif": "B_TWIN_RISE",
+      "brand": "weplace",
+      "svg": "assets/export/B_TWIN_RISE__WEPLACE.svg",
+      "png": "assets/export/B_TWIN_RISE__WEPLACE.png"
+    },
+    {
+      "motif": "B_TWIN_RISE",
+      "brand": "mashcore",
+      "svg": "assets/export/B_TWIN_RISE__MASHCORE.svg",
+      "png": "assets/export/B_TWIN_RISE__MASHCORE.png"
+    },
+    {
+      "motif": "C_DOUBLE_SIGNAL",
+      "brand": "weplace",
+      "svg": "assets/export/C_DOUBLE_SIGNAL__WEPLACE.svg",
+      "png": "assets/export/C_DOUBLE_SIGNAL__WEPLACE.png"
+    },
+    {
+      "motif": "C_DOUBLE_SIGNAL",
+      "brand": "mashcore",
+      "svg": "assets/export/C_DOUBLE_SIGNAL__MASHCORE.svg",
+      "png": "assets/export/C_DOUBLE_SIGNAL__MASHCORE.png"
+    }
+  ],
+  "usage_boundaries": [
+    "Must not replace official Weplace or Mashcore logos",
+    "Not a chart or data line; never misrepresent results",
+    "No approved favicon/small-size version; 24-32 px not qualified",
+    "HEX values are v0.2 approximations until original CI confirmed"
+  ],
+  "qa": {
+    "figmaEditableVectorComponents": 3,
+    "vectorPaintBindings": "verified",
+    "visualComparison": "reviewed",
+    "weplaceAndMashcoreMode": "verified",
+    "applications": "reviewed",
+    "productionDeployment": false
+  }
+}

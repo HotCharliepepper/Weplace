@@ -19,7 +19,7 @@
     "privacy": "/privacy/",
     "client": "/my-store/",
     "kakao": "https://pf.kakao.com/_mxbexhX",
-    "mashcore": "https://mashcore.netlify.app/about/"
+    "mashcore": "https://mashcore.co.kr/"
   },
   "mashcoreRelationship": "Content link only; no account or personal-data sharing implied. Legal relationship is unverified.",
   "candidateEvidenceFile": "docs/company-source-of-truth.md"
