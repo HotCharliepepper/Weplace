@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">
+<title>개인정보처리방침 검토 초안 | Weplace</title>
+<meta name="description" content="Weplace 홈페이지와 FLOW의 개인정보 처리 흐름을 확인하기 위한 검토 초안입니다. 시행 전이며 실제 보관·위탁·국외 이전·권리 요청 절차의 운영 확인이 필요합니다.">
+<meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#183c32">
+<link rel="canonical" href="https://withweplace.kr/privacy/"><link rel="icon" href="/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/brand.css"><link rel="stylesheet" href="/assets/css/privacy.css"><link rel="stylesheet" href="/assets/css/company-info.css">
+<style>body{margin:0;background:#f5f3eb;color:#183c32}*{box-sizing:border-box}</style>
+</head>
+<body>
+<a class="privacy-skip" href="#privacy-main">본문으로 건너뛰기</a>
+<header class="privacy-header"><div><a class="w-brand" href="/" aria-label="Weplace 홈"><img src="/apple-touch-icon.png" alt="" width="36" height="36"><span class="w-wordmark">We,place.</span></a><a href="/my-store/">내 매장 관리</a></div></header>
+<main class="privacy-main" id="privacy-main" data-policy-state="draft" data-policy-draft="true">
+<p class="privacy-kicker">PRIVACY · REVIEW DRAFT</p>
+<h1>개인정보처리방침<br>검토 초안</h1>
+<div class="privacy-draft"><strong>아직 시행되지 않은 검토용 문서입니다.</strong><p>현재 확인한 홈페이지·FLOW 소스의 처리 흐름과, 운영 책임자가 확정해야 할 사항을 함께 적었습니다. 최종 방침이나 법률 준수 확인을 의미하지 않습니다.</p><p>법인 정보, 실제 수집 항목과 근거, 보유 기간, 수탁·국외 이전, 삭제·백업, 권리 요청 담당자를 확인한 뒤 시행일과 확정 내용을 안내합니다. 이 문서를 읽거나 동의하는 것으로 새 수집 기능이 켜지지 않습니다.</p></div>
+<div class="privacy-meta"><span>검토 버전: 2026-10-19-draft-1</span><span>시행일: 확정 전</span><span>범위: Weplace 홈페이지·FLOW 검토 소스</span></div>
+<nav aria-label="방침 목차"><ol class="privacy-toc"><li><a href="#operator">운영 주체와 문서 범위</a></li><li><a href="#purposes">처리 목적과 항목</a></li><li><a href="#grounds">처리 근거와 수집 안내</a></li><li><a href="#retention">보관·삭제·백업</a></li><li><a href="#partners">위탁·제공·국외 이전</a></li><li><a href="#analytics">분석·쿠키·접속 기록</a></li><li><a href="#rights">권리 요청과 문의</a></li><li><a href="#protection">보호 조치와 입력 안내</a></li><li><a href="#changes">변경·시행과 다른 문서</a></li></ol></nav>
+<section id="operator"><h2>1. 운영 주체와 문서 범위</h2>
+<p>Weplace의 기존 공개 표기에 기재된 서비스 운영 법인은 <strong>(주)위플레이스마케팅</strong>입니다. 이 초안에서는 기존 표기를 대조용으로 사용하며, 최신 사업자등록증과 실제 운영 담당자의 확인이 끝난 정보로 표시하지 않습니다.</p>
+<p>홈페이지 체험·자가진단·미팅 준비와 FLOW의 가입·로그인·매장 연결·공유 업무·작업 의뢰를 함께 검토합니다. 상담 채널과 직원 CRM, 공개 기록, 호스팅·분석·인증 서비스도 별도의 처리 흐름으로 확인합니다.</p>
+<p>Mashcore 연결은 관점과 기록을 소개하는 콘텐츠 링크입니다. 이 패치에서 고객 계정 통합, 상담 기록 복제, 고객 정보 자동 전달을 구현하지 않습니다. 두 브랜드의 법적 역할이나 위탁 관계는 별도로 확정해야 합니다.</p>
+</section>
+<section id="purposes"><h2>2. 처리 목적과 항목</h2>
+<p>아래는 <strong>소스에서 확인한 처리 구조</strong>입니다. 실제 운영 계정의 설정과 현재 저장된 고객 내용을 조회한 결과는 아닙니다. 각 목적의 필수·선택 항목과 실제 운영 여부를 확정해야 합니다.</p>
+<div class="privacy-table-wrap" tabindex="0" role="region" aria-label="처리 흐름표, 좁은 화면에서 가로 스크롤 가능"><table class="privacy-table"><thead><tr><th scope="col">구간·목적</th><th scope="col">확인한 항목·처리</th><th scope="col">확정할 내용</th></tr></thead><tbody>
+<tr><td>고객 시선 체험·자가진단·미팅 준비</td><td>업종, 방문 목적, 선택 답변과 준비 요약을 브라우저 메모리에서 처리합니다. 직접 복사·내려받기를 선택할 수 있습니다. 답변을 자동으로 상담·CRM에 전송하거나 저장하지 않습니다.</td><td>접속 기록·분석 계층은 이 응답 처리와 별도로 확인합니다. 이용자가 저장한 파일·클립보드는 이용자 기기에 남을 수 있습니다.</td></tr>
+<tr><td>카카오·이메일 상담</td><td>이용자가 해당 채널에서 직접 보낸 연락 정보·매장 설명·상담 내용이 해당 채널로 전달될 수 있습니다. 링크를 누르는 것만으로 문의가 접수되지는 않습니다.</td><td>담당자가 별도 업무 도구로 옮기는 항목, 접근자, 보관·삭제 방법과 적법 근거.</td></tr>
+<tr><td>FLOW 가입·로그인</td><td>소스에는 Netlify Identity를 이용한 이메일·비밀번호 입력, 인증 확인, 복구와 프로필 처리가 있습니다. 계정 식별자와 프로필 표시명 등을 업무 권한에 사용합니다.</td><td>실제 인증 설정, 공급자 처리 항목, 필수·선택 구분, 로그와 계정 삭제.</td></tr>
+<tr><td>내 매장 연결</td><td>인증 계정, 매장 연결 권한과 연결 코드의 검증 정보를 사용합니다. 고객 연결 권한은 직원 팀 권한과 구분됩니다.</td><td>연결 종료 뒤 기록 보유 기준, 만료 코드 정리, 탈퇴·권한 회수 절차.</td></tr>
+<tr><td>공유 업무·작업 의뢰</td><td>제목·내용·희망일·링크·상태·답변과 작성자·시점 등을 처리하는 구조가 있습니다. 의뢰 제출은 실제 FLOW의 인증·권한 확인 뒤 이루어집니다.</td><td>자유기재에 포함될 제3자 정보의 제한, 필수·선택 항목과 업무별 보유·삭제 기준.</td></tr>
+<tr><td>직원 업무·CRM</td><td>매장과 고객 담당자 정보, 연락처·관계 메모·계약 정보·상담 기록 및 직원 업무·일정 관련 필드가 있습니다. 권한에 따라 열람 범위를 구분합니다.</td><td>실제 사용하는 항목, 수집 출처·근거, 담당자·직원 정보의 분리와 보유 기간.</td></tr>
+<tr><td>프로필 사진·공개 사례</td><td>FLOW에 프로필 사진 저장과 공개 기록 승인·철회 구조가 있습니다. 공개 사례에는 별도의 공개 검토가 필요합니다.</td><td>사진 원본 삭제와 백업, 이미지·브랜드·개인정보 공개 권한, 철회 뒤 보관 기준.</td></tr>
+<tr><td>분석·보안·접속 기록</td><td>기존 운영 GA4와 호스팅·인증 계층이 있습니다. 신규 퍼널 계측은 기본 꺼짐 상태이며, 진단 답변 원문을 분석 이벤트에 넣지 않습니다.</td><td>실제 쿠키·온라인 식별자·접속 기록, 공급자 설정, 보관·국외 처리와 거부 방법.</td></tr>
+</tbody></table></div>
+<p class="muted">가상의 테스트 자료만 사용하는 신규 상담 인입 검토 코드는 실제 고객 저장·발송 기능이 아닙니다. 이 초안이나 새 footer를 추가해도 자동 인입은 활성화되지 않습니다.</p>
+</section>
+<section id="grounds"><h2>3. 처리 근거와 수집 시점의 안내</h2>
+<p>처리방침 링크나 문서 전체에 대한 일괄 동의가 모든 처리의 근거를 대신하지 않습니다. 상담, 계약 이행, 계정 운영, 보안, 선택적 홍보 등 목적별로 해당 근거와 필요한 범위를 검토합니다.</p>
+<p>동의를 근거로 수집할 경우에는 실제 수집 시점에 목적·항목·보유 기간·거부권과 필요한 불이익을 구체적으로 안내하고, 선택적 홍보를 필수 서비스와 분리해야 합니다. 이번 패치는 새 동의 체크박스나 수집 기능을 만들지 않습니다.</p>
+<p>각 처리에 어떤 근거를 적용할지는 운영 책임자의 확인 전입니다. 특히 직원이 기존 상담 내용을 CRM에 옮기거나 다른 서비스로 전달하는 과정은 별도로 확인해야 합니다.</p>
+</section>
+<section id="retention"><h2>4. 보관·삭제·백업</h2>
+<p>보유 기간을 일괄적으로 정하지 않았습니다. 상담·계정·업무·계약·보안 목적별로 기간과 근거, 별도 법령에 따른 보존 여부, 분리 보관과 접근 제한을 확인한 뒤 확정합니다.</p>
+<ul><li><strong>진단·미팅 준비 응답:</strong> 웹페이지 메모리에서 처리하며 새로고침하면 초기화됩니다. 직접 복사하거나 내려받은 내용은 이용자가 관리합니다.</li><li><strong>FLOW 연결 해제:</strong> 고객의 조회 권한을 회수하는 동작입니다. 기존 업무·계약·상담 기록 전체의 삭제를 뜻하지 않습니다.</li><li><strong>공개 기록 철회:</strong> 공개 노출을 중단하는 상태 변경이며 원본 기록의 파기와 구분됩니다.</li><li><strong>프로필 사진 삭제:</strong> 현재 검토한 소스에서는 프로필의 사진 연결을 지우는 동작이 확인됐습니다. 저장된 사진 파일과 이전 버전의 영구 삭제까지 완료된다고 안내할 수 없습니다.</li><li><strong>탈퇴·파기·백업:</strong> 인증·데이터베이스·사진 저장소를 함께 처리하는 삭제 절차, 백업 잔존 기간과 복구 후 재삭제 방법은 운영 확인이 필요합니다.</li></ul>
+<p>운영 담당자가 항목별 파기 방법과 수행 책임자, 예외 보존 근거를 확인하기 전에는 즉시 영구 삭제나 특정 기간 내 완전 삭제를 약속하지 않습니다.</p>
+</section>
+<section id="partners"><h2>5. 위탁·제3자 제공·국외 이전</h2>
+<p>소스에서 확인한 서비스는 Netlify의 호스팅·Identity·Database·Blobs와 기존 Google Analytics입니다. 상담은 카카오·이메일 등 이용자가 선택한 별도 채널로 이어질 수 있습니다. 업무용 Sheets 연동 코드가 있으나 실제 활성화 여부는 확인 전입니다.</p>
+<p>이 이름만으로 법적 수탁자·재수탁자 목록, 제3자 제공 관계, 실제 저장 국가나 보유 기간이 확정되지는 않습니다. 각 계약 주체·처리 업무·재수탁·접근 범위·보호 조치와 실제 계정 설정을 대조해야 합니다. 사용하지 않는 공급자를 임의로 추가하지 않았습니다.</p>
+<p>국외 이전이 있다면 이전 항목, 국가, 시기·방법, 받는 자와 연락처, 목적·기간, 적용 근거 및 필요한 고지·권리 절차를 확정합니다. 모든 국외 처리가 같은 근거나 같은 동의 방식으로 허용된다고 단정하지 않습니다.</p>
+<div class="privacy-callout"><strong>현재 미확정:</strong> 서비스별 실제 수탁·재수탁 계약, 제3자 제공 여부, 국외 처리 국가·방법·시점, 적용 근거와 보관 설정. 따라서 이 초안은 위탁이나 국외 이전이 없다고 선언하지 않습니다.</div>
+</section>
+<section id="analytics"><h2>6. 분석·쿠키·접속 기록</h2>
+<p>이번 검토 버전은 기존 운영 도메인의 분석 구성을 보존하고, 추가 퍼널 이벤트는 기본 꺼짐 상태로 둡니다. 검토 미리보기와 자가진단·미팅 준비에는 분석 전송을 추가하지 않습니다. 공개 이벤트에 상호·전화번호·진단 답변·내부 고객 ID를 넣지 않습니다.</p>
+<p>그렇다고 웹사이트가 어떠한 개인정보도 처리하지 않는다는 의미는 아닙니다. 호스팅·인증·분석 공급자가 처리하는 접속 기록, 쿠키와 온라인 식별자 등은 실제 서비스 설정과 계약에서 별도로 확인해야 합니다.</p>
+<p>브라우저 설정에서 쿠키를 제한하거나 삭제할 수 있으나, 어떤 쿠키가 사용되고 설정 변경이 로그인·서비스에 어떤 영향을 주는지에 대한 구체적 안내는 실제 쿠키 조사 후 확정합니다. 이 문서에서 쿠키 선택이나 동의를 받은 것으로 처리하지 않습니다.</p>
+</section>
+<section id="rights"><h2>7. 권리 요청과 문의</h2>
+<p>열람·정정·삭제·처리정지·동의 철회 등에 관한 접수 창구, 본인 확인, 처리 절차와 제한 사유 안내는 개인정보 보호책임자 또는 담당 부서를 지정한 뒤 확정합니다.</p>
+<p>현재 확인 가능한 경로는 footer의 <strong>기존 공개 문의 연락처</strong>입니다. 이 연락처가 전담 개인정보 권리 요청 창구로 지정되어 운영 중인지까지 확인한 것은 아닙니다. 최종 방침에는 담당 부서와 정확한 연락 방법을 명시해야 합니다.</p>
+<p>문의할 때 비밀번호·인증 코드·주민등록번호·다른 고객의 예약명단을 보내지 마세요. 필요한 본인 확인 범위는 담당자가 별도로 안내해야 합니다.</p>
+<p>일반적인 개인정보 권리·구제 절차는 <a href="https://www.privacy.go.kr/" target="_blank" rel="noopener noreferrer">개인정보 포털 ↗</a>에서 확인할 수 있습니다.</p>
+</section>
+<section id="protection"><h2>8. 보호 조치와 입력 안내</h2>
+<p>검토한 FLOW 소스에는 인증 확인, 고객 연결 권한과 직원 권한의 분리, 공유된 업무의 제한적 조회, 공개 승인 상태에 따른 응답 구분이 있습니다. 홈페이지는 보호 API를 익명 상담 접수 창구로 바꾸지 않습니다.</p>
+<p>접근 권한 관리, 암호화, 접속기록 보관, 내부 관리계획, 수탁자 감독, 사고 대응 등 실제 관리·기술·물리 조치의 운영 증거는 별도로 확인해야 합니다. 코드 테스트만으로 모든 보호 조치가 완료됐다고 주장하지 않습니다.</p>
+<p>작업 의뢰나 상담의 자유기재에는 업무에 필요한 최소 내용만 남겨 주세요. 다른 사람의 연락처·예약명단·결제정보·민감한 내용을 공유해야 할 상황이면, 전달 근거와 안전한 경로부터 담당자와 확인해야 합니다.</p>
+</section>
+<section id="changes"><h2>9. 변경·시행과 다른 문서</h2>
+<p>이 초안의 검토 기준일은 2026년 10월 19일이며 시행일은 정하지 않았습니다. 확인 결과와 책임자 승인 후 확정 버전, 적용 범위, 시행일, 변경 내용을 안내합니다. 이 페이지는 로그인 없이 읽을 수 있도록 준비했습니다.</p>
+<p>개인정보처리방침은 서비스 이용약관·작업 범위·계약·해지·환불 조건을 대신하지 않습니다. 서비스 조건은 <a href="/start/#geo-pricing">진행 방식과 계약 조건 안내</a>에서 확인하고, 실제 제안·계약에서 합의합니다.</p>
+<details><summary>검토에 참고한 공식 자료</summary><div><ul><li><a href="https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS217&amp;mCode=D010030000&amp;nttId=12018" target="_blank" rel="noopener noreferrer">개인정보보호위원회 — 개인정보 처리방침 작성지침(2026.4. 개정)</a></li><li><a href="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=283839&amp;efYd=20260911" target="_blank" rel="noopener noreferrer">개인정보 보호법 — 2026.9.11. 시행본</a></li></ul><p>법령과 지침은 작성 기준입니다. 이 사이트의 모든 처리에 대한 법률 적합성을 확인했다는 의미가 아닙니다.</p></div></details>
+</section>
+</main>
+<!-- WEPLACE_COMPANY_FOOTER -->
+<footer id="site-footer" class="company-footer" data-company-version="2026-10-19-review-1" aria-label="회사 정보와 개인정보 안내">
+<div class="company-inner"><div class="company-heading"><a class="w-brand" href="/"><img src="/apple-touch-icon.png" alt="" width="36" height="36"><span class="w-wordmark">We,place.</span></a><p>현장을 이해하고, 필요한 것을 만듭니다.</p></div>
+<p class="company-review-note">회사 정보 검토안 · 기존 공개 표기를 모았으며 최신 서류와 운영 담당자의 확인 후 확정합니다.</p>
+<dl class="company-facts"><div><dt>서비스 제공·운영</dt><dd>(주)위플레이스마케팅</dd></div><div><dt>대표자</dt><dd>박규민</dd></div></dl>
+<div class="company-contact"><span>기존 공개 문의 경로</span><a href="mailto:weplace25@gmail.com">weplace25@gmail.com</a><a href="tel:01064616594">010-6461-6594</a><a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 문의 ↗</a></div>
+<nav class="company-links" aria-label="법률 및 이용 안내"><a href="/privacy/">개인정보처리방침 (검토 초안)</a><a href="/start/#geo-pricing">서비스·계약 조건 안내</a><a href="/my-store/">내 매장 관리</a><a href="/field-notes/">공개 현장 기록</a><a href="/client">고객 로그인</a><a href="/team">직원 로그인</a><a href="https://mashcore.netlify.app/about/" target="_blank" rel="noopener noreferrer">브랜드 관점과 연구 · Mashcore Lab ↗</a></nav>
+<p class="company-note">Mashcore 링크는 콘텐츠 탐색 경로입니다. 고객 계정이나 상담 기록을 연결하지 않습니다.</p><p class="company-note">© 2026 Weplace</p></div>
+</footer>
+<!-- /WEPLACE_COMPANY_FOOTER -->
+</body></html>

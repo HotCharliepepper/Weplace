@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>미팅에서 함께 확인할 것 — Weplace</title>
+  <meta name="description" content="현재 화면, 고객의 질문, 개선 예시, 작업 범위와 조건을 함께 확인하는 Weplace 미팅 검토용 템플릿입니다.">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/owner-experience.css">
+  <link rel="stylesheet" href="/assets/css/brand.css">
+  <link rel="stylesheet" href="/assets/css/meeting.css">
+  <script src="/assets/js/meeting.js" defer></script>
+<link rel="stylesheet" href="/assets/css/company-info.css">
+</head>
+<body>
+  <a class="oe-skip" href="#main">본문으로 건너뛰기</a>
+  <header class="oe-header">
+    <a class="w-brand" href="/" aria-label="Weplace 홈"><img src="/apple-touch-icon.png" width="36" height="36" alt=""><span class="w-wordmark">We,place.</span></a>
+    <nav aria-label="주요 메뉴"><a id="meetingCheckLink" href="/check/">자가진단</a><a href="/my-store/">내 매장 관리 ↗</a></nav>
+  </header>
+  <main class="oe-main meeting-main" id="main">
+    <section class="meeting-intro" aria-labelledby="meetingTitle">
+      <p class="oe-eyebrow">LOOK TOGETHER, DECIDE TOGETHER</p>
+      <p class="meeting-badge">검토용 템플릿 · 예약·계약 기능 미연결</p>
+      <h1 id="meetingTitle">결정하기 전에,<br>같은 화면을 봅니다.</h1>
+      <p class="oe-lead">매장에서 잘하고 있는 일이 검색 화면에도 보일까요?<br>지금 보이는 모습부터 바꿀 내용과 조건까지 차례로 확인합니다.</p>
+      <p class="oe-fine">실제 매장 조사 결과나 확정 제안서가 아닙니다. 체크와 선택은 이 화면에서만 유지되며, 새로고침하면 사라집니다. 자가진단 답변은 전달되지 않습니다.</p>
+      <div class="meeting-industry"><label for="meetingIndustry">함께 볼 업종</label><select id="meetingIndustry" autocomplete="off"><option value="other">그 외 매장 · 서비스</option><option value="dining">식당</option><option value="cafe">카페</option><option value="stay">호텔 · 숙소</option><option value="beauty">뷰티 · 케어</option></select></div>
+    </section>
+
+    <div class="meeting-layout">
+      <nav class="meeting-toc" aria-label="미팅 확인 순서"><a href="#current">01 현재 화면</a><a href="#questions">02 손님의 질문</a><a href="#example">03 개선 예시</a><a href="#scope">04 범위와 일정</a><a href="#terms">05 비용과 조건</a><a href="#decision">06 다음 대화</a><p id="reviewCount" role="status">확인 표시 0 / 6</p></nav>
+      <div class="meeting-content">
+        <section id="current" class="meeting-section" aria-labelledby="currentTitle">
+          <span class="oe-num">01 / CURRENT SCREEN</span><h2 id="currentTitle">지금 손님에게 보이는 것부터.</h2>
+          <p>대표님 휴대폰에서 매장명으로 검색하고, 네이버·구글·홈페이지를 함께 열어 봅니다. 화면에는 고객 개인의 대화나 예약 내역을 띄우지 않습니다.</p>
+          <div class="meeting-screen-placeholder"><span>실제 화면은 미팅에서 직접 확인</span><strong>사진 · 위치 · 가격 · 예약 동선</strong><p>이 페이지는 매장 화면을 수집하거나 대신 조사하지 않습니다.</p></div>
+          <p class="meeting-prompt">“매장에서는 당연한데, 검색 화면에는 빠져 있는 게 있을까요?”</p>
+          <label class="meeting-review"><input type="checkbox" data-review="current" autocomplete="off">현재 화면을 함께 살펴봤습니다</label>
+        </section>
+
+        <section id="questions" class="meeting-section" aria-labelledby="questionsTitle">
+          <span class="oe-num">02 / CUSTOMER QUESTIONS</span><h2 id="questionsTitle">손님이 다시 검색하는 이유는?</h2>
+          <p>실제 고객이 물었던 질문과 비교해, 오늘 먼저 답할 질문 한 가지를 고릅니다.</p>
+          <ol id="meetingQuestions" class="meeting-questions"><li>어떤 상황의 손님에게 잘 맞는 곳인가요?</li><li>이용 가격과 포함·추가 조건을 미리 알 수 있나요?</li><li>방문·예약하려면 어디에서 무엇을 하면 되나요?</li></ol>
+          <label class="meeting-review"><input type="checkbox" data-review="questions" autocomplete="off">먼저 답할 질문을 함께 짚었습니다</label>
+        </section>
+
+        <section id="example" class="meeting-section" aria-labelledby="exampleTitle">
+          <span class="oe-num">03 / POSSIBLE CHANGE</span><h2 id="exampleTitle">설명이 필요한 곳에, 답을 놓습니다.</h2>
+          <p class="oe-fine">아래는 가상 안내의 개선 방향입니다. 실제 고객 사례·검증된 성과·확정된 운영 조건이 아닙니다.</p>
+          <div class="meeting-compare"><article><p class="meeting-label">확인할 정보가 흩어진 예시</p><h3 id="exampleBeforeTitle">“자세한 내용은 문의 주세요.”</h3><p id="exampleBefore">가격과 이용 순서가 보이지 않아, 손님이 전화로 처음부터 다시 확인해야 합니다.</p></article><article><p class="meeting-label">사실 확인 후 정리할 예시</p><h3 id="exampleAfterTitle">선택에 필요한 답을 한곳에.</h3><p id="exampleAfter">이용 대상·가격 기준·포함 사항·예약 순서를 실제 운영과 맞춰 안내합니다.</p></article></div>
+          <p><strong>남길 결과물:</strong> 수정할 화면 목록, 확인된 정보와 출처, 수정 전후 화면, 고객이 직접 따라갈 예약·문의 경로.</p>
+          <p class="oe-fine">검수에서는 안내의 일치와 링크 작동을 확인합니다. 문의·매출 변화는 비교 기간과 측정 기준을 합의한 뒤 별도로 봅니다.</p>
+          <label class="meeting-review"><input type="checkbox" data-review="example" autocomplete="off">예시와 실제 적용 범위를 구분했습니다</label>
+        </section>
+
+        <section id="scope" class="meeting-section" aria-labelledby="scopeTitle">
+          <span class="oe-num">04 / SCOPE & DELIVERY</span><h2 id="scopeTitle">무엇을, 언제, 누가 맡을까요?</h2>
+          <p>아래는 제안서에 채워야 할 항목입니다. 이 목록만으로 작업 제공이나 납품 일정이 약속되지는 않습니다.</p>
+          <dl class="meeting-terms"><div><dt>작업 범위 · 제외 범위</dt><dd>미확정 · 대상 채널, 수정 화면, 납품 수량을 함께 정합니다.</dd></div><div><dt>착수 · 납품 · 검수 일정</dt><dd>미확정 · 필수 자료와 접근 권한의 준비 시점을 확인합니다.</dd></div><div><dt>수정 횟수 · 추가 요청</dt><dd>미확정 · 기본 수정 범위와 추가 작업의 합의 방식을 정합니다.</dd></div><div><dt>담당자 · 소통 방식</dt><dd>미확정 · 책임자, 연락 채널, 확인 주기를 제안서에 남깁니다.</dd></div></dl>
+          <p class="oe-fine">실행하기로 합의한 뒤에는 담당자가 기존 FLOW 운영 절차에 맞게 작업을 연결합니다. 이 화면의 체크는 작업 요청이나 발주가 아닙니다.</p>
+          <label class="meeting-review"><input type="checkbox" data-review="scope" autocomplete="off">범위·일정·담당에서 정할 항목을 살펴봤습니다</label>
+        </section>
+
+        <section id="terms" class="meeting-section" aria-labelledby="termsTitle">
+          <span class="oe-num">05 / COST & CONDITIONS</span><h2 id="termsTitle">비용과 조건도 하나씩 확인합니다.</h2>
+          <dl class="meeting-terms"><div><dt>총액 · 부가세</dt><dd>미확정 · 공급가액, 부가세, 최종 결제액을 따로 확인합니다.</dd></div><div><dt>착수 조건 · 결제 일정</dt><dd>미확정 · 계약 주체, 결제 방식, 착수 전 준비 사항을 정합니다.</dd></div><div><dt>변경 · 해지 · 환불</dt><dd>미확정 · 진행 단계별 기준을 서면으로 확인합니다.</dd></div><div><dt>별도 비용 · 사용 권한</dt><dd>미확정 · 촬영·출장·외부 도구 등 적용 비용과 산출물 사용 범위를 확인합니다.</dd></div></dl>
+          <p class="oe-callout">현재 공개 확정 가격이나 결제 링크는 없습니다. 이 템플릿에서 계약, 결제, 예약은 진행되지 않습니다.</p>
+          <label class="meeting-review"><input type="checkbox" data-review="terms" autocomplete="off">아직 정해지지 않은 조건을 확인했습니다</label>
+        </section>
+
+        <section id="decision" class="meeting-section" aria-labelledby="decisionTitle">
+          <span class="oe-num">06 / NEXT CONVERSATION</span><h2 id="decisionTitle">오늘은 어디까지 이야기할까요?</h2>
+          <fieldset class="meeting-decisions"><legend>다음 대화에서 다루고 싶은 내용</legend><label><input type="radio" name="meetingDecision" value="screen" autocomplete="off">현재 화면을 먼저 함께 살펴보고 싶습니다</label><label><input type="radio" name="meetingDecision" value="proposal" autocomplete="off">작업 범위와 조건이 담긴 제안을 받고 싶습니다</label><label><input type="radio" name="meetingDecision" value="self" autocomplete="off">직접 정리한 뒤 다시 이야기하겠습니다</label></fieldset>
+          <p class="oe-fine">선택은 이 화면에서만 정리됩니다. 상담 접수·미팅 확정·계약 동의로 처리되지 않습니다.</p>
+          <label class="meeting-review"><input type="checkbox" data-review="decision" autocomplete="off">다음에 이야기할 내용을 짚었습니다</label>
+          <div class="meeting-summary"><p class="oe-fine">입력 내용은 이 화면에서만 정리합니다. 직접 전송할 경우의 처리와 접속 기록은 <a href="/privacy/">개인정보 안내 검토 초안</a>에서 구분해 설명합니다.</p><label for="meetingSummary">대화 준비 요약</label><textarea id="meetingSummary" readonly aria-describedby="summaryHelp"></textarea><p id="summaryHelp" class="oe-fine">복사한 내용은 원하실 때 카카오톡에 직접 붙여 넣어 주세요. 상담 가능 일정은 채널에서 별도로 확인합니다.</p><div class="oe-actions"><button class="oe-button light" id="copyMeeting" type="button">준비 내용 복사</button><button class="oe-button light" id="printMeeting" type="button">확인표 인쇄</button><a class="oe-button" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오톡에서 이야기하기 ↗</a></div><p id="meetingStatus" role="status" class="oe-fine"></p></div>
+          <p class="oe-fine">계약과 계정 연결 이후의 흐름은 <a href="/my-store/">내 매장 관리 안내</a>에서 확인하세요.</p>
+        </section>
+      </div>
+    </div>
+    <noscript><p class="oe-callout">항목은 그대로 읽을 수 있습니다. 업종별 예시·체크 요약·복사를 이용하려면 JavaScript를 켜 주세요. 이 화면에서는 어떤 선택도 전송되지 않습니다.</p></noscript>
+  </main>
+  <!-- WEPLACE_COMPANY_FOOTER -->
+<footer id="site-footer" class="company-footer" data-company-version="2026-10-19-review-1" aria-label="회사 정보와 개인정보 안내">
+<div class="company-inner"><div class="company-heading"><a class="w-brand" href="/"><img src="/apple-touch-icon.png" alt="" width="36" height="36"><span class="w-wordmark">We,place.</span></a><p>현장을 이해하고, 필요한 것을 만듭니다.</p></div>
+<p class="company-review-note">회사 정보 검토안 · 기존 공개 표기를 모았으며 최신 서류와 운영 담당자의 확인 후 확정합니다.</p>
+<dl class="company-facts"><div><dt>서비스 제공·운영</dt><dd>(주)위플레이스마케팅</dd></div><div><dt>대표자</dt><dd>박규민</dd></div></dl>
+<div class="company-contact"><span>기존 공개 문의 경로</span><a href="mailto:weplace25@gmail.com">weplace25@gmail.com</a><a href="tel:01064616594">010-6461-6594</a><a href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 문의 ↗</a></div>
+<nav class="company-links" aria-label="법률 및 이용 안내"><a href="/privacy/">개인정보처리방침 (검토 초안)</a><a href="/start/#geo-pricing">서비스·계약 조건 안내</a><a href="/my-store/">내 매장 관리</a><a href="/field-notes/">공개 현장 기록</a><a href="/client">고객 로그인</a><a href="/team">직원 로그인</a><a href="https://mashcore.netlify.app/about/" target="_blank" rel="noopener noreferrer">브랜드 관점과 연구 · Mashcore Lab ↗</a></nav>
+<p class="company-note">Mashcore 링크는 콘텐츠 탐색 경로입니다. 고객 계정이나 상담 기록을 연결하지 않습니다.</p><p class="company-note">© 2026 Weplace</p></div>
+</footer>
+<!-- /WEPLACE_COMPANY_FOOTER -->
+</body>
+</html>

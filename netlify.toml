@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# No Functions directory, secrets, data migration, forms or live-write build hooks.
+# Existing public proxies and authenticated FLOW redirects are copied unchanged.
+[context.deploy-preview]
+  command = "npm run build"

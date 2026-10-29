@@ -1,0 +1,37 @@
+R2-only changed files relative to PR #11 head 3c1278c378b939ceb0741140705e93816bab438f
+PR #12 targets main and also includes the inherited, unmerged PR #11 changes.
+
+assets/css/main-landing-r2.css
+assets/home-r2/FONT-LICENSE.txt
+assets/home-r2/Pretendard-Regular.woff2
+assets/home-r2/Pretendard-SemiBold.woff2
+assets/home-r2/brand-symbol.png
+assets/home-r2/example-space.webp
+assets/js/industry-folders.js
+assets/js/main-landing-r2.js
+docs/main-r2/README.md
+docs/main-r2/browser-qa.json
+docs/main-r2/changed-files.txt
+docs/main-r2/integration-record.json
+docs/main-r2/test-results.txt
+enterprise/index.html
+experience/index.html
+index.html
+industries/beauty/index.html
+industries/cafe/index.html
+industries/dining.html
+industries/esthetic/index.html
+industries/hospitality.html
+industries/restaurant/index.html
+industries/stay.html
+my-store/index.html
+scripts/build-site.mjs
+tests/journey.test.cjs
+tests/main-r2.test.cjs
+tests/privacy.test.cjs
+tests/public-integration.test.cjs
+tests/v12-experience.test.cjs
+tests/v13-motion.test.cjs
+tests/v14-disclosure.test.cjs
+tests/v14-experience-data.test.cjs
+tests/v14-industry-content.test.cjs
