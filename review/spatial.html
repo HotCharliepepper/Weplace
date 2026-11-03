@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Weplace R4 · Spatial QA</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,sans-serif;color:#25312c;background:#e7e3dc;line-height:1.5;color-scheme:light}
+    *{box-sizing:border-box}body{margin:0}h1,p{margin:0}button,select,input{font:inherit}button,select{min-height:44px;border:1px solid #767f77;border-radius:5px;background:#fffdfa;color:#25312c;padding:8px 11px}button{cursor:pointer}button:hover{background:#eee8df}button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #8b452f;outline-offset:3px}button:disabled{opacity:.5;cursor:default}.toolbar{padding:12px 20px;background:#f5f0e9;border-bottom:1px solid #b8b7af;display:flex;flex-wrap:wrap;align-items:end;gap:10px 16px}.brand{margin-right:10px;align-self:center}.brand h1{font-size:16px}.brand p{font-size:11px;color:#4c5a51}.field{display:grid;gap:3px;font-size:11px;font-weight:600}.field select{font-size:13px;font-weight:400}.toggle{display:flex;align-items:center;gap:7px;min-height:44px;font-size:12px}.toggle input{width:18px;height:18px;accent-color:#285247}.note{margin:10px 20px 8px;font-size:12px;max-width:1260px;color:#425248}.note strong{font-weight:700}.readout{display:flex;align-items:center;flex-wrap:wrap;gap:6px 16px;margin:8px 20px;font-size:12px}.readout code{font-size:12px}#status{margin-left:auto;color:#4d5d52}.viewport-zone{margin:0 16px 18px;padding:12px;background:#d9d9d1;border:1px solid #b5b9ae;border-radius:6px;overflow:hidden;min-height:300px}.frame-shell{margin:0 auto;position:relative;isolation:isolate}iframe{display:block;position:absolute;inset:0;border:0;background:#f5f0e9;transform-origin:top left;box-shadow:0 6px 20px #25312c18}.results{margin:0 20px 30px;background:#f5f0e9;border:1px solid #b5b9ae;border-radius:5px;padding:12px 16px}.results summary{cursor:pointer;font-size:13px;font-weight:600;min-height:32px}.results p{font-size:12px;margin-bottom:8px}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:420px;overflow:auto;font-size:11px;background:#fffdfa;padding:14px;border:1px solid #d8cfc3}#collect{background:#285247;color:#fffdfa;border-color:#285247}#collect:hover{background:#203f37}@media(max-width:640px){.toolbar{padding:12px;gap:9px}.brand{width:100%}.note,.readout{margin-inline:12px}.viewport-zone{margin-inline:8px;padding:6px}.results{margin-inline:12px}.toggle{font-size:11px}#status{margin-left:0;width:100%}}
+  </style>
+  <script src="/review/spatial.js" defer></script>
+</head>
+<body>
+  <header class="toolbar">
+    <div class="brand"><h1>Weplace R4 · Spatial QA</h1><p>격리된 화면 검수 · 검토용</p></div>
+    <label class="field" for="viewport-width">CSS viewport<select id="viewport-width"><option value="1440">1440 × 900</option><option value="1280">1280 × 900</option><option value="768">768 × 1024</option><option value="390" selected>390 × 844</option><option value="320">320 × 740</option></select></label>
+    <label class="field" for="scene">장면<select id="scene"><option value="intro">01 Hero</option><option value="changes">02 가상 매장 C</option><option value="discovery">03 검색과 AI</option><option value="cases">04 사례 근거</option><option value="flow">05 FLOW</option><option value="process">06 진행 방식</option><option value="request">07 첫 화면 진단</option></select></label>
+    <label class="field" for="fixture">검수 조건<select id="fixture"><option value="normal">기본 화면</option><option value="no-js">JavaScript 차단 (sandbox)</option><option value="no-gsap">GSAP 파일 없음 (fixture)</option><option value="no-photo">공간 사진 없음 (fixture)</option></select></label>
+    <label class="toggle"><input type="checkbox" id="reduce-motion">검수용 모션 절감</label>
+    <button type="button" id="reload">다시 로드</button>
+    <button type="button" id="collect">측정값 기록</button>
+  </header>
+  <p class="note"><strong>실제 기기 검수가 아닌 iframe CSS viewport입니다.</strong> 프레임을 화면에 맞게 축소해도 내부 CSS 폭은 유지됩니다. 모션 절감은 검수 메시지로 적용하며 OS 설정 변경과 구분합니다. 외부 링크·로그인 이동은 이 검수 화면에서 차단합니다. 입력은 합성 검수 자료만 사용하세요.</p>
+  <div class="readout"><code id="viewport-state">로드 중</code><span id="metric-state">측정 대기</span><span id="status" role="status">화면을 준비합니다.</span></div>
+  <main>
+    <div class="viewport-zone" id="viewport-zone"><div class="frame-shell" id="frame-shell"></div></div>
+    <details class="results" id="results"><summary>검수 기록 · JSON</summary><p>현재 브라우저의 LAB 관측값입니다. LCP·CLS는 iframe 문서 관측이며 필드 75백분위가 아닙니다. 가장 긴 관측 interaction은 INP 확정값이 아닙니다. JS 차단 조건에서는 성능 수집을 하지 않습니다. 새로고침 시 기록이 지워집니다.</p><pre id="qa-report">{ "status": "NOT RUN" }</pre></details>
+  </main>
+  <noscript><p class="note">이 검수 도구에는 JavaScript가 필요합니다. 검수 도구 안의 “JavaScript 차단” 조건은 홈페이지 프레임만 차단합니다.</p></noscript>
+</body>
+</html>
