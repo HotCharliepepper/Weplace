@@ -22,10 +22,13 @@ R2 Draft #13 기준은 `06647cb859fa97c3f96f1c3995388262776d8dc6`, R3 Draft #15 
 
 | 제출 항목 | 현재 상태 |
 | --- | --- |
-| R4 Draft PR | **Pending — 실제 생성 후 URL 입력** |
-| Netlify Preview | **Pending — 실제 배포 완료 후 URL 입력** |
+| R4 Draft PR | [Draft PR #16](https://github.com/HotCharliepepper/Weplace/pull/16) |
+| Netlify Preview | [Netlify Deploy Preview](https://deploy-preview-16--weplace.netlify.app/) — ready, deploy-preview |
 | 작업 브랜치 | `draft/weplace-r4-spatial-20261103` |
+| 구현 검증 커밋 | `58de2afaadd066a80d749a6c21f6b6ae2a884979` — 뒤따르는 문서·증빙 커밋과 구분 |
 | 실제 화면·브라우저 결과 | [브라우저 QA 보고](BROWSER_QA.md) · [실화면·원시 JSON](browser/) |
+
+[배포 검증](deploy-verification.json)에 ready 상태·정확한 구현 커밋·운영 배포 보존을 기록했다. base main에는 선행 미병합 R2/OS/R3 변경이 포함되므로 [R4-only diff](https://github.com/HotCharliepepper/Weplace/compare/40ae3c903111334ebc1a4b78da9faceaa298c6c8...58de2afaadd066a80d749a6c21f6b6ae2a884979)로 새 구현을 검토한다.
 
 Preview에는 공개 가능한 정적 자료만 포함한다. 기존 [빌드 스크립트](../../scripts/build-site.mjs)는 HTML·`X-Robots-Tag`에 `noindex, nofollow`를 적용하고 canonical `https://withweplace.kr/`를 보존한다. `noindex`는 접근 통제가 아니다. 내부 감사·테스트·설정은 배포에서 제외한다.
 
@@ -64,7 +67,7 @@ BI·Ribbon·사진·법적 설정·리다이렉트 등 24개 파일의 바이트
 | 내부 링크 | HTML 35개, 참조 1,063개, 로컬 결함 0. 외부 URL 19개는 탐색하지 않음 — [로그](link-check.txt) |
 | Figma 검수 | 가로 넘침·사진 누락·모바일 줄바꿈 보정, PNG 7개 디코딩 확인 — [인계](design/FIGMA_HANDOFF.md) |
 | 실제 브라우저 | 5개 CSS 폭 가로 넘침 없음, 탭·모바일 메뉴·근거 모달·정적/누락 fixture 확인 — [상세 보고](BROWSER_QA.md) |
-| 성능·보조기술 한계 | 로컬 top-level LCP 200ms, CLS 0.001. INP·필드 p75·물리 기기·네이티브 스크린리더는 합격 선언 안 함 |
+| 성능·보조기술 한계 | Netlify top-level LAB LCP 524ms, CLS 0.001. Event Timing에 긴 paint 지연이 남아 INP는 판정 보류. 필드 p75·물리 기기·네이티브 스크린리더는 NOT RUN |
 
 자동 검증 범위는 GSAP 누락·no-JS·OS reduced-motion media query 모의 환경·실제 GSAP·100회 전환·중복 모션·미디어 변경·bfcache다. 저장소 루트에서 재현한다.
 
@@ -94,3 +97,17 @@ npm run build
 회사·개인정보 검사 **22개가 미해결**이다. 운영 빌드는 승인된 개인정보 HTML과 초안 마커 제거를 요구한다. 근거·승인일 조작과 gate 우회를 금한다.
 
 `example-space.webp` 공개 사용 허락은 **NEED VERIFY**다. 저장소 재사용은 허락의 증거가 아니다. 사례 이름·수치·사진의 공개 범위도 확인한다. 검수 후에도 **main 병합, 운영 배포, 실DB·인증 변경은 각각 별도 승인**이 필요하다.
+
+[ZIP 실행 방법](RUN_PREVIEW.md): 미리 빌드한 dist와 함께 제공하며, Python 3로 localhost에서 바로 검토할 수 있다.
+
+## 8. 실제 화면
+
+다음 이미지는 Figma 시안이 아닌 Netlify Preview의 실제 브라우저 캡처다. 모바일은 390 CSS px iframe 검수 환경을 함께 보여준다.
+
+![Desktop Hero](browser/r4-netlify-hero-desktop.jpg)
+
+![Store C](browser/r4-netlify-store-desktop.jpg)
+
+![FLOW](browser/r4-netlify-flow-desktop.jpg)
+
+![Mobile 390](browser/r4-netlify-mobile-390.jpg)

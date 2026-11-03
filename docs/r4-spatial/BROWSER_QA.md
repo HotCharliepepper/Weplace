@@ -1,6 +1,6 @@
 # R4 실제 브라우저 검수
 
-검수일: 2026-11-03. Chrome cloud browser와 격리된 로컬 정적 Preview를 사용했다. 이후 Netlify Deploy Preview 검수는 이 문서의 제출 기록에 추가한다. 아래 결과는 실제 화면 관측과 자동 테스트를 구분한다.
+검수일: 2026-11-03. Chrome cloud browser와 격리된 로컬 정적 Preview를 사용했다. 실제 Netlify Deploy Preview 검수도 아래 제출 기록에 포함했다. 아래 결과는 실제 화면 관측과 자동 테스트를 구분한다.
 
 ## 반응형과 기능
 
@@ -52,4 +52,22 @@
 
 최종 `npm run verify`는 전체 83개 테스트, 로컬 링크 검사, review build를 모두 통과했다. [전체 최종 로그](final-verify.txt)를 참조한다. 100회 빠른 전환·실제 GSAP 실행·중복 WAAPI 0·라이프사이클 정리·보호 파일 24개 바이트 동일 검증은 자동 테스트 결과다.
 
-Netlify 최종 URL·배포 커밋·실화면 및 top-level 관측: Draft PR 생성 후 검증 결과를 추가한다.
+### Netlify 제출 검증
+
+- [Draft PR #16](https://github.com/HotCharliepepper/Weplace/pull/16), [실제 Preview](https://deploy-preview-16--weplace.netlify.app/).
+- 구현 검증 커밋 `58de2afaadd066a80d749a6c21f6b6ae2a884979`, deploy `6ae9c8445a1d5c3b4bcef194`, context `deploy-preview`, state `ready`, review ID 16. 문서·화면 증빙 추가 커밋은 이 구현 검증 뒤에 이어진다.
+- HTTP 200, 실제 응답 `X-Robots-Tag: noindex, nofollow`, HTML robots 동일. canonical 유지, H1 1개, 일반 방문에서 QA 수집 스크립트/UI 없음. 로컬 GSAP 두 파일 사용.
+- 실제 Preview에서 Store C 전후 탭·질문 선택, FLOW 대표 확인 탭과 3역할, 모바일390 CSS 화면을 재확인했다. 실제 화면은 `browser/r4-netlify-*.jpg`이다.
+- 현재 운영 deploy `6ad8a7438ddf68ea7482fcd2`와 main `42562ec1a3dedec0e97b4fef1944aef4d84a6a49`는 그대로다.
+
+| Netlify top-level LAB 표본 | 결과 |
+| --- | --- |
+| FCP / LCP | 524ms / 524ms |
+| CLS | 0.001 |
+| 오류 | 관측된 페이지 error/unhandledrejection 0 |
+| 조건 | Chrome cloud, 1363×936, DPR1, CPU·네트워크 throttle 없음, Netlify Preview toolbar 포함 |
+| Event Timing | 단일 Store 조작 click 232–368ms, FLOW click 23,472ms 등 긴 다음-paint 대기가 기록됨. 이벤트 처리 자체는 0.3–3.9ms. **INP 판정 보류** |
+
+[전체 원시 PerformanceObserver 기록](browser/r4-netlify-performance.json)과 [모바일 iframe 기록](browser/r4-netlify-responsive.json)을 제공한다. 도구 호출·캡처 사이 간격이 paint 대기에 섞이는 양상이 있지만, 원인을 확정하지 않는다. 처리 시간이 짧다는 이유로 긴 duration을 삭제하지 않았다. **LCP·CLS 표본은 목표 이내지만 전체 성능을 합격으로 선언하지 않는다.** 실제 모바일 브라우저의 개별 상호작용과 필드 p75는 운영 승인 전에 별도 확인할 항목이다.
+
+Netlify 모바일 iframe에서는 CLS 0.277이 관측됐다. 이 값도 원시 JSON에 보존했으며, 로컬 iframe과 같은 이유로 홈페이지 성능 판정에는 사용하지 않는다. 물리 모바일 성능을 이 값이나 데스크톱 값으로 대신하지 않는다.
