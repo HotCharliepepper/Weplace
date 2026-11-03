@@ -35,3 +35,9 @@
 이번 수정은 진단 섹션의 콘텐츠·레이아웃과 요청문 연결에 한정합니다. 자동 테스트·내부 링크·정적 빌드와 해당 화면의 브라우저 검수를 수행합니다. 자동 테스트 **83개 통과·실패 0·건너뜀 0**, HTML **35개·참조 1,064개·내부 결함 0**을 확인했습니다. 1440/1280/768/390/320 CSS viewport에서 가로 넘침이 없고 폰트가 로드됐습니다. 합성 URL로 생성한 요청문은 실제 표시 가격·범위·네 결과물 라벨과 같으며 아직 전송되지 않았다는 안내를 확인했습니다. 공개 dist에 미확정 가격·정원 문구 및 내부 시안 폴더가 없는지도 검사했습니다. [전체 검증 로그](r41-verify.txt), [브라우저 원시 기록](browser/r41-diagnosis-checks.json), [생성 요청문](browser/r41-prepared-request.txt), [데스크톱 화면](browser/r41-diagnosis-price-form.jpg), [390px 화면](browser/r41-diagnosis-mobile-390.jpg)에 기록합니다.
 
 기존 성능 보고의 INP 판정 보류와 물리 기기·네이티브 스크린리더·필드 p75 미실시 상태를 유지합니다. 이번 CSS viewport 검수가 이 항목들의 통과를 뜻하지 않습니다. `BROWSER_QA.md`와 R4 LAB 결과는 당시 버전의 기록입니다.
+
+## Figma와 Preview 동기화
+
+[Desktop 진단 6:119](https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=6-119), [Mobile 진단 7:106](https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=7-106)의 편집 가능한 레이어를 같은 공개 내용으로 갱신했습니다. 기존 3장면은 CTA 이름을 제외하고 보존했습니다. Figma의 Noto Sans KR 대체 폰트 한계는 유지합니다. [디자인 변경 기록](design/r41/FIGMA_R41_DIAGNOSIS.md)과 최종 PNG 두 장을 제공합니다.
+
+구현 커밋 `d9bc98d25e9fb83a64ccc34a9630ff5bd0136a61`의 Netlify Deploy Preview가 ready 상태임을 확인했습니다. 최상위 브라우저에서 0원·단일 채널 범위·H1 1개·noindex,nofollow·운영 canonical을 확인했습니다. 일반 방문에는 QA 수집 스크립트가 없습니다. [Netlify 실화면](browser/r41-netlify-diagnosis-offer.jpg)과 [배포 검증](r41-deploy-verification.json)을 제공합니다. 후속 증빙 커밋은 이 구현 코드와 구분합니다.
