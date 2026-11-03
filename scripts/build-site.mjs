@@ -5,6 +5,12 @@ const root = resolve(import.meta.dirname, '..');
 const out = join(root, 'dist');
 const folders = ['experience','enterprise','process','flow-preview','assets','check','field-notes','global','img','industries','meeting','my-store','privacy','problems','prototype','review','start','webtoon'];
 const production = process.env.CONTEXT === 'production' || process.argv.includes('--production');
+// Review-only social artwork must resolve on the review deploy before production
+// receives the asset. Canonical and og:url retain the established site identity.
+const reviewOrigin = !production && [process.env.DEPLOY_PRIME_URL, process.env.DEPLOY_URL].map(value => {
+  try { const url = new URL(value); return url.protocol === 'https:' && url.hostname.endsWith('.netlify.app') ? url.origin : null; }
+  catch { return null; }
+}).find(Boolean);
 const issues = companyReleaseIssues();
 const privacySource = await readFile(join(root,'privacy/index.html'),'utf8');
 const policyMainTag = privacySource.match(/<main\b[^>]*>/i)?.[0] || '';
@@ -40,6 +46,7 @@ async function finalize(folder) {
       if(html.includes(footerStart)) html=replaceCompanyFooter(html);
       html=reconcileCompanyStructuredData(html);
       if(!production) {
+        if(reviewOrigin) html=html.replace(/(<meta\s+property="og:image"\s+content=")https:\/\/withweplace\.kr(\/assets\/brand\/r42\/[^"<>]+)(")/g,(_,open,path,close)=>open+reviewOrigin+path+close);
         html=html.replace(/<meta\s+name=["']robots["'][^>]*>/gi,'');
         html=html.replace('</head>','<meta name="robots" content="noindex, nofollow"></head>');
       }

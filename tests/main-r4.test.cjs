@@ -88,10 +88,20 @@ const ownedAnimations = ctx => ctx.waapi.filter(element => element.closest('[dat
 const r4Timelines = ctx => ctx.w.gsap.globalTimeline.getChildren(true, true, true).filter(animation => /^weplace-r4-/.test(animation.vars.id || ''));
 const sendReduced = (ctx, reduced) => ctx.w.dispatchEvent(new ctx.w.MessageEvent('message', { source: ctx.w.parent, data: { type: 'weplace-motion', reduced } }));
 
-test('R4 preserves complete protected legal, routing, build, BI and original-media bytes', () => {
-  const baseline = JSON.parse(fs.readFileSync('docs/r4-spatial/protected-baseline.json', 'utf8'));
+test('R4.2 preserves the original baseline history and the explicitly reviewed protected-file hashes', () => {
+  const baseline = JSON.parse(fs.readFileSync('docs/r4-spatial/r42/protected-baseline.json', 'utf8'));
+  const previousBytes = fs.readFileSync(baseline.previous_baseline.path);
+  assert.equal(crypto.createHash('sha256').update(previousBytes).digest('hex'), baseline.previous_baseline.sha256);
+  const previous = JSON.parse(previousBytes);
+  const allowed = ['scripts/build-site.mjs','scripts/company-info.mjs','assets/css/brand.css','assets/home-r2/brand-symbol.png','favicon.ico','apple-touch-icon.png'];
+  assert.deepEqual(baseline.authorized_changes.map(item => item.path).sort(), allowed.sort());
+  assert.equal(baseline.protected_files.length, previous.protected_files.length);
   for (const item of baseline.protected_files) {
     assert.equal(crypto.createHash('sha256').update(fs.readFileSync(item.path)).digest('hex'), item.sha256, item.path);
+    const old = previous.protected_files.find(entry => entry.path === item.path);
+    assert.ok(old, item.path);
+    if (!allowed.includes(item.path)) assert.equal(item.sha256, old.sha256, item.path);
+    else assert.equal(baseline.authorized_changes.find(entry => entry.path === item.path).previous_sha256, old.sha256, item.path);
   }
 });
 
@@ -122,7 +132,7 @@ test('without any JavaScript, every Store C answer and the full FLOW role explan
     assert.equal(answers.length, 3);
     assert.ok(answers.every(answer => !answer.hidden && answer.textContent.trim().length > 20));
     const comparison = ctx.d.querySelector('details.static-comparison');
-    assert.match(comparison.textContent, /정리 전/); assert.match(comparison.textContent, /정리 후/);
+    assert.match(comparison.textContent, /외관 먼저/); assert.match(comparison.textContent, /메뉴 먼저/);
     assert.equal(ctx.d.querySelectorAll('[data-flow-layer]').length, 3);
     assert.match(ctx.d.querySelector('.flow-static-states').textContent, /검수/);
     assert.match(ctx.d.querySelector('.flow-static-states').textContent, /대표/);

@@ -3,7 +3,7 @@
   // QA-only harness. No storage, telemetry, messages to services or authenticated API calls.
   const $ = id => document.getElementById(id);
   const controls = { width: $('viewport-width'), scene: $('scene'), fixture: $('fixture'), reduced: $('reduce-motion') };
-  const viewportHeights = { 1440: 900, 1280: 900, 768: 1024, 390: 844, 320: 740 };
+  const viewportHeights = { 1440: 900, 1280: 900, 768: 1024, 430: 932, 390: 844, 360: 800, 320: 740 };
   let frame, run = 0, frameReady = false, observers = [], metrics, cleanups = [], pending = 0;
   const history = [];
   const round = n => Number.isFinite(n) ? Math.round(n * 1000) / 1000 : null;
@@ -90,7 +90,7 @@
     };
     const active = d.activeElement;
     const images = [...d.images].map(img => ({ src: img.getAttribute('src'), complete: img.complete, naturalWidth: img.naturalWidth, width: round(img.getBoundingClientRect().width), height: round(img.getBoundingClientRect().height), loading: img.loading || 'eager' }));
-    const roots = ['intro', 'changes', 'discovery', 'cases', 'flow', 'process', 'request'];
+    const roots = ['intro', 'changes', 'discovery', 'cases', 'flow', 'process', 'request', 'explore'];
     const sections = Object.fromEntries(roots.map(id => { const element = d.getElementById(id); return [id, element ? { visible: visible(element), width: round(element.getBoundingClientRect().width), height: round(element.getBoundingClientRect().height) } : null]; }));
     const widths = { requested: Number(controls.width.value), innerWidth: w.innerWidth, clientWidth: d.documentElement.clientWidth, scrollWidth: d.documentElement.scrollWidth, bodyScrollWidth: d.body.scrollWidth };
     return {
@@ -110,7 +110,7 @@
     const same = history.findIndex(item => item.run === snapshot.run && item.scene === snapshot.scene && item.reviewReduced === snapshot.reviewReduced);
     if (same >= 0) history[same] = snapshot; else history.push(snapshot);
     if (history.length > 50) history.shift();
-    $('qa-report').textContent = JSON.stringify({ harness: 'Weplace R4 Spatial QA', current: snapshot, records: history }, null, 2);
+    $('qa-report').textContent = JSON.stringify({ harness: 'Weplace R4.2 Spatial QA', current: snapshot, records: history }, null, 2);
     status('현재 화면의 검수 관측값을 기록했습니다.');
   }
 
@@ -150,7 +150,7 @@
     dispose(); frameReady = false; run++; const currentRun = run;
     metrics = null; $('metric-state').textContent = '측정 대기'; status('화면을 다시 로드합니다.');
     const mode = controls.fixture.value;
-    frame = document.createElement('iframe'); frame.id = 'review-frame'; frame.title = `Weplace R4 · ${controls.width.value}px · ${mode}`; frame.referrerPolicy = 'no-referrer';
+    frame = document.createElement('iframe'); frame.id = 'review-frame'; frame.title = `Weplace R4.2 · ${controls.width.value}px · ${mode}`; frame.referrerPolicy = 'no-referrer';
     frame.setAttribute('sandbox', mode === 'no-js' ? 'allow-same-origin' : 'allow-same-origin allow-scripts allow-forms');
     frame.addEventListener('load', () => {
       if (currentRun !== run) return;
@@ -168,7 +168,7 @@
         if (!response.ok) throw Error(`홈페이지 HTTP ${response.status}`);
         const source = new DOMParser().parseFromString(await response.text(), 'text/html');
         if (mode === 'no-gsap') source.querySelectorAll('script[src]').forEach(script => { if (/(?:^|\/)(?:gsap|ScrollTrigger)(?:\.min)?\.js(?:\?|$)/i.test(script.getAttribute('src'))) script.remove(); });
-        if (mode === 'no-photo') source.querySelectorAll('img[src*="example-space.webp"]').forEach(img => { img.src = '/__qa_missing_space_image__.webp'; });
+        if (mode === 'no-photo') source.querySelectorAll('#sample-photo-image').forEach(img => { img.removeAttribute('srcset'); img.src = '/__qa_missing_food_image__.webp'; });
         const base = source.createElement('base'); base.href = window.location.origin + '/'; source.head.prepend(base);
         if (currentRun !== run) return;
         frame.srcdoc = '<!doctype html>\n' + source.documentElement.outerHTML;

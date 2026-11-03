@@ -92,9 +92,21 @@
     panel.dataset.storeState = before ? 'before' : 'after';
     panel.classList.toggle('before', before);
     panel.classList.toggle('after', !before);
-    document.getElementById('sample-kicker').textContent = before ? '공간 소개' : '관리 선택 안내';
-    document.getElementById('sample-title').innerHTML = before ? '편안한 휴식이<br>필요할 때.' : '내게 맞는 관리,<br>먼저 확인하세요.';
-    document.getElementById('sample-facts').innerHTML = before ? '<span>공간 사진</span><span>분위기 소개</span>' : '<span>관리 내용</span><span>시간 · 가격</span><span>예약 방법</span>';
+    const photo = document.getElementById('sample-photo-image');
+    if (photo) {
+      photo.removeAttribute('srcset');
+      photo.width = before ? 908 : 1254;
+      photo.height = before ? 689 : 1254;
+      photo.alt = before
+        ? '차량이 나란히 서 있는 루위 외관. 기존 제공 화면의 외관 사진 영역을 보여줍니다.'
+        : '노릇하게 구운 베이징덕을 써는 장면과 전병, 채소, 소스. 루위 사례의 기존 제공 사진.';
+      photo.src = before ? '/assets/home-r42/luwei-before-capture.webp' : '/assets/home-r42/luwei-peking-duck-1254.webp';
+      if (!before) photo.srcset = '/assets/home-r42/luwei-peking-duck-640.webp 640w, /assets/home-r42/luwei-peking-duck-1254.webp 1254w';
+      panel.querySelector('.photo-number').textContent = before ? '01 / 외관이 먼저 보이면' : '01 / 먹고 싶은 메뉴부터';
+    }
+    document.getElementById('sample-kicker').textContent = before ? '외관과 분위기' : '대표 메뉴 · 북경오리';
+    document.getElementById('sample-title').innerHTML = before ? '어떤 식사를<br>기대하시나요?' : '먹고 싶은 메뉴에서,<br>예약할 자리까지.';
+    document.getElementById('sample-facts').innerHTML = before ? '<span>매장 외관</span><span>차량 사진</span><span>분위기</span>' : '<span>메뉴 · 구성</span><span>자리 · 인원</span><span>예약 안내</span>';
     document.getElementById('sample-cta').innerHTML = before ? '더 알아보기 <b aria-hidden="true">↗</b>' : '예약 방법 확인하기 <b aria-hidden="true">↗</b>';
   });
   const industries = {
@@ -109,7 +121,7 @@
     document.getElementById('answer-fields').innerHTML = data.fields.map(pair => `<div><b>${pair[0]}</b><span>${pair[1]}</span></div>`).join('');
   });
   const flowStates = {
-    work: { title: '첫 사진과 예약 안내를 정리합니다.', copy: '공간 사진을 먼저 배치하고, 관리 안내 아래에 예약 버튼을 놓습니다.', rows: [['이번 결과물', '사진 순서 · 안내 문구 · 버튼 배치'], ['확인할 기준', '운영 정보 일치 · 연결 경로'], ['다음 단계', '내부 검수 후 대표님께 공유']], note: '완료 표시와 별도로 결과물을 확인합니다.' },
+    work: { title: '첫 사진과 예약 안내를 정리합니다.', copy: '메뉴 사진을 먼저 배치하고, 식사 안내 아래에 예약 버튼을 놓습니다.', rows: [['이번 결과물', '사진 순서 · 안내 문구 · 버튼 배치'], ['확인할 기준', '운영 정보 일치 · 연결 경로'], ['다음 단계', '내부 검수 후 대표님께 공유']], note: '완료 표시와 별도로 결과물을 확인합니다.' },
     review: { title: '대표님이 보실 결과물을 모읍니다.', copy: '수정 전후와 확인할 내용을 함께 보고, 승인 또는 수정 의견을 남기는 흐름입니다.', rows: [['함께 볼 자료', '화면 비교 · 적용 위치 · 확인 항목'], ['대표님 확인', '운영 정보가 실제와 맞는지'], ['수정 의견', '추가 요청을 다음 작업에 반영']], note: '내부 검수와 대표님의 확인을 나누는 운영 구성 예시입니다.' },
     next: { title: '다음에 확인할 일을 남깁니다.', copy: '기록 가능한 유입·문의·예약을 살펴보고, 더 바꿀 부분과 유지할 부분을 정합니다.', rows: [['이번 변경', '무엇을 언제 바꿨는지'], ['살펴볼 자료', '기록 가능한 지표와 대표님 의견'], ['이어갈 일', '다음 수정 · 재확인 일정']], note: '공개 범위가 확인된 기록만 사례로 소개합니다.' }
   };
