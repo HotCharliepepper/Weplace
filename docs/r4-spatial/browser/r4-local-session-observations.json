@@ -1,0 +1,56 @@
+{
+  "source": "Values observed from top-level QA DOM in the cloud browser, transcribed from tool output",
+  "captureLimitation": "The complete local in-page report was not synchronized before the local preview rebuilt; this is an observation record, not a complete raw trace. The Netlify verification will provide a fresh complete trace.",
+  "viewport": {
+    "innerWidth": 1363,
+    "innerHeight": 936,
+    "clientWidth": 1348,
+    "dpr": 1
+  },
+  "fcpMs": 200,
+  "lcpMs": 200,
+  "lcpElement": "H1#hero-title",
+  "cls": 0.001,
+  "pageErrors": [],
+  "observedBatchEvents": [
+    {
+      "target": "change-before",
+      "event": "click",
+      "durationMs": 3208,
+      "processingMs": 1.5
+    },
+    {
+      "target": "change-after",
+      "event": "click",
+      "durationMs": 2192,
+      "processingMs": 0.8
+    },
+    {
+      "target": "store-question-booking",
+      "event": "click",
+      "durationMs": 1176,
+      "processingMs": 0.4
+    },
+    {
+      "target": "sample-cta",
+      "event": "click",
+      "durationMs": 192,
+      "processingMs": 0.1
+    },
+    {
+      "target": "flow-review",
+      "event": "click",
+      "durationMs": 1272,
+      "processingMs": 1.4
+    },
+    {
+      "target": "flow-next",
+      "event": "click",
+      "durationMs": 280,
+      "processingMs": 0.6
+    }
+  ],
+  "longestObservedPointerEventMs": 3216,
+  "qaToggleInteractionMs": 208,
+  "interpretation": "Batch automation includes next-paint scheduling delay. No field INP or p75 pass claimed."
+}

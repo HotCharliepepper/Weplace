@@ -6,8 +6,11 @@
   let reviewReduced = false;
   const activeAnimations = new Set();
   const reduced = () => reducedQuery.matches || reviewReduced;
+  // R4 declares ownership in HTML, even when its optional GSAP bundle fails.
+  // Functional tabs/forms stay here; a missing motion engine leaves a static page.
+  const hasMotionOwner = element => Boolean(element?.closest('[data-motion-owner="gsap"]'));
   function animate(element, frames, options) {
-    if (!element || reduced() || !element.animate) return null;
+    if (!element || hasMotionOwner(element) || reduced() || !element.animate) return null;
     try {
       const animation = element.animate(frames, { easing: 'cubic-bezier(.22,1,.36,1)', fill: 'none', ...options });
       activeAnimations.add(animation);
@@ -20,6 +23,7 @@
     activeAnimations.clear();
   }
   function enter(element, chart) {
+    if (!element || hasMotionOwner(element)) return;
     animate(element, [{ transform: `translateY(${mobileQuery.matches ? 4 : 8}px)`, opacity: .88 }, { transform: 'translateY(0)', opacity: 1 }], { duration: mobileQuery.matches ? 240 : 400 });
     if (chart && !reduced()) element.querySelectorAll('.chart-line').forEach(path => {
       if (!path.getTotalLength) return;
@@ -42,7 +46,7 @@
       revealed.add(entry.target);
       enter(entry.target, entry.target.dataset.reveal === 'chart');
     }), { threshold: 0, rootMargin: `0px 0px -${inset}px 0px` });
-    document.querySelectorAll('[data-reveal]:not([data-reveal="hero"])').forEach(element => { if (!revealed.has(element)) revealObserver.observe(element); });
+    document.querySelectorAll('[data-reveal]:not([data-reveal="hero"])').forEach(element => { if (!hasMotionOwner(element) && !revealed.has(element)) revealObserver.observe(element); });
   }
   initReveals();
   enter(document.querySelector('[data-reveal="hero"]'), true);
@@ -67,6 +71,8 @@
       const panel = document.getElementById(tab.getAttribute('aria-controls'));
       panel.setAttribute('aria-labelledby', tab.id);
       onChange(tab, panel);
+      const kind = ['change', 'industry', 'flow'].find(name => tab.hasAttribute(`data-${name}`));
+      panel.dispatchEvent(new CustomEvent('weplace:tabchange', { bubbles: true, detail: { kind, value: tab.dataset[kind] } }));
       animate(panel, [{ opacity: .88 }, { opacity: 1 }], { duration: mobileQuery.matches ? 120 : 140, easing: 'ease-out' });
     }
     tabs.forEach((tab, index) => {
@@ -83,12 +89,13 @@
   }
   installTabs('[data-change]', (tab, panel) => {
     const before = tab.dataset.change === 'before';
+    panel.dataset.storeState = before ? 'before' : 'after';
     panel.classList.toggle('before', before);
     panel.classList.toggle('after', !before);
     document.getElementById('sample-kicker').textContent = before ? '공간 소개' : '관리 선택 안내';
     document.getElementById('sample-title').innerHTML = before ? '편안한 휴식이<br>필요할 때.' : '내게 맞는 관리,<br>먼저 확인하세요.';
     document.getElementById('sample-facts').innerHTML = before ? '<span>공간 사진</span><span>분위기 소개</span>' : '<span>관리 내용</span><span>시간 · 가격</span><span>예약 방법</span>';
-    document.getElementById('sample-cta').innerHTML = before ? '더 알아보기 <b aria-hidden="true">↗</b>' : '예약하기 <b aria-hidden="true">↗</b>';
+    document.getElementById('sample-cta').innerHTML = before ? '더 알아보기 <b aria-hidden="true">↗</b>' : '예약 방법 확인하기 <b aria-hidden="true">↗</b>';
   });
   const industries = {
     dining: { question: '6명이 조용히 식사할 곳,<br>주차도 가능할까요?', fields: [['공간과 인원', '좌석 구성과 이용 인원을 사진·문장으로'], ['방문 조건', '주차·영업시간·예약 조건을 실제 운영 기준으로'], ['다음 행동', '메뉴 확인에서 예약까지 연결되는 경로로']] },
@@ -106,8 +113,10 @@
     review: { title: '대표님이 보실 결과물을 모읍니다.', copy: '수정 전후와 확인할 내용을 함께 보고, 승인 또는 수정 의견을 남기는 흐름입니다.', rows: [['함께 볼 자료', '화면 비교 · 적용 위치 · 확인 항목'], ['대표님 확인', '운영 정보가 실제와 맞는지'], ['수정 의견', '추가 요청을 다음 작업에 반영']], note: '내부 검수와 대표님의 확인을 나누는 운영 구성 예시입니다.' },
     next: { title: '다음에 확인할 일을 남깁니다.', copy: '기록 가능한 유입·문의·예약을 살펴보고, 더 바꿀 부분과 유지할 부분을 정합니다.', rows: [['이번 변경', '무엇을 언제 바꿨는지'], ['살펴볼 자료', '기록 가능한 지표와 대표님 의견'], ['이어갈 일', '다음 수정 · 재확인 일정']], note: '공개 범위가 확인된 기록만 사례로 소개합니다.' }
   };
-  installTabs('[data-flow]', tab => {
+  installTabs('[data-flow]', (tab, panel) => {
     const data = flowStates[tab.dataset.flow];
+    const board = panel.closest('.flow-board');
+    if (board) board.dataset.flowState = tab.dataset.flow;
     document.getElementById('flow-task-title').textContent = data.title;
     document.getElementById('flow-task-copy').textContent = data.copy;
     document.getElementById('flow-task-rows').innerHTML = data.rows.map(pair => `<div><span>${pair[0]}</span><strong>${pair[1]}</strong></div>`).join('');
