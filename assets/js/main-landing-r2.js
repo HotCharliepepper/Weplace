@@ -173,7 +173,11 @@
   [url, shopName, region].forEach(input => input.addEventListener('input', () => { input.setCustomValidity(''); result.hidden = true; }));
   form.addEventListener('submit', event => {
     event.preventDefault();
-    const lines = ['[Weplace 무료 진단 요청]'];
+    const offerName = document.getElementById('diagnosis-offer-name').textContent.trim();
+    const offerPrice = document.getElementById('diagnosis-price').textContent.trim();
+    const offerScope = document.getElementById('diagnosis-scope').textContent.trim();
+    const resultLabels = [...document.querySelectorAll('#diagnosis-results strong')].map(element => element.textContent.trim());
+    const lines = [`[Weplace ${offerName} 요청]`];
     if (noLink.checked) {
       for (const input of [shopName, region]) { if (!input.value.trim()) { input.setCustomValidity('내용을 입력해 주세요.'); input.reportValidity(); return; } }
       lines.push(`매장명: ${shopName.value.trim()}`, `지역: ${region.value.trim()}`);
@@ -182,7 +186,7 @@
       catch (_) { url.setCustomValidity('https:// 또는 http://로 시작하는 공개 매장 링크를 입력해 주세요.'); url.reportValidity(); return; }
       lines.push(`매장 링크: ${url.value.trim()}`);
     }
-    lines.push('', '매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개에 대한 무료 진단을 요청합니다.');
+    lines.push('', `안내 금액: ${offerPrice}`, `요청 범위: ${offerScope}`, `받을 안내: ${resultLabels.join(' · ')}`, '계정 접속이나 실제 화면 수정은 포함되지 않는 첫 화면 진단을 요청합니다.');
     message.value = lines.join('\n');
     result.hidden = false;
     status.textContent = '내용이 준비되었습니다. 아직 전송되지 않았습니다.';

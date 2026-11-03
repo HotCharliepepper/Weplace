@@ -210,3 +210,58 @@ html[data-review-reduced="true"] .home-r4 .sample-photo img { transition: none; 
   .home-r4 .flow-role-plane { border: 1px solid CanvasText; }
   .home-r4 .proof-plane { display: none; }
 }
+
+/* R4.1: one public channel, one useful improvement; outcomes precede the offer. */
+.home-r4 .diagnosis-intro { max-width: 850px; }
+.home-r4 .diagnosis-intro h2 { font-size: clamp(34px, 4.2vw, 52px); line-height: 1.35; letter-spacing: -.055em; }
+.home-r4 .diagnosis-intro .section-lead { margin-top: 24px; }
+.home-r4 .diagnosis-results-head { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; margin-top: 50px; }
+.home-r4 .diagnosis-results-head h3 { font-size: 19px; letter-spacing: -.03em; }
+.home-r4 .diagnosis-results-head > p { font-size: 12px; color: var(--muted); }
+.home-r4 .diagnosis-results { list-style: none; padding: 0; margin: 19px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); border: 1px solid var(--line); background: var(--white); }
+.home-r4 .diagnosis-results li { padding: 24px; min-width: 0; }
+.home-r4 .diagnosis-results li + li { border-left: 1px solid var(--line); }
+.home-r4 .diagnosis-results li > span { display: block; font-size: 11px; color: var(--signal-text); margin-bottom: 19px; }
+.home-r4 .diagnosis-results strong { display: block; font-weight: 600; font-size: 16px; color: var(--trust); }
+.home-r4 .diagnosis-results p { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.85; }
+.home-r4 .diagnosis-entry { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; margin-top: 48px; align-items: start; }
+.home-r4 .diagnosis-offer { padding: 31px; border: 1px solid var(--line); border-top: 3px solid var(--trust); background: var(--white); }
+.home-r4 .diagnosis-offer h3 { font-size: 26px; margin-top: 14px; }
+.home-r4 .diagnosis-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 20px; margin-top: 13px; }
+.home-r4 .diagnosis-price strong { font-size: 76px; line-height: 1.25; font-weight: 600; letter-spacing: -.06em; color: var(--trust); }
+.home-r4 .diagnosis-price > span { color: var(--muted); font-size: 12px; }
+.home-r4 .diagnosis-scope { font-size: 13px; margin-top: 20px; line-height: 1.9; }
+.home-r4 .diagnosis-boundary { font-size: 12px; color: var(--muted); margin-top: 9px; }
+.home-r4 .diagnosis-next { margin-top: 27px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); line-height: 1.85; }
+.home-r4 .diagnosis-next a { min-height: 44px; display: inline-flex; align-items: center; margin-top: 5px; color: var(--ink); }
+.home-r4 .diagnosis-form-wrap > h3 { font-size: 24px; letter-spacing: -.035em; }
+.home-r4 .diagnosis-form-wrap .request-steps { display: flex; flex-wrap: wrap; gap: 8px 13px; margin-top: 10px; font-size: 11px; }
+.home-r4 .diagnosis-form-wrap .request-steps span + span::before { display: inline; margin-right: 13px; }
+.home-r4 .diagnosis-form-wrap .request-form { margin-top: 22px; }
+@media (max-width: 1023px) {
+  .home-r4 .diagnosis-results li { padding: 20px 16px; }
+  .home-r4 .diagnosis-results strong { font-size: 14px; }
+  .home-r4 .diagnosis-results p { font-size: 12px; }
+  .home-r4 .diagnosis-entry { gap: 28px; grid-template-columns: 1fr 1fr; }
+  .home-r4 .diagnosis-offer { padding: 25px; }
+}
+@media (max-width: 639px) {
+  .home-r4 .diagnosis-intro h2 { font-size: clamp(28px, 7.8vw, 34px); line-height: 1.4; }
+  .home-r4 .diagnosis-intro .section-lead { font-size: 14px; margin-top: 22px; }
+  .home-r4 .diagnosis-intro .section-lead br { display: none; }
+  .home-r4 .diagnosis-results-head { margin-top: 31px; display: block; }
+  .home-r4 .diagnosis-results-head h3 { font-size: 17px; line-height: 1.6; }
+  .home-r4 .diagnosis-results-head > p { margin-top: 6px; }
+  .home-r4 .diagnosis-results { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .home-r4 .diagnosis-results li { padding: 19px 14px; }
+  .home-r4 .diagnosis-results li:nth-child(3) { border-left: 0; }
+  .home-r4 .diagnosis-results li:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .home-r4 .diagnosis-results li > span { margin-bottom: 11px; }
+  .home-r4 .diagnosis-results p { font-size: 12px; }
+  .home-r4 .diagnosis-results br { display: none; }
+  .home-r4 .diagnosis-entry { grid-template-columns: 1fr; gap: 34px; margin-top: 27px; }
+  .home-r4 .diagnosis-offer { padding: 24px; }
+  .home-r4 .diagnosis-price strong { font-size: 66px; }
+  .home-r4 .diagnosis-offer h3, .home-r4 .diagnosis-form-wrap > h3 { font-size: 23px; }
+  .home-r4 .diagnosis-form-wrap .request-steps { font-size: 10px; }
+}
