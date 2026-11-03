@@ -103,7 +103,7 @@ DOM·파일 검사는 실제 화면 렌더링이나 성능 측정을 대신하�
 | 실제 화면 | 데스크톱 음식 장면, 모바일 음식·외관·메뉴 | [데스크톱](browser/desktop-food-local.jpg), [음식 390px](browser/mobile-food-390-qa.jpg), [외관 390px](browser/mobile-cars-390-qa.jpg) |
 | Figma R4.2 | 편집 가능한 데스크톱·모바일 기본 상태, 실제 PNG 검수 완료 | [Figma 동기화·폰트 제한](figma/FIGMA_R42_SYNC.md) |
 | 사진·브랜드·대비 | 실제 크기·해시·출처·대비 수학 계산 | [출처](R42_ASSET_PROVENANCE.md), [용량](ASSET_BUDGET.json), [독립 QA](QA_NOTES.md), [브랜드](brand/README.md) |
-| Draft PR·Netlify Preview | 최신 HEAD와 ready deploy의 일치 여부는 배포 후 PR 본문에 기록 | 이 브랜치의 Draft PR / 배포 증빙 |
+| Draft PR·Netlify Preview | Draft #17, ready deploy-preview, 실제 페이지·OG·noindex 확인 | [배포 증빙](DEPLOY_CHECK.md); 최신 HEAD는 PR 본문 |
 
 기존 R4/R4.1 결과를 이번 변경의 새 통과 결과로 인용하지 않습니다. INP 판정, 물리 기기·네이티브 스크린리더·현장 p75 등 수행하지 않은 항목은 미검증으로 남깁니다.
 

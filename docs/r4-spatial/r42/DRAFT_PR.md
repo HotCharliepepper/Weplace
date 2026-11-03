@@ -32,7 +32,7 @@ Hero의 `1.72억 → 1.93억`, `+12.2%`, `2,100만 원`, 기간·관측 단서�
 - [최종 테스트·링크·빌드 로그](verify.txt).
 - [7개 CSS 폭·키보드·모션 절감·JS/GSAP/사진 fallback·진단 요청문 검수](BROWSER_QA.md).
 - Figma: [Desktop 1440](https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=44-16), [Mobile 390](https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=44-305), [동기화 및 제한](figma/FIGMA_R42_SYNC.md).
-- Netlify Preview는 이 Draft PR의 자동 배포 후 ready·commit·noindex를 검증하여 본문에 기록합니다.
+- [Netlify Preview](https://deploy-preview-17--weplace.netlify.app/) ready·commit 일치·noindex·실제 OG 로드를 확인했습니다. [배포 증빙](DEPLOY_CHECK.md)을 참고하세요.
 
 DOM 검사와 작업 중 캡처를 물리 모바일·네이티브 스크린리더·현장 성능 통과로 확대하지 않습니다. 미실시 항목과 INP 판정 한계는 최종 검수 보고에 명시합니다.
 

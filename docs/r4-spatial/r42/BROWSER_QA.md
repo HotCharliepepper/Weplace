@@ -47,4 +47,4 @@
 
 `npm run verify` 성공: **88 passed / 0 failed / 0 skipped**. HTML 35개, 로컬 참조 1,071개, 로컬 결함 0건. 외부 URL 20개는 이 링크 검사기가 HTTP 검사하지 않았습니다. review build에서 회사·개인정보 운영 승인 조건 22개가 미확정으로 남아 있으며 기존 release gate를 유지합니다. 전체 로그는 `verify.txt`입니다.
 
-실제 Draft PR/Netlify 배포 식별자와 최종 HEAD의 관계는 PR 본문 및 별도 배포 증빙에 기록합니다.
+실제 Draft PR/Netlify 배포 식별자, Preview DOM·사진·OG 확인은 [DEPLOY_CHECK.md](DEPLOY_CHECK.md)에 기록했습니다. 후속 문서 커밋의 최종 HEAD 관계는 PR 본문에도 기록합니다.
