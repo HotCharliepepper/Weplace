@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-29",
+  "reviewUrl": "https://deploy-preview-12--weplace.netlify.app/",
+  "environment": {
+    "browser": "Desktop Chromium, CUA-controlled",
+    "viewportMethod": "Local built artifact in an iframe with explicit CSS widths; hosted Netlify Preview also inspected directly at the available 1363x936 browser viewport. No physical-device emulation claimed.",
+    "scrollbar": "Classic 15px scrollbar: document clientWidth is nominal viewport minus 15px."
+  },
+  "viewports": [
+    {
+      "width": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "visual": "pass: readable first screen, chart labels, balanced two-column layout"
+    },
+    {
+      "width": 768,
+      "clientWidth": 753,
+      "scrollWidth": 753,
+      "visual": "pass: tablet header, headline, CTA and chart fit; no horizontal overflow"
+    },
+    {
+      "width": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "visual": "pass: stacked hero, CTA and chart; no horizontal overflow"
+    },
+    {
+      "width": 320,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "visual": "pass: narrow layout, open menu, chart labels, sticky CTA and local message flow; no horizontal overflow"
+    }
+  ],
+  "homeChecks": [
+    "A sales bars plus connecting line: 1.72억/1.93억 KRW (172M/193M KRW), +12.2%, with period and attribution limits.",
+    "B Place visits: 877/1137/2002/2350, +168%; metric not presented as unique people, bookings or sales.",
+    "Photo layout before/after switches and industry question tabs work; keyboard arrow navigation verified.",
+    "Case filtering and detail dialog work; Escape closes dialog. Focus restoration covered by automated test.",
+    "Mobile menu opens inside viewport and closes with Escape; automated test verifies summary focus.",
+    "Request preparation and copy status tested with synthetic example.invalid link and fictional shop/area; no received/CRM-success state or outbound intake request.",
+    "Clipboard rejection and animation failure paths covered by automated tests; no-JS disabled form verified from HTML/DOM assertions.",
+    "Canonical is https://withweplace.kr/; title/description/OG alt and images present; review robots noindex.",
+    "Company footer markers and privacy release gate retained; unverified company data remains a release dependency.",
+    "No application console errors observed during inspected flows; browser-extension diagnostic noise excluded."
+  ],
+  "regression": [
+    {
+      "route": "/experience/",
+      "result": "pass: cafe choice, scenario and before/after result; existing scenarios/export/motion assertions pass"
+    },
+    {
+      "route": "/check/",
+      "result": "pass: cafe plus six synthetic uncertain answers produced an explicitly non-measurement result"
+    },
+    {
+      "route": "/field-notes/",
+      "result": "pass: existing public app renders and shows its consultation-category/public-review fallback; actual approved live-case count not verified"
+    },
+    {
+      "route": "/enterprise/",
+      "result": "pass: existing collaboration page renders; its experience CTA route corrected"
+    },
+    {
+      "route": "/flow-preview/",
+      "result": "pass: demo opens; finance-access restriction interaction shows designated-account-only message"
+    },
+    {
+      "route": "/my-store/ -> /client",
+      "result": "pass: customer link reaches https://flow.withweplace.kr/client signed-out login controls; no credentials entered"
+    },
+    {
+      "route": "/team",
+      "result": "pass: existing redirect reaches https://flow.withweplace.kr/; authenticated CRM and role enforcement not exercised"
+    },
+    {
+      "route": "industry detail pages",
+      "result": "pass: automated assertions cover seven page files and eight selected-industry links; hosted retest after final deploy recorded in PR"
+    },
+    {
+      "route": "enterprise/process/global/industry routes and old home hashes",
+      "result": "pass: preserved files/anchors covered by regression and local link checks"
+    },
+    {
+      "route": "redirects/security configuration",
+      "result": "all seven redirects, headers, API routes, identity and gate configuration preserved"
+    }
+  ],
+  "automated": {
+    "command": "npm run verify",
+    "testsPassed": 74,
+    "testsFailed": 0,
+    "htmlPages": 34,
+    "references": 1053,
+    "localLinkDefects": 0,
+    "externalUrlsNotAutomaticallyProbed": 19,
+    "build": "review",
+    "openCompanyPrivacyApprovalChecks": 22
+  },
+  "performance": {
+    "fontsBytesBefore": 1551748,
+    "fontsBytesAfter": 69328,
+    "notes": "Local WOFF2 subsets, lazy/offscreen images and reduced-motion handling; no measured Lighthouse, field Core Web Vitals or throttled-network score is claimed."
+  },
+  "knownLimitations": [
+    "No confirmed implementation defect remains in tested scope. Broader browser/device coverage is not implied.",
+    "Physical iOS/Android, Safari/Firefox, screen-reader operation and field performance remain unverified.",
+    "Real authenticated customer/staff workflows, authorization backend and database writes were not exercised; their code and redirects were not changed.",
+    "Home intake remains text preparation + manual Kakao sending. There is no intake API or CRM registration.",
+    "Real before/after images, dates and rights still needed. Current C comparison is explicitly fictional.",
+    "3-week +15% claim is excluded pending evidence. Confirm A/B publication evidence and consent before production.",
+    "22 existing company/privacy release checks remain open. No production approval, merge, database or customer-data change performed."
+  ]
+}
