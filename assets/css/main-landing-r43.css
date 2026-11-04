@@ -44,3 +44,27 @@
 
 /* Existing process numerals now meet text contrast against the paper background. */
 .home-r43 .step-number{color:var(--muted)}
+
+/* Refinement: readable conditions and evidence, with the established heading hierarchy retained. */
+.home-r43 .hero-copy>.micro,.home-r43 .hero-context,.home-r43 .proof-period,
+.home-r43 .proof-foot,.home-r43 .proof-foot a,.home-r43 .evidence-note,
+.home-r43 .scope-line,.home-r43 .request-steps,.home-r43 .request-form fieldset>.micro,
+.home-r43 .free-example-body>.micro{font-size:12px;line-height:1.8}
+.home-r43 .scope-line{word-break:keep-all;overflow-wrap:break-word}
+.home-r43 .section-head h2{line-height:1.35}
+.home-r43 .hero h1{word-break:keep-all;overflow-wrap:break-word}
+.home-r43 .cinema{container-type:inline-size}
+.home-r43 .scene-tabs{gap:16px}.home-r43 .scene-tabs button,.home-r43 #scene-play{font-size:12px;min-width:44px}
+.home-r43 .cinema-static-note{font-size:12px;line-height:1.7}
+.home-r43 .cinema-foot>span{font-size:12px}.home-r43 .scene-description{font-size:13px;line-height:1.8;min-height:47px}
+/* Sizing follows the panel, not the viewport: fixes cropped planes in the 768px two-column view. */
+@container(max-width:660px){.cinema-world{--stage-scale:.92}}
+@container(max-width:600px){.cinema-world{--stage-scale:.88}}
+@container(max-width:500px){.cinema-world{--stage-scale:.72}}
+@container(max-width:440px){.cinema-world{--stage-scale:.62}}
+@container(max-width:380px){.cinema-world{--stage-scale:.52}}
+@container(max-width:340px){.cinema-world{--stage-scale:.48}}
+@container(max-width:300px){.cinema-world{--stage-scale:.43}}
+@media(min-width:640px) and (max-width:1100px){.home-r43 .scene-tabs span{display:inline}.home-r43 .cinema-controls{flex-wrap:wrap;gap:0 12px}.home-r43 .scene-tabs{gap:14px}.home-r43 .cinema-viewport{height:340px}}
+@media(max-width:639px){.home-r43 .cinema-viewport{height:280px}.home-r43 .cinema-controls{flex-wrap:wrap;gap:0 10px}.home-r43 .scene-tabs{gap:14px}.home-r43 .hero-copy>.micro{max-width:330px}.home-r43 .proof-foot{gap:14px}.home-r43 .proof-foot p{max-width:24em}}
+@media(max-width:359px){.home-r43 .cinema-viewport{height:250px}.home-r43 .scene-tabs{gap:10px}.home-r43 .proof-foot{flex-wrap:wrap}.home-r43 .scene-tabs span{margin-left:3px}}

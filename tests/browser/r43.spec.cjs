@@ -2,7 +2,7 @@ const { test: base, expect } = require('@playwright/test');
 const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '../..');
-const captures = path.join(root, 'docs/r4-spatial/r43/browser');
+const captures = path.join(root, 'docs/r4-spatial/r43-refinement/browser');
 fs.mkdirSync(captures, { recursive: true });
 
 // Optional local artifact fixture: no HTTP server or external request is created.

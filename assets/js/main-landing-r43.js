@@ -5,6 +5,8 @@
   const tabs=[...cinema.querySelectorAll('[data-scene-tab]')],panel=document.getElementById('scene-panel'),play=document.getElementById('scene-play');
   const planes=[...cinema.querySelectorAll('.cinema-plane')];
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  const compact=matchMedia('(max-width: 639px)');
+  const poseFor=(index,i)=>scenes[index].pose[i].map((n,j)=>compact.matches?(j<2?n*.6:n*.4):n);
   const scenes=[
     {title:'흩어져 있던 첫인상.',text:'사진, 안내, 예약 방법이 흩어지면 손님은 다시 찾고 확인하게 됩니다.',pose:[[-14,20,-20,-11],[8,-28,12,5],[16,28,-16,-4]]},
     {title:'볼 순서를 맞춥니다.',text:'무엇을 만나고, 무엇을 확인하고, 어디로 갈지. 사진과 안내의 순서를 정리합니다.',pose:[[-36,10,-26,-4],[0,-8,-26,-4],[36,-26,-26,-4]]},
@@ -22,15 +24,16 @@
     cinema.dataset.motion=reduced.matches?'reduced':window.gsap?.timeline?'ready':'static';
     play.hidden=reduced.matches||!window.gsap?.timeline;
     if(canAnimate){
-      try{tween=gsap.timeline({defaults:{duration:.85,ease:'power3.inOut',overwrite:true}});planes.forEach((el,i)=>{const [x,y,rotationY,rotation]=scenes[index].pose[i];tween.to(el,{x,y,rotationY,rotation,force3D:false},i*.055);});return;}catch(_){tween?.kill();tween=null;}
+      try{tween=gsap.timeline({defaults:{duration:compact.matches?.45:.85,ease:'power3.inOut',overwrite:true}});planes.forEach((el,i)=>{const [x,y,rotationY,rotation]=poseFor(index,i);tween.to(el,{x,y,rotationY,rotation,rotationX:0,force3D:false},i*.055);});return;}catch(_){tween?.kill();tween=null;}
     }
-    planes.forEach((el,i)=>{const [x,y,ry,r]=scenes[index].pose[i];if(window.gsap?.set){gsap.set(el,{x,y,rotationY:ry,rotation:r,force3D:false});}else{el.style.transform=`translate(${x}px,${y}px) rotateY(${ry}deg) rotateZ(${r}deg)`;}});
+    planes.forEach((el,i)=>{const [x,y,ry,r]=poseFor(index,i);if(window.gsap?.set){gsap.set(el,{x,y,rotationY:ry,rotation:r,rotationX:0,force3D:false});}else{el.style.transform=`translate(${x}px,${y}px) rotateY(${ry}deg) rotateZ(${r}deg)`;}});
   }
   function choose(index,focus){stop();setScene(index,true);if(focus)tabs[index].focus();}
   tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>choose(i,false));tab.addEventListener('keydown',e=>{let n;if(e.key==='ArrowRight')n=(i+1)%3;if(e.key==='ArrowLeft')n=(i+2)%3;if(e.key==='Home')n=0;if(e.key==='End')n=2;if(n!==undefined){e.preventDefault();choose(n,true);}});});
-  function schedule(){timer=setTimeout(()=>{if(document.hidden||reduced.matches){stop();return;}setScene(current+1,true);if(current<2)schedule();else stop();},2200);}
+  function schedule(){timer=setTimeout(()=>{if(document.hidden||reduced.matches){stop();return;}setScene(current+1,true);if(current<2)schedule();else stop();},compact.matches?1500:2200);}
   play.addEventListener('click',()=>{if(playing){stop();tween?.progress(1).pause();return;}setScene(0,true);if(reduced.matches)return;playing=true;play.setAttribute('aria-pressed','true');play.textContent='장면 멈춤 Ⅱ';schedule();});
   reduced.addEventListener('change',()=>{stop();setScene(2,false);});
+  compact.addEventListener('change',()=>{stop();setScene(current,false);});
   document.addEventListener('visibilitychange',()=>{if(document.hidden){stop();setScene(current,false);}});
   window.addEventListener('pagehide',()=>{stop();tween?.kill();});
   if('IntersectionObserver'in window){new IntersectionObserver(entries=>{if(!entries[0].isIntersecting&&playing){stop();setScene(current,false);}},{threshold:0}).observe(cinema);}

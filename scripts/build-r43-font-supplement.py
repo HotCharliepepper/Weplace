@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = Path(sys.argv[1])
 OUT = ROOT / 'assets/home-r43'
 OUT.mkdir(parents=True, exist_ok=True)
-sources = [ROOT/'index.html', ROOT/'review/journey.html']
+sources = [ROOT/'index.html', ROOT/'review/journey.html', ROOT/'review/question.html']
 sources += [ROOT/'assets/js'/name for name in [
     'main-landing-r2.js', 'spatial-demo.js', 'main-landing-r4.js',
     'main-landing-r43.js', 'journey-r43.js', 'share-r43.js',
@@ -62,5 +62,5 @@ for style, weight in [('Regular', 400), ('SemiBold', 600)]:
 rules.append('.home-r43,.journey-page{font-family:Pretendard,"Weplace Content Supplement",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}')
 (ROOT/'assets/css/r43-font-supplement.css').write_text('\n'.join(rules)+'\n')
 (OUT/'FONT-LICENSE.txt').write_text('\n'.join(line.rstrip() for line in (SOURCE/'dist/LICENSE.txt').read_text().splitlines())+'\n')
-(ROOT/'docs/r4-spatial/r43/font-coverage.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n')
+(ROOT/'docs/r4-spatial/r43-refinement/font-coverage.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n')
 print(json.dumps(manifest, ensure_ascii=False, indent=2))
