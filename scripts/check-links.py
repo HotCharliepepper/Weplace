@@ -57,7 +57,7 @@ def main():
     root = Path(args.root).resolve()
     # The source tree and an explicitly supplied dist root are separate targets.
     # Never count a nested generated copy as another set of source pages.
-    excluded_dirs = {'.git', 'node_modules', 'dist', '.netlify', '.next'}
+    excluded_dirs = {'.git', 'node_modules', 'dist', '.netlify', '.next', 'test-results', 'playwright-report'}
     files = sorted(p for p in root.rglob('*') if p.is_file() and not excluded_dirs.intersection(p.relative_to(root).parts[:-1]))
     documents = {p: Document(p.read_text()) for p in files if p.suffix == '.html'}
     rules = []

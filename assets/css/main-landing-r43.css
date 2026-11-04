@@ -1,0 +1,46 @@
+/* R4.3: semantic content is always present. Only decorative planes move. */
+.home-r43 .hero {padding-top:62px}
+.home-r43 .hero-grid {grid-template-columns:.92fr 1.18fr;gap:48px;align-items:center}
+.home-r43 .hero h1 {font-size:clamp(42px,4.3vw,64px);line-height:1.2;letter-spacing:-.055em}
+.home-r43 .hero h1 em {white-space:normal}
+.home-r43 .hero-desc {font-size:17px}
+.home-r43 .hero-ctas {gap:18px}
+.cinema {min-width:0;--stage-scale:1}
+.cinema-viewport {height:460px;position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 70% 20%,#e8ecdf,transparent 58%),linear-gradient(145deg,#b8c3ae,#d2d7c8 52%,#b7c0ad);border-radius:3px}
+.cinema-horizon {position:absolute;left:-30%;right:-30%;height:75%;top:62%;background:linear-gradient(#ffffff00,#eef0e1aa);border-top:1px solid #f7f4eb99;transform:rotate(-13deg)}
+.cinema-orbit {position:absolute;width:540px;height:540px;left:17%;top:-50%;border:1px solid #f5f0e980;border-radius:50%;box-shadow:0 0 0 55px #f5f0e91c,0 0 0 110px #f5f0e913}
+.cinema-beam {position:absolute;inset:-60% 40%;width:130px;transform:rotate(35deg);background:linear-gradient(90deg,transparent,#fffdfa45,transparent);pointer-events:none}
+.cinema-world {position:absolute;width:560px;height:380px;left:50%;top:48%;transform:translate(-50%,-50%) scale(var(--stage-scale));perspective:1100px;transform-style:preserve-3d}
+.cinema-plane {position:absolute;width:180px;height:295px;padding:18px;top:44px;border:1px solid #ffffff80;background:var(--white);box-shadow:12px 22px 32px #20352d24;backface-visibility:hidden;transform-origin:50% 60%;border-radius:3px;display:flex;flex-direction:column}
+.plane-photo {left:0;z-index:3;transform:translate(-12px,0) rotateY(-18deg) rotateZ(-5deg)}
+.plane-info {left:190px;z-index:2;transform:translate(0,-12px) rotateY(-18deg) rotateZ(-5deg)}
+.plane-next {left:380px;z-index:1;background:var(--trust);color:var(--paper);transform:translate(12px,-24px) rotateY(-18deg) rotateZ(-5deg)}
+.plane-label {font-size:9px;letter-spacing:.09em;color:var(--trust);margin-bottom:20px;white-space:nowrap}
+.plane-next .plane-label {color:#ded0af}
+.cinema-plane strong {font-size:20px;letter-spacing:-.04em;line-height:1.35;font-weight:600}
+.plane-meta {font-size:10px;margin-top:auto;color:var(--muted)}
+.plane-next .plane-meta {color:#e1e4d7}
+.plane-window {height:123px;position:relative;overflow:hidden;background:#e4dece;margin-bottom:16px}
+.window-arch {position:absolute;width:70px;height:115px;border-radius:60px 60px 0 0;left:56px;top:21px;background:linear-gradient(100deg,#647d68,#9aa88a);box-shadow:inset 9px 2px 7px #20352d25}
+.window-sun {position:absolute;width:40px;height:40px;border-radius:50%;background:var(--gold);top:16px;left:17px;opacity:.9}
+.window-table {position:absolute;width:100px;height:30px;border-radius:50%;left:8px;bottom:-6px;background:#f7f2e7;box-shadow:5px 4px 9px #20352d33}
+.plane-rule {height:1px;background:var(--line);margin:20px 0 12px}
+.plane-row {font-size:12px;padding:8px 0;border-bottom:1px solid #d8cfc37a;display:flex;justify-content:space-between}
+.plane-row i{font-style:normal;color:var(--proof)}
+.plane-gold-dot {width:24px;height:24px;background:var(--gold);border-radius:50%;margin:8px 0 20px;box-shadow:0 0 30px #c8a56b30}
+.plane-action {font-size:12px;padding-top:15px;border-top:1px solid #ffffff40;margin-top:20px;display:flex;justify-content:space-between}
+.cinema-corner {position:absolute;width:18px;height:18px;opacity:.65;pointer-events:none}.corner-tl {left:22px;top:22px;border-left:1px solid var(--trust);border-top:1px solid var(--trust)}.corner-br {right:22px;bottom:22px;border-right:1px solid var(--trust);border-bottom:1px solid var(--trust)}
+.cinema-caption {position:absolute;bottom:18px;left:23px;font-size:8px;letter-spacing:.13em;color:#3e5446}
+.cinema-foot {display:flex;justify-content:space-between;gap:12px;margin-top:18px;align-items:center;min-height:28px}.cinema-foot p{font-size:15px;font-weight:600}.cinema-foot>span{font-size:10px;color:var(--muted);font-variant-numeric:tabular-nums}
+.cinema-controls {display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);margin-top:6px}.scene-tabs {display:flex;gap:12px}.scene-tabs button,#scene-play{border:0;background:none;min-height:44px;padding:8px 0;font-size:11px;color:var(--muted)}.scene-tabs button[aria-selected=true]{color:var(--ink);box-shadow:inset 0 -2px var(--trust)}.scene-tabs span{margin-left:5px}.scene-description{font-size:12px;color:var(--muted);margin-top:12px;min-height:40px;line-height:1.7}.cinema-static-note{font-size:10px;color:var(--muted);margin-top:4px}
+.home-r43 .hero-evidence{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;border-top:1px solid var(--line);margin-top:68px;padding-top:64px}.hero-evidence-copy h2{font-size:38px}.hero-evidence-copy h2 em{color:var(--trust)}.home-r43 .hero-proof-stage{max-width:510px}.home-r43 .channel-band{margin-top:52px}.home-r43 .proof-headline>strong{font-size:56px}
+.journey-entry{border-top:1px solid var(--line);padding-top:24px;margin-top:32px;display:flex;justify-content:space-between;gap:24px;align-items:center}.journey-entry p+p{margin-top:6px;font-size:16px}
+.afterglow{background:var(--trust);color:var(--paper)}.afterglow-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:100px;align-items:center}.afterglow h2{font-size:clamp(38px,5vw,64px);line-height:1.2}.afterglow .eyebrow{color:#e0cda7}.afterglow h2+p{margin-top:24px;color:#e4e9dd;font-size:16px}.home-r43 .afterglow .button{background:var(--paper);border-color:var(--paper);color:var(--trust);margin-top:30px}.home-r43 .afterglow .button:hover{background:#e9e4d9}.share-note{border-top:1px solid #ffffff50;padding-top:28px}.share-mark{font-size:50px;color:var(--gold);line-height:1}.share-note>p:not(.share-status){font-size:29px;line-height:1.45;margin:20px 0}.share-note .text-link{background:none;color:inherit;border:0;cursor:pointer;min-height:44px;border-bottom:1px solid #ffffff60}.share-note label{display:block;font-size:11px;margin:16px 0 6px;color:#e4e9dd}.share-note textarea{width:100%;background:transparent;color:inherit;border:1px solid #ffffff50;padding:12px;font-size:12px;resize:vertical;border-radius:3px}.share-status{font-size:12px;min-height:1.8em;margin-top:8px}.afterglow :focus-visible{outline-color:var(--gold)}
+@media(min-width:1440px){.home-r43{--max:1280px}.home-r43 .hero-grid{gap:64px}}
+@media(min-width:640px) and (max-width:1100px){.cinema{--stage-scale:.76}.cinema-viewport{height:390px}.home-r43 .hero-grid{gap:28px;grid-template-columns:1fr 1fr}.home-r43 .hero h1{font-size:43px}.scene-tabs{gap:8px}.scene-tabs span{display:none}.hero-evidence-copy h2{font-size:30px}.home-r43 .hero-evidence{gap:36px}}
+@media(max-width:639px){.home-r43 .hero{padding-top:36px}.home-r43 .hero-grid{grid-template-columns:1fr;gap:32px}.home-r43 .hero h1{font-size:40px}.home-r43 .hero-copy .eyebrow{margin-bottom:18px}.home-r43 .hero-desc{font-size:15px;margin-top:20px}.home-r43 .hero-ctas{margin-top:22px;gap:8px}.home-r43 .hero-ctas .button{width:100%}.home-r43 .hero-copy>.micro{font-size:10px}.cinema{--stage-scale:.56}.cinema-viewport{height:310px}.cinema-foot p{font-size:14px}.scene-tabs{gap:14px}.scene-tabs button,#scene-play{font-size:10px}.scene-description{min-height:42px}.home-r43 .hero-evidence{grid-template-columns:1fr;gap:30px;margin-top:38px;padding-top:36px}.hero-evidence-copy h2{font-size:30px}.home-r43 .hero-evidence-copy .eyebrow{margin-bottom:16px}.home-r43 .hero-evidence-copy .hero-desc{display:none}.journey-entry{align-items:start;flex-direction:column;gap:8px}.journey-entry p+p{font-size:15px}.afterglow-grid{grid-template-columns:1fr;gap:44px}.share-note>p:not(.share-status){font-size:25px}.afterglow{padding-block:64px}.home-r43 .channel-band{margin-top:36px}}
+@media(max-width:359px){.home-r43 .hero h1{font-size:35px}.cinema{--stage-scale:.48}.cinema-viewport{height:275px}.scene-tabs{gap:9px}.scene-tabs span{margin-left:2px}}
+@media(prefers-reduced-motion:reduce){.cinema-plane{transition:none!important}}
+
+/* Existing process numerals now meet text contrast against the paper background. */
+.home-r43 .step-number{color:var(--muted)}
