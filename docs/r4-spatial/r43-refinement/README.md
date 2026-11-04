@@ -66,13 +66,15 @@ PR #18의 실제 Work 결과 `9e3df4f4e5f78cd8f3e7b7a961af868ead95a06a`에서 �
 
 ## 7. Draft PR / Netlify
 
-별도 브랜치: `draft/weplace-r43-experience-refinement-20261104`. Draft PR 본문에 최종 검토 URL·commit·deploy 증빙을 기록합니다. main을 base로 하는 Deploy Preview이므로 선행 미병합 Draft 변경도 포함됩니다. 이번 수정만의 비교 기준은 `9e3df4f...새 브랜치`입니다.
+별도 브랜치: `draft/weplace-r43-experience-refinement-20261104`. [Draft PR #19](https://github.com/HotCharliepepper/Weplace/pull/19) · [Netlify Preview](https://deploy-preview-19--weplace.netlify.app/) · [질문 카드](https://deploy-preview-19--weplace.netlify.app/review/question) · [진단→모의 주문 체험](https://deploy-preview-19--weplace.netlify.app/review/journey).
+
+구현 commit `0293440e62fcad30a4eaa58d778096184cb1bd22`, ready deploy `6aeb4d9030b959d912ff17d0`에서 실제 브라우저 검수를 마쳤습니다. [공개 Preview 검수 기록](DEPLOY.md). 후속 커밋은 이 기록과 캡처만 추가하며 웹 구현은 같습니다. main을 base로 하는 Deploy Preview이므로 선행 미병합 Draft 변경도 포함됩니다. 이번 수정만의 비교 기준은 `9e3df4f...새 브랜치`입니다.
 
 ## 8. 남은 확인과 현재 위치
 
 - 물리 iPhone/Android, Safari/Firefox, 네이티브 스크린리더, 실제 OS 공유 대상으로 전송/사진 앱 저장은 미실시.
 - 실제 신청률·매출·사용자 이해 변화는 측정하지 않았습니다. 개선 효과를 확정하지 않습니다.
-- 미확정 가격·기준가 30만원·초기 체험 혜택은 공개하지 않습니다.
+- 미확정 가격·기준가·초기 체험 혜택은 공개하지 않습니다.
 - 기존 회사·개인정보 승인 게이트 22개는 유지합니다. 실결제/실DB/인증 변경이나 운영 승인으로 해석하지 않습니다.
 - main 병합·운영 배포·실제 고객 메시지는 수행하지 않았습니다.
 
