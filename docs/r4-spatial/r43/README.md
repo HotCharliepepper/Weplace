@@ -6,6 +6,9 @@
 
 ## 확인할 결과물
 
+- [Netlify 검토본](https://deploy-preview-18--weplace.netlify.app/) · [모의 여정](https://deploy-preview-18--weplace.netlify.app/review/journey) · [Draft PR #18](https://github.com/HotCharliepepper/Weplace/pull/18)
+- [배포된 첫 화면](browser/preview-desktop.jpg) · [배포된 모의 완료 화면](browser/preview-complete.jpg)
+
 - [Figma 전체 R4.3 페이지](https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=90-2): PC·모바일 히어로 6개, 여정 10개. 기존 R4.2 페이지 보존.
 - [프레임 ID와 크기](figma/frames.json).
 - [실제 데스크톱 히어로](browser/desktop-hero-2.png), [모바일 히어로](browser/mobile-hero-2.png), [모바일 완료 화면](browser/mobile-journey-complete.png).
@@ -50,4 +53,4 @@ node scripts/measure-r43.cjs /path/to/r42/dist
 
 Figma는 연결 환경에 Pretendard가 없어 Noto Sans KR를 사용한다. 편집 가능한 구조·상태 설계이며 픽셀 동일성을 주장하지 않는다. Figma의 기본 CTA는 여정 프로토타입으로 연결했고, 실제 웹의 메인 CTA는 기존 진단을 보존했다. 선택 분기·오류·클립보드 처리는 실제 웹이 기준이다.
 
-현재 위치: 구현·로컬 검수 완료, 검토용 배포 제출 단계. 다음 첫 행동은 PC와 휴대폰에서 히어로의 속도와 모의 완료 후의 인상을 직접 확인하는 것이다. Runway 영상은 필수 의존성이 아니다.
+현재 위치: 구현·로컬 검수·Draft PR #18·Netlify Deploy Preview 제출 및 공개 검토본 동작 확인 완료. 다음 첫 행동은 PC와 휴대폰에서 히어로의 속도와 모의 완료 후의 인상을 직접 확인하는 것이다. Runway 영상은 필수 의존성이 아니다.
