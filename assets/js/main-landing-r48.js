@@ -86,6 +86,7 @@
   function begin(next) {
     if (panel.dataset.storeState === next) return;
     cancel();
+    if (showLab) { labFeedback.hidden=true; lastShownDuration=null; }
     const id = serial;
     const first = next === 'after' && !playedFirst;
     const duration = first
