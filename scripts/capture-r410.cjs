@@ -17,6 +17,8 @@ const {chromium}=require('@playwright/test');
    const page=await context.newPage();const errors=[];
    page.on('pageerror',e=>errors.push(e.message));
    await page.goto(base+'/?scene=2',{waitUntil:'load'});
+   const hero=await page.locator('#hero-photo').getAttribute('src');
+   if(hero!=='/assets/brand/r42/weplace-symbol.svg')throw Error('Stale local dist: rebuild the R4.9 review before capturing. Found '+hero);
    await page.locator('#changes .sample-photo').scrollIntoViewIfNeeded();
    const overlay=page.locator('#r410-stage-veil');
    await overlay.waitFor({state:'visible',timeout:3000});
