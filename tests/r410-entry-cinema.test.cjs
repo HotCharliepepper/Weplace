@@ -46,8 +46,8 @@ test('initial exterior and honest cinematic overlay stay accessible before JS',(
 test('scroll arrival: one auto exterior -> dark -> menu and no scroll lock',async()=>{
  const c=setup();
  try{
-  assert.equal(c.calls.observers.length,1);
-  const observer=c.calls.observers[0];
+  const observer=c.calls.observers.find(x=>x.target?.classList.contains('sample-photo'));
+  assert.ok(observer,'the scroll-entry observer must own the source photo stage');
   assert.equal(observer.target.classList.contains('sample-photo'),true);
   observer.fire(.72);
   assert.equal(observer.disconnected,true);
@@ -73,7 +73,8 @@ test('scroll arrival: one auto exterior -> dark -> menu and no scroll lock',asyn
 test('manual pointer interaction cancels pending scroll-entry story',async()=>{
  const c=setup();
  try{
-  const observer=c.calls.observers[0];
+  const observer=c.calls.observers.find(x=>x.target?.classList.contains('sample-photo'));
+  assert.ok(observer);
   observer.fire(.75);
   c.d.getElementById('change-after').dispatchEvent(new c.w.Event('pointerdown',{bubbles:true}));
   await pause(225);
@@ -87,7 +88,7 @@ test('reduced motion and Save Data never schedule automatic image switching',asy
  for(const config of [{reduced:true},{saveData:true}]){
   const c=setup(config);
   try{
-   assert.equal(c.calls.observers.length,0);
+   assert.equal(c.calls.observers.some(x=>x.target?.classList.contains('sample-photo')),false);
    await pause(180);
    assert.equal(c.d.getElementById('change-panel').dataset.storeState,'before');
    assert.equal(c.d.getElementById('r410-stage-veil').hidden,true);
