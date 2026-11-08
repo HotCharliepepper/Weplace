@@ -46,10 +46,11 @@
 <link rel="stylesheet" href="/assets/css/main-landing-r45.css">
 <link rel="stylesheet" href="/assets/css/main-landing-r46.css">
 <link rel="stylesheet" href="/assets/css/main-landing-r47.css">
+<link rel="stylesheet" href="/assets/css/main-landing-r48.css">
 <link rel="stylesheet" href="/assets/css/r45-font-supplement.css">
 <link rel="preload" href="/assets/home-r2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body class="home-r2 home-r4 home-r42 home-r43 home-r44 home-r45 home-r46 home-r47">
+<body class="home-r2 home-r4 home-r42 home-r43 home-r44 home-r45 home-r46 home-r47 home-r48">
 <a class="skip" href="#main">본문으로 바로가기</a>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -132,12 +133,22 @@
       <div class="change-grid" data-reveal="card" data-motion-owner="gsap" data-design-node="3:40">
         <div class="change-preview">
           <div class="preview-top"><span>루위 · 사진 선택 비교</span><div class="segmented" role="tablist" aria-label="첫 사진의 선택 비교"><button type="button" role="tab" id="change-before" aria-controls="change-panel" aria-selected="true" data-change="before">외관 먼저</button><button type="button" role="tab" id="change-after" aria-controls="change-panel" aria-selected="false" tabindex="-1" data-change="after">메뉴 먼저</button></div></div>
+          <div class="r48-wait-lab" id="r48-wait-lab" hidden aria-label="검토용 기다림 실험">
+            <div class="r48-wait-lab-title"><strong>WAIT LAB · 첫 공개의 리듬</strong><span>검토 환경 전용 · 과학적으로 확정된 지루함 임계값이 아닙니다.</span></div>
+            <div class="r48-wait-lab-controls"><label for="r48-wait-preset">첫 공개 멈춤 시간</label>
+              <select id="r48-wait-preset"><option value="brief">450ms · 빠르게</option><option value="balanced" selected>680ms · 균형</option><option value="lingering">900ms · 길게</option></select>
+              <span>외관으로 돌아간 뒤 메뉴를 다시 열어 비교하세요.</span>
+            </div>
+            <p id="r48-lab-result" role="status">이 실험의 시간값은 디자인 가설입니다. 브라우저에만 반응을 표시하며 기록·전송하지 않습니다.</p>
+            <div id="r48-lab-feedback" class="r48-lab-feedback" hidden><span>이번 전환의 체감</span><button type="button" data-perception="ready">기대 유지</button><button type="button" data-perception="slow">조금 느림</button></div>
+          </div>
           <div id="change-panel" class="sample-page before" role="tabpanel" aria-labelledby="change-before" tabindex="0" data-store-state="before">
             <div class="sample-photo store-layer" data-store-layer="photo">
               <img id="sample-photo-image" src="/assets/home-r42/luwei-before-capture.webp" width="908" height="689" loading="lazy" decoding="async" alt="차량이 나란히 서 있는 루위 외관. 기존 제공 화면의 외관 사진 부분을 보여줍니다.">
               <span class="photo-number">01 / 외관이 먼저 보이면</span>
               <button id="r47-photo-switch" class="r47-photo-switch" type="button" hidden aria-label="메뉴 먼저 보기로 사진 비교 전환">메뉴 먼저 보기 <span aria-hidden="true">↗</span></button>
               <div class="r47-picture-curtain" id="r47-picture-curtain" aria-hidden="true" hidden><span>THE FIRST LOOK</span><strong>손님이 처음 보는<br>장면을 바꿉니다.</strong><i aria-hidden="true"></i></div>
+              <div class="r48-photo-fallback" id="r48-photo-fallback" hidden><strong id="r48-fallback-heading">실제 사진을 불러오는 중입니다.</strong><p id="r48-fallback-copy">연출을 더 기다리게 하지 않고 이미지 상태를 알려드립니다.</p><button id="r48-fallback-back" type="button">외관으로 돌아가기</button></div>
             </div>
             <div class="sample-page-copy store-layer" data-store-layer="info">
               <span class="layer-index" aria-hidden="true">02</span>
@@ -317,7 +328,7 @@
 <script src="/assets/js/spatial-demo.js" defer></script>
 <script src="/assets/js/main-landing-r4.js" defer></script>
 <script src="/assets/js/main-landing-r45.js" defer></script>
-<script src="/assets/js/main-landing-r47.js" defer></script>
+<script src="/assets/js/main-landing-r48.js" defer></script>
 <script src="/assets/js/share-r43.js" defer></script>
 <script src="/assets/js/site-metrics.js" defer></script>
 </body>
