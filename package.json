@@ -8,7 +8,8 @@
     "test": "node --test tests/*.test.cjs",
     "check:links": "python3 scripts/check-links.py",
     "verify": "npm test && npm run check:links && npm run build",
-    "test:r43": "playwright test --config playwright.r43.config.cjs"
+    "test:r43": "playwright test --config playwright.r43.config.cjs",
+    "test:r44": "playwright test --config playwright.r44.config.cjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
