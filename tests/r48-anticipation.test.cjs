@@ -101,6 +101,7 @@ test('Wait lab only appears on explicit preview URLs and never transmits a ratin
         preset.dispatchEvent(new c.w.Event('change',{bubbles:true}));
         assert.match(c.d.getElementById('r48-lab-result').textContent,/900ms/);
         assert.equal(c.d.getElementById('r48-lab-feedback').hidden,true);
+        assert.equal(c.d.querySelectorAll('#r48-lab-feedback [data-perception]').length,3);
         if(url.includes('deploy-preview-')) {
           preset.value='brief';
           preset.dispatchEvent(new c.w.Event('change',{bubbles:true}));
