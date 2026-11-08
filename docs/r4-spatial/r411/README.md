@@ -1,6 +1,6 @@
 # WEPLACE R4.11 — CUSTOMER DECISION PATH × Field Research Transfer
 
-Updated 2026-11-09. The source for this change is the 2026-10-26 **(주)앰앤 24-page review proposal**, which is a **proposal / hypothetical design example**, not a confirmed client case or published research result. Only cross-client design principles were reused. No proposal prices, confidential operations, contract decisions or client-specific photos are reproduced in the public website.
+Updated 2026-11-09. The source for this change is the 2026-10-26 **an internal 24-page restaurant-group review proposal**, which is a **proposal / hypothetical design example**, not a confirmed client case or published research result. Only cross-client design principles were reused. No proposal prices, confidential operations, contract decisions or client-specific photos are reproduced in the public website.
 
 ## Baseline / boundaries
 
@@ -26,7 +26,7 @@ This R4.11 application does NOT state that any particular client or store signed
 - `index.html`: one new `#decision-path` section with a progressive four-stage experience, a channel fact rail, and a separately defined inquiry/confirmation/visit measurement rail.
 - `assets/css/main-landing-r411.css`: modern editorial green/gold/cream styling consistent with R4.10; responsive 1440/1024/768/390/320 layouts, visible keyboard focus, reduce-motion safeguards.
 - `assets/js/main-landing-r411.js`: <2KB JS, 4 accessible tabs, Arrow/Home/End support, 0 network/storage calls. With JS absent, all four stage texts remain visible and buttons are hidden.
-- `tests/r411-mn-customer-journey.test.cjs`: source ordering, no-JS progressive fallback, keyboard/focus/one active stage, no client leaks/fabricated metrics and mobile CSS checks.
+- `tests/r411-customer-decision.test.cjs`: source ordering, no-JS progressive fallback, keyboard/focus/one active stage, no client leaks/fabricated metrics and mobile CSS checks.
 
 ## UX intention
 
