@@ -416,3 +416,35 @@ test.describe('static new content',()=>{test.use({javaScriptEnabled:false});test
  await expect(page.locator('.diagnosis-sheet')).toContainText('제작 예시 · 실제 진단 결과 아님');
  await page.locator('.diagnosis-preview a').click();await expect(page).toHaveURL(/#request$/);
 });});
+
+
+// R4.10 cinematic entrance: a scroll-linked perception beat, not scroll locking.
+test('R4.10 arriving at the LuWei photo plays one 680ms dark reveal and restores manual comparison',async({page})=>{
+ await page.goto('/?scene=2');
+ const photo=page.locator('#changes .sample-photo');
+ await photo.scrollIntoViewIfNeeded();
+ const veil=page.locator('#r410-stage-veil');
+ await expect(veil).toBeVisible({timeout:2500});
+ await expect(page.locator('#change-after')).toHaveAttribute('aria-selected','true',{timeout:2500});
+ await expect(veil).toBeHidden({timeout:4000});
+ await expect(page.locator('#r47-picture-curtain')).toBeHidden({timeout:4000});
+ await expect(page.locator('#sample-photo-image')).toHaveAttribute('src',/luwei-peking-duck-1254\.webp/);
+ await page.locator('#change-before').click();
+ await expect(page.locator('#sample-photo-image')).toHaveAttribute('src',/luwei-before-capture\.webp/);
+ await page.evaluate(()=>scrollTo(0,0));
+ await photo.scrollIntoViewIfNeeded();
+ await page.waitForTimeout(350);
+ await expect(page.locator('#change-panel')).toHaveAttribute('data-store-state','before');
+ await expect(veil).toBeHidden();
+});
+test('R4.10 reduced motion skips the entry hold but keeps user-triggered reveal',async({page})=>{
+ await page.emulateMedia({reducedMotion:'reduce'});
+ await page.goto('/?scene=2');
+ await page.locator('#changes .sample-photo').scrollIntoViewIfNeeded();
+ await page.waitForTimeout(960);
+ await expect(page.locator('#change-panel')).toHaveAttribute('data-store-state','before');
+ await expect(page.locator('#r410-stage-veil')).toBeHidden();
+ await page.locator('#r47-photo-switch').click();
+ await expect(page.locator('#change-panel')).toHaveAttribute('data-store-state','after');
+ await expect(page.locator('#r410-stage-veil')).toBeHidden();
+});
