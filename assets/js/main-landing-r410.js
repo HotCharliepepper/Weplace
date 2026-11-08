@@ -16,7 +16,8 @@
   const after=document.getElementById('change-after');
   const before=document.getElementById('change-before');
   const switcher=document.getElementById('r47-photo-switch');
-  if(!host||!photoStage||!panel||!after||!before||!switcher) return;
+  const veil=document.getElementById('r410-stage-veil');
+  if(!host||!photoStage||!panel||!after||!before||!switcher||!veil) return;
 
   const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
   const connection=navigator.connection;
@@ -28,6 +29,8 @@
   const cancelScheduled=()=>{
     manualChoice=true;
     if(scheduled){clearTimeout(scheduled);scheduled=0;}
+    veil.hidden=true;
+    host.dataset.entryStory='interrupted';
     observer?.disconnect();
   };
   // Real mouse/touch or keyboard input must always override an entry animation.
@@ -50,11 +53,13 @@
       if(manualChoice||document.hidden||reduced.matches||constrained()
          ||panel.dataset.storeState!=='before')return;
       host.dataset.entryStory='revealing';
+      veil.hidden=false;
       after.click();
       // No forced scroll, wheel prevention, viewport pin or artificial "loading %".
       // Restore the section's quiet state when the editorial beat completes.
       scheduled=window.setTimeout(()=>{
         scheduled=0;
+        veil.hidden=true;
         if(!manualChoice)host.dataset.entryStory='settled';
       },1050);
     },130);
@@ -71,6 +76,8 @@
   const abort=()=>{
     if(scheduled)clearTimeout(scheduled);
     scheduled=0;
+    veil.hidden=true;
+    host.dataset.entryStory='interrupted';
     observer?.disconnect();
   };
   document.addEventListener('visibilitychange',()=>{if(document.hidden)abort();});
