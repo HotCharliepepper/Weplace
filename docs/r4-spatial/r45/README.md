@@ -2,6 +2,8 @@
 
 2026-11-08 검토 구현. 운영 배포 승인본이 아닙니다.
 
+[실제 Netlify Preview](https://deploy-preview-21--weplace.netlify.app/) · [Draft PR #21](https://github.com/HotCharliepepper/Weplace/pull/21). 앱 코드 `e8950a6`의 deploy-preview `6af038d11f08324d31a05af7`가 ready이며 실제 브라우저의 핵심 경로를 확인했습니다. 이후 검수 기록 커밋은 문서·증빙만 추가합니다.
+
 기준: PR #20 `9ed15798e1ef90712ba842a7f873b230a1688cf0` (Draft). 시작 시 Preview deploy `6af005fdd53ddf4f9c27a60c`, 동일 커밋 / ready 확인. 별도 브랜치 `draft/weplace-r45-clear-path-20261108`에서 작업했습니다.
 
 ## 실제 변경
