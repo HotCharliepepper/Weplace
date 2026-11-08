@@ -448,3 +448,42 @@ test('R4.10 reduced motion skips the entry hold but keeps user-triggered reveal'
  await expect(page.locator('#change-panel')).toHaveAttribute('data-store-state','after');
  await expect(page.locator('#r410-stage-veil')).toBeHidden();
 });
+
+
+test('R4.11 visitor journey connects discovery, comparison, judgment and visit without invented numbers', async ({page})=>{
+  await page.goto('/?scene=2');
+  await page.locator('#decision-path').scrollIntoViewIfNeeded();
+  const stage=page.locator('#r411-stage');
+  const tabs=stage.locator('[data-r411-tab]');
+  const panels=stage.locator('.r411-step-panel');
+  await expect(tabs).toHaveCount(4);
+  await expect(panels.filter({visible:true})).toHaveCount(1);
+  await expect(stage.locator('#r411-panel-0')).toContainText('대표 음식 · 공간 · 첫 사진');
+  await tabs.nth(0).focus();
+  await page.keyboard.press('ArrowRight');
+  await expect(tabs.nth(1)).toBeFocused();
+  await expect(tabs.nth(1)).toHaveAttribute('aria-selected','true');
+  await expect(stage.locator('#r411-panel-1')).toContainText('현재 메뉴 · 이용 인원 · 주차');
+  await page.keyboard.press('End');
+  await expect(tabs.nth(3)).toBeFocused();
+  await expect(stage.locator('#r411-panel-3')).toContainText('최신 주소 · 현장 안내 · 변경 기록');
+  await tabs.nth(2).click();
+  await expect(stage.locator('#r411-panel-2')).toContainText('운영 조건 · FAQ · 공식 문의 경로');
+  await expect(page.locator('#decision-path .r411-proof-steps')).toContainText('유효 문의');
+  await expect(page.locator('#decision-path .r411-proof-steps')).toContainText('예약 확정');
+  await expect(page.locator('#decision-path .r411-proof-steps')).toContainText('실제 방문');
+  await expect(page.locator('#decision-path .r411-section-foot a')).toHaveAttribute('href','#request');
+});
+test.describe('R4.11 JavaScript-free visitor path',()=>{
+  test.use({javaScriptEnabled:false});
+  test('all four decision stages are readable and no dead controls are shown',async({page})=>{
+    await page.goto('/?scene=2');
+    const section=page.locator('#decision-path');
+    await expect(section.locator('.r411-step-tabs')).toBeHidden();
+    for(let i=0;i<4;i++){
+      await expect(section.locator('#r411-panel-'+i)).toBeVisible();
+    }
+    await expect(section.locator('.r411-section-foot')).toContainText('구성 예시');
+    await expect(section.locator('a[href="#request"]')).toHaveCount(2);
+  });
+});
