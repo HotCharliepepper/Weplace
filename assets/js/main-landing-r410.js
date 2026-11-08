@@ -25,11 +25,23 @@
   // A genuinely reduced-motion user keeps the exterior static until choosing a tab.
   if(reduced.matches||constrained()||!('IntersectionObserver' in window))return;
 
+  // Mount the hidden scene on body: it must cover the viewport even if GSAP
+  // creates a transformed ancestor around the comparison grid.
+  document.body.appendChild(veil);
   let scheduled=0,observer=null,autoStarted=false,manualChoice=false;
+  const phaseObserver='MutationObserver' in window
+    ? new MutationObserver(()=>{
+        if(!veil.hidden && (host.dataset.waitPhase==='reveal'||host.dataset.waitPhase==='complete'))
+          veil.classList.add('is-leaving');
+      })
+    : null;
+  phaseObserver?.observe(host,{attributes:true,attributeFilter:['data-wait-phase']});
   const cancelScheduled=()=>{
     manualChoice=true;
     if(scheduled){clearTimeout(scheduled);scheduled=0;}
     veil.hidden=true;
+    veil.classList.remove('is-leaving');
+    phaseObserver?.disconnect();
     host.dataset.entryStory='interrupted';
     observer?.disconnect();
   };
@@ -59,6 +71,7 @@
         return;
       }
       host.dataset.entryStory='revealing';
+      veil.classList.remove('is-leaving');
       veil.hidden=false;
       after.click();
       // No forced scroll, wheel prevention, viewport pin or artificial "loading %".
@@ -66,6 +79,8 @@
       scheduled=window.setTimeout(()=>{
         scheduled=0;
         veil.hidden=true;
+        veil.classList.remove('is-leaving');
+        phaseObserver?.disconnect();
         if(!manualChoice)host.dataset.entryStory='settled';
       },1050);
     },360);
@@ -83,6 +98,8 @@
     if(scheduled)clearTimeout(scheduled);
     scheduled=0;
     veil.hidden=true;
+    veil.classList.remove('is-leaving');
+    phaseObserver?.disconnect();
     host.dataset.entryStory='interrupted';
     observer?.disconnect();
   };
