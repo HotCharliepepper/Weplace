@@ -3,6 +3,7 @@ const test=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
+const {JSDOM}=require('jsdom');
 const root=path.resolve(__dirname,'..');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const css=fs.readFileSync(path.join(root,'assets/css/main-landing-r46.css'),'utf8');
@@ -25,17 +26,21 @@ test('changes: both states have question, information and action in one existing
  assert.match(html,/사진 선택의 매출 효과를 뜻하지 않습니다/);
 });
 test('stay: five existing tab panels each contain a customer journey',()=>{
- for(let i=0;i<5;i++){
-   const start=html.indexOf('id="stay-panel-'+i+'"');
-   assert.ok(start>=0,'missing stay panel '+i);
-   const end=i<4?html.indexOf('id="stay-panel-'+(i+1)+'"',start):html.indexOf('</div>\n        </div>\n        <div class="open-work-foot">',start);
-   assert.ok(end>start,'panel bounds '+i);
-   const segment=html.slice(start,end);
-   assert.match(segment,/class="r46-stay-journey"/);
-   assert.match(segment,/>질문</);
-   assert.match(segment,/>필요한 정보</);
-   assert.match(segment,/>다음 행동</);
- }
+ const dom=new JSDOM(html);
+ try{
+   const panels=[...dom.window.document.querySelectorAll('#open-work .stay-panel')];
+   assert.equal(panels.length,5);
+   for(let i=0;i<panels.length;i++){
+     const panel=panels[i];
+     assert.equal(panel.id,'stay-panel-'+i);
+     const journey=panel.querySelector('.r46-stay-journey');
+     assert.ok(journey,'missing customer journey in panel '+i);
+     const steps=[...journey.querySelectorAll('li')];
+     assert.equal(steps.length,3,'exactly three steps in panel '+i);
+     assert.deepEqual(steps.map(step=>step.querySelector('small')?.textContent.trim()),['질문','필요한 정보','다음 행동']);
+     assert.ok(steps.every(step=>step.querySelector('span')?.textContent.trim()),'all customer steps have explanatory text');
+   }
+ }finally{dom.window.close();}
 });
 test('explore retains Weplace enquiry and separates responsibility',()=>{
  assert.match(html,/class="r46-role-grid"/);
