@@ -280,11 +280,11 @@
 /* R4.10 — 680ms first-visit reveal, triggered once when the original
    LuWei exterior photo enters view. Fullscreen cinematic image transition
    is intentionally NOT a real loading screen and never blocks scrolling. */
-.home-r49 #changes .r410-stage-veil[hidden] {display:none!important;}
-.home-r49 #changes .r410-stage-veil{
+.home-r49 .r410-stage-veil[hidden] {display:none!important;}
+.home-r49 .r410-stage-veil{
   position:fixed;
   inset:0;
-  z-index:180;
+  z-index:9999;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -300,7 +300,7 @@
   transition:opacity 170ms ease-out;
   box-sizing:border-box;
 }
-.home-r49 #changes .r410-stage-veil::after{
+.home-r49 .r410-stage-veil::after{
   content:"";
   position:absolute;inset:0;
   opacity:.28;
@@ -309,7 +309,7 @@
     repeating-linear-gradient(90deg,transparent,transparent 79px,rgba(224,225,195,.08) 80px),
     repeating-linear-gradient(0deg,transparent,transparent 79px,rgba(224,225,195,.08) 80px);
 }
-.home-r49 #changes .r410-stage-veil>div{
+.home-r49 .r410-stage-veil>div{
   width:min(100%,670px);
   position:relative;
   z-index:1;
@@ -318,14 +318,14 @@
   gap:15px;
   align-items:flex-start;
 }
-.home-r49 #changes .r410-stage-veil span{
+.home-r49 .r410-stage-veil span{
   color:#eed4a0;
   font-size:clamp(10px,.92vw,13px);
   font-weight:600;
   letter-spacing:.18em;
   line-height:1.6;
 }
-.home-r49 #changes .r410-stage-veil strong{
+.home-r49 .r410-stage-veil strong{
   color:#fff9ec;
   font-size:clamp(35px,5.4vw,74px);
   line-height:1.24;
@@ -333,7 +333,7 @@
   font-weight:600;
   text-wrap:balance;
 }
-.home-r49 #changes .r410-stage-veil i{
+.home-r49 .r410-stage-veil i{
   width:min(330px,75vw);
   height:2px;
   background:#ead7b2;
@@ -342,7 +342,7 @@
   overflow:hidden;
   margin:16px 0 3px;
 }
-.home-r49 #changes .r410-stage-veil i::after{
+.home-r49 .r410-stage-veil i::after{
   content:"";
   display:block;
   width:100%;
@@ -355,28 +355,25 @@
   from{transform:scaleX(.03)}
   to{transform:scaleX(1)}
 }
-.home-r49 #changes .r410-stage-veil small{
+.home-r49 .r410-stage-veil small{
   margin-top:7px;
   color:#cedecf;
   font-size:11px;
   line-height:1.7;
   letter-spacing:.12em;
 }
-.home-r49 #changes .r410-stage-veil small b{
+.home-r49 .r410-stage-veil small b{
   color:#eac583;
   padding:0 12px;
 }
-.home-r49 #changes .change-preview[data-entry-story="revealing"][data-wait-phase="reveal"] .r410-stage-veil,
-.home-r49 #changes .change-preview[data-entry-story="revealing"][data-wait-phase="complete"] .r410-stage-veil{
-  opacity:0;
-}
+.home-r49 .r410-stage-veil.is-leaving{opacity:0;}
 @media(max-width:639px){
- .home-r49 #changes .r410-stage-veil{padding:26px}
- .home-r49 #changes .r410-stage-veil>div{gap:12px}
- .home-r49 #changes .r410-stage-veil strong{font-size:clamp(34px,9vw,48px)}
- .home-r49 #changes .r410-stage-veil i{margin-top:14px}
+ .home-r49 .r410-stage-veil{padding:26px}
+ .home-r49 .r410-stage-veil>div{gap:12px}
+ .home-r49 .r410-stage-veil strong{font-size:clamp(34px,9vw,48px)}
+ .home-r49 .r410-stage-veil i{margin-top:14px}
 }
 @media(prefers-reduced-motion:reduce){
- .home-r49 #changes .r410-stage-veil{display:none!important;transition:none!important}
- .home-r49 #changes .r410-stage-veil i::after{animation:none!important}
+ .home-r49 .r410-stage-veil{display:none!important;transition:none!important}
+ .home-r49 .r410-stage-veil i::after{animation:none!important}
 }
