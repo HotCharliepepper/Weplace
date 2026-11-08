@@ -235,7 +235,7 @@ test('all requested widths preserve type, poster, native links and the unchanged
   await page.setViewportSize({width,height:900});await page.goto('/?scene=2');await page.evaluate(()=>document.fonts.ready);
   const metrics=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth-innerWidth,cta:document.querySelector('#hero-cta').getBoundingClientRect().toJSON(),type:[...document.querySelectorAll('.hero-copy>.micro,.proof-foot p,.evidence-note,.scope-line')].map(n=>parseFloat(getComputedStyle(n).fontSize)),image:document.querySelector('#hero-photo').currentSrc,scene:document.querySelector('#cinema').dataset.motion}));
   expect(metrics.overflow).toBeLessThanOrEqual(1);expect(metrics.cta.bottom).toBeLessThan(900);expect(metrics.type.every(n=>n>=12)).toBe(true);
-  expect(metrics.image).toMatch(/luwei-peking-duck-640.webp$/);
+  expect(metrics.image).toMatch(/weplace-symbol\.svg$/);
   await expect(page.locator('.hero-evidence')).toContainText('2,100만 원');await expect(page.locator('.hero-evidence')).toContainText('+12.2%');
   await expect(page.locator('.hero-evidence')).toContainText('1.72억');await expect(page.locator('.hero-evidence')).toContainText('1.93억');
   await expect(page.locator('#hero-cta')).toHaveAttribute('href','#request');
@@ -253,7 +253,7 @@ test('all requested widths preserve type, poster, native links and the unchanged
 });
 
 test('image failure shows the real fallback, headline and CTA stay available',async({page})=>{
- await page.route('**/luwei-peking-duck-*.webp',r=>r.fulfill({status:404,body:'image intentionally unavailable'}));
+ await page.route('**/assets/brand/r42/weplace-symbol.svg',r=>r.fulfill({status:404,body:'image intentionally unavailable'}));
  await page.goto('/');await expect(page.locator('#cinema')).toHaveAttribute('data-motion','photo-fallback');
  await expect(page.locator('.hero-image-fallback')).toBeVisible();await expect(page.locator('.hero-depth')).toBeHidden();
  await expect(page.locator('#hero-title')).toBeVisible();await expect(page.locator('#hero-cta')).toBeVisible();
@@ -263,7 +263,7 @@ test('image failure shows the real fallback, headline and CTA stay available',as
 });
 
 test('delayed photo never delays title or CTA; no video is downloaded',async({page})=>{
- let release;const gate=new Promise(r=>release=r);await page.route('**/luwei-peking-duck-*.webp',async r=>{await gate;await r.fallback();});
+ let release;const gate=new Promise(r=>release=r);await page.route('**/assets/brand/r42/weplace-symbol.svg',async r=>{await gate;await r.fallback();});
  try{
   await page.goto('/',{waitUntil:'domcontentloaded'});await expect(page.locator('#hero-title')).toBeVisible();await expect(page.locator('#hero-cta')).toBeVisible();
   await expect(page.locator('video')).toHaveCount(0);expect(await page.locator('#hero-photo').evaluate(n=>n.complete)).toBe(false);
