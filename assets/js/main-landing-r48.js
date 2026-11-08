@@ -105,6 +105,7 @@
     curtain.dataset.beat = first ? 'first' : 'repeat';
     curtain.style.setProperty('--r48-beat',duration+'ms');
     host.style.setProperty('--r410-hold',duration+'ms');
+    document.getElementById('r410-stage-veil')?.style.setProperty('--r410-hold',duration+'ms');
     host.dataset.waitPhase='anticipation';
 
     let minDone=false, ready=false, closed=false, watchdogExpired=false;
