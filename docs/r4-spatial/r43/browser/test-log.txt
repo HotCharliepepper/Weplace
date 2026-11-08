@@ -1,0 +1,38 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> weplace-public-site@1.1.0 test:r43
+> playwright test --config playwright.r43.config.cjs
+
+
+Running 24 tests using 1 worker
+
+(node:295) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/browser/r43.spec.cjs:46:1 › three hero states, keyboard tabs and available CTA (5.3s)
+  ✓   2 [desktop] › tests/browser/r43.spec.cjs:72:1 › finite autoplay can pause and settles at scene 3 (8.2s)
+  ✓   3 [desktop] › tests/browser/r43.spec.cjs:84:1 › reduced motion is static; scene selection remains available (1.2s)
+  ✓   4 [desktop] › tests/browser/r43.spec.cjs:95:1 › blocked GSAP keeps content, native links and tabs working (1.3s)
+  ✓   5 [desktop] › tests/browser/r43.spec.cjs:108:1 › JavaScript disabled › no JavaScript retains claims, scope, CTA and full journey text (1.1s)
+  ✓   6 [desktop] › tests/browser/r43.spec.cjs:123:1 › existing tabs, case dialog, FLOW and diagnosis request remain local (1.7s)
+  ✓   7 [desktop] › tests/browser/r43.spec.cjs:145:1 › free journey validates acknowledgement, completes, shares and restarts (1.3s)
+  ✓   8 [desktop] › tests/browser/r43.spec.cjs:173:1 › detailed scope never exposes an unconfirmed price (781ms)
+  ✓   9 [desktop] › tests/browser/r43.spec.cjs:188:1 › copy success and denied clipboard both preserve a useful safe share (2.1s)
+  ✓  10 [desktop] › tests/browser/r43.spec.cjs:200:1 › WCAG automated checks on main and all five journey states (3.0s)
+  ✓  11 [desktop] › tests/browser/r43.spec.cjs:212:1 › no horizontal overflow at narrow, tablet and desktop widths (1.7s)
+  ✓  12 [desktop] › tests/browser/r43.spec.cjs:223:1 › closing CTA remains visible against the dark panel and returns to diagnosis (984ms)
+(node:532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 [mobile] › tests/browser/r43.spec.cjs:46:1 › three hero states, keyboard tabs and available CTA (4.7s)
+  ✓  14 [mobile] › tests/browser/r43.spec.cjs:72:1 › finite autoplay can pause and settles at scene 3 (7.8s)
+  ✓  15 [mobile] › tests/browser/r43.spec.cjs:84:1 › reduced motion is static; scene selection remains available (704ms)
+  ✓  16 [mobile] › tests/browser/r43.spec.cjs:95:1 › blocked GSAP keeps content, native links and tabs working (655ms)
+  ✓  17 [mobile] › tests/browser/r43.spec.cjs:108:1 › JavaScript disabled › no JavaScript retains claims, scope, CTA and full journey text (1.0s)
+  ✓  18 [mobile] › tests/browser/r43.spec.cjs:123:1 › existing tabs, case dialog, FLOW and diagnosis request remain local (1.3s)
+  ✓  19 [mobile] › tests/browser/r43.spec.cjs:145:1 › free journey validates acknowledgement, completes, shares and restarts (974ms)
+  ✓  20 [mobile] › tests/browser/r43.spec.cjs:173:1 › detailed scope never exposes an unconfirmed price (660ms)
+  ✓  21 [mobile] › tests/browser/r43.spec.cjs:188:1 › copy success and denied clipboard both preserve a useful safe share (631ms)
+  ✓  22 [mobile] › tests/browser/r43.spec.cjs:200:1 › WCAG automated checks on main and all five journey states (2.7s)
+  ✓  23 [mobile] › tests/browser/r43.spec.cjs:212:1 › no horizontal overflow at narrow, tablet and desktop widths (1.6s)
+  ✓  24 [mobile] › tests/browser/r43.spec.cjs:223:1 › closing CTA remains visible against the dark panel and returns to diagnosis (1.1s)
+
+  24 passed (55.4s)

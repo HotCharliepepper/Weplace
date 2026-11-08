@@ -1,0 +1,4692 @@
+{
+  "harness": "Weplace R4.2 Spatial QA",
+  "current": {
+    "run": 12,
+    "recordedAt": "2026-11-03T14:53:11.734Z",
+    "fixture": "normal",
+    "scene": "explore",
+    "viewport": {
+      "requested": 1440,
+      "innerWidth": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "bodyScrollWidth": 1425,
+      "innerHeight": 900,
+      "horizontalOverflow": false,
+      "displayedScale": "scale(0.894444)"
+    },
+    "reviewReduced": true,
+    "appliedReviewReduced": "true",
+    "performance": {
+      "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+      "nativeReducedMotion": false,
+      "networkProfile": "Current browser network; no throttle applied by harness",
+      "cpuProfile": "Current browser CPU; no throttle applied by harness",
+      "supportedEntryTypes": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "lcpMs": 1812,
+      "cls": 0.031,
+      "longestObservedInteractionMs": 4088,
+      "layoutShiftEntries": [
+        {
+          "value": 0.021,
+          "time": 26707.4,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "SECTION",
+                "id": "discovery",
+                "class": "section discovery"
+              },
+              "previousRect": {
+                "x": 0,
+                "y": 777.359,
+                "width": 1425,
+                "height": 122.641
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
+            },
+            {
+              "node": {
+                "tag": "DETAILS",
+                "id": "",
+                "class": "static-comparison"
+              },
+              "previousRect": {
+                "x": 120.5,
+                "y": 620.359,
+                "width": 581.531,
+                "height": 45
+              },
+              "currentRect": {
+                "x": 120.5,
+                "y": 773.297,
+                "width": 581.531,
+                "height": 45
+              }
+            },
+            {
+              "node": {
+                "tag": "P",
+                "id": "",
+                "class": "sample-caption"
+              },
+              "previousRect": {
+                "x": 120.5,
+                "y": 583.766,
+                "width": 581.531,
+                "height": 21.594
+              },
+              "currentRect": {
+                "x": 120.5,
+                "y": 736.703,
+                "width": 581.531,
+                "height": 21.594
+              }
+            },
+            {
+              "node": {
+                "tag": "SPAN",
+                "id": "",
+                "class": "sample-cta-label"
+              },
+              "previousRect": {
+                "x": 168.5,
+                "y": 531.625,
+                "width": 487.531,
+                "height": 18.141
+              },
+              "currentRect": {
+                "x": 168.5,
+                "y": 684.563,
+                "width": 487.531,
+                "height": 18.141
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.031,
+          "time": 49516.4,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "SECTION",
+                "id": "explore",
+                "class": "section explore"
+              },
+              "previousRect": {
+                "x": 0,
+                "y": 777.688,
+                "width": 1425,
+                "height": 122.313
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
+            }
+          ]
+        }
+      ],
+      "observedInteractionCount": 5,
+      "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+      "status": "Observing this navigation; record after the intended interactions",
+      "fcpMs": 1812
+    },
+    "document": {
+      "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+      "h1Count": 1,
+      "h1Visible": true,
+      "robots": "noindex, nofollow",
+      "canonical": "https://withweplace.kr/",
+      "fontsStatus": "loaded",
+      "imageCount": 5,
+      "loadedImageCount": 5,
+      "images": [
+        {
+          "src": "/assets/brand/r42/weplace-logo-light.svg",
+          "complete": true,
+          "naturalWidth": 400,
+          "width": 180,
+          "height": 40.5,
+          "loading": "auto"
+        },
+        {
+          "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+          "complete": true,
+          "naturalWidth": 480,
+          "width": 240,
+          "height": 120,
+          "loading": "lazy"
+        },
+        {
+          "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+          "complete": true,
+          "naturalWidth": 599,
+          "width": 557.531,
+          "height": 290,
+          "loading": "lazy"
+        },
+        {
+          "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+          "complete": true,
+          "naturalWidth": 480,
+          "width": 144,
+          "height": 72,
+          "loading": "lazy"
+        },
+        {
+          "src": "/assets/brand/r42/weplace-logo-light.svg",
+          "complete": true,
+          "naturalWidth": 400,
+          "width": 180,
+          "height": 40.5,
+          "loading": "auto"
+        }
+      ],
+      "sections": {
+        "intro": {
+          "visible": true,
+          "width": 1425,
+          "height": 787.453
+        },
+        "changes": {
+          "visible": true,
+          "width": 1425,
+          "height": 1659.844
+        },
+        "discovery": {
+          "visible": true,
+          "width": 1425,
+          "height": 878.094
+        },
+        "cases": {
+          "visible": true,
+          "width": 1425,
+          "height": 1142.938
+        },
+        "flow": {
+          "visible": true,
+          "width": 1425,
+          "height": 1149.359
+        },
+        "process": {
+          "visible": true,
+          "width": 1425,
+          "height": 858.094
+        },
+        "request": {
+          "visible": true,
+          "width": 1425,
+          "height": 1642.422
+        },
+        "explore": {
+          "visible": true,
+          "width": 1425,
+          "height": 560.594
+        }
+      }
+    },
+    "controls": {
+      "store": "after",
+      "flow": "next",
+      "industry": "dining",
+      "formEnabled": true,
+      "activeElement": {
+        "tag": "BODY",
+        "id": "",
+        "role": null
+      }
+    },
+    "vendor": {
+      "gsapPresent": true,
+      "gsapVersion": "3.13.0",
+      "scrollTriggerPresent": true
+    },
+    "limitations": [
+      "CSS iframe viewport, not native device emulation",
+      "No field p75 claim",
+      "No physical mobile or native screen-reader claim",
+      "No native CPU/network throttling by this harness",
+      "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+      "No input values captured; outbound/authenticated navigation blocked by the harness"
+    ]
+  },
+  "records": [
+    {
+      "run": 1,
+      "recordedAt": "2026-11-03T14:46:25.733Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0.269,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.264,
+            "time": 126.7,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "MAIN",
+                  "id": "main",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 207,
+                  "width": 375,
+                  "height": 637
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 67,
+                  "width": 375,
+                  "height": 777
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.005,
+            "time": 195,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 20,
+                  "y": 142,
+                  "width": 335,
+                  "height": 49
+                },
+                "currentRect": {
+                  "x": 20,
+                  "y": 147,
+                  "width": 335,
+                  "height": 49
+                }
+              },
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 20,
+                  "y": 192.703,
+                  "width": 335,
+                  "height": 49
+                },
+                "currentRect": {
+                  "x": 20,
+                  "y": 197.703,
+                  "width": 335,
+                  "height": 49
+                }
+              },
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 20,
+                  "y": 243.406,
+                  "width": 335,
+                  "height": 49
+                },
+                "currentRect": {
+                  "x": 20,
+                  "y": 248.406,
+                  "width": 335,
+                  "height": 49
+                }
+              },
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 43,
+                  "y": 689.422,
+                  "width": 165.031,
+                  "height": 67
+                },
+                "currentRect": {
+                  "x": 43,
+                  "y": 696.422,
+                  "width": 170.75,
+                  "height": 67
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 241.797,
+                  "y": 712.828,
+                  "width": 90.203,
+                  "height": 35.188
+                },
+                "currentRect": {
+                  "x": 247.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 156,
+            "height": 35.094,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 350,
+            "width": 333,
+            "height": 195.047,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 160,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 375,
+            "height": 1119.859
+          },
+          "changes": {
+            "visible": true,
+            "width": 375,
+            "height": 1981.359
+          },
+          "discovery": {
+            "visible": true,
+            "width": 375,
+            "height": 1138.734
+          },
+          "cases": {
+            "visible": true,
+            "width": 375,
+            "height": 1397.984
+          },
+          "flow": {
+            "visible": true,
+            "width": 375,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 375,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 375,
+            "height": 1719.016
+          },
+          "explore": {
+            "visible": true,
+            "width": 375,
+            "height": 888.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 1,
+      "recordedAt": "2026-11-03T14:46:55.899Z",
+      "fixture": "normal",
+      "scene": "changes",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 11588,
+        "cls": 0.269,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.264,
+            "time": 126.7,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "MAIN",
+                  "id": "main",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 207,
+                  "width": 375,
+                  "height": 637
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 67,
+                  "width": 375,
+                  "height": 777
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.005,
+            "time": 195,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 20,
+                  "y": 142,
+                  "width": 335,
+                  "height": 49
+                },
+                "currentRect": {
+                  "x": 20,
+                  "y": 147,
+                  "width": 335,
+                  "height": 49
+                }
+              },
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 20,
+                  "y": 192.703,
+                  "width": 335,
+                  "height": 49
+                },
+                "currentRect": {
+                  "x": 20,
+                  "y": 197.703,
+                  "width": 335,
+                  "height": 49
+                }
+              },
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 20,
+                  "y": 243.406,
+                  "width": 335,
+                  "height": 49
+                },
+                "currentRect": {
+                  "x": 20,
+                  "y": 248.406,
+                  "width": 335,
+                  "height": 49
+                }
+              },
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 43,
+                  "y": 689.422,
+                  "width": 165.031,
+                  "height": 67
+                },
+                "currentRect": {
+                  "x": 43,
+                  "y": 696.422,
+                  "width": 170.75,
+                  "height": 67
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 241.797,
+                  "y": 712.828,
+                  "width": 90.203,
+                  "height": 35.188
+                },
+                "currentRect": {
+                  "x": 247.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 3460
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 156,
+            "height": 35.094,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 350,
+            "width": 333,
+            "height": 195.047,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 160,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 375,
+            "height": 1119.859
+          },
+          "changes": {
+            "visible": true,
+            "width": 375,
+            "height": 1981.359
+          },
+          "discovery": {
+            "visible": true,
+            "width": 375,
+            "height": 1138.734
+          },
+          "cases": {
+            "visible": true,
+            "width": 375,
+            "height": 1397.984
+          },
+          "flow": {
+            "visible": true,
+            "width": 375,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 375,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 375,
+            "height": 1719.016
+          },
+          "explore": {
+            "visible": true,
+            "width": 375,
+            "height": 888.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 2,
+      "recordedAt": "2026-11-03T14:48:38.689Z",
+      "fixture": "normal",
+      "scene": "changes",
+      "viewport": {
+        "requested": 320,
+        "innerWidth": 320,
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "bodyScrollWidth": 305,
+        "innerHeight": 740,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 1056,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 1056
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 138,
+            "height": 31.047,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 279,
+            "width": 271,
+            "height": 158.578,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 160,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 305,
+            "height": 1107.969
+          },
+          "changes": {
+            "visible": true,
+            "width": 305,
+            "height": 2018.953
+          },
+          "discovery": {
+            "visible": true,
+            "width": 305,
+            "height": 1147.969
+          },
+          "cases": {
+            "visible": true,
+            "width": 305,
+            "height": 1349.344
+          },
+          "flow": {
+            "visible": true,
+            "width": 305,
+            "height": 1718.781
+          },
+          "process": {
+            "visible": true,
+            "width": 305,
+            "height": 1344.172
+          },
+          "request": {
+            "visible": true,
+            "width": 305,
+            "height": 1793.594
+          },
+          "explore": {
+            "visible": true,
+            "width": 305,
+            "height": 883.25
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 2,
+      "recordedAt": "2026-11-03T14:49:12.952Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 320,
+        "innerWidth": 320,
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "bodyScrollWidth": 305,
+        "innerHeight": 740,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 1056,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 1056
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 138,
+            "height": 31.047,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 279,
+            "width": 271,
+            "height": 158.578,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 160,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 305,
+            "height": 1107.969
+          },
+          "changes": {
+            "visible": true,
+            "width": 305,
+            "height": 2018.953
+          },
+          "discovery": {
+            "visible": true,
+            "width": 305,
+            "height": 1147.969
+          },
+          "cases": {
+            "visible": true,
+            "width": 305,
+            "height": 1349.344
+          },
+          "flow": {
+            "visible": true,
+            "width": 305,
+            "height": 1718.781
+          },
+          "process": {
+            "visible": true,
+            "width": 305,
+            "height": 1344.172
+          },
+          "request": {
+            "visible": true,
+            "width": 305,
+            "height": 1793.594
+          },
+          "explore": {
+            "visible": true,
+            "width": 305,
+            "height": 883.25
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 3,
+      "recordedAt": "2026-11-03T14:49:44.488Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 360,
+        "innerWidth": 360,
+        "clientWidth": 345,
+        "scrollWidth": 345,
+        "bodyScrollWidth": 345,
+        "innerHeight": 800,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 1276,
+        "cls": 0.261,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.261,
+            "time": 98.9,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "MAIN",
+                  "id": "main",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 207,
+                  "width": 345,
+                  "height": 593
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 67,
+                  "width": 345,
+                  "height": 733
+                }
+              },
+              {
+                "node": {
+                  "tag": "FIGURE",
+                  "id": "",
+                  "class": "chart-wrap"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 43,
+                  "y": 779.078,
+                  "width": 259,
+                  "height": 20.922
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 1276
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 156,
+            "height": 35.094,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 320,
+            "width": 303,
+            "height": 177.406,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 160,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 345,
+            "height": 1115.141
+          },
+          "changes": {
+            "visible": true,
+            "width": 345,
+            "height": 2006.484
+          },
+          "discovery": {
+            "visible": true,
+            "width": 345,
+            "height": 1178.328
+          },
+          "cases": {
+            "visible": true,
+            "width": 345,
+            "height": 1365.672
+          },
+          "flow": {
+            "visible": true,
+            "width": 345,
+            "height": 1702.5
+          },
+          "process": {
+            "visible": true,
+            "width": 345,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 345,
+            "height": 1731.141
+          },
+          "explore": {
+            "visible": true,
+            "width": 345,
+            "height": 888.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 4,
+      "recordedAt": "2026-11-03T14:50:19.008Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 156,
+            "height": 35.094,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 350,
+            "width": 333,
+            "height": 195.047,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 160,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 375,
+            "height": 1119.859
+          },
+          "changes": {
+            "visible": true,
+            "width": 375,
+            "height": 1981.359
+          },
+          "discovery": {
+            "visible": true,
+            "width": 375,
+            "height": 1138.734
+          },
+          "cases": {
+            "visible": true,
+            "width": 375,
+            "height": 1397.984
+          },
+          "flow": {
+            "visible": true,
+            "width": 375,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 375,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 375,
+            "height": 1719.016
+          },
+          "explore": {
+            "visible": true,
+            "width": 375,
+            "height": 888.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 4,
+      "recordedAt": "2026-11-03T14:50:20.026Z",
+      "fixture": "normal",
+      "scene": "changes",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 156,
+            "height": 35.094,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 350,
+            "width": 333,
+            "height": 195.047,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 160,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 375,
+            "height": 1119.859
+          },
+          "changes": {
+            "visible": true,
+            "width": 375,
+            "height": 1981.359
+          },
+          "discovery": {
+            "visible": true,
+            "width": 375,
+            "height": 1138.734
+          },
+          "cases": {
+            "visible": true,
+            "width": 375,
+            "height": 1397.984
+          },
+          "flow": {
+            "visible": true,
+            "width": 375,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 375,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 375,
+            "height": 1719.016
+          },
+          "explore": {
+            "visible": true,
+            "width": 375,
+            "height": 888.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 5,
+      "recordedAt": "2026-11-03T14:50:21.040Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 430,
+        "innerWidth": 430,
+        "clientWidth": 415,
+        "scrollWidth": 415,
+        "bodyScrollWidth": 415,
+        "innerHeight": 932,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 156,
+            "height": 35.094,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 390,
+            "width": 373,
+            "height": 218.578,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 415,
+            "height": 1132.953
+          },
+          "changes": {
+            "visible": true,
+            "width": 415,
+            "height": 2004.891
+          },
+          "discovery": {
+            "visible": true,
+            "width": 415,
+            "height": 1076.172
+          },
+          "cases": {
+            "visible": true,
+            "width": 415,
+            "height": 1441.047
+          },
+          "flow": {
+            "visible": true,
+            "width": 415,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 415,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 415,
+            "height": 1701.875
+          },
+          "explore": {
+            "visible": true,
+            "width": 415,
+            "height": 888.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 5,
+      "recordedAt": "2026-11-03T14:50:22.057Z",
+      "fixture": "normal",
+      "scene": "changes",
+      "viewport": {
+        "requested": 430,
+        "innerWidth": 430,
+        "clientWidth": 415,
+        "scrollWidth": 415,
+        "bodyScrollWidth": 415,
+        "innerHeight": 932,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 156,
+            "height": 35.094,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 390,
+            "width": 373,
+            "height": 218.578,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 415,
+            "height": 1132.953
+          },
+          "changes": {
+            "visible": true,
+            "width": 415,
+            "height": 2004.891
+          },
+          "discovery": {
+            "visible": true,
+            "width": 415,
+            "height": 1076.172
+          },
+          "cases": {
+            "visible": true,
+            "width": 415,
+            "height": 1441.047
+          },
+          "flow": {
+            "visible": true,
+            "width": 415,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 415,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 415,
+            "height": 1701.875
+          },
+          "explore": {
+            "visible": true,
+            "width": 415,
+            "height": 888.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 6,
+      "recordedAt": "2026-11-03T14:50:23.079Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 768,
+        "innerWidth": 768,
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "bodyScrollWidth": 753,
+        "innerHeight": 1024,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 337,
+            "width": 321.484,
+            "height": 218,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 753,
+            "height": 667.156
+          },
+          "changes": {
+            "visible": true,
+            "width": 753,
+            "height": 1392.953
+          },
+          "discovery": {
+            "visible": true,
+            "width": 753,
+            "height": 757.531
+          },
+          "cases": {
+            "visible": true,
+            "width": 753,
+            "height": 1602.25
+          },
+          "flow": {
+            "visible": true,
+            "width": 753,
+            "height": 1149.766
+          },
+          "process": {
+            "visible": true,
+            "width": 753,
+            "height": 759.234
+          },
+          "request": {
+            "visible": true,
+            "width": 753,
+            "height": 1176.719
+          },
+          "explore": {
+            "visible": true,
+            "width": 753,
+            "height": 575.656
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 6,
+      "recordedAt": "2026-11-03T14:50:24.107Z",
+      "fixture": "normal",
+      "scene": "changes",
+      "viewport": {
+        "requested": 768,
+        "innerWidth": 768,
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "bodyScrollWidth": 753,
+        "innerHeight": 1024,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 337,
+            "width": 321.492,
+            "height": 218.753,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 753,
+            "height": 667.156
+          },
+          "changes": {
+            "visible": true,
+            "width": 753,
+            "height": 1392.953
+          },
+          "discovery": {
+            "visible": true,
+            "width": 753,
+            "height": 757.531
+          },
+          "cases": {
+            "visible": true,
+            "width": 753,
+            "height": 1602.25
+          },
+          "flow": {
+            "visible": true,
+            "width": 753,
+            "height": 1149.766
+          },
+          "process": {
+            "visible": true,
+            "width": 753,
+            "height": 759.234
+          },
+          "request": {
+            "visible": true,
+            "width": 753,
+            "height": 1176.719
+          },
+          "explore": {
+            "visible": true,
+            "width": 753,
+            "height": 575.656
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 7,
+      "recordedAt": "2026-11-03T14:50:40.510Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 1280,
+        "innerWidth": 1280,
+        "clientWidth": 1265,
+        "scrollWidth": 1265,
+        "bodyScrollWidth": 1265,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 541.438,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1265,
+            "height": 779.016
+          },
+          "changes": {
+            "visible": true,
+            "width": 1265,
+            "height": 1506.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1265,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1265,
+            "height": 1134.594
+          },
+          "flow": {
+            "visible": true,
+            "width": 1265,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1265,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1265,
+            "height": 1315.906
+          },
+          "explore": {
+            "visible": true,
+            "width": 1265,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 7,
+      "recordedAt": "2026-11-03T14:50:41.522Z",
+      "fixture": "normal",
+      "scene": "changes",
+      "viewport": {
+        "requested": 1280,
+        "innerWidth": 1280,
+        "clientWidth": 1265,
+        "scrollWidth": 1265,
+        "bodyScrollWidth": 1265,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 541.483,
+            "height": 293.155,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1265,
+            "height": 779.016
+          },
+          "changes": {
+            "visible": true,
+            "width": 1265,
+            "height": 1506.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1265,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1265,
+            "height": 1134.594
+          },
+          "flow": {
+            "visible": true,
+            "width": 1265,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1265,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1265,
+            "height": 1315.906
+          },
+          "explore": {
+            "visible": true,
+            "width": 1265,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 8,
+      "recordedAt": "2026-11-03T14:50:42.536Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1506.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 1315.906
+          },
+          "explore": {
+            "visible": true,
+            "width": 1425,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 8,
+      "recordedAt": "2026-11-03T14:50:43.550Z",
+      "fixture": "normal",
+      "scene": "changes",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 557.579,
+            "height": 293.249,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1506.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 1315.906
+          },
+          "explore": {
+            "visible": true,
+            "width": 1425,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 9,
+      "recordedAt": "2026-11-03T14:51:47.717Z",
+      "fixture": "no-js",
+      "scene": "changes",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "unset",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": null,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "NOT RUN: page scripts blocked; no performance observers attached",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 5,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1662.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1163.328
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 1368.688
+          },
+          "explore": {
+            "visible": true,
+            "width": 1425,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": false,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": false,
+        "gsapVersion": null,
+        "scrollTriggerPresent": false
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 10,
+      "recordedAt": "2026-11-03T14:51:59.519Z",
+      "fixture": "no-gsap",
+      "scene": "changes",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 5,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1506.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 1315.906
+          },
+          "explore": {
+            "visible": true,
+            "width": 1425,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": false,
+        "gsapVersion": null,
+        "scrollTriggerPresent": false
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 11,
+      "recordedAt": "2026-11-03T14:52:19.942Z",
+      "fixture": "no-photo",
+      "scene": "changes",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 984,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 984
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/__qa_missing_food_image__.webp",
+            "complete": true,
+            "naturalWidth": 0,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1506.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 1315.906
+          },
+          "explore": {
+            "visible": true,
+            "width": 1425,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 12,
+      "recordedAt": "2026-11-03T14:52:21.979Z",
+      "fixture": "normal",
+      "scene": "changes",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": true,
+      "appliedReviewReduced": "true",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.021,
+            "time": 26707.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "discovery",
+                  "class": "section discovery"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 777.359,
+                  "width": 1425,
+                  "height": 122.641
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 620.359,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 773.297,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 583.766,
+                  "width": 581.531,
+                  "height": 21.594
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 736.703,
+                  "width": 581.531,
+                  "height": 21.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "sample-cta-label"
+                },
+                "previousRect": {
+                  "x": 168.5,
+                  "y": 531.625,
+                  "width": 487.531,
+                  "height": 18.141
+                },
+                "currentRect": {
+                  "x": 168.5,
+                  "y": 684.563,
+                  "width": 487.531,
+                  "height": 18.141
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.031,
+            "time": 49516.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "explore",
+                  "class": "section explore"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 777.688,
+                  "width": 1425,
+                  "height": 122.313
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 5,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1506.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 1315.906
+          },
+          "explore": {
+            "visible": true,
+            "width": 1425,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 12,
+      "recordedAt": "2026-11-03T14:52:48.939Z",
+      "fixture": "normal",
+      "scene": "flow",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": true,
+      "appliedReviewReduced": "true",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 1812,
+        "cls": 0.021,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.021,
+            "time": 26707.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "discovery",
+                  "class": "section discovery"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 777.359,
+                  "width": 1425,
+                  "height": 122.641
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 620.359,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 773.297,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 583.766,
+                  "width": 581.531,
+                  "height": 21.594
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 736.703,
+                  "width": 581.531,
+                  "height": 21.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "sample-cta-label"
+                },
+                "previousRect": {
+                  "x": 168.5,
+                  "y": 531.625,
+                  "width": 487.531,
+                  "height": 18.141
+                },
+                "currentRect": {
+                  "x": 168.5,
+                  "y": 684.563,
+                  "width": 487.531,
+                  "height": 18.141
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.031,
+            "time": 49516.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "explore",
+                  "class": "section explore"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 777.688,
+                  "width": 1425,
+                  "height": 122.313
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 1812
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 5,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1659.844
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 1315.906
+          },
+          "explore": {
+            "visible": true,
+            "width": 1425,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "next",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 12,
+      "recordedAt": "2026-11-03T14:53:10.720Z",
+      "fixture": "normal",
+      "scene": "request",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": true,
+      "appliedReviewReduced": "true",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 1812,
+        "cls": 0.031,
+        "longestObservedInteractionMs": 4088,
+        "layoutShiftEntries": [
+          {
+            "value": 0.021,
+            "time": 26707.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "discovery",
+                  "class": "section discovery"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 777.359,
+                  "width": 1425,
+                  "height": 122.641
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 620.359,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 773.297,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 583.766,
+                  "width": 581.531,
+                  "height": 21.594
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 736.703,
+                  "width": 581.531,
+                  "height": 21.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "sample-cta-label"
+                },
+                "previousRect": {
+                  "x": 168.5,
+                  "y": 531.625,
+                  "width": 487.531,
+                  "height": 18.141
+                },
+                "currentRect": {
+                  "x": 168.5,
+                  "y": 684.563,
+                  "width": 487.531,
+                  "height": 18.141
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.031,
+            "time": 49516.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "explore",
+                  "class": "section explore"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 777.688,
+                  "width": 1425,
+                  "height": 122.313
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 5,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 1812
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 5,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1659.844
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 1642.422
+          },
+          "explore": {
+            "visible": true,
+            "width": 1425,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "next",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 12,
+      "recordedAt": "2026-11-03T14:53:11.734Z",
+      "fixture": "normal",
+      "scene": "explore",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": true,
+      "appliedReviewReduced": "true",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 1812,
+        "cls": 0.031,
+        "longestObservedInteractionMs": 4088,
+        "layoutShiftEntries": [
+          {
+            "value": 0.021,
+            "time": 26707.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "discovery",
+                  "class": "section discovery"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 777.359,
+                  "width": 1425,
+                  "height": 122.641
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 620.359,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 773.297,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 583.766,
+                  "width": 581.531,
+                  "height": 21.594
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 736.703,
+                  "width": 581.531,
+                  "height": 21.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "sample-cta-label"
+                },
+                "previousRect": {
+                  "x": 168.5,
+                  "y": 531.625,
+                  "width": 487.531,
+                  "height": 18.141
+                },
+                "currentRect": {
+                  "x": 168.5,
+                  "y": 684.563,
+                  "width": 487.531,
+                  "height": 18.141
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.031,
+            "time": 49516.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "explore",
+                  "class": "section explore"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 777.688,
+                  "width": 1425,
+                  "height": 122.313
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 5,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 1812
+      },
+      "document": {
+        "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 5,
+        "loadedImageCount": 5,
+        "images": [
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          },
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r42/luwei-peking-duck-1254.webp",
+            "complete": true,
+            "naturalWidth": 599,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/r42/weplace-logo-light.svg",
+            "complete": true,
+            "naturalWidth": 400,
+            "width": 180,
+            "height": 40.5,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1659.844
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 1642.422
+          },
+          "explore": {
+            "visible": true,
+            "width": 1425,
+            "height": 560.594
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "next",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    }
+  ]
+}

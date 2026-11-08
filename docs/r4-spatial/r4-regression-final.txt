@@ -1,0 +1,17 @@
+✔ R4 preserves complete protected legal, routing, build, BI and original-media bytes (1.711277ms)
+✔ the observed charts keep a zero baseline and linear scales matching the disclosed source values (108.221626ms)
+✔ without any JavaScript, every Store C answer and the full FLOW role explanation exists as accessible HTML (39.753369ms)
+✔ missing GSAP leaves functional questions, tabs, source evidence and manual request preparation intact (64.249302ms)
+✔ question keyboard selection exposes one complete answer and resets an open explanation on Before/After change (52.986584ms)
+✔ real GSAP owns the signature layers without any overlapping legacy WAAPI animation (95.374287ms)
+✔ 100 rapid switches reuse timelines and listeners while content, selected controls and focus stay current (489.027394ms)
+✔ native reduced motion creates no R4 timeline and preserves all control behavior (43.47294ms)
+✔ media changes and bfcache lifecycle clean up GSAP without resetting the selected user state (203.8591ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1377.890425
