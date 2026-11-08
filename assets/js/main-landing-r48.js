@@ -213,12 +213,12 @@
     });
     labFeedback.querySelectorAll('button[data-perception]').forEach(b=>b.addEventListener('click',()=>{
       const kind=b.dataset.perception;
-      if((kind!=='ready' && kind!=='slow') || lastShownDuration===null) return;
-      const entry=observations[lastShownDuration]??{ready:0,slow:0};
+      if(!['fast','ready','slow'].includes(kind) || lastShownDuration===null) return;
+      const entry=observations[lastShownDuration]??{fast:0,ready:0,slow:0};
       entry[kind]++;
       observations[lastShownDuration]=entry;
       labFeedback.hidden=true;
-      setLabResult(lastShownDuration+'ms 실험의 이번 브라우저 기록: 기대 유지 '+entry.ready+' / 느림 '+entry.slow+' · 사용자 연구 결과가 아닙니다.');
+      setLabResult(lastShownDuration+'ms 실험의 이번 브라우저 기록: 너무 빠름 '+entry.fast+' / 기대 유지 '+entry.ready+' / 느림 '+entry.slow+' · 사용자 연구 결과가 아닙니다.');
     }));
   }
   updateButton();
