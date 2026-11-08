@@ -1,5 +1,7 @@
 # WEPLACE R4.4 — Emotional Hero × Cinematic Execution
 
+[Netlify Preview](https://deploy-preview-20--weplace.netlify.app/) · [Draft PR #20](https://github.com/HotCharliepepper/Weplace/pull/20)
+
 2026-11-08 검토본. 기존 페이지의 구조를 유지하고 히어로의 메시지·실사 사진·모션을 수정했습니다. 운영 main 병합, 운영 배포, 실결제, 실DB·인증 변경, 고객 메시지 발송은 하지 않았습니다.
 
 ## 1. 기준 원본과 보존
