@@ -45,10 +45,11 @@
 <link rel="stylesheet" href="/assets/css/r44-font-supplement.css">
 <link rel="stylesheet" href="/assets/css/main-landing-r45.css">
 <link rel="stylesheet" href="/assets/css/main-landing-r46.css">
+<link rel="stylesheet" href="/assets/css/main-landing-r47.css">
 <link rel="stylesheet" href="/assets/css/r45-font-supplement.css">
 <link rel="preload" href="/assets/home-r2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body class="home-r2 home-r4 home-r42 home-r43 home-r44 home-r45 home-r46">
+<body class="home-r2 home-r4 home-r42 home-r43 home-r44 home-r45 home-r46 home-r47">
 <a class="skip" href="#main">본문으로 바로가기</a>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -72,6 +73,11 @@
       </div>
       <div class="emotional-hero clear-path" id="cinema" data-scene="2" data-motion="static" data-playing="false">
         <div class="hero-stage path-stage" aria-describedby="hero-visual-note">
+          <svg class="r47-momentum-route" viewBox="0 0 600 480" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path class="r47-trajectory-shadow" d="M28 437 C110 440 140 424 206 394 S302 359 352 293 S460 219 499 133 S540 64 552 43" pathLength="1000"></path>
+            <path class="r47-trajectory" d="M28 437 C110 440 140 424 206 394 S302 359 352 293 S460 219 499 133 S540 64 552 43" pathLength="1000"></path>
+            <polygon class="r47-arrow-tip" points="552,43 523,52 536,67"></polygon>
+          </svg>
           <div class="hero-depth path-depth" data-motion-owner="r45-hero">
             <figure class="path-photo">
               <img id="hero-photo" src="/assets/home-r42/luwei-peking-duck-640.webp" srcset="/assets/home-r42/luwei-peking-duck-640.webp 640w, /assets/home-r42/luwei-peking-duck-1254.webp 1254w" sizes="(max-width: 639px) calc(90vw - 36px), (max-width: 1000px) 80vw, 560px" width="640" height="640" fetchpriority="high" decoding="async" alt="노릇한 베이징덕을 써는 장면. 루위의 기존 제공 사진.">
@@ -92,7 +98,7 @@
         <div class="hero-scene-foot"><p id="scene-caption">선택까지 이어지는 길.</p><span id="scene-count" aria-hidden="true">T8 / 8s</span></div>
         <div class="hero-scene-controls" hidden><div class="hero-scene-tabs" role="tablist" aria-label="히어로 장면"><button id="scene-tab-0" role="tab" type="button" aria-controls="scene-panel" aria-selected="false" tabindex="-1" data-scene-tab="0">T0 사진</button><button id="scene-tab-1" role="tab" type="button" aria-controls="scene-panel" aria-selected="false" tabindex="-1" data-scene-tab="1">T3 시선</button><button id="scene-tab-2" role="tab" type="button" aria-controls="scene-panel" aria-selected="true" data-scene-tab="2">T8 경로</button></div><button type="button" id="scene-play" aria-pressed="false" hidden>8초 재생 ▷</button></div>
         <div id="scene-panel" class="hero-scene-description" role="tabpanel" aria-labelledby="scene-tab-2" tabindex="0">사진을 보고 → 궁금증을 풀고 → 예약 방법을 확인합니다.</div>
-        <p class="hero-visual-note" id="hero-visual-note">사진: 루위 기존 제공 자료 · 선택 경로를 설명하는 연출입니다.</p>
+        <p class="hero-visual-note" id="hero-visual-note">사진: 루위 기존 제공 자료 · 금색 상승선은 선택 경로를 표현한 상징이며 매출이나 성과 추이가 아닙니다.</p>
         <noscript><p class="micro">완성된 정지 장면입니다. 아래 링크와 사진 비교 설명을 이용할 수 있습니다.</p></noscript>
       </div>
     </div>
@@ -125,14 +131,19 @@
       <div class="section-head"><div><p class="eyebrow">01 / 바꾸는 일을 먼저 보여드립니다</p><h2 id="changes-title">사진을 바꾸고<br>손님이 볼 순서를 정리합니다.</h2><p class="recognition-note">손님이 묻지 않는다고<br>궁금한 게 없는 건 아닙니다.</p></div><div class="wp-ribbon-aside"><img class="wp-ribbon wp-ribbon--fold" src="/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg" width="480" height="240" alt="" aria-hidden="true" loading="lazy" decoding="async"><p class="section-lead">무슨 사진을 먼저 볼지,<br>어떤 정보 다음에 예약할지.<br>작은 화면부터 구체적으로 바꿉니다.</p></div></div>
       <div class="change-grid" data-reveal="card" data-motion-owner="gsap" data-design-node="3:40">
         <div class="change-preview">
-          <div class="preview-top"><span>루위 · 사진 선택 비교</span><div class="segmented" role="tablist" aria-label="첫 사진의 선택 비교"><button type="button" role="tab" id="change-before" aria-controls="change-panel" aria-selected="false" tabindex="-1" data-change="before">외관 먼저</button><button type="button" role="tab" id="change-after" aria-controls="change-panel" aria-selected="true" data-change="after">메뉴 먼저</button></div></div>
-          <div id="change-panel" class="sample-page after" role="tabpanel" aria-labelledby="change-after" tabindex="0" data-store-state="after">
-            <div class="sample-photo store-layer" data-store-layer="photo"><img id="sample-photo-image" src="/assets/home-r42/luwei-peking-duck-1254.webp" srcset="/assets/home-r42/luwei-peking-duck-640.webp 640w, /assets/home-r42/luwei-peking-duck-1254.webp 1254w" sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) 44vw, 600px" width="1254" height="1254" loading="lazy" decoding="async" alt="노릇하게 구운 베이징덕을 써는 장면과 전병, 채소, 소스. 루위 사례의 기존 제공 사진."><span class="photo-number">01 / 먹고 싶은 메뉴부터</span></div>
+          <div class="preview-top"><span>루위 · 사진 선택 비교</span><div class="segmented" role="tablist" aria-label="첫 사진의 선택 비교"><button type="button" role="tab" id="change-before" aria-controls="change-panel" aria-selected="true" data-change="before">외관 먼저</button><button type="button" role="tab" id="change-after" aria-controls="change-panel" aria-selected="false" tabindex="-1" data-change="after">메뉴 먼저</button></div></div>
+          <div id="change-panel" class="sample-page before" role="tabpanel" aria-labelledby="change-before" tabindex="0" data-store-state="before">
+            <div class="sample-photo store-layer" data-store-layer="photo">
+              <img id="sample-photo-image" src="/assets/home-r42/luwei-before-capture.webp" width="908" height="689" loading="lazy" decoding="async" alt="차량이 나란히 서 있는 루위 외관. 기존 제공 화면의 외관 사진 부분을 보여줍니다.">
+              <span class="photo-number">01 / 외관이 먼저 보이면</span>
+              <button id="r47-photo-switch" class="r47-photo-switch" type="button" hidden aria-label="메뉴 먼저 보기로 사진 비교 전환">메뉴 먼저 보기 <span aria-hidden="true">↗</span></button>
+              <div class="r47-picture-curtain" id="r47-picture-curtain" aria-hidden="true" hidden><span>THE FIRST LOOK</span><strong>손님이 처음 보는<br>장면을 바꿉니다.</strong><i aria-hidden="true"></i></div>
+            </div>
             <div class="sample-page-copy store-layer" data-store-layer="info">
               <span class="layer-index" aria-hidden="true">02</span>
-              <span class="sample-kicker" id="sample-kicker">대표 메뉴 · 북경오리</span>
-              <h3 id="sample-title">먹고 싶은 메뉴에서,<br>예약할 자리까지.</h3>
-              <div id="sample-facts" class="sample-facts"><span>메뉴 · 구성</span><span>자리 · 인원</span><span>예약 안내</span></div>
+              <span class="sample-kicker" id="sample-kicker">외관과 분위기</span>
+              <h3 id="sample-title">어떤 식사를<br>기대하시나요?</h3>
+              <div id="sample-facts" class="sample-facts"><span>매장 외관</span><span>차량 사진</span><span>분위기</span></div>
               <p class="store-gap-note">어떤 음식을 먹을 수 있을지,<br>누구와 어떤 자리에 앉을지.<br>다음 사진과 안내를 더 살펴봐야 합니다.</p>
               <div class="store-questions">
                 <p class="store-question-label">손님이라면, 무엇을 먼저 확인할까요?</p>
@@ -149,10 +160,10 @@
             <div class="store-booking-plane store-layer" data-store-layer="booking">
               <p class="booking-eyebrow">03 / 다음 행동</p>
               <details class="store-booking-explainer">
-                <summary class="sample-cta" id="sample-cta">예약 방법 확인하기 <b aria-hidden="true">↗</b></summary>
+                <summary class="sample-cta" id="sample-cta">더 알아보기 <b aria-hidden="true">↗</b></summary>
                 <div class="booking-instructions"><p>예약 안내가 이어지는 구성 예시입니다.</p><ol><li>메뉴·인원·방문 조건 확인</li><li>예약·문의 채널 선택</li><li>매장 안내에 따라 예약 확정</li></ol><p>실제 루위의 예약 조건을 안내하는 화면은 아닙니다. 이 예시에서는 예약을 확정하지 않습니다.</p></div>
               </details>
-              <span class="sample-cta-label">예약 안내 구성 예시 · 실제 예약 불가</span>
+              <span class="sample-cta-label">예약 안내 구성 예시 · 실제 예약 불가</span><span class="r47-switch-status" id="r47-switch-status" role="status" aria-live="polite"></span>
             </div>
           </div>
           <div class="r46-path-insight" aria-label="사진 선택에 따라 달라지는 손님의 확인 순서">
@@ -306,6 +317,7 @@
 <script src="/assets/js/spatial-demo.js" defer></script>
 <script src="/assets/js/main-landing-r4.js" defer></script>
 <script src="/assets/js/main-landing-r45.js" defer></script>
+<script src="/assets/js/main-landing-r47.js" defer></script>
 <script src="/assets/js/share-r43.js" defer></script>
 <script src="/assets/js/site-metrics.js" defer></script>
 </body>
