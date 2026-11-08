@@ -7,7 +7,7 @@
  const paths=[...hero.querySelectorAll('.sight-main')],scattered=hero.querySelector('.sight-scattered'),light=hero.querySelector('.path-light'),mark=hero.querySelector('.path-mark'),labels=[...hero.querySelectorAll('.path-labels li')];
  const reduced=matchMedia('(prefers-reduced-motion: reduce)'),compact=matchMedia('(max-width: 1000px)'),connection=navigator.connection;
  const gs=window.gsap,hasMotion=!!(gs&&gs.timeline&&gs.set);let sequence=null,playing=false,imageFailed=false;
- const scenes=[{title:'흩어진 시선에서,',text:'사진은 처음부터 보입니다. 여러 방향으로 향한 시선을, 먼저 볼 장면으로 모읍니다.'},{title:'하나의 순서를 따라,',text:'사진에서 궁금한 정보로. 손님이 다음에 확인할 질문을 가까이 놓습니다.'},{title:'선택까지 이어지는 길.',text:'사진을 보고 → 궁금증을 풀고 → 예약 방법을 확인합니다.'}];
+ const scenes=[{title:'흩어진 질문에서,',text:'무엇을 확인할지 몰라 망설이는 순간. 먼저 질문이 어디에 있는지 읽습니다.'},{title:'하나의 기준을 따라,',text:'고객이 이해할 수 있도록 사진과 정보를 순서대로 정리합니다.'},{title:'선택까지 이어지는 길.',text:'질문을 발견하고 → 정보를 정리하고 → 예약 방법을 확인합니다.'}];
  function constrained(){return !!(connection&&(connection.saveData||['slow-2g','2g','3g'].includes(connection.effectiveType)));}
  function canMove(){return hasMotion&&!reduced.matches&&!compact.matches&&!constrained()&&!imageFailed;}
  function controls(){hero.dataset.playing=String(playing);play.setAttribute('aria-pressed',String(playing));play.textContent=playing?'장면 멈춤 Ⅱ':'8초 재생 ▷';play.hidden=!canMove();}
