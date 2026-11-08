@@ -48,10 +48,11 @@
 <link rel="stylesheet" href="/assets/css/main-landing-r47.css">
 <link rel="stylesheet" href="/assets/css/main-landing-r48.css">
 <link rel="stylesheet" href="/assets/css/main-landing-r49.css">
+<link rel="stylesheet" href="/assets/css/main-landing-r411.css">
 <link rel="stylesheet" href="/assets/css/r45-font-supplement.css">
 <link rel="preload" href="/assets/home-r2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body class="home-r2 home-r4 home-r42 home-r43 home-r44 home-r45 home-r46 home-r47 home-r48 home-r49">
+<body class="home-r2 home-r4 home-r42 home-r43 home-r44 home-r45 home-r46 home-r47 home-r48 home-r49 home-r411">
 <a class="skip" href="#main">본문으로 바로가기</a>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -229,6 +230,72 @@
     </div>
   </section>
 
+
+  <section class="section r411-decision" id="decision-path" aria-labelledby="decision-path-title">
+    <div class="wrap">
+      <div class="r411-section-head">
+        <div>
+          <p class="eyebrow">WEPLACE / 손님의 방문 과정</p>
+          <h2 id="decision-path-title">사진을 본 다음,<br>무엇을 확인할까요?</h2>
+        </div>
+        <p>관심을 만드는 사진과 방문을 결정하는 정보는 다릅니다.<br>손님이 다시 찾아보거나 물어볼 내용을 네 장면으로 살펴봅니다.</p>
+      </div>
+      <div class="r411-stage" id="r411-stage" data-current-step="0">
+        <div class="r411-step-tabs" role="tablist" aria-label="고객이 방문을 결정하는 네 장면" hidden>
+          <button type="button" role="tab" id="r411-tab-0" aria-controls="r411-panel-0" aria-selected="true" tabindex="0" data-r411-tab="0"><span>01</span>발견</button>
+          <button type="button" role="tab" id="r411-tab-1" aria-controls="r411-panel-1" aria-selected="false" tabindex="-1" data-r411-tab="1"><span>02</span>비교</button>
+          <button type="button" role="tab" id="r411-tab-2" aria-controls="r411-panel-2" aria-selected="false" tabindex="-1" data-r411-tab="2"><span>03</span>판단</button>
+          <button type="button" role="tab" id="r411-tab-3" aria-controls="r411-panel-3" aria-selected="false" tabindex="-1" data-r411-tab="3"><span>04</span>방문</button>
+        </div>
+        <div class="r411-step-panels">
+          <article class="r411-step-panel" role="tabpanel" id="r411-panel-0" aria-labelledby="r411-tab-0" tabindex="0">
+            <div class="r411-step-question"><span class="r411-phase">01 / 발견</span><h3>“어떤 곳인지 먼저 보고 싶어요.”</h3><p>매장에 들어가기 전에 음식이나 공간의 실제 모습을 살펴봅니다.</p></div>
+            <div class="r411-step-answer"><span>확인할 정보</span><strong>대표 음식 · 공간 · 첫 사진</strong><p>사진이 실제 매장과 일치하고, 어떤 방문에 어울리는지 보이는지 확인합니다.</p><a href="#changes">실제 사진 순서 비교하기 ↗</a></div>
+          </article>
+          <article class="r411-step-panel" role="tabpanel" id="r411-panel-1" aria-labelledby="r411-tab-1" tabindex="0">
+            <div class="r411-step-question"><span class="r411-phase">02 / 비교</span><h3>“우리 일행과 예산에 맞을까요?”</h3><p>사진을 본 다음 메뉴와 공간, 이용 조건을 서로 비교합니다.</p></div>
+            <div class="r411-step-answer"><span>확인할 정보</span><strong>현재 메뉴 · 이용 인원 · 주차</strong><p>확인된 조건을 한곳에 모으고, 미확인 가격·좌석 정보는 임의로 채우지 않습니다.</p><a href="#discovery">검색에서 확인할 정보 보기 ↗</a></div>
+          </article>
+          <article class="r411-step-panel" role="tabpanel" id="r411-panel-2" aria-labelledby="r411-tab-2" tabindex="0">
+            <div class="r411-step-question"><span class="r411-phase">03 / 판단</span><h3>“예약하기 전에 뭘 더 알아야 하죠?”</h3><p>이용 시간, 예약 방법, 변경·취소 기준을 다시 확인합니다.</p></div>
+            <div class="r411-step-answer"><span>확인할 정보</span><strong>운영 조건 · FAQ · 공식 문의 경로</strong><p>현장 담당자에게 확인한 답을 안내 화면에 넣고, 가능한 문의 방법으로 연결합니다.</p><a href="#request">우리 매장 첫 화면 점검하기 ↗</a></div>
+          </article>
+          <article class="r411-step-panel" role="tabpanel" id="r411-panel-3" aria-labelledby="r411-tab-3" tabindex="0">
+            <div class="r411-step-question"><span class="r411-phase">04 / 방문</span><h3>“찾아갔을 때도 안내가 같을까요?”</h3><p>온라인에서 본 내용과 현장의 실제 안내가 맞는지 확인합니다.</p></div>
+            <div class="r411-step-answer"><span>확인할 정보</span><strong>최신 주소 · 현장 안내 · 변경 기록</strong><p>정보의 담당자와 확인일을 남기고 수정 내용을 다시 점검합니다.</p><a href="#flow">진행과 검수 기록 보기 ↗</a></div>
+          </article>
+        </div>
+      </div>
+      <div class="r411-two-rails">
+        <div class="r411-channel-rail">
+          <p class="r411-rail-label">같은 사실을, 같은 기준으로</p>
+          <h3>홈페이지를 기준으로<br>여러 안내를 맞춥니다.</h3>
+          <div class="r411-channels" aria-label="채널별 역할 예시">
+            <div><b>홈페이지</b><span>메뉴·공간·FAQ의 기준</span></div>
+            <div><b>네이버</b><span>지도·사진·예약 정보</span></div>
+            <div><b>Google</b><span>매장 정보·웹사이트 연결</span></div>
+            <div><b>현장</b><span>최종 이용 조건·응대</span></div>
+          </div>
+          <p class="r411-rail-note">상호·주소·메뉴·주차·예약은 담당자, 확인일, 반영 채널을 함께 점검합니다. 특정 매장의 채널 정비가 완료됐다는 뜻은 아닙니다.</p>
+        </div>
+        <div class="r411-proof-rail">
+          <p class="r411-rail-label">작업 후 확인할 기록</p>
+          <h3>조회수와 실제 방문을<br>같은 숫자로 보지 않습니다.</h3>
+          <ol class="r411-proof-steps">
+            <li><span>01</span><b>유효 문의</b><small>중복을 제외하고 답변 시점까지</small></li>
+            <li><span>02</span><b>예약 확정</b><small>확정·취소·미확정 사유를 구분</small></li>
+            <li><span>03</span><b>실제 방문</b><small>현장 이용 여부를 확인할 수 있는 경우에만</small></li>
+          </ol>
+          <p class="r411-rail-note">기준값이 없는 항목은 성과로 표시하지 않습니다. 기간·집계 방법·외부 요인을 함께 확인한 뒤 비교합니다.</p>
+        </div>
+      </div>
+      <div class="r411-section-foot">
+        <p>방문 과정과 질문은 이해를 돕는 구성 예시입니다. 실제 고객 조사나 성과 측정 결과가 아닙니다.</p>
+        <a class="text-link" href="#request">우리 매장은 어디서 다시 묻게 될까요? ↗</a>
+      </div>
+    </div>
+  </section>
+
   <section class="section discovery" id="discovery" aria-labelledby="discovery-title"><span class="legacy-anchor" id="journey" aria-hidden="true"></span><span class="legacy-anchor" id="working-industries" aria-hidden="true"></span>
     <div class="wrap">
       <div class="section-head"><div><p class="eyebrow">02 / 검색에서 예약까지</p><h2 id="discovery-title">AI에게 물어도,<br>우리 매장을 이해할 수 있도록.</h2></div><p class="section-lead">네이버와 구글, ChatGPT와 Copilot.<br>어디서 찾아도 확인할 수 있게<br>매장의 사진과 정보를 정리합니다.</p></div>
@@ -334,6 +401,7 @@
 <script src="/assets/js/main-landing-r45.js" defer></script>
 <script src="/assets/js/main-landing-r48.js" defer></script>
 <script src="/assets/js/main-landing-r410.js" defer></script>
+<script src="/assets/js/main-landing-r411.js" defer></script>
 <script src="/assets/js/share-r43.js" defer></script>
 <script src="/assets/js/site-metrics.js" defer></script>
 </body>
