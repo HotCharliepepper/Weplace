@@ -37,7 +37,7 @@ In preview or localhost only, a `WAIT LAB` appears above the original LuWei comp
 - **680ms** — recommended exploratory desktop default
 - **900ms** — deliberate longer candidate
 
-Switch back to `외관 먼저`, then trigger `메뉴 먼저 보기`. Mark `기대 유지` or `조금 느림` after the experience. These two feedback buttons produce **ephemeral in-browser counts only**, not participant data collection, not analytics, and not scientifically validated questionnaire scores.
+Switch back to `외관 먼저`, then trigger `메뉴 먼저 보기`. After the actual reveal, choose **`너무 빠름` / `기대 유지` / `조금 느림`**. This checks both insufficient anticipation and excessive delay. These two feedback buttons produce **ephemeral in-browser counts only**, not participant data collection, not analytics, and not scientifically validated questionnaire scores.
 
 An ordinary visitor at `withweplace.kr` cannot open the lab merely by adding a query string. No new public route or customer data infrastructure is created.
 
