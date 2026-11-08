@@ -34,6 +34,9 @@ function localFile(url) {
 test('R4.2 keyboard switching replaces the photograph, alt and responsive candidates together', () => {
   const c = setup();
   try {
+    // R4.7 intentionally starts on the real exterior crop; explicitly enter
+    // the menu state to retain the historical After → Before → After contract.
+    c.d.getElementById('change-after').click();
     const photo = c.d.getElementById('sample-photo-image');
     const original = { src: photo.getAttribute('src'), srcset: photo.getAttribute('srcset'), alt: photo.alt, width: photo.width, height: photo.height };
     assert.match(original.alt, /베이징덕/);
