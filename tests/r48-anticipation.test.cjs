@@ -86,12 +86,12 @@ test('An actual late image shows an honest fallback after the max editorial hold
     assert.equal(c.d.getElementById('change-panel').dataset.storeState,'before');
   }finally{c.close();}
 });
-test('Wait lab only appears on explicit preview URLs and never transmits a rating',()=>{
+test('Wait lab only appears on explicit preview URLs and never transmits a rating',async()=>{
   for(const [url,expected] of [
     ['https://withweplace.kr/?waitlab=1',false],
     ['https://deploy-preview-23--weplace.netlify.app/?waitlab=1',true],
     ['http://127.0.0.1:4175/?waitlab=1',true]]) {
-    const c=setup({url,reduced:true});
+    const c=setup({url,reduced:false});
     try{
       const lab=c.d.getElementById('r48-wait-lab');
       assert.equal(lab.hidden,!expected);
@@ -100,8 +100,17 @@ test('Wait lab only appears on explicit preview URLs and never transmits a ratin
         preset.value='lingering';
         preset.dispatchEvent(new c.w.Event('change',{bubbles:true}));
         assert.match(c.d.getElementById('r48-lab-result').textContent,/900ms/);
-        c.d.querySelector('[data-perception="ready"]').click();
-        assert.match(c.d.getElementById('r48-lab-result').textContent,/기대 유지 1/);
+        assert.equal(c.d.getElementById('r48-lab-feedback').hidden,true);
+        if(url.includes('deploy-preview-')) {
+          preset.value='brief';
+          preset.dispatchEvent(new c.w.Event('change',{bubbles:true}));
+          c.d.getElementById('r47-photo-switch').click();
+          await pause(750);
+          assert.equal(c.d.getElementById('r48-lab-feedback').hidden,false);
+          c.d.querySelector('[data-perception="ready"]').click();
+          assert.match(c.d.getElementById('r48-lab-result').textContent,/450ms.*기대 유지 1/);
+          assert.equal(c.d.getElementById('r48-lab-feedback').hidden,true);
+        }
       }
       assert.deepEqual(c.calls.network,[]);
       assert.deepEqual(c.calls.storage,[]);
