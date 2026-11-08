@@ -1,0 +1,385 @@
+{
+  "fileKey": "paULgpd0M3t3s4q1SG361a",
+  "fileUrl": "https://www.figma.com/design/paULgpd0M3t3s4q1SG361a",
+  "sessionId": "1cb42815-25d3-442d-aa6d-e35072769c88",
+  "date": "2026-11-03",
+  "pages": {
+    "00_AS_IS": "0:1",
+    "01_TOKENS_DEPTH": "2:2",
+    "02_DESKTOP_1440": "2:3",
+    "03_MOBILE_390": "2:4",
+    "04_MOTION_STORYBOARDS": "2:5",
+    "05_QA_STATES": "2:6"
+  },
+  "frames": {
+    "asIs": "9:2",
+    "tokens": "2:41",
+    "desktop": "3:2",
+    "mobile": "4:2",
+    "storyboard": "10:2",
+    "mobileAndReduced": "10:209",
+    "qa": "11:21"
+  },
+  "coreNodes": {
+    "desktop": {
+      "hero": "3:7",
+      "store": "3:40",
+      "flow": "3:67"
+    },
+    "mobile": {
+      "hero": "4:7",
+      "store": "4:40",
+      "flow": "4:67"
+    }
+  },
+  "components": {
+    "Button / State": "11:13",
+    "Tab / State": "11:20",
+    "Proof Card": "8:27",
+    "Browser Mock": "8:40",
+    "Flow Step": "8:45",
+    "Insight Card": "2:76"
+  },
+  "source": {
+    "R2": "06647cb859fa97c3f96f1c3995388262776d8dc6",
+    "R3": "40ae3c903111334ebc1a4b78da9faceaa298c6c8",
+    "FigJam": "QnhjcEPZctjddj7L4wWwGm",
+    "repo": "HotCharliepepper/Weplace",
+    "image": "assets/home-r2/example-space.webp",
+    "motifs": [
+      "assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+      "assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg"
+    ],
+    "chartSourceOfTruth": "Original inline SVG in index.html. Preserve original values, geometry, labels and zero baseline in browser; Figma is a native representation, not a replacement asset."
+  },
+  "font": {
+    "web": "Pretendard",
+    "figma": "Noto Sans KR",
+    "status": "NEED VERIFY — Pretendard not installed in Figma MCP environment; loadFontAsync failed. No pixel-perfect font parity claim.",
+    "chartLabels": "Normalized imported SVG labels from default Inter to Noto Sans KR."
+  },
+  "tokens": {
+    "paper": "#F5F0E9",
+    "white": "#FFFDFA",
+    "ink": "#25312C",
+    "muted": "#62605B",
+    "trust": "#285247",
+    "signal": "#AE6045",
+    "signal-text": "#984A34",
+    "proof": "#BB9465",
+    "line": "#D8CFC3",
+    "soft": "#EAE5DC"
+  },
+  "coverage": {
+    "editableNativePages": 6,
+    "desktopWidth": 1440,
+    "mobileWidth": 390,
+    "motionKeyframes": 9,
+    "mobileFallbackScenes": 3,
+    "buttonStates": 5,
+    "tabStates": 3,
+    "privateDataWrites": 0,
+    "productionDeploys": 0,
+    "mainMerges": 0
+  },
+  "limitations": [
+    "Figma desktop/mobile frames are editable design references. Exact existing website content and browser behavior remain source of truth; not a pixel-identical code capture.",
+    "Pretendard absent in Figma environment. Noto Sans KR substitute documented in token sheet and AS-IS.",
+    "AS-IS is a native reconstructed reference with provenance, not an automated browser capture.",
+    "Motion frames show A/B/C intent; GSAP duration, performance and interactions require browser QA.",
+    "Source photo licensing/case use approval remains a production release gate.",
+    "INSIGHT card is component/future scope only; no live CMS or new page routes implemented by this Figma task."
+  ],
+  "audits": [
+    {
+      "name": "desktop",
+      "root": "3:2",
+      "width": 1440,
+      "height": 7177.0771484375,
+      "descendantCount": 236,
+      "nodeTypes": {
+        "FRAME": 47,
+        "TEXT": 148,
+        "INSTANCE": 1,
+        "RECTANGLE": 13,
+        "VECTOR": 22,
+        "GROUP": 5
+      },
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "fontParity": "NEED VERIFY / Noto Sans KR substitute, web Pretendard remains source of truth",
+      "images": [
+        {
+          "id": "3:47",
+          "name": "Image plane / existing R2 example-space.webp",
+          "type": "RECTANGLE",
+          "width": 580,
+          "height": 300,
+          "imageHashes": [
+            "f47de0d7417ac881a6f1cce522bf6065547ba9e8"
+          ]
+        }
+      ],
+      "nativeEditability": "Text, frames, chart geometry, original SVG vectors and instances; image fills are only discrete source photograph",
+      "visibleHorizontalOverflow": []
+    },
+    {
+      "name": "mobile",
+      "root": "4:2",
+      "width": 390,
+      "height": 9768.873046875,
+      "descendantCount": 234,
+      "nodeTypes": {
+        "FRAME": 47,
+        "TEXT": 148,
+        "INSTANCE": 1,
+        "RECTANGLE": 11,
+        "VECTOR": 22,
+        "GROUP": 5
+      },
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "fontParity": "NEED VERIFY / Noto Sans KR substitute, web Pretendard remains source of truth",
+      "images": [
+        {
+          "id": "4:47",
+          "name": "Image plane / existing R2 example-space.webp",
+          "type": "RECTANGLE",
+          "width": 350,
+          "height": 206,
+          "imageHashes": [
+            "f47de0d7417ac881a6f1cce522bf6065547ba9e8"
+          ]
+        }
+      ],
+      "nativeEditability": "Text, frames, chart geometry, original SVG vectors and instances; image fills are only discrete source photograph",
+      "visibleHorizontalOverflow": []
+    },
+    {
+      "name": "storyboard",
+      "root": "10:2",
+      "width": 2020,
+      "height": 3080.580078125,
+      "descendantCount": 206,
+      "nodeTypes": {
+        "TEXT": 134,
+        "FRAME": 39,
+        "INSTANCE": 6,
+        "RECTANGLE": 18,
+        "VECTOR": 9
+      },
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "fontParity": "NEED VERIFY / Noto Sans KR substitute, web Pretendard remains source of truth",
+      "images": [
+        {
+          "id": "I10:92;8:30",
+          "name": "Image plane / existing R2 example-space.webp",
+          "type": "RECTANGLE",
+          "width": 572,
+          "height": 295.862060546875,
+          "imageHashes": [
+            "f47de0d7417ac881a6f1cce522bf6065547ba9e8"
+          ]
+        },
+        {
+          "id": "I10:106;8:30",
+          "name": "Image plane / existing R2 example-space.webp",
+          "type": "RECTANGLE",
+          "width": 572,
+          "height": 295.862060546875,
+          "imageHashes": [
+            "f47de0d7417ac881a6f1cce522bf6065547ba9e8"
+          ]
+        },
+        {
+          "id": "I10:120;8:30",
+          "name": "Image plane / existing R2 example-space.webp",
+          "type": "RECTANGLE",
+          "width": 572,
+          "height": 295.862060546875,
+          "imageHashes": [
+            "f47de0d7417ac881a6f1cce522bf6065547ba9e8"
+          ]
+        }
+      ],
+      "nativeEditability": "Text, frames, chart geometry, original SVG vectors and instances; image fills are only discrete source photograph",
+      "visibleHorizontalOverflow": []
+    },
+    {
+      "name": "fallback",
+      "root": "10:209",
+      "width": 1500,
+      "height": 1093,
+      "descendantCount": 69,
+      "nodeTypes": {
+        "TEXT": 45,
+        "FRAME": 15,
+        "RECTANGLE": 6,
+        "VECTOR": 3
+      },
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "fontParity": "NEED VERIFY / Noto Sans KR substitute, web Pretendard remains source of truth",
+      "images": [
+        {
+          "id": "10:244",
+          "name": "Image plane / existing R2 example-space.webp",
+          "type": "RECTANGLE",
+          "width": 350,
+          "height": 206,
+          "imageHashes": [
+            "f47de0d7417ac881a6f1cce522bf6065547ba9e8"
+          ]
+        }
+      ],
+      "nativeEditability": "Text, frames, chart geometry, original SVG vectors and instances; image fills are only discrete source photograph",
+      "visibleHorizontalOverflow": []
+    },
+    {
+      "name": "tokens",
+      "root": "2:41",
+      "width": 1440,
+      "height": 1286,
+      "descendantCount": 24,
+      "nodeTypes": {
+        "TEXT": 15,
+        "FRAME": 9
+      },
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "fontParity": "NEED VERIFY / Noto Sans KR substitute, web Pretendard remains source of truth",
+      "images": [],
+      "nativeEditability": "Text, frames, chart geometry, original SVG vectors and instances; image fills are only discrete source photograph",
+      "visibleHorizontalOverflow": []
+    },
+    {
+      "name": "qa",
+      "root": "11:21",
+      "width": 1440,
+      "height": 1084.6800537109375,
+      "descendantCount": 46,
+      "nodeTypes": {
+        "TEXT": 28,
+        "FRAME": 10,
+        "INSTANCE": 8
+      },
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "fontParity": "NEED VERIFY / Noto Sans KR substitute, web Pretendard remains source of truth",
+      "images": [],
+      "nativeEditability": "Text, frames, chart geometry, original SVG vectors and instances; image fills are only discrete source photograph",
+      "visibleHorizontalOverflow": []
+    },
+    {
+      "name": "asis",
+      "root": "9:2",
+      "width": 1440,
+      "height": 1748.888916015625,
+      "descendantCount": 45,
+      "nodeTypes": {
+        "TEXT": 30,
+        "FRAME": 7,
+        "RECTANGLE": 5,
+        "VECTOR": 3
+      },
+      "fontFamilies": [
+        "Noto Sans KR"
+      ],
+      "fontParity": "NEED VERIFY / Noto Sans KR substitute, web Pretendard remains source of truth",
+      "images": [],
+      "nativeEditability": "Text, frames, chart geometry, original SVG vectors and instances; image fills are only discrete source photograph",
+      "visibleHorizontalOverflow": []
+    }
+  ],
+  "links": {
+    "asIs": "https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=9-2",
+    "tokens": "https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=2-41",
+    "desktop": "https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=3-2",
+    "mobile": "https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=4-2",
+    "storyboard": "https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=10-2",
+    "mobileAndReduced": "https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=10-209",
+    "qa": "https://www.figma.com/design/paULgpd0M3t3s4q1SG361a?node-id=11-21"
+  },
+  "screenshots": [
+    {
+      "file": "desktop.png",
+      "nodeId": "3:2",
+      "width": 1440,
+      "height": 7178,
+      "bytes": 769396,
+      "sha256": "0f813ac354ae09d8125ddba7594cfe476782416bc6612aabb2ad1b88bb006f74",
+      "decodeVerified": true
+    },
+    {
+      "file": "mobile.png",
+      "nodeId": "4:2",
+      "width": 390,
+      "height": 9769,
+      "bytes": 570892,
+      "sha256": "ccbc4431d4632a40bfd1ba672cea364ecebd5590856072b4de933c47a27ff773",
+      "decodeVerified": true
+    },
+    {
+      "file": "storyboard.png",
+      "nodeId": "10:2",
+      "width": 2020,
+      "height": 3081,
+      "bytes": 631020,
+      "sha256": "4cf785f40c0750984a2e749378d7843c57dc6247e08521f1f0d6ce74e40d57ba",
+      "decodeVerified": true
+    },
+    {
+      "file": "fallback.png",
+      "nodeId": "10:209",
+      "width": 1500,
+      "height": 1093,
+      "bytes": 261170,
+      "sha256": "31145efe23bf61782752e3ff1896793e12df714770a3a33722e378b4f1a1dce4",
+      "decodeVerified": true
+    },
+    {
+      "file": "tokens.png",
+      "nodeId": "2:41",
+      "width": 1440,
+      "height": 1286,
+      "bytes": 68890,
+      "sha256": "475a72f11311669ff9ceb574e62a2a23eb0f15e98266a8b3b5e0e6bdbaca3d0e",
+      "decodeVerified": true
+    },
+    {
+      "file": "qa.png",
+      "nodeId": "11:21",
+      "width": 1440,
+      "height": 1085,
+      "bytes": 122544,
+      "sha256": "57d05be6da582809dd8727593b4fff288ac92cfff5f0bab43af3a99e799c2439",
+      "decodeVerified": true
+    },
+    {
+      "file": "asis.png",
+      "nodeId": "9:2",
+      "width": 1440,
+      "height": 1749,
+      "bytes": 200843,
+      "sha256": "42e28f43be0897cf6bac8c8254daca9f9dbf7c79f15525d7a03174092cc9eadc",
+      "decodeVerified": true
+    }
+  ],
+  "finalCorrections": [
+    "Mobile width fixed for Discovery, Cases, Process, Diagnosis and request CTA; no visible horizontal overflow.",
+    "Mobile Store, Discovery, Explore and FLOW task headings use complete word lines.",
+    "Imported chart text labels normalized to Noto Sans KR; actual source SVG remains browser authority.",
+    "Source photo rendered from lossless same-image PNG conversion; original WebP retained in web source."
+  ],
+  "finalMutatedNodeIds": [
+    "7:144",
+    "10:274"
+  ]
+}

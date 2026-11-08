@@ -1,0 +1,10 @@
+[Weplace 첫 화면 진단 요청]
+매장 링크: https://example.com/weplace-review
+
+안내 금액: 0원
+요청 범위: 매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개
+받을 안내: 현재 화면 관찰 · 망설임 지점 · 우선 개선안 한 가지 · 직접 적용할 순서
+계정 접속이나 실제 화면 수정은 포함되지 않는 첫 화면 진단을 요청합니다.
+
+UI status: 내용이 준비되었습니다. 아직 전송되지 않았습니다.
+Synthetic URL only. No Kakao transmission.

@@ -1,0 +1,203 @@
+{
+  "date": "2026-11-03",
+  "baseline": {
+    "repo": "HotCharliepepper/Weplace",
+    "main": "42562ec1a3dedec0e97b4fef1944aef4d84a6a49",
+    "pr13": "06647cb859fa97c3f96f1c3995388262776d8dc6",
+    "pr14": "61594783b08e9ab90aa7153d96c8e5db3d3492a1",
+    "pr15": "40ae3c903111334ebc1a4b78da9faceaa298c6c8",
+    "netlify_site_id": "3b1bab56-b830-4986-8ebe-36c66d98afee",
+    "production_deploy_id": "6ad8a7438ddf68ea7482fcd2"
+  },
+  "method": "Original R4 baseline retained verbatim. Only six explicitly enumerated R4.2 brand/review-artwork paths receive new hashes. Other 18 protected paths remain byte-identical.",
+  "protected_files": [
+    {
+      "path": "config/company-info.json",
+      "bytes": 1553,
+      "sha256": "478ddb56d975fa36dbee235ce74de054806827f5df8d9a71ac72a4f62eddaa87",
+      "git_blob": "46de75acdb787f19da76d7ad582808d843018555"
+    },
+    {
+      "path": "config/privacy-release.json",
+      "bytes": 695,
+      "sha256": "fcb79a79b5ceb4b2ed8de6b9262ba6a01c358ea40bac8d578132c5b2eebf25ba",
+      "git_blob": "ac30afedd5934acbd71a164568d4baa1e2c7fbf6"
+    },
+    {
+      "path": "privacy/index.html",
+      "bytes": 17761,
+      "sha256": "3ce8b86161031baff47e7ed49ea6ba650882650f683f2fdcbda56b5ffe69d221",
+      "git_blob": "495ef758fe8ce20df39021db9cd1009c18370079"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "bytes": 4278,
+      "sha256": "61cee011fe74f901cc7c38f58406220fe4d15f07a304bacefc5a6bbf18635ea4",
+      "git_blob": "82527ce51605e5bac15eb2d13ef037dc5342de44"
+    },
+    {
+      "path": "scripts/company-info.mjs",
+      "bytes": 6675,
+      "sha256": "ecbe82ef388f1fb5dadc57be6680d8cfcfc70e276a8c5f82494301b4d2e12330",
+      "git_blob": "0123c3d2e4ecac3bfb4ee6c81072c130c74513b0"
+    },
+    {
+      "path": "scripts/sync-company-footer.mjs",
+      "bytes": 1281,
+      "sha256": "9e084f13eb9931b0cd81d708715ef2d05c967362d6b1978fa16fd18e49ee3596",
+      "git_blob": "8b2072709499fb52451f9b45badf838967a425be"
+    },
+    {
+      "path": "scripts/build-flow-preview.mjs",
+      "bytes": 6942,
+      "sha256": "2a4b44b7f933fae89026ab1026b3765872f77bd427727f7e1ebb089b9899dec2",
+      "git_blob": "f6330d9201060808c6e9f5d589cfe46a45cff327"
+    },
+    {
+      "path": "netlify.toml",
+      "bytes": 274,
+      "sha256": "caca3a5cfade56c5cf1ed783cc3638130d87bb759bc671ff461ae2037e748395",
+      "git_blob": "083beb43e4b7f0eb206c95a5a92d31acc271770a"
+    },
+    {
+      "path": "_headers",
+      "bytes": 303,
+      "sha256": "7dc4eb96c70b28510b26864e918887312695642fcfe5f92b6885e8ee8c27910c",
+      "git_blob": "1e18289bb68ca46fbbeb4b982d268e38ec6e2e0f"
+    },
+    {
+      "path": "_redirects",
+      "bytes": 496,
+      "sha256": "02fb5405a398ae9dfbcec377fecd639e153523586f360517f37db4cb2c3fc779",
+      "git_blob": "edf6064b8ea7ce10a73c083c53d2aea9a840798c"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 93,
+      "sha256": "c322449f6151b0d12d16b7f61a71e0c0d9567a91767d12e94cf58921d73d4273",
+      "git_blob": "21391eb7c1f19e783550493b9f3f3ed60d144365"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 1494,
+      "sha256": "7c004e89d14895ec15fab1b39a55b3c59db0431459462c86a749c9321c314030",
+      "git_blob": "7cf77056eb61ed7522bef72a6c5a80ef9b5e77a1"
+    },
+    {
+      "path": "assets/css/brand.css",
+      "bytes": 1242,
+      "sha256": "8853f626b7aa9a14227749b3436eebe5d59b7c6198231294d99db1e52eb30b02",
+      "git_blob": "d872467a66cc4fa1b8d1f682a2424b4d5bfebd9a"
+    },
+    {
+      "path": "assets/css/motif-v03.css",
+      "bytes": 1012,
+      "sha256": "c17a3be9ecfc74cf6aa792bf52de22c4ec7d42e396dcca46e512ddd77dc3598a",
+      "git_blob": "4ca83b2f119801e39d0b49a44edcf99143c427dc"
+    },
+    {
+      "path": "assets/js/site-metrics.js",
+      "bytes": 2948,
+      "sha256": "26ef376b1de5ec3e5da3ce25ba470c275d01c1ddf0b49d3cd8af51a4ac948f5b",
+      "git_blob": "b417de60c289f8ac4927f4609c9bbc5c4b4115c9"
+    },
+    {
+      "path": "assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+      "bytes": 883,
+      "sha256": "fcf9331903c7dde9e510e9c8c91374d4da57e1fe95d0c4edc3ddbc03b3ae3712",
+      "git_blob": "232227c1b5c6f2c98b0680095463d51220655df4"
+    },
+    {
+      "path": "assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+      "bytes": 924,
+      "sha256": "a440334b2343de7357993a4c7bd23913a32ddd3518fb74b2f35194e883124911",
+      "git_blob": "97873a7d8f80e5f62ae4be99f0444a818dc9560c"
+    },
+    {
+      "path": "assets/home-r2/Pretendard-Regular.woff2",
+      "bytes": 42680,
+      "sha256": "0b2061cab92ae9c946546a6947e15748d8dd72f23ddc44f13210bd71f6df90fb",
+      "git_blob": "e60c7cd77a32d94398c411f4240ead19ee6e8f3f"
+    },
+    {
+      "path": "assets/home-r2/Pretendard-SemiBold.woff2",
+      "bytes": 42764,
+      "sha256": "2846f482c13c87589b52d18ccc461d9ee2ca50855b8bcea2e3d3ada85007800c",
+      "git_blob": "6c15a471ad36620aa4681eab481c35aa20d3bf69"
+    },
+    {
+      "path": "assets/home-r2/FONT-LICENSE.txt",
+      "bytes": 4419,
+      "sha256": "b04538c9abec39a3db75108cf0af0fd9c77032fe8aa2cf38345b4d250e98e38e",
+      "git_blob": "497b88f9fa7623ba9f8fdac86b43dec5621984ed"
+    },
+    {
+      "path": "assets/home-r2/example-space.webp",
+      "bytes": 38632,
+      "sha256": "0f5876a019e26c4397d7a96f3e01adbfdb237619b3c12e00b23294b105605242",
+      "git_blob": "56aa3a257a1c377849ec6ef4d8b2b6b04912f078"
+    },
+    {
+      "path": "assets/home-r2/brand-symbol.png",
+      "bytes": 30251,
+      "sha256": "9b92081f20be95091c686da368c6ffdcb6c4af3bff38c7705ec9001018cab06d",
+      "git_blob": "cdc8dcb92813a335cd09f75b9e15ec1bd17ab88c"
+    },
+    {
+      "path": "favicon.ico",
+      "bytes": 15086,
+      "sha256": "4b9bf1fca0a5bad7875ee8e1fdeac12dcf2a10685aa98b4e38a7cc851a1eeeb7",
+      "git_blob": "92db17c8318f7fe4d2beec31bb82e3fbc2df2889"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "bytes": 3619,
+      "sha256": "76217fef05e0a4a4a97af7fac7a74df3506bf9fdeb6ba7005e7d4912b9da78dc",
+      "git_blob": "82b46e41e2fd80e51657fe986d5d4eb4d7a05b13"
+    }
+  ],
+  "version": "r42-20261103",
+  "previous_baseline": {
+    "path": "docs/r4-spatial/protected-baseline.json",
+    "sha256": "3ac33b9bcb76f2a032ddb4fdc57583809ec57cb1373d0fbe98e6cc52dc5310e5"
+  },
+  "authorization": "User requested photo-3 logo/favicon/color update, food comparison and safe Preview; next-iteration execution authorized 2026-11-03. Main/production/DB/auth approvals remain separate.",
+  "authorized_changes": [
+    {
+      "path": "scripts/build-site.mjs",
+      "previous_sha256": "da22db50fa430db9c010e1943f53b2caf7d0fdd3e9736067b7f84b609e1c9744",
+      "sha256": "61cee011fe74f901cc7c38f58406220fe4d15f07a304bacefc5a6bbf18635ea4",
+      "reason": "Review-only OG artwork resolves at validated Netlify preview origin; production release gate and canonical policy retained."
+    },
+    {
+      "path": "scripts/company-info.mjs",
+      "previous_sha256": "450af7ba2351292d2c040144d29649558e429a4e5690abc50a3fce8c455ab021",
+      "sha256": "ecbe82ef388f1fb5dadc57be6680d8cfcfc70e276a8c5f82494301b4d2e12330",
+      "reason": "Shared footer brand markup only: approved photo-3 web vector logo. Company/privacy logic retained."
+    },
+    {
+      "path": "assets/css/brand.css",
+      "previous_sha256": "696392616f01c74e2ea5168cfd27e0fcca8ce352b12d0658b7d1f82ec2c6948f",
+      "sha256": "8853f626b7aa9a14227749b3436eebe5d59b7c6198231294d99db1e52eb30b02",
+      "reason": "Dimensions for approved responsive footer logo; legacy connected application is untouched."
+    },
+    {
+      "path": "assets/home-r2/brand-symbol.png",
+      "previous_sha256": "0db5afd1e54ab9178b7f9782c95ba8bc30e8b4b6ea3d5e06c1ae1f68a8690a82",
+      "sha256": "9b92081f20be95091c686da368c6ffdcb6c4af3bff38c7705ec9001018cab06d",
+      "reason": "User-requested folded-W and gold-dot public brand asset."
+    },
+    {
+      "path": "favicon.ico",
+      "previous_sha256": "a68876c505524bb73ef04e0804e84b376c032ad34de01fc730e0219760c6ecc1",
+      "sha256": "4b9bf1fca0a5bad7875ee8e1fdeac12dcf2a10685aa98b4e38a7cc851a1eeeb7",
+      "reason": "User-requested folded-W favicon, 16/32/48 sizes."
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "previous_sha256": "0db5afd1e54ab9178b7f9782c95ba8bc30e8b4b6ea3d5e06c1ae1f68a8690a82",
+      "sha256": "76217fef05e0a4a4a97af7fac7a74df3506bf9fdeb6ba7005e7d4912b9da78dc",
+      "reason": "User-requested matching 180px home screen icon."
+    }
+  ]
+}

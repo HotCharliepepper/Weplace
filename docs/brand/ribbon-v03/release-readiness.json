@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-29",
+  "userDeploymentPermission": "User said 배포 시작 and 권한은 모두 승인 in the current turn; no additional blanket permission is requested.",
+  "productionPreflight": "FAILED before dist deletion or upload; node scripts/build-site.mjs --production exit 1",
+  "companyPrivacyChecks": 22,
+  "additionalProductionPolicyMarkupCheck": 1,
+  "missingValues": [
+    "businessNumber",
+    "businessAddress",
+    "privacyContactDepartment"
+  ],
+  "legacyValuesToVerify": [
+    "legalName",
+    "representative",
+    "email",
+    "telephone"
+  ],
+  "privacyOperationsToConfirm": [
+    "controllerAndContact",
+    "purposesAndLegalBases",
+    "fieldsAndRequiredOptional",
+    "retentionAndLegalPreservation",
+    "deletionAndBackups",
+    "processorsAndSubprocessors",
+    "thirdPartyProvision",
+    "internationalTransfers",
+    "cookiesAnalyticsAndSecurityLogs",
+    "rightsRequestWorkflow",
+    "securityMeasuresAndIncidentProcess",
+    "flowCollectionTimeNotice",
+    "termsAndPolicySeparation"
+  ],
+  "policyApprovalNeeded": [
+    "approved policy content",
+    "effectiveDate",
+    "approvedBy",
+    "approvedAt"
+  ],
+  "boundary": "Publication authorization does not supply missing registration data or verify privacy operations. Approval fields and release gates were not fabricated or bypassed.",
+  "mainMerge": false,
+  "productionPublished": false,
+  "liveDatabaseChanged": false
+}

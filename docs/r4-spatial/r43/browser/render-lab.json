@@ -1,0 +1,302 @@
+{
+  "browser": "153.0.8010.0",
+  "method": "Local dist files fulfilled through Playwright routing, fresh context, no network throttling. Mobile uses 4x CPU slowdown; 6s observation window. File bytes are uncompressed requested resources, not wire transfer. Not field Core Web Vitals or a Lighthouse score.",
+  "samples": [
+    {
+      "variant": "r42",
+      "device": "desktop",
+      "run": 1,
+      "lcp": 804,
+      "cls": 0.0017322603202160494,
+      "longTasks": [
+        660,
+        56
+      ],
+      "lcpElement": "H1",
+      "fcp": 804,
+      "domContentLoaded": 854.9000000003725,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 430435,
+      "requestedResources": 18,
+      "errors": []
+    },
+    {
+      "variant": "r42",
+      "device": "desktop",
+      "run": 2,
+      "lcp": 220,
+      "cls": 0.0017322603202160494,
+      "longTasks": [
+        129,
+        86,
+        415
+      ],
+      "lcpElement": "H1",
+      "fcp": 220,
+      "domContentLoaded": 259.20000000018626,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 430435,
+      "requestedResources": 18,
+      "errors": []
+    },
+    {
+      "variant": "r42",
+      "device": "desktop",
+      "run": 3,
+      "lcp": 864,
+      "cls": 0.0017322603202160494,
+      "longTasks": [
+        699,
+        59,
+        81
+      ],
+      "lcpElement": "H1",
+      "fcp": 864,
+      "domContentLoaded": 838.1000000005588,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 430435,
+      "requestedResources": 18,
+      "errors": []
+    },
+    {
+      "variant": "r42",
+      "device": "mobile",
+      "run": 1,
+      "lcp": 1076,
+      "cls": 0.0007645842206270853,
+      "longTasks": [
+        892,
+        51,
+        268,
+        259,
+        90,
+        133
+      ],
+      "lcpElement": "H1",
+      "fcp": 1076,
+      "domContentLoaded": 1423.5,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 430435,
+      "requestedResources": 18,
+      "errors": []
+    },
+    {
+      "variant": "r42",
+      "device": "mobile",
+      "run": 2,
+      "lcp": 1360,
+      "cls": 0.0007645842206270853,
+      "longTasks": [
+        1231,
+        453,
+        52,
+        103,
+        539,
+        76,
+        80,
+        146,
+        65,
+        206,
+        454,
+        56,
+        383,
+        73,
+        150,
+        136,
+        81
+      ],
+      "lcpElement": "H1",
+      "fcp": 1360,
+      "domContentLoaded": 2672.4000000003725,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 430435,
+      "requestedResources": 18,
+      "errors": []
+    },
+    {
+      "variant": "r42",
+      "device": "mobile",
+      "run": 3,
+      "lcp": 776,
+      "cls": 0.0007645842206270853,
+      "longTasks": [
+        618,
+        101,
+        83,
+        51,
+        77
+      ],
+      "lcpElement": "H1",
+      "fcp": 776,
+      "domContentLoaded": 981.7000000001863,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 430435,
+      "requestedResources": 18,
+      "errors": []
+    },
+    {
+      "variant": "r43",
+      "device": "desktop",
+      "run": 1,
+      "lcp": 292,
+      "cls": 0.014282722944094812,
+      "longTasks": [
+        142
+      ],
+      "lcpElement": "H1",
+      "fcp": 292,
+      "domContentLoaded": 277.6000000005588,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 459329,
+      "requestedResources": 24,
+      "errors": []
+    },
+    {
+      "variant": "r43",
+      "device": "desktop",
+      "run": 2,
+      "lcp": 308,
+      "cls": 0.014282722944094812,
+      "longTasks": [
+        161,
+        53,
+        102
+      ],
+      "lcpElement": "H1",
+      "fcp": 308,
+      "domContentLoaded": 339.5,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 459329,
+      "requestedResources": 24,
+      "errors": []
+    },
+    {
+      "variant": "r43",
+      "device": "desktop",
+      "run": 3,
+      "lcp": 312,
+      "cls": 0.014282722944094812,
+      "longTasks": [
+        211,
+        75,
+        97
+      ],
+      "lcpElement": "H1",
+      "fcp": 312,
+      "domContentLoaded": 374.70000000018626,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 459329,
+      "requestedResources": 24,
+      "errors": []
+    },
+    {
+      "variant": "r43",
+      "device": "mobile",
+      "run": 1,
+      "lcp": 420,
+      "cls": 0.0001362054402157668,
+      "longTasks": [
+        261,
+        242,
+        52
+      ],
+      "lcpElement": "H1",
+      "fcp": 420,
+      "domContentLoaded": 1021,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 459329,
+      "requestedResources": 24,
+      "errors": []
+    },
+    {
+      "variant": "r43",
+      "device": "mobile",
+      "run": 2,
+      "lcp": 740,
+      "cls": 0.0001362054402157668,
+      "longTasks": [
+        548,
+        52,
+        225
+      ],
+      "lcpElement": "H1",
+      "fcp": 740,
+      "domContentLoaded": 1139.7000000001863,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 459329,
+      "requestedResources": 24,
+      "errors": []
+    },
+    {
+      "variant": "r43",
+      "device": "mobile",
+      "run": 3,
+      "lcp": 1064,
+      "cls": 0,
+      "longTasks": [
+        585,
+        196,
+        69,
+        54,
+        99
+      ],
+      "lcpElement": "H1",
+      "fcp": 1064,
+      "domContentLoaded": 994.8999999994412,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 459329,
+      "requestedResources": 24,
+      "errors": []
+    }
+  ],
+  "medians": [
+    {
+      "variant": "r42",
+      "device": "desktop",
+      "lcpMs": 804,
+      "fcpMs": 804,
+      "cls": 0.0017322603202160494,
+      "longTaskBlockingMs": 616,
+      "requestedBytes": 430435
+    },
+    {
+      "variant": "r42",
+      "device": "mobile",
+      "lcpMs": 1076,
+      "fcpMs": 1076,
+      "cls": 0.0007645842206270853,
+      "longTaskBlockingMs": 1393,
+      "requestedBytes": 430435
+    },
+    {
+      "variant": "r43",
+      "device": "desktop",
+      "lcpMs": 308,
+      "fcpMs": 308,
+      "cls": 0.014282722944094812,
+      "longTaskBlockingMs": 166,
+      "requestedBytes": 459329
+    },
+    {
+      "variant": "r43",
+      "device": "mobile",
+      "lcpMs": 740,
+      "fcpMs": 740,
+      "cls": 0.0001362054402157668,
+      "longTaskBlockingMs": 675,
+      "requestedBytes": 459329
+    }
+  ]
+}
