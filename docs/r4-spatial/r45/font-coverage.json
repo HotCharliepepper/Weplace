@@ -1,0 +1,20 @@
+{
+  "source": "pretendard@1.3.9 official npm package",
+  "license": "SIL Open Font License 1.1",
+  "fonts": [
+    {
+      "file": "assets/home-r45/WeplacePathSupplement-Regular.woff2",
+      "bytes": 2012,
+      "sha256": "8aa1f774162657cb1b41deddeace3a3d0168579573dc20a61e3bf6cd1fe2aa85",
+      "supplementedCharacters": "권꿔련릅섯쉴심쓸욕착텔통특판풀",
+      "missingContentHangulCount": 0
+    },
+    {
+      "file": "assets/home-r45/WeplacePathSupplement-SemiBold.woff2",
+      "bytes": 1988,
+      "sha256": "ee6465d778de3b570bbfd5201523497d6a2fe224f653714661a227b49df2d1e5",
+      "supplementedCharacters": "권꿔련릅섯쉴심쓸욕착텔통특판풀",
+      "missingContentHangulCount": 0
+    }
+  ]
+}

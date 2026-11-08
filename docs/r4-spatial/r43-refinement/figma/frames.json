@@ -1,0 +1,102 @@
+{
+  "fileKey": "paULgpd0M3t3s4q1SG361a",
+  "pageId": "104:274",
+  "frames": [
+    {
+      "id": "104:275",
+      "name": "AFTER / Desktop 1440 / 시작",
+      "width": 1440,
+      "height": 824,
+      "textLayers": 25,
+      "instances": 2
+    },
+    {
+      "id": "104:334",
+      "name": "AFTER / Desktop 1440 / 전환",
+      "width": 1440,
+      "height": 824,
+      "textLayers": 25,
+      "instances": 2
+    },
+    {
+      "id": "104:393",
+      "name": "AFTER / Desktop 1440 / 완료",
+      "width": 1440,
+      "height": 824,
+      "textLayers": 25,
+      "instances": 2
+    },
+    {
+      "id": "104:452",
+      "name": "AFTER / Mobile 390 / 시작",
+      "width": 390,
+      "height": 1022,
+      "textLayers": 25,
+      "instances": 2
+    },
+    {
+      "id": "104:511",
+      "name": "AFTER / Mobile 390 / 전환",
+      "width": 390,
+      "height": 1022,
+      "textLayers": 25,
+      "instances": 2
+    },
+    {
+      "id": "104:570",
+      "name": "AFTER / Mobile 390 / 완료",
+      "width": 390,
+      "height": 1022,
+      "textLayers": 25,
+      "instances": 2
+    },
+    {
+      "id": "104:629",
+      "name": "BEFORE / PR18 / Desktop 1440 / 완료",
+      "width": 1440,
+      "height": 823,
+      "textLayers": 25,
+      "instances": 2
+    },
+    {
+      "id": "104:688",
+      "name": "BEFORE / PR18 / Mobile 390 / 완료",
+      "width": 390,
+      "height": 1021,
+      "textLayers": 25,
+      "instances": 2
+    },
+    {
+      "id": "106:138",
+      "name": "BEFORE / PR18 / Desktop 1440 / 마지막 장면",
+      "width": 1440,
+      "height": 528,
+      "textLayers": 9,
+      "instances": 1
+    },
+    {
+      "id": "106:152",
+      "name": "AFTER / REFINED / Desktop 1440 / 마지막 장면",
+      "width": 1440,
+      "height": 610,
+      "textLayers": 13,
+      "instances": 5
+    },
+    {
+      "id": "106:191",
+      "name": "BEFORE / PR18 / Mobile 390 / 마지막 장면",
+      "width": 390,
+      "height": 785,
+      "textLayers": 9,
+      "instances": 1
+    },
+    {
+      "id": "106:205",
+      "name": "AFTER / REFINED / Mobile 390 / 마지막 장면",
+      "width": 390,
+      "height": 891.5499877929688,
+      "textLayers": 13,
+      "instances": 5
+    }
+  ]
+}

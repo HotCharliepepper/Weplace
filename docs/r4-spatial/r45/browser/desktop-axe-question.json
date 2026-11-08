@@ -1,0 +1,13 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "targets": [
+        [
+          ".question-action:nth-child(1) > span[aria-hidden=\"true\"]"
+        ]
+      ]
+    }
+  ]
+}
