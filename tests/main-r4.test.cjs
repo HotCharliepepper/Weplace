@@ -16,6 +16,22 @@ const sources = {
 };
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
+// Git records the protected files with exact LF bytes. Windows Git checkout can
+// transparently materialize text files as CRLF. Accept *only* this reversible
+// checkout conversion; every other byte change must still fail the hash guard.
+function assertProtectedHash(filePath, expected) {
+  const bytes = fs.readFileSync(filePath);
+  const digest = input => crypto.createHash('sha256').update(input).digest('hex');
+  if (digest(bytes) === expected) return;
+  const textPath = /\.(?:json|html|mjs|js|css|svg|txt|xml|toml)$/i.test(filePath) || /(?:^|\/)_headers$|(?:^|\/)_redirects$/.test(filePath);
+  if (process.platform === 'win32' && textPath && bytes.includes(Buffer.from('\r\n'))) {
+    const normalized = Buffer.from(bytes.toString('utf8').replace(/\r\n/g, '\n'), 'utf8');
+    assert.equal(digest(normalized), expected, filePath + ': differences other than Windows CRLF are not allowed');
+    return;
+  }
+  assert.equal(digest(bytes), expected, filePath);
+}
+
 function setup({ run = true, vendor = true, width = 1440, reduced = false } = {}) {
   const errors = [], network = [], writes = [], waapi = [], media = new Map(), listeners = new Map();
   const console = new VirtualConsole(); console.on('jsdomError', error => errors.push(error.message));
@@ -91,13 +107,13 @@ const sendReduced = (ctx, reduced) => ctx.w.dispatchEvent(new ctx.w.MessageEvent
 test('R4.2 preserves the original baseline history and the explicitly reviewed protected-file hashes', () => {
   const baseline = JSON.parse(fs.readFileSync('docs/r4-spatial/r42/protected-baseline.json', 'utf8'));
   const previousBytes = fs.readFileSync(baseline.previous_baseline.path);
-  assert.equal(crypto.createHash('sha256').update(previousBytes).digest('hex'), baseline.previous_baseline.sha256);
+  assertProtectedHash(baseline.previous_baseline.path, baseline.previous_baseline.sha256);
   const previous = JSON.parse(previousBytes);
   const allowed = ['scripts/build-site.mjs','scripts/company-info.mjs','assets/css/brand.css','assets/home-r2/brand-symbol.png','favicon.ico','apple-touch-icon.png'];
   assert.deepEqual(baseline.authorized_changes.map(item => item.path).sort(), allowed.sort());
   assert.equal(baseline.protected_files.length, previous.protected_files.length);
   for (const item of baseline.protected_files) {
-    assert.equal(crypto.createHash('sha256').update(fs.readFileSync(item.path)).digest('hex'), item.sha256, item.path);
+    assertProtectedHash(item.path, item.sha256);
     const old = previous.protected_files.find(entry => entry.path === item.path);
     assert.ok(old, item.path);
     if (!allowed.includes(item.path)) assert.equal(item.sha256, old.sha256, item.path);
