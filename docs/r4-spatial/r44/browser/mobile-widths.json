@@ -1,0 +1,98 @@
+[
+  {
+    "width": 430,
+    "overflow": 0,
+    "cta": {
+      "x": 20,
+      "y": 352.71875,
+      "width": 390,
+      "height": 54,
+      "top": 352.71875,
+      "right": 410,
+      "bottom": 406.71875,
+      "left": 20
+    },
+    "type": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "image": "https://review.weplace.test/assets/home-r42/luwei-peking-duck-640.webp",
+    "scene": "poster"
+  },
+  {
+    "width": 390,
+    "overflow": 0,
+    "cta": {
+      "x": 20,
+      "y": 352.71875,
+      "width": 350,
+      "height": 54,
+      "top": 352.71875,
+      "right": 370,
+      "bottom": 406.71875,
+      "left": 20
+    },
+    "type": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "image": "https://review.weplace.test/assets/home-r42/luwei-peking-duck-640.webp",
+    "scene": "poster"
+  },
+  {
+    "width": 360,
+    "overflow": 0,
+    "cta": {
+      "x": 20,
+      "y": 352.71875,
+      "width": 320,
+      "height": 54,
+      "top": 352.71875,
+      "right": 340,
+      "bottom": 406.71875,
+      "left": 20
+    },
+    "type": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "image": "https://review.weplace.test/assets/home-r42/luwei-peking-duck-640.webp",
+    "scene": "poster"
+  },
+  {
+    "width": 320,
+    "overflow": 0,
+    "cta": {
+      "x": 16,
+      "y": 336.75,
+      "width": 288,
+      "height": 54,
+      "top": 336.75,
+      "right": 304,
+      "bottom": 390.75,
+      "left": 16
+    },
+    "type": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "image": "https://review.weplace.test/assets/home-r42/luwei-peking-duck-640.webp",
+    "scene": "poster"
+  }
+]
