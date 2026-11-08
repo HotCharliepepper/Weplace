@@ -35,8 +35,8 @@
   const FADE = 170;
   const MAX_ASSET_WAIT = 1250; // Real image delay cap; not an invented progress percentage.
   let playedFirst = false, serial = 0, timers = [], releaseImageWatch = null;
-  let labOverride = null, sceneStarted = 0, currentMin = 0, holdExpired = false;
-  const observations = { ready:0, slow:0 };
+  let labOverride = null, lastShownDuration = null, sceneStarted = 0, currentMin = 0, holdExpired = false;
+  const observations = Object.create(null);
 
   function schedule(fn, delay) {
     const id=window.setTimeout(fn,delay);
@@ -114,6 +114,10 @@
       curtain.classList.add('is-leaving');
       host.dataset.waitPhase='reveal';
       if(next==='after') playedFirst=true;
+      if (showLab) {
+        labFeedback.hidden = next !== 'after';
+        if (next === 'after') lastShownDuration = duration;
+      }
       status.textContent=next==='after'
         ? '메뉴 사진을 먼저 보여주는 구성입니다. 실제 예약 화면은 아닙니다.'
         : '외관 사진을 먼저 보여주는 이전 구성입니다.';
@@ -197,17 +201,23 @@
 
   if(showLab){
     lab.hidden=false;
-    labFeedback.hidden=false;
+    labOverride=choices[preset.value]??680;
+    labFeedback.hidden=true;
     preset.addEventListener('change',()=>{
       labOverride=choices[preset.value]??680;
+      lastShownDuration=null;
+      labFeedback.hidden=true;
       playedFirst=false; // Allows the first reveal to be compared again after reversing.
       setLabResult('실험값 '+labOverride+'ms 선택 · 외관 화면으로 돌아간 뒤 다시 공개해 보세요.');
     });
     labFeedback.querySelectorAll('button[data-perception]').forEach(b=>b.addEventListener('click',()=>{
       const kind=b.dataset.perception;
-      if(!(kind in observations))return;
-      observations[kind]++;
-      setLabResult('이번 브라우저에서만 기록: 기대 유지 '+observations.ready+' / 느림 '+observations.slow+' · 사용자 연구 결과가 아닙니다.');
+      if((kind!=='ready' && kind!=='slow') || lastShownDuration===null) return;
+      const entry=observations[lastShownDuration]??{ready:0,slow:0};
+      entry[kind]++;
+      observations[lastShownDuration]=entry;
+      labFeedback.hidden=true;
+      setLabResult(lastShownDuration+'ms 실험의 이번 브라우저 기록: 기대 유지 '+entry.ready+' / 느림 '+entry.slow+' · 사용자 연구 결과가 아닙니다.');
     }));
   }
   updateButton();
