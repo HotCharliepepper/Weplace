@@ -46,3 +46,26 @@ Avoid overstating psychological effect: this journey is a proposed lens, not dat
 - New source and syntax checks can pass without rendered/interactive browser proof; don't claim full browser pass unless actually run.
 - Verify that 2023–2025 missing revenue figures are **not** fabricated in any UI. The existing 2026 comparison remains separate from LuWei photography.
 - Preserve company-info/privacy 22-issue production release block and image-rights review. Publish **Draft Netlify Preview only**. No main merge, operational deploy, account/DB/auth/CRM mutation, outside customer contact or payment.
+
+
+### Preview-specific inspection checklist
+
+Check [Draft PR #25](https://github.com/HotCharliepepper/Weplace/pull/25) against parent [Draft PR #24](https://github.com/HotCharliepepper/Weplace/pull/24), comparing only R4.11-specific files. Once a Netlify Deploy Preview is confirmed for **the exact PR #25 head commit**, open `/#decision-path` and verify that the 4 stages visibly switch in place. A PR URL or code commit alone is **not** proof that the site deploy succeeded.
+
+Local VS Code workflow when Deploy Preview is missing or for final browser QA:
+```powershell
+git status --short
+git fetch origin
+git worktree add ../weplace-r411-review origin/draft/weplace-r411-mn-decision-journey-20261109
+cd ../weplace-r411-review
+npm ci
+npm test
+npm run build
+py .\START_PREVIEW.py --port 4177
+```
+In another terminal:
+```powershell
+$env:R45_BASE_URL = 'http://127.0.0.1:4177'
+npm run test:r45
+```
+The R4.11 four-stage Node test is included in `npm test`. Run actual viewport/keyboard checks at 1440, 390 and 320px before calling screen QA complete. Do not overwrite any local modifications to an existing worktree or force-reset other branches.
