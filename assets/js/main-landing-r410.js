@@ -52,6 +52,12 @@
       scheduled=0;
       if(manualChoice||document.hidden||reduced.matches||constrained()
          ||panel.dataset.storeState!=='before')return;
+      const rect=photoStage.getBoundingClientRect();
+      // Do not flash a full-screen transition after a fast scroll past the card.
+      if(rect.height>0 && (rect.bottom<window.innerHeight*.15 || rect.top>window.innerHeight*.88)){
+        host.dataset.entryStory='skipped';
+        return;
+      }
       host.dataset.entryStory='revealing';
       veil.hidden=false;
       after.click();
