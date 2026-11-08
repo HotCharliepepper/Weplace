@@ -53,6 +53,8 @@ test('scroll arrival: one auto exterior -> dark -> menu and no scroll lock',asyn
   assert.equal(observer.disconnected,true);
   assert.equal(c.d.getElementById('change-panel').dataset.storeState,'before');
   await pause(180);
+  assert.equal(c.d.getElementById('change-panel').dataset.storeState,'before','original exterior remains briefly readable');
+  await pause(255);
   assert.equal(c.d.getElementById('change-panel').dataset.storeState,'after');
   assert.equal(c.d.getElementById('r410-stage-veil').hidden,false);
   assert.equal(c.d.getElementById('r47-picture-curtain').style.getPropertyValue('--r48-beat'),'680ms');
