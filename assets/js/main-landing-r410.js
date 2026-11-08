@@ -46,8 +46,8 @@
        ||panel.dataset.storeState!=='before')return;
     autoStarted=true;
     host.dataset.entryStory='arrival';
-    // 130ms gives the exterior photograph a perceptible entry before blackout.
-    // The reveal itself is 680ms + CSS fade, handled by R48.
+    // 360ms keeps the actual exterior on screen long enough for a first glance.
+    // A separate 680ms editorial dark beat + CSS fade is handled by R48.
     scheduled=window.setTimeout(()=>{
       scheduled=0;
       if(manualChoice||document.hidden||reduced.matches||constrained()
@@ -62,7 +62,7 @@
         veil.hidden=true;
         if(!manualChoice)host.dataset.entryStory='settled';
       },1050);
-    },130);
+    },360);
   };
 
   observer=new IntersectionObserver(entries=>{
