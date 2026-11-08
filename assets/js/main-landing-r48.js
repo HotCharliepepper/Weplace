@@ -25,8 +25,7 @@
          fallbackHeading,fallbackCopy,back,lab,preset,labResult,labFeedback].every(Boolean)) return;
 
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const compact = window.matchMedia('(max-width: 639px)');
-  const connection = navigator.connection;
+    const connection = navigator.connection;
   const origin = location.hostname;
   const isPreview = origin === 'localhost' || origin === '127.0.0.1'
     || /^deploy-preview-\d+--weplace\.netlify\.app$/.test(origin);
@@ -90,7 +89,7 @@
     const id = serial;
     const first = next === 'after' && !playedFirst;
     const duration = first
-      ? labOverride !== null ? labOverride : compact.matches ? 560 : 680
+      ? labOverride !== null ? labOverride : 680
       : next === 'before' ? 120 : 150;
     currentMin=duration;
     sceneStarted=performance.now();
@@ -195,7 +194,6 @@
     cancel();
   });
   reduced.addEventListener('change',()=>{if(reduced.matches)cancel();});
-  compact.addEventListener('change',()=>{});
   connection?.addEventListener?.('change',()=>{if(!canAnimate())cancel();});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)cancel();});
   window.addEventListener('pagehide',cancel);
