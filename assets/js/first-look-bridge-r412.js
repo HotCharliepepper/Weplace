@@ -41,16 +41,18 @@
   let step=0;
   let chosen=[null,null,null,null];
   let photoSequence=0;
+  let photoPackState="unknown"; // Stop further probes after the first missing asset.
   // The optional local AI-photo pack can be supplied later. Keep the
   // illustration visible unless the browser decodes an existing same-origin
   // WebP file; a missing photo never breaks the four-step experience.
   function useVerifiedPhoto(button,round,side,sequence){
-    if(typeof Image==='undefined')return;
+    if(typeof Image==='undefined'||photoPackState==='missing')return;
     const filename=round.id+'-'+side+'.webp';
     const url='/assets/first-look/photos/'+filename;
     const probe=new Image();
     probe.decoding='async';
     probe.onload=function(){
+      photoPackState='ready';
       if(step!==sequence.step || photoSequence!==sequence.generation)return;
       const img=button.querySelector('img');
       const visual=button.querySelector('[data-wpfl-visual]');
@@ -59,7 +61,7 @@
       img.alt=round.alts[side==='a'?0:1]+' · AI 제작 실사풍 비교 이미지';
       visual.classList.add('is-photo');
     };
-    probe.onerror=function(){ /* keep the existing accessible SVG artwork */ };
+    probe.onerror=function(){ photoPackState='missing'; /* preserve SVG fallback */ };
     probe.src=url;
   }
   const setHidden=(el,hidden)=>{el.hidden=hidden;};
