@@ -65,3 +65,27 @@ PR 병합 전: 이 Draft 브랜치를 폐기하고 PR #25 그대로 사용합니
 - GitHub 소스 기반 17개 정적 점검 항목(히어로/실매출 별도/4라운드/섹션 순서/이미지/JS 로드/챗·CRM 경계/개인정보 게이트/모바일·감소 모션/문법) **17/17 확인**. 이 수치는 사용자가 로컬에서 `npm run verify`를 실행한 결과와 다름.
 - 별도 V8 DOM 모형에서 버튼 이벤트를 실행해 R1 A 선택 → R2 설명 보기 건너뛰기 → R3 B 선택 → R4 A 선택 → 결과 점검 3개 표시 → 처음부터 다시 시작이 흐름상 작동하는 것을 확인했습니다. **실제 모바일 사파리·브라우저 화면 자동화, 네트워크 이벤트 및 접근성 수동 QA를 했다는 뜻은 아닙니다.**
 - 공개 빌드의 22개 회사·개인정보 승인 게이트는 여전히 미충족. 기존 main과 운영 배포는 미변경. 사용자의 런칭 요청은 통합 제작 범위를 승인한 것으로 해석하되, 증빙되지 않은 개인정보 처리 현황·사업자 정보·사용권까지 승인한 것으로 보지 않습니다.
+
+
+## 고화질 사진 선택 사항 (R4.12 원본 9장)
+
+정적 홈페이지는 별도 Next.js 앱의 인증/서버 코드를 가져오지 않습니다. 대신 다음 위치에 원래 AI 이미지의 WebP 파일이 존재하면 브라우저가 성공적으로 이미지를 로드한 라운드만 자동 교체합니다. 없으면 SVG가 그대로 보입니다.
+
+`assets/first-look/photos/recognize-a.webp`, `recognize-b.webp`, `recognize-duo.webp`, `warmth-a.webp`, `warmth-b.webp`, `sheen-a.webp`, `sheen-b.webp`, `plate-a.webp`, `plate-b.webp`.
+
+사용자 PC에는 별도 `weplace-firstlook-r412-review/public/campaign/choices` 경로에 9장 설치 및 WebP 검사가 완료됐습니다. **원본의 바이트를 이 GitHub Draft로 전송하지는 않았습니다.** 아래 작업은 해당 PC에서 실행하는 무손상 복사이며 기존 파일이 다르면 안전하게 중단합니다.
+
+```powershell
+# 이 명령은 Weplace 메인 저장소의 R4.12 브랜치 폴더에서만 실행
+node scripts/install-r412-firstlook-photos.mjs
+node --test tests/r412-unified-homepage.test.cjs
+npm run verify
+git status --short
+```
+
+`install-r412-firstlook-photos.mjs`는 사진을 복사하고 SHA-256 동일 여부만 확인합니다. Git commit/Push, 운영 배포, GA4 또는 환경변수 변경은 하지 않습니다. 실제 사진을 GitHub Draft PR에 커밋·Push한 후 Netlify Preview에서 네 라운드의 이미지 로딩과 320/390/1440px 레이아웃을 재검증합니다.
+
+- R2 `warmth-a/b` 파일은 동일한 사진 바이트입니다. A의 김은 CSS 합성.
+- R3 `sheen-a/b` 파일도 동일합니다. A/B의 윤기 차이는 CSS 밝기·반사 표현.
+- R4의 사진은 접시와 음식 구성 모두 일부 다르므로 접시만의 인과 효과라고 해석하지 않습니다.
+- 방문자의 선택 데이터는 이 정적 메인 구현에서 **수집하거나 서버 전송하지 않습니다**. GA4 소스·캠페인 구분을 분석하는 작업은 별도 동의/계측 검수 범위입니다.
