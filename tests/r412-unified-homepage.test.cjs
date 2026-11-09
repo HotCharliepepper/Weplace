@@ -9,6 +9,7 @@ const css=read('assets/css/first-look-bridge-r412.css');
 const js=read('assets/js/first-look-bridge-r412.js');
 const company=JSON.parse(read('config/company-info.json'));
 const privacy=JSON.parse(read('config/privacy-release.json'));
+const buildScript=read('scripts/build-site.mjs');
 
 test('R4.11 cinematic green hero remains a symbolic upward path',()=>{
   assert.match(page,/class="r47-momentum-route"/);
@@ -63,6 +64,13 @@ test('first look is local and anonymous without touching CRM, auth, GA4 or persi
   assert.match(page,/id="request"/);
   assert.match(page,/실제 고객 실험/);
   assert.match(page,/매출 성과를 예측하지 않습니다/);
+});
+
+test('review previews stay noindex while release-eligible production root does not carry a permanent noindex tag',()=>{
+  assert.doesNotMatch(page,/<meta name="robots" content="noindex,nofollow">/);
+  assert.match(buildScript,/if\s*\(!production\)\s*\{/);
+  assert.match(buildScript,/noindex, nofollow/);
+  assert.match(buildScript,/if\s*\(production && issues\.length\) throw new Error/);
 });
 
 test('company and privacy approval gates remain untouched and blocking',()=>{
