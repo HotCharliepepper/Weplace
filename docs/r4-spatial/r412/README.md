@@ -89,3 +89,10 @@ git status --short
 - R3 `sheen-a/b` 파일도 동일합니다. A/B의 윤기 차이는 CSS 밝기·반사 표현.
 - R4의 사진은 접시와 음식 구성 모두 일부 다르므로 접시만의 인과 효과라고 해석하지 않습니다.
 - 방문자의 선택 데이터는 이 정적 메인 구현에서 **수집하거나 서버 전송하지 않습니다**. GA4 소스·캠페인 구분을 분석하는 작업은 별도 동의/계측 검수 범위입니다.
+
+
+## SEO 공개 조건
+
+R4.11 원본의 루트 `index.html`에는 `<meta name="robots" content="noindex,nofollow">`가 정적으로 들어 있어 운영 빌드에서도 그대로 유지될 위험이 있었습니다. R4.12에서는 루트의 해당 태그를 제거했습니다. 현재 `scripts/build-site.mjs`가 **검토 환경(`!production`)에만** `noindex, nofollow` HTML 메타와 `X-Robots-Tag`를 추가합니다. Netlify Deploy Preview는 Netlify 자체의 noindex 정책도 적용됩니다. <https://docs.netlify.com/deploy/deploy-overview/#search-engine-indexing>
+
+이는 법률 승인 게이트를 우회하지 않습니다. `CONTEXT=production`에서 기존 사업자/개인정보 검증을 통과해야만 게시할 수 있습니다. 하위 경로의 별도 robots 규칙과 전체 sitemap QA는 최종 공개 전 추가 확인 사항입니다.
