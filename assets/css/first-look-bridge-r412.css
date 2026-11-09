@@ -104,3 +104,14 @@
 .wpfl-hero-link{display:inline-flex;align-items:center;gap:10px;margin-top:19px;font-size:13px;font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:6px;text-decoration-color:#c8a56b;transition:text-decoration-color .15s ease}
 .wpfl-hero-link:hover{color:#c8a56b}
 .wpfl-hero-link:focus-visible{outline:3px solid #c8a56b;outline-offset:5px}
+
+
+/* When the same-origin 9-image photo pack is installed, the original AI WebP
+ * photographs replace SVG art without changing the quiz or the result copy.
+ * R2/R3 remain identical image bytes; steam/gloss are simulated in CSS. */
+.wpfl-visual.is-photo::before{display:none}
+.wpfl-visual.is-photo img{position:absolute;inset:0;top:0;left:0;display:block;width:100%;height:100%;max-width:none;object-fit:cover;filter:none}
+.wpfl-visual.is-photo.wpfl-visual--sheen.wpfl-visual--a img{filter:brightness(1.14) saturate(1.12) contrast(1.07)}
+.wpfl-visual.is-photo.wpfl-visual--sheen.wpfl-visual--b img{filter:brightness(.88) saturate(.83) contrast(.97)}
+.wpfl-visual.is-photo.wpfl-visual--warmth.wpfl-visual--b img{filter:brightness(.93) saturate(.96)}
+.wpfl-visual.is-photo.wpfl-visual--plate.wpfl-visual--a img,.wpfl-visual.is-photo.wpfl-visual--plate.wpfl-visual--b img{filter:none}
