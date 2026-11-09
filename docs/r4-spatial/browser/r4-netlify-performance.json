@@ -1,0 +1,613 @@
+{
+  "source": "Top-level page PerformanceObserver; current browser LAB navigation",
+  "observerAttachedAtMs": 515.5,
+  "documentVisibilityAtAttach": "visible",
+  "supportedEntryTypes": [
+    "element",
+    "event",
+    "first-input",
+    "interaction-contentful-paint",
+    "largest-contentful-paint",
+    "layout-shift",
+    "long-animation-frame",
+    "longtask",
+    "mark",
+    "measure",
+    "navigation",
+    "paint",
+    "resource",
+    "soft-navigation",
+    "visibility-state"
+  ],
+  "fcpMs": 524,
+  "lcpMs": 524,
+  "lcpElement": {
+    "tag": "H1",
+    "id": "hero-title",
+    "class": "",
+    "harness": false
+  },
+  "rawClsSessionMax": 0.001,
+  "longestObservedInteractionMs": 23480,
+  "layoutShiftEntries": [
+    {
+      "time": 633.3,
+      "value": 0.001,
+      "hadRecentInput": false,
+      "lastInputTime": 0,
+      "sources": [
+        {
+          "node": {
+            "tag": "DIV",
+            "id": "",
+            "class": "",
+            "harness": false
+          },
+          "previousRect": {
+            "x": 216.453,
+            "y": 819.063,
+            "width": 1049.547,
+            "height": 26.391
+          },
+          "currentRect": {
+            "x": 209.359,
+            "y": 819.063,
+            "width": 1056.641,
+            "height": 26.391
+          }
+        },
+        {
+          "node": {
+            "tag": "",
+            "id": "",
+            "class": "",
+            "harness": false
+          },
+          "previousRect": {
+            "x": 82,
+            "y": 554.047,
+            "width": 554.453,
+            "height": 21
+          },
+          "currentRect": {
+            "x": 82,
+            "y": 556.047,
+            "width": 554.453,
+            "height": 21
+          }
+        },
+        {
+          "node": {
+            "tag": "DIV",
+            "id": "",
+            "class": "header-actions",
+            "harness": false
+          },
+          "previousRect": {
+            "x": 1078.234,
+            "y": 22,
+            "width": 187.766,
+            "height": 40
+          },
+          "currentRect": {
+            "x": 1084.125,
+            "y": 22,
+            "width": 181.875,
+            "height": 40
+          }
+        },
+        {
+          "node": {
+            "tag": "NAV",
+            "id": "",
+            "class": "desktop-nav",
+            "harness": false
+          },
+          "previousRect": {
+            "x": 767.688,
+            "y": 32.25,
+            "width": 281.859,
+            "height": 19.5
+          },
+          "currentRect": {
+            "x": 783.766,
+            "y": 32.25,
+            "width": 271.141,
+            "height": 19.5
+          }
+        },
+        {
+          "node": {
+            "tag": "P",
+            "id": "",
+            "class": "",
+            "harness": false
+          },
+          "previousRect": {
+            "x": 1129.205,
+            "y": 272.077,
+            "width": 94.527,
+            "height": 41.334
+          },
+          "currentRect": {
+            "x": 1135.616,
+            "y": 272.077,
+            "width": 88.769,
+            "height": 41.334
+          }
+        }
+      ]
+    },
+    {
+      "time": 201946.5,
+      "value": 0.247,
+      "hadRecentInput": true,
+      "lastInputTime": 201936.5,
+      "sources": [
+        {
+          "node": {
+            "tag": "ASIDE",
+            "id": "",
+            "class": "",
+            "harness": true
+          },
+          "previousRect": {
+            "x": 1246,
+            "y": 880,
+            "width": 90.406,
+            "height": 44
+          },
+          "currentRect": {
+            "x": 608,
+            "y": 130,
+            "width": 740,
+            "height": 798
+          }
+        },
+        {
+          "node": {
+            "tag": "BUTTON",
+            "id": "top-level-qa-toggle",
+            "class": "",
+            "harness": true
+          },
+          "previousRect": {
+            "x": 656,
+            "y": 170,
+            "width": 90.406,
+            "height": 44
+          },
+          "currentRect": {
+            "x": 656,
+            "y": 880,
+            "width": 90.406,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "time": 201986.6,
+      "value": 0.006,
+      "hadRecentInput": true,
+      "lastInputTime": 201936.5,
+      "sources": [
+        {
+          "node": {
+            "tag": "PRE",
+            "id": "top-level-qa-report",
+            "class": "",
+            "harness": true
+          },
+          "previousRect": {
+            "x": 671,
+            "y": 315.391,
+            "width": 635,
+            "height": 555.609
+          },
+          "currentRect": {
+            "x": 671,
+            "y": 343.391,
+            "width": 635,
+            "height": 527.609
+          }
+        }
+      ]
+    }
+  ],
+  "eventEntries": [
+    {
+      "name": "pointerdown",
+      "time": 17411.6,
+      "duration": 392,
+      "interactionId": 3667,
+      "processingStart": 17415.2,
+      "processingEnd": 17415.4,
+      "target": {
+        "tag": "A",
+        "id": "",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerup",
+      "time": 17420.9,
+      "duration": 384,
+      "interactionId": 3667,
+      "processingStart": 17421.2,
+      "processingEnd": 17421.3,
+      "target": {
+        "tag": "A",
+        "id": "",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "click",
+      "time": 17420.9,
+      "duration": 384,
+      "interactionId": 3667,
+      "processingStart": 17421.3,
+      "processingEnd": 17425.2,
+      "target": {
+        "tag": "A",
+        "id": "",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerdown",
+      "time": 36242.2,
+      "duration": 368,
+      "interactionId": 3674,
+      "processingStart": 36244.1,
+      "processingEnd": 36244.2,
+      "target": {
+        "tag": "BUTTON",
+        "id": "change-before",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerup",
+      "time": 36248.6,
+      "duration": 368,
+      "interactionId": 3674,
+      "processingStart": 36249.4,
+      "processingEnd": 36249.6,
+      "target": {
+        "tag": "BUTTON",
+        "id": "change-before",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "click",
+      "time": 36248.6,
+      "duration": 368,
+      "interactionId": 3674,
+      "processingStart": 36249.6,
+      "processingEnd": 36252.6,
+      "target": {
+        "tag": "BUTTON",
+        "id": "change-before",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerdown",
+      "time": 50951.8,
+      "duration": 288,
+      "interactionId": 3681,
+      "processingStart": 50953,
+      "processingEnd": 50953,
+      "target": {
+        "tag": "BUTTON",
+        "id": "change-after",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerup",
+      "time": 50956.3,
+      "duration": 280,
+      "interactionId": 3681,
+      "processingStart": 50956.7,
+      "processingEnd": 50956.7,
+      "target": {
+        "tag": "BUTTON",
+        "id": "change-after",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "click",
+      "time": 50956.3,
+      "duration": 280,
+      "interactionId": 3681,
+      "processingStart": 50956.7,
+      "processingEnd": 50957.7,
+      "target": {
+        "tag": "BUTTON",
+        "id": "change-after",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerdown",
+      "time": 96008,
+      "duration": 232,
+      "interactionId": 3688,
+      "processingStart": 96009,
+      "processingEnd": 96009,
+      "target": {
+        "tag": "BUTTON",
+        "id": "",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerup",
+      "time": 96011.5,
+      "duration": 232,
+      "interactionId": 3688,
+      "processingStart": 96011.6,
+      "processingEnd": 96011.7,
+      "target": {
+        "tag": "BUTTON",
+        "id": "",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "click",
+      "time": 96011.5,
+      "duration": 232,
+      "interactionId": 3688,
+      "processingStart": 96011.7,
+      "processingEnd": 96012,
+      "target": {
+        "tag": "BUTTON",
+        "id": "",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerdown",
+      "time": 141466.1,
+      "duration": 216,
+      "interactionId": 3695,
+      "processingStart": 141467.3,
+      "processingEnd": 141467.3,
+      "target": {
+        "tag": "A",
+        "id": "",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerup",
+      "time": 141469.4,
+      "duration": 208,
+      "interactionId": 3695,
+      "processingStart": 141469.7,
+      "processingEnd": 141469.7,
+      "target": {
+        "tag": "A",
+        "id": "",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "click",
+      "time": 141469.4,
+      "duration": 208,
+      "interactionId": 3695,
+      "processingStart": 141469.7,
+      "processingEnd": 141470.5,
+      "target": {
+        "tag": "A",
+        "id": "",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerdown",
+      "time": 178390,
+      "duration": 23480,
+      "interactionId": 3702,
+      "processingStart": 178390.7,
+      "processingEnd": 178390.7,
+      "target": {
+        "tag": "BUTTON",
+        "id": "flow-review",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerup",
+      "time": 178393.8,
+      "duration": 23472,
+      "interactionId": 3702,
+      "processingStart": 178393.9,
+      "processingEnd": 178393.9,
+      "target": {
+        "tag": "BUTTON",
+        "id": "flow-review",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "click",
+      "time": 178393.8,
+      "duration": 23472,
+      "interactionId": 3702,
+      "processingStart": 178394,
+      "processingEnd": 178395.1,
+      "target": {
+        "tag": "BUTTON",
+        "id": "flow-review",
+        "class": "",
+        "harness": false
+      }
+    },
+    {
+      "name": "pointerdown",
+      "time": 201934,
+      "duration": 544,
+      "interactionId": 3709,
+      "processingStart": 201934.6,
+      "processingEnd": 201934.7,
+      "target": {
+        "tag": "BUTTON",
+        "id": "top-level-qa-toggle",
+        "class": "",
+        "harness": true
+      }
+    },
+    {
+      "name": "pointerup",
+      "time": 201936.5,
+      "duration": 536,
+      "interactionId": 3709,
+      "processingStart": 201937,
+      "processingEnd": 201937,
+      "target": {
+        "tag": "BUTTON",
+        "id": "top-level-qa-toggle",
+        "class": "",
+        "harness": true
+      }
+    },
+    {
+      "name": "click",
+      "time": 201936.5,
+      "duration": 536,
+      "interactionId": 3709,
+      "processingStart": 201937,
+      "processingEnd": 201937.2,
+      "target": {
+        "tag": "BUTTON",
+        "id": "top-level-qa-toggle",
+        "class": "",
+        "harness": true
+      }
+    }
+  ],
+  "pageLifecycle": [
+    {
+      "type": "pageshow",
+      "time": 660.7,
+      "persisted": false
+    }
+  ],
+  "errors": [],
+  "frozen": false,
+  "interpretation": "Raw buffered unexpected layout shifts are retained, including before FCP. Longest observed interaction is not a field INP result. No field p75, physical-device or throttling claim.",
+  "observedInteractionCount": 7,
+  "capturedAt": "2026-11-03T11:45:07.527Z",
+  "timeOrigin": 1793706094197.2,
+  "viewport": {
+    "innerWidth": 1363,
+    "innerHeight": 936,
+    "clientWidth": 1348,
+    "scrollWidth": 1348,
+    "bodyScrollWidth": 1348,
+    "devicePixelRatio": 1
+  },
+  "paintEntries": [
+    {
+      "name": "first-paint",
+      "startTime": 524
+    },
+    {
+      "name": "first-contentful-paint",
+      "startTime": 524
+    }
+  ],
+  "navigation": {
+    "type": "navigate",
+    "responseStart": 231.6,
+    "responseEnd": 241.9,
+    "domInteractive": 280.1,
+    "domContentLoadedEventEnd": 493.6,
+    "loadEventEnd": 660.4
+  },
+  "cssAndFontResources": [
+    {
+      "path": "/assets/css/brand.css",
+      "startTime": 245.8,
+      "responseEnd": 357.6,
+      "duration": 111.8,
+      "transferSize": 1300
+    },
+    {
+      "path": "/assets/css/main-landing-r2.css",
+      "startTime": 246.1,
+      "responseEnd": 356.5,
+      "duration": 110.4,
+      "transferSize": 8344
+    },
+    {
+      "path": "/assets/css/company-info.css",
+      "startTime": 246.1,
+      "responseEnd": 357,
+      "duration": 110.9,
+      "transferSize": 1024
+    },
+    {
+      "path": "/assets/css/main-landing-r4.css",
+      "startTime": 246.3,
+      "responseEnd": 358,
+      "duration": 111.7,
+      "transferSize": 3424
+    },
+    {
+      "path": "/assets/css/motif-v03.css",
+      "startTime": 246.3,
+      "responseEnd": 367.7,
+      "duration": 121.4,
+      "transferSize": 1312
+    },
+    {
+      "path": "/assets/home-r2/Pretendard-SemiBold.woff2",
+      "startTime": 246.3,
+      "responseEnd": 366.8,
+      "duration": 120.5,
+      "transferSize": 43064
+    },
+    {
+      "path": "/assets/home-r2/Pretendard-Regular.woff2",
+      "startTime": 381.3,
+      "responseEnd": 609.7,
+      "duration": 228.4,
+      "transferSize": 42980
+    }
+  ],
+  "nativeReducedMotion": false,
+  "fontsStatus": "loaded",
+  "limitations": [
+    "No native network or CPU throttle",
+    "Not field p75",
+    "Raw event entries include QA button interactions; targets identify harness controls and none are silently discarded",
+    "Raw CLS preserves pre-FCP entries and all source traces; absent FCP/LCP is NOT OBSERVED",
+    "No input values, external sends, localStorage or account data captured"
+  ]
+}

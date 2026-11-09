@@ -1,0 +1,1637 @@
+{
+  "harness": "Weplace R4 Spatial QA",
+  "current": {
+    "run": 8,
+    "recordedAt": "2026-11-03T11:35:10.462Z",
+    "fixture": "normal",
+    "scene": "intro",
+    "viewport": {
+      "requested": 390,
+      "innerWidth": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "bodyScrollWidth": 375,
+      "innerHeight": 844,
+      "horizontalOverflow": false,
+      "displayedScale": "scale(1)"
+    },
+    "reviewReduced": false,
+    "appliedReviewReduced": "false",
+    "performance": {
+      "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+      "nativeReducedMotion": false,
+      "networkProfile": "Current browser network; no throttle applied by harness",
+      "cpuProfile": "Current browser CPU; no throttle applied by harness",
+      "supportedEntryTypes": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "lcpMs": null,
+      "cls": 0,
+      "longestObservedInteractionMs": null,
+      "layoutShiftEntries": [
+        {
+          "value": 0,
+          "time": 226.5,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "P",
+                "id": "",
+                "class": ""
+              },
+              "previousRect": {
+                "x": 241.797,
+                "y": 712.828,
+                "width": 90.203,
+                "height": 35.188
+              },
+              "currentRect": {
+                "x": 247.656,
+                "y": 712.828,
+                "width": 85,
+                "height": 35.188
+              }
+            }
+          ]
+        }
+      ],
+      "observedInteractionCount": 0,
+      "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+      "status": "Observing this navigation; record after the intended interactions",
+      "fcpMs": null
+    },
+    "document": {
+      "title": "We,place. — 매장의 변화, 실행과 기록으로",
+      "h1Count": 1,
+      "h1Visible": true,
+      "robots": "noindex, nofollow",
+      "canonical": "https://withweplace.kr/",
+      "fontsStatus": "loaded",
+      "imageCount": 4,
+      "loadedImageCount": 3,
+      "images": [
+        {
+          "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+          "complete": true,
+          "naturalWidth": 480,
+          "width": 180,
+          "height": 90,
+          "loading": "lazy"
+        },
+        {
+          "src": "/assets/home-r2/example-space.webp",
+          "complete": true,
+          "naturalWidth": 1280,
+          "width": 333,
+          "height": 195.047,
+          "loading": "lazy"
+        },
+        {
+          "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+          "complete": false,
+          "naturalWidth": 0,
+          "width": 120,
+          "height": 60,
+          "loading": "lazy"
+        },
+        {
+          "src": "/apple-touch-icon.png",
+          "complete": true,
+          "naturalWidth": 180,
+          "width": 30,
+          "height": 30,
+          "loading": "auto"
+        }
+      ],
+      "sections": {
+        "intro": {
+          "visible": true,
+          "width": 375,
+          "height": 1119.859
+        },
+        "changes": {
+          "visible": true,
+          "width": 375,
+          "height": 1977.766
+        },
+        "discovery": {
+          "visible": true,
+          "width": 375,
+          "height": 1138.734
+        },
+        "cases": {
+          "visible": true,
+          "width": 375,
+          "height": 1397.984
+        },
+        "flow": {
+          "visible": true,
+          "width": 375,
+          "height": 1683.813
+        },
+        "process": {
+          "visible": true,
+          "width": 375,
+          "height": 1316.203
+        },
+        "request": {
+          "visible": true,
+          "width": 375,
+          "height": 781.219
+        }
+      }
+    },
+    "controls": {
+      "store": "after",
+      "flow": "work",
+      "industry": "dining",
+      "formEnabled": true,
+      "activeElement": {
+        "tag": "BODY",
+        "id": "",
+        "role": null
+      }
+    },
+    "vendor": {
+      "gsapPresent": true,
+      "gsapVersion": "3.13.0",
+      "scrollTriggerPresent": true
+    },
+    "limitations": [
+      "CSS iframe viewport, not native device emulation",
+      "No field p75 claim",
+      "No physical mobile or native screen-reader claim",
+      "No native CPU/network throttling by this harness",
+      "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+      "No input values captured; outbound/authenticated navigation blocked by the harness"
+    ]
+  },
+  "records": [
+    {
+      "run": 2,
+      "recordedAt": "2026-11-03T11:31:37.267Z",
+      "fixture": "no-gsap",
+      "scene": "request",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0.293,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.204,
+            "time": 131,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "request",
+                  "class": "section request"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 254.797,
+                  "width": 375,
+                  "height": 589.203
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 82.797,
+                  "width": 375,
+                  "height": 761.203
+                }
+              },
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "process",
+                  "class": "section process"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 375,
+                  "height": 254.797
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 375,
+                  "height": 82.797
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "micro"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 42,
+                  "y": 674.641,
+                  "width": 291,
+                  "height": 37.375
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.293,
+            "time": 24136.3,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "explore",
+                  "class": "section explore"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 284.016,
+                  "width": 375,
+                  "height": 559.984
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 656.688,
+                  "width": 375,
+                  "height": 187.313
+                }
+              },
+              {
+                "node": {
+                  "tag": "A",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 20,
+                  "y": 599.391,
+                  "width": 335,
+                  "height": 114.234
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "node": {
+                  "tag": "A",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 20,
+                  "y": 729.625,
+                  "width": 335,
+                  "height": 114.234
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "node": {
+                  "tag": "B",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 333.984,
+                  "y": 513.156,
+                  "width": 21.016,
+                  "height": 37.938
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 333,
+            "height": 195.047,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 30,
+            "height": 30,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 375,
+            "height": 1119.859
+          },
+          "changes": {
+            "visible": true,
+            "width": 375,
+            "height": 1977.766
+          },
+          "discovery": {
+            "visible": true,
+            "width": 375,
+            "height": 1138.734
+          },
+          "cases": {
+            "visible": true,
+            "width": 375,
+            "height": 1397.984
+          },
+          "flow": {
+            "visible": true,
+            "width": 375,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 375,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 375,
+            "height": 1153.891
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": false,
+        "gsapVersion": null,
+        "scrollTriggerPresent": false
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 4,
+      "recordedAt": "2026-11-03T11:32:31.080Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 320,
+        "innerWidth": 320,
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "bodyScrollWidth": 305,
+        "innerHeight": 740,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 240,
+        "cls": 0.104,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.104,
+            "time": 66.5,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "BODY",
+                  "id": "",
+                  "class": "home-r2 home-r4"
+                },
+                "previousRect": {
+                  "x": 7,
+                  "y": 8,
+                  "width": 298,
+                  "height": 732
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 305,
+                  "height": 740
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 34,
+                  "y": 730.563,
+                  "width": 90.203,
+                  "height": 9.438
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 240
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 271,
+            "height": 158.578,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 30,
+            "height": 30,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 305,
+            "height": 1107.969
+          },
+          "changes": {
+            "visible": true,
+            "width": 305,
+            "height": 1968.922
+          },
+          "discovery": {
+            "visible": true,
+            "width": 305,
+            "height": 1147.969
+          },
+          "cases": {
+            "visible": true,
+            "width": 305,
+            "height": 1349.344
+          },
+          "flow": {
+            "visible": true,
+            "width": 305,
+            "height": 1718.781
+          },
+          "process": {
+            "visible": true,
+            "width": 305,
+            "height": 1344.172
+          },
+          "request": {
+            "visible": true,
+            "width": 305,
+            "height": 785.969
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 5,
+      "recordedAt": "2026-11-03T11:33:00.141Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0.836,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.828,
+            "time": 75.9,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "BODY",
+                  "id": "",
+                  "class": "home-r2 home-r4"
+                },
+                "previousRect": {
+                  "x": 7,
+                  "y": 8,
+                  "width": 1410,
+                  "height": 892
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1425,
+                  "height": 900
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap channel-band"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 771.516,
+                  "width": 1184,
+                  "height": 81.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "changes",
+                  "class": "section changes"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 852.906,
+                  "width": 1425,
+                  "height": 47.094
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "proof-foot"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 640.516,
+                  "width": 507.547,
+                  "height": 63
+                }
+              },
+              {
+                "node": {
+                  "tag": "FIGCAPTION",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 603.016,
+                  "width": 507.547,
+                  "height": 37.5
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.009,
+            "time": 94.7,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "hero-copy"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 174.391,
+                  "width": 554.453,
+                  "height": 518.734
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 184.156,
+                  "width": 554.453,
+                  "height": 518.734
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap channel-band"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 771.516,
+                  "width": 1184,
+                  "height": 81.391
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "changes",
+                  "class": "section changes"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 852.906,
+                  "width": 1425,
+                  "height": 47.094
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 872.453,
+                  "width": 1425,
+                  "height": 27.547
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "proof-foot"
+                },
+                "previousRect": {
+                  "x": 767.953,
+                  "y": 640.516,
+                  "width": 507.547,
+                  "height": 63
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 634.063,
+                  "width": 495.547,
+                  "height": 75
+                }
+              },
+              {
+                "node": {
+                  "tag": "FIGCAPTION",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 767.953,
+                  "y": 603.016,
+                  "width": 507.547,
+                  "height": 37.5
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 596.563,
+                  "width": 495.547,
+                  "height": 37.5
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 36,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1425,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1425,
+            "height": 1492.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1425,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1425,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1425,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1425,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1425,
+            "height": 615.391
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 6,
+      "recordedAt": "2026-11-03T11:33:29.951Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 1280,
+        "innerWidth": 1280,
+        "clientWidth": 1265,
+        "scrollWidth": 1265,
+        "bodyScrollWidth": 1265,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 541.438,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 36,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1265,
+            "height": 779.016
+          },
+          "changes": {
+            "visible": true,
+            "width": 1265,
+            "height": 1492.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1265,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1265,
+            "height": 1134.594
+          },
+          "flow": {
+            "visible": true,
+            "width": 1265,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1265,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1265,
+            "height": 615.391
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 7,
+      "recordedAt": "2026-11-03T11:34:34.359Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 768,
+        "innerWidth": 768,
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "bodyScrollWidth": 753,
+        "innerHeight": 1024,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0.001,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.001,
+            "time": 140.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 32,
+                  "y": 388.875,
+                  "width": 328.5,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 32,
+                  "y": 389.875,
+                  "width": 328.5,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "header-actions"
+                },
+                "previousRect": {
+                  "x": 485.656,
+                  "y": 17,
+                  "width": 167.875,
+                  "height": 40
+                },
+                "currentRect": {
+                  "x": 493.078,
+                  "y": 17,
+                  "width": 162.906,
+                  "height": 40
+                }
+              },
+              {
+                "node": {
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 411.5,
+                  "y": 271.234,
+                  "width": 284.5,
+                  "height": 13
+                },
+                "currentRect": {
+                  "x": 411.5,
+                  "y": 274.625,
+                  "width": 284.5,
+                  "height": 13
+                }
+              },
+              {
+                "node": {
+                  "tag": "B",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 389.391,
+                  "y": 699.391,
+                  "width": 92.391,
+                  "height": 18.141
+                },
+                "currentRect": {
+                  "x": 364.5,
+                  "y": 699.891,
+                  "width": 88.344,
+                  "height": 18.141
+                }
+              },
+              {
+                "node": {
+                  "tag": "B",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 196.156,
+                  "y": 699.391,
+                  "width": 72.438,
+                  "height": 18.141
+                },
+                "currentRect": {
+                  "x": 186.109,
+                  "y": 699.891,
+                  "width": 65.359,
+                  "height": 18.141
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 321.484,
+            "height": 218,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 36,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 753,
+            "height": 667.156
+          },
+          "changes": {
+            "visible": true,
+            "width": 753,
+            "height": 1349.016
+          },
+          "discovery": {
+            "visible": true,
+            "width": 753,
+            "height": 757.531
+          },
+          "cases": {
+            "visible": true,
+            "width": 753,
+            "height": 1602.25
+          },
+          "flow": {
+            "visible": true,
+            "width": 753,
+            "height": 1149.766
+          },
+          "process": {
+            "visible": true,
+            "width": 753,
+            "height": 759.234
+          },
+          "request": {
+            "visible": true,
+            "width": 753,
+            "height": 545.391
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 8,
+      "recordedAt": "2026-11-03T11:35:10.462Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0,
+            "time": 226.5,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 241.797,
+                  "y": 712.828,
+                  "width": 90.203,
+                  "height": 35.188
+                },
+                "currentRect": {
+                  "x": 247.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 3,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 333,
+            "height": 195.047,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 30,
+            "height": 30,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 375,
+            "height": 1119.859
+          },
+          "changes": {
+            "visible": true,
+            "width": 375,
+            "height": 1977.766
+          },
+          "discovery": {
+            "visible": true,
+            "width": 375,
+            "height": 1138.734
+          },
+          "cases": {
+            "visible": true,
+            "width": 375,
+            "height": 1397.984
+          },
+          "flow": {
+            "visible": true,
+            "width": 375,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 375,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 375,
+            "height": 781.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    }
+  ]
+}

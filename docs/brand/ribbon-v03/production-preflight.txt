@@ -1,0 +1,31 @@
+file:///workspace/scratch/65d54f5d6581/weplace-r2/scripts/build-site.mjs:14
+if (production && issues.length) throw new Error('Production release blocked. Review company/privacy evidence and approval records:\n- '+issues.join('\n- '));
+                                       ^
+
+Error: Production release blocked. Review company/privacy evidence and approval records:
+- Company information release approval is incomplete.
+- Company field requires current evidence: legalName
+- Company field requires current evidence: representative
+- Company field requires current evidence: businessNumber
+- Company field requires current evidence: businessAddress
+- Company field requires current evidence: email
+- Company field requires current evidence: telephone
+- Company field requires current evidence: privacyContactDepartment
+- Privacy policy is a draft without approved effective date.
+- Privacy operations require confirmation: controllerAndContact
+- Privacy operations require confirmation: purposesAndLegalBases
+- Privacy operations require confirmation: fieldsAndRequiredOptional
+- Privacy operations require confirmation: retentionAndLegalPreservation
+- Privacy operations require confirmation: deletionAndBackups
+- Privacy operations require confirmation: processorsAndSubprocessors
+- Privacy operations require confirmation: thirdPartyProvision
+- Privacy operations require confirmation: internationalTransfers
+- Privacy operations require confirmation: cookiesAnalyticsAndSecurityLogs
+- Privacy operations require confirmation: rightsRequestWorkflow
+- Privacy operations require confirmation: securityMeasuresAndIncidentProcess
+- Privacy operations require confirmation: flowCollectionTimeNotice
+- Privacy operations require confirmation: termsAndPolicySeparation
+- Privacy HTML must explicitly declare an approved policy and contain no draft marker.
+    at file:///workspace/scratch/65d54f5d6581/weplace-r2/scripts/build-site.mjs:14:40
+
+Node.js v24.22.1
