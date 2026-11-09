@@ -24,8 +24,8 @@
       answer:'A는 윤기와 하이라이트를 강조했습니다. 윤기는 신선도나 맛의 보증이 아니므로 실제 메뉴와 동떨어지지 않도록 확인합니다.',
       alts:['표면의 윤기와 빛 반사가 강조된 같은 요리의 그래픽','표면의 반사를 절제한 같은 요리의 그래픽']},
     {id:'plate',name:'접시와 구도',question:'어느 접시에 눈길이 더 가나요?',
-      hint:'접시 색과 패턴을 바꾸고 음식의 중심 배치는 유지했습니다.',
-      answer:'A는 강한 색 대비와 무늬, B는 차분한 보색과 여백을 사용했습니다. 어느 쪽의 실제 고객 전환이 높은지는 별도 실험이 필요합니다.',
+      hint:'서로 다른 접시와 음식 배치의 인상을 비교합니다.',
+      answer:'A는 강한 색 대비, B는 차분한 보색과 여백을 사용했습니다. 사진 소재와 배치도 달라 접시만의 효과를 측정한 비교는 아닙니다.',
       alts:['패턴과 대비가 강한 접시에 놓인 같은 요리의 그래픽','차분한 색과 여백이 있는 접시에 놓인 같은 요리의 그래픽']}
   ];
   const $=(selector)=>root.querySelector(selector);
@@ -40,10 +40,33 @@
   if(!heading||!hint||!counter||!progress||panels.length!==2||!answerText||!reveal||!next||!skip||!result||!resultTitle||!resultLead||!resultList||!restart)return;
   let step=0;
   let chosen=[null,null,null,null];
+  let photoSequence=0;
+  // The optional local AI-photo pack can be supplied later. Keep the
+  // illustration visible unless the browser decodes an existing same-origin
+  // WebP file; a missing photo never breaks the four-step experience.
+  function useVerifiedPhoto(button,round,side,sequence){
+    if(typeof Image==='undefined')return;
+    const filename=round.id+'-'+side+'.webp';
+    const url='/assets/first-look/photos/'+filename;
+    const probe=new Image();
+    probe.decoding='async';
+    probe.onload=function(){
+      if(step!==sequence.step || photoSequence!==sequence.generation)return;
+      const img=button.querySelector('img');
+      const visual=button.querySelector('[data-wpfl-visual]');
+      if(!img||!visual)return;
+      img.src=url;
+      img.alt=round.alts[side==='a'?0:1]+' · AI 제작 실사풍 비교 이미지';
+      visual.classList.add('is-photo');
+    };
+    probe.onerror=function(){ /* keep the existing accessible SVG artwork */ };
+    probe.src=url;
+  }
   const setHidden=(el,hidden)=>{el.hidden=hidden;};
   const escId=(id)=>String(id).replace(/[^a-z0-9_-]/gi,'');
   function showStep(){
     const round=rounds[step];
+    const sequence={step,generation:++photoSequence};
     counter.textContent=String(step+1).padStart(2,'0')+' / 04 · '+round.name;
     heading.textContent=round.question;
     hint.textContent=round.hint;
@@ -60,6 +83,7 @@
         img.src=round.id==='recognize'?'/assets/first-look/okra-pepper.svg':'/assets/first-look/sensory-dish.svg';
         img.alt=round.alts[i];
       }
+      useVerifiedPhoto(button,round,side,sequence);
     });
     answerText.textContent=round.answer;
     setHidden(reveal,!chosen[step]);
