@@ -47,6 +47,9 @@ test('First Look food art, script and CSS exist and are included in the static s
   }
   new vm.Script(js,{filename:'first-look-bridge-r412.js'});
   assert.match(js,/rounds=\[/);
+  assert.match(js,/function useVerifiedPhoto/);
+  assert.match(js,/assets\/first-look\/photos/);
+  assert.match(css,/\.wpfl-visual\.is-photo img/);
   for(const id of ['recognize','warmth','sheen','plate'])assert.match(js,new RegExp("id:'"+id+"'"));
   assert.match(css,/@media\(max-width:650px\)/);
   assert.match(css, /prefers-reduced-motion/);
