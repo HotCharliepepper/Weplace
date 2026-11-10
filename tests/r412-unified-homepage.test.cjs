@@ -11,11 +11,11 @@ const company=JSON.parse(read('config/company-info.json'));
 const privacy=JSON.parse(read('config/privacy-release.json'));
 const buildScript=read('scripts/build-site.mjs');
 
-test('R4.11 cinematic green hero remains a symbolic upward path',()=>{
-  assert.match(page,/class="r47-momentum-route"/);
-  assert.match(page,/class="r47-trajectory"/);
-  assert.match(page,/상징입니다\. 실제 매출 그래프나 성과 예측이 아닙니다/);
-  assert.match(page,/id="cinema"/);
+test('Emotional Hero R2 precedes the preserved R4.12 evidence',()=>{
+  assert.match(page,/data-emotional-hero/);
+  assert.match(page,/광고 기획사/);
+  assert.match(page,/실제 고객 사례와 구분합니다/);
+  assert.ok(page.indexOf('id="hero-share"') < page.indexOf('id="hero-chart-title"'));
 });
 
 test('real monthly sales bar and connecting line remain separate from symbolic hero',()=>{

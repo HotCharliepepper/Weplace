@@ -8,18 +8,14 @@ const css=fs.readFileSync('assets/css/main-landing-r49.css','utf8');
 const r48=fs.readFileSync('assets/js/main-landing-r48.js','utf8');
 const r2=fs.readFileSync('assets/js/main-landing-r2.js','utf8');
 function document(){return new JSDOM(html).window.document;}
-test('hero: the symbolic upward line is visibly separated from LuWei photography',()=>{
- const d=document();
- const intro=d.querySelector('#intro');
- assert.ok(intro?.classList.contains('hero'));
- assert.ok(d.body.classList.contains('home-r49'));
- assert.equal(intro.querySelectorAll('img[src*="luwei-"]').length,0,'No restaurant imagery in premium hero');
- assert.equal(intro.querySelector('#hero-photo').getAttribute('src'),'/assets/brand/r42/weplace-symbol.svg');
- assert.equal(intro.querySelectorAll('.r47-momentum-route .r47-trajectory').length,1);
+test('hero: new atmosphere sequence preserves direct diagnosis and separate LuWei evidence',()=>{
+ const d=document(), intro=d.querySelector('#intro');
+ assert.ok(intro.classList.contains('hero'));
+ assert.equal(intro.querySelectorAll('img[src*="luwei-"]').length,0);
+ assert.equal(intro.querySelectorAll('[data-hero-scene]').length,3);
  assert.equal(intro.querySelector('#hero-cta').getAttribute('href'),'#request');
- assert.match(intro.querySelector('#hero-visual-note').textContent,/실제 매출 그래프나 성과 예측이 아닙니다/);
- assert.match(intro.querySelector('#scene-panel').textContent,/질문을 발견하고/);
- assert.match(css,/#intro \.hero-stage\.path-stage/);
+ assert.match(intro.querySelector('.eh-images figcaption').textContent,/실제 고객 사례와 구분합니다/);
+ assert.equal(d.querySelectorAll('h1').length,1);
 });
 test('LuWei source before-to-after remains a voluntary real-image comparison',()=>{
  const d=document();

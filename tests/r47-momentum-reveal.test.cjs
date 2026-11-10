@@ -8,13 +8,11 @@ const r2=fs.readFileSync('assets/js/main-landing-r2.js','utf8');
 const r47=fs.readFileSync('assets/js/main-landing-r47.js','utf8');
 const css=fs.readFileSync('assets/css/main-landing-r47.css','utf8');
 
-test('dark hero contains a non-numerical rise and preserves the R4.5 controller',()=>{
- assert.match(html,/class="r47-momentum-route"/);
- assert.equal((html.match(/class="r47-trajectory"/g)||[]).length,1);
- assert.match(html,/금색 상승선은 선택 경로를 표현한 상징이며 매출이나 성과 추이가 아닙니다/);
+test('new hero keeps atmosphere imagery distinct from actual evidence',()=>{
+ assert.match(html,/data-emotional-hero/);
+ assert.match(html,/분위기 참고 이미지/);
+ assert.doesNotMatch(html,/class="r47-trajectory"/);
  assert.match(html,/main-landing-r45\.js/);
- assert.match(css,/@keyframes r47-route-rise/);
- assert.match(css,/\.home-r47 #intro \.hero-copy h1 em/);
 });
 test('first arrival presents the actual exterior photograph and an accessible switch',()=>{
  const d=new JSDOM(html).window.document;

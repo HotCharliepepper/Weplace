@@ -11,11 +11,11 @@ const css=fs.readFileSync(path.join(root,'assets/css/main-landing-r46.css'),'utf
 test('R4.6 stylesheet present exactly once',()=>{
  assert.equal((html.match(/href="\/assets\/css\/main-landing-r46\.css"/g)||[]).length,1);
 });
-test('existing R4.5 hero and CTA remain',()=>{
- assert.match(html,/id="cinema"/);
- assert.match(html,/매장은 그대로인데/);
- assert.match(html,/우리 매장 첫 화면 확인하기/);
+test('new hero preserves diagnosis and the R4.5 Open Work controller',()=>{
+ assert.match(html,/data-emotional-hero/);
+ assert.match(html,/id="hero-cta"[^>]*href="#request"/);
  assert.match(html,/main-landing-r45\.js/);
+ assert.match(html,/id="open-work"/);
 });
 test('changes: both states have question, information and action in one existing comparison',()=>{
  assert.match(html,/class="r46-path-insight"/);
