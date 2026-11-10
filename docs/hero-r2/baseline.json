@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-10",
+  "main": "42562ec1a3dedec0e97b4fef1944aef4d84a6a49",
+  "pr20": "9ed15798e1ef90712ba842a7f873b230a1688cf0",
+  "pr21": "e3dad9290937af86566e7e398700c9cd9282fb1f",
+  "basePr": 26,
+  "baseHead": "d81a032eb56445b532c277a235776a5276f75619",
+  "protectedBodySha256": "dca361eb469887300028f2d0506bc0b5f180184b787a304ef608a31897bd9cce",
+  "protectedFiles": [
+    "_redirects",
+    "config/company-info.json",
+    "config/privacy-release.json",
+    "assets/js/main-landing-r2.js",
+    "my-store/index.html"
+  ]
+}

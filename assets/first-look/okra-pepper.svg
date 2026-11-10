@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="460" viewBox="0 0 620 460" role="img" aria-labelledby="art-title art-desc">
+  <title id="art-title">비슷한 초록, 서로 다른 두 식재료</title>
+  <desc id="art-desc">서로 비슷한 초록색의 두 식재료. 표면과 단면의 차이를 관찰하는 선택형 그림</desc>
+  <defs>
+    <linearGradient id="night" x1=".1" y1="0" x2=".95" y2="1"><stop stop-color="#153d2d"/><stop offset=".6" stop-color="#081f16"/><stop offset="1" stop-color="#163427"/></linearGradient>
+    <linearGradient id="pepper" x1="0" y1=".2" x2="1" y2=".85"><stop stop-color="#b2ce51"/><stop offset=".13" stop-color="#4d941f"/><stop offset=".32" stop-color="#1b641e"/><stop offset=".67" stop-color="#0d4216"/><stop offset=".86" stop-color="#75ac31"/><stop offset="1" stop-color="#0c3918"/></linearGradient>
+    <linearGradient id="okra" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#a0b54a"/><stop offset=".21" stop-color="#446f23"/><stop offset=".5" stop-color="#193e19"/><stop offset=".72" stop-color="#587f2f"/><stop offset="1" stop-color="#152e18"/></linearGradient>
+    <radialGradient id="focus"><stop stop-color="#d3aa68" stop-opacity=".19"/><stop offset="1" stop-color="#e5d099" stop-opacity="0"/></radialGradient>
+    <radialGradient id="core"><stop stop-color="#f2edc6"/><stop offset=".75" stop-color="#d0d793"/><stop offset="1" stop-color="#78963d"/></radialGradient>
+    <linearGradient id="pepInner"><stop stop-color="#daef93"/><stop offset=".54" stop-color="#8dad4d"/><stop offset="1" stop-color="#457421"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8"/></filter>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0V54" fill="none" stroke="#fff" stroke-opacity=".045" stroke-width=".8"/></pattern>
+  </defs>
+  <rect width="620" height="460" fill="url(#night)"/><rect width="620" height="460" fill="url(#grid)"/>
+  <ellipse cx="300" cy="170" rx="240" ry="160" fill="url(#focus)"/>
+  <path d="M310 37V435" stroke="#c6ae7f" stroke-opacity=".4" stroke-width=".8"/>
+  <ellipse cx="153" cy="407" rx="115" ry="19" fill="#000" opacity=".5" filter="url(#shadow)"/>
+  <ellipse cx="450" cy="405" rx="116" ry="18" fill="#000" opacity=".5" filter="url(#shadow)"/>
+  <!-- glossy chili -->
+  <path d="M155 100C116 79 96 112 99 135C105 171 131 182 123 232C120 266 101 302 122 343C141 384 183 370 205 318C222 274 207 232 203 191C196 151 196 119 155 100Z" fill="url(#pepper)" stroke="#a7be58" stroke-width="2"/>
+  <path d="M150 107C128 136 139 185 135 242C130 299 133 331 141 348" fill="none" stroke="#d7ec81" stroke-opacity=".62" stroke-linecap="round" stroke-width="9"/>
+  <path d="M175 110C197 140 186 194 189 235C193 288 179 325 157 350" fill="none" stroke="#0e2c13" stroke-opacity=".38" stroke-width="12"/>
+  <path d="M155 102C156 85 152 62 165 48C172 40 185 37 190 39" fill="none" stroke="#699536" stroke-width="16" stroke-linecap="round"/>
+  <path d="M155 102C155 83 159 65 169 57" fill="none" stroke="#b1c66c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M152 120c-28-8-30-16-31-25M152 120c16-8 28-15 31-26" stroke="#3b7523" stroke-width="13" fill="none" stroke-linecap="round"/>
+  <ellipse cx="125" cy="173" rx="5" ry="13" fill="#d5e88e" opacity=".55" transform="rotate(19 125 173)"/>
+  <ellipse cx="185" cy="286" rx="5" ry="16" fill="#dbe69e" opacity=".25" transform="rotate(25 185 286)"/>
+  <!-- pepper slice -->
+  <g transform="translate(218 343) rotate(-12)">
+    <ellipse cx="0" cy="0" rx="57" ry="36" fill="#133113" stroke="#85af47" stroke-width="5"/>
+    <ellipse cx="0" cy="0" rx="44" ry="27" fill="url(#pepInner)"/>
+    <path d="M-21-8C-4-23 14-16 25-8M-16 8C1 20 17 18 27 8" fill="none" stroke="#edf4b8" stroke-width="4"/>
+    <g fill="#fbefbb"><ellipse cx="-12" cy="-3" rx="7" ry="4"/><ellipse cx="0" cy="-13" rx="6" ry="3"/><ellipse cx="13" cy="4" rx="7" ry="4"/><ellipse cx="-1" cy="10" rx="6" ry="4"/></g>
+  </g>
+  <!-- okra pod ridges -->
+  <path d="M442 76C395 70 378 119 383 168C390 217 409 246 412 285C415 337 422 369 449 389C472 365 488 330 496 277C501 225 493 166 484 119C479 95 468 79 442 76Z" fill="url(#okra)" stroke="#b3bd6f" stroke-width="2"/>
+  <path d="M441 81C420 123 420 191 436 252C441 302 441 348 449 375" fill="none" stroke="#a1bd59" stroke-opacity=".8" stroke-width="14"/>
+  <path d="M418 96C398 150 411 242 419 286C422 318 432 351 441 370" fill="none" stroke="#6f9e44" stroke-width="11" opacity=".8"/>
+  <path d="M461 92C479 139 476 207 467 272C460 318 454 349 450 378" fill="none" stroke="#1b4a1f" stroke-width="20" opacity=".78"/>
+  <path d="M478 116C494 176 486 238 477 288" fill="none" stroke="#98b55b" stroke-width="6" opacity=".85"/>
+  <path d="M443 78C438 60 443 43 447 31" fill="none" stroke="#789c41" stroke-width="14" stroke-linecap="round"/>
+  <path d="M442 88L419 90 407 112M444 88L468 87 481 104" fill="none" stroke="#4e7b31" stroke-width="14" stroke-linecap="round"/>
+  <g opacity=".35" stroke="#cce48c" stroke-width="1" stroke-linecap="round">
+    <path d="M391 163l-5-9M397 203l-6-6M401 248l-5 3M490 179l8-8M488 214l7 4M486 270l8 3M424 345l-7 7M469 343l7 7"/>
+  </g>
+  <!-- five-point star cut of okra -->
+  <g transform="translate(510 346)">
+    <path d="M0-61L19-33L49-39L45-8L65 17L35 32L22 60L0 43L-29 57L-38 26L-64 8L-43-15L-40-43L-11-34Z" fill="#4e792e" stroke="#b7c67a" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M0-45L14-20L36-23L30-3L44 13L23 24L14 42L0 28L-20 41L-25 22L-42 8L-27-9L-23-25L-6-19Z" fill="url(#core)" stroke="#e1e4a0" stroke-width="3"/>
+    <g fill="#f8ebbc" stroke="#b3be7e" stroke-width="2"><ellipse cx="0" cy="-17" rx="9" ry="12"/><ellipse cx="16" cy="-1" rx="9" ry="11" transform="rotate(60 16 -1)"/><ellipse cx="9" cy="18" rx="10" ry="11" transform="rotate(25 9 18)"/><ellipse cx="-13" cy="17" rx="10" ry="12" transform="rotate(-28 -13 17)"/><ellipse cx="-19" cy="-4" rx="10" ry="11" transform="rotate(-66 -19 -4)"/></g>
+    <circle cx="0" cy="0" r="6" fill="#f7efcd"/>
+  </g>
+  <path d="M21 419H285M335 419H599" stroke="#f2d69a" stroke-opacity=".42"/>
+  <!-- Intentionally unlabeled: the first selection reveals names after a choice. -->
+  <g fill="none" stroke="#e4d19e" stroke-opacity=".6"><path d="M35 58H145M352 58H463"/></g>
+</svg>

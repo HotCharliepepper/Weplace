@@ -23,3 +23,7 @@ Field Notes assets are built from the FLOW repository with `npx vite build --con
 ## Next scope
 
 Account-linked diagnostic history, automatic CRM/Sheets intake and payment are not implemented by this release. Add those only with explicit data scope and authenticated server handling. Draft English/pricing changes remain separate.
+
+## 2026-10-19 review branch
+
+Homepage comparison now uses the same four explicit industry values: dining, cafe, stay, beauty. `/check/` adds cafe separately and passes only an allowlisted industry to the new noindex `/meeting/` review template. Answers remain in memory and are not passed in URL, storage, analytics or requests. Meeting checks are preparation notes, not contract consent or confirmed reservations. See `docs/journey-to-crm.md`.

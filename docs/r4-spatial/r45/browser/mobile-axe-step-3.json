@@ -1,0 +1,14 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "nodes": [
+        [
+          ".complete-mark"
+        ]
+      ]
+    }
+  ],
+  "passedRules": 21
+}
