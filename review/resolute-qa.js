@@ -41,7 +41,7 @@
         d.querySelector('[data-open-request]').click();
         check(`${width} dialog open and focused`,d.querySelector('dialog').open && d.activeElement.id==='store');
         check(`${width} interest carried`,d.querySelector('#interest').value==='booking');
-        d.querySelector('#close-dialog').click();
+        d.querySelector('#close-dialog').click();await wait(60);
         check(`${width} dialog closed / focus restored`,!d.querySelector('dialog').open && d.activeElement.matches('[data-open-request]'));
         report();
       }

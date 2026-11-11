@@ -70,12 +70,19 @@
   window.addEventListener('load', () => {if (allowed()) st.refresh();}, {once:true});
   const dialog = $('#request-dialog');
   $$('[data-open-request]').forEach(a => a.addEventListener('click', event => {
-    event.preventDefault(); opener = a; $('#interest').value = state.focus;
+    event.preventDefault(); opener = a; $('#interest').value = state.focus; invalidate();
     if (typeof dialog.showModal === 'function') dialog.showModal(); else {location.href = '/#request'; return;}
     $('#store').focus();
   }));
   $('#close-dialog').addEventListener('click', () => dialog.close());
   dialog.addEventListener('close', () => {opener?.focus({preventScroll:true});});
+  dialog.addEventListener('keydown', event => {
+    if (event.key !== 'Tab') return;
+    const stops = [...dialog.querySelectorAll('a[href],button,input,select,textarea,[tabindex]')].filter(el => !el.disabled && el.tabIndex >= 0 && el.getClientRects().length);
+    const first = stops[0], last = stops[stops.length - 1];
+    if (event.shiftKey && document.activeElement === first) {event.preventDefault();last?.focus();}
+    else if (!event.shiftKey && document.activeElement === last) {event.preventDefault();first?.focus();}
+  });
   dialog.addEventListener('click', event => {if(event.target !== dialog) return; const r = dialog.getBoundingClientRect(); if(event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close();});
   // Rebuild rather than leaving an outdated store or interest in a prepared message.
   function invalidate() {$('#request-result').hidden = true; $('#request-text').value = ''; $('#request-status').textContent = '';}

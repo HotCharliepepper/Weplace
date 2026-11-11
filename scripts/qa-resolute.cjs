@@ -50,6 +50,9 @@ const pause = page => page.waitForTimeout(420);
   check('editing invalidates prepared request',await page.locator('#request-result').isHidden());
   for(let i=0;i<14;i++){await page.keyboard.press('Tab');check(`modal focus containment ${i}`,await page.evaluate(()=>document.querySelector('dialog').contains(document.activeElement)));}
   await page.keyboard.press('Escape');
+  await page.locator('button[data-focus="photo"]').click();await page.locator('[data-open-request]').click();
+  check('reopened dialog discards stale topic',await page.locator('#request-result').isHidden() && await page.locator('#interest').inputValue()==='photo');
+  await page.keyboard.press('Escape');
   await page.emulateMedia({reducedMotion:'reduce'});await pause(page);
   check('live reduced-motion removes triggers',await page.evaluate(()=>ScrollTrigger.getAll().length===0));
   check('live reduced-motion restores text',await page.locator('.rf-word').evaluateAll(es=>es.every(e=>getComputedStyle(e).opacity==='1'&&getComputedStyle(e).transform==='none')));
