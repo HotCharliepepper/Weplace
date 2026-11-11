@@ -23,8 +23,15 @@ jobs:
         run: |
           npm ci
           npm run verify
-      - name: Chromium
-        run: npx playwright install --with-deps chromium
+      - name: Select Chromium browser
+        run: |
+          browser_path="$(command -v google-chrome || command -v chromium || true)"
+          if [ -n "$browser_path" ]; then
+            "$browser_path" --version
+            printf 'RV_BROWSER_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium
+          fi
       - name: Serve static draft artifact
         run: |
           python3 -m http.server 4173 --bind 127.0.0.1 --directory dist > /tmp/r2-depth-server.log 2>&1 &
