@@ -7,7 +7,7 @@ fs.mkdirSync(out,{recursive:true});
 const rows=[];
 const check=(label,ok,detail='')=>{rows.push({label,passed:!!ok,detail});if(!ok)console.error('FAIL',label,detail)};
 (async()=>{
-  const browser=await chromium.launch({headless:true});
+  const browser=await chromium.launch({headless:true,...(process.env.RV_BROWSER_PATH?{executablePath:process.env.RV_BROWSER_PATH}:{})});
   const page=await browser.newPage();
   const errors=[],writes=[];
   page.on('pageerror',e=>errors.push(e.message));
