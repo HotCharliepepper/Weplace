@@ -23,3 +23,4 @@ html[data-af-entry=ad] #intro{display:none}html[data-af-entry=home] #ad-entry{di
 
 /* Use one anchor offset; combining scroll-padding and scroll-margin doubles the gap. */
 .af-section,.af-ad{scroll-margin-top:0}
+@media(min-width:1001px){.af-ad h1{font-size:clamp(36px,3.75vw,56px)}}
