@@ -18,6 +18,7 @@
 }
 .rv-vision .rf-hero-grid{position:relative;z-index:2}
 .rv-vision .rf-hero-copy{isolation:isolate}
+.rv-vision .rf-title{position:relative}
 .rv-vision .rf-title-top{
   color:#203a2b;
   text-shadow:0 1px 0 rgba(255,255,255,.7),0 18px 38px rgba(33,65,46,.10);
