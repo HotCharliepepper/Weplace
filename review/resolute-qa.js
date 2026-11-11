@@ -41,7 +41,13 @@
         d.querySelector('[data-open-request]').click();
         check(`${width} dialog open and focused`,d.querySelector('dialog').open && d.activeElement.id==='store');
         check(`${width} interest carried`,d.querySelector('#interest').value==='booking');
-        d.querySelector('#close-dialog').click();await wait(60);
+        // Native close is dispatched in the child document's task queue. Wait for
+        // that event rather than assuming it follows the parent timer's cadence.
+        await new Promise(resolve => {
+          const timeout = setTimeout(resolve,1500);
+          d.querySelector('dialog').addEventListener('close',()=>{clearTimeout(timeout);resolve();},{once:true});
+          d.querySelector('#close-dialog').click();
+        });
         check(`${width} dialog closed / focus restored`,!d.querySelector('dialog').open && d.activeElement.matches('[data-open-request]'));
         report();
       }
