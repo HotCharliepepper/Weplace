@@ -53,3 +53,6 @@
 /* Contrast fix found by full-page axe review, scoped to R3 only. */
 .unified-r3 .rf-footer{color:#e9efdf}
 .unified-r3 .rf-footer a:focus-visible{outline-color:#ecdda1}
+
+/* Explicitly darken small text on the two gradient seams. */
+.unified-r3 .rf-hero-sub small,.unified-r3 .rf-word-row small{color:#465d4b}
