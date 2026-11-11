@@ -10,7 +10,8 @@
     "verify": "npm test && npm run check:links && npm run build",
     "test:r43": "playwright test --config playwright.r43.config.cjs",
     "test:r44": "playwright test --config playwright.r44.config.cjs",
-    "test:r45": "playwright test --config playwright.r45.config.cjs"
+    "test:r45": "playwright test --config playwright.r45.config.cjs",
+    "postbuild": "node scripts/build-ad-routes.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
