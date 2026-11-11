@@ -25,12 +25,12 @@
         check(`${width} no overflow`,d.documentElement.scrollWidth<=width+1);
         check(`${width} one H1`,d.querySelectorAll('h1').length===1);
         for(const topic of ['photo','route','booking']) {
-          d.querySelector(`[data-focus="${topic}"]`).click();
+          d.querySelector(`button[data-focus="${topic}"]`).click();
           for(const mode of ['before','after']) {
-            d.querySelector(`[data-mode="${mode}"]`).click();await wait(380);
+            d.querySelector(`button[data-mode="${mode}"]`).click();await wait(380);
             check(`${width} ${topic}/${mode} visible`,!d.querySelector(`[data-view="${topic}-${mode}"]`).hidden && d.querySelectorAll('[data-view]:not([hidden])').length===1);
             check(`${width} ${topic}/${mode} overflow`,d.documentElement.scrollWidth<=width+1);
-            check(`${width} ${topic}/${mode} selection`,d.querySelector(`[data-focus="${topic}"]`).getAttribute('aria-pressed')==='true' && d.querySelector(`[data-mode="${mode}"]`).getAttribute('aria-pressed')==='true');
+            check(`${width} ${topic}/${mode} selection`,d.querySelector(`button[data-focus="${topic}"]`).getAttribute('aria-pressed')==='true' && d.querySelector(`button[data-mode="${mode}"]`).getAttribute('aria-pressed')==='true');
           }
         }
         d.querySelector('[data-guests="6"]').click();d.querySelector('[data-time="19:30"]').click();
@@ -50,7 +50,7 @@
           await load(width,mode);const d=frame.contentDocument,w=frame.contentWindow;
           check(`${mode} ${width} no motion`,d.documentElement.dataset.rfMotion==='off' && (!w.ScrollTrigger || w.ScrollTrigger.getAll().length===0));
           check(`${mode} ${width} words readable`,[...d.querySelectorAll('.rf-word')].every(e=>Number(w.getComputedStyle(e).opacity)===1));
-          d.querySelector('[data-mode="after"]').click();
+          d.querySelector('button[data-mode="after"]').click();
           check(`${mode} ${width} compare usable`,!d.querySelector('[data-view="route-after"]').hidden);
           check(`${mode} ${width} no overflow`,d.documentElement.scrollWidth<=width+1);
         }

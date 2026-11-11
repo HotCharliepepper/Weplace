@@ -20,9 +20,9 @@ const pause = page => page.waitForTimeout(420);
    check(`${width}: overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
    if(width===390||width===1440)await page.screenshot({path:path.join(out,`WEPLACE_Resolute_${width===390?'Mobile':'Desktop'}_Hero.png`)});
    for(const topic of ['photo','route','booking']) {
-    await page.locator(`[data-focus="${topic}"]`).click();
+    await page.locator(`button[data-focus="${topic}"]`).click();
     for(const mode of ['before','after']) {
-     await page.locator(`[data-mode="${mode}"]`).click();await pause(page);
+     await page.locator(`button[data-mode="${mode}"]`).click();await pause(page);
      check(`${width}: ${topic}/${mode}`,await page.locator(`[data-view="${topic}-${mode}"]`).isVisible());
      check(`${width}: ${topic}/${mode} overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
      if(topic==='route'&&width===1440)await page.locator('.rf-stage').screenshot({path:path.join(out,`WEPLACE_Resolute_Arrival_${mode}.png`)});
@@ -39,7 +39,7 @@ const pause = page => page.waitForTimeout(420);
    await page.keyboard.press('Escape');
    check(`${width}: modal close / focus return`,await page.evaluate(()=>!document.querySelector('dialog').open&&document.activeElement.matches('[data-open-request]')));
   }
-  await page.locator('[data-focus="route"]').click();await page.locator('[data-open-request]').click();
+  await page.locator('button[data-focus="route"]').click();await page.locator('[data-open-request]').click();
   await page.locator('#store').fill('검수용 가상 매장');await page.locator('#region').fill('검수용 지역');
   await page.locator('#request-form button[type=submit]').click();
   check('request includes selection', (await page.locator('#request-text').inputValue()).includes('찾아오는 길'));
@@ -56,7 +56,7 @@ const pause = page => page.waitForTimeout(420);
   for(const width of [390,1440]) {
    await page.setViewportSize({width,height:width===390?844:1000});await page.goto('http://127.0.0.1:4173/resolute.html');await page.evaluate(()=>document.fonts.ready);
    check(`${width}: reduced-motion initial`,await page.evaluate(()=>document.documentElement.dataset.rfMotion==='off'&&ScrollTrigger.getAll().length===0));
-   await page.locator('[data-mode="after"]').click();check(`${width}: reduced-motion controls`,await page.locator('[data-view="route-after"]').isVisible());
+   await page.locator('button[data-mode="after"]').click();check(`${width}: reduced-motion controls`,await page.locator('[data-view="route-after"]').isVisible());
    await page.screenshot({path:path.join(out,`WEPLACE_Resolute_${width===390?'Mobile':'Desktop'}_Full.png`),fullPage:true});
   }
   await page.emulateMedia({reducedMotion:'no-preference'});await page.goto('http://127.0.0.1:4173/resolute.html');
@@ -68,7 +68,7 @@ const pause = page => page.waitForTimeout(420);
   check('no pinned scroll',await page.locator('.pin-spacer').count()===0);
   await page.route('**/assets/vendor/gsap/**',r=>r.abort());await page.reload();
   check('GSAP failure readable',await page.locator('.rf-word').evaluateAll(es=>es.every(e=>getComputedStyle(e).opacity==='1')));
-  await page.locator('[data-mode="after"]').click();check('GSAP failure usable',await page.locator('[data-view="route-after"]').isVisible());
+  await page.locator('button[data-mode="after"]').click();check('GSAP failure usable',await page.locator('[data-view="route-after"]').isVisible());
   await page.unroute('**/assets/vendor/gsap/**');
   const fallbackContext=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});const fallback=await fallbackContext.newPage();
   await fallback.goto('http://127.0.0.1:4173/resolute.html');

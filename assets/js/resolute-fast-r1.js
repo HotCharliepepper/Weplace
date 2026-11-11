@@ -17,8 +17,8 @@
   function render(animate = true) {
     const subject = subjects[state.focus], copy = subject[state.mode];
     $('#stage').dataset.focus = state.focus; $('#stage').dataset.mode = state.mode;
-    $$('[data-focus]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.focus === state.focus)));
-    $$('[data-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === state.mode)));
+    $$('button[data-focus]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.focus === state.focus)));
+    $$('button[data-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === state.mode)));
     $$('[data-view]').forEach(v => {v.hidden = v.dataset.view !== `${state.focus}-${state.mode}`;});
     $('#scene-visual').setAttribute('aria-label', `${subject.label} ${state.mode === 'before' ? '이전' : '정리 후'} 화면 예시`);
     $('#scene-kicker').textContent = subject.kicker;
@@ -29,7 +29,7 @@
     if (modeTween) { modeTween.kill(); gs.set($$('[data-view]'), {clearProps:'opacity'}); }
     if (animate && allowed()) modeTween = gs.fromTo($(`[data-view="${state.focus}-${state.mode}"]`), {opacity:.35}, {opacity:1,duration:.35,ease:'power2.out',clearProps:'opacity'});
   }
-  $$('[data-focus],[data-mode]').forEach(b => {b.disabled = false;b.addEventListener('click', () => {
+  $$('button[data-focus],button[data-mode]').forEach(b => {b.disabled = false;b.addEventListener('click', () => {
     if (b.dataset.focus) state.focus = b.dataset.focus; else state.mode = b.dataset.mode;
     render();
   });});
