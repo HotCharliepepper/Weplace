@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-08",
+  "preview": "https://deploy-preview-20--weplace.netlify.app/",
+  "testedDeploy": "6af004a2204bad7dae689808",
+  "testedCodeHead": "bad97e07e59ea5a6847763389ee883758b9dc8b8",
+  "downloadedQuestion": {
+    "bytes": 57822,
+    "sha256": "37e4afcbda06d752e399130df1a06f4c09bbe8810d3ff59079193a0cfe3966b6",
+    "matchesRepositoryAsset": true
+  },
+  "liveHeroCapture": {
+    "bytes": 99423,
+    "sha256": "a63d924155b33b62f87756188c25c23aa054f692d8e262c2547303bac222038f"
+  }
+}

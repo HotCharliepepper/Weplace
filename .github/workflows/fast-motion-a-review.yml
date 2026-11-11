@@ -1,0 +1,51 @@
+name: FAST Motion A review QA
+on:
+  push:
+    branches: [draft/weplace-fast-motion-a-20261111]
+    paths:
+      - resolute.html
+      - assets/css/resolute-fast-motion-a.css
+      - assets/js/resolute-fast-motion-a.js
+      - assets/js/resolute-sonic-a.js
+      - assets/resolute-fast-motion-a/**
+      - scripts/qa-fast-motion-a.cjs
+      - .github/workflows/fast-motion-a-review.yml
+permissions:
+  contents: read
+concurrency:
+  group: fast-motion-a-review
+  cancel-in-progress: true
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run verify
+      - name: Select installed Chromium browser
+        run: |
+          browser_path="$(command -v google-chrome || command -v chromium || true)"
+          if [ -n "$browser_path" ]; then
+            "$browser_path" --version
+            printf 'FAST_A_BROWSER_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium
+          fi
+      - name: Preserved baseline and browser QA
+        run: |
+          git fetch --depth=1 origin c85c51d9eb70e5cb295a8227c2ade3b24360a8c1
+          git show c85c51d9eb70e5cb295a8227c2ade3b24360a8c1:resolute.html > dist/review/fast-a-baseline.html
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory dist > /tmp/fast-a-http.log 2>&1 &
+          node scripts/qa-resolute.cjs
+          node scripts/qa-fast-motion-a.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: WEPLACE-FAST-A-QA
+          path: test-results/
+          retention-days: 14

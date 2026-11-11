@@ -1,0 +1,121 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "aria-prohibited-attr",
+      "nodes": [
+        [
+          ".channel-band"
+        ],
+        [
+          ".flow-role-stack"
+        ]
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "nodes": [
+        [
+          ".text-link[href$=\"#changes\"] > span[aria-hidden=\"true\"]"
+        ],
+        [
+          ".hero-photo > figcaption > span"
+        ],
+        [
+          "figcaption > strong"
+        ],
+        [
+          ".axis-text:nth-child(4) > text[y=\"45\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          ".axis-text:nth-child(4) > text[y=\"140\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          ".axis-text:nth-child(4) > text[y=\"235\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          ".chart-wrap > svg > .chart-values > text[y=\"49\"][x=\"191\"][text-anchor=\"middle\"]"
+        ],
+        [
+          ".chart-wrap > svg > .chart-values > text[y=\"29\"][x=\"379\"][text-anchor=\"middle\"]"
+        ],
+        [
+          ".chart-wrap > svg > .month.axis-text > text[x=\"191\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          ".chart-wrap > svg > .month.axis-text > text[x=\"379\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          ".photo-number"
+        ],
+        [
+          ".answer-path > i:nth-child(2)"
+        ],
+        [
+          ".answer-path > i:nth-child(4)"
+        ],
+        [
+          ".axis-text:nth-child(3) > text[y=\"45\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          ".axis-text:nth-child(3) > text[y=\"140\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          ".axis-text:nth-child(3) > text[y=\"235\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          "svg[aria-labelledby=\"case-a-title\"] > .chart-values > text[y=\"49\"][x=\"191\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "svg[aria-labelledby=\"case-a-title\"] > .chart-values > text[y=\"29\"][x=\"379\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "svg[aria-labelledby=\"case-a-title\"] > .month.axis-text > text[x=\"191\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "svg[aria-labelledby=\"case-a-title\"] > .month.axis-text > text[x=\"379\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "text[x=\"52\"][y=\"45\"][text-anchor=\"end\"]"
+        ],
+        [
+          "text[x=\"52\"][y=\"140\"][text-anchor=\"end\"]"
+        ],
+        [
+          "text[x=\"52\"][y=\"235\"][text-anchor=\"end\"]"
+        ],
+        [
+          "text[y=\"146\"]"
+        ],
+        [
+          "text[y=\"126\"]"
+        ],
+        [
+          "text[y=\"60\"]"
+        ],
+        [
+          "text[y=\"34\"]"
+        ],
+        [
+          "text[x=\"118\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "text[x=\"228\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "text[x=\"338\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "text[x=\"448\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "#flow-note > span[aria-hidden=\"true\"]"
+        ],
+        [
+          ".question-action:nth-child(1) > span[aria-hidden=\"true\"]"
+        ]
+      ]
+    }
+  ],
+  "passedRules": 34
+}
