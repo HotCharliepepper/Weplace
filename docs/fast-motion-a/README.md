@@ -17,6 +17,7 @@
 - 기본 무음이며 AudioContext를 만들지 않습니다. 사용자가 사운드를 켜면 190ms 자체 sine 스윕/확인음을 한 번 재생합니다. 이후에는 FAST 재생 클릭에서만 동반 재생합니다.
 - 명시적 클릭에서 AudioContext 생성·재개, 1.2초 차단 타임아웃, 늦은 완료 무효화, 연속 재생 중복 방지, OFF/탭 이탈 시 정지·닫기. 음원 사이에는 context를 suspend합니다. 사운드 ON 상태는 이 페이지 메모리에만 있으며 다시 방문하면 무음입니다.
 - reduced-motion·수동 모션 OFF·Save Data/2g·GSAP 미로딩에서 정적인 제목. 기존 비교·문의 기능은 독립적입니다. 새 모듈 로딩 실패 때도 제목은 CSS로 읽히며 기존 기능은 계속 동작합니다.
+- 전체 캡처에서 약도 SVG가 시스템 `sans-serif`를 지정해 한국어 글꼴이 없는 Linux에서 네모 글자로 표시되는 것을 발견했습니다. A안 CSS에서 기존 `RF Sans` 웹폰트를 적용했습니다. 원본 약도의 문구·형태·동작과 R1 파일은 보존합니다.
 
 ## 검수와 성능
 
@@ -29,7 +30,7 @@
 - GSAP/ScrollTrigger 3.13.0: 기존 공식 배포본·[Standard no-charge license](https://gsap.com/standard-license), `assets/vendor/gsap/LICENSE.txt` 보존. MIT라고 표기하지 않습니다.
 - Noto Sans CJK KR: 기존 SIL OFL 1.1. 신규 상태문구의 8개 글자만 1,952B WOFF2로 보충했습니다. 라이선스 동봉. 기본 화면에 해당 글자가 없으면 브라우저가 이 보충 폰트를 요청하지 않습니다.
 - Web Audio: 브라우저 기본 API. 음원·샘플·오디오 라이브러리 다운로드 없음. sine 조합은 이번에 작성한 자체 생성 코드입니다. [MDN 사용자 제스처·컨트롤 안내](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Best_practices), [resume 결과 처리](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/resume)를 참고했습니다.
-- Playwright와 axe-core: 저장소에 있던 검수용 개발 의존성. 사용자 페이지에 추가하지 않습니다. fontTools는 로컬 폰트 서브셋 생성에만 사용했습니다.
+- Playwright(Apache-2.0)와 axe-core(MPL-2.0): 저장소에 있던 검수용 개발 의존성. 사용자 페이지에 추가하지 않습니다. fontTools(MIT)는 로컬 폰트 서브셋 생성에만 사용했습니다.
 - VS Code 안내 문서는 참고했으며 사용자 PC에 도구·스킬을 설치하거나 기존 환경을 변경하지 않았습니다.
 
 ## 2.5D의 한계와 B안 판단 기준
