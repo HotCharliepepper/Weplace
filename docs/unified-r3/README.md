@@ -2,6 +2,8 @@
 
 검토 경로: `/unified-r3.html` · 광고 경로 비교: `/review/unified-r3.html`
 
+[실제 Preview](https://deploy-preview-32--weplace.netlify.app/unified-r3.html) · [Draft PR #32](https://github.com/HotCharliepepper/Weplace/pull/32) · [검수 결과와 남은 승인](QA.md)
+
 ## 기준과 범위
 
 2026-11-12 KST 작업 시작 시 GitHub API에서 PR #31 최신 HEAD `9f1b8ff36063cd84d405798707a41745f0844e48`를 재확인했다. 새 브랜치는 `draft/weplace-unified-experience-r3-20261112`. 운영 main은 `42562ec1a3dedec0e97b4fef1944aef4d84a6a49`였다.
