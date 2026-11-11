@@ -86,8 +86,8 @@
     const script=document.createElement('script'); script.src='/assets/js/emotional-hero-r2.js'; document.body.append(script);
   }
   $$('[data-af-home], [data-hero-route]').forEach(a=>{
-    const url=new URL(a.getAttribute('href'),location.href);
-    if(url.origin!==location.origin && url.origin!=='https://invite.withweplace.kr') return;
+    const url=new URL(a.getAttribute('href'),document.baseURI);
+    if(url.origin!==new URL(document.baseURI).origin && url.origin!=='https://invite.withweplace.kr') return;
     for(const [key,value] of safeUtms) url.searchParams.set(key,value);
     a.href=url.href;
   });

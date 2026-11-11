@@ -6,13 +6,14 @@
  const p=new URLSearchParams(location.search);if(p.get('width'))$('#width').value=p.get('width');if(p.get('entry'))$('#entry').value=p.get('entry');
  function record(name,pass,detail=''){results.push({name,pass,detail});$('#results').textContent=JSON.stringify(results,null,2);$('#status').textContent=`${results.filter(r=>r.pass).length} passed / ${results.filter(r=>!r.pass).length} failed`;}
  function targetURL(){const u=new URL('/ad-funnel.html',location.origin);if($('#entry').value!=='home')u.searchParams.set('ad',$('#entry').value);u.searchParams.set('utm_source','qa');u.searchParams.set('utm_campaign','r2a_review');if($('#section').value)u.hash=$('#section').value;return u;}
- async function load(){const id=++loadId;frame.width=$('#width').value;frame.height=+frame.width>700?1000:844;const url=targetURL();frame.removeAttribute('srcdoc');const mode=$('#mode').value;
+ async function load(){const id=++loadId;$('#status').textContent='화면 로딩 중';$('#results').textContent='';frame.width=$('#width').value;frame.height=+frame.width>700?1000:844;const url=targetURL();frame.removeAttribute('srcdoc');const mode=$('#mode').value;
   if(mode==='normal') frame.src=url.href;
   else {let html=await fetch(url.pathname).then(r=>r.text());if(id!==loadId)return;
    if(mode==='fallback')html=html.replace(/<script defer src="\/assets\/vendor\/gsap\/[^"<>]+"><\/script>/g,'');
    const init=`document.documentElement.dataset.afEntry=${JSON.stringify($('#entry').value==='home'?'home':'ad')};document.documentElement.dataset.afCampaign=${JSON.stringify($('#entry').value==='home'?'local':$('#entry').value)};`;
    const reduced=`const original=window.matchMedia.bind(window);window.matchMedia=q=>{const m=original(q);if(q.includes('prefers-reduced-motion'))Object.defineProperty(m,'matches',{value:true});return m;};`;
    const slow=`Object.defineProperty(navigator,'connection',{value:{saveData:true,effectiveType:'3g',addEventListener(){}}});`;
+   html=html.replace('<head>', '<head><base href="'+url.href+'">');
    html=html.replace('<script src="/assets/js/ad-funnel-entry-r2a.js"></script>','<script>'+init+(mode==='reduced'?reduced:mode==='slow'?slow:'')+'<\/script>');frame.srcdoc=html;
   }
  }
