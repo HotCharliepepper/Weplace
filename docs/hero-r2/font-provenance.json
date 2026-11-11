@@ -1,0 +1,18 @@
+[
+  {
+    "font": "assets/hero-r2/fonts/WeplaceStorySerif.woff2",
+    "source": "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
+    "fontNumber": 1,
+    "bytes": 171328,
+    "sha256": "96be82fd9d78eb420eb9b331beacd5d73c965cc438d4956f144f611e83c3c4f0",
+    "license": "SIL OFL 1.1"
+  },
+  {
+    "font": "assets/hero-r2/fonts/WeplaceStorySans.woff2",
+    "source": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+    "fontNumber": 1,
+    "bytes": 76776,
+    "sha256": "a136690cbba2dd789391ed48af29d8adb9a1bba1be68b0eec3ebbb3596df5fe9",
+    "license": "SIL OFL 1.1"
+  }
+]

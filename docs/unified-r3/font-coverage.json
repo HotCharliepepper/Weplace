@@ -1,0 +1,16 @@
+[
+  {
+    "file": "assets/unified-r3/fonts/WeplaceUnifiedSupplement-Regular.woff2",
+    "bytes": 3592,
+    "characters": "껐끄료린릴립맥산션숫승졌증짐짧축취태티향",
+    "sha256": "83bae1f00ce82a23f05bfdd146ecb83716eca3b070f6f30c3a0a7662effec1c9",
+    "missingAfter": 0
+  },
+  {
+    "file": "assets/unified-r3/fonts/WeplaceUnifiedSupplement-Bold.woff2",
+    "bytes": 3684,
+    "characters": "껐끄료린릴립맥산션숫승졌증짐짧축취태티향",
+    "sha256": "d70a19a3ec9a5b6b5475bcaf0f057de459afaec462e5c6ec719d97f05fca03aa",
+    "missingAfter": 0
+  }
+]
