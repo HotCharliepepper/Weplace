@@ -1,0 +1,266 @@
+{
+  "browser": "153.0.8010.0",
+  "method": "Local dist files fulfilled through Playwright routing, fresh context, no network throttling. Mobile uses 4x CPU slowdown; 9s observation window. File bytes are uncompressed requested resources, not wire transfer. Not field Core Web Vitals or a Lighthouse score.",
+  "samples": [
+    {
+      "variant": "before",
+      "device": "desktop",
+      "run": 1,
+      "lcp": 208,
+      "cls": 0.014159828332971644,
+      "longTasks": [
+        110
+      ],
+      "lcpElement": "H1",
+      "fcp": 208,
+      "domContentLoaded": 225.29999999981374,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 469936,
+      "requestedResources": 25,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "desktop",
+      "run": 2,
+      "lcp": 132,
+      "cls": 0.014159828332971644,
+      "longTasks": [
+        71
+      ],
+      "lcpElement": "H1",
+      "fcp": 132,
+      "domContentLoaded": 164.89999999990687,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 469936,
+      "requestedResources": 25,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "desktop",
+      "run": 3,
+      "lcp": 124,
+      "cls": 0.014159828332971644,
+      "longTasks": [
+        64
+      ],
+      "lcpElement": "H1",
+      "fcp": 124,
+      "domContentLoaded": 165.5,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 469936,
+      "requestedResources": 25,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "mobile",
+      "run": 1,
+      "lcp": 676,
+      "cls": 0.0000013417393347650981,
+      "longTasks": [
+        408,
+        97
+      ],
+      "lcpElement": "H1",
+      "fcp": 676,
+      "domContentLoaded": 636.7000000001863,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 469936,
+      "requestedResources": 25,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "mobile",
+      "run": 2,
+      "lcp": 664,
+      "cls": 0.0000013417393347650981,
+      "longTasks": [
+        365,
+        108
+      ],
+      "lcpElement": "H1",
+      "fcp": 664,
+      "domContentLoaded": 625,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 469936,
+      "requestedResources": 25,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "mobile",
+      "run": 3,
+      "lcp": 664,
+      "cls": 0.0000013417393347650981,
+      "longTasks": [
+        345,
+        112
+      ],
+      "lcpElement": "H1",
+      "fcp": 664,
+      "domContentLoaded": 622,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 469936,
+      "requestedResources": 25,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "desktop",
+      "run": 1,
+      "lcp": 148,
+      "cls": 0.01509140625,
+      "longTasks": [
+        68
+      ],
+      "lcpElement": "IMG",
+      "fcp": 148,
+      "domContentLoaded": 157.8000000002794,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "desktop",
+      "run": 2,
+      "lcp": 120,
+      "cls": 0.01509140625,
+      "longTasks": [
+        72
+      ],
+      "lcpElement": "IMG",
+      "fcp": 120,
+      "domContentLoaded": 166.10000000009313,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "desktop",
+      "run": 3,
+      "lcp": 136,
+      "cls": 0.01509140625,
+      "longTasks": [
+        74
+      ],
+      "lcpElement": "IMG",
+      "fcp": 136,
+      "domContentLoaded": 158.10000000009313,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "mobile",
+      "run": 1,
+      "lcp": 660,
+      "cls": 0,
+      "longTasks": [
+        365,
+        96
+      ],
+      "lcpElement": "IMG",
+      "fcp": 660,
+      "domContentLoaded": 621.2000000001863,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "mobile",
+      "run": 2,
+      "lcp": 664,
+      "cls": 0,
+      "longTasks": [
+        374,
+        92
+      ],
+      "lcpElement": "IMG",
+      "fcp": 664,
+      "domContentLoaded": 625.2999999998137,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "mobile",
+      "run": 3,
+      "lcp": 648,
+      "cls": 0,
+      "longTasks": [
+        358,
+        105
+      ],
+      "lcpElement": "IMG",
+      "fcp": 648,
+      "domContentLoaded": 623.2999999998137,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    }
+  ],
+  "medians": [
+    {
+      "variant": "before",
+      "device": "desktop",
+      "lcpMs": 132,
+      "fcpMs": 132,
+      "cls": 0.014159828332971644,
+      "longTaskBlockingMs": 21,
+      "requestedBytes": 469936
+    },
+    {
+      "variant": "before",
+      "device": "mobile",
+      "lcpMs": 664,
+      "fcpMs": 664,
+      "cls": 0.0000013417393347650981,
+      "longTaskBlockingMs": 373,
+      "requestedBytes": 469936
+    },
+    {
+      "variant": "after",
+      "device": "desktop",
+      "lcpMs": 136,
+      "fcpMs": 136,
+      "cls": 0.01509140625,
+      "longTaskBlockingMs": 22,
+      "requestedBytes": 481137
+    },
+    {
+      "variant": "after",
+      "device": "mobile",
+      "lcpMs": 660,
+      "fcpMs": 660,
+      "cls": 0,
+      "longTaskBlockingMs": 363,
+      "requestedBytes": 481137
+    }
+  ]
+}
