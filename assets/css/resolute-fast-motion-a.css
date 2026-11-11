@@ -30,3 +30,5 @@
 html[data-rf-motion=off] .rf-fast-body{transform:none!important}
 html[data-rf-motion=off] .rf-fast .rf-trail{opacity:0!important;transform:none!important}
 @media(forced-colors:active){.rf-fast-face>span{background:none;color:CanvasText;-webkit-text-stroke:0}.rf-fast-depth,.rf-fast .rf-trail{display:none}}
+/* Inline map labels must share the bundled Korean font, even on Latin-only systems. */
+.rf-route-map svg text{font-family:var(--rf-font)}
