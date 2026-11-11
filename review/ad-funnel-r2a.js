@@ -2,6 +2,7 @@
 (function(){
  const $=s=>document.querySelector(s),frame=$('#frame');let results=[],loadId=0;
  const pause=ms=>new Promise(r=>setTimeout(r,ms));
+ function jump(id){const w=frame.contentWindow,n=w.document.getElementById(id);if(n)w.scrollTo({top:n.getBoundingClientRect().top+w.scrollY-(+frame.width>700?82:68),behavior:'instant'});}
  const p=new URLSearchParams(location.search);if(p.get('width'))$('#width').value=p.get('width');if(p.get('entry'))$('#entry').value=p.get('entry');
  function record(name,pass,detail=''){results.push({name,pass,detail});$('#results').textContent=JSON.stringify(results,null,2);$('#status').textContent=`${results.filter(r=>r.pass).length} passed / ${results.filter(r=>!r.pass).length} failed`;}
  function targetURL(){const u=new URL('/ad-funnel.html',location.origin);if($('#entry').value!=='home')u.searchParams.set('ad',$('#entry').value);u.searchParams.set('utm_source','qa');u.searchParams.set('utm_campaign','r2a_review');if($('#section').value)u.hash=$('#section').value;return u;}
@@ -15,9 +16,9 @@
    html=html.replace('<script src="/assets/js/ad-funnel-entry-r2a.js"></script>','<script>'+init+(mode==='reduced'?reduced:mode==='slow'?slow:'')+'<\/script>');frame.srcdoc=html;
   }
  }
- frame.addEventListener('load',async()=>{await frame.contentDocument?.fonts?.ready;const d=frame.contentDocument;$('#status').textContent=`${frame.width} × ${frame.height} / ${$('#entry').value} / ${$('#mode').value}`;const h=$('#section').value;if(h)d.getElementById(h)?.scrollIntoView();});
+ frame.addEventListener('load',async()=>{await frame.contentDocument?.fonts?.ready;const d=frame.contentDocument;$('#status').textContent=`${frame.width} × ${frame.height} / ${$('#entry').value} / ${$('#mode').value}`;const h=$('#section').value;if(h)jump(h);});
  ['#width','#entry','#mode'].forEach(id=>$(id).addEventListener('change',load));$('#refresh').addEventListener('click',load);
- $('#section').addEventListener('change',()=>{const d=frame.contentDocument,s=$('#section').value; if(s)d.getElementById(s)?.scrollIntoView();else frame.contentWindow.scrollTo(0,0);});
+ $('#section').addEventListener('change',()=>{const d=frame.contentDocument,s=$('#section').value; if(s)jump(s);else frame.contentWindow.scrollTo({top:0,behavior:'instant'});});
  $('#run').addEventListener('click',async()=>{results=[];const w=frame.contentWindow,d=w.document,click=s=>d.querySelector(s).click();const get=s=>d.querySelector(s);
   for(const focus of ['route','booking','photo']){click(`[data-focus="${focus}"]`);record('scene '+focus,get('#focus-scene').dataset.currentFocus===focus && !get(`[data-scene="${focus}"]`).hidden && get('#meeting-note').value.includes(({photo:'사진',route:'찾아오는 길',booking:'예약'})[focus]));}
   click('[data-focus="booking"]');click('[data-guests="6"]');click('[data-time="19:30"]');record('booking example changes',get('#booking-status').textContent.includes('6인 · 19:30'));
@@ -33,9 +34,9 @@
   record('touch controls >=44',[...d.querySelectorAll('button')].filter(n=>n.getClientRects().length).every(n=>n.getBoundingClientRect().height>=44));
   record('no submitted request',!w.performance.getEntriesByType('resource').some(e=>/api\/|netlify\/functions|toss|analytics|collect/.test(e.name)));
   if($('#mode').value!=='normal')record('motion disabled for fixture',!w.ScrollTrigger || w.ScrollTrigger.getAll().length===0);
-  get('#experience').scrollIntoView();
+  jump('experience');
  });
- $('#geometry').addEventListener('click',async()=>{results=[];const w=frame.contentWindow,d=w.document;for(const focus of ['photo','route','booking']){d.querySelector(`[data-focus="${focus}"]`).click();for(const id of ['experience','contrast','diagnosis','meeting']){d.getElementById(id).scrollIntoView();await pause(120);record(`${frame.width}/${focus}/${id}`,d.documentElement.scrollWidth<=w.innerWidth);}}d.getElementById('experience').scrollIntoView();});
+ $('#geometry').addEventListener('click',async()=>{results=[];const w=frame.contentWindow,d=w.document;for(const focus of ['photo','route','booking']){d.querySelector(`[data-focus="${focus}"]`).click();for(const id of ['experience','contrast','diagnosis','meeting']){jump(id);await pause(120);record(`${frame.width}/${focus}/${id}`,d.documentElement.scrollWidth<=w.innerWidth);}}jump('experience');});
  $('#download').addEventListener('click',()=>{const blob=new Blob([JSON.stringify({width:frame.width,entry:$('#entry').value,mode:$('#mode').value,results},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`r2a-${frame.width}-${$('#entry').value}-${$('#mode').value}.json`;a.click();URL.revokeObjectURL(a.href);});
  load();
 })();

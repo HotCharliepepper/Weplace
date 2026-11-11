@@ -36,7 +36,7 @@
   }
   function updateMeeting() {
     const subject=subjects[state.focus];
-    $('#meeting-lead').textContent=`대표님이 먼저 고른 ${subject.label}${state.focus==='photo'?'부터':'부터'} 확인하겠습니다.`;
+    $('#meeting-lead').textContent=`대표님이 먼저 고른 ${subject.label}부터 확인하겠습니다.`;
     $('#meeting-note').value=`안녕하세요. Weplace에서 매장 첫 화면 예시를 살펴봤습니다.\n매장: ${state.store || '(매장명)'} / 지역: ${state.region || '(지역)'}\n먼저 함께 확인하고 싶은 부분: ${subject.label}\n희망 방식: ${state.meeting==='online'?'온라인 화면 공유':'매장 방문 (가능 지역과 조건 협의)'}\n현재 화면을 함께 보며 0원 진단의 범위와 가능한 일정을 안내받고 싶습니다.`;
     $('#meeting-help').textContent=state.meeting==='online'?'우리 매장의 현재 화면을 펼쳐놓고, 손님이 궁금해할 부분부터 이야기합니다.':'실제 입구와 공간을 함께 보며 확인합니다. 방문 가능 지역과 진행 조건은 일정 요청 후 협의합니다.';
     $('#copy-status').textContent='복사한 문구는 원하시는 대화창에서 직접 보내주세요.';
