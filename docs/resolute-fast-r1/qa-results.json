@@ -1,0 +1,636 @@
+{
+  "passed": 155,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "360: GSAP",
+      "pass": true
+    },
+    {
+      "name": "360: overflow",
+      "pass": true
+    },
+    {
+      "name": "360: photo/before",
+      "pass": true
+    },
+    {
+      "name": "360: photo/before overflow",
+      "pass": true
+    },
+    {
+      "name": "360: photo/after",
+      "pass": true
+    },
+    {
+      "name": "360: photo/after overflow",
+      "pass": true
+    },
+    {
+      "name": "360: route/before",
+      "pass": true
+    },
+    {
+      "name": "360: route/before overflow",
+      "pass": true
+    },
+    {
+      "name": "360: route/after",
+      "pass": true
+    },
+    {
+      "name": "360: route/after overflow",
+      "pass": true
+    },
+    {
+      "name": "360: booking/before",
+      "pass": true
+    },
+    {
+      "name": "360: booking/before overflow",
+      "pass": true
+    },
+    {
+      "name": "360: booking/after",
+      "pass": true
+    },
+    {
+      "name": "360: booking/after overflow",
+      "pass": true
+    },
+    {
+      "name": "360: booking selection",
+      "pass": true
+    },
+    {
+      "name": "360: images",
+      "pass": true
+    },
+    {
+      "name": "360: target sizes",
+      "pass": true
+    },
+    {
+      "name": "360: modal focus",
+      "pass": true
+    },
+    {
+      "name": "360: selected interest",
+      "pass": true
+    },
+    {
+      "name": "360: modal close / focus return",
+      "pass": true
+    },
+    {
+      "name": "390: GSAP",
+      "pass": true
+    },
+    {
+      "name": "390: overflow",
+      "pass": true
+    },
+    {
+      "name": "390: photo/before",
+      "pass": true
+    },
+    {
+      "name": "390: photo/before overflow",
+      "pass": true
+    },
+    {
+      "name": "390: photo/after",
+      "pass": true
+    },
+    {
+      "name": "390: photo/after overflow",
+      "pass": true
+    },
+    {
+      "name": "390: route/before",
+      "pass": true
+    },
+    {
+      "name": "390: route/before overflow",
+      "pass": true
+    },
+    {
+      "name": "390: route/after",
+      "pass": true
+    },
+    {
+      "name": "390: route/after overflow",
+      "pass": true
+    },
+    {
+      "name": "390: booking/before",
+      "pass": true
+    },
+    {
+      "name": "390: booking/before overflow",
+      "pass": true
+    },
+    {
+      "name": "390: booking/after",
+      "pass": true
+    },
+    {
+      "name": "390: booking/after overflow",
+      "pass": true
+    },
+    {
+      "name": "390: booking selection",
+      "pass": true
+    },
+    {
+      "name": "390: images",
+      "pass": true
+    },
+    {
+      "name": "390: target sizes",
+      "pass": true
+    },
+    {
+      "name": "390: modal focus",
+      "pass": true
+    },
+    {
+      "name": "390: selected interest",
+      "pass": true
+    },
+    {
+      "name": "390: modal close / focus return",
+      "pass": true
+    },
+    {
+      "name": "430: GSAP",
+      "pass": true
+    },
+    {
+      "name": "430: overflow",
+      "pass": true
+    },
+    {
+      "name": "430: photo/before",
+      "pass": true
+    },
+    {
+      "name": "430: photo/before overflow",
+      "pass": true
+    },
+    {
+      "name": "430: photo/after",
+      "pass": true
+    },
+    {
+      "name": "430: photo/after overflow",
+      "pass": true
+    },
+    {
+      "name": "430: route/before",
+      "pass": true
+    },
+    {
+      "name": "430: route/before overflow",
+      "pass": true
+    },
+    {
+      "name": "430: route/after",
+      "pass": true
+    },
+    {
+      "name": "430: route/after overflow",
+      "pass": true
+    },
+    {
+      "name": "430: booking/before",
+      "pass": true
+    },
+    {
+      "name": "430: booking/before overflow",
+      "pass": true
+    },
+    {
+      "name": "430: booking/after",
+      "pass": true
+    },
+    {
+      "name": "430: booking/after overflow",
+      "pass": true
+    },
+    {
+      "name": "430: booking selection",
+      "pass": true
+    },
+    {
+      "name": "430: images",
+      "pass": true
+    },
+    {
+      "name": "430: target sizes",
+      "pass": true
+    },
+    {
+      "name": "430: modal focus",
+      "pass": true
+    },
+    {
+      "name": "430: selected interest",
+      "pass": true
+    },
+    {
+      "name": "430: modal close / focus return",
+      "pass": true
+    },
+    {
+      "name": "768: GSAP",
+      "pass": true
+    },
+    {
+      "name": "768: overflow",
+      "pass": true
+    },
+    {
+      "name": "768: photo/before",
+      "pass": true
+    },
+    {
+      "name": "768: photo/before overflow",
+      "pass": true
+    },
+    {
+      "name": "768: photo/after",
+      "pass": true
+    },
+    {
+      "name": "768: photo/after overflow",
+      "pass": true
+    },
+    {
+      "name": "768: route/before",
+      "pass": true
+    },
+    {
+      "name": "768: route/before overflow",
+      "pass": true
+    },
+    {
+      "name": "768: route/after",
+      "pass": true
+    },
+    {
+      "name": "768: route/after overflow",
+      "pass": true
+    },
+    {
+      "name": "768: booking/before",
+      "pass": true
+    },
+    {
+      "name": "768: booking/before overflow",
+      "pass": true
+    },
+    {
+      "name": "768: booking/after",
+      "pass": true
+    },
+    {
+      "name": "768: booking/after overflow",
+      "pass": true
+    },
+    {
+      "name": "768: booking selection",
+      "pass": true
+    },
+    {
+      "name": "768: images",
+      "pass": true
+    },
+    {
+      "name": "768: target sizes",
+      "pass": true
+    },
+    {
+      "name": "768: modal focus",
+      "pass": true
+    },
+    {
+      "name": "768: selected interest",
+      "pass": true
+    },
+    {
+      "name": "768: modal close / focus return",
+      "pass": true
+    },
+    {
+      "name": "1280: GSAP",
+      "pass": true
+    },
+    {
+      "name": "1280: overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: photo/before",
+      "pass": true
+    },
+    {
+      "name": "1280: photo/before overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: photo/after",
+      "pass": true
+    },
+    {
+      "name": "1280: photo/after overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: route/before",
+      "pass": true
+    },
+    {
+      "name": "1280: route/before overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: route/after",
+      "pass": true
+    },
+    {
+      "name": "1280: route/after overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: booking/before",
+      "pass": true
+    },
+    {
+      "name": "1280: booking/before overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: booking/after",
+      "pass": true
+    },
+    {
+      "name": "1280: booking/after overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: booking selection",
+      "pass": true
+    },
+    {
+      "name": "1280: images",
+      "pass": true
+    },
+    {
+      "name": "1280: target sizes",
+      "pass": true
+    },
+    {
+      "name": "1280: modal focus",
+      "pass": true
+    },
+    {
+      "name": "1280: selected interest",
+      "pass": true
+    },
+    {
+      "name": "1280: modal close / focus return",
+      "pass": true
+    },
+    {
+      "name": "1440: GSAP",
+      "pass": true
+    },
+    {
+      "name": "1440: overflow",
+      "pass": true
+    },
+    {
+      "name": "1440: photo/before",
+      "pass": true
+    },
+    {
+      "name": "1440: photo/before overflow",
+      "pass": true
+    },
+    {
+      "name": "1440: photo/after",
+      "pass": true
+    },
+    {
+      "name": "1440: photo/after overflow",
+      "pass": true
+    },
+    {
+      "name": "1440: route/before",
+      "pass": true
+    },
+    {
+      "name": "1440: route/before overflow",
+      "pass": true
+    },
+    {
+      "name": "1440: route/after",
+      "pass": true
+    },
+    {
+      "name": "1440: route/after overflow",
+      "pass": true
+    },
+    {
+      "name": "1440: booking/before",
+      "pass": true
+    },
+    {
+      "name": "1440: booking/before overflow",
+      "pass": true
+    },
+    {
+      "name": "1440: booking/after",
+      "pass": true
+    },
+    {
+      "name": "1440: booking/after overflow",
+      "pass": true
+    },
+    {
+      "name": "1440: booking selection",
+      "pass": true
+    },
+    {
+      "name": "1440: images",
+      "pass": true
+    },
+    {
+      "name": "1440: target sizes",
+      "pass": true
+    },
+    {
+      "name": "1440: modal focus",
+      "pass": true
+    },
+    {
+      "name": "1440: selected interest",
+      "pass": true
+    },
+    {
+      "name": "1440: modal close / focus return",
+      "pass": true
+    },
+    {
+      "name": "request includes selection",
+      "pass": true
+    },
+    {
+      "name": "request explicitly unsubmitted",
+      "pass": true
+    },
+    {
+      "name": "clipboard actual copy",
+      "pass": true
+    },
+    {
+      "name": "editing invalidates prepared request",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 0",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 1",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 2",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 3",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 4",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 5",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 6",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 7",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 8",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 9",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 10",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 11",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 12",
+      "pass": true
+    },
+    {
+      "name": "modal focus containment 13",
+      "pass": true
+    },
+    {
+      "name": "reopened dialog discards stale topic",
+      "pass": true
+    },
+    {
+      "name": "live reduced-motion removes triggers",
+      "pass": true
+    },
+    {
+      "name": "live reduced-motion restores text",
+      "pass": true
+    },
+    {
+      "name": "390: reduced-motion initial",
+      "pass": true
+    },
+    {
+      "name": "390: reduced-motion controls",
+      "pass": true
+    },
+    {
+      "name": "1440: reduced-motion initial",
+      "pass": true
+    },
+    {
+      "name": "1440: reduced-motion controls",
+      "pass": true
+    },
+    {
+      "name": "manual motion off",
+      "pass": true
+    },
+    {
+      "name": "manual motion on",
+      "pass": true
+    },
+    {
+      "name": "expand / contract / expand",
+      "pass": true,
+      "detail": [
+        1,
+        1.035,
+        0.96,
+        1
+      ]
+    },
+    {
+      "name": "no pinned scroll",
+      "pass": true
+    },
+    {
+      "name": "GSAP failure readable",
+      "pass": true
+    },
+    {
+      "name": "GSAP failure usable",
+      "pass": true
+    },
+    {
+      "name": "no JS primary CTA fallback",
+      "pass": true
+    },
+    {
+      "name": "no JS content remains",
+      "pass": true
+    },
+    {
+      "name": "no writes during UI interaction",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no page JS errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "completedAt": "2026-11-11T12:58:05.645Z",
+  "scope": "Chromium viewport and media emulation; no real device, Safari, Kakao or live request verified."
+}
