@@ -50,7 +50,7 @@ jobs:
       - name: Existing page regression
         if: always()
         run: |
-          node scripts/qa-resolute.cjs
+          FAST_A_BROWSER_PATH="$RV_BROWSER_PATH" node scripts/qa-resolute.cjs
           node scripts/qa-resolute-depth-r2.cjs
       - name: Preserve QA artifacts
         if: always()
