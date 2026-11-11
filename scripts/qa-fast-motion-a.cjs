@@ -56,7 +56,8 @@ async function perf(browser){
  return {conditions:'Chromium, cold cache, 80ms latency / 10Mbps download, mobile 4x CPU / desktop 1x; 3 alternating pairs per viewport; CI lab results, not real-user Web Vitals.',summary,samples};
 }
 (async()=>{
-const browser=await chromium.launch({headless:true});let performanceResult=null;
+const browser=await chromium.launch({headless:true,...(process.env.FAST_A_BROWSER_PATH?{executablePath:process.env.FAST_A_BROWSER_PATH}:{})});let performanceResult=null;
+const browserVersion=browser.version();console.log('QA browser:',browserVersion);
 try{
  const c=await browser.newContext({permissions:['clipboard-read','clipboard-write']});await c.addInitScript(audioAudit);await c.addInitScript(hiddenFixture);const p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>{if(!['GET','HEAD'].includes(r.method()))writes.push({method:r.method(),url:r.url()});});
  for(const width of [360,390,430,768,1280,1440]){
@@ -111,5 +112,5 @@ try{
  check('A lab CLS within 0.1',performanceResult.samples.filter(s=>s.variant==='A').every(s=>s.cls<=.1));
  const assets=['assets/css/resolute-fast-motion-a.css','assets/js/resolute-fast-motion-a.js','assets/js/resolute-sonic-a.js','assets/resolute-fast-motion-a/fonts/WeplaceMotionA.woff2'].map(file=>{const b=fs.readFileSync(file);return {file,bytes:b.length,gzipBytes:zlib.gzipSync(b).length};});fs.writeFileSync(path.join(out,'asset-cost.json'),JSON.stringify(assets,null,2));
 }catch(e){check('unhandled QA error',false,e.stack);}
-finally{await browser.close();const r={passed:checks.filter(x=>x.pass).length,failed:checks.filter(x=>!x.pass).length,checks,completedAt:new Date().toISOString(),scope:'Chromium viewport/media emulation. Audio blocking and visibility are explicit fixtures. Offline audio rendering measures the signal; actual speakers, Safari and Kakao in-app are unverified.'};fs.writeFileSync(path.join(out,'qa-results.json'),JSON.stringify(r,null,2));console.log(JSON.stringify({passed:r.passed,failed:r.failed}));if(performanceResult)console.log(JSON.stringify(performanceResult.summary));if(r.failed)process.exitCode=1;}
+finally{await browser.close();const r={passed:checks.filter(x=>x.pass).length,failed:checks.filter(x=>!x.pass).length,checks,browserVersion,completedAt:new Date().toISOString(),scope:'Chromium viewport/media emulation. Audio blocking and visibility are explicit fixtures. Offline audio rendering measures the signal; actual speakers, Safari and Kakao in-app are unverified.'};fs.writeFileSync(path.join(out,'qa-results.json'),JSON.stringify(r,null,2));console.log(JSON.stringify({passed:r.passed,failed:r.failed}));if(performanceResult)console.log(JSON.stringify(performanceResult.summary));if(r.failed)process.exitCode=1;}
 })();

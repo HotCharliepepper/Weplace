@@ -7,7 +7,7 @@ fs.mkdirSync(out,{recursive:true});
 const checks=[];const check=(name,pass,detail)=>{checks.push({name,pass:!!pass,...(detail===undefined?{}:{detail})});if(!pass)console.error('FAIL',name,detail||'');};
 const pause = page => page.waitForTimeout(420);
 (async()=>{
- const browser = await chromium.launch({headless:true});
+ const browser = await chromium.launch({headless:true,...(process.env.FAST_A_BROWSER_PATH?{executablePath:process.env.FAST_A_BROWSER_PATH}:{})});
  const context = await browser.newContext({permissions:['clipboard-read','clipboard-write']});
  const page = await context.newPage();const errors=[], writes=[];
  page.on('pageerror',e=>errors.push(e.message));
