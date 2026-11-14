@@ -9,6 +9,9 @@ on:
       - review/unified-r3.html
       - tests/unified-r3.test.cjs
       - scripts/qa-unified-r3.cjs
+      - scripts/qa-r3-launch-smoke.cjs
+      - assets/js/first-look-bridge-r412.js
+      - tests/r3-launch-preflight.test.cjs
       - .github/workflows/unified-r3-review.yml
   workflow_dispatch:
 permissions:
@@ -47,6 +50,8 @@ jobs:
           exit 1
       - name: Chromium flows, fallbacks, screenshots and performance
         run: node scripts/qa-unified-r3.cjs
+      - name: First Look prelaunch no-404 smoke
+        run: node scripts/qa-r3-launch-smoke.cjs
       - name: Existing page regression
         if: always()
         run: |
