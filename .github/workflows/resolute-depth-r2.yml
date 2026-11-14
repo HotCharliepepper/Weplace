@@ -1,0 +1,53 @@
+name: Resolute Depth R2 preview QA
+on:
+  pull_request:
+    paths:
+      - resolute-depth.html
+      - assets/css/resolute-depth-r2.css
+      - assets/js/resolute-depth-r2.js
+      - tests/resolute-depth-r2.test.cjs
+      - scripts/qa-resolute-depth-r2.cjs
+      - .github/workflows/resolute-depth-r2.yml
+  workflow_dispatch:
+jobs:
+  browser-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install and verify review build
+        run: |
+          npm ci
+          npm run verify
+      - name: Select Chromium browser
+        run: |
+          browser_path="$(command -v google-chrome || command -v chromium || true)"
+          if [ -n "$browser_path" ]; then
+            "$browser_path" --version
+            printf 'RV_BROWSER_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium
+          fi
+      - name: Serve static draft artifact
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory dist > /tmp/r2-depth-server.log 2>&1 &
+          for n in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/resolute-depth.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/r2-depth-server.log
+          exit 1
+      - name: Browser QA
+        run: node scripts/qa-resolute-depth-r2.cjs
+      - name: Store screenshots and QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: WEPLACE-RESOLUTE-DEPTH-R2-QA
+          path: test-results/resolute-depth-r2/
+          retention-days: 14
+          if-no-files-found: warn

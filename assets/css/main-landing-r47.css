@@ -1,0 +1,155 @@
+/* WEPLACE R4.7 review experiment — visible brand momentum + interactive picture reveal.
+   This is a symbolic customer decision path, not a numerical business chart. */
+
+/* One strong visual contrast at the top, while the observed revenue chart below stays
+   on its ordinary evidence surface. Keep main H1 + CTA in the initial DOM paint. */
+.home-r47 #intro.hero{padding-top:0}
+.home-r47 #intro>.hero-grid{
+  position:relative;isolation:isolate;z-index:0;
+  padding-top:52px;padding-bottom:58px;min-height:min(780px,calc(100svh - 76px));
+}
+.home-r47 #intro>.hero-grid::before{
+  content:"";position:absolute;z-index:-1;
+  left:50%;top:0;bottom:0;width:100vw;transform:translateX(-50%);
+  background:
+    radial-gradient(ellipse at 77% 15%,rgba(171,196,166,.17) 0,transparent 50%),
+    linear-gradient(130deg,#123b2e,#0e3025 58%,#08271d);
+}
+.home-r47 #intro .hero-copy .eyebrow{color:#ead2a8}
+.home-r47 #intro .hero-copy .eyebrow .dot{background:#d9b979}
+.home-r47 #intro h1,
+.home-r47 #intro .hero-copy h1>span{color:#fffaf0}
+.home-r47 #intro .hero-copy h1 em{color:#e3c78c}
+.home-r47 #intro .hero-copy .hero-desc{color:#e4ebe2}
+.home-r47 #intro .hero-copy>.micro{color:#d2dece}
+.home-r47 #intro .hero-copy #hero-cta{
+  background:#f4eedf;border-color:#f4eedf;color:#12382c;
+}
+.home-r47 #intro .hero-copy #hero-cta:hover{background:#fff8e8;border-color:#fff8e8}
+.home-r47 #intro .hero-copy .text-link{color:#e3ce9c}
+.home-r47 #intro .hero-copy .text-link:focus-visible,
+.home-r47 #intro .hero-copy #hero-cta:focus-visible{outline:3px solid #e8d49d;outline-offset:4px}
+.home-r47 #intro .hero-grid .hero-scene-foot p,
+.home-r47 #intro .hero-grid .hero-scene-foot>span,
+.home-r47 #intro .hero-grid .hero-visual-note,
+.home-r47 #intro .hero-grid .hero-scene-description{color:#e2ebe2}
+.home-r47 #intro .hero-scene-controls{border-bottom-color:rgba(230,238,227,.35)}
+.home-r47 #intro .hero-scene-tabs button,
+.home-r47 #intro #scene-play{color:#e6ebdc}
+.home-r47 #intro .hero-scene-tabs button[aria-selected=true]{
+  color:#f3dfb5;border-bottom-color:#e1c284
+}
+.home-r47 #intro .hero-stage.path-stage{
+  aspect-ratio:1.25;min-height:360px;border:1px solid rgba(233,233,208,.23);
+  background:
+    repeating-linear-gradient(90deg,transparent,transparent calc(16.66% - 1px),rgba(233,237,218,.09) calc(16.66% - 1px),rgba(233,237,218,.09) 16.66%),
+    repeating-linear-gradient(0deg,transparent,transparent calc(16.66% - 1px),rgba(233,237,218,.07) calc(16.66% - 1px),rgba(233,237,218,.07) 16.66%),
+    radial-gradient(ellipse at 66% 45%,#2d5340,#0b251c 85%);
+}
+.home-r47 #intro .path-depth{z-index:1}
+.home-r47 #intro .path-photo{
+  left:3%;top:7%;width:79%;height:73%;
+  box-shadow:0 16px 44px rgba(0,0,0,.28);
+}
+.home-r47 #intro .path-mark{
+  left:83%;top:3%;width:13%;z-index:4;
+  filter:drop-shadow(0 2px 8px rgba(218,192,135,.2));
+}
+.home-r47 #intro .path-labels{color:#f2ebd6;z-index:4}
+.home-r47 #intro .path-labels span{color:#e4c584}
+.home-r47 #intro .sightlines{opacity:.30}
+.home-r47 #intro .r47-momentum-route{
+  position:absolute;inset:0;width:100%;height:100%;
+  z-index:3;pointer-events:none;overflow:visible;
+  filter:drop-shadow(0 0 9px rgba(214,185,126,.28));
+}
+.home-r47 #intro .r47-trajectory-shadow{
+  stroke:#e3c587;stroke-opacity:.15;stroke-width:8;fill:none;
+  stroke-linecap:round;vector-effect:non-scaling-stroke;
+}
+.home-r47 #intro .r47-trajectory{
+  stroke:#f0cf8e;stroke-width:3.5;fill:none;
+  stroke-linecap:round;vector-effect:non-scaling-stroke;
+  stroke-dasharray:1000;stroke-dashoffset:0;
+}
+.home-r47 #intro .r47-arrow-tip{fill:#f0cf8e}
+.home-r47 #intro .clear-path[data-scene="0"]:not([data-playing="true"]) .r47-trajectory{stroke-dashoffset:1000}
+.home-r47 #intro .clear-path[data-scene="1"]:not([data-playing="true"]) .r47-trajectory{stroke-dashoffset:430}
+.home-r47 #intro .clear-path[data-scene="0"]:not([data-playing="true"]) .r47-arrow-tip,
+.home-r47 #intro .clear-path[data-scene="1"]:not([data-playing="true"]) .r47-arrow-tip{opacity:0}
+.home-r47 #intro .clear-path[data-playing="true"] .r47-trajectory{
+  animation:r47-route-rise 7.25s cubic-bezier(.16,.48,.18,1) both;
+}
+.home-r47 #intro .clear-path[data-playing="true"] .r47-arrow-tip{
+  animation:r47-arrive 7.25s linear both;
+}
+@keyframes r47-route-rise{
+  0%,10%{stroke-dashoffset:1000}
+  32%{stroke-dashoffset:830}
+  60%{stroke-dashoffset:440}
+  88%,100%{stroke-dashoffset:0}
+}
+@keyframes r47-arrive{0%,87%{opacity:0}94%,100%{opacity:1}}
+
+/* Manual Before → After: the former photo is the real original crop, never a
+   fabricated blur. A short dark film-like beat is NOT a network loading state. */
+.home-r47 #changes .sample-photo{isolation:isolate;background:#19392c}
+.home-r47 #changes .sample-photo .photo-number{
+  top:15px;bottom:auto;z-index:4;
+  max-width:calc(100% - 36px);
+}
+.home-r47 #changes .r47-photo-switch{
+  position:absolute;right:16px;bottom:16px;z-index:8;display:inline-flex;
+  align-items:center;justify-content:space-between;gap:20px;
+  padding:11px 15px;min-height:44px;max-width:calc(100% - 32px);
+  color:#1a3226;background:#f4e5bf;border:1px solid #f7deb0;
+  border-radius:3px;font-size:13px;font-weight:600;
+  box-shadow:0 6px 16px #09170d44;cursor:pointer;
+}
+.home-r47 #changes .r47-photo-switch[hidden]{display:none!important}
+.home-r47 #changes .r47-photo-switch:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.home-r47 #changes .r47-photo-switch:hover{background:#fff1d1}
+.home-r47 #changes .r47-picture-curtain{
+  position:absolute;inset:0;z-index:9;display:flex;flex-direction:column;
+  align-items:flex-start;justify-content:center;gap:13px;
+  padding:clamp(20px,4vw,37px);
+  background:#0b2a20;color:#f7f1e8;
+  opacity:1;pointer-events:none;
+  transition:opacity .26s ease-out;
+}
+.home-r47 #changes .r47-picture-curtain[hidden]{display:none!important}
+.home-r47 #changes .r47-picture-curtain.is-leaving{opacity:0}
+.home-r47 #changes .r47-picture-curtain>span{font-size:10px;letter-spacing:.17em;color:#d9bf86}
+.home-r47 #changes .r47-picture-curtain strong{
+  font-size:clamp(20px,2.3vw,29px);line-height:1.45;letter-spacing:-.035em;font-weight:600;
+}
+.home-r47 #changes .r47-picture-curtain i{
+  display:block;width:96px;height:2px;background:#e8ca8a;transform-origin:left center;
+}
+.home-r47 #changes .r47-picture-curtain:not([hidden]):not(.is-leaving) i{
+  animation:r47-anticipation .57s ease-in-out both;
+}
+@keyframes r47-anticipation{from{transform:scaleX(.12)}to{transform:scaleX(1)}}
+.home-r47 #changes .r47-switch-status{
+  position:absolute;overflow:hidden;width:1px;height:1px;padding:0;margin:-1px;
+  clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+@media(max-width:1000px){
+  .home-r47 #intro>.hero-grid{min-height:0;padding-top:32px;padding-bottom:39px}
+  .home-r47 #intro .path-photo{width:84%;height:74%}
+}
+@media(max-width:639px){
+  .home-r47 #intro>.hero-grid{padding-top:27px;padding-bottom:30px}
+  .home-r47 #intro .path-photo{left:0;top:4%;width:88%;height:76%}
+  .home-r47 #intro .path-mark{left:83%;top:2%;width:14%}
+  .home-r47 #intro .path-labels{font-size:11px}
+  .home-r47 #intro .hero-stage.path-stage{min-height:0}
+  .home-r47 #changes .r47-photo-switch{right:11px;bottom:11px;padding:10px 12px;gap:9px;font-size:12px;max-width:calc(100% - 22px)}
+  .home-r47 #changes .sample-photo .photo-number{top:10px;left:11px;font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-r47 #intro .r47-trajectory,.home-r47 #intro .r47-arrow-tip,
+  .home-r47 #changes .r47-picture-curtain,.home-r47 #changes .r47-picture-curtain i{
+    animation:none!important;transition:none!important;
+  }
+}

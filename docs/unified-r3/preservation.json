@@ -1,0 +1,25 @@
+{
+  "baseline": "9f1b8ff36063cd84d405798707a41745f0844e48",
+  "existingFiles": 668,
+  "modifiedOrMissing": [],
+  "newFiles": [
+    ".github/workflows/unified-r3-review.yml",
+    "assets/css/unified-r3-fonts.css",
+    "assets/css/unified-r3.css",
+    "assets/js/unified-r3.js",
+    "assets/unified-r3/fonts/LICENSE.txt",
+    "assets/unified-r3/fonts/WeplaceUnifiedSupplement-Bold.woff2",
+    "assets/unified-r3/fonts/WeplaceUnifiedSupplement-Regular.woff2",
+    "docs/unified-r3/OPERATIONS.md",
+    "docs/unified-r3/PRICING_FUTURE_GATES.md",
+    "docs/unified-r3/QA.md",
+    "docs/unified-r3/README.md",
+    "docs/unified-r3/font-coverage.json",
+    "docs/unified-r3/preservation.json",
+    "review/unified-r3.html",
+    "scripts/build-unified-fonts.py",
+    "scripts/qa-unified-r3.cjs",
+    "tests/unified-r3.test.cjs",
+    "unified-r3.html"
+  ]
+}

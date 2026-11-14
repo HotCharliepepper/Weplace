@@ -8,13 +8,18 @@ const questions=[
  {title:'가격·이용 조건·추가 비용을 문의 전에 확인할 수 있나요?',short:'가격과 이용 기준',group:'행동',action:'대표 상품의 가격과 포함 사항, 추가 비용, 변경·취소 기준을 고객이 예약 전에 보는 위치에 정리해 주세요.'},
  {title:'휴대폰에서 예약·문의 버튼을 눌러 끝까지 진행할 수 있나요?',short:'예약과 문의의 연결',group:'행동',action:'손님의 휴대폰이라고 생각하고 검색부터 예약·문의까지 직접 눌러 보세요. 끊긴 링크와 중복 입력부터 줄여 주세요.'}
 ];
-const labels={yes:'확실히 그렇습니다',part:'일부만 되어 있어요',no:'아직 되어 있지 않아요',unknown:'잘 모르겠어요'};
-const industries={dining:{name:'식당 · 카페',tip:'식당·카페라면 메뉴와 가격, 주차, 대기·예약 방법을 한 화면에서 찾을 수 있는지 먼저 살펴보세요.'},stay:{name:'호텔 · 숙소',tip:'숙소라면 객실별 차이와 요금 기준, 도착 동선, 체크인·취소 안내를 예약 전에 확인할 수 있게 정리해 보세요.'},beauty:{name:'뷰티 · 케어',tip:'뷰티·케어라면 서비스별 소요 시간과 가격 범위, 실제 사례, 상담 전 준비사항을 함께 안내해 보세요.'},other:{name:'그 외 매장 · 서비스',tip:'고객이 가장 자주 묻는 이용 대상, 가격 기준, 방문·예약 방법을 한곳에 정리해 보세요.'}};
+const labels={yes:'네, 잘 갖춰져 있어요',part:'일부만 되어 있어요',no:'아직 되어 있지 않아요',unknown:'잘 모르겠어요'};
+const industries={dining:{name:'식당',tip:'식당이라면 모임 인원에 맞는 자리, 메뉴와 가격, 주차, 대기·예약 방법을 한 화면에서 찾을 수 있는지 먼저 살펴보세요.'},cafe:{name:'카페',tip:'카페라면 실제 자리와 분위기, 시그니처 메뉴와 가격, 영업시간을 확인하는 데 다시 검색할 필요가 없는지 살펴보세요.'},stay:{name:'호텔 · 숙소',tip:'숙소라면 객실별 차이와 요금 기준, 도착 동선, 체크인·취소 안내를 예약 전에 확인할 수 있게 정리해 보세요.'},beauty:{name:'뷰티 · 케어',tip:'뷰티·케어라면 서비스별 소요 시간과 가격 범위, 공개 동의된 실제 사례, 상담 전 준비사항을 함께 안내해 보세요.'},other:{name:'그 외 매장 · 서비스',tip:'고객이 가장 자주 묻는 이용 대상, 가격 기준, 방문·예약 방법을 한곳에 정리해 보세요.'}};
 const $=id=>document.getElementById(id), form=$('storeCheck');
+// Only a fixed, non-sensitive industry token may continue from the homepage.
+// No answer, free text, contact detail or arbitrary query is copied to another URL.
+const isIndustry=value=>Object.prototype.hasOwnProperty.call(industries,value);
+const incomingIndustry=new URLSearchParams(window.location.search).get('industry');
+if(isIndustry(incomingIndustry)) $('industry').value=incomingIndustry;
 questions.forEach((q,i)=>{const field=document.createElement('fieldset');field.className='check-question';const legend=document.createElement('legend');legend.textContent=String(i+1).padStart(2,'0')+' / '+q.title;field.append(legend);const options=document.createElement('div');options.className='check-options';Object.entries(labels).forEach(([value,label])=>{const el=document.createElement('label'),input=document.createElement('input');input.type='radio';input.name='q'+i;input.value=value;input.required=true;el.append(input,document.createTextNode(label));options.append(el);});field.append(options);$('questions').append(field);});
 const answers=()=>questions.map((_,i)=>form.querySelector('input[name="q'+i+'"]:checked')?.value);
 form.addEventListener('change',()=>{const n=answers().filter(Boolean).length;$('checkCount').textContent=n+' / 6개 답변';$('checkProgress').value=n;$('checkError').textContent='';});
-form.addEventListener('submit',event=>{event.preventDefault();const a=answers(),industry=industries[$('industry').value];if(!industry){$('checkError').textContent='업종을 먼저 선택해 주세요.';$('industry').focus();return;}const missing=a.findIndex(v=>!v);if(missing!==-1){$('checkError').textContent=(missing+1)+'번 질문에 답해 주세요. 확실하지 않다면 ‘잘 모르겠어요’를 선택해도 됩니다.';form.querySelector('input[name="q'+missing+'"]').focus();return;}
+form.addEventListener('submit',event=>{event.preventDefault();const a=answers(),industryKey=$('industry').value,industry=isIndustry(industryKey)?industries[industryKey]:null;if(!industry){$('checkError').textContent='업종을 먼저 선택해 주세요.';$('industry').focus();return;}const missing=a.findIndex(v=>!v);if(missing!==-1){$('checkError').textContent=(missing+1)+'번 질문에 답해 주세요. 확실하지 않다면 ‘잘 모르겠어요’를 선택해도 됩니다.';form.querySelector('input[name="q'+missing+'"]').focus();return;}
  const unknown=a.findIndex(v=>v==='unknown'),no=a.findIndex(v=>v==='no'),partial=a.findIndex(v=>v==='part'),strong=a.findIndex(v=>v==='yes');
  const first=no!==-1?no:unknown!==-1?unknown:partial!==-1?partial:0;
  const allYes=a.every(v=>v==='yes'),q=questions[first];
@@ -25,9 +30,10 @@ form.addEventListener('submit',event=>{event.preventDefault();const a=answers(),
  const actions=[priority,industry.tip,'바꾼 화면과 날짜를 남기고, 다음 주에 같은 화면을 다시 확인하세요. 문의·예약 변화를 비교할 때는 기간과 집계 기준을 함께 기록해 주세요.'];
  $('resultTitle').textContent=title;$('resultReason').textContent=reason;$('resultStrength').textContent=strength;$('resultPriority').textContent=priority;$('resultActions').replaceChildren();actions.forEach(text=>{const li=document.createElement('li');li.textContent=text;$('resultActions').append(li);});$('resultAnswers').replaceChildren();questions.forEach((question,i)=>{const li=document.createElement('li');li.textContent=question.short+' — '+labels[a[i]];$('resultAnswers').append(li);});
  $('resultText').value=['Weplace · 우리 매장의 선택 신호','업종: '+industry.name,'결과: '+title,'',reason,'','살려 갈 강점: '+strength,'','다음 행동',...actions.map((text,i)=>(i+1)+'. '+text),'','나의 답변',...questions.map((question,i)=>question.short+': '+labels[a[i]]),'','자가 응답을 바탕으로 한 제안이며 실제 매장 조사나 성과 측정 결과는 아닙니다.','https://withweplace.kr/check/','','상담 시 추가할 내용: 매장명 / 지역 / 현재 채널 주소'].join('\n');
+ document.querySelectorAll('[data-meeting-link]').forEach(link=>{link.href='/meeting/?industry='+encodeURIComponent(industryKey);});
  $('checkIntro').hidden=true;$('questionSection').hidden=true;$('result').hidden=false;$('copyStatus').textContent='';$('resultTitle').focus();
  });
  $('editAnswers').addEventListener('click',()=>{$('result').hidden=true;$('checkIntro').hidden=false;$('questionSection').hidden=false;$('industry').focus();});
  $('copyResult').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('resultText').value);$('copyStatus').textContent='복사했습니다. 카카오톡 상담창에 붙여 넣어 주세요.';}catch{$('resultText').focus();$('resultText').select();$('copyStatus').textContent='자동 복사를 사용할 수 없습니다. 위 요약을 선택해 직접 복사해 주세요.';}});
- $('downloadResult').addEventListener('click',()=>{const blob=new Blob([$ ('resultText').value],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='weplace-store-check.txt';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);$('copyStatus').textContent='결과 파일의 다운로드를 요청했습니다.';});
+ $('downloadResult').addEventListener('click',()=>{const blob=new Blob([$ ('resultText').value],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='weplace-store-check.txt';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);$('copyStatus').textContent='결과 파일 내려받기를 시작했습니다.';});
 })();
