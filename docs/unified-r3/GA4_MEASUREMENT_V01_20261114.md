@@ -2,7 +2,12 @@
 
 > **설계 상태: Draft only. 실제 GA4 수집 활성화·GA4 속성 설정 변경·외부 전송·CRM 데이터 변경 없음.**
 > 기준: Weplace Draft PR #33 (R3 통합), \`assets/js/site-metrics.js\`, \`assets/js/unified-r3.js\`, \`docs/measurement-and-decisions.md\`.
-> 운영용 GA4 코드 측정 ID 후보: \`G-H9B5F4HRDS\`. **실제 Weplace GA4 속성/웹 스트림과 일치하는지는 별도 확인 필요.**
+> 현재 계측 상태 (2026-11-14 사용자 제공 + GitHub 재확인):
+> - **신규 Weplace 웹 스트림 측정 ID:** `G-FVCYL26FTL` (사용자가 GA4에서 직접 생성·전달, 실제 방문 수집은 아직 미확인).
+> - **현재 운영 `main/index.html` 설치 ID:** `G-H9B5F4HRDS` (기존 설치; 새 스트림의 ID가 아님).
+> - **최신 R3 검토 브랜치:** `assets/js/site-metrics.js`에 기존 ID가 남았고 `unified-r3.html`은 신규 GA4 태그 미연결.
+> - 따라서 **신규 GA4 화면의 '데이터 수집 대기 중'은 현재 정상적인 상태**이며, 데이터 수집을 위해 검증된 1회 태그 연결/구 ID 제거가 필요함.
+> - 이 계획 문서 수정은 **태그 설치나 수집 활성화가 아니다**. 회사/개인정보 공개 승인 및 동의 처리 검수 후 별도 계측 코드 수정·출시.
 
 ## 1. 측정 목적과 사실 경계
 
