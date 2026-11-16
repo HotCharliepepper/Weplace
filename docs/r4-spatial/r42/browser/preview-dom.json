@@ -1,0 +1,23 @@
+{
+  "observedAt": "2026-11-03T15:11:09.744Z",
+  "apiSourceCommit": "bc1de0e1f82743e172cb3cb06a4d03b6a3e5aa28",
+  "apiDeployId": "6ae9f847fd93c52ad38748b4",
+  "document": {
+    "accent": "#1f4439",
+    "canonical": "https://withweplace.kr/",
+    "diagnosisPrice": "0원",
+    "diagnosisScope": "매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개",
+    "h1Count": 1,
+    "mashcore": "https://mashcore.co.kr/about/#weplace",
+    "ogImage": "https://deploy-preview-17--weplace.netlify.app/assets/brand/r42/og-weplace-r42.jpg",
+    "photo": {
+      "complete": true,
+      "loaded": true,
+      "src": "/assets/home-r42/luwei-peking-duck-1254.webp"
+    },
+    "robots": "noindex, nofollow",
+    "selectedPhoto": "메뉴 먼저",
+    "title": "Weplace, — 매장의 변화, 실행과 기록으로",
+    "url": "https://deploy-preview-17--weplace.netlify.app/#changes"
+  }
+}

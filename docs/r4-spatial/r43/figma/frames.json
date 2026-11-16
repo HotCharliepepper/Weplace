@@ -1,0 +1,122 @@
+{
+  "fileKey": "paULgpd0M3t3s4q1SG361a",
+  "pageId": "90:2",
+  "frames": [
+    {
+      "id": "90:3",
+      "name": "Desktop 1440 / 시작",
+      "width": 1440,
+      "height": 823
+    },
+    {
+      "id": "90:52",
+      "name": "Desktop 1440 / 전환",
+      "width": 1440,
+      "height": 823
+    },
+    {
+      "id": "90:101",
+      "name": "Desktop 1440 / 완료",
+      "width": 1440,
+      "height": 823
+    },
+    {
+      "id": "90:150",
+      "name": "Mobile 390 / 시작",
+      "width": 390,
+      "height": 1021
+    },
+    {
+      "id": "90:199",
+      "name": "Mobile 390 / 전환",
+      "width": 390,
+      "height": 1021
+    },
+    {
+      "id": "90:248",
+      "name": "Mobile 390 / 완료",
+      "width": 390,
+      "height": 1021
+    },
+    {
+      "id": "93:104",
+      "name": "Desktop Journey / 진단 선택",
+      "width": 1440,
+      "height": 837.5
+    },
+    {
+      "id": "93:149",
+      "name": "Desktop Journey / 상품·범위",
+      "width": 1440,
+      "height": 758.5
+    },
+    {
+      "id": "93:192",
+      "name": "Desktop Journey / 모의 주문",
+      "width": 1440,
+      "height": 716.5
+    },
+    {
+      "id": "93:242",
+      "name": "Desktop Journey / 완료·다음 행동",
+      "width": 1440,
+      "height": 878.5
+    },
+    {
+      "id": "93:284",
+      "name": "Desktop Journey / 공유",
+      "width": 1440,
+      "height": 707.5
+    },
+    {
+      "id": "93:323",
+      "name": "Mobile Journey / 진단 선택",
+      "width": 390,
+      "height": 1089.050048828125
+    },
+    {
+      "id": "93:368",
+      "name": "Mobile Journey / 상품·범위",
+      "width": 390,
+      "height": 1037.050048828125
+    },
+    {
+      "id": "93:411",
+      "name": "Mobile Journey / 모의 주문",
+      "width": 390,
+      "height": 992.0499877929688
+    },
+    {
+      "id": "93:461",
+      "name": "Mobile Journey / 완료·다음 행동",
+      "width": 390,
+      "height": 1130.050048828125
+    },
+    {
+      "id": "93:503",
+      "name": "Mobile Journey / 공유",
+      "width": 390,
+      "height": 959.0499877929688
+    }
+  ],
+  "prototypeLinkCount": 40,
+  "fontNote": "Figma Noto Sans KR / web Pretendard + renamed glyph supplement. Native editable reference; not pixel-identical.",
+  "flowStartingPoints": [
+    {
+      "nodeId": "93:104",
+      "name": "Flow 1"
+    },
+    {
+      "nodeId": "93:323",
+      "name": "Flow 2"
+    },
+    {
+      "nodeId": "90:3",
+      "name": "R4.3 Desktop"
+    },
+    {
+      "nodeId": "90:150",
+      "name": "R4.3 Mobile"
+    }
+  ]
+}

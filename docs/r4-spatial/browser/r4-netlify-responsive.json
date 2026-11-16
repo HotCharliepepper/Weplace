@@ -1,0 +1,1430 @@
+{
+  "harness": "Weplace R4 Spatial QA",
+  "current": {
+    "run": 1,
+    "recordedAt": "2026-11-03T11:48:41.604Z",
+    "fixture": "normal",
+    "scene": "flow",
+    "viewport": {
+      "requested": 390,
+      "innerWidth": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "bodyScrollWidth": 375,
+      "innerHeight": 844,
+      "horizontalOverflow": false,
+      "displayedScale": "scale(1)"
+    },
+    "reviewReduced": false,
+    "appliedReviewReduced": "false",
+    "performance": {
+      "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+      "nativeReducedMotion": false,
+      "networkProfile": "Current browser network; no throttle applied by harness",
+      "cpuProfile": "Current browser CPU; no throttle applied by harness",
+      "supportedEntryTypes": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "lcpMs": 532,
+      "cls": 0.277,
+      "longestObservedInteractionMs": null,
+      "layoutShiftEntries": [
+        {
+          "value": 0.277,
+          "time": 523.8,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "BODY",
+                "id": "",
+                "class": "home-r2 home-r4"
+              },
+              "previousRect": {
+                "x": 7,
+                "y": 8,
+                "width": 368,
+                "height": 836
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 375,
+                "height": 844
+              }
+            }
+          ]
+        },
+        {
+          "value": 0,
+          "time": 724.1,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "P",
+                "id": "",
+                "class": ""
+              },
+              "previousRect": {
+                "x": 241.797,
+                "y": 712.828,
+                "width": 90.203,
+                "height": 35.188
+              },
+              "currentRect": {
+                "x": 247.656,
+                "y": 712.828,
+                "width": 85,
+                "height": 35.188
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.001,
+          "time": 102100.2,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "P",
+                "id": "",
+                "class": ""
+              },
+              "previousRect": {
+                "x": 247.656,
+                "y": 712.828,
+                "width": 85,
+                "height": 35.188
+              },
+              "currentRect": {
+                "x": 262.656,
+                "y": 712.828,
+                "width": 85,
+                "height": 35.188
+              }
+            },
+            {
+              "node": {
+                "tag": "DIV",
+                "id": "",
+                "class": "header-actions"
+              },
+              "previousRect": {
+                "x": 237.266,
+                "y": 16,
+                "width": 64.641,
+                "height": 34
+              },
+              "currentRect": {
+                "x": 252.266,
+                "y": 16,
+                "width": 64.641,
+                "height": 34
+              }
+            },
+            {
+              "node": {
+                "tag": "DETAILS",
+                "id": "",
+                "class": "mobile-menu"
+              },
+              "previousRect": {
+                "x": 318.906,
+                "y": 11,
+                "width": 36.094,
+                "height": 44
+              },
+              "currentRect": {
+                "x": 333.906,
+                "y": 11,
+                "width": 36.094,
+                "height": 44
+              }
+            },
+            {
+              "node": {
+                "tag": "SPAN",
+                "id": "",
+                "class": "outline-tag"
+              },
+              "previousRect": {
+                "x": 284.656,
+                "y": 636.688,
+                "width": 47.344,
+                "height": 26.594
+              },
+              "currentRect": {
+                "x": 299.656,
+                "y": 636.688,
+                "width": 47.344,
+                "height": 26.594
+              }
+            },
+            {
+              "node": {
+                "tag": "SPAN",
+                "id": "",
+                "class": ""
+              },
+              "previousRect": {
+                "x": 317.531,
+                "y": 472.5,
+                "width": 17.469,
+                "height": 23
+              },
+              "currentRect": {
+                "x": 332.531,
+                "y": 472.5,
+                "width": 17.469,
+                "height": 23
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.006,
+          "time": 210807.5,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "SECTION",
+                "id": "cases",
+                "class": "section cases"
+              },
+              "previousRect": {
+                "x": 0,
+                "y": 0,
+                "width": 375,
+                "height": 53.281
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 375,
+                "height": 82.781
+              }
+            },
+            {
+              "node": {
+                "tag": "SPAN",
+                "id": "",
+                "class": "sample-pill"
+              },
+              "previousRect": {
+                "x": 284.813,
+                "y": 685.453,
+                "width": 67.188,
+                "height": 22.844
+              },
+              "currentRect": {
+                "x": 269.813,
+                "y": 714.953,
+                "width": 67.188,
+                "height": 22.844
+              }
+            },
+            {
+              "node": {
+                "tag": "SPAN",
+                "id": "",
+                "class": "outline-tag"
+              },
+              "previousRect": {
+                "x": 304.656,
+                "y": 757.859,
+                "width": 47.344,
+                "height": 26.594
+              },
+              "currentRect": {
+                "x": 289.656,
+                "y": 787.359,
+                "width": 47.344,
+                "height": 26.594
+              }
+            },
+            {
+              "node": {
+                "tag": "DETAILS",
+                "id": "",
+                "class": "mobile-menu"
+              },
+              "previousRect": {
+                "x": 333.906,
+                "y": 11,
+                "width": 36.094,
+                "height": 44
+              },
+              "currentRect": {
+                "x": 318.906,
+                "y": 11,
+                "width": 36.094,
+                "height": 44
+              }
+            }
+          ]
+        },
+        {
+          "value": 0,
+          "time": 211872.8,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "DIV",
+                "id": "",
+                "class": ""
+              },
+              "previousRect": {
+                "x": 76.391,
+                "y": 524.203,
+                "width": 246.609,
+                "height": 44.391
+              },
+              "currentRect": {
+                "x": 73.391,
+                "y": 524.203,
+                "width": 249.609,
+                "height": 44.391
+              }
+            },
+            {
+              "node": {
+                "tag": "DIV",
+                "id": "",
+                "class": ""
+              },
+              "previousRect": {
+                "x": 75.344,
+                "y": 712.203,
+                "width": 247.656,
+                "height": 44.391
+              },
+              "currentRect": {
+                "x": 78.344,
+                "y": 712.203,
+                "width": 244.656,
+                "height": 44.391
+              }
+            },
+            {
+              "node": {
+                "tag": "SPAN",
+                "id": "",
+                "class": "flow-role-number"
+              },
+              "previousRect": {
+                "x": 52,
+                "y": 727.906,
+                "width": 14,
+                "height": 13
+              },
+              "currentRect": {
+                "x": 55,
+                "y": 727.906,
+                "width": 14,
+                "height": 13
+              }
+            },
+            {
+              "node": {
+                "tag": "SPAN",
+                "id": "",
+                "class": "flow-role-number"
+              },
+              "previousRect": {
+                "x": 55,
+                "y": 539.906,
+                "width": 11.391,
+                "height": 13
+              },
+              "currentRect": {
+                "x": 52,
+                "y": 539.906,
+                "width": 11.391,
+                "height": 13
+              }
+            }
+          ]
+        }
+      ],
+      "observedInteractionCount": 0,
+      "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+      "status": "Observing this navigation; record after the intended interactions",
+      "fcpMs": 532
+    },
+    "document": {
+      "title": "We,place. — 매장의 변화, 실행과 기록으로",
+      "h1Count": 1,
+      "h1Visible": true,
+      "robots": "noindex, nofollow",
+      "canonical": "https://withweplace.kr/",
+      "fontsStatus": "loaded",
+      "imageCount": 4,
+      "loadedImageCount": 4,
+      "images": [
+        {
+          "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+          "complete": true,
+          "naturalWidth": 480,
+          "width": 180,
+          "height": 90,
+          "loading": "lazy"
+        },
+        {
+          "src": "/assets/home-r2/example-space.webp",
+          "complete": true,
+          "naturalWidth": 1280,
+          "width": 333,
+          "height": 195.047,
+          "loading": "lazy"
+        },
+        {
+          "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+          "complete": true,
+          "naturalWidth": 480,
+          "width": 120,
+          "height": 60,
+          "loading": "lazy"
+        },
+        {
+          "src": "/apple-touch-icon.png",
+          "complete": true,
+          "naturalWidth": 180,
+          "width": 30,
+          "height": 30,
+          "loading": "auto"
+        }
+      ],
+      "sections": {
+        "intro": {
+          "visible": true,
+          "width": 375,
+          "height": 1119.859
+        },
+        "changes": {
+          "visible": true,
+          "width": 375,
+          "height": 1977.766
+        },
+        "discovery": {
+          "visible": true,
+          "width": 375,
+          "height": 1138.734
+        },
+        "cases": {
+          "visible": true,
+          "width": 375,
+          "height": 1397.984
+        },
+        "flow": {
+          "visible": true,
+          "width": 375,
+          "height": 1683.813
+        },
+        "process": {
+          "visible": true,
+          "width": 375,
+          "height": 1316.203
+        },
+        "request": {
+          "visible": true,
+          "width": 375,
+          "height": 781.219
+        }
+      }
+    },
+    "controls": {
+      "store": "after",
+      "flow": "review",
+      "industry": "dining",
+      "formEnabled": true,
+      "activeElement": {
+        "tag": "BODY",
+        "id": "",
+        "role": null
+      }
+    },
+    "vendor": {
+      "gsapPresent": true,
+      "gsapVersion": "3.13.0",
+      "scrollTriggerPresent": true
+    },
+    "limitations": [
+      "CSS iframe viewport, not native device emulation",
+      "No field p75 claim",
+      "No physical mobile or native screen-reader claim",
+      "No native CPU/network throttling by this harness",
+      "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+      "No input values captured; outbound/authenticated navigation blocked by the harness"
+    ]
+  },
+  "records": [
+    {
+      "run": 1,
+      "recordedAt": "2026-11-03T11:46:26.036Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 532,
+        "cls": 0.277,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.277,
+            "time": 523.8,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "BODY",
+                  "id": "",
+                  "class": "home-r2 home-r4"
+                },
+                "previousRect": {
+                  "x": 7,
+                  "y": 8,
+                  "width": 368,
+                  "height": 836
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 375,
+                  "height": 844
+                }
+              }
+            ]
+          },
+          {
+            "value": 0,
+            "time": 724.1,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 241.797,
+                  "y": 712.828,
+                  "width": 90.203,
+                  "height": 35.188
+                },
+                "currentRect": {
+                  "x": 247.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.001,
+            "time": 102100.2,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 247.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                },
+                "currentRect": {
+                  "x": 262.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "header-actions"
+                },
+                "previousRect": {
+                  "x": 237.266,
+                  "y": 16,
+                  "width": 64.641,
+                  "height": 34
+                },
+                "currentRect": {
+                  "x": 252.266,
+                  "y": 16,
+                  "width": 64.641,
+                  "height": 34
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "mobile-menu"
+                },
+                "previousRect": {
+                  "x": 318.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                },
+                "currentRect": {
+                  "x": 333.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "outline-tag"
+                },
+                "previousRect": {
+                  "x": 284.656,
+                  "y": 636.688,
+                  "width": 47.344,
+                  "height": 26.594
+                },
+                "currentRect": {
+                  "x": 299.656,
+                  "y": 636.688,
+                  "width": 47.344,
+                  "height": 26.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 317.531,
+                  "y": 472.5,
+                  "width": 17.469,
+                  "height": 23
+                },
+                "currentRect": {
+                  "x": 332.531,
+                  "y": 472.5,
+                  "width": 17.469,
+                  "height": 23
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.006,
+            "time": 210807.5,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "cases",
+                  "class": "section cases"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 375,
+                  "height": 53.281
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 375,
+                  "height": 82.781
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "sample-pill"
+                },
+                "previousRect": {
+                  "x": 284.813,
+                  "y": 685.453,
+                  "width": 67.188,
+                  "height": 22.844
+                },
+                "currentRect": {
+                  "x": 269.813,
+                  "y": 714.953,
+                  "width": 67.188,
+                  "height": 22.844
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "outline-tag"
+                },
+                "previousRect": {
+                  "x": 304.656,
+                  "y": 757.859,
+                  "width": 47.344,
+                  "height": 26.594
+                },
+                "currentRect": {
+                  "x": 289.656,
+                  "y": 787.359,
+                  "width": 47.344,
+                  "height": 26.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "mobile-menu"
+                },
+                "previousRect": {
+                  "x": 333.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                },
+                "currentRect": {
+                  "x": 318.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                }
+              }
+            ]
+          },
+          {
+            "value": 0,
+            "time": 211872.8,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 76.391,
+                  "y": 524.203,
+                  "width": 246.609,
+                  "height": 44.391
+                },
+                "currentRect": {
+                  "x": 73.391,
+                  "y": 524.203,
+                  "width": 249.609,
+                  "height": 44.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 75.344,
+                  "y": 712.203,
+                  "width": 247.656,
+                  "height": 44.391
+                },
+                "currentRect": {
+                  "x": 78.344,
+                  "y": 712.203,
+                  "width": 244.656,
+                  "height": 44.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "flow-role-number"
+                },
+                "previousRect": {
+                  "x": 52,
+                  "y": 727.906,
+                  "width": 14,
+                  "height": 13
+                },
+                "currentRect": {
+                  "x": 55,
+                  "y": 727.906,
+                  "width": 14,
+                  "height": 13
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "flow-role-number"
+                },
+                "previousRect": {
+                  "x": 55,
+                  "y": 539.906,
+                  "width": 11.391,
+                  "height": 13
+                },
+                "currentRect": {
+                  "x": 52,
+                  "y": 539.906,
+                  "width": 11.391,
+                  "height": 13
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 532
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 3,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 333,
+            "height": 195.047,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 30,
+            "height": 30,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 375,
+            "height": 1119.859
+          },
+          "changes": {
+            "visible": true,
+            "width": 375,
+            "height": 1977.766
+          },
+          "discovery": {
+            "visible": true,
+            "width": 375,
+            "height": 1138.734
+          },
+          "cases": {
+            "visible": true,
+            "width": 375,
+            "height": 1397.984
+          },
+          "flow": {
+            "visible": true,
+            "width": 375,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 375,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 375,
+            "height": 781.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 1,
+      "recordedAt": "2026-11-03T11:48:41.604Z",
+      "fixture": "normal",
+      "scene": "flow",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 532,
+        "cls": 0.277,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.277,
+            "time": 523.8,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "BODY",
+                  "id": "",
+                  "class": "home-r2 home-r4"
+                },
+                "previousRect": {
+                  "x": 7,
+                  "y": 8,
+                  "width": 368,
+                  "height": 836
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 375,
+                  "height": 844
+                }
+              }
+            ]
+          },
+          {
+            "value": 0,
+            "time": 724.1,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 241.797,
+                  "y": 712.828,
+                  "width": 90.203,
+                  "height": 35.188
+                },
+                "currentRect": {
+                  "x": 247.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.001,
+            "time": 102100.2,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 247.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                },
+                "currentRect": {
+                  "x": 262.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "header-actions"
+                },
+                "previousRect": {
+                  "x": 237.266,
+                  "y": 16,
+                  "width": 64.641,
+                  "height": 34
+                },
+                "currentRect": {
+                  "x": 252.266,
+                  "y": 16,
+                  "width": 64.641,
+                  "height": 34
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "mobile-menu"
+                },
+                "previousRect": {
+                  "x": 318.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                },
+                "currentRect": {
+                  "x": 333.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "outline-tag"
+                },
+                "previousRect": {
+                  "x": 284.656,
+                  "y": 636.688,
+                  "width": 47.344,
+                  "height": 26.594
+                },
+                "currentRect": {
+                  "x": 299.656,
+                  "y": 636.688,
+                  "width": 47.344,
+                  "height": 26.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 317.531,
+                  "y": 472.5,
+                  "width": 17.469,
+                  "height": 23
+                },
+                "currentRect": {
+                  "x": 332.531,
+                  "y": 472.5,
+                  "width": 17.469,
+                  "height": 23
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.006,
+            "time": 210807.5,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "cases",
+                  "class": "section cases"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 375,
+                  "height": 53.281
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 375,
+                  "height": 82.781
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "sample-pill"
+                },
+                "previousRect": {
+                  "x": 284.813,
+                  "y": 685.453,
+                  "width": 67.188,
+                  "height": 22.844
+                },
+                "currentRect": {
+                  "x": 269.813,
+                  "y": 714.953,
+                  "width": 67.188,
+                  "height": 22.844
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "outline-tag"
+                },
+                "previousRect": {
+                  "x": 304.656,
+                  "y": 757.859,
+                  "width": 47.344,
+                  "height": 26.594
+                },
+                "currentRect": {
+                  "x": 289.656,
+                  "y": 787.359,
+                  "width": 47.344,
+                  "height": 26.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "mobile-menu"
+                },
+                "previousRect": {
+                  "x": 333.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                },
+                "currentRect": {
+                  "x": 318.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                }
+              }
+            ]
+          },
+          {
+            "value": 0,
+            "time": 211872.8,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 76.391,
+                  "y": 524.203,
+                  "width": 246.609,
+                  "height": 44.391
+                },
+                "currentRect": {
+                  "x": 73.391,
+                  "y": 524.203,
+                  "width": 249.609,
+                  "height": 44.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 75.344,
+                  "y": 712.203,
+                  "width": 247.656,
+                  "height": 44.391
+                },
+                "currentRect": {
+                  "x": 78.344,
+                  "y": 712.203,
+                  "width": 244.656,
+                  "height": 44.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "flow-role-number"
+                },
+                "previousRect": {
+                  "x": 52,
+                  "y": 727.906,
+                  "width": 14,
+                  "height": 13
+                },
+                "currentRect": {
+                  "x": 55,
+                  "y": 727.906,
+                  "width": 14,
+                  "height": 13
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "flow-role-number"
+                },
+                "previousRect": {
+                  "x": 55,
+                  "y": 539.906,
+                  "width": 11.391,
+                  "height": 13
+                },
+                "currentRect": {
+                  "x": 52,
+                  "y": 539.906,
+                  "width": 11.391,
+                  "height": 13
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 532
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 333,
+            "height": 195.047,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 30,
+            "height": 30,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 375,
+            "height": 1119.859
+          },
+          "changes": {
+            "visible": true,
+            "width": 375,
+            "height": 1977.766
+          },
+          "discovery": {
+            "visible": true,
+            "width": 375,
+            "height": 1138.734
+          },
+          "cases": {
+            "visible": true,
+            "width": 375,
+            "height": 1397.984
+          },
+          "flow": {
+            "visible": true,
+            "width": 375,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 375,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 375,
+            "height": 781.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "review",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "Scripted fixtures allow native form events for local request preparation; a capture-phase submit guard prevents default form navigation without stopping page handlers",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    }
+  ]
+}

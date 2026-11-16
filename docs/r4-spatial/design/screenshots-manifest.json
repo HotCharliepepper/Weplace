@@ -1,0 +1,65 @@
+[
+  {
+    "file": "desktop.png",
+    "nodeId": "3:2",
+    "width": 1440,
+    "height": 7178,
+    "bytes": 769396,
+    "sha256": "0f813ac354ae09d8125ddba7594cfe476782416bc6612aabb2ad1b88bb006f74",
+    "decodeVerified": true
+  },
+  {
+    "file": "mobile.png",
+    "nodeId": "4:2",
+    "width": 390,
+    "height": 9769,
+    "bytes": 570892,
+    "sha256": "ccbc4431d4632a40bfd1ba672cea364ecebd5590856072b4de933c47a27ff773",
+    "decodeVerified": true
+  },
+  {
+    "file": "storyboard.png",
+    "nodeId": "10:2",
+    "width": 2020,
+    "height": 3081,
+    "bytes": 631020,
+    "sha256": "4cf785f40c0750984a2e749378d7843c57dc6247e08521f1f0d6ce74e40d57ba",
+    "decodeVerified": true
+  },
+  {
+    "file": "fallback.png",
+    "nodeId": "10:209",
+    "width": 1500,
+    "height": 1093,
+    "bytes": 261170,
+    "sha256": "31145efe23bf61782752e3ff1896793e12df714770a3a33722e378b4f1a1dce4",
+    "decodeVerified": true
+  },
+  {
+    "file": "tokens.png",
+    "nodeId": "2:41",
+    "width": 1440,
+    "height": 1286,
+    "bytes": 68890,
+    "sha256": "475a72f11311669ff9ceb574e62a2a23eb0f15e98266a8b3b5e0e6bdbaca3d0e",
+    "decodeVerified": true
+  },
+  {
+    "file": "qa.png",
+    "nodeId": "11:21",
+    "width": 1440,
+    "height": 1085,
+    "bytes": 122544,
+    "sha256": "57d05be6da582809dd8727593b4fff288ac92cfff5f0bab43af3a99e799c2439",
+    "decodeVerified": true
+  },
+  {
+    "file": "asis.png",
+    "nodeId": "9:2",
+    "width": 1440,
+    "height": 1749,
+    "bytes": 200843,
+    "sha256": "42e28f43be0897cf6bac8c8254daca9f9dbf7c79f15525d7a03174092cc9eadc",
+    "decodeVerified": true
+  }
+]

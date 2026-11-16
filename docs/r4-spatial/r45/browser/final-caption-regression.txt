@@ -1,0 +1,16 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+Running 6 tests using 1 worker
+
+(node:30) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/browser/r45.spec.cjs:206:1 › WCAG automated checks on main and all five journey states (1.8s)
+  ✓  2 [desktop] › tests/browser/r45.spec.cjs:232:1 › all requested widths preserve type, poster, native links and the unchanged observation (2.9s)
+  ✓  3 [desktop] › tests/browser/r45.spec.cjs:347:1 › hero labels remain readable without overlay cards (436ms)
+(node:133) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [mobile] › tests/browser/r45.spec.cjs:206:1 › WCAG automated checks on main and all five journey states (1.8s)
+  ✓  5 [mobile] › tests/browser/r45.spec.cjs:232:1 › all requested widths preserve type, poster, native links and the unchanged observation (2.7s)
+  ✓  6 [mobile] › tests/browser/r45.spec.cjs:347:1 › hero labels remain readable without overlay cards (312ms)
+
+  6 passed (10.9s)

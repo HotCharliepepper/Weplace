@@ -1,0 +1,174 @@
+/* WEPLACE TEXT DEPTH R2 — opt-in review.
+   All glyphs stay live HTML. One global light source: upper right.
+   Keep numeric facts sharp and existing GSAP ownership unchanged. */
+.unified-r3.swd-study.tdp-study{
+  --tdp-face:#244735;
+  --tdp-rim:rgba(255,255,244,.88);
+  --tdp-edge:rgba(33,78,49,.23);
+  --tdp-soft:rgba(28,63,43,.13);
+}
+/* 01 / Record: dense and measurable, not a toy 3D numeral */
+.unified-r3.tdp-study #landing-title{
+  color:#244936;
+  text-shadow:
+    0 -1px 0 rgba(255,255,248,.89),
+    -1px 2px 0 rgba(45,82,51,.13),
+    -4px 8px 17px rgba(38,65,41,.10);
+}
+.unified-r3.tdp-study .u-number{
+  color:#28553c;
+  font-variant-numeric:lining-nums tabular-nums;
+  text-shadow:
+    1px -1px 0 rgba(255,255,249,.92),
+    -1px 2px 0 rgba(41,89,53,.19),
+    -2px 4px 0 rgba(31,67,39,.085),
+    -8px 12px 20px rgba(24,60,33,.12);
+}
+.unified-r3.tdp-study .u-chart-stat strong{
+  color:#f5f7e9;
+  font-variant-numeric:tabular-nums;
+  text-shadow:
+    1px -1px 0 rgba(249,252,229,.28),
+    -2px 3px 0 rgba(9,31,19,.35),
+    -7px 9px 14px rgba(5,24,15,.27);
+}
+/* 03 / Choose: a question opens, emphasised word has a lightly raised face */
+.unified-r3.tdp-study #experience-title{
+  color:#294b37;
+  text-shadow:
+    1px -1px 0 rgba(255,255,247,.81),
+    -1px 2px 0 rgba(70,103,66,.10),
+    -5px 10px 19px rgba(34,74,43,.09);
+}
+.unified-r3.tdp-study #experience-title .rv-keyword{
+  color:#356d48;
+  text-shadow:
+    1px -1px 0 rgba(247,255,236,.91),
+    -1px 2px 0 rgba(41,99,56,.21),
+    -3px 5px 9px rgba(38,84,45,.13);
+  -webkit-text-stroke:.006em rgba(35,84,51,.24);
+}
+.unified-r3.tdp-study #experience-title .rv-keyword::after{
+  height:.054em;bottom:-.09em;
+  background:linear-gradient(90deg,rgba(64,133,82,.18),rgba(85,141,85,.61) 68%,transparent);
+}
+/* 04 / Words: show → organise → execute each carries greater responsibility.
+   Existing .rf-word-row ScrollTrigger remains the only movement controller. */
+.unified-r3.tdp-study .rf-word-row:nth-child(1) .rf-word{
+  color:#355844;
+  text-shadow:1px -1px 0 rgba(252,255,245,.57),-2px 4px 12px rgba(36,64,44,.045);
+}
+.unified-r3.tdp-study .rf-word-row:nth-child(2) .rf-word{
+  color:#2a533d;
+  text-shadow:
+    1px -1px 0 rgba(249,255,242,.69),
+    -1px 2px 0 rgba(42,85,52,.11),
+    -3px 7px 15px rgba(40,80,52,.085);
+}
+.unified-r3.tdp-study .rf-word-row:nth-child(3) .rf-word{
+  background:none;
+  color:#193f2d;
+  -webkit-text-fill-color:currentColor;
+  text-shadow:
+    1px -1px 0 rgba(254,255,248,.76),
+    -1px 2px 0 rgba(34,78,51,.19),
+    -2px 4px 0 rgba(28,65,43,.07),
+    -5px 12px 18px rgba(27,67,45,.13);
+}
+/* 05 / Capabilities: legible cards, not individual floating toys */
+.unified-r3.tdp-study #capabilities-title{
+  text-shadow:
+    1px -1px 0 rgba(255,255,245,.79),
+    -1px 2px 0 rgba(38,72,45,.13),
+    -5px 9px 15px rgba(29,67,44,.08);
+}
+.unified-r3.tdp-study #capabilities-title em{
+  font-style:normal;
+  color:#3f7050;
+  -webkit-text-fill-color:currentColor;
+}
+.unified-r3.tdp-study .rf-proof-card h3{
+  color:#294636;
+  text-shadow:
+    0 -1px 0 rgba(255,255,245,.78),
+    -1px 2px 0 rgba(41,75,49,.09),
+    -3px 6px 10px rgba(46,73,50,.065);
+}
+/* 06 / Proof: dark ground, crisp editorial letters, no inflated numbers */
+.unified-r3.tdp-study #evidence-title{
+  color:#f6f8ed;
+  text-shadow:
+    1px -1px 0 rgba(252,255,241,.21),
+    -1px 2px 0 rgba(7,31,17,.36),
+    -5px 10px 17px rgba(5,27,14,.22);
+}
+/* 07 / Contact: low pressure, the key question is tactile and reassuring */
+.unified-r3.tdp-study #contact-title{
+  color:#264634;
+  text-shadow:
+    1px -1px 0 rgba(255,255,249,.87),
+    -1px 2px 0 rgba(37,72,47,.11),
+    -5px 10px 18px rgba(30,68,42,.09);
+}
+.unified-r3.tdp-study #contact-title em{
+  color:#3c7750;
+  background:none;
+  -webkit-text-fill-color:currentColor;
+  text-shadow:
+    1px -1px 0 rgba(255,255,240,.92),
+    -1px 2px 0 rgba(55,116,62,.19),
+    -4px 8px 14px rgba(40,92,51,.12);
+}
+.unified-r3.tdp-study .rf-diagnosis-sheet h3{
+  color:#2c4d38;
+  text-shadow:0 -1px 0 rgba(255,255,248,.73),-3px 6px 12px rgba(38,72,49,.065);
+}
+/* 08 / Controls: tactile feedback should not steal attention from actions */
+.unified-r3.tdp-study .rf-button.primary{
+  box-shadow:0 4px 0 rgba(20,51,33,.16),0 10px 23px rgba(21,58,35,.10);
+  transition:box-shadow .18s ease,transform .18s ease,background-color .18s ease;
+}
+@media(hover:hover) and (pointer:fine){
+  .unified-r3.tdp-study .rf-button.primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 0 rgba(20,51,33,.17),0 13px 24px rgba(21,58,35,.12);
+  }
+}
+.unified-r3.tdp-study .rf-button.primary:active{
+  transform:translateY(1px);
+  box-shadow:0 2px 0 rgba(20,51,33,.12),0 5px 10px rgba(21,58,35,.08);
+}
+.unified-r3.tdp-study .rf-button:focus-visible{
+  outline:3px solid #6c9f6b;
+  outline-offset:4px;
+}
+/* Mobile text depth is lighter and avoids unnecessary multi-pass blur work */
+@media(max-width:800px){
+ .unified-r3.tdp-study :is(#landing-title,#experience-title,#capabilities-title,#evidence-title,#contact-title){
+   text-shadow:0 -1px 0 rgba(255,255,244,.55),-1px 2px 0 rgba(34,69,42,.08);
+ }
+ .unified-r3.tdp-study .rf-word-row:nth-child(3) .rf-word{
+   text-shadow:0 -1px 0 rgba(255,255,246,.65),-1px 2px 0 rgba(36,79,45,.14);
+ }
+ .unified-r3.tdp-study .rf-word-row:nth-child(2) .rf-word{
+   text-shadow:0 -1px 0 rgba(255,255,246,.56),-1px 2px 0 rgba(36,79,45,.09);
+ }
+ .unified-r3.tdp-study .u-number{
+   text-shadow:1px -1px 0 rgba(255,255,249,.8),-1px 2px 0 rgba(45,86,53,.11);
+ }
+ .unified-r3.tdp-study .rf-proof-card h3{
+   text-shadow:0 -1px 0 rgba(255,255,243,.7),-1px 2px 0 rgba(46,82,54,.06);
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ .unified-r3.tdp-study .rf-button.primary{transition:none!important;transform:none!important}
+}
+html[data-rf-motion="off"] .unified-r3.tdp-study .rf-button.primary{transition:none!important;transform:none!important}
+@media(forced-colors:active){
+ .unified-r3.tdp-study :is(#landing-title,.u-number,.u-chart-stat strong,#experience-title,#capabilities-title,
+  #evidence-title,#contact-title,.rf-proof-card h3,.rf-word-row .rf-word,.rf-diagnosis-sheet h3){
+   color:CanvasText!important;text-shadow:none!important;-webkit-text-fill-color:CanvasText!important;
+   -webkit-text-stroke:0!important;
+ }
+ .unified-r3.tdp-study .rf-button.primary{box-shadow:none!important;border:1px solid ButtonText}
+}
