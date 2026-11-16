@@ -24,7 +24,7 @@ function check(label,ok,detail=''){
    check(width+' no horizontal overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
    check(width+' light layer',await page.locator('.swd-sun').count()===1);
    check(width+' wind layers',await page.locator('.swd-wind').count()===4);
-   check(width+' logo and sound',await page.locator('.rf-logo img').count()===1&&await page.locator('#fast-sound').getAttribute('aria-pressed')==='false');
+   check(width+' logo and sound',await page.locator('.rf-header .rf-logo img').count()===1&&await page.locator('#fast-sound').getAttribute('aria-pressed')==='false');
    check(width+' chart preserved',await page.locator('#chart-heading').count()===1);
    await page.locator('#fast').scrollIntoViewIfNeeded();
    await page.locator('#fast .rf-aperture img').evaluate(img=>img.decode().catch(()=>{}));
