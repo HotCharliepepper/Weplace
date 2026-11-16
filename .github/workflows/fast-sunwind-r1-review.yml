@@ -1,0 +1,55 @@
+name: FAST Sunwind R1 preview QA
+on:
+  pull_request:
+    paths:
+      - unified-r3-sunwind.html
+      - assets/css/fast-sunwind-r1.css
+      - assets/js/fast-sunwind-r1.js
+      - tests/fast-sunwind-r1.test.cjs
+      - scripts/qa-fast-sunwind-r1.cjs
+      - .github/workflows/fast-sunwind-r1-review.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install + verify read-only review build
+        run: |
+          npm ci
+          npm run verify
+      - name: Select Chromium browser
+        run: |
+          browser_path="$(command -v google-chrome || command -v chromium || true)"
+          if [ -n "$browser_path" ]; then
+            "$browser_path" --version
+            printf 'RV_BROWSER_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium
+          fi
+      - name: Serve draft static content
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory dist > /tmp/fast-sunwind.log 2>&1 &
+          for n in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/unified-r3-sunwind.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/fast-sunwind.log
+          exit 1
+      - name: Chromium six-width and reduced-motion checks
+        run: node scripts/qa-fast-sunwind-r1.cjs
+      - name: Preserve screenshots and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: WEPLACE-FAST-SUNWIND-R1
+          path: test-results/fast-sunwind-r1/
+          if-no-files-found: warn
+          retention-days: 14
