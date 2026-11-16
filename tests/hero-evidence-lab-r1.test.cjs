@@ -70,4 +70,4 @@ test('04 animation is slower only in isolated controller and remains accessible'
  assert.doesNotThrow(()=>new Function(js));
  assert.doesNotMatch(html,/tossPayments|paymentWidget/);
 });
-dom.window.close();
+// JSDOM remains active until the node:test callbacks finish.
