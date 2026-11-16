@@ -26,8 +26,9 @@ function check(label,ok,detail=''){
    check(width+' wind layers',await page.locator('.swd-wind').count()===4);
    check(width+' logo and sound',await page.locator('.rf-logo img').count()===1&&await page.locator('#fast-sound').getAttribute('aria-pressed')==='false');
    check(width+' chart preserved',await page.locator('#chart-heading').count()===1);
-   check(width+' hero photo loads',await page.locator('#fast .rf-aperture img').evaluate(i=>i.complete&&i.naturalWidth>0));
    await page.locator('#fast').scrollIntoViewIfNeeded();
+   await page.locator('#fast .rf-aperture img').evaluate(img=>img.decode().catch(()=>{}));
+   check(width+' hero photo loads',await page.locator('#fast .rf-aperture img').evaluate(i=>i.complete&&i.naturalWidth>0));
    check(width+' live text still readable',await page.locator('#hero-title').isVisible());
    check(width+' heading not clipped',await page.locator('#hero-title').evaluate(el=>{
      const r=el.getBoundingClientRect(),hero=el.closest('.rf-hero').getBoundingClientRect();
@@ -54,7 +55,7 @@ function check(label,ok,detail=''){
   check('replay enabled',await page.locator('#fast-replay').isEnabled());
   await page.locator('#fast-replay').click();
   try {
-   await page.waitForFunction(()=>document.querySelector('.swd-atmosphere')?.dataset.swdPlaying==='yes',{timeout:1400});
+   await page.waitForFunction(()=>document.querySelector('.swd-atmosphere')?.dataset.swdPlaying==='yes',undefined,{timeout:1400});
    check('wind responds to FAST acceleration',true);
   } catch(err) {check('wind responds to FAST acceleration',false,err.message)}
   await page.waitForTimeout(1150);
