@@ -50,17 +50,17 @@
   fill:none;stroke-width:3.1;stroke-linecap:round;stroke-linejoin:round;
   opacity:.20;transition:opacity .25s ease,stroke-width .25s ease;
 }
-.he-evidence .he-line[data-year="2023"]{stroke:#8a9d8e}
-.he-evidence .he-line[data-year="2024"]{stroke:#77968e}
-.he-evidence .he-line[data-year="2025"]{stroke:#aa9474}
-.he-evidence .he-line[data-year="2026"]{stroke:#356d4b;opacity:.96;stroke-width:4.8}
+.he-evidence .he-line[data-chart-year="2023"]{stroke:#8a9d8e}
+.he-evidence .he-line[data-chart-year="2024"]{stroke:#77968e}
+.he-evidence .he-line[data-chart-year="2025"]{stroke:#aa9474}
+.he-evidence .he-line[data-chart-year="2026"]{stroke:#356d4b;opacity:.96;stroke-width:4.8}
 .he-evidence .he-line.is-selected{opacity:1;stroke-width:4.5}
-.he-evidence .he-line[data-year="2026"].is-selected{stroke-width:5.8}
+.he-evidence .he-line[data-chart-year="2026"].is-selected{stroke-width:5.8}
 .he-evidence .he-graph-dot{transition:opacity .25s ease;opacity:.22}
-.he-evidence .he-graph-dot[data-year="2023"]{fill:#8a9d8e}
-.he-evidence .he-graph-dot[data-year="2024"]{fill:#77968e}
-.he-evidence .he-graph-dot[data-year="2025"]{fill:#aa9474}
-.he-evidence .he-graph-dot[data-year="2026"]{fill:#356d4b;opacity:1}
+.he-evidence .he-graph-dot[data-chart-year="2023"]{fill:#8a9d8e}
+.he-evidence .he-graph-dot[data-chart-year="2024"]{fill:#77968e}
+.he-evidence .he-graph-dot[data-chart-year="2025"]{fill:#aa9474}
+.he-evidence .he-graph-dot[data-chart-year="2026"]{fill:#356d4b;opacity:1}
 .he-evidence .he-graph-dot.is-selected{opacity:1}
 .he-evidence .he-graph-dot circle{stroke:#f7f7ec;stroke-width:2}
 .he-evidence .he-years-note{
