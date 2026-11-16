@@ -8,7 +8,7 @@ const css=fs.readFileSync('assets/css/hero-evidence-lab-r1.css','utf8');
 const js=fs.readFileSync('assets/js/hero-evidence-lab-r1.js','utf8');
 const sourceController=fs.readFileSync('assets/js/unified-r3.js','utf8');
 const controller=fs.readFileSync('assets/js/unified-r3-hero-lab.js','utf8');
-const dom=new JSDOM(html);
+const dom=new JSDOM(html,{url:'https://preview.example/unified-r3-hero-lab.html',runScripts:'outside-only'});
 const d=dom.window.document;
 test('opt-in lab leaves original R3 evidence untouched and adds hero evidence before experience',()=>{
  const ids=[...d.querySelectorAll('main>section')].map(x=>x.id);
