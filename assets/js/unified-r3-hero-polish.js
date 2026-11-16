@@ -66,7 +66,7 @@ import {createFastSignature} from './resolute-sonic-a.js';
         .to('.rf-aperture',{scale:1,duration:.3,ease:'none'});
       $$('.rf-word-row').forEach(row => {
         // Each row owns a longer viewport interval; the next row remains below it.
-        gs.fromTo(row.querySelector('.rf-word'),{x:desktop?-46:-17,y:desktop?52:31,opacity:.14},{x:0,y:0,opacity:1,ease:'none',scrollTrigger:{trigger:row,start:'top 83%',end:'top 25%',scrub:1.38}});
+        gs.fromTo(row.querySelector('.rf-word'),{x:desktop?-36:-12,y:desktop?32:16,opacity:.31},{x:0,y:0,opacity:1,ease:'none',scrollTrigger:{trigger:row,start:'top 83%',end:'top 25%',scrub:1.38}});
       });
     });
     document.fonts?.ready.then(() => {if (allowed()) st.refresh();});
