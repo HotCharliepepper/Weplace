@@ -147,7 +147,7 @@
   background:linear-gradient(153deg,#203e30 0%,#162f23 62%,#11271e 100%);
   color:#eaf2e5;
 }
-.unified-r3.he-lab.he-polish .he-footer-inner{padding-block:clamp(66px,7vw,112px) 28px}
+.unified-r3.he-lab.he-polish .he-footer-inner{display:block;padding-block:clamp(66px,7vw,112px) 28px}
 .unified-r3.he-lab.he-polish .he-footer-main{
   display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);
   gap:clamp(26px,7vw,95px);align-items:end;
