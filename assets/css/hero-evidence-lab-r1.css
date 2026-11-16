@@ -1,6 +1,10 @@
 /* WEPLACE Hero Evidence Lab R1 | review-only visual layer.
    Keeps existing R3/FAST/CRM intact. No audio or analytics dependencies. */
 .unified-r3.he-lab .he-evidence{
+  /* The inherited subset RF Sans omits some syllables in newly added copy.
+     Prefer full-system Korean fonts without shipping licensed font binaries. */
+  font-family:'Noto Sans CJK KR','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;
+
   background:linear-gradient(180deg,#e6ede2 0%,#dce8d8 18%,#dce7d5 62%,#e7ede1 100%);
   padding:clamp(90px,9vw,140px) 0 clamp(85px,8vw,120px);
   isolation:isolate;position:relative;
