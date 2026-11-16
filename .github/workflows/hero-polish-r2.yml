@@ -38,6 +38,11 @@ jobs:
         run: |
           npm ci
           npm run verify
+      - name: Install complete Korean fallback font for visual QA
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk
+          fc-match "Noto Sans CJK KR"
       - name: Locate Chromium
         run: |
           browser_path="$(command -v google-chrome || command -v chromium || true)"
