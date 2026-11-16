@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="320" viewBox="0 0 500 320" role="img" aria-labelledby="title">
+<title id="title">객실과 도착 안내를 표현한 숙박 업종 예시</title>
+<!-- Original code-authored illustration. No client premises depicted. -->
+<rect width="500" height="320" fill="#edf1f2"/>
+<path d="M0 254h500v66H0z" fill="#dbe2e3"/>
+<rect x="300" y="37" width="138" height="129" rx="3" fill="#b6cbd7"/>
+<path d="M369 37v128M300 103h138" stroke="#f6f6ef" stroke-width="6"/>
+<circle cx="407" cy="67" r="17" fill="#f0e4c8"/>
+<path d="M301 138l34-27 31 17 34-28 38 28v36H301z" fill="#9bb3bf"/>
+<rect x="83" y="112" width="204" height="118" rx="8" fill="#819ba5"/>
+<path d="M76 168h220l23 79H53z" fill="#fcfaf2"/>
+<path d="M59 225h254l6 22H53z" fill="#a8bdc2"/>
+<path d="M80 247v27m212-27v27" stroke="#6a7d82" stroke-width="7"/>
+<rect x="98" y="148" width="76" height="34" rx="8" fill="#e2e9e7"/>
+<rect x="186" y="148" width="76" height="34" rx="8" fill="#e2e9e7"/>
+<path d="M334 200h80v51h-80z" fill="#c1bcae"/>
+<path d="M374 200v-46" stroke="#697b7e" stroke-width="4"/>
+<path d="M351 156h46l-9-29h-28z" fill="#e5d8b7"/>
+<rect x="30" y="91" width="26" height="45" rx="4" fill="#d3b98a"/>
+<circle cx="43" cy="102" r="4" fill="#edf1f2"/>
+<path d="M38 118h10m-8 6h6" stroke="#7f785f" stroke-width="2"/>
+</svg>

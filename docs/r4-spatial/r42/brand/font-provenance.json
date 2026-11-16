@@ -1,0 +1,12 @@
+{
+  "source": "assets/home-r2/Pretendard-SemiBold.woff2",
+  "sha256": "2846f482c13c87589b52d18ccc461d9ee2ca50855b8bcea2e3d3ada85007800c",
+  "nameTable": {
+    "1": "Pretendard SemiBold",
+    "2": "Regular",
+    "6": "Pretendard-SemiBold"
+  },
+  "wordmark": "Glyph outlines, tracking adjusted. No embedded font bytes.",
+  "photoReference": "upload/image(20261103-134948).png",
+  "vectorStatus": "Web-native interpretation of supplied raster reference; not an exact source-logo extraction."
+}

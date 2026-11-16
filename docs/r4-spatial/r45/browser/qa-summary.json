@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-08",
+  "baseline": "9ed15798e1ef90712ba842a7f873b230a1688cf0",
+  "node": "v24.22.1",
+  "playwright": "1.64.1",
+  "axe": "4.14.0",
+  "browser": "Chromium 153.0.8010.0",
+  "browserTests": {
+    "passed": 58,
+    "failed": 0,
+    "notApplicable": 2,
+    "evidence": "playwright-run.txt"
+  },
+  "unitTests": {
+    "passed": 88,
+    "failed": 0
+  },
+  "widths": [
+    1440,
+    1280,
+    1024,
+    768,
+    430,
+    390,
+    360,
+    320
+  ],
+  "finalCaptionRegression": {
+    "passed": 6,
+    "failed": 0,
+    "evidence": "final-caption-regression.txt"
+  },
+  "notRun": [
+    "Safari/iOS/Android real devices",
+    "Screen reader assistive technology",
+    "Field CWV and INP",
+    "Lighthouse",
+    "Real conversions or customer interviews"
+  ],
+  "networkMethod": "Local built-file fulfillment; live Netlify review recorded separately"
+}

@@ -1,0 +1,159 @@
+{
+  "status": "generated-and-visually-reviewed",
+  "assets": [
+    {
+      "file": "apple-touch-icon.png",
+      "bytes": 3619,
+      "sha256": "76217fef05e0a4a4a97af7fac7a74df3506bf9fdeb6ba7005e7d4912b9da78dc",
+      "width": 180,
+      "height": 180
+    },
+    {
+      "file": "apple-touch-icon.svg",
+      "bytes": 546,
+      "sha256": "9bd34cc626e6affaf7e56c5a3a9f248c885812685717afd7ff562cbfa3ba8791",
+      "width": "180",
+      "height": "180"
+    },
+    {
+      "file": "brand-board.png",
+      "bytes": 118842,
+      "sha256": "f9992134b137d1b050f2664ed18dacac4529f7926b57ea9a653e01c9de1b6615",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "file": "brand-board.svg",
+      "bytes": 30676,
+      "sha256": "97dc6051740efd3963d2916475281fecf4ca17d6c83a6b23d41e8c8f007bf654",
+      "width": "1440",
+      "height": "1000"
+    },
+    {
+      "file": "favicon-16.png",
+      "bytes": 547,
+      "sha256": "3568832346f089701683d07df257c1d8b8ea6a0042b82eea4006b2340bc7b133",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "file": "favicon-32.png",
+      "bytes": 995,
+      "sha256": "ee2c6e1abfa99b72e56becc5fb9d42d3972fb55e7b45e956a1f2c40591668f36",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "file": "favicon-48.png",
+      "bytes": 1419,
+      "sha256": "75686b7332216a2482f5f515cf9a54206bc81bfda0263fde943199972cf02d27",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "file": "favicon-96.png",
+      "bytes": 2841,
+      "sha256": "59b95292560f03021888ea2cd27ad827f581243e695b7e2870159ddc77bb3751",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "file": "favicon-qa.png",
+      "bytes": 62202,
+      "sha256": "1c0fb0647ac3f934e9e97edaa95da5b3cd4919db325e61955738e992b10bb4aa",
+      "width": 680,
+      "height": 400
+    },
+    {
+      "file": "favicon.ico",
+      "bytes": 15086,
+      "sha256": "4b9bf1fca0a5bad7875ee8e1fdeac12dcf2a10685aa98b4e38a7cc851a1eeeb7",
+      "width": 48,
+      "height": 48,
+      "frames": [
+        [
+          16,
+          16
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          48,
+          48
+        ]
+      ]
+    },
+    {
+      "file": "favicon.svg",
+      "bytes": 441,
+      "sha256": "6d62b2bee71325f4ec335bb4e6c3782a45f1e3ddf4913353c3ee5e472acda596",
+      "width": "96",
+      "height": "96"
+    },
+    {
+      "file": "og-weplace-r42.jpg",
+      "bytes": 40038,
+      "sha256": "fce07bd945c530cf1575642256d8b768708eabd3931e171695133aa600516c45",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "file": "og-weplace-r42.svg",
+      "bytes": 17233,
+      "sha256": "4ef6e621dca1aa13725f6c72e0b8bb1f87386d7ee469759ef8052d087be40d04",
+      "width": "1200",
+      "height": "630"
+    },
+    {
+      "file": "weplace-logo-dark.png",
+      "bytes": 21342,
+      "sha256": "6291d9ffcaaf366f641c87adfb98ecd1a49302952a543a2e54d21f464ff44306",
+      "width": 800,
+      "height": 180
+    },
+    {
+      "file": "weplace-logo-dark.svg",
+      "bytes": 4851,
+      "sha256": "b47e8d572c1ac136de7b9d8eb5adb362a7b182c43d9fcdeb53865f4824fc2f33",
+      "width": "400",
+      "height": "90"
+    },
+    {
+      "file": "weplace-logo-light.png",
+      "bytes": 21962,
+      "sha256": "4cc028d9d0e8be3236fc00fc6e0dd134ea1a1192926d8a0a20f5e590096d584e",
+      "width": 800,
+      "height": 180
+    },
+    {
+      "file": "weplace-logo-light.svg",
+      "bytes": 4851,
+      "sha256": "fef695c0c3922a2a2f38775ca6fe47c84f24a26acbfe6f4fc52a6d48bb50c559",
+      "width": "400",
+      "height": "90"
+    },
+    {
+      "file": "weplace-symbol-flat.svg",
+      "bytes": 896,
+      "sha256": "411d832382fc70d5fca994622f9b9b1f0e3bb875d2bb37b4c744d607e2f4f52b",
+      "width": "680",
+      "height": "330"
+    },
+    {
+      "file": "weplace-symbol.png",
+      "bytes": 30251,
+      "sha256": "9b92081f20be95091c686da368c6ffdcb6c4af3bff38c7705ec9001018cab06d",
+      "width": 680,
+      "height": 330
+    },
+    {
+      "file": "weplace-symbol.svg",
+      "bytes": 1589,
+      "sha256": "c83dd70d7c787f5457a51826701bec09bd1b60862b585511a86e5cc7f065c297",
+      "width": "680",
+      "height": "330"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-03",
+  "code_commit": "d9bc98d25e9fb83a64ccc34a9630ff5bd0136a61",
+  "tree": "918d976355a216ff6694387432bacc3265b84116",
+  "pull_request": "https://github.com/HotCharliepepper/Weplace/pull/16",
+  "preview": "https://deploy-preview-16--weplace.netlify.app/",
+  "deploy_id": "6ae9dc45745eb103e4dddbed",
+  "state": "ready",
+  "context": "deploy-preview",
+  "published_at": null,
+  "protected_production_deploy": "6ad8a7438ddf68ea7482fcd2",
+  "protected_main": "42562ec1a3dedec0e97b4fef1944aef4d84a6a49",
+  "browser_check": {
+    "h1_count": 1,
+    "canonical": "https://withweplace.kr/",
+    "robots": "noindex, nofollow",
+    "public_offer": "첫 화면 진단",
+    "price_krw": 0,
+    "scope": "매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개",
+    "unapproved_reference_price_absent": true,
+    "horizontal_overflow": false,
+    "qa_script_on_normal_visit": false
+  },
+  "functions_deployed": 0,
+  "edge_functions_deployed": 0,
+  "database_migrations": null,
+  "private_concept_in_public_build": false,
+  "notes": [
+    "This records the implementation deploy. Subsequent documentation-only commits do not change public runtime code.",
+    "Private product proposal is not uploaded to GitHub, Netlify or Figma.",
+    "No production deploy, main merge, real database or authentication change."
+  ],
+  "http_checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "x_robots_tag": "noindex, nofollow"
+    },
+    {
+      "path": "/local-concept/",
+      "status": 404
+    },
+    {
+      "path": "/docs/r4-spatial/R41_DIAGNOSIS_UPDATE.md",
+      "status": 404
+    }
+  ]
+}

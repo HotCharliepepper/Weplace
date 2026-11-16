@@ -1,0 +1,3 @@
+@font-face{font-family:"Unified Supplement";src:url("/assets/unified-r3/fonts/WeplaceUnifiedSupplement-Regular.woff2");font-weight:400;font-display:swap;unicode-range:U+AED0,U+B044,U+B8CC,U+B9B0,U+B9B4,U+B9BD,U+B9E5,U+C0B0,U+C158,U+C22B,U+C2B9,U+C84C,U+C99D,U+C9D0,U+C9E7,U+CD95,U+CDE8,U+D0DC,U+D2F0,U+D5A5}
+@font-face{font-family:"Unified Supplement";src:url("/assets/unified-r3/fonts/WeplaceUnifiedSupplement-Bold.woff2");font-weight:600 900;font-display:swap;unicode-range:U+AED0,U+B044,U+B8CC,U+B9B0,U+B9B4,U+B9BD,U+B9E5,U+C0B0,U+C158,U+C22B,U+C2B9,U+C84C,U+C99D,U+C9D0,U+C9E7,U+CD95,U+CDE8,U+D0DC,U+D2F0,U+D5A5}
+.unified-r3{--rf-font:"Unified Supplement","RF Sans","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}

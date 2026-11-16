@@ -1,0 +1,20 @@
+{
+  "stats": {
+    "startTime": "2026-11-04T15:06:30.161Z",
+    "duration": 109879.72499999999,
+    "expected": 40,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": [
+    {
+      "name": "desktop",
+      "testDir": "/workspace/scratch/fa02cc9c2deb/weplace-r43-refinement/tests/browser"
+    },
+    {
+      "name": "mobile",
+      "testDir": "/workspace/scratch/fa02cc9c2deb/weplace-r43-refinement/tests/browser"
+    }
+  ]
+}
