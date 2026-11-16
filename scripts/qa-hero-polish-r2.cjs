@@ -42,6 +42,13 @@ const check=(name,pass,detail='')=>{report.checks.push({name,pass:!!pass,detail}
    check(width+' reversible photo prompt',await page.locator('[data-photo-stage]').getAttribute('data-phase')==='before');
    check(width+' 04 three scroll bands',await page.locator('.rf-word-row').evaluateAll(rows=>rows.length===3&&rows.every(el=>el.getBoundingClientRect().height>=Math.min(innerHeight*.57,430))));
    check(width+' 04 text has optical depth',await page.locator('.rf-word-row .rf-word').evaluateAll(nodes=>nodes.length===3&&nodes.every(el=>getComputedStyle(el).textShadow!=='none')));
+   if(width<=480){
+     check(width+' subtitle does not overlap moving headline',await page.locator('.rf-word-row').evaluateAll(rows=>rows.every(row=>{
+       const word=row.querySelector('.rf-word')?.getBoundingClientRect();
+       const subtitle=row.querySelector('small')?.getBoundingClientRect();
+       return word&&subtitle&&word.bottom+2<=subtitle.top;
+     })));
+   }
    check(width+' footer present',await page.locator('footer.he-footer').count()===1);
    check(width+' footer has meaningful links',await page.locator('.he-footer-links a').count()>=10);
    await page.locator('.he-photo-controls button[data-photo-choice="after"]').click();
