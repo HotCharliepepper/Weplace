@@ -1,0 +1,70 @@
+name: WEPLACE Hero Polish R2 review
+on:
+  pull_request:
+    paths:
+      - unified-r3-hero-polish.html
+      - assets/css/hero-polish-r2.css
+      - assets/js/hero-polish-r2.js
+      - assets/js/unified-r3-hero-polish.js
+      - tests/hero-polish-r2.test.cjs
+      - scripts/qa-hero-polish-r2.cjs
+      - .github/workflows/hero-polish-r2.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Export local edit files
+        uses: actions/upload-artifact@v4
+        with:
+          name: WEPLACE-HERO-POLISH-R2-SOURCE
+          path: |
+            unified-r3-hero-polish.html
+            assets/css/hero-polish-r2.css
+            assets/js/hero-polish-r2.js
+            assets/js/unified-r3-hero-polish.js
+            docs/hero-polish-r2/README.md
+          retention-days: 14
+          if-no-files-found: error
+      - name: Install and verify review static build
+        run: |
+          npm ci
+          npm run verify
+      - name: Locate Chromium
+        run: |
+          browser_path="$(command -v google-chrome || command -v chromium || true)"
+          if [ -n "$browser_path" ]; then
+            "$browser_path" --version
+            printf 'RV_BROWSER_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium
+          fi
+      - name: Start preview
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory dist >/tmp/hero-polish-r2.log 2>&1 &
+          for n in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/unified-r3-hero-polish.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/hero-polish-r2.log
+          exit 1
+      - name: New page + original R3 browser regression
+        run: |
+          node scripts/qa-hero-polish-r2.cjs
+          node scripts/qa-hero-evidence-lab-r1.cjs
+      - name: Save screenshots and QA
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: WEPLACE-HERO-POLISH-R2-QA
+          path: test-results/
+          retention-days: 14
+          if-no-files-found: warn
