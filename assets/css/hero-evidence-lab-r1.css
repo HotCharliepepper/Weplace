@@ -125,6 +125,27 @@
  .he-evidence .he-line,.he-evidence .he-graph-dot,.he-evidence .he-photo-stage img{transition:none!important}
 }
 html[data-rf-motion=off] .he-evidence .he-photo-stage img{transition:none!important}
+
+/* Mobile chart legibility: keep text above the fold, allow only graph area to scroll. */
+.he-evidence .he-chart-scroll{overflow-x:auto;overflow-y:hidden;scrollbar-color:#91b18d #e9f0e7;overscroll-behavior-inline:contain}
+.he-evidence .he-chart-scroll:focus-visible{outline:3px solid #6d986f;outline-offset:3px;border-radius:6px}
+.he-evidence .he-mobile-scroll-note{display:none;font-size:12px;color:#486b4e;margin:9px 0 0}
+.he-evidence .he-photo-stage img.he-image-before{transform:scale(1.48);transform-origin:12% 12%;object-position:6% 12%}
+@media(max-width:950px){
+ .he-evidence .he-graph-header{display:block}
+ .he-evidence .he-graph-header h3{max-width:none}
+ .he-evidence .he-graph-header p{max-width:58ch;margin-top:12px}
+}
+@media(max-width:580px){
+ .he-evidence .he-hero-top h2{font-size:33px;max-width:none}
+ .he-evidence .he-graph-header h3{font-size:27px}
+ .he-evidence .he-overlaid-chart{width:660px;max-width:none;min-width:660px}
+ .he-evidence .he-mobile-scroll-note{display:block}
+ .he-evidence .he-graph-filters{gap:7px}
+ .he-evidence .he-graph-filters button{padding:9px 13px;font-size:12px}
+ .he-evidence .he-photo-stage img.he-image-before{transform:scale(1.6);transform-origin:12% 5%;object-position:4% 6%}
+}
+
 @media(forced-colors:active){
  .he-evidence .he-impact,.he-evidence .he-inflow-progression,.he-evidence .he-graph-card,.he-evidence .he-photo-story{background:Canvas;color:CanvasText;border:1px solid CanvasText}
  .he-evidence .he-line{stroke:CanvasText}
