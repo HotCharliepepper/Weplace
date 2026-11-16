@@ -144,6 +144,10 @@
   .unified-r3.he-lab.he-polish .he-photo-prompt strong{font-size:17px}
   .unified-r3.he-lab.he-polish .rf-word-row{min-height:58svh}
   .unified-r3.he-lab.he-polish .rf-word-sequence{font-size:11.7vw}
+  .unified-r3.he-lab.he-polish .rf-word-row{gap:32px;align-items:flex-start}
+  .unified-r3.he-lab.he-polish .rf-word-row small{position:static;display:block;max-width:none;margin-left:3px;line-height:1.65;opacity:.84}
+  .unified-r3.he-lab.he-polish .rf-word-row .rf-word{line-height:1.11}
+
   .unified-r3.he-lab.he-polish .rf-word-row:nth-child(2){margin-left:7%}
   .unified-r3.he-lab.he-polish .rf-word-row:nth-child(3){margin-left:13%}
 }
