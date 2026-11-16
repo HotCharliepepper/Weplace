@@ -30,6 +30,12 @@
   shape-rendering:geometricPrecision;
 }
 /* Screenshot has a small native raster. Do not enlarge its original pixels via scale(1.6). */
+/* Existing Weplace subset fonts intentionally cover only common glyphs.
+   Use an installed complete Korean fallback for new image prompt copy. */
+.unified-r3.he-lab.he-polish .he-photo-prompt,
+.unified-r3.he-lab.he-polish .he-photo-copy{
+  font-family:"Unified Supplement","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+}
 .unified-r3.he-lab.he-polish .he-photo-stage{
   background:#152c20;
 }
