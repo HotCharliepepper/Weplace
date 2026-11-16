@@ -1,0 +1,3 @@
+@font-face{font-family:"Weplace Path Supplement";src:url("../home-r45/WeplacePathSupplement-Regular.woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+AD8C,U+AFD4,U+B828,U+B985,U+C12F,U+C274,U+C2EC,U+C4F8,U+C695,U+CC29,U+D154,U+D1B5,U+D2B9,U+D310,U+D480}
+@font-face{font-family:"Weplace Path Supplement";src:url("../home-r45/WeplacePathSupplement-SemiBold.woff2");font-weight:600 900;font-style:normal;font-display:swap;unicode-range:U+AD8C,U+AFD4,U+B828,U+B985,U+C12F,U+C274,U+C2EC,U+C4F8,U+C695,U+CC29,U+D154,U+D1B5,U+D2B9,U+D310,U+D480}
+.home-r45{font-family:Pretendard,"Weplace Content Supplement","Weplace Hero Supplement","Weplace Path Supplement",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}

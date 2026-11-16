@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" role="img" aria-labelledby="title desc">
+<title id="title">고추와 오크라가 곁들여진 따뜻한 한 접시의 일러스트</title>
+<desc id="desc">같은 요리를 대상으로 연기, 윤기, 접시 연출을 비교할 수 있도록 만든 투명 배경 요리 일러스트</desc>
+<defs>
+ <linearGradient id="pepper" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f8662d"/><stop offset=".18" stop-color="#c71914"/><stop offset=".55" stop-color="#8d100e"/><stop offset=".86" stop-color="#f23e16"/><stop offset="1" stop-color="#6e100d"/></linearGradient>
+ <linearGradient id="okra" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#b2ba57"/><stop offset=".3" stop-color="#346a23"/><stop offset=".67" stop-color="#163c1c"/><stop offset=".9" stop-color="#659e39"/></linearGradient>
+ <linearGradient id="protein" x1="0" y1=".1" x2="1" y2=".8"><stop stop-color="#ffe6ab"/><stop offset=".24" stop-color="#d99343"/><stop offset=".55" stop-color="#ad4d27"/><stop offset=".8" stop-color="#f7bf72"/><stop offset="1" stop-color="#6f2d20"/></linearGradient>
+ <radialGradient id="sauce"><stop stop-color="#ba6319" stop-opacity=".72"/><stop offset=".65" stop-color="#8e3a15" stop-opacity=".62"/><stop offset="1" stop-color="#311508" stop-opacity="0"/></radialGradient>
+ <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="19"/></filter>
+ <filter id="shine"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+<ellipse cx="367" cy="395" rx="248" ry="73" fill="#130e09" opacity=".36" filter="url(#shadow)"/>
+<ellipse cx="354" cy="335" rx="255" ry="103" fill="url(#sauce)"/>
+<g fill="url(#protein)" stroke="#9e4a27" stroke-width="4">
+ <path d="M164 306C170 272 201 253 237 268L300 294C325 306 318 335 299 352L241 369C209 369 184 347 164 306Z"/>
+ <path d="M286 271C314 241 358 255 391 264L445 307C466 326 440 362 407 362L356 348C331 354 300 318 286 271Z"/>
+ <path d="M397 287C420 261 474 264 506 282L561 329C570 352 544 366 522 370L459 350C422 346 405 316 397 287Z"/>
+</g>
+<g stroke="#ffe0a0" stroke-opacity=".52" stroke-width="6" fill="none" stroke-linecap="round">
+ <path d="M188 303C202 291 222 296 245 308"/>
+ <path d="M309 281C333 269 363 281 379 295"/>
+ <path d="M424 300C448 284 471 299 489 311"/>
+</g>
+<g fill="url(#okra)" stroke="#b2c479" stroke-width="2">
+ <path d="M148 269C158 224 207 214 244 242L317 321C319 352 285 370 256 345L173 296Z"/>
+ <path d="M415 234C443 210 483 225 508 254L548 313C537 337 513 338 486 313L438 273Z"/>
+ <path d="M281 333C318 307 365 315 383 354L374 384C340 401 300 376 281 333Z"/>
+</g>
+<g fill="none" stroke="#a1bb54" stroke-width="8" opacity=".68">
+ <path d="M167 272C198 257 251 301 293 330"/>
+ <path d="M433 246C459 255 481 290 515 315"/>
+ <path d="M304 345C329 339 348 358 366 373"/>
+</g>
+<g fill="#4d7f2c" stroke="#a2be58" stroke-width="5">
+ <path d="M205 370l18-27 29-5 17 24-5 27-31 14-24-12Z"/>
+ <path d="M471 371l23-25 29 4 13 28-17 26-27-1Z"/>
+ <path d="M330 248l17-25 29-2 21 24-13 30-31 5Z"/>
+</g>
+<g fill="#e9e6aa" opacity=".93">
+ <circle cx="229" cy="363" r="8"/><circle cx="246" cy="363" r="7"/><circle cx="237" cy="379" r="9"/>
+ <circle cx="493" cy="368" r="8"/><circle cx="511" cy="373" r="9"/><circle cx="500" cy="387" r="7"/>
+ <circle cx="352" cy="247" r="8"/><circle cx="369" cy="246" r="8"/><circle cx="362" cy="261" r="7"/>
+</g>
+<g fill="url(#pepper)" stroke="#ea6d31" stroke-width="3">
+ <path d="M149 214C194 197 242 215 272 247C307 284 340 270 373 298C356 326 321 325 290 305C244 284 199 269 170 251Z"/>
+ <path d="M382 176C440 173 495 202 526 238C551 270 586 271 603 297C582 312 546 301 517 282C457 251 415 235 387 211Z"/>
+ <path d="M260 236C276 210 302 192 326 192C347 197 371 200 384 217C366 238 337 242 317 260C297 275 272 264 260 236Z"/>
+ <path d="M304 314C347 292 370 303 412 311C441 317 462 321 478 350C455 371 421 358 394 350C356 347 335 346 304 314Z"/>
+</g>
+<g fill="none" stroke="#ffbb74" stroke-opacity=".8" stroke-width="5" stroke-linecap="round">
+ <path d="M163 224C199 215 232 236 247 248"/>
+ <path d="M401 192C438 190 478 218 493 230"/>
+ <path d="M277 229C304 211 327 208 343 212"/>
+</g>
+<g transform="translate(257 332) rotate(-23)">
+ <ellipse rx="29" ry="18" fill="#a51314" stroke="#f0552c" stroke-width="7"/>
+ <ellipse rx="19" ry="10" fill="#f4c66e"/>
+ <g fill="#fff0bf"><circle cx="-9" cy="0" r="3"/><circle cx="4" cy="-3" r="3"/><circle cx="7" cy="4" r="3"/></g>
+</g>
+<g transform="translate(448 260) rotate(24)">
+ <ellipse rx="27" ry="16" fill="#a40e11" stroke="#ed5424" stroke-width="7"/>
+ <ellipse rx="18" ry="9" fill="#efbf63"/>
+ <g fill="#f9e9b0"><circle cx="-7" cy="-1" r="3"/><circle cx="3" cy="-3" r="3"/><circle cx="7" cy="4" r="3"/></g>
+</g>
+<g fill="#5e9741" stroke="#9ebe7b" stroke-width="2">
+ <path d="M311 198l27-17-8 28Z"/><path d="M322 204l35 8-33 7Z"/>
+ <path d="M508 243l27-21-10 34Z"/>
+ <path d="M189 288l-22-29 10 39Z"/>
+</g>
+<g fill="#e9a256" opacity=".72">
+ <circle cx="198" cy="328" r="4"/><circle cx="217" cy="301" r="3"/><circle cx="302" cy="290" r="3"/><circle cx="380" cy="328" r="4"/><circle cx="470" cy="331" r="4"/><circle cx="516" cy="307" r="3"/>
+</g>
+</svg>

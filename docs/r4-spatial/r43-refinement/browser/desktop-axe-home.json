@@ -1,0 +1,160 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "aria-prohibited-attr",
+      "nodes": [
+        [
+          ".channel-band"
+        ],
+        [
+          ".flow-role-stack"
+        ]
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "nodes": [
+        [
+          ".desktop-nav > a[href$=\"#changes\"]"
+        ],
+        [
+          ".desktop-nav > a[href$=\"#cases\"]"
+        ],
+        [
+          ".desktop-nav > a[href$=\"#flow\"]"
+        ],
+        [
+          ".login-link"
+        ],
+        [
+          ".text-link[href$=\"#changes\"] > span[aria-hidden=\"true\"]"
+        ],
+        [
+          ".cinema-caption"
+        ],
+        [
+          "#scene-caption"
+        ],
+        [
+          "#scene-count"
+        ],
+        [
+          "#scene-tab-0"
+        ],
+        [
+          "#scene-tab-0 > span"
+        ],
+        [
+          "#scene-tab-1"
+        ],
+        [
+          "#scene-tab-1 > span"
+        ],
+        [
+          "#scene-tab-2"
+        ],
+        [
+          "#scene-tab-2 > span"
+        ],
+        [
+          "#scene-panel"
+        ],
+        [
+          ".cinema-static-note"
+        ],
+        [
+          ".axis-text:nth-child(4) > text[y=\"45\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          ".axis-text:nth-child(4) > text[y=\"140\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          ".axis-text:nth-child(4) > text[y=\"235\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          "figure > svg > .chart-values > text[y=\"49\"][x=\"191\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "figure > svg > .chart-values > text[y=\"29\"][x=\"379\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "figure > svg > .month.axis-text > text[x=\"191\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "figure > svg > .month.axis-text > text[x=\"379\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          ".photo-number"
+        ],
+        [
+          ".answer-path > i:nth-child(2)"
+        ],
+        [
+          ".answer-path > i:nth-child(4)"
+        ],
+        [
+          ".axis-text:nth-child(3) > text[y=\"45\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          ".axis-text:nth-child(3) > text[y=\"140\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          ".axis-text:nth-child(3) > text[y=\"235\"][x=\"48\"][text-anchor=\"end\"]"
+        ],
+        [
+          "svg[aria-labelledby=\"case-a-title\"] > .chart-values > text[y=\"49\"][x=\"191\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "svg[aria-labelledby=\"case-a-title\"] > .chart-values > text[y=\"29\"][x=\"379\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "svg[aria-labelledby=\"case-a-title\"] > .month.axis-text > text[x=\"191\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "svg[aria-labelledby=\"case-a-title\"] > .month.axis-text > text[x=\"379\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "text[x=\"52\"][y=\"45\"][text-anchor=\"end\"]"
+        ],
+        [
+          "text[x=\"52\"][y=\"140\"][text-anchor=\"end\"]"
+        ],
+        [
+          "text[x=\"52\"][y=\"235\"][text-anchor=\"end\"]"
+        ],
+        [
+          "text[y=\"146\"]"
+        ],
+        [
+          "text[y=\"126\"]"
+        ],
+        [
+          "text[y=\"60\"]"
+        ],
+        [
+          "text[y=\"34\"]"
+        ],
+        [
+          "text[x=\"118\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "text[x=\"228\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "text[x=\"338\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "text[x=\"448\"][y=\"262\"][text-anchor=\"middle\"]"
+        ],
+        [
+          "#flow-note > span[aria-hidden=\"true\"]"
+        ],
+        [
+          ".question-action:nth-child(1) > span[aria-hidden=\"true\"]"
+        ]
+      ]
+    }
+  ],
+  "passedRules": 34
+}

@@ -1,0 +1,3229 @@
+{
+  "harness": "Weplace R4 Spatial QA",
+  "current": {
+    "run": 6,
+    "recordedAt": "2026-11-03T11:27:00.435Z",
+    "fixture": "normal",
+    "scene": "intro",
+    "viewport": {
+      "requested": 320,
+      "innerWidth": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "bodyScrollWidth": 320,
+      "innerHeight": 740,
+      "horizontalOverflow": false,
+      "displayedScale": "scale(1)"
+    },
+    "reviewReduced": false,
+    "appliedReviewReduced": "false",
+    "performance": {
+      "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+      "nativeReducedMotion": false,
+      "networkProfile": "Current browser network; no throttle applied by harness",
+      "cpuProfile": "Current browser CPU; no throttle applied by harness",
+      "supportedEntryTypes": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "lcpMs": 124,
+      "cls": 0.115,
+      "longestObservedInteractionMs": null,
+      "layoutShiftEntries": [
+        {
+          "value": 0.104,
+          "time": 71.6,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "BODY",
+                "id": "",
+                "class": "home-r2 home-r4"
+              },
+              "previousRect": {
+                "x": 7,
+                "y": 8,
+                "width": 298,
+                "height": 732
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 305,
+                "height": 740
+              }
+            },
+            {
+              "node": {
+                "tag": "P",
+                "id": "",
+                "class": ""
+              },
+              "previousRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              },
+              "currentRect": {
+                "x": 34,
+                "y": 730.563,
+                "width": 85,
+                "height": 9.438
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.011,
+          "time": 103.1,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": {
+                "tag": "P",
+                "id": "",
+                "class": ""
+              },
+              "previousRect": {
+                "x": 34,
+                "y": 730.563,
+                "width": 85,
+                "height": 9.438
+              },
+              "currentRect": {
+                "x": 201.656,
+                "y": 676.469,
+                "width": 85,
+                "height": 35.188
+              }
+            },
+            {
+              "node": {
+                "tag": "DIV",
+                "id": "",
+                "class": "header-actions"
+              },
+              "previousRect": {
+                "x": 185.875,
+                "y": 16,
+                "width": 56.953,
+                "height": 34
+              },
+              "currentRect": {
+                "x": 200.875,
+                "y": 16,
+                "width": 56.953,
+                "height": 34
+              }
+            },
+            {
+              "node": {
+                "tag": "DETAILS",
+                "id": "",
+                "class": "mobile-menu"
+              },
+              "previousRect": {
+                "x": 255.828,
+                "y": 11,
+                "width": 33.172,
+                "height": 44
+              },
+              "currentRect": {
+                "x": 270.828,
+                "y": 11,
+                "width": 33.172,
+                "height": 44
+              }
+            },
+            {
+              "node": {
+                "tag": "SPAN",
+                "id": "",
+                "class": "outline-tag"
+              },
+              "previousRect": {
+                "x": 223.656,
+                "y": 603.828,
+                "width": 47.344,
+                "height": 26.594
+              },
+              "currentRect": {
+                "x": 238.656,
+                "y": 603.828,
+                "width": 47.344,
+                "height": 26.594
+              }
+            },
+            {
+              "node": {
+                "tag": "svg",
+                "id": "",
+                "class": ""
+              },
+              "previousRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              },
+              "currentRect": {
+                "x": 34,
+                "y": 736.563,
+                "width": 252,
+                "height": 3.438
+              }
+            }
+          ]
+        }
+      ],
+      "observedInteractionCount": 0,
+      "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+      "status": "Observing this navigation; record after the intended interactions",
+      "fcpMs": 124
+    },
+    "document": {
+      "title": "We,place. — 매장의 변화, 실행과 기록으로",
+      "h1Count": 1,
+      "h1Visible": true,
+      "robots": "noindex, nofollow",
+      "canonical": "https://withweplace.kr/",
+      "fontsStatus": "loaded",
+      "imageCount": 4,
+      "loadedImageCount": 4,
+      "images": [
+        {
+          "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+          "complete": true,
+          "naturalWidth": 480,
+          "width": 180,
+          "height": 90,
+          "loading": "lazy"
+        },
+        {
+          "src": "/assets/home-r2/example-space.webp",
+          "complete": true,
+          "naturalWidth": 1280,
+          "width": 286,
+          "height": 167.406,
+          "loading": "lazy"
+        },
+        {
+          "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+          "complete": true,
+          "naturalWidth": 480,
+          "width": 120,
+          "height": 60,
+          "loading": "lazy"
+        },
+        {
+          "src": "/apple-touch-icon.png",
+          "complete": true,
+          "naturalWidth": 180,
+          "width": 30,
+          "height": 30,
+          "loading": "auto"
+        }
+      ],
+      "sections": {
+        "intro": {
+          "visible": true,
+          "width": 320,
+          "height": 1068.859
+        },
+        "changes": {
+          "visible": true,
+          "width": 320,
+          "height": 1977.75
+        },
+        "discovery": {
+          "visible": true,
+          "width": 320,
+          "height": 1147.969
+        },
+        "cases": {
+          "visible": true,
+          "width": 320,
+          "height": 1365.5
+        },
+        "flow": {
+          "visible": true,
+          "width": 320,
+          "height": 1701.219
+        },
+        "process": {
+          "visible": true,
+          "width": 320,
+          "height": 1307.922
+        },
+        "request": {
+          "visible": true,
+          "width": 320,
+          "height": 785.969
+        }
+      }
+    },
+    "controls": {
+      "store": "after",
+      "flow": "work",
+      "industry": "dining",
+      "formEnabled": true,
+      "activeElement": {
+        "tag": "BODY",
+        "id": "",
+        "role": null
+      }
+    },
+    "vendor": {
+      "gsapPresent": true,
+      "gsapVersion": "3.13.0",
+      "scrollTriggerPresent": true
+    },
+    "limitations": [
+      "CSS iframe viewport, not native device emulation",
+      "No field p75 claim",
+      "No physical mobile or native screen-reader claim",
+      "No native CPU/network throttling by this harness",
+      "No input values captured; outbound/authenticated navigation blocked by the harness"
+    ]
+  },
+  "records": [
+    {
+      "run": 1,
+      "recordedAt": "2026-11-03T11:19:18.083Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 112,
+        "cls": 0.302,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.302,
+            "time": 99.2,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "BODY",
+                  "id": "",
+                  "class": "home-r2 home-r4"
+                },
+                "previousRect": {
+                  "x": 7,
+                  "y": 8,
+                  "width": 383,
+                  "height": 836
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 390,
+                  "height": 844
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 112
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 3,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 348,
+            "height": 203.875,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 30,
+            "height": 30,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 390,
+            "height": 1127.938
+          },
+          "changes": {
+            "visible": true,
+            "width": 390,
+            "height": 1966.797
+          },
+          "discovery": {
+            "visible": true,
+            "width": 390,
+            "height": 1095.969
+          },
+          "cases": {
+            "visible": true,
+            "width": 390,
+            "height": 1414.141
+          },
+          "flow": {
+            "visible": true,
+            "width": 390,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 390,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 390,
+            "height": 781.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 2,
+      "recordedAt": "2026-11-03T11:23:22.786Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0.834,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.815,
+            "time": 153.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "BODY",
+                  "id": "",
+                  "class": "home-r2 home-r4"
+                },
+                "previousRect": {
+                  "x": 7,
+                  "y": 8,
+                  "width": 1410,
+                  "height": 892
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1425,
+                  "height": 900
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap channel-band"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "changes",
+                  "class": "section changes"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 872.453,
+                  "width": 1425,
+                  "height": 27.547
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "proof-foot"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 634.063,
+                  "width": 495.547,
+                  "height": 75
+                }
+              },
+              {
+                "node": {
+                  "tag": "FIGCAPTION",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 596.563,
+                  "width": 495.547,
+                  "height": 37.5
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.019,
+            "time": 220.5,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap hero-grid"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 163,
+                  "width": 1184,
+                  "height": 561.063
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 163,
+                  "width": 1184,
+                  "height": 561.063
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "proof-plane proof-plane-back"
+                },
+                "previousRect": {
+                  "x": 757.437,
+                  "y": 181.242,
+                  "width": 552.676,
+                  "height": 548.286
+                },
+                "currentRect": {
+                  "x": 764.436,
+                  "y": 181.388,
+                  "width": 552.676,
+                  "height": 548.286
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap header-inner"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 0,
+                  "width": 1184,
+                  "height": 84
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 0,
+                  "width": 1184,
+                  "height": 84
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap channel-band"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.007,
+            "time": 72048.3,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "store-booking-plane store-layer"
+                },
+                "previousRect": {
+                  "x": 125,
+                  "y": 573.844,
+                  "width": 589.531,
+                  "height": 185.922
+                },
+                "currentRect": {
+                  "x": 99,
+                  "y": 621.641,
+                  "width": 641.531,
+                  "height": 237.922
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 778.563,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 845.359,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 743.766,
+                  "width": 581.531,
+                  "height": 19.797
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 810.563,
+                  "width": 581.531,
+                  "height": 19.797
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.02,
+            "time": 74110.9,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "discovery",
+                  "class": "section discovery"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 775.359,
+                  "width": 1440,
+                  "height": 124.641
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 618.359,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 771.297,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 583.563,
+                  "width": 581.531,
+                  "height": 19.797
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 736.5,
+                  "width": 581.531,
+                  "height": 19.797
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "sample-cta-label"
+                },
+                "previousRect": {
+                  "x": 176,
+                  "y": 531.422,
+                  "width": 487.531,
+                  "height": 18.141
+                },
+                "currentRect": {
+                  "x": 176,
+                  "y": 684.359,
+                  "width": 487.531,
+                  "height": 18.141
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 3,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 36,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1440,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1440,
+            "height": 1492.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1440,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1440,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1440,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1440,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1440,
+            "height": 615.391
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 2,
+      "recordedAt": "2026-11-03T11:24:26.462Z",
+      "fixture": "normal",
+      "scene": "changes",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 19336,
+        "cls": 0.834,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.815,
+            "time": 153.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "BODY",
+                  "id": "",
+                  "class": "home-r2 home-r4"
+                },
+                "previousRect": {
+                  "x": 7,
+                  "y": 8,
+                  "width": 1410,
+                  "height": 892
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1425,
+                  "height": 900
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap channel-band"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "changes",
+                  "class": "section changes"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 872.453,
+                  "width": 1425,
+                  "height": 27.547
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "proof-foot"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 634.063,
+                  "width": 495.547,
+                  "height": 75
+                }
+              },
+              {
+                "node": {
+                  "tag": "FIGCAPTION",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 596.563,
+                  "width": 495.547,
+                  "height": 37.5
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.019,
+            "time": 220.5,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap hero-grid"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 163,
+                  "width": 1184,
+                  "height": 561.063
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 163,
+                  "width": 1184,
+                  "height": 561.063
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "proof-plane proof-plane-back"
+                },
+                "previousRect": {
+                  "x": 757.437,
+                  "y": 181.242,
+                  "width": 552.676,
+                  "height": 548.286
+                },
+                "currentRect": {
+                  "x": 764.436,
+                  "y": 181.388,
+                  "width": 552.676,
+                  "height": 548.286
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap header-inner"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 0,
+                  "width": 1184,
+                  "height": 84
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 0,
+                  "width": 1184,
+                  "height": 84
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap channel-band"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.007,
+            "time": 72048.3,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "store-booking-plane store-layer"
+                },
+                "previousRect": {
+                  "x": 125,
+                  "y": 573.844,
+                  "width": 589.531,
+                  "height": 185.922
+                },
+                "currentRect": {
+                  "x": 99,
+                  "y": 621.641,
+                  "width": 641.531,
+                  "height": 237.922
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 778.563,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 845.359,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 743.766,
+                  "width": 581.531,
+                  "height": 19.797
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 810.563,
+                  "width": 581.531,
+                  "height": 19.797
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.02,
+            "time": 74110.9,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "discovery",
+                  "class": "section discovery"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 775.359,
+                  "width": 1440,
+                  "height": 124.641
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 618.359,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 771.297,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 583.563,
+                  "width": 581.531,
+                  "height": 19.797
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 736.5,
+                  "width": 581.531,
+                  "height": 19.797
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "sample-cta-label"
+                },
+                "previousRect": {
+                  "x": 176,
+                  "y": 531.422,
+                  "width": 487.531,
+                  "height": 18.141
+                },
+                "currentRect": {
+                  "x": 176,
+                  "y": 684.359,
+                  "width": 487.531,
+                  "height": 18.141
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 11684
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 3,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 557.582,
+            "height": 292.971,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 36,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1440,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1440,
+            "height": 1645.844
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1440,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1440,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1440,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1440,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1440,
+            "height": 615.391
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 2,
+      "recordedAt": "2026-11-03T11:24:52.597Z",
+      "fixture": "normal",
+      "scene": "flow",
+      "viewport": {
+        "requested": 1440,
+        "innerWidth": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(0.894444)"
+      },
+      "reviewReduced": true,
+      "appliedReviewReduced": "true",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 19336,
+        "cls": 0.834,
+        "longestObservedInteractionMs": 3472,
+        "layoutShiftEntries": [
+          {
+            "value": 0.815,
+            "time": 153.4,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "BODY",
+                  "id": "",
+                  "class": "home-r2 home-r4"
+                },
+                "previousRect": {
+                  "x": 7,
+                  "y": 8,
+                  "width": 1410,
+                  "height": 892
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1425,
+                  "height": 900
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap channel-band"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 120.5,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "changes",
+                  "class": "section changes"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 872.453,
+                  "width": 1425,
+                  "height": 27.547
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "proof-foot"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 634.063,
+                  "width": 495.547,
+                  "height": 75
+                }
+              },
+              {
+                "node": {
+                  "tag": "FIGCAPTION",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 767.953,
+                  "y": 596.563,
+                  "width": 495.547,
+                  "height": 37.5
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.019,
+            "time": 220.5,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap hero-grid"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 163,
+                  "width": 1184,
+                  "height": 561.063
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 163,
+                  "width": 1184,
+                  "height": 561.063
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "proof-plane proof-plane-back"
+                },
+                "previousRect": {
+                  "x": 757.437,
+                  "y": 181.242,
+                  "width": 552.676,
+                  "height": 548.286
+                },
+                "currentRect": {
+                  "x": 764.436,
+                  "y": 181.388,
+                  "width": 552.676,
+                  "height": 548.286
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap header-inner"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 0,
+                  "width": 1184,
+                  "height": 84
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 0,
+                  "width": 1184,
+                  "height": 84
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "wrap channel-band"
+                },
+                "previousRect": {
+                  "x": 120.5,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 791.063,
+                  "width": 1184,
+                  "height": 81.391
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.007,
+            "time": 72048.3,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "store-booking-plane store-layer"
+                },
+                "previousRect": {
+                  "x": 125,
+                  "y": 573.844,
+                  "width": 589.531,
+                  "height": 185.922
+                },
+                "currentRect": {
+                  "x": 99,
+                  "y": 621.641,
+                  "width": 641.531,
+                  "height": 237.922
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 778.563,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 845.359,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 743.766,
+                  "width": 581.531,
+                  "height": 19.797
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 810.563,
+                  "width": 581.531,
+                  "height": 19.797
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.02,
+            "time": 74110.9,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "SECTION",
+                  "id": "discovery",
+                  "class": "section discovery"
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 775.359,
+                  "width": 1440,
+                  "height": 124.641
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "static-comparison"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 618.359,
+                  "width": 581.531,
+                  "height": 45
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 771.297,
+                  "width": 581.531,
+                  "height": 45
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": "sample-caption"
+                },
+                "previousRect": {
+                  "x": 128,
+                  "y": 583.563,
+                  "width": 581.531,
+                  "height": 19.797
+                },
+                "currentRect": {
+                  "x": 128,
+                  "y": 736.5,
+                  "width": 581.531,
+                  "height": 19.797
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "sample-cta-label"
+                },
+                "previousRect": {
+                  "x": 176,
+                  "y": 531.422,
+                  "width": 487.531,
+                  "height": 18.141
+                },
+                "currentRect": {
+                  "x": 176,
+                  "y": 684.359,
+                  "width": 487.531,
+                  "height": 18.141
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 4,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 11684
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 557.531,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 36,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1440,
+            "height": 787.453
+          },
+          "changes": {
+            "visible": true,
+            "width": 1440,
+            "height": 1645.844
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1440,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1440,
+            "height": 1142.938
+          },
+          "flow": {
+            "visible": true,
+            "width": 1440,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1440,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1440,
+            "height": 615.391
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "next",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 3,
+      "recordedAt": "2026-11-03T11:25:41.007Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 1280,
+        "innerWidth": 1280,
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "bodyScrollWidth": 1280,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 549.219,
+            "height": 290,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 36,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 1280,
+            "height": 783.094
+          },
+          "changes": {
+            "visible": true,
+            "width": 1280,
+            "height": 1492.906
+          },
+          "discovery": {
+            "visible": true,
+            "width": 1280,
+            "height": 878.094
+          },
+          "cases": {
+            "visible": true,
+            "width": 1280,
+            "height": 1138.641
+          },
+          "flow": {
+            "visible": true,
+            "width": 1280,
+            "height": 1149.359
+          },
+          "process": {
+            "visible": true,
+            "width": 1280,
+            "height": 858.094
+          },
+          "request": {
+            "visible": true,
+            "width": 1280,
+            "height": 615.391
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 4,
+      "recordedAt": "2026-11-03T11:25:54.623Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 768,
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768,
+        "innerHeight": 1024,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 240,
+            "height": 120,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 329.156,
+            "height": 218,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 144,
+            "height": 72,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 36,
+            "height": 36,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 768,
+            "height": 671.188
+          },
+          "changes": {
+            "visible": true,
+            "width": 768,
+            "height": 1349.016
+          },
+          "discovery": {
+            "visible": true,
+            "width": 768,
+            "height": 757.531
+          },
+          "cases": {
+            "visible": true,
+            "width": 768,
+            "height": 1602.25
+          },
+          "flow": {
+            "visible": true,
+            "width": 768,
+            "height": 1149.766
+          },
+          "process": {
+            "visible": true,
+            "width": 768,
+            "height": 759.234
+          },
+          "request": {
+            "visible": true,
+            "width": 768,
+            "height": 545.391
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 5,
+      "recordedAt": "2026-11-03T11:26:11.282Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": null,
+        "cls": 0.001,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.001,
+            "time": 83.2,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 247.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                },
+                "currentRect": {
+                  "x": 262.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "header-actions"
+                },
+                "previousRect": {
+                  "x": 237.266,
+                  "y": 16,
+                  "width": 64.641,
+                  "height": 34
+                },
+                "currentRect": {
+                  "x": 252.266,
+                  "y": 16,
+                  "width": 64.641,
+                  "height": 34
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "mobile-menu"
+                },
+                "previousRect": {
+                  "x": 318.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                },
+                "currentRect": {
+                  "x": 333.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "outline-tag"
+                },
+                "previousRect": {
+                  "x": 284.656,
+                  "y": 636.688,
+                  "width": 47.344,
+                  "height": 26.594
+                },
+                "currentRect": {
+                  "x": 299.656,
+                  "y": 636.688,
+                  "width": 47.344,
+                  "height": 26.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 317.531,
+                  "y": 472.5,
+                  "width": 17.469,
+                  "height": 23
+                },
+                "currentRect": {
+                  "x": 332.531,
+                  "y": 472.5,
+                  "width": 17.469,
+                  "height": 23
+                }
+              }
+            ]
+          },
+          {
+            "value": 0,
+            "time": 36245.7,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 76.391,
+                  "y": 523.703,
+                  "width": 261.609,
+                  "height": 44.391
+                },
+                "currentRect": {
+                  "x": 73.391,
+                  "y": 523.703,
+                  "width": 264.609,
+                  "height": 44.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 75.344,
+                  "y": 711.703,
+                  "width": 262.656,
+                  "height": 44.391
+                },
+                "currentRect": {
+                  "x": 78.344,
+                  "y": 711.703,
+                  "width": 259.656,
+                  "height": 44.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "flow-role-number"
+                },
+                "previousRect": {
+                  "x": 52,
+                  "y": 727.406,
+                  "width": 14,
+                  "height": 13
+                },
+                "currentRect": {
+                  "x": 55,
+                  "y": 727.406,
+                  "width": 14,
+                  "height": 13
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "flow-role-number"
+                },
+                "previousRect": {
+                  "x": 55,
+                  "y": 539.406,
+                  "width": 11.391,
+                  "height": 13
+                },
+                "currentRect": {
+                  "x": 52,
+                  "y": 539.406,
+                  "width": 11.391,
+                  "height": 13
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": null
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 348,
+            "height": 203.875,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 30,
+            "height": 30,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 390,
+            "height": 1127.938
+          },
+          "changes": {
+            "visible": true,
+            "width": 390,
+            "height": 1966.797
+          },
+          "discovery": {
+            "visible": true,
+            "width": 390,
+            "height": 1095.969
+          },
+          "cases": {
+            "visible": true,
+            "width": 390,
+            "height": 1414.141
+          },
+          "flow": {
+            "visible": true,
+            "width": 390,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 390,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 390,
+            "height": 781.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 5,
+      "recordedAt": "2026-11-03T11:26:51.306Z",
+      "fixture": "normal",
+      "scene": "flow",
+      "viewport": {
+        "requested": 390,
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 16784,
+        "cls": 0.001,
+        "longestObservedInteractionMs": 17128,
+        "layoutShiftEntries": [
+          {
+            "value": 0.001,
+            "time": 83.2,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 247.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                },
+                "currentRect": {
+                  "x": 262.656,
+                  "y": 712.828,
+                  "width": 85,
+                  "height": 35.188
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "header-actions"
+                },
+                "previousRect": {
+                  "x": 237.266,
+                  "y": 16,
+                  "width": 64.641,
+                  "height": 34
+                },
+                "currentRect": {
+                  "x": 252.266,
+                  "y": 16,
+                  "width": 64.641,
+                  "height": 34
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "mobile-menu"
+                },
+                "previousRect": {
+                  "x": 318.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                },
+                "currentRect": {
+                  "x": 333.906,
+                  "y": 11,
+                  "width": 36.094,
+                  "height": 44
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "outline-tag"
+                },
+                "previousRect": {
+                  "x": 284.656,
+                  "y": 636.688,
+                  "width": 47.344,
+                  "height": 26.594
+                },
+                "currentRect": {
+                  "x": 299.656,
+                  "y": 636.688,
+                  "width": 47.344,
+                  "height": 26.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 317.531,
+                  "y": 472.5,
+                  "width": 17.469,
+                  "height": 23
+                },
+                "currentRect": {
+                  "x": 332.531,
+                  "y": 472.5,
+                  "width": 17.469,
+                  "height": 23
+                }
+              }
+            ]
+          },
+          {
+            "value": 0,
+            "time": 36245.7,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 76.391,
+                  "y": 523.703,
+                  "width": 261.609,
+                  "height": 44.391
+                },
+                "currentRect": {
+                  "x": 73.391,
+                  "y": 523.703,
+                  "width": 264.609,
+                  "height": 44.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 75.344,
+                  "y": 711.703,
+                  "width": 262.656,
+                  "height": 44.391
+                },
+                "currentRect": {
+                  "x": 78.344,
+                  "y": 711.703,
+                  "width": 259.656,
+                  "height": 44.391
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "flow-role-number"
+                },
+                "previousRect": {
+                  "x": 52,
+                  "y": 727.406,
+                  "width": 14,
+                  "height": 13
+                },
+                "currentRect": {
+                  "x": 55,
+                  "y": 727.406,
+                  "width": 14,
+                  "height": 13
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "flow-role-number"
+                },
+                "previousRect": {
+                  "x": 55,
+                  "y": 539.406,
+                  "width": 11.391,
+                  "height": 13
+                },
+                "currentRect": {
+                  "x": 52,
+                  "y": 539.406,
+                  "width": 11.391,
+                  "height": 13
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 4,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 16784
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 348,
+            "height": 203.875,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 30,
+            "height": 30,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 390,
+            "height": 1127.938
+          },
+          "changes": {
+            "visible": true,
+            "width": 390,
+            "height": 1966.797
+          },
+          "discovery": {
+            "visible": true,
+            "width": 390,
+            "height": 1095.969
+          },
+          "cases": {
+            "visible": true,
+            "width": 390,
+            "height": 1414.141
+          },
+          "flow": {
+            "visible": true,
+            "width": 390,
+            "height": 1683.813
+          },
+          "process": {
+            "visible": true,
+            "width": 390,
+            "height": 1316.203
+          },
+          "request": {
+            "visible": true,
+            "width": 390,
+            "height": 781.219
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "review",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    },
+    {
+      "run": 6,
+      "recordedAt": "2026-11-03T11:27:00.435Z",
+      "fixture": "normal",
+      "scene": "intro",
+      "viewport": {
+        "requested": 320,
+        "innerWidth": 320,
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "bodyScrollWidth": 320,
+        "innerHeight": 740,
+        "horizontalOverflow": false,
+        "displayedScale": "scale(1)"
+      },
+      "reviewReduced": false,
+      "appliedReviewReduced": "false",
+      "performance": {
+        "source": "same-origin iframe PerformanceObserver; lab sample, not field p75",
+        "nativeReducedMotion": false,
+        "networkProfile": "Current browser network; no throttle applied by harness",
+        "cpuProfile": "Current browser CPU; no throttle applied by harness",
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "lcpMs": 124,
+        "cls": 0.115,
+        "longestObservedInteractionMs": null,
+        "layoutShiftEntries": [
+          {
+            "value": 0.104,
+            "time": 71.6,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "BODY",
+                  "id": "",
+                  "class": "home-r2 home-r4"
+                },
+                "previousRect": {
+                  "x": 7,
+                  "y": 8,
+                  "width": 298,
+                  "height": 732
+                },
+                "currentRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 305,
+                  "height": 740
+                }
+              },
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 34,
+                  "y": 730.563,
+                  "width": 85,
+                  "height": 9.438
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.011,
+            "time": 103.1,
+            "hadRecentInput": false,
+            "sources": [
+              {
+                "node": {
+                  "tag": "P",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 34,
+                  "y": 730.563,
+                  "width": 85,
+                  "height": 9.438
+                },
+                "currentRect": {
+                  "x": 201.656,
+                  "y": 676.469,
+                  "width": 85,
+                  "height": 35.188
+                }
+              },
+              {
+                "node": {
+                  "tag": "DIV",
+                  "id": "",
+                  "class": "header-actions"
+                },
+                "previousRect": {
+                  "x": 185.875,
+                  "y": 16,
+                  "width": 56.953,
+                  "height": 34
+                },
+                "currentRect": {
+                  "x": 200.875,
+                  "y": 16,
+                  "width": 56.953,
+                  "height": 34
+                }
+              },
+              {
+                "node": {
+                  "tag": "DETAILS",
+                  "id": "",
+                  "class": "mobile-menu"
+                },
+                "previousRect": {
+                  "x": 255.828,
+                  "y": 11,
+                  "width": 33.172,
+                  "height": 44
+                },
+                "currentRect": {
+                  "x": 270.828,
+                  "y": 11,
+                  "width": 33.172,
+                  "height": 44
+                }
+              },
+              {
+                "node": {
+                  "tag": "SPAN",
+                  "id": "",
+                  "class": "outline-tag"
+                },
+                "previousRect": {
+                  "x": 223.656,
+                  "y": 603.828,
+                  "width": 47.344,
+                  "height": 26.594
+                },
+                "currentRect": {
+                  "x": 238.656,
+                  "y": 603.828,
+                  "width": 47.344,
+                  "height": 26.594
+                }
+              },
+              {
+                "node": {
+                  "tag": "svg",
+                  "id": "",
+                  "class": ""
+                },
+                "previousRect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "currentRect": {
+                  "x": 34,
+                  "y": 736.563,
+                  "width": 252,
+                  "height": 3.438
+                }
+              }
+            ]
+          }
+        ],
+        "observedInteractionCount": 0,
+        "interactionCaveat": "Longest observed interaction is not a field INP result; absent entries are NOT OBSERVED, not zero.",
+        "status": "Observing this navigation; record after the intended interactions",
+        "fcpMs": 124
+      },
+      "document": {
+        "title": "We,place. — 매장의 변화, 실행과 기록으로",
+        "h1Count": 1,
+        "h1Visible": true,
+        "robots": "noindex, nofollow",
+        "canonical": "https://withweplace.kr/",
+        "fontsStatus": "loaded",
+        "imageCount": 4,
+        "loadedImageCount": 4,
+        "images": [
+          {
+            "src": "/assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 180,
+            "height": 90,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/home-r2/example-space.webp",
+            "complete": true,
+            "naturalWidth": 1280,
+            "width": 286,
+            "height": 167.406,
+            "loading": "lazy"
+          },
+          {
+            "src": "/assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+            "complete": true,
+            "naturalWidth": 480,
+            "width": 120,
+            "height": 60,
+            "loading": "lazy"
+          },
+          {
+            "src": "/apple-touch-icon.png",
+            "complete": true,
+            "naturalWidth": 180,
+            "width": 30,
+            "height": 30,
+            "loading": "auto"
+          }
+        ],
+        "sections": {
+          "intro": {
+            "visible": true,
+            "width": 320,
+            "height": 1068.859
+          },
+          "changes": {
+            "visible": true,
+            "width": 320,
+            "height": 1977.75
+          },
+          "discovery": {
+            "visible": true,
+            "width": 320,
+            "height": 1147.969
+          },
+          "cases": {
+            "visible": true,
+            "width": 320,
+            "height": 1365.5
+          },
+          "flow": {
+            "visible": true,
+            "width": 320,
+            "height": 1701.219
+          },
+          "process": {
+            "visible": true,
+            "width": 320,
+            "height": 1307.922
+          },
+          "request": {
+            "visible": true,
+            "width": 320,
+            "height": 785.969
+          }
+        }
+      },
+      "controls": {
+        "store": "after",
+        "flow": "work",
+        "industry": "dining",
+        "formEnabled": true,
+        "activeElement": {
+          "tag": "BODY",
+          "id": "",
+          "role": null
+        }
+      },
+      "vendor": {
+        "gsapPresent": true,
+        "gsapVersion": "3.13.0",
+        "scrollTriggerPresent": true
+      },
+      "limitations": [
+        "CSS iframe viewport, not native device emulation",
+        "No field p75 claim",
+        "No physical mobile or native screen-reader claim",
+        "No native CPU/network throttling by this harness",
+        "No input values captured; outbound/authenticated navigation blocked by the harness"
+      ]
+    }
+  ]
+}

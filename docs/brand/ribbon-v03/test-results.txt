@@ -1,0 +1,107 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> weplace-public-site@1.1.0 verify
+> npm test && npm run check:links && npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> weplace-public-site@1.1.0 test
+> node --test tests/*.test.cjs
+
+✔ enterprise/index.html stays a readable static public surface without internal procurement data (179.975442ms)
+✔ process/index.html stays a readable static public surface without internal procurement data (30.192723ms)
+✔ review build retains both new routes and the existing main flow preview (0.411135ms)
+✔ homepage starts unselected and covers four sectors × two purposes with different before/after examples (586.676104ms)
+✔ findings and completion appear on after, once per scenario, within three core selections (205.322991ms)
+✔ homepage reset clears purpose/view, copied fallback, result and outgoing industry context (174.549303ms)
+✔ homepage summaries are explicit exports with a usable clipboard fallback (94.593989ms)
+✔ sector custom events focus the experience and honor reduced-motion preference; invalid sectors do nothing (47.288294ms)
+✔ mobile menu exposes state, Escape restores focus, nav/outside/desktop resize close it (40.08787ms)
+✔ check renders six labeled questions, four choices each, and updates progress (83.570102ms)
+✔ check blocks missing industry and first unanswered question with useful focus (49.00466ms)
+✔ unknown responses recommend verification without claiming an observed deficiency (62.096485ms)
+✔ all yes offers verification guidance and editing preserves current answers (45.854544ms)
+✔ priority uses explicit no before unknown or partial and shows a reported strength (54.868549ms)
+✔ cafe is supported end to end; only a fixed industry token reaches meeting (72.006046ms)
+✔ unknown/prototype industry tokens are rejected instead of becoming URL or HTML (159.224778ms)
+✔ diagnostic copy and download require a click and export the visible result only (38.720307ms)
+✔ meeting checks and next discussion are local preparation, with no booking/contract claim (76.8073ms)
+✔ every repository inline classic script and JSON-LD block parses (474.302323ms)
+✔ home and check canonical/OG match their intended public URLs and OG files exist locally (41.232528ms)
+✔ R2 retains truthful evidence, all legacy anchors, real routes, footer gate and metadata (403.441895ms)
+✔ three tab groups keep one selected control, panel label and keyboard focus (238.790779ms)
+✔ case filters expose only the selected category; dialog closes back to its opener (181.5029ms)
+✔ manual request never transmits, persists or claims receipt; changes invalidate old text (153.924734ms)
+✔ invalid links and blank alternative fields do not generate a request (96.373453ms)
+✔ clipboard rejection leaves selectable text and no false copied or received success (66.997117ms)
+✔ optional animation failure does not disable controls; reduced motion creates no animation (163.296519ms)
+✔ Escape closes mobile navigation and returns focus to the menu trigger (68.315566ms)
+✔ industry detail calls to action retain the chosen sector at the preserved tool (122.306283ms)
+✔ homepage preview collects no analytics or storage and never copies arbitrary URL data (687.895036ms)
+✔ production analytics preserves the fixed ID but queues only safe existing events and sanitized metadata (124.831042ms)
+✔ metrics accidental inclusion is inert on check, meeting and review routes (342.104409ms)
+✔ six-answer check neither persists nor transmits during every choice, submit and edit (158.824193ms)
+✔ meeting choices do not become CRM intake, an actual reservation, payment, or tracking (110.597223ms)
+✔ check and meeting direct Kakao links do not carry query data and prevent referrer transfer (36.253406ms)
+✔ four sectors and distinct local illustrations stay present for empty, partial and unknown feeds (371.411103ms)
+✔ anonymous GET uses original proxy, omit credentials and no-store; raw unexpected fields never render (59.90198ms)
+✔ approval metadata is required and expired, malformed or inconsistent numbers fail closed (274.469283ms)
+✔ null capacity and zero remaining remain distinct; over-capacity cannot imply availability (74.542474ms)
+✔ duplicate known sector records are ambiguous and show no metrics or records (26.121287ms)
+✔ approved description projection stays plain text and keeps independent approval from capacity (53.545402ms)
+✔ refresh preserves open sector and keyboard focus; failed read removes previous public metrics (68.783284ms)
+✔ malformed, non-OK and invalid JSON responses all fail closed (82.487565ms)
+✔ unanswered refresh and background tabs cannot retain a stale public-data lease (56.372221ms)
+✔ Seoul midnight removes approved counts before the ordinary minute refresh (46.193443ms)
+✔ a delayed older response cannot overwrite the current response (21.661294ms)
+✔ home sector link emits the allowlisted event and optional metric; no personal data is stored (34.687051ms)
+✔ non-home sectors use explicit public query links; modified clicks do not hijack navigation (32.474305ms)
+✔ portal help has no collection or automatic login; actual client/team paths stay intact (43.740554ms)
+✔ changing industry invalidates the prior result and export instead of carrying a stale customer situation (513.151173ms)
+✔ existing FLOW staff/client paths and public proxy contracts remain exact (4.290393ms)
+✔ homepage presents the new work scene as an example and does not publish the unapproved named case (79.469624ms)
+✔ current company and privacy configuration cannot pass the production approval gate (24.599693ms)
+✔ release gate rejects omissions, non-boolean approval and invalid approval dates (2.932135ms)
+✔ build blocks an unapproved production artifact and excludes internal evidence from a noindex review artifact (556.75149ms)
+✔ rapid before/after changes cancel obsolete frames, keep the last choice and complete once (564.022188ms)
+✔ changing context mid-animation invalidates the old screen, memo and completion meaning (186.381164ms)
+✔ system reduced motion skips animation and a live preference change cancels in-flight motion (200.780282ms)
+✔ manual motion reduction is memory-only, cancels active frames and leaves tabs usable (118.177146ms)
+✔ save-data and slow-connection hints select an immediate readable fallback (221.888026ms)
+✔ missing or failed animation support cannot break core choices or story panels (137.686614ms)
+✔ keyboard story tabs expose exactly one selected panel and comparison arrows retain button focus (104.039924ms)
+✔ without JavaScript the three scenes and policy/meeting links remain in the readable document (39.683513ms)
+✔ minute refresh does not replay a folder opening and preserves the focused control (87.295881ms)
+✔ each industry offers a direct next step outside native optional disclosures (201.670517ms)
+✔ nested industry disclosures and keyboard focus survive a successful public refresh (115.723796ms)
+✔ removed public controls return focus to their industry while expired metrics stay hidden (128.397967ms)
+✔ published 4/8/6 counts equal the available industries, unique situations and diagnostic questions (298.32648ms)
+✔ optional comparison table matches both rendered states across all eight situations and clears on context changes (199.746509ms)
+✔ initial homepage offers all four static industry routes when enhancement or its public API is unavailable (36.524866ms)
+✔ global service pages form three real reciprocal Korean/English pairs with consistent metadata (261.945761ms)
+✔ global review pages expose contact and policy without collecting, tracking or advertising unapproved prices (149.02895ms)
+✔ global sitemap and homepage directions point only to implemented matching pages (67.247735ms)
+✔ four static industry cards lead to distinct matching questions, illustrations and next actions without JavaScript (284.561699ms)
+ℹ tests 74
+ℹ suites 0
+ℹ pass 74
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3254.397827
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> weplace-public-site@1.1.0 check:links
+> python3 scripts/check-links.py
+
+HTML: 34 | references: 1056 | local defects: 0 | external URLs not probed: 19
+redirect 302: /client → https://flow.withweplace.kr/client
+redirect 302: /team → https://flow.withweplace.kr/
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> weplace-public-site@1.1.0 build
+> node scripts/build-site.mjs
+
+Review build only: 22 company/privacy approval checks remain open. No production approval is implied.
+Static artifact created: dist/ (no server credentials, CRM writes, or migrations).

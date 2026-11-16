@@ -1,0 +1,16 @@
+{
+  "stats": {
+    "startTime": "2026-11-04T08:53:23.076Z",
+    "duration": 55361.695,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": [
+    "desktop",
+    "mobile"
+  ],
+  "environment": "Chromium 153.0.8010.0 / local dist route fixture",
+  "javascriptDisabled": "Included as a browser context option in both projects"
+}

@@ -1,0 +1,38 @@
+{
+  "source": "pretendard@1.3.9 official npm package",
+  "sourceRepository": "https://github.com/orioncactus/pretendard",
+  "license": "SIL Open Font License 1.1",
+  "family": "Weplace Content Supplement",
+  "purpose": "Renamed modified subsets containing Korean glyphs absent from preserved R2 fonts.",
+  "sourceFiles": [
+    "index.html",
+    "review/journey.html",
+    "review/question.html",
+    "assets/js/main-landing-r2.js",
+    "assets/js/spatial-demo.js",
+    "assets/js/main-landing-r4.js",
+    "assets/js/main-landing-r43.js",
+    "assets/js/journey-r43.js",
+    "assets/js/share-r43.js"
+  ],
+  "fonts": [
+    {
+      "file": "assets/home-r43/WeplaceContentSupplement-Regular.woff2",
+      "sourceSha256": "fad853f7f47c6c8b103171e7193fa095708cdcd70850a71d93aa5379e8a61d63",
+      "sha256": "c5df9a4b7a6b8b034153cf487454790859748b1f0dbba4d91e5eba2b55ea1c2f",
+      "bytes": 5116,
+      "supplementedCharacters": "근길날눈눌눠닌덕던돌될따떻뜻락란람량렇려렵루릇먹멈병봅봐봤북불생싶앉액옮왜읽임져중짐징창쳐쳤춥취팀펼품흩힌",
+      "coveredContentHangulCount": 385,
+      "missingContentHangulCount": 0
+    },
+    {
+      "file": "assets/home-r43/WeplaceContentSupplement-SemiBold.woff2",
+      "sourceSha256": "c863f76a7de5c1ddc1ed8b2fa794964530774592c4f31407a84e2a2ae93f17f0",
+      "sha256": "191c0e8556e887e3a989a97ef0cc64d74927ed2309e0bbcdfa65f59fc03666aa",
+      "bytes": 5140,
+      "supplementedCharacters": "근길날눈눌눠닌덕던돌될따떻뜻락란람량렇려렵루릇먹멈병봅봐봤북불생싶앉액옮왜읽임져중짐징창쳐쳤춥취팀펼품흩힌",
+      "coveredContentHangulCount": 385,
+      "missingContentHangulCount": 0
+    }
+  ]
+}
