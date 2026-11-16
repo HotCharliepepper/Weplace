@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="330" viewBox="0 0 680 330" role="img" aria-label="Weplace"><title>Weplace</title><defs>
+      <linearGradient id="left" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#396B57"/><stop offset="1" stop-color="#12372C"/></linearGradient>
+      <linearGradient id="rise" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#657E62"/><stop offset="0.52" stop-color="#C6CDB0"/><stop offset="1" stop-color="#AAB69E"/></linearGradient>
+      <linearGradient id="fold" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#D1D6BA"/><stop offset="0.6" stop-color="#8C9F80"/><stop offset="1" stop-color="#47674F"/></linearGradient>
+      <linearGradient id="end" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#5F7A5B"/><stop offset="1" stop-color="#B8C5A7"/></linearGradient>
+    </defs><g>
+      <path fill="url(#left)" d="M14 20H136C176 20 190 30 210 74L302 262C268 298 226 309 183 305C151 302 136 281 118 245L3 38C-3 25 1 20 14 20Z"/>
+      <path fill="url(#rise)" d="M156 286C177 311 207 309 229 275L330 111C343 89 358 94 371 126L326 225C310 265 293 303 247 317C216 326 177 319 156 286Z"/>
+      <path fill="url(#fold)" d="M330 111C341 90 355 97 383 97H407C450 97 471 115 488 155L526 251C534 272 539 292 548 303C528 323 503 323 484 303C472 291 464 271 454 245L389 117C369 84 345 92 330 111Z"/>
+      <path fill="url(#end)" d="M484 303C504 324 526 325 548 304C566 287 576 260 588 234L644 147C649 138 644 136 636 136H591C569 136 557 150 548 171L496 278C489 292 484 298 484 303Z"/>
+      <circle cx="619" cy="62" r="60" fill="#C8A56B"/>
+    </g></svg>

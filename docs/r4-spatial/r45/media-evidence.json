@@ -1,0 +1,87 @@
+{
+  "baseline": "9ed15798e1ef90712ba842a7f873b230a1688cf0",
+  "packManifestVerified": true,
+  "protectedFiles": [
+    {
+      "path": "assets/home-r42/luwei-peking-duck-640.webp",
+      "sha256": "c617d2fe2af979e841b2bad2cf7809dfcc67e0c67df86061a72258f176594798",
+      "bytes": 80474,
+      "unchangedFromPR20": true
+    },
+    {
+      "path": "assets/home-r42/luwei-peking-duck-1254.webp",
+      "sha256": "25db6187df6b273ab28888dd1c423bb619d8eb58d0f56dc0d1a0ab36f8989a93",
+      "bytes": 222074,
+      "unchangedFromPR20": true
+    },
+    {
+      "path": "assets/brand/r42/weplace-symbol.svg",
+      "sha256": "c83dd70d7c787f5457a51826701bec09bd1b60862b585511a86e5cc7f065c297",
+      "bytes": 1589,
+      "unchangedFromPR20": true
+    },
+    {
+      "path": "assets/js/main-landing-r4.js",
+      "sha256": "37175ce6740fdedd3a6201c11cc6f179df4f3fbdeefb591fe71cf3946c3971ce",
+      "bytes": 9496,
+      "unchangedFromPR20": true
+    },
+    {
+      "path": "assets/js/main-landing-r2.js",
+      "sha256": "6482fb53055bb56e39307444ab3aacd812e2dd1467ad41f3c3b8f76be74f49d7",
+      "bytes": 20361,
+      "unchangedFromPR20": true
+    },
+    {
+      "path": "assets/js/journey-r43.js",
+      "sha256": "faa77aafe7184b590edda202e275d11cd604b3ad9a9d044009830da688963eb5",
+      "bytes": 2826,
+      "unchangedFromPR20": true
+    },
+    {
+      "path": "_redirects",
+      "sha256": "02fb5405a398ae9dfbcec377fecd639e153523586f360517f37db4cb2c3fc779",
+      "bytes": 496,
+      "unchangedFromPR20": true
+    },
+    {
+      "path": "netlify.toml",
+      "sha256": "caca3a5cfade56c5cf1ed783cc3638130d87bb759bc671ff461ae2037e748395",
+      "bytes": 274,
+      "unchangedFromPR20": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "LUWEI_EXISTING",
+      "state": "REUSED_UNMODIFIED_REVIEW_ASSET",
+      "productionRights": "NEED_VERIFY",
+      "syntheticAlterations": false
+    },
+    {
+      "id": "STAY_CUSTOMER_02",
+      "state": "AWAITING_UPLOAD",
+      "mediaSlots": 12,
+      "registryRechecked": "2026-11-08",
+      "originalPhoto": "MISSING",
+      "roomMatch": "NEED_VERIFY",
+      "photographerRights": "NEED_VERIFY",
+      "customerPublicApproval": "NEED_VERIFY",
+      "actualOTAPublication": "NEED_VERIFY",
+      "publicOutput": "Generic non-photographic example only. Customer identity/private source files not shipped."
+    },
+    {
+      "id": "DIAGNOSIS_C",
+      "state": "FICTIONAL_SAMPLE",
+      "priceKRW": 0,
+      "stores": 1,
+      "publicChannels": 1,
+      "improvements": 1
+    },
+    {
+      "id": "VIDEO",
+      "state": "NOT_USED",
+      "runtime": "SVG + CSS + GSAP"
+    }
+  ]
+}

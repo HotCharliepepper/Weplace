@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="320" viewBox="0 0 500 320" role="img" aria-labelledby="title">
+<title id="title">거울과 상담 안내를 표현한 뷰티 업종 예시</title>
+<!-- Original code-authored illustration. No client premises depicted. -->
+<rect width="500" height="320" fill="#f4eef1"/>
+<path d="M0 252h500v68H0z" fill="#e5dce3"/>
+<rect x="139" y="30" width="132" height="150" rx="64" fill="#baa8b9"/>
+<rect x="147" y="38" width="116" height="134" rx="57" fill="#dce4e4"/>
+<path d="M168 121l64-60m-59 86 63-59" stroke="#f0f5f2" stroke-width="12" stroke-linecap="round"/>
+<path d="M92 187h235v17H92z" fill="#baa3ad"/>
+<path d="M108 204v60m203-60v60" stroke="#9c858f" stroke-width="7"/>
+<rect x="115" y="153" width="22" height="34" rx="4" fill="#f9f7ef"/>
+<path d="M120 151v-8h12v8" fill="#a28a96"/>
+<rect x="281" y="140" width="20" height="47" rx="4" fill="#9cac9c"/>
+<rect x="285" y="131" width="12" height="10" rx="2" fill="#667e72"/>
+<path d="M166 221h83v22h-83z" fill="#a48c9f"/>
+<path d="M166 221v-33q42-17 83 0v33" fill="#c5b2c2"/>
+<path d="M208 243v34m-27 0h54" stroke="#7f7081" stroke-width="7" stroke-linecap="round"/>
+<rect x="356" y="92" width="76" height="99" rx="4" fill="#fcf9f3" stroke="#c8b8c2" stroke-width="3"/>
+<path d="M370 113h46m-46 15h34m-34 15h42m-42 15h26" stroke="#b39bab" stroke-width="3"/>
+<path d="M379 220h32l-5 49h-22z" fill="#b8b8a3"/>
+<path d="M395 224v-42m0 21c-25-28-37-5 0 8m0-14c26-30 39-9 0 8" fill="#9cab94" stroke="#7e9279" stroke-width="3"/>
+</svg>

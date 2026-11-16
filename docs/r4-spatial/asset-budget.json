@@ -1,0 +1,34 @@
+{
+  "scope": "R4 additional runtime assets; gzip reference is not measured transfer size",
+  "assets": [
+    {
+      "file": "assets/vendor/gsap/gsap.min.js",
+      "bytes": 72435,
+      "gzipLevel9Bytes": 28170
+    },
+    {
+      "file": "assets/vendor/gsap/ScrollTrigger.min.js",
+      "bytes": 44157,
+      "gzipLevel9Bytes": 17820
+    },
+    {
+      "file": "assets/js/main-landing-r4.js",
+      "bytes": 9496,
+      "gzipLevel9Bytes": 2955
+    },
+    {
+      "file": "assets/js/spatial-demo.js",
+      "bytes": 1892,
+      "gzipLevel9Bytes": 820
+    },
+    {
+      "file": "assets/css/main-landing-r4.css",
+      "bytes": 15196,
+      "gzipLevel9Bytes": 3321
+    }
+  ],
+  "totalBytes": 143176,
+  "totalGzipBytes": 53086,
+  "newImageBytes": 0,
+  "normalVisitQaMetricsScriptLoaded": false
+}
