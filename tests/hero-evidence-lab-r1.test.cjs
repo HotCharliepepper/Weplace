@@ -55,7 +55,7 @@ test('original cases, actual picture asset and opt-in audio retained',()=>{
  assert.equal(d.querySelector('#fast-sound').getAttribute('aria-pressed'),'false');
  assert.match(html,/사진 순서가 매출 상승을 일으켰다는 뜻은 아닙니다/);
  assert.match(html,/href="\/#flow"/);
- assert.match(html,/Weplace 개별 작업의/);
+ assert.match(html,/Weplace 작업만의 효과를 뜻하지는 않습니다/);
 });
 test('04 animation is slower only in isolated controller and remains accessible',()=>{
  const from="start:'top 88%',end:'top 37%',scrub:.65";
