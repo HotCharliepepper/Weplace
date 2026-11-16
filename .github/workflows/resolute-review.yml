@@ -1,0 +1,36 @@
+name: Resolute review QA
+on:
+  push:
+    branches: [draft/weplace-resolute-fast-r1-20261111]
+    paths:
+      - resolute.html
+      - assets/css/resolute-fast-r1.css
+      - assets/js/resolute-fast-r1.js
+      - review/resolute*
+      - scripts/qa-resolute.cjs
+      - .github/workflows/resolute-review.yml
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run verify
+      - run: npx playwright install --with-deps chromium
+      - name: Browser QA and captures
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory dist > /tmp/resolute-http.log 2>&1 &
+          node scripts/qa-resolute.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: WEPLACE-Resolute-R1-QA
+          path: test-results/resolute/
+          retention-days: 14

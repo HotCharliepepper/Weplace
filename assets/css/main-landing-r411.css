@@ -1,0 +1,296 @@
+/* WEPLACE R4.11 — MN field-learning transfer.
+   Public client-agnostic method: discovery -> comparison -> judgment -> visit.
+   Never treat the source proposal, simulation or incomplete KPIs as observed
+   business results. The four stages remain readable without JavaScript. */
+
+.home-r411 .r411-decision {
+  background:#f5f2e9;
+  padding:clamp(68px,8vw,118px) 0 clamp(65px,8vw,108px);
+  border-top:1px solid #d1d5c9;
+  border-bottom:1px solid #d8d7c9;
+}
+.home-r411 .r411-section-head {
+  display:grid;
+  grid-template-columns:1fr minmax(250px,.66fr);
+  gap:clamp(22px,4.5vw,72px);
+  align-items:end;
+  margin-bottom:35px;
+}
+.home-r411 .r411-section-head .eyebrow{
+  margin:0 0 18px;
+  color:#3a6049;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.09em;
+}
+.home-r411 .r411-section-head h2{
+  margin:0;
+  color:#1d392b;
+  font-size:clamp(35px,4vw,59px);
+  letter-spacing:-.061em;
+  line-height:1.27;
+  word-break:keep-all;
+}
+.home-r411 .r411-section-head>p{
+  color:#505a51;
+  font-size:clamp(14px,1.1vw,16px);
+  line-height:1.85;
+  margin:0 0 6px;
+  word-break:keep-all;
+}
+.home-r411 .r411-stage {
+  background:#0f2c23;
+  border:1px solid #284b39;
+  box-shadow:0 18px 34px #122f2013;
+  padding:clamp(17px,3vw,37px);
+  color:#f8f5eb;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+}
+.home-r411 .r411-stage::before{
+  content:"";
+  position:absolute;inset:0;
+  pointer-events:none;
+  opacity:.5;
+  background:radial-gradient(ellipse at 88% 8%,#49715155 0,transparent 48%);
+}
+.home-r411 .r411-step-tabs{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:0;
+  border-bottom:1px solid #a4b8a549;
+}
+.home-r411 .r411-step-tabs[hidden],
+.home-r411 .r411-step-panel[hidden] { display:none!important; }
+.home-r411 .r411-step-tabs button {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:none;border:0;
+  border-bottom:3px solid transparent;
+  color:#cad9ce;
+  min-height:65px;
+  text-align:left;
+  font-size:15px;font-weight:500;
+  padding:12px 10px 15px;
+  margin-bottom:-1px;
+  cursor:pointer;
+}
+.home-r411 .r411-step-tabs button+button{border-left:1px solid #e0e8dc19;}
+.home-r411 .r411-step-tabs button span {
+  color:#d9bd82;font-size:11px;font-weight:700;letter-spacing:.035em;
+}
+.home-r411 .r411-step-tabs button[aria-selected="true"]{
+  color:#fff9e8;
+  border-bottom-color:#eacb8a;
+  background:linear-gradient(180deg,#ffffff00,#c3dab911);
+}
+.home-r411 .r411-step-tabs button:focus-visible{
+  outline:3px solid #f3dbad;outline-offset:-4px;
+}
+.home-r411 .r411-step-panels{position:relative;z-index:1;}
+.home-r411 .r411-step-panel{
+  display:grid;
+  grid-template-columns:1fr minmax(230px,.77fr);
+  gap:clamp(24px,5vw,82px);
+  align-items:start;
+  min-height:278px;
+  padding:clamp(26px,4.5vw,54px) clamp(7px,2vw,26px) 12px;
+}
+.home-r411 .r411-step-panel+.r411-step-panel{
+  border-top:1px solid #ffffff35;
+}
+.home-r411 .r411-phase {
+  color:#e9c990;
+  font-size:12px;
+  letter-spacing:.11em;
+  font-weight:700;
+}
+.home-r411 .r411-step-question h3{
+  color:#fff8e7;
+  font-size:clamp(28px,2.9vw,42px);
+  line-height:1.37;
+  letter-spacing:-.057em;
+  font-weight:600;
+  margin:24px 0 15px;
+  word-break:keep-all;
+}
+.home-r411 .r411-step-question p{
+  color:#d0dfd1;
+  line-height:1.85;
+  font-size:15px;
+  max-width:450px;
+}
+.home-r411 .r411-step-answer {
+  border-left:2px solid #d9b775;
+  padding-left:clamp(20px,2.8vw,35px);
+}
+.home-r411 .r411-step-answer>span{
+  color:#e0c995;
+  display:block;
+  font-size:11px;
+  letter-spacing:.07em;
+  margin-bottom:13px;
+  font-weight:600;
+}
+.home-r411 .r411-step-answer strong{
+  display:block;color:#fff8e9;
+  font-size:clamp(19px,1.6vw,24px);
+  font-weight:600;
+  line-height:1.5;
+  letter-spacing:-.035em;
+}
+.home-r411 .r411-step-answer p{
+  color:#d0e0d1;
+  font-size:14px;
+  line-height:1.85;
+  margin:15px 0 26px;
+}
+.home-r411 .r411-step-answer a{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  color:#f0d7a4;
+  border-bottom:1px solid #e7c99283;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+}
+.home-r411 .r411-step-answer a:hover{color:#fff4d8;border-bottom-color:#fff4d8;}
+.home-r411 .r411-step-answer a:focus-visible{outline:3px solid #f0d7a4;outline-offset:4px;}
+.home-r411 .r411-two-rails{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:22px;
+}
+.home-r411 .r411-channel-rail,
+.home-r411 .r411-proof-rail{
+  background:#fffdf6;
+  border:1px solid #d6ddcf;
+  padding:clamp(21px,2.7vw,36px);
+  min-width:0;
+}
+.home-r411 .r411-proof-rail{background:#e5ebe0;}
+.home-r411 .r411-rail-label{
+  font-size:11px;font-weight:700;
+  letter-spacing:.09em;color:#456450;
+}
+.home-r411 .r411-two-rails h3{
+  font-size:clamp(20px,2vw,27px);
+  line-height:1.43;letter-spacing:-.045em;
+  color:#1a3c2b;
+  margin:17px 0 20px;
+}
+.home-r411 .r411-channels{display:grid;gap:0;}
+.home-r411 .r411-channels div{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:14px;padding:10px 0;
+  border-bottom:1px solid #cdd9c9;
+}
+.home-r411 .r411-channels b{
+  color:#254732;
+  font-size:14px;flex:0 0 82px;
+}
+.home-r411 .r411-channels span{
+  color:#566658;font-size:13px;line-height:1.65;
+  text-align:right;
+}
+.home-r411 .r411-proof-steps{
+  list-style:none;
+  padding:0;margin:0;
+}
+.home-r411 .r411-proof-steps li{
+  display:grid;
+  grid-template-columns:24px minmax(80px,.58fr) 1fr;
+  gap:9px 10px;
+  align-items:baseline;
+  padding:14px 0;
+  border-bottom:1px solid #c2cebf;
+}
+.home-r411 .r411-proof-steps li span{
+  color:#57745b;font-size:10px;font-weight:700;
+}
+.home-r411 .r411-proof-steps li b{
+  color:#254331;font-size:14px;font-weight:600;
+}
+.home-r411 .r411-proof-steps li small{
+  color:#4e6052;font-size:12px;line-height:1.7;
+}
+.home-r411 .r411-rail-note{
+  margin-top:18px;
+  color:#586258;
+  line-height:1.78;
+  font-size:12px;
+}
+.home-r411 .r411-section-foot{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px 45px;
+  flex-wrap:wrap;
+  padding-top:23px;
+}
+.home-r411 .r411-section-foot p{
+  color:#657167;
+  font-size:12px;
+  line-height:1.75;
+  max-width:670px;
+}
+.home-r411 .r411-section-foot .text-link{
+  color:#21503c;
+  font-size:13px;
+  font-weight:600;
+  white-space:normal;
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+}
+@media(max-width:1023px){
+  .home-r411 .r411-section-head{grid-template-columns:1fr;gap:19px;}
+  .home-r411 .r411-section-head>p{max-width:760px;}
+  .home-r411 .r411-step-panel{gap:35px;}
+  .home-r411 .r411-proof-steps li{grid-template-columns:20px minmax(75px,.7fr) 1fr;}
+}
+@media(max-width:639px){
+  .home-r411 .r411-decision{padding:56px 0 62px;}
+  .home-r411 .r411-section-head{margin-bottom:22px;}
+  .home-r411 .r411-section-head h2{font-size:clamp(30px,8vw,41px);}
+  .home-r411 .r411-section-head>p{font-size:14px;line-height:1.8;}
+  .home-r411 .r411-section-head>p br{display:none;}
+  .home-r411 .r411-stage{padding:13px 14px 18px;}
+  .home-r411 .r411-step-tabs button{
+    display:flex; flex-direction:column;align-items:flex-start;
+    min-height:70px;gap:5px;padding:10px 6px 9px;
+    font-size:13px;
+  }
+  .home-r411 .r411-step-panel{
+    grid-template-columns:1fr;
+    min-height:0;gap:20px;
+    padding:25px 4px 9px;
+  }
+  .home-r411 .r411-step-question h3{
+    font-size:clamp(25px,6vw,30px);
+    margin:16px 0 10px;
+  }
+  .home-r411 .r411-step-question p{font-size:13px;line-height:1.8;}
+  .home-r411 .r411-step-answer{padding-left:17px;}
+  .home-r411 .r411-step-answer strong{font-size:19px;}
+  .home-r411 .r411-step-answer p{font-size:13px;margin:11px 0 13px;}
+  .home-r411 .r411-two-rails{grid-template-columns:1fr;gap:12px;margin-top:13px;}
+  .home-r411 .r411-channels div{gap:8px;}
+  .home-r411 .r411-channels b{flex-basis:79px;}
+  .home-r411 .r411-channels span{font-size:12px;}
+  .home-r411 .r411-section-foot{padding-top:18px;gap:9px;}
+}
+@media(max-width:359px){
+  .home-r411 .r411-step-tabs button{font-size:12px;}
+  .home-r411 .r411-proof-steps li{grid-template-columns:18px 65px 1fr;gap:8px;}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-r411 .r411-step-tabs button,
+  .home-r411 .r411-step-panel { animation:none!important;transition:none!important;}
+}

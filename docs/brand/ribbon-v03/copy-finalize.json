@@ -1,0 +1,80 @@
+{
+  "verdict": "accept",
+  "genre": "essay",
+  "body_correction_count": 0,
+  "correction_count": 0,
+  "summary_updated": true,
+  "backup": "final_pre_finalize.md",
+  "fidelity_violations": [],
+  "overediting_findings": [],
+  "residual_findings": [
+    {
+      "category": "C-11",
+      "severity": "S1",
+      "section": "cases",
+      "text": "업장명은 가리고, 지표와 비교 기간은 분명하게.",
+      "action": "preserve",
+      "reason": "사용자가 사례·성과 증거 영역 전체를 보존하도록 명시한 것으로 진단에 기록됨"
+    },
+    {
+      "category": "C-11",
+      "severity": "S1",
+      "section": "cases",
+      "text": "작업별 기여도는 분리되지 않았으며, 플레이스 유입은 방문객 수·예약 수·매출과 다른 지표입니다.",
+      "action": "preserve",
+      "reason": "사용자가 사례·성과 증거 영역 전체를 보존하도록 명시한 것으로 진단에 기록됨"
+    }
+  ],
+  "original_char_count": 1883,
+  "final_char_count": 1873,
+  "char_count_scope": "본문 앞뒤 공백 제외, 내부 줄바꿈 포함",
+  "gate_change_rate": 0.0027,
+  "gate_verdict": "WARN",
+  "gate_warning": "ending_comma_rate z=2.30; 보호 범위에 남은 연결어미 쉼표 2건",
+  "grade": "C",
+  "grade_reason": "quick-rules.footer.md의 S1 잔존 1~2건 기준 적용. 의미 오류나 과윤문 때문이 아니라 명시적 보존 범위의 예외 때문에 남은 등급.",
+  "self_check": {
+    "passed": 5,
+    "total": 6,
+    "items": [
+      {
+        "id": 1,
+        "name": "고유명사·수치·날짜·인용·내용 앵커 보존",
+        "passed": true
+      },
+      {
+        "id": 2,
+        "name": "변경률 30% 이하",
+        "passed": true
+      },
+      {
+        "id": 3,
+        "name": "장르 보존",
+        "passed": true
+      },
+      {
+        "id": 4,
+        "name": "register 보존",
+        "passed": true
+      },
+      {
+        "id": 5,
+        "name": "S1 잔존 0건",
+        "passed": false,
+        "reason": "보존 대상 C-11 2건 잔존; 원문보다 증가하지 않음"
+      },
+      {
+        "id": 6,
+        "name": "새로운 비유·수사·상투구 없음",
+        "passed": true
+      }
+    ]
+  },
+  "review_notes": [
+    "원문과 최종 본문의 차이는 쉼표 10개 삭제뿐이다.",
+    "사례 영역은 원문과 문자 단위로 동일하다.",
+    "이미 추출 과정에서 붙은 UI 라벨과 설명은 새 오류가 아니며 본 윤문의 의미 변경을 피하기 위해 유지했다.",
+    "summary의 기존 최종 글자 수 1871은 1873으로 바로잡고 게이트 대기·잠정 판정을 확정 수치와 잔존 finding으로 갱신했다.",
+    "사용자의 보존 지시 때문에 남은 경고이므로 전체 재작성이나 추가 쉼표 삭제를 권하지 않는다."
+  ]
+}

@@ -1,0 +1,62 @@
+/* R4.2: approved photo-1 composition + photo-3 web brand interpretation.
+   R4 scene ownership, charts, diagnosis and operating boundaries stay intact. */
+.home-r42 {
+  --ink: #20352d;
+  --trust: #285247;
+  --signal: #285247;
+  --signal-text: #1f4439;
+  --accent: var(--signal-text);
+  --green: var(--trust);
+  --proof: #80602f;
+  --sage: #aab69e;
+  --gold: #c8a56b;
+  --soft: #eae7df;
+}
+.home-r42 .wordmark { display: inline-flex; align-items: center; flex-shrink: 0; min-height: 44px; }
+.home-r42 .wordmark img { width: 180px; height: auto; }
+.home-r42 .dot { background: var(--gold); }
+.home-r42 .proof-plane-back { background: #dce0d2; }
+.home-r42 .proof-plane-middle { background: #e8ebdf; }
+.home-r42 .segmented { background: #e1e4d8; border-color: #c7cebf; }
+.home-r42 .segmented button { min-height: 44px; }
+.home-r42 .sample-photo { background: #d8d1c5; }
+.home-r42 .sample-photo img { object-position: 50% 58%; transition: none; }
+.home-r42 .sample-page.before .sample-photo img {
+  /* The source capture is unchanged. Frame its left-hand facade/car photograph;
+     exclude the people, ratings and platform chrome from the visible example. */
+  width: 201.78%; max-width: none; height: auto;
+  object-fit: initial; object-position: initial;
+  transform: translateY(-28%); transform-origin: top left;
+}
+.home-r42 .sample-page.before .photo-number { display: block; }
+.home-r42 .sample-photo .photo-number { max-width: calc(100% - 40px); }
+.home-r42 .sample-page-copy { min-height: 350px; }
+.home-r42 .sample-page.before .store-gap-note { min-height: 186px; }
+.home-r42 .sample-caption { font-size: 12px; }
+.home-r42 .process-step.featured { background: #e5e9dc; }
+.home-r42 .question-side { background: #e4e9dd; }
+.home-r42 [data-flow-state="review"] [data-flow-layer="client"] { border-left-color: var(--gold); }
+.home-r42 .mashcore-bridge { display: grid; grid-template-columns: 1fr auto; gap: 18px 36px; align-items: center; margin-top: 46px; padding: 28px 0 6px; border-top: 1px solid var(--line); }
+.home-r42 .mashcore-bridge .eyebrow { font-size: 10px; color: var(--trust); margin-bottom: 8px; }
+.home-r42 .mashcore-bridge h3 { font-size: 22px; letter-spacing: -.025em; }
+.home-r42 .mashcore-bridge p:not(.eyebrow) { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.85; }
+.home-r42 .mashcore-bridge a { white-space: nowrap; }
+@media (min-width: 640px) and (max-width: 1023px) {
+  .home-r42 .sample-page-copy { min-height: 378px; }
+  .home-r42 .sample-page.before .store-gap-note { min-height: 217px; }
+  .home-r42 .preview-top { align-items: start; flex-direction: column; gap: 10px; }
+}
+@media (max-width: 639px) {
+  .home-r42 .wordmark img { width: 156px; }
+  .home-r42 .header-inner { gap: 12px; }
+  .home-r42 .sample-page-copy { min-height: 354px; }
+  .home-r42 .sample-page.before .store-gap-note { min-height: 200px; }
+  .home-r42 .mashcore-bridge { grid-template-columns: 1fr; gap: 15px; margin-top: 32px; padding-top: 24px; }
+  .home-r42 .mashcore-bridge h3 { font-size: 21px; }
+  .home-r42 .mashcore-bridge a { justify-self: start; }
+}
+@media (max-width: 359px) {
+  .home-r42 .wordmark img { width: 138px; }
+  .home-r42 .preview-top { align-items: start; flex-direction: column; gap: 10px; }
+  .home-r42 .sample-page-copy { min-height: 364px; }
+}

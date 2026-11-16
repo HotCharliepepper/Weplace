@@ -1,0 +1,75 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> weplace-public-site@1.1.0 test:r45
+> playwright test --config playwright.r45.config.cjs
+
+
+Running 60 tests using 1 worker
+
+(node:56) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/browser/r45.spec.cjs:46:1 › three hero states, keyboard tabs and available CTA (1.7s)
+  ✓   2 [desktop] › tests/browser/r45.spec.cjs:72:1 › finite autoplay can pause and settles at scene 3 (11.1s)
+  ✓   3 [desktop] › tests/browser/r45.spec.cjs:90:1 › reduced motion is static; scene selection remains available (467ms)
+  ✓   4 [desktop] › tests/browser/r45.spec.cjs:101:1 › blocked GSAP keeps content, native links and tabs working (407ms)
+  ✓   5 [desktop] › tests/browser/r45.spec.cjs:114:1 › JavaScript disabled › no JavaScript retains claims, scope, CTA and full journey text (585ms)
+  ✓   6 [desktop] › tests/browser/r45.spec.cjs:129:1 › existing tabs, case dialog, FLOW and diagnosis request remain local (782ms)
+  ✓   7 [desktop] › tests/browser/r45.spec.cjs:151:1 › free journey validates acknowledgement, completes, shares and restarts (851ms)
+  ✓   8 [desktop] › tests/browser/r45.spec.cjs:179:1 › detailed scope never exposes an unconfirmed price (430ms)
+  ✓   9 [desktop] › tests/browser/r45.spec.cjs:194:1 › copy success and denied clipboard both preserve a useful safe share (493ms)
+  ✓  10 [desktop] › tests/browser/r45.spec.cjs:206:1 › WCAG automated checks on main and all five journey states (1.7s)
+  ✓  11 [desktop] › tests/browser/r45.spec.cjs:218:1 › closing CTA remains visible against the dark panel and returns to diagnosis (556ms)
+  ✓  12 [desktop] › tests/browser/r45.spec.cjs:232:1 › all requested widths preserve type, poster, native links and the unchanged observation (2.8s)
+  ✓  13 [desktop] › tests/browser/r45.spec.cjs:255:1 › image failure shows the real fallback, headline and CTA stay available (593ms)
+  ✓  14 [desktop] › tests/browser/r45.spec.cjs:265:1 › delayed photo never delays title or CTA; no video is downloaded (451ms)
+  -  15 [desktop] › tests/browser/r45.spec.cjs:274:1 › mobile is static after eight seconds and reduced motion has no layer tween
+  ✓  16 [desktop] › tests/browser/r45.spec.cjs:282:1 › question download intent, dedicated page and browser Back retain the route (740ms)
+  ✓  17 [desktop] › tests/browser/r45.spec.cjs:294:1 › device sharing success, cancellation and unsupported fallback never include form data (547ms)
+  ✓  18 [desktop] › tests/browser/r45.spec.cjs:307:1 › journey browser Back/Forward restores the prior step and keeps simulation explicit (370ms)
+  ✓  19 [desktop] › tests/browser/r45.spec.cjs:315:1 › mobile menu keyboard and primary CTA navigation (428ms)
+  ✓  20 [desktop] › tests/browser/r45.spec.cjs:325:1 › delayed and failed photos never block the question or diagnosis CTA (1.6s)
+  ✓  21 [desktop] › tests/browser/r45.spec.cjs:334:1 › question page has no automatic accessibility violations (294ms)
+  ✓  22 [desktop] › tests/browser/r45.spec.cjs:340:81 › no JavaScript question › static question, image download and diagnosis link remain usable (464ms)
+  ✓  23 [desktop] › tests/browser/r45.spec.cjs:347:1 › hero labels remain readable without overlay cards (425ms)
+  ✓  24 [desktop] › tests/browser/r45.spec.cjs:354:1 › five stay criteria have keyboard focus, persistent sample status and no hotel assets (845ms)
+  ✓  25 [desktop] › tests/browser/r45.spec.cjs:371:1 › diagnosis sheet gives exactly one improvement on one channel (593ms)
+  ✓  26 [desktop] › tests/browser/r45.spec.cjs:381:37 › saveData connection chooses a static scene (473ms)
+  ✓  27 [desktop] › tests/browser/r45.spec.cjs:381:37 › 3g connection chooses a static scene (493ms)
+  ✓  28 [desktop] › tests/browser/r45.spec.cjs:388:1 › lifecycle events settle animation without replay; keyboard focus stops movement (574ms)
+  ✓  29 [desktop] › tests/browser/r45.spec.cjs:404:1 › 200 percent desktop reflow and mobile visual zoom preserve controls (489ms)
+  ✓  30 [desktop] › tests/browser/r45.spec.cjs:413:77 › static new content › all stay explanations and the one-page example survive without JS (430ms)
+(node:530) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  31 [mobile] › tests/browser/r45.spec.cjs:46:1 › three hero states, keyboard tabs and available CTA (1.2s)
+  -  32 [mobile] › tests/browser/r45.spec.cjs:72:1 › finite autoplay can pause and settles at scene 3
+  ✓  33 [mobile] › tests/browser/r45.spec.cjs:90:1 › reduced motion is static; scene selection remains available (417ms)
+  ✓  34 [mobile] › tests/browser/r45.spec.cjs:101:1 › blocked GSAP keeps content, native links and tabs working (342ms)
+  ✓  35 [mobile] › tests/browser/r45.spec.cjs:114:1 › JavaScript disabled › no JavaScript retains claims, scope, CTA and full journey text (438ms)
+  ✓  36 [mobile] › tests/browser/r45.spec.cjs:129:1 › existing tabs, case dialog, FLOW and diagnosis request remain local (745ms)
+  ✓  37 [mobile] › tests/browser/r45.spec.cjs:151:1 › free journey validates acknowledgement, completes, shares and restarts (688ms)
+  ✓  38 [mobile] › tests/browser/r45.spec.cjs:179:1 › detailed scope never exposes an unconfirmed price (429ms)
+  ✓  39 [mobile] › tests/browser/r45.spec.cjs:194:1 › copy success and denied clipboard both preserve a useful safe share (428ms)
+  ✓  40 [mobile] › tests/browser/r45.spec.cjs:206:1 › WCAG automated checks on main and all five journey states (1.7s)
+  ✓  41 [mobile] › tests/browser/r45.spec.cjs:218:1 › closing CTA remains visible against the dark panel and returns to diagnosis (574ms)
+  ✓  42 [mobile] › tests/browser/r45.spec.cjs:232:1 › all requested widths preserve type, poster, native links and the unchanged observation (2.6s)
+  ✓  43 [mobile] › tests/browser/r45.spec.cjs:255:1 › image failure shows the real fallback, headline and CTA stay available (447ms)
+  ✓  44 [mobile] › tests/browser/r45.spec.cjs:265:1 › delayed photo never delays title or CTA; no video is downloaded (329ms)
+  ✓  45 [mobile] › tests/browser/r45.spec.cjs:274:1 › mobile is static after eight seconds and reduced motion has no layer tween (8.6s)
+  ✓  46 [mobile] › tests/browser/r45.spec.cjs:282:1 › question download intent, dedicated page and browser Back retain the route (773ms)
+  ✓  47 [mobile] › tests/browser/r45.spec.cjs:294:1 › device sharing success, cancellation and unsupported fallback never include form data (514ms)
+  ✓  48 [mobile] › tests/browser/r45.spec.cjs:307:1 › journey browser Back/Forward restores the prior step and keeps simulation explicit (358ms)
+  ✓  49 [mobile] › tests/browser/r45.spec.cjs:315:1 › mobile menu keyboard and primary CTA navigation (472ms)
+  ✓  50 [mobile] › tests/browser/r45.spec.cjs:325:1 › delayed and failed photos never block the question or diagnosis CTA (1.5s)
+  ✓  51 [mobile] › tests/browser/r45.spec.cjs:334:1 › question page has no automatic accessibility violations (294ms)
+  ✓  52 [mobile] › tests/browser/r45.spec.cjs:340:81 › no JavaScript question › static question, image download and diagnosis link remain usable (464ms)
+  ✓  53 [mobile] › tests/browser/r45.spec.cjs:347:1 › hero labels remain readable without overlay cards (339ms)
+  ✓  54 [mobile] › tests/browser/r45.spec.cjs:354:1 › five stay criteria have keyboard focus, persistent sample status and no hotel assets (772ms)
+  ✓  55 [mobile] › tests/browser/r45.spec.cjs:371:1 › diagnosis sheet gives exactly one improvement on one channel (574ms)
+  ✓  56 [mobile] › tests/browser/r45.spec.cjs:381:37 › saveData connection chooses a static scene (395ms)
+  ✓  57 [mobile] › tests/browser/r45.spec.cjs:381:37 › 3g connection chooses a static scene (392ms)
+  ✓  58 [mobile] › tests/browser/r45.spec.cjs:388:1 › lifecycle events settle animation without replay; keyboard focus stops movement (361ms)
+  ✓  59 [mobile] › tests/browser/r45.spec.cjs:404:1 › 200 percent desktop reflow and mobile visual zoom preserve controls (391ms)
+  ✓  60 [mobile] › tests/browser/r45.spec.cjs:413:77 › static new content › all stay explanations and the one-page example survive without JS (359ms)
+
+  2 skipped
+  58 passed (1.0m)
