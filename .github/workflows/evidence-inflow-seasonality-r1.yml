@@ -20,6 +20,15 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - name: Export editable Evidence R1 source for VS Code handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: WEPLACE-EVIDENCE-R1-EDITABLE-SOURCE
+          path: |
+            unified-r3-evidence.html
+            assets/css/evidence-inflow-seasonality-r1.css
+          retention-days: 14
+          if-no-files-found: error
       - name: npm install / code test / static link verify / build
         run: |
           npm ci
