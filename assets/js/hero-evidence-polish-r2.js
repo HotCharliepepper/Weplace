@@ -9,6 +9,7 @@
   const showMenu=page.querySelector('[data-photo-choice="after"]');
   if (stage && peek && showMenu) {
     peek.addEventListener('click',() => showMenu.click());
+    peek.disabled=false;
   }
 
   const work=page.querySelector('#work');
