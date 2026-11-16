@@ -40,7 +40,7 @@
   color:#406048;background:#f6f8ed;cursor:pointer;transition:background .15s ease,border-color .15s ease,color .15s ease;
 }
 .he-evidence .he-graph-filters button[aria-pressed=true]{background:#245138;color:#fff;border-color:#245138}
-.he-evidence .he-graph-filters button[data-year="2026"][aria-pressed=true]{background:#d9eea4;color:#1c402a;border-color:#99bf74}
+.he-evidence .he-graph-filters button[data-compare-year="2026"][aria-pressed=true]{background:#d9eea4;color:#1c402a;border-color:#99bf74}
 .he-evidence .he-graph-filters .he-show-all{margin-left:auto;text-decoration:underline;text-underline-offset:4px;background:transparent;border-color:transparent;color:#446c4f}
 .he-evidence .he-graph-filters button:focus-visible,.he-evidence .he-photo-controls button:focus-visible{outline:3px solid #7ca66a;outline-offset:3px}
 .he-evidence .he-overlaid-chart{width:100%;display:block;overflow:visible}
