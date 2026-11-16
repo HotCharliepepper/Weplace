@@ -1,0 +1,590 @@
+[
+  {
+    "width": 1440,
+    "overflow": 0,
+    "sectionHeights": [
+      {
+        "id": "intro",
+        "height": 1477
+      },
+      {
+        "id": "changes",
+        "height": 1507
+      },
+      {
+        "id": "discovery",
+        "height": 878
+      },
+      {
+        "id": "cases",
+        "height": 1169
+      },
+      {
+        "id": "flow",
+        "height": 1149
+      },
+      {
+        "id": "process",
+        "height": 858
+      },
+      {
+        "id": "request",
+        "height": 1424
+      },
+      {
+        "id": "explore",
+        "height": 561
+      },
+      {
+        "id": "section afterglow",
+        "height": 656
+      }
+    ],
+    "type": [
+      {
+        "text": "0원 · 매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개",
+        "size": "12px"
+      },
+      {
+        "text": "01 첫인상",
+        "size": "11px"
+      },
+      {
+        "text": "02 정리",
+        "size": "11px"
+      },
+      {
+        "text": "03 다음 행동",
+        "size": "11px"
+      },
+      {
+        "text": "기간별 관측값입니다.개별 작업의 매출 기여도는 분리되지 않았습니다.",
+        "size": "10px"
+      },
+      {
+        "text": "자료에 기록된 기간별 관측값입니다. 작업별 기여도는 분리되지 않았으며, 플레이스 유입은 방문객 수·예약 수·매출과 다른 지표입니다.",
+        "size": "11px"
+      },
+      {
+        "text": "0원 · 매장 1곳 · 채널 1개 · 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "유료 · 범위와 비용은 진행 전 안내",
+        "size": "10px"
+      },
+      {
+        "text": "직접 실행 / 필요한 작업 / 정기 운영",
+        "size": "10px"
+      },
+      {
+        "text": "오늘, 손님이 볼첫 화면부터.",
+        "size": "64px"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "overflow": 0,
+    "sectionHeights": [
+      {
+        "id": "intro",
+        "height": 1477
+      },
+      {
+        "id": "changes",
+        "height": 1507
+      },
+      {
+        "id": "discovery",
+        "height": 878
+      },
+      {
+        "id": "cases",
+        "height": 1139
+      },
+      {
+        "id": "flow",
+        "height": 1149
+      },
+      {
+        "id": "process",
+        "height": 858
+      },
+      {
+        "id": "request",
+        "height": 1424
+      },
+      {
+        "id": "explore",
+        "height": 561
+      },
+      {
+        "id": "section afterglow",
+        "height": 656
+      }
+    ],
+    "type": [
+      {
+        "text": "0원 · 매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개",
+        "size": "12px"
+      },
+      {
+        "text": "01 첫인상",
+        "size": "11px"
+      },
+      {
+        "text": "02 정리",
+        "size": "11px"
+      },
+      {
+        "text": "03 다음 행동",
+        "size": "11px"
+      },
+      {
+        "text": "기간별 관측값입니다.개별 작업의 매출 기여도는 분리되지 않았습니다.",
+        "size": "10px"
+      },
+      {
+        "text": "자료에 기록된 기간별 관측값입니다. 작업별 기여도는 분리되지 않았으며, 플레이스 유입은 방문객 수·예약 수·매출과 다른 지표입니다.",
+        "size": "11px"
+      },
+      {
+        "text": "0원 · 매장 1곳 · 채널 1개 · 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "유료 · 범위와 비용은 진행 전 안내",
+        "size": "10px"
+      },
+      {
+        "text": "직접 실행 / 필요한 작업 / 정기 운영",
+        "size": "10px"
+      },
+      {
+        "text": "오늘, 손님이 볼첫 화면부터.",
+        "size": "64px"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "overflow": 0,
+    "sectionHeights": [
+      {
+        "id": "intro",
+        "height": 1381
+      },
+      {
+        "id": "changes",
+        "height": 1393
+      },
+      {
+        "id": "discovery",
+        "height": 758
+      },
+      {
+        "id": "cases",
+        "height": 1602
+      },
+      {
+        "id": "flow",
+        "height": 1150
+      },
+      {
+        "id": "process",
+        "height": 759
+      },
+      {
+        "id": "request",
+        "height": 1285
+      },
+      {
+        "id": "explore",
+        "height": 576
+      },
+      {
+        "id": "section afterglow",
+        "height": 596
+      }
+    ],
+    "type": [
+      {
+        "text": "0원 · 매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "01 첫인상",
+        "size": "11px"
+      },
+      {
+        "text": "02 정리",
+        "size": "11px"
+      },
+      {
+        "text": "03 다음 행동",
+        "size": "11px"
+      },
+      {
+        "text": "기간별 관측값입니다.개별 작업의 매출 기여도는 분리되지 않았습니다.",
+        "size": "9px"
+      },
+      {
+        "text": "자료에 기록된 기간별 관측값입니다. 작업별 기여도는 분리되지 않았으며, 플레이스 유입은 방문객 수·예약 수·매출과 다른 지표입니다.",
+        "size": "11px"
+      },
+      {
+        "text": "0원 · 매장 1곳 · 채널 1개 · 개선안 1개",
+        "size": "9px"
+      },
+      {
+        "text": "유료 · 범위와 비용은 진행 전 안내",
+        "size": "9px"
+      },
+      {
+        "text": "직접 실행 / 필요한 작업 / 정기 운영",
+        "size": "9px"
+      },
+      {
+        "text": "오늘, 손님이 볼첫 화면부터.",
+        "size": "38.4px"
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "overflow": 0,
+    "sectionHeights": [
+      {
+        "id": "intro",
+        "height": 1803
+      },
+      {
+        "id": "changes",
+        "height": 2014
+      },
+      {
+        "id": "discovery",
+        "height": 1076
+      },
+      {
+        "id": "cases",
+        "height": 1457
+      },
+      {
+        "id": "flow",
+        "height": 1684
+      },
+      {
+        "id": "process",
+        "height": 1316
+      },
+      {
+        "id": "request",
+        "height": 1837
+      },
+      {
+        "id": "explore",
+        "height": 888
+      },
+      {
+        "id": "section afterglow",
+        "height": 889
+      }
+    ],
+    "type": [
+      {
+        "text": "0원 · 매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "01 첫인상",
+        "size": "10px"
+      },
+      {
+        "text": "02 정리",
+        "size": "10px"
+      },
+      {
+        "text": "03 다음 행동",
+        "size": "10px"
+      },
+      {
+        "text": "기간별 관측값입니다.개별 작업의 매출 기여도는 분리되지 않았습니다.",
+        "size": "11px"
+      },
+      {
+        "text": "자료에 기록된 기간별 관측값입니다. 작업별 기여도는 분리되지 않았으며, 플레이스 유입은 방문객 수·예약 수·매출과 다른 지표입니다.",
+        "size": "11px"
+      },
+      {
+        "text": "0원 · 매장 1곳 · 채널 1개 · 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "유료 · 범위와 비용은 진행 전 안내",
+        "size": "10px"
+      },
+      {
+        "text": "직접 실행 / 필요한 작업 / 정기 운영",
+        "size": "10px"
+      },
+      {
+        "text": "오늘, 손님이 볼첫 화면부터.",
+        "size": "38px"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "overflow": 0,
+    "sectionHeights": [
+      {
+        "id": "intro",
+        "height": 1806
+      },
+      {
+        "id": "changes",
+        "height": 1990
+      },
+      {
+        "id": "discovery",
+        "height": 1076
+      },
+      {
+        "id": "cases",
+        "height": 1414
+      },
+      {
+        "id": "flow",
+        "height": 1684
+      },
+      {
+        "id": "process",
+        "height": 1316
+      },
+      {
+        "id": "request",
+        "height": 1850
+      },
+      {
+        "id": "explore",
+        "height": 888
+      },
+      {
+        "id": "section afterglow",
+        "height": 889
+      }
+    ],
+    "type": [
+      {
+        "text": "0원 · 매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "01 첫인상",
+        "size": "10px"
+      },
+      {
+        "text": "02 정리",
+        "size": "10px"
+      },
+      {
+        "text": "03 다음 행동",
+        "size": "10px"
+      },
+      {
+        "text": "기간별 관측값입니다.개별 작업의 매출 기여도는 분리되지 않았습니다.",
+        "size": "11px"
+      },
+      {
+        "text": "자료에 기록된 기간별 관측값입니다. 작업별 기여도는 분리되지 않았으며, 플레이스 유입은 방문객 수·예약 수·매출과 다른 지표입니다.",
+        "size": "11px"
+      },
+      {
+        "text": "0원 · 매장 1곳 · 채널 1개 · 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "유료 · 범위와 비용은 진행 전 안내",
+        "size": "10px"
+      },
+      {
+        "text": "직접 실행 / 필요한 작업 / 정기 운영",
+        "size": "10px"
+      },
+      {
+        "text": "오늘, 손님이 볼첫 화면부터.",
+        "size": "38px"
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "overflow": 0,
+    "sectionHeights": [
+      {
+        "id": "intro",
+        "height": 1798
+      },
+      {
+        "id": "changes",
+        "height": 2015
+      },
+      {
+        "id": "discovery",
+        "height": 1159
+      },
+      {
+        "id": "cases",
+        "height": 1382
+      },
+      {
+        "id": "flow",
+        "height": 1703
+      },
+      {
+        "id": "process",
+        "height": 1316
+      },
+      {
+        "id": "request",
+        "height": 1888
+      },
+      {
+        "id": "explore",
+        "height": 888
+      },
+      {
+        "id": "section afterglow",
+        "height": 889
+      }
+    ],
+    "type": [
+      {
+        "text": "0원 · 매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "01 첫인상",
+        "size": "10px"
+      },
+      {
+        "text": "02 정리",
+        "size": "10px"
+      },
+      {
+        "text": "03 다음 행동",
+        "size": "10px"
+      },
+      {
+        "text": "기간별 관측값입니다.개별 작업의 매출 기여도는 분리되지 않았습니다.",
+        "size": "11px"
+      },
+      {
+        "text": "자료에 기록된 기간별 관측값입니다. 작업별 기여도는 분리되지 않았으며, 플레이스 유입은 방문객 수·예약 수·매출과 다른 지표입니다.",
+        "size": "11px"
+      },
+      {
+        "text": "0원 · 매장 1곳 · 채널 1개 · 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "유료 · 범위와 비용은 진행 전 안내",
+        "size": "10px"
+      },
+      {
+        "text": "직접 실행 / 필요한 작업 / 정기 운영",
+        "size": "10px"
+      },
+      {
+        "text": "오늘, 손님이 볼첫 화면부터.",
+        "size": "38px"
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "overflow": 0,
+    "sectionHeights": [
+      {
+        "id": "intro",
+        "height": 1784
+      },
+      {
+        "id": "changes",
+        "height": 2006
+      },
+      {
+        "id": "discovery",
+        "height": 1148
+      },
+      {
+        "id": "cases",
+        "height": 1366
+      },
+      {
+        "id": "flow",
+        "height": 1701
+      },
+      {
+        "id": "process",
+        "height": 1308
+      },
+      {
+        "id": "request",
+        "height": 1884
+      },
+      {
+        "id": "explore",
+        "height": 883
+      },
+      {
+        "id": "section afterglow",
+        "height": 889
+      }
+    ],
+    "type": [
+      {
+        "text": "0원 · 매장 1곳 · 공개 채널 1개 · 직접 써볼 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "01 첫인상",
+        "size": "10px"
+      },
+      {
+        "text": "02 정리",
+        "size": "10px"
+      },
+      {
+        "text": "03 다음 행동",
+        "size": "10px"
+      },
+      {
+        "text": "기간별 관측값입니다.개별 작업의 매출 기여도는 분리되지 않았습니다.",
+        "size": "11px"
+      },
+      {
+        "text": "자료에 기록된 기간별 관측값입니다. 작업별 기여도는 분리되지 않았으며, 플레이스 유입은 방문객 수·예약 수·매출과 다른 지표입니다.",
+        "size": "11px"
+      },
+      {
+        "text": "0원 · 매장 1곳 · 채널 1개 · 개선안 1개",
+        "size": "10px"
+      },
+      {
+        "text": "유료 · 범위와 비용은 진행 전 안내",
+        "size": "10px"
+      },
+      {
+        "text": "직접 실행 / 필요한 작업 / 정기 운영",
+        "size": "10px"
+      },
+      {
+        "text": "오늘, 손님이 볼첫 화면부터.",
+        "size": "38px"
+      }
+    ]
+  }
+]

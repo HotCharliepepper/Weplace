@@ -1,0 +1,32 @@
+{
+  "reviewOnly": true,
+  "draftPr": "https://github.com/HotCharliepepper/Weplace/pull/16",
+  "previewUrl": "https://deploy-preview-16--weplace.netlify.app/",
+  "implementationCommit": "58de2afaadd066a80d749a6c21f6b6ae2a884979",
+  "validatedTree": "6f5752841abe3f22b28969ca6106e6e157248577",
+  "deploy": {
+    "id": "6ae9c8445a1d5c3b4bcef194",
+    "state": "ready",
+    "context": "deploy-preview",
+    "reviewId": 16,
+    "publishedAt": null
+  },
+  "observedHttp": {
+    "status": 200,
+    "xRobotsTag": [
+      "noindex, nofollow",
+      "noindex"
+    ],
+    "htmlRobots": "noindex, nofollow",
+    "canonical": "https://withweplace.kr/"
+  },
+  "unchangedProduction": {
+    "deployId": "6ad8a7438ddf68ea7482fcd2",
+    "mainCommit": "42562ec1a3dedec0e97b4fef1944aef4d84a6a49"
+  },
+  "limits": [
+    "Publicly reachable review; noindex is not access control",
+    "Documentation/evidence updates may create a later deploy with unchanged application source",
+    "No production, main merge, live DB, authentication or permission change"
+  ]
+}

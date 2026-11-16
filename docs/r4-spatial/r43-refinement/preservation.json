@@ -1,0 +1,123 @@
+{
+  "baseline": "9e3df4f4e5f78cd8f3e7b7a961af868ead95a06a",
+  "protectedFiles": [
+    {
+      "path": "config/company-info.json",
+      "unchanged": true
+    },
+    {
+      "path": "config/privacy-release.json",
+      "unchanged": true
+    },
+    {
+      "path": "privacy/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/company-info.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/sync-company-footer.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/build-flow-preview.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "netlify.toml",
+      "unchanged": true
+    },
+    {
+      "path": "_headers",
+      "unchanged": true
+    },
+    {
+      "path": "_redirects",
+      "unchanged": true
+    },
+    {
+      "path": "robots.txt",
+      "unchanged": true
+    },
+    {
+      "path": "sitemap.xml",
+      "unchanged": true
+    },
+    {
+      "path": "assets/css/brand.css",
+      "unchanged": true
+    },
+    {
+      "path": "assets/css/motif-v03.css",
+      "unchanged": true
+    },
+    {
+      "path": "assets/js/site-metrics.js",
+      "unchanged": true
+    },
+    {
+      "path": "assets/brand/motifs/A_FOLD_ROUTE__WEPLACE.svg",
+      "unchanged": true
+    },
+    {
+      "path": "assets/brand/motifs/C_DOUBLE_SIGNAL__WEPLACE.svg",
+      "unchanged": true
+    },
+    {
+      "path": "assets/home-r2/Pretendard-Regular.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/home-r2/Pretendard-SemiBold.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/home-r2/FONT-LICENSE.txt",
+      "unchanged": true
+    },
+    {
+      "path": "assets/home-r2/example-space.webp",
+      "unchanged": true
+    },
+    {
+      "path": "assets/home-r2/brand-symbol.png",
+      "unchanged": true
+    },
+    {
+      "path": "favicon.ico",
+      "unchanged": true
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "unchanged": true
+    }
+  ],
+  "preservedSections": [
+    {
+      "id": "changes",
+      "byteIdentical": true
+    },
+    {
+      "id": "discovery",
+      "byteIdentical": true
+    },
+    {
+      "id": "cases",
+      "byteIdentical": true
+    },
+    {
+      "id": "flow",
+      "byteIdentical": true
+    },
+    {
+      "id": "explore",
+      "byteIdentical": true
+    }
+  ]
+}

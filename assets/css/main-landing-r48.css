@@ -1,0 +1,97 @@
+/* R4.8 — Timed anticipation is a testable design hypothesis, NOT a scientific
+   "boredom threshold". Never render a fake percent-loaded indicator. */
+
+.home-r48 #changes .r48-wait-lab {
+  margin:14px 0 18px;
+  padding:19px 21px;
+  background:#183e31;
+  color:#f2f3e7;
+  border:1px solid #577460;
+  border-radius:3px;
+}
+.home-r48 #changes .r48-wait-lab[hidden],
+.home-r48 #changes .r48-lab-feedback[hidden],
+.home-r48 #changes .r48-photo-fallback[hidden] { display:none!important; }
+.home-r48 #changes .r48-wait-lab-title {
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:9px 23px;flex-wrap:wrap;
+  font-size:13px;line-height:1.6;
+}
+.home-r48 #changes .r48-wait-lab-title strong {
+  color:#ead19c;font-size:13px;letter-spacing:.035em;
+}
+.home-r48 #changes .r48-wait-lab-title span {font-size:11px;color:#d0dfd2;}
+.home-r48 #changes .r48-wait-lab-controls {
+  display:flex;align-items:center;flex-wrap:wrap;gap:8px 15px;margin:13px 0 0;
+}
+.home-r48 #changes .r48-wait-lab-controls label{font-size:12px;font-weight:600;}
+.home-r48 #changes .r48-wait-lab-controls select{
+  background:#f5f0e9;color:#193629;border:1px solid #d6cfbc;
+  padding:8px 11px;border-radius:3px;font:inherit;font-size:12px;min-height:44px;
+}
+.home-r48 #changes .r48-wait-lab-controls>span {
+  font-size:11px;color:#d0dfd2;line-height:1.7;
+}
+.home-r48 #changes #r48-lab-result {
+  border-top:1px solid #ffffff24;padding-top:12px;margin-top:14px;
+  color:#ecf1e7;font-size:12px;line-height:1.75;
+}
+.home-r48 #changes .r48-lab-feedback {
+  display:flex;align-items:center;flex-wrap:wrap;gap:8px 10px;margin-top:12px;
+}
+.home-r48 #changes .r48-lab-feedback>span{color:#e1e9de;font-size:12px;margin-right:4px;}
+.home-r48 #changes .r48-lab-feedback button{
+  font-size:12px;color:#f9f2e5;background:#285247;
+  padding:8px 12px;border-radius:3px;min-height:44px;border:1px solid #719681;
+  cursor:pointer;
+}
+.home-r48 #changes .r48-lab-feedback button:hover{background:#356654;}
+.home-r48 #changes .r48-lab-feedback button:focus-visible,
+.home-r48 #changes .r48-wait-lab select:focus-visible{
+  outline:3px solid #edcd92;outline-offset:3px;
+}
+
+.home-r48 #changes .r47-picture-curtain {
+  background:radial-gradient(circle at 78% 28%,#1c513e,#0c2b20 73%);
+  padding:clamp(19px,4vw,34px);
+}
+.home-r48 #changes .r47-picture-curtain:not([hidden]):not(.is-leaving) i{
+  animation:r47-anticipation var(--r48-beat,680ms) cubic-bezier(.18,.68,.19,1) both;
+}
+.home-r48 #changes .r47-picture-curtain[data-beat="repeat"] strong{
+  font-size:clamp(18px,2vw,24px);
+}
+.home-r48 #changes .r48-photo-fallback{
+  position:absolute;z-index:10;inset:0;background:#0c2b20;
+  color:#f5f2e6;padding:24px;
+  display:flex;flex-direction:column;justify-content:center;
+  align-items:flex-start;gap:10px;
+}
+.home-r48 #changes .r48-photo-fallback strong{
+  font-size:clamp(17px,2vw,23px);line-height:1.5;font-weight:600;letter-spacing:-.03em;
+}
+.home-r48 #changes .r48-photo-fallback p{
+  font-size:12px;line-height:1.75;max-width:260px;color:#d2dfd3;
+}
+.home-r48 #changes .r48-photo-fallback button{
+  background:#f5ead3;color:#173629;border:0;
+  padding:9px 14px;min-height:44px;font-size:12px;
+  font-weight:600;border-radius:3px;cursor:pointer;
+}
+.home-r48 #changes .r48-photo-fallback button:focus-visible{
+  outline:3px solid #e7c37f;outline-offset:3px;
+}
+@media(max-width:639px){
+  .home-r48 #changes .r48-wait-lab {padding:15px 14px;margin:12px 0;}
+  .home-r48 #changes .r48-wait-lab-title,
+  .home-r48 #changes .r48-wait-lab-controls{display:block;}
+  .home-r48 #changes .r48-wait-lab-controls select{display:block;margin:9px 0;width:100%;}
+  .home-r48 #changes .r48-photo-fallback{padding:17px;}
+  .home-r48 #changes .r47-picture-curtain strong{font-size:clamp(19px,5vw,24px);}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-r48 #changes .r47-picture-curtain,
+  .home-r48 #changes .r47-picture-curtain i{
+    animation:none!important;transition:none!important;
+  }
+}
