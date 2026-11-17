@@ -45,10 +45,13 @@ const check = (name,pass,detail='')=> {
   }
   await page.setViewportSize({width:390,height:844});
   await page.goto(base+'/site.html',{waitUntil:'load'});
-  await page.locator('.site-nav a[href="/essay.html"]').click();
-  check('site menu opens essay',new URL(page.url()).pathname==='/essay.html');
-  await page.locator('.site-nav a[href="/webtoon/"]').click();
-  check('editorial menu opens comic',new URL(page.url()).pathname==='/webtoon/');
+  await page.locator('.mobile-quick-links summary').click();
+  check('mobile directory opens navigation',await page.locator('.mobile-quick-links').getAttribute('open')==='');
+  await page.locator('.mobile-quick-links nav a[href="/essay.html"]').click();
+  check('mobile site menu opens essay',new URL(page.url()).pathname==='/essay.html');
+  await page.locator('.mobile-quick-links summary').click();
+  await page.locator('.mobile-quick-links nav a[href="/webtoon/"]').click();
+  check('mobile editorial menu opens comic',new URL(page.url()).pathname==='/webtoon/');
   await page.locator('.site-nav a[href="/"]').click();
   check('editorial menu returns home',new URL(page.url()).pathname==='/');
  } catch(err){
