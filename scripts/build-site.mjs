@@ -3,7 +3,7 @@ import { resolve, join } from 'node:path';
 import {companyReleaseIssues, replaceCompanyFooter, footerStart, reconcileCompanyStructuredData} from './company-info.mjs';
 const root = resolve(import.meta.dirname, '..');
 const out = join(root, 'dist');
-const folders = ['experience','enterprise','process','flow-preview','assets','check','field-notes','global','img','industries','meeting','my-store','privacy','problems','prototype','review','start','webtoon','site','essay'];
+const folders = ['experience','enterprise','process','flow-preview','assets','check','field-notes','global','img','industries','meeting','my-store','privacy','problems','prototype','review','start','webtoon'];
 const production = process.env.CONTEXT === 'production' || process.argv.includes('--production');
 // Review-only social artwork must resolve on the review deploy before production
 // receives the asset. Canonical and og:url retain the established site identity.
