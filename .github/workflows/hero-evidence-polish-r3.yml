@@ -6,6 +6,10 @@ on:
       - assets/css/hero-evidence-polish-r3*.css
       - tests/hero-evidence-polish-r3.test.cjs
       - scripts/qa-hero-evidence-polish-r3.cjs
+      - scripts/qa-full-site-navigation.cjs
+      - site.html
+      - essay.html
+      - webtoon/index.html
       - .github/workflows/hero-evidence-polish-r3.yml
   workflow_dispatch:
 permissions:
@@ -39,6 +43,8 @@ jobs:
         run: |
           node scripts/qa-hero-evidence-polish-r3.cjs
           node scripts/qa-hero-evidence-polish-r2.cjs
+      - name: Full-site editorial browser QA
+        run: node scripts/qa-full-site-navigation.cjs
       - name: Preserve screenshots and reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -46,6 +52,7 @@ jobs:
           name: WEPLACE-HERO-EVIDENCE-POLISH-R3-QA
           path: |
             docs/hero-evidence-polish-r3/browser/
+            docs/full-site-launch/browser/
             test-results/
           retention-days: 14
           if-no-files-found: warn
