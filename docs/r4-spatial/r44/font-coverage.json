@@ -1,0 +1,20 @@
+{
+  "source": "pretendard@1.3.9 official npm package",
+  "license": "SIL Open Font License 1.1",
+  "fonts": [
+    {
+      "file": "assets/home-r44/WeplaceHeroSupplement-Regular.woff2",
+      "bytes": 852,
+      "sha256": "7377b4893c6472db28063e21775c19cd675e211ded3c8554607678a6db9c5f86",
+      "supplementedCharacters": "떠맛못",
+      "missingContentHangulCount": 0
+    },
+    {
+      "file": "assets/home-r44/WeplaceHeroSupplement-SemiBold.woff2",
+      "bytes": 836,
+      "sha256": "87748a0299abd629909b7b80e1ca73c646fb0e188c22118207678532c378c768",
+      "supplementedCharacters": "떠맛못",
+      "missingContentHangulCount": 0
+    }
+  ]
+}

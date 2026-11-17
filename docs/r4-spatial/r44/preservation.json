@@ -1,0 +1,13 @@
+{
+  "baseline": "49b123e0124fb3d837650bc8511bb9503f819d59",
+  "postHeroMarkupIdentical": true,
+  "postHeroMarkupSha256": "5a978b90e14c72cfeffd9242bf78e9a0d37372124dc730e19b49e32e7bdc1590",
+  "modifiedTrackedFiles": [
+    "index.html",
+    "package.json"
+  ],
+  "photoSha256": {
+    "assets/home-r42/luwei-peking-duck-640.webp": "c617d2fe2af979e841b2bad2cf7809dfcc67e0c67df86061a72258f176594798",
+    "assets/home-r42/luwei-peking-duck-1254.webp": "25db6187df6b273ab28888dd1c423bb619d8eb58d0f56dc0d1a0ab36f8989a93"
+  }
+}

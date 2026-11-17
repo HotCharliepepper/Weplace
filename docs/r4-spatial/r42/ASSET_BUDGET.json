@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "measured_on": "2026-11-03",
+  "method": "Complete local file bytes, SHA-256, Pillow dimensions and SVG XML metadata; uncompressed filesystem bytes, not measured network transfer.",
+  "photos": [
+    {
+      "path": "assets/home-r42/luwei-before-capture.webp",
+      "bytes": 61118,
+      "sha256": "cd0f2447f566167f480958e951f44ccf6469257cb49accc5aa32d1797dfc6c48",
+      "width": 908,
+      "height": 689
+    },
+    {
+      "path": "assets/home-r42/luwei-peking-duck-1254.webp",
+      "bytes": 222074,
+      "sha256": "25db6187df6b273ab28888dd1c423bb619d8eb58d0f56dc0d1a0ab36f8989a93",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "path": "assets/home-r42/luwei-peking-duck-640.webp",
+      "bytes": 80474,
+      "sha256": "c617d2fe2af979e841b2bad2cf7809dfcc67e0c67df86061a72258f176594798",
+      "width": 640,
+      "height": 640
+    }
+  ],
+  "brand_assets": [
+    {
+      "path": "assets/brand/r42/og-weplace-r42.jpg",
+      "bytes": 40038,
+      "sha256": "fce07bd945c530cf1575642256d8b768708eabd3931e171695133aa600516c45",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "assets/brand/r42/weplace-logo-dark.svg",
+      "bytes": 4851,
+      "sha256": "b47e8d572c1ac136de7b9d8eb5adb362a7b182c43d9fcdeb53865f4824fc2f33",
+      "viewBox": "0 0 400 90",
+      "width": "400",
+      "height": "90"
+    },
+    {
+      "path": "assets/brand/r42/weplace-logo-light.svg",
+      "bytes": 4851,
+      "sha256": "fef695c0c3922a2a2f38775ca6fe47c84f24a26acbfe6f4fc52a6d48bb50c559",
+      "viewBox": "0 0 400 90",
+      "width": "400",
+      "height": "90"
+    },
+    {
+      "path": "assets/brand/r42/weplace-symbol-flat.svg",
+      "bytes": 896,
+      "sha256": "411d832382fc70d5fca994622f9b9b1f0e3bb875d2bb37b4c744d607e2f4f52b",
+      "viewBox": "0 0 680 330",
+      "width": "680",
+      "height": "330"
+    },
+    {
+      "path": "assets/brand/r42/weplace-symbol.svg",
+      "bytes": 1589,
+      "sha256": "c83dd70d7c787f5457a51826701bec09bd1b60862b585511a86e5cc7f065c297",
+      "viewBox": "0 0 680 330",
+      "width": "680",
+      "height": "330"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 441,
+      "sha256": "6d62b2bee71325f4ec335bb4e6c3782a45f1e3ddf4913353c3ee5e472acda596",
+      "viewBox": "0 0 96 96",
+      "width": "96",
+      "height": "96"
+    },
+    {
+      "path": "favicon.ico",
+      "bytes": 15086,
+      "sha256": "4b9bf1fca0a5bad7875ee8e1fdeac12dcf2a10685aa98b4e38a7cc851a1eeeb7",
+      "width": 48,
+      "height": 48,
+      "frames": [
+        [
+          16,
+          16
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          48,
+          48
+        ]
+      ]
+    },
+    {
+      "path": "favicon-32.png",
+      "bytes": 995,
+      "sha256": "ee2c6e1abfa99b72e56becc5fb9d42d3972fb55e7b45e956a1f2c40591668f36",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "path": "favicon-96.png",
+      "bytes": 2841,
+      "sha256": "59b95292560f03021888ea2cd27ad827f581243e695b7e2870159ddc77bb3751",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "bytes": 3619,
+      "sha256": "76217fef05e0a4a4a97af7fac7a74df3506bf9fdeb6ba7005e7d4912b9da78dc",
+      "width": 180,
+      "height": 180
+    },
+    {
+      "path": "assets/home-r2/brand-symbol.png",
+      "bytes": 30251,
+      "sha256": "9b92081f20be95091c686da368c6ffdcb6c4af3bff38c7705ec9001018cab06d",
+      "width": 680,
+      "height": 330
+    }
+  ],
+  "photo_source_not_deployed": {
+    "path": "제공된 베이징덕 PNG (배포하지 않음)",
+    "bytes": 3347823,
+    "sha256": "4f4496b3dc4e2f0742b40c691c964fca40200147385236546230ed694cb264eb",
+    "width": 1254,
+    "height": 1254
+  },
+  "preserved_legacy_photo": {
+    "path": "assets/home-r2/example-space.webp",
+    "bytes": 38632,
+    "sha256": "0f5876a019e26c4397d7a96f3e01adbfdb237619b3c12e00b23294b105605242",
+    "width": 1280,
+    "height": 813,
+    "matches_original_baseline": true
+  },
+  "before_capture_matches_supplied_bytes": true,
+  "totals": {
+    "photo_files_bytes": 363666,
+    "brand_files_bytes": 105458,
+    "listed_deploy_assets_bytes": 469124
+  },
+  "review_budgets": {
+    "status": "R4.2 asset-size review limits; not a Core Web Vitals pass",
+    "food_640_max_bytes": 90000,
+    "food_1254_max_bytes": 250000,
+    "before_capture_max_bytes": 70000,
+    "og_image_max_bytes": 50000,
+    "all_listed_assets_max_bytes": 500000
+  },
+  "runtime": {
+    "food_srcset_widths": [
+      640,
+      1254
+    ],
+    "loading": "lazy",
+    "decoding": "async",
+    "default_food_src_width": 1254,
+    "before_capture_srcset": "removed while before state is active",
+    "retained_legacy_photo_in_r42_main_example": false
+  },
+  "limits": "Both responsive candidates are included in totals, although browser selection typically fetches one. Zoom, density, cache and tab interaction affect actual requests; no transfer, LCP or CLS claim is made."
+}

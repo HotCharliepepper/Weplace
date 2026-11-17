@@ -1,0 +1,215 @@
+{
+  "method": "WCAG sRGB contrast, foreground opacity composited over authored surface colors; gradient stops bound contrast, text shadows excluded",
+  "pairs": [
+    {
+      "name": "active phrase",
+      "fg": "#173e2b",
+      "bg": [
+        "#f1f2e8",
+        "#e2ebdf",
+        "#c9ddce",
+        "#d8e7d5"
+      ],
+      "opacity": 1,
+      "threshold": 3,
+      "ratios": [
+        10.57,
+        9.76,
+        8.36,
+        9.27
+      ]
+    },
+    {
+      "name": "inactive phrase",
+      "fg": "#254b34",
+      "bg": [
+        "#f1f2e8",
+        "#e2ebdf",
+        "#c9ddce",
+        "#d8e7d5"
+      ],
+      "opacity": 0.65,
+      "threshold": 3,
+      "ratios": [
+        3.53,
+        3.4,
+        3.15,
+        3.31
+      ]
+    },
+    {
+      "name": "active word caption",
+      "fg": "#2b5440",
+      "bg": [
+        "#f1f2e8",
+        "#e2ebdf",
+        "#c9ddce",
+        "#d8e7d5"
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "ratios": [
+        7.61,
+        7.03,
+        6.02,
+        6.67
+      ]
+    },
+    {
+      "name": "inactive word caption",
+      "fg": "#4a624d",
+      "bg": [
+        "#f1f2e8",
+        "#e2ebdf",
+        "#c9ddce",
+        "#d8e7d5"
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "ratios": [
+        5.92,
+        5.46,
+        4.68,
+        5.19
+      ]
+    },
+    {
+      "name": "mobile axis",
+      "fg": "#4b624e",
+      "bg": [
+        "#f8f9f0"
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "ratios": [
+        6.27
+      ]
+    },
+    {
+      "name": "mobile data labels",
+      "fg": "#28593c",
+      "bg": [
+        "#f8f9f0"
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "ratios": [
+        7.66
+      ]
+    },
+    {
+      "name": "contact emphasis",
+      "fg": "#507259",
+      "bg": [
+        "#f5f4ec"
+      ],
+      "opacity": 1,
+      "threshold": 3,
+      "ratios": [
+        4.89
+      ]
+    },
+    {
+      "name": "CX added supporting text",
+      "fg": "#526852",
+      "bg": [
+        "#f5f4ec"
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "ratios": [
+        5.5
+      ]
+    },
+    {
+      "name": "footer heading",
+      "fg": "#a9c9ae",
+      "bg": [
+        "#162e24",
+        "#20402e"
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "ratios": [
+        8.03,
+        6.35
+      ]
+    },
+    {
+      "name": "footer links",
+      "fg": "#ecf2e8",
+      "bg": [
+        "#162e24",
+        "#20402e"
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "ratios": [
+        12.71,
+        10.05
+      ]
+    },
+    {
+      "name": "footer caption",
+      "fg": "#c5d8c0",
+      "bg": [
+        "#162e24",
+        "#20402e"
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "ratios": [
+        9.62,
+        7.61
+      ]
+    },
+    {
+      "name": "muted2023 graph",
+      "fg": "#687d6f",
+      "bg": [
+        "#f8f9f0"
+      ],
+      "opacity": 0.45,
+      "threshold": 3,
+      "ratios": [
+        1.75
+      ]
+    },
+    {
+      "name": "muted2024 graph",
+      "fg": "#536c7a",
+      "bg": [
+        "#f8f9f0"
+      ],
+      "opacity": 0.45,
+      "threshold": 3,
+      "ratios": [
+        1.89
+      ]
+    },
+    {
+      "name": "muted2025 graph",
+      "fg": "#8b704d",
+      "bg": [
+        "#f8f9f0"
+      ],
+      "opacity": 0.45,
+      "threshold": 3,
+      "ratios": [
+        1.78
+      ]
+    },
+    {
+      "name": "photo exterior return control",
+      "fg": "#e4efdc",
+      "bg": [
+        "#233c2d"
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "ratios": [
+        10.07
+      ]
+    }
+  ]
+}

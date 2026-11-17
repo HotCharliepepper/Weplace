@@ -1,0 +1,141 @@
+{
+  "file": "paULgpd0M3t3s4q1SG361a",
+  "page": "132:2",
+  "maps": {
+    "board": "132:3",
+    "desktop": "132:105",
+    "mobile": "132:160",
+    "keyframes": [
+      {
+        "time": 0,
+        "desktop": "132:254",
+        "mobile": "132:334"
+      },
+      {
+        "time": 3,
+        "desktop": "132:403",
+        "mobile": "132:483"
+      },
+      {
+        "time": 8,
+        "desktop": "132:552",
+        "mobile": "132:632"
+      }
+    ]
+  },
+  "contentBoard": "135:198",
+  "contentFrames": [
+    "135:200",
+    "135:231",
+    "135:251",
+    "135:282"
+  ],
+  "counts": {
+    "TEXT": 250,
+    "FRAME": 133,
+    "INSTANCE": 33,
+    "GROUP": 28,
+    "VECTOR": 194,
+    "RECTANGLE": 16,
+    "COMPONENT": 6
+  },
+  "imageNodes": [
+    {
+      "id": "I132:21;117:104",
+      "name": "Photo / unmodified provided Luwei image",
+      "type": "FRAME",
+      "w": 457,
+      "h": 457
+    },
+    {
+      "id": "132:74",
+      "name": "Mobile poster / no autoplay",
+      "type": "FRAME",
+      "w": 350,
+      "h": 330
+    },
+    {
+      "id": "I135:308;132:608",
+      "name": "Luwei original photo / unchanged pixels",
+      "type": "RECTANGLE",
+      "w": 604.7999877929688,
+      "h": 424.79998779296875
+    },
+    {
+      "id": "I135:328;132:677",
+      "name": "Luwei original photo / unchanged pixels",
+      "type": "RECTANGLE",
+      "w": 315,
+      "h": 264
+    },
+    {
+      "id": "132:310",
+      "name": "Luwei original photo / unchanged pixels",
+      "type": "RECTANGLE",
+      "w": 604.7999877929688,
+      "h": 424.79998779296875
+    },
+    {
+      "id": "132:379",
+      "name": "Luwei original photo / unchanged pixels",
+      "type": "RECTANGLE",
+      "w": 315,
+      "h": 264
+    },
+    {
+      "id": "132:459",
+      "name": "Luwei original photo / unchanged pixels",
+      "type": "RECTANGLE",
+      "w": 604.7999877929688,
+      "h": 424.79998779296875
+    },
+    {
+      "id": "132:528",
+      "name": "Luwei original photo / unchanged pixels",
+      "type": "RECTANGLE",
+      "w": 315,
+      "h": 264
+    },
+    {
+      "id": "132:608",
+      "name": "Luwei original photo / unchanged pixels",
+      "type": "RECTANGLE",
+      "w": 604.7999877929688,
+      "h": 424.79998779296875
+    },
+    {
+      "id": "132:677",
+      "name": "Luwei original photo / unchanged pixels",
+      "type": "RECTANGLE",
+      "w": 315,
+      "h": 264
+    }
+  ],
+  "heroComponents": [
+    {
+      "frame": "132:254",
+      "component": "135:302"
+    },
+    {
+      "frame": "132:334",
+      "component": "135:303"
+    },
+    {
+      "frame": "132:403",
+      "component": "135:304"
+    },
+    {
+      "frame": "132:483",
+      "component": "135:305"
+    },
+    {
+      "frame": "132:552",
+      "component": "135:306"
+    },
+    {
+      "frame": "132:632",
+      "component": "135:307"
+    }
+  ],
+  "fontValidation": "Noto Sans KR substituted for unavailable Pretendard; web uses actual Pretendard"
+}

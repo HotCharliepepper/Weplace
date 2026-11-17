@@ -1,0 +1,65 @@
+[
+  {
+    "name": "store choices + keyboard + native disclosure",
+    "active": "sample-cta",
+    "bookingOpen": true,
+    "bookingText": "예약 안내가 이어지는 구성 예시입니다.\n\n관리 내용과 이용 조건 확인\n예약·문의 채널 선택\n매장 안내에 따라 예약 확정\n\n이 예시에서는 예약 채널로 이동하거나 예약을 확정하지 않습니다.",
+    "overflow": false,
+    "question": "terms",
+    "selected": "after",
+    "visibleAnswer": [
+      "terms"
+    ]
+  },
+  {
+    "name": "desktop-store-keyboard-and-disclosure",
+    "width": 1440,
+    "selected": "true",
+    "question": "true",
+    "bookingOpen": true
+  },
+  {
+    "name": "desktop-flow-keyboard",
+    "width": 1440,
+    "selected": "true",
+    "labelledBy": "flow-next"
+  },
+  {
+    "name": "mobile-menu-escape",
+    "width": 390,
+    "openThenClosed": true
+  },
+  {
+    "name": "mobile-store-question",
+    "width": 390,
+    "selected": "booking",
+    "ariaPressed": true
+  },
+  {
+    "name": "no-js-static-content",
+    "width": 320,
+    "beforeAfterDisclosure": true,
+    "allThreeStoreAnswers": true,
+    "allThreeFlowStates": true,
+    "formSafelyDisabled": true
+  },
+  {
+    "name": "no-gsap-manual-request",
+    "width": 390,
+    "gsapAbsent": true,
+    "status": "내용이 준비되었습니다. 아직 전송되지 않았습니다.",
+    "externalSend": false
+  },
+  {
+    "name": "case-dialog-escape",
+    "dialogClosed": true,
+    "focusRestored": "비교 자료 자세히 보기 ↗"
+  },
+  {
+    "name": "missing-photo",
+    "width": 390,
+    "naturalWidth": 0,
+    "reservedHeight": 195.047,
+    "horizontalOverflow": false
+  }
+]

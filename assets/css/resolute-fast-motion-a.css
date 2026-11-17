@@ -1,0 +1,34 @@
+@font-face{font-family:RF Sans;src:url('/assets/resolute-fast-motion-a/fonts/WeplaceMotionA.woff2') format('woff2');font-weight:400;font-display:swap;unicode-range:U+AED0,U+B044,U+B9BD,U+C158,U+C9D0,U+C9E7,U+CDE8,U+D0DC}
+/* MOTION A — a shallow printed edge, never a 3D renderer. Static is the default. */
+.rf-title-top{color:#2d4537}
+.rf-title-bottom{color:#293f32}
+.rf-fast{color:#20392b}
+.rf-fast-body{display:inline-block;position:relative;z-index:2;transform-origin:35% 70%}
+.rf-fast-face,.rf-fast-depth,.rf-fast .rf-trail{display:inline-flex;white-space:nowrap;line-height:inherit}
+.rf-fast-face{background:none;color:#20392b}
+.rf-fast-face>span{background:linear-gradient(112deg,#1d3527 10%,#294632 68%,#3e5a42 91%,#526e54 100%);background-clip:text;-webkit-background-clip:text;color:transparent;paint-order:stroke fill;-webkit-text-stroke:.012em #213c2b}
+.rf-fast-face>span:nth-child(2){-webkit-text-stroke:.009em #294631}
+.rf-fast-face>span:nth-child(3){-webkit-text-stroke:.006em #314c36}
+.rf-fast-face>span:nth-child(4){-webkit-text-stroke:.003em #39553e}
+.rf-fast-face>span:nth-child(5){-webkit-text-stroke:.001em #425e46}
+.rf-fast-depth{position:absolute;inset:0;z-index:0;pointer-events:none;user-select:none;color:#829779;transform:translate(.012em,.02em);text-shadow:0 .007em 0 #b0be9f,.009em .009em 0 #607658;opacity:.68}
+.rf-fast .rf-trail{inset:0;z-index:1;filter:none;transform:none;opacity:0;color:#5e7957;pointer-events:none;user-select:none}
+.rf-fast .rf-trail-left.near{mask-image:linear-gradient(90deg,#000 12%,#0009 65%,transparent 98%)}
+.rf-fast .rf-trail-left.far{mask-image:linear-gradient(90deg,#000 0%,#0007 45%,transparent 92%)}
+.rf-fast .rf-trail-right{transform:translate(.035em,-.004em);opacity:.035;color:#9caf91;mask-image:linear-gradient(90deg,transparent 72%,#000)}
+.rf-fast.is-fast-playing .rf-fast-body,.rf-fast.is-fast-playing .rf-trail-left{will-change:transform,opacity}
+.rf-fast-tools{display:flex;align-items:center;flex-wrap:wrap;gap:0 14px;margin-top:14px;max-width:380px;color:#4c624e}
+.rf-fast-tools button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:95px;min-height:44px;padding:8px 6px;background:transparent;border:0;border-radius:4px;font:inherit;font-size:11px;color:inherit;cursor:pointer}
+.rf-fast-tools button:disabled{opacity:.55;cursor:default}
+.rf-fast-tools button:hover:not(:disabled){background:#c7d4c029}
+.rf-fast-tools button[aria-pressed=true]{color:#25452d}
+.rf-fast-tools button[aria-pressed=true] .rf-sound-slash{display:none}
+.rf-fast-tools svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.rf-fast-tools p{flex-basis:100%;font-size:10px;line-height:1.6;min-height:32px;margin:0 0 0 6px;max-width:34em}
+@media(max-width:480px){.rf-fast-depth{transform:translate(.009em,.018em);text-shadow:0 .007em 0 #a6b797,.007em .007em 0 #6b805e}.rf-fast-tools{margin-top:10px;gap:0 10px}.rf-fast-tools p{font-size:9px;min-height:29px}}
+@media(prefers-reduced-motion:reduce){.rf-fast-body{transform:none!important}.rf-fast .rf-trail{opacity:0!important;transform:none!important}}
+html[data-rf-motion=off] .rf-fast-body{transform:none!important}
+html[data-rf-motion=off] .rf-fast .rf-trail{opacity:0!important;transform:none!important}
+@media(forced-colors:active){.rf-fast-face>span{background:none;color:CanvasText;-webkit-text-stroke:0}.rf-fast-depth,.rf-fast .rf-trail{display:none}}
+/* Inline map labels must share the bundled Korean font, even on Latin-only systems. */
+.rf-route-map svg text{font-family:var(--rf-font)}

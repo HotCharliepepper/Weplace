@@ -1,0 +1,31 @@
+await figma.setCurrentPageAsync(await figma.getNodeByIdAsync('104:274'));
+const page=figma.currentPage,created=[],mutated=[];
+const font={family:'Noto Sans KR',style:'Regular'},bold={family:'Noto Sans KR',style:'Bold'};
+await figma.loadFontAsync(font);await figma.loadFontAsync(bold);
+const vars={};for(const [k,id] of Object.entries({paper:'VariableID:2:10',ink:'VariableID:50:3',green:'VariableID:50:15',muted:'VariableID:2:16',gold:'VariableID:50:8',line:'VariableID:2:24'}))vars[k]=await figma.variables.getVariableByIdAsync(id);
+const paint=k=>figma.variables.setBoundVariableForPaint({type:'SOLID',color:{r:0,g:0,b:0}},'color',vars[k]);
+function track(n){created.push(n.id);return n;}
+function box(parent,name,width,direction='VERTICAL',gap=20,pad=0,fill=null){const n=track(figma.createAutoLayout(direction));n.name=name;n.resize(width,10);n.primaryAxisSizingMode=direction==='VERTICAL'?'AUTO':'FIXED';n.counterAxisSizingMode=direction==='VERTICAL'?'FIXED':'AUTO';n.itemSpacing=gap;n.paddingTop=n.paddingBottom=n.paddingLeft=n.paddingRight=pad;n.fills=fill?[paint(fill)]:[];parent.appendChild(n);return n;}
+function text(parent,value,width,size=14,color='ink',weight=false){const n=track(figma.createText());n.name=value.slice(0,60);n.fontName=weight?bold:font;n.characters=value;n.fontSize=size;n.lineHeight={unit:'PERCENT',value:150};n.fills=[paint(color)];n.resize(width,10);n.textAutoResize='HEIGHT';parent.appendChild(n);if(parent.type!=='PAGE')n.layoutSizingVertical='HUG';return n;}
+const logo=await figma.getNodeByIdAsync('48:2'),button=await figma.getNodeByIdAsync('2:66');
+for(const t of button.findAllWithCriteria({types:['TEXT']}))for(const s of t.getStyledTextSegments(['fontName']))await figma.loadFontAsync(s.fontName);
+function logoAt(parent,width){const n=track(logo.createInstance());parent.appendChild(n);n.resize(400,90);n.rescale(width/400);created.push(...n.findAll(()=>true).map(n=>n.id));return n;}
+function btn(parent,label,width,outline=false){const n=track(button.createInstance());parent.appendChild(n);n.resize(width,50);n.fills=outline?[]:[paint('paper')];n.strokes=outline?[paint('paper')]:[];n.cornerRadius=3;for(const t of n.findAllWithCriteria({types:['TEXT']})){t.characters=label;t.fontSize=13;t.fontName=font;t.fills=[paint(outline?'paper':'green')];}created.push(...n.findAll(()=>true).map(n=>n.id));return n;}
+function question(parent,width,mobile){const card=box(parent,'Question / editable text + native logo',width,'VERTICAL',mobile?24:32,mobile?22:44,'paper');card.cornerRadius=4;const inner=width-(mobile?44:88);text(card,'●  매장을 함께 보는 질문 01',inner,12,'green');text(card,'우리 매장 첫 사진은,\n손님에게 무엇을\n알려주나요?',inner,mobile?27:43,'ink',true);const foot=box(card,'Card footer',inner,mobile?'VERTICAL':'HORIZONTAL',16,0);logoAt(foot,mobile?118:132);text(foot,'살펴볼 질문입니다.\n실제 분석 결과가 아닙니다.',mobile?inner:200,12,'muted');return card;}
+const frames=[];
+for(const mobile of [false,true])for(const before of [true,false]){
+ const width=mobile?390:1440,pad=mobile?20:80,inner=width-pad*2;
+ const f=box(page,(before?'BEFORE / PR18':'AFTER / REFINED')+' / '+(mobile?'Mobile 390':'Desktop 1440')+' / 마지막 장면',width,mobile?'VERTICAL':'HORIZONTAL',mobile?32:80,pad,'green');
+ f.paddingTop=f.paddingBottom=mobile?56:80;f.x=200+(before?0:1540)+(mobile?3000:0);f.y=3500;f.counterAxisAlignItems='CENTER';
+ if(before){const left=box(f,'Closing message',mobile?inner:620);text(left,'다음 손님을 만나기 전에',left.width,12,'gold');text(left,'오늘, 손님이 볼\n첫 화면부터.',left.width,mobile?38:64,'paper',true);text(left,'작은 변화 하나가 시작되는 자리.\n우리 매장의 다음 장면을 함께 만듭니다.',left.width,16,'paper');btn(left,'첫 화면 진단받기 ↗',210);const right=box(f,'Old generic sharing',mobile?inner:580);text(right,'↗',right.width,40,'gold');text(right,'좋은 매장이\n더 잘 전해지도록.',right.width,29,'paper');text(right,'이 관점 공유하기 ↗',right.width,14,'paper');text(right,'함께 나눌 문장',right.width,12,'paper');const field=box(right,'Always visible copy field',right.width,'VERTICAL',8,14);field.strokes=[paint('paper')];text(field,'손님이 선택할 이유를 선명하게.\n사진과 안내, 다음 행동을 하나의 매장으로.\n— Weplace',right.width-28,12,'paper');}
+ else{question(f,mobile?inner:623,mobile);const right=box(f,'Action and diagnosis',mobile?inner:577);text(right,'다음 손님을 만나기 전에',right.width,12,'gold');text(right,'팀과 함께,\n첫인상을 살펴보세요.',right.width,mobile?25:30,'paper',true);text(right,'메뉴인지, 공간인지, 이용 방법인지.\n사진에서 바로 보이는 것을 나눠보세요.',right.width,15,'paper');const controls=box(right,'Save · copy · device share',right.width,'HORIZONTAL',8);for(const label of ['카드 저장 ↓','링크 복사 ↗','팀에 공유 ↗'])btn(controls,label,mobile?111:112,true);text(right,'공유할 문장 보기 ＋',right.width,12,'paper');text(right,'질문 카드만 열기 ↗',right.width,13,'paper');text(right,'한 곳을 살펴보고, 개선안 한 가지를 드립니다.',right.width,12,'paper');btn(right,'첫 화면 진단받기 · 0원 ↗',mobile?inner:250);}
+ frames.push({id:f.id,name:f.name,width:f.width,height:f.height});
+}
+// Mobile hero states share the shorter, less tilted composition in the web.
+for(const [i,id] of ['104:452','104:511','104:570'].entries()){
+ const f=await figma.getNodeByIdAsync(id);for(const t of f.findAllWithCriteria({types:['TEXT']}))for(const s of t.getStyledTextSegments(['fontName']))await figma.loadFontAsync(s.fontName);
+ const stage=f.findOne(n=>n.type==='FRAME'&&n.name.startsWith('Scene /'));
+ if(stage){stage.resize(342,280);mutated.push(stage.id);const poses=[[-14,20,-11],[ -36,10,-4],[-6,14,-3]];const planes=stage.children.filter(n=>['PHOTO','INFORMATION','NEXT STEP'].includes(n.name));const xs=[0,190,380],sets=[[[-14,20,-11],[8,-28,5],[16,28,-4]],[[-36,10,-4],[0,-8,-4],[36,-26,-4]],[[-6,14,-3],[0,0,-3],[6,-14,-3]]];planes.forEach((n,j)=>{n.rescale(.52/.6);n.x=25+(xs[j]+sets[i][j][0]*.6)*.52;n.y=60+sets[i][j][1]*.6*.52;n.rotation=-sets[i][j][2]*.4;mutated.push(n.id,...n.findAll(()=>true).map(n=>n.id));});}
+}
+const note=text(page,'기준: PR #18 · 9e3df4f. 원본 페이지와 6개 히어로 상태를 보존했습니다.\n수정: 카드 영역 기준 크기 · 모바일 기울임/시간 축소 · 조건/근거 12px 이상 · 질문 저장/공유.\n웹의 문장과 CTA는 모션 전부터 표시됩니다. Figma의 공유 버튼은 시각 검토용이며 실제 복사·기기 공유·파일 저장은 Preview에서 작동합니다.\n첫 진단: 0원 / 매장 1곳 / 공개 채널 1개 / 직접 써볼 개선안 1개. 실결제·실DB·인증 변경 없음.\nFigma: Noto Sans KR(기존 파일 제공 폰트). 웹: Pretendard + 한글 보완 폰트. 완전한 픽셀 일치를 주장하지 않습니다.',1600,18,'ink');note.x=200;note.y=4750;
+return {frames,createdNodeIds:created,mutatedNodeIds:mutated};
