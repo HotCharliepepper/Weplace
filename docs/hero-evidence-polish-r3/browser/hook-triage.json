@@ -1,0 +1,3256 @@
+[
+  {
+    "width": 360,
+    "route": "unified-r3-hero-polish.html",
+    "small": [
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "u-source",
+        "id": "",
+        "text": "음식점 A · 2026년 5월–6월 월매출 비교 기간별 관측값이며, 개별 작업의 매출 기여도는 분리되지 않았습니다.",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "음식점 A / 월매출",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.05 — 06",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "2억",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "1억",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "0",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "5월",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "6월",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "막대: 월매출 · 선: 두 관측값 연결",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "u-chart-source",
+        "id": "",
+        "text": "출처: 기존 홈페이지에 정리된 제공 매출 자료의 비교 수치.",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "classes": "",
+        "id": "",
+        "text": "원값과 계산식 ↓",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "02 / A CLEAR NEXT STEP",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "공간 진입을 표현한 참고 이미지 · 실제 고객 사례가 아닙니다",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "LOOK AGAIN.",
+        "font": 7,
+        "renderedPx": 7
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "03 / 직접 보면 달라집니다",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "주소",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "주소 복사 · 지도 보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "사진 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "소식 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "소개 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "소식 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "rf-eyebrow",
+        "id": "scene-kicker",
+        "text": "ARRIVAL / 02",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "scene-bottom",
+        "text": "주소 · 소개 · 소식, 따로 확인",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "classes": "",
+        "id": "",
+        "text": "우리 매장도 살펴보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "↗",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#work",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "04 / FROM THE FIRST LOOK TO THE NEXT STEP",
+        "font": 8,
+        "renderedPx": 8
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "05 / 함께하는 방식",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.05 / 이미 발생하던 유입",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.08 / 이후 관측값",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "01",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "결과물",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "02",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "확인 기준",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "03",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "다음 작업",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "조금 더 살펴보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "06 / 근거를 확인하는 자리",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "관측 기록",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "음식점 A · 익명 공개",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "01 / 작업 과정",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "02 / WEPLACE FLOW",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "03 / 더 살펴보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "WEPLACE / FIRST LOOK",
+        "font": 8,
+        "renderedPx": 8
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "1장 진단서 · 구성 예시",
+        "font": 8,
+        "renderedPx": 8
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "01",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "02",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "03",
+        "font": 10,
+        "renderedPx": 10
+      }
+    ],
+    "borders": [
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "직접 살펴보기 ↓",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 22,
+          "right": 153.140625,
+          "width": 131.140625,
+          "height": 50
+        },
+        "gaps": {
+          "left": 19,
+          "right": 19,
+          "top": 16.5,
+          "bottom": 16.5
+        },
+        "padding": [
+          "13px",
+          "18px",
+          "13px",
+          "18px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "직접 바꿔보기 ↗",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 22,
+          "right": 153.140625,
+          "width": 131.140625,
+          "height": 50
+        },
+        "gaps": {
+          "left": 19,
+          "right": 19,
+          "top": 16.5,
+          "bottom": 16.5
+        },
+        "padding": [
+          "13px",
+          "18px",
+          "13px",
+          "18px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2023년 −10.6%",
+        "classes": "",
+        "borderBox": {
+          "left": 36,
+          "right": 150.515625,
+          "width": 114.515625,
+          "height": 43
+        },
+        "gaps": {
+          "left": 14,
+          "right": 14,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "13px",
+          "9px",
+          "13px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2024년 −1.0%",
+        "classes": "",
+        "borderBox": {
+          "left": 157.515625,
+          "right": 264.953125,
+          "width": 107.4375,
+          "height": 43
+        },
+        "gaps": {
+          "left": 14,
+          "right": 14,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "13px",
+          "9px",
+          "13px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2025년 −15.8%",
+        "classes": "",
+        "borderBox": {
+          "left": 36,
+          "right": 150.515625,
+          "width": 114.515625,
+          "height": 43
+        },
+        "gaps": {
+          "left": 14,
+          "right": 14,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "13px",
+          "9px",
+          "13px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2026년 +12.2%",
+        "classes": "",
+        "borderBox": {
+          "left": 157.515625,
+          "right": 272.03125,
+          "width": 114.515625,
+          "height": 43
+        },
+        "gaps": {
+          "left": 14,
+          "right": 14,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "13px",
+          "9px",
+          "13px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "4개년 모두 강조",
+        "classes": "he-show-all",
+        "borderBox": {
+          "left": 36,
+          "right": 144.046875,
+          "width": 108.046875,
+          "height": 43
+        },
+        "gaps": {
+          "left": 14,
+          "right": 14,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "13px",
+          "9px",
+          "13px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2026년만 강조",
+        "classes": "he-show-all",
+        "borderBox": {
+          "left": 151.046875,
+          "right": 254.890625,
+          "width": 103.84375,
+          "height": 43
+        },
+        "gaps": {
+          "left": 14,
+          "right": 14,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "13px",
+          "9px",
+          "13px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "사진은 보셨죠? 메뉴도 한번 볼까요? ↗",
+        "classes": "he-photo-peek",
+        "borderBox": {
+          "left": 44,
+          "right": 287.453125,
+          "width": 243.453125,
+          "height": 48.1875
+        },
+        "gaps": {
+          "left": 20,
+          "right": 20,
+          "top": 14,
+          "bottom": 15.19
+        },
+        "padding": [
+          "14px",
+          "19px",
+          "14px",
+          "19px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "← 외관 다시 보기",
+        "classes": "",
+        "borderBox": {
+          "left": 44,
+          "right": 168.328125,
+          "width": 124.328125,
+          "height": 44
+        },
+        "gaps": {
+          "left": 18,
+          "right": 18,
+          "top": 13.5,
+          "bottom": 13.5
+        },
+        "padding": [
+          "10px",
+          "17px",
+          "10px",
+          "17px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "메뉴도 한번 볼까요? ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 44,
+          "right": 206.59375,
+          "width": 162.59375,
+          "height": 44
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 13.5,
+          "bottom": 13.5
+        },
+        "padding": [
+          "10px",
+          "22px",
+          "10px",
+          "22px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "사진 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 22,
+          "right": 109.375,
+          "width": 87.375,
+          "height": 48
+        },
+        "gaps": {
+          "left": 13,
+          "right": 13,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "10px",
+          "12px",
+          "10px",
+          "12px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "찾아오는 길 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 116.375,
+          "right": 243.625,
+          "width": 127.25,
+          "height": 48
+        },
+        "gaps": {
+          "left": 13,
+          "right": 13,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "10px",
+          "12px",
+          "10px",
+          "12px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "예약 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 250.625,
+          "right": 338,
+          "width": 87.375,
+          "height": 48
+        },
+        "gaps": {
+          "left": 13,
+          "right": 13,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "10px",
+          "12px",
+          "10px",
+          "12px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "01 / SERVICE바꾸는 일사진네이버 · 구글홈페이지이용 안내어떤 사진을 먼저 보고,어디에서 다음 행동을 찾을지.실제 화면 비교 ↗",
+        "classes": "rf-proof-card rf-proof-service",
+        "borderBox": {
+          "left": 22,
+          "right": 338,
+          "width": 316,
+          "height": 388.0625
+        },
+        "gaps": {
+          "left": 25,
+          "right": 25,
+          "top": 26,
+          "bottom": 25
+        },
+        "padding": [
+          "24px",
+          "24px",
+          "24px",
+          "24px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "02 / WELLNESS B · PLACE INFLOW기록으로 보는 변화\n    +168%\n    \n      2026.05 / 이미 발생하던 유입877회\n      2026.08 / 이후 관측값2,350회\n    \n    플레이스 상세 유입877회 → 2,350회\n    제공된 통계 비교입니다. 방문 고객 수·광고 클릭률 또는 Weplace 작업 기여율이 아닙니다.\n    전후 수치 직접 비교 ↗",
+        "classes": "rf-proof-card rf-proof-case evi-inflow-card",
+        "borderBox": {
+          "left": 22,
+          "right": 338,
+          "width": 316,
+          "height": 509.25
+        },
+        "gaps": {
+          "left": 25,
+          "right": 25,
+          "top": 26,
+          "bottom": 25
+        },
+        "padding": [
+          "24px",
+          "24px",
+          "24px",
+          "24px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "03 / WEPLACE FLOW함께 보는 진행01작업 기록결과물02별도 검수확인 기준03대표님 확인다음 작업무엇을 바꿨는지,무엇을 다시 볼지 남깁니다.FLOW 운영 방식 ↗",
+        "classes": "rf-proof-card rf-proof-flow",
+        "borderBox": {
+          "left": 22,
+          "right": 338,
+          "width": 316,
+          "height": 399.0625
+        },
+        "gaps": {
+          "left": 25,
+          "right": 25,
+          "top": 26,
+          "bottom": 25
+        },
+        "padding": [
+          "24px",
+          "24px",
+          "24px",
+          "24px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "#contact",
+        "tag": "A",
+        "text": "첫 화면 진단 문의 ↗",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 22,
+          "right": 169.21875,
+          "width": 147.21875,
+          "height": 50
+        },
+        "gaps": {
+          "left": 19,
+          "right": 19,
+          "top": 16.5,
+          "bottom": 16.5
+        },
+        "padding": [
+          "13px",
+          "18px",
+          "13px",
+          "18px"
+        ],
+        "font": 12
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "unified-r3-hero-polish-r3.html",
+    "small": [
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "u-source",
+        "id": "",
+        "text": "음식점 A · 2026년 5월–6월 월매출 비교 기간별 관측값이며, 개별 작업의 매출 기여도는 분리되지 않았습니다.",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "음식점 A / 월매출",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.05 — 06",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "2억",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "1억",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "0",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "5월",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "text",
+        "classes": "",
+        "id": "",
+        "text": "6월",
+        "font": 17,
+        "renderedPx": 9.1534375
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "막대: 월매출 · 선: 두 관측값 연결",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "u-chart-source",
+        "id": "",
+        "text": "출처: 기존 홈페이지에 정리된 제공 매출 자료의 비교 수치.",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "classes": "",
+        "id": "",
+        "text": "원값과 계산식 ↓",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "02 / A CLEAR NEXT STEP",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "공간 진입을 표현한 참고 이미지 · 실제 고객 사례가 아닙니다",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "LOOK AGAIN.",
+        "font": 7,
+        "renderedPx": 7
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "03 / 직접 보면 달라집니다",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "주소",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "주소 복사 · 지도 보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "사진 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "소식 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "소개 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "소식 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "rf-eyebrow",
+        "id": "scene-kicker",
+        "text": "ARRIVAL / 02",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "scene-bottom",
+        "text": "주소 · 소개 · 소식, 따로 확인",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "classes": "",
+        "id": "",
+        "text": "우리 매장도 살펴보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "↗",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#work",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "04 / FROM THE FIRST LOOK TO THE NEXT STEP",
+        "font": 8,
+        "renderedPx": 8
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "05 / 함께하는 방식",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.05 / 이미 발생하던 유입",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.08 / 이후 관측값",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "01",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "결과물",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "02",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "확인 기준",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "03",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "다음 작업",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "조금 더 살펴보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "rf-eyebrow",
+        "id": "",
+        "text": "06 / 근거를 확인하는 자리",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "관측 기록",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "음식점 A · 익명 공개",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "01 / 작업 과정",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "02 / WEPLACE FLOW",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "03 / 더 살펴보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "WEPLACE / FIRST LOOK",
+        "font": 8,
+        "renderedPx": 8
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "1장 진단서 · 구성 예시",
+        "font": 8,
+        "renderedPx": 8
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "01",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "02",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "03",
+        "font": 10,
+        "renderedPx": 10
+      }
+    ],
+    "borders": [
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "직접 살펴보기 ↓",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 22,
+          "right": 153.140625,
+          "width": 131.140625,
+          "height": 50
+        },
+        "gaps": {
+          "left": 19,
+          "right": 19,
+          "top": 16.5,
+          "bottom": 16.5
+        },
+        "padding": [
+          "13px",
+          "18px",
+          "13px",
+          "18px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "직접 바꿔보기 ↗",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 22,
+          "right": 153.140625,
+          "width": 131.140625,
+          "height": 50
+        },
+        "gaps": {
+          "left": 19,
+          "right": 19,
+          "top": 16.5,
+          "bottom": 16.5
+        },
+        "padding": [
+          "13px",
+          "18px",
+          "13px",
+          "18px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2023년 −10.6%",
+        "classes": "",
+        "borderBox": {
+          "left": 36,
+          "right": 176,
+          "width": 140,
+          "height": 44
+        },
+        "gaps": {
+          "left": 36.73,
+          "right": 16.75,
+          "top": 13.2,
+          "bottom": 13.8
+        },
+        "padding": [
+          "9px",
+          "6px",
+          "9px",
+          "6px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2024년 −1.0%",
+        "classes": "",
+        "borderBox": {
+          "left": 184,
+          "right": 324,
+          "width": 140,
+          "height": 44
+        },
+        "gaps": {
+          "left": 40.28,
+          "right": 20.28,
+          "top": 13.2,
+          "bottom": 13.8
+        },
+        "padding": [
+          "9px",
+          "6px",
+          "9px",
+          "6px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2025년 −15.8%",
+        "classes": "",
+        "borderBox": {
+          "left": 36,
+          "right": 176,
+          "width": 140,
+          "height": 44
+        },
+        "gaps": {
+          "left": 36.73,
+          "right": 16.75,
+          "top": 13.2,
+          "bottom": 13.8
+        },
+        "padding": [
+          "9px",
+          "6px",
+          "9px",
+          "6px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2026년 +12.2%",
+        "classes": "",
+        "borderBox": {
+          "left": 184,
+          "right": 324,
+          "width": 140,
+          "height": 44
+        },
+        "gaps": {
+          "left": 36.73,
+          "right": 16.75,
+          "top": 13.2,
+          "bottom": 13.8
+        },
+        "padding": [
+          "9px",
+          "6px",
+          "9px",
+          "6px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "4개년 모두 강조",
+        "classes": "he-show-all",
+        "borderBox": {
+          "left": 36,
+          "right": 176,
+          "width": 140,
+          "height": 44
+        },
+        "gaps": {
+          "left": 29.97,
+          "right": 29.98,
+          "top": 13.2,
+          "bottom": 13.8
+        },
+        "padding": [
+          "9px",
+          "6px",
+          "9px",
+          "6px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2026년만 강조",
+        "classes": "he-show-all",
+        "borderBox": {
+          "left": 184,
+          "right": 324,
+          "width": 140,
+          "height": 44
+        },
+        "gaps": {
+          "left": 32.08,
+          "right": 32.08,
+          "top": 13.2,
+          "bottom": 13.8
+        },
+        "padding": [
+          "9px",
+          "6px",
+          "9px",
+          "6px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "사진은 보셨죠? 메뉴도 한번 볼까요? ↗",
+        "classes": "he-photo-peek",
+        "borderBox": {
+          "left": 44,
+          "right": 287.453125,
+          "width": 243.453125,
+          "height": 48.1875
+        },
+        "gaps": {
+          "left": 20,
+          "right": 20,
+          "top": 14,
+          "bottom": 15.19
+        },
+        "padding": [
+          "14px",
+          "19px",
+          "14px",
+          "19px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "← 외관 다시 보기",
+        "classes": "",
+        "borderBox": {
+          "left": 44,
+          "right": 168.328125,
+          "width": 124.328125,
+          "height": 44
+        },
+        "gaps": {
+          "left": 18,
+          "right": 18,
+          "top": 13.5,
+          "bottom": 13.5
+        },
+        "padding": [
+          "10px",
+          "17px",
+          "10px",
+          "17px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "메뉴도 한번 볼까요? ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 44,
+          "right": 206.59375,
+          "width": 162.59375,
+          "height": 44
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 13.5,
+          "bottom": 13.5
+        },
+        "padding": [
+          "10px",
+          "22px",
+          "10px",
+          "22px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "사진 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 22,
+          "right": 109.375,
+          "width": 87.375,
+          "height": 48
+        },
+        "gaps": {
+          "left": 13,
+          "right": 13,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "10px",
+          "12px",
+          "10px",
+          "12px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "찾아오는 길 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 116.375,
+          "right": 243.625,
+          "width": 127.25,
+          "height": 48
+        },
+        "gaps": {
+          "left": 13,
+          "right": 13,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "10px",
+          "12px",
+          "10px",
+          "12px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "예약 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 250.625,
+          "right": 338,
+          "width": 87.375,
+          "height": 48
+        },
+        "gaps": {
+          "left": 13,
+          "right": 13,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "10px",
+          "12px",
+          "10px",
+          "12px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "01 / SERVICE바꾸는 일사진네이버 · 구글홈페이지이용 안내어떤 사진을 먼저 보고,어디에서 다음 행동을 찾을지.실제 화면 비교 ↗",
+        "classes": "rf-proof-card rf-proof-service",
+        "borderBox": {
+          "left": 22,
+          "right": 338,
+          "width": 316,
+          "height": 388.0625
+        },
+        "gaps": {
+          "left": 25,
+          "right": 25,
+          "top": 26,
+          "bottom": 25
+        },
+        "padding": [
+          "24px",
+          "24px",
+          "24px",
+          "24px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "02 / WELLNESS B · PLACE INFLOW기록으로 보는 변화\n    +168%\n    \n      2026.05 / 이미 발생하던 유입877회\n      2026.08 / 이후 관측값2,350회\n    \n    플레이스 상세 유입877회 → 2,350회\n    제공된 통계 비교입니다. 방문 고객 수·광고 클릭률 또는 Weplace 작업 기여율이 아닙니다.\n    전후 수치 직접 비교 ↗",
+        "classes": "rf-proof-card rf-proof-case evi-inflow-card",
+        "borderBox": {
+          "left": 22,
+          "right": 338,
+          "width": 316,
+          "height": 509.25
+        },
+        "gaps": {
+          "left": 25,
+          "right": 25,
+          "top": 26,
+          "bottom": 25
+        },
+        "padding": [
+          "24px",
+          "24px",
+          "24px",
+          "24px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "03 / WEPLACE FLOW함께 보는 진행01작업 기록결과물02별도 검수확인 기준03대표님 확인다음 작업무엇을 바꿨는지,무엇을 다시 볼지 남깁니다.FLOW 운영 방식 ↗",
+        "classes": "rf-proof-card rf-proof-flow",
+        "borderBox": {
+          "left": 22,
+          "right": 338,
+          "width": 316,
+          "height": 399.0625
+        },
+        "gaps": {
+          "left": 25,
+          "right": 25,
+          "top": 26,
+          "bottom": 25
+        },
+        "padding": [
+          "24px",
+          "24px",
+          "24px",
+          "24px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "#contact",
+        "tag": "A",
+        "text": "첫 화면 진단 문의 ↗",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 22,
+          "right": 169.21875,
+          "width": 147.21875,
+          "height": 45
+        },
+        "gaps": {
+          "left": 19,
+          "right": 19,
+          "top": 14,
+          "bottom": 14
+        },
+        "padding": [
+          "13px",
+          "18px",
+          "13px",
+          "18px"
+        ],
+        "font": 12
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "unified-r3-hero-polish.html",
+    "small": [
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "막대: 월매출 · 선: 두 관측값 연결",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "단위: 원 / 0 기준선",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "u-chart-source",
+        "id": "",
+        "text": "출처: 기존 홈페이지에 정리된 제공 매출 자료의 비교 수치.",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "classes": "",
+        "id": "",
+        "text": "원값과 계산식 ↓",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "RECORD → EXPERIENCE → NEXT STEP",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "공간 진입을 표현한 참고 이미지 · 실제 고객 사례가 아닙니다",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "LOOK AGAIN.",
+        "font": 7,
+        "renderedPx": 7
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "주소",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "주소 복사 · 지도 보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "사진 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "소식 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "소개 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "소식 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "rf-eyebrow",
+        "id": "scene-kicker",
+        "text": "ARRIVAL / 02",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.05 / 이미 발생하던 유입",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.08 / 이후 관측값",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "01",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "결과물",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "02",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "확인 기준",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "03",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "다음 작업",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "관측 기록",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "음식점 A · 익명 공개",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "01 / 작업 과정",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "02 / WEPLACE FLOW",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "03 / 더 살펴보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "WEPLACE / FIRST LOOK",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "1장 진단서 · 구성 예시",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "01",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "02",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "03",
+        "font": 10,
+        "renderedPx": 10
+      }
+    ],
+    "borders": [
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "직접 살펴보기 ↓",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 72,
+          "right": 225.9375,
+          "width": 153.9375,
+          "height": 50
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "14px",
+          "22px",
+          "14px",
+          "22px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "직접 바꿔보기 ↗",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 72,
+          "right": 225.9375,
+          "width": 153.9375,
+          "height": 50
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "14px",
+          "22px",
+          "14px",
+          "22px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2023년 −10.6%",
+        "classes": "",
+        "borderBox": {
+          "left": 111,
+          "right": 231.515625,
+          "width": 120.515625,
+          "height": 43
+        },
+        "gaps": {
+          "left": 17,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2024년 −1.0%",
+        "classes": "",
+        "borderBox": {
+          "left": 240.515625,
+          "right": 353.953125,
+          "width": 113.4375,
+          "height": 43
+        },
+        "gaps": {
+          "left": 17,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2025년 −15.8%",
+        "classes": "",
+        "borderBox": {
+          "left": 362.953125,
+          "right": 483.46875,
+          "width": 120.515625,
+          "height": 43
+        },
+        "gaps": {
+          "left": 17,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2026년 +12.2%",
+        "classes": "",
+        "borderBox": {
+          "left": 492.46875,
+          "right": 612.984375,
+          "width": 120.515625,
+          "height": 43
+        },
+        "gaps": {
+          "left": 17,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "4개년 모두 강조",
+        "classes": "he-show-all",
+        "borderBox": {
+          "left": 859.046875,
+          "right": 973.09375,
+          "width": 114.046875,
+          "height": 43
+        },
+        "gaps": {
+          "left": 17,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2026년만 강조",
+        "classes": "he-show-all",
+        "borderBox": {
+          "left": 1219.15625,
+          "right": 1329,
+          "width": 109.84375,
+          "height": 43
+        },
+        "gaps": {
+          "left": 17,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "사진은 보셨죠? 메뉴도 한번 볼까요? ↗",
+        "classes": "he-photo-peek",
+        "borderBox": {
+          "left": 94,
+          "right": 337.453125,
+          "width": 243.453125,
+          "height": 48.1875
+        },
+        "gaps": {
+          "left": 20,
+          "right": 20,
+          "top": 14,
+          "bottom": 15.19
+        },
+        "padding": [
+          "14px",
+          "19px",
+          "14px",
+          "19px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "← 외관 다시 보기",
+        "classes": "",
+        "borderBox": {
+          "left": 798.46875,
+          "right": 922.796875,
+          "width": 124.328125,
+          "height": 44
+        },
+        "gaps": {
+          "left": 18,
+          "right": 18,
+          "top": 13.5,
+          "bottom": 13.5
+        },
+        "padding": [
+          "10px",
+          "17px",
+          "10px",
+          "17px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "메뉴도 한번 볼까요? ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 932.796875,
+          "right": 1095.390625,
+          "width": 162.59375,
+          "height": 44
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 13.5,
+          "bottom": 13.5
+        },
+        "padding": [
+          "10px",
+          "22px",
+          "10px",
+          "22px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "사진 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 72,
+          "right": 173.921875,
+          "width": 101.921875,
+          "height": 49
+        },
+        "gaps": {
+          "left": 21,
+          "right": 21,
+          "top": 15,
+          "bottom": 15
+        },
+        "padding": [
+          "11px",
+          "20px",
+          "11px",
+          "20px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "찾아오는 길 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 181.921875,
+          "right": 323.375,
+          "width": 141.453125,
+          "height": 49
+        },
+        "gaps": {
+          "left": 21,
+          "right": 21,
+          "top": 15,
+          "bottom": 15
+        },
+        "padding": [
+          "11px",
+          "20px",
+          "11px",
+          "20px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "예약 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 331.375,
+          "right": 433.296875,
+          "width": 101.921875,
+          "height": 49
+        },
+        "gaps": {
+          "left": 21,
+          "right": 21,
+          "top": 15,
+          "bottom": 15
+        },
+        "padding": [
+          "11px",
+          "20px",
+          "11px",
+          "20px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "01 / SERVICE바꾸는 일사진네이버 · 구글홈페이지이용 안내어떤 사진을 먼저 보고,어디에서 다음 행동을 찾을지.실제 화면 비교 ↗",
+        "classes": "rf-proof-card rf-proof-service",
+        "borderBox": {
+          "left": 72,
+          "right": 494,
+          "width": 422,
+          "height": 518.25
+        },
+        "gaps": {
+          "left": 29,
+          "right": 29,
+          "top": 30,
+          "bottom": 29
+        },
+        "padding": [
+          "28px",
+          "28px",
+          "28px",
+          "28px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "02 / WELLNESS B · PLACE INFLOW기록으로 보는 변화\n    +168%\n    \n      2026.05 / 이미 발생하던 유입877회\n      2026.08 / 이후 관측값2,350회\n    \n    플레이스 상세 유입877회 → 2,350회\n    제공된 통계 비교입니다. 방문 고객 수·광고 클릭률 또는 Weplace 작업 기여율이 아닙니다.\n    전후 수치 직접 비교 ↗",
+        "classes": "rf-proof-card rf-proof-case evi-inflow-card",
+        "borderBox": {
+          "left": 509,
+          "right": 931,
+          "width": 422,
+          "height": 518.25
+        },
+        "gaps": {
+          "left": 29,
+          "right": 29,
+          "top": 30,
+          "bottom": 29
+        },
+        "padding": [
+          "28px",
+          "28px",
+          "28px",
+          "28px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "03 / WEPLACE FLOW함께 보는 진행01작업 기록결과물02별도 검수확인 기준03대표님 확인다음 작업무엇을 바꿨는지,무엇을 다시 볼지 남깁니다.FLOW 운영 방식 ↗",
+        "classes": "rf-proof-card rf-proof-flow",
+        "borderBox": {
+          "left": 946,
+          "right": 1368,
+          "width": 422,
+          "height": 518.25
+        },
+        "gaps": {
+          "left": 29,
+          "right": 29,
+          "top": 30,
+          "bottom": 29
+        },
+        "padding": [
+          "28px",
+          "28px",
+          "28px",
+          "28px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "#contact",
+        "tag": "A",
+        "text": "첫 화면 진단 문의 ↗",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 72,
+          "right": 243.5,
+          "width": 171.5,
+          "height": 50
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "14px",
+          "22px",
+          "14px",
+          "22px"
+        ],
+        "font": 13
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "unified-r3-hero-polish-r3.html",
+    "small": [
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "막대: 월매출 · 선: 두 관측값 연결",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "단위: 원 / 0 기준선",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "P",
+        "classes": "u-chart-source",
+        "id": "",
+        "text": "출처: 기존 홈페이지에 정리된 제공 매출 자료의 비교 수치.",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "classes": "",
+        "id": "",
+        "text": "원값과 계산식 ↓",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "RECORD → EXPERIENCE → NEXT STEP",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "공간 진입을 표현한 참고 이미지 · 실제 고객 사례가 아닙니다",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "LOOK AGAIN.",
+        "font": 7,
+        "renderedPx": 7
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "주소",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "주소 복사 · 지도 보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "사진 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "소식 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "소개 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SMALL",
+        "classes": "",
+        "id": "",
+        "text": "소식 탭",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "rf-eyebrow",
+        "id": "scene-kicker",
+        "text": "ARRIVAL / 02",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.05 / 이미 발생하던 유입",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "2026.08 / 이후 관측값",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "01",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "결과물",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "02",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "확인 기준",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "I",
+        "classes": "",
+        "id": "",
+        "text": "03",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "다음 작업",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "관측 기록",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "음식점 A · 익명 공개",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "01 / 작업 과정",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "02 / WEPLACE FLOW",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "SPAN",
+        "classes": "u-trust-index",
+        "id": "",
+        "text": "03 / 더 살펴보기",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "WEPLACE / FIRST LOOK",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "1장 진단서 · 구성 예시",
+        "font": 9,
+        "renderedPx": 9
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "01",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "02",
+        "font": 10,
+        "renderedPx": 10
+      },
+      {
+        "scope": "#contact",
+        "tag": "SPAN",
+        "classes": "",
+        "id": "",
+        "text": "03",
+        "font": 10,
+        "renderedPx": 10
+      }
+    ],
+    "borders": [
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "직접 살펴보기 ↓",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 72,
+          "right": 225.9375,
+          "width": 153.9375,
+          "height": 50
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "14px",
+          "22px",
+          "14px",
+          "22px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "직접 바꿔보기 ↗",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 72,
+          "right": 225.9375,
+          "width": 153.9375,
+          "height": 50
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "14px",
+          "22px",
+          "14px",
+          "22px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2023년 −10.6%",
+        "classes": "",
+        "borderBox": {
+          "left": 111,
+          "right": 251.515625,
+          "width": 140.515625,
+          "height": 43
+        },
+        "gaps": {
+          "left": 37,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2024년 −1.0%",
+        "classes": "",
+        "borderBox": {
+          "left": 260.515625,
+          "right": 393.953125,
+          "width": 133.4375,
+          "height": 43
+        },
+        "gaps": {
+          "left": 37,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2025년 −15.8%",
+        "classes": "",
+        "borderBox": {
+          "left": 402.953125,
+          "right": 543.46875,
+          "width": 140.515625,
+          "height": 43
+        },
+        "gaps": {
+          "left": 37,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2026년 +12.2%",
+        "classes": "",
+        "borderBox": {
+          "left": 552.46875,
+          "right": 692.984375,
+          "width": 140.515625,
+          "height": 43
+        },
+        "gaps": {
+          "left": 37,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "4개년 모두 강조",
+        "classes": "he-show-all",
+        "borderBox": {
+          "left": 899.046875,
+          "right": 1013.09375,
+          "width": 114.046875,
+          "height": 43
+        },
+        "gaps": {
+          "left": 17,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "#seasonality-overlay",
+        "tag": "BUTTON",
+        "text": "2026년만 강조",
+        "classes": "he-show-all",
+        "borderBox": {
+          "left": 1219.15625,
+          "right": 1329,
+          "width": 109.84375,
+          "height": 43
+        },
+        "gaps": {
+          "left": 17,
+          "right": 17,
+          "top": 12.7,
+          "bottom": 13.3
+        },
+        "padding": [
+          "9px",
+          "16px",
+          "9px",
+          "16px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "사진은 보셨죠? 메뉴도 한번 볼까요? ↗",
+        "classes": "he-photo-peek",
+        "borderBox": {
+          "left": 94,
+          "right": 337.453125,
+          "width": 243.453125,
+          "height": 48.1875
+        },
+        "gaps": {
+          "left": 20,
+          "right": 20,
+          "top": 14,
+          "bottom": 15.19
+        },
+        "padding": [
+          "14px",
+          "19px",
+          "14px",
+          "19px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "← 외관 다시 보기",
+        "classes": "",
+        "borderBox": {
+          "left": 798.46875,
+          "right": 922.796875,
+          "width": 124.328125,
+          "height": 44
+        },
+        "gaps": {
+          "left": 18,
+          "right": 18,
+          "top": 13.5,
+          "bottom": 13.5
+        },
+        "padding": [
+          "10px",
+          "17px",
+          "10px",
+          "17px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "메뉴도 한번 볼까요? ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 932.796875,
+          "right": 1095.390625,
+          "width": 162.59375,
+          "height": 44
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 13.5,
+          "bottom": 13.5
+        },
+        "padding": [
+          "10px",
+          "22px",
+          "10px",
+          "22px"
+        ],
+        "font": 12
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "사진 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 72,
+          "right": 173.921875,
+          "width": 101.921875,
+          "height": 49
+        },
+        "gaps": {
+          "left": 21,
+          "right": 21,
+          "top": 15,
+          "bottom": 15
+        },
+        "padding": [
+          "11px",
+          "20px",
+          "11px",
+          "20px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "찾아오는 길 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 181.921875,
+          "right": 323.375,
+          "width": 141.453125,
+          "height": 49
+        },
+        "gaps": {
+          "left": 21,
+          "right": 21,
+          "top": 15,
+          "bottom": 15
+        },
+        "padding": [
+          "11px",
+          "20px",
+          "11px",
+          "20px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "BUTTON",
+        "text": "예약 ↗",
+        "classes": "",
+        "borderBox": {
+          "left": 331.375,
+          "right": 433.296875,
+          "width": 101.921875,
+          "height": 49
+        },
+        "gaps": {
+          "left": 21,
+          "right": 21,
+          "top": 15,
+          "bottom": 15
+        },
+        "padding": [
+          "11px",
+          "20px",
+          "11px",
+          "20px"
+        ],
+        "font": 13
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "01 / SERVICE바꾸는 일사진네이버 · 구글홈페이지이용 안내어떤 사진을 먼저 보고,어디에서 다음 행동을 찾을지.실제 화면 비교 ↗",
+        "classes": "rf-proof-card rf-proof-service",
+        "borderBox": {
+          "left": 72,
+          "right": 494,
+          "width": 422,
+          "height": 518.25
+        },
+        "gaps": {
+          "left": 29,
+          "right": 29,
+          "top": 30,
+          "bottom": 29
+        },
+        "padding": [
+          "28px",
+          "28px",
+          "28px",
+          "28px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "02 / WELLNESS B · PLACE INFLOW기록으로 보는 변화\n    +168%\n    \n      2026.05 / 이미 발생하던 유입877회\n      2026.08 / 이후 관측값2,350회\n    \n    플레이스 상세 유입877회 → 2,350회\n    제공된 통계 비교입니다. 방문 고객 수·광고 클릭률 또는 Weplace 작업 기여율이 아닙니다.\n    전후 수치 직접 비교 ↗",
+        "classes": "rf-proof-card rf-proof-case evi-inflow-card",
+        "borderBox": {
+          "left": 509,
+          "right": 931,
+          "width": 422,
+          "height": 518.25
+        },
+        "gaps": {
+          "left": 29,
+          "right": 29,
+          "top": 30,
+          "bottom": 29
+        },
+        "padding": [
+          "28px",
+          "28px",
+          "28px",
+          "28px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "preserved-other",
+        "tag": "A",
+        "text": "03 / WEPLACE FLOW함께 보는 진행01작업 기록결과물02별도 검수확인 기준03대표님 확인다음 작업무엇을 바꿨는지,무엇을 다시 볼지 남깁니다.FLOW 운영 방식 ↗",
+        "classes": "rf-proof-card rf-proof-flow",
+        "borderBox": {
+          "left": 946,
+          "right": 1368,
+          "width": 422,
+          "height": 518.25
+        },
+        "gaps": {
+          "left": 29,
+          "right": 29,
+          "top": 30,
+          "bottom": 29
+        },
+        "padding": [
+          "28px",
+          "28px",
+          "28px",
+          "28px"
+        ],
+        "font": 16
+      },
+      {
+        "scope": "#contact",
+        "tag": "A",
+        "text": "첫 화면 진단 문의 ↗",
+        "classes": "rf-button primary",
+        "borderBox": {
+          "left": 72,
+          "right": 243.5,
+          "width": 171.5,
+          "height": 50
+        },
+        "gaps": {
+          "left": 23,
+          "right": 23,
+          "top": 15.5,
+          "bottom": 15.5
+        },
+        "padding": [
+          "14px",
+          "22px",
+          "14px",
+          "22px"
+        ],
+        "font": 13
+      }
+    ]
+  }
+]
