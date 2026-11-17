@@ -1,0 +1,754 @@
+{
+  "checks": [
+    {
+      "name": "360 eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 2026 highlighted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 2023 initially muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 all 4 graph lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 corrected exact values",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 04 palette",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 overlay 2024 and 2026",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 show all",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 reset 2026 only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 native photo no zoom",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 inviting menu action",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 exterior-to-duck photo interaction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 photo replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 preserved experience photo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 preserved experience route",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 preserved experience booking",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 one word is in focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 full footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 footer main CTA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 FAST still readable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 FAST sound off",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 inquiry dialog closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 2026 highlighted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 2023 initially muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 all 4 graph lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 corrected exact values",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 04 palette",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 overlay 2024 and 2026",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 show all",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 reset 2026 only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 native photo no zoom",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 inviting menu action",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 exterior-to-duck photo interaction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 photo replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 preserved experience photo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 preserved experience route",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 preserved experience booking",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 one word is in focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 full footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 footer main CTA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 FAST still readable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 FAST sound off",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 inquiry dialog closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 2026 highlighted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 2023 initially muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 all 4 graph lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 corrected exact values",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 04 palette",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 overlay 2024 and 2026",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 show all",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 reset 2026 only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 native photo no zoom",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 inviting menu action",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 exterior-to-duck photo interaction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 photo replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 preserved experience photo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 preserved experience route",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 preserved experience booking",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 one word is in focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 full footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 footer main CTA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 FAST still readable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 FAST sound off",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 inquiry dialog closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 2026 highlighted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 2023 initially muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 all 4 graph lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 corrected exact values",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 04 palette",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 overlay 2024 and 2026",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 show all",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 reset 2026 only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 native photo no zoom",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 inviting menu action",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 exterior-to-duck photo interaction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 photo replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 preserved experience photo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 preserved experience route",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 preserved experience booking",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 one word is in focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 full footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 footer main CTA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 FAST still readable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 FAST sound off",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 inquiry dialog closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 2026 highlighted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 2023 initially muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 all 4 graph lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 corrected exact values",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 04 palette",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 overlay 2024 and 2026",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 show all",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 reset 2026 only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 native photo no zoom",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 inviting menu action",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 exterior-to-duck photo interaction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 photo replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 preserved experience photo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 preserved experience route",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 preserved experience booking",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 one word is in focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 full footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 footer main CTA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 FAST still readable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 FAST sound off",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 inquiry dialog closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 2026 highlighted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 2023 initially muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 all 4 graph lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 corrected exact values",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 04 palette",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 overlay 2024 and 2026",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 show all",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 reset 2026 only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 native photo no zoom",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 inviting menu action",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 exterior-to-duck photo interaction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 photo replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 preserved experience photo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 preserved experience route",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 preserved experience booking",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 one word is in focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 full footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 footer main CTA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 FAST still readable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 FAST sound off",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 inquiry dialog closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion instant photo change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion controls remain available",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no script errors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no asset HTTP errors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no write requests",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "broken": [],
+  "writes": [],
+  "passed": 149,
+  "failed": 0
+}
