@@ -288,7 +288,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   <div class="nov-cold-light" aria-hidden="true"></div>
   <div class="wrap nov-cold-inner">
     <div class="nov-cold-top">
-      <p class="nov-cold-index"><span aria-hidden="true">01 —</span> BLACK FRIDAY / A DIFFERENT FIRST STEP</p>
+      <p class="nov-cold-index"><span aria-hidden="true">01 —</span> BLACK FRIDAY / FIRST LOOK</p>
       <span class="nov-cold-side">WEPLACE · NOVEMBER 2026</span>
     </div>
     <div class="nov-cold-story">
@@ -321,7 +321,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
     </div>
     <aside class="nov-warmth" aria-label="11월의 작은 온기">
       <div class="nov-warmth-top"><span class="nov-warmth-number">11</span><span>NOVEMBER<br>A SMALL WARMTH</span></div>
-      <p>알리는 일도 중요하지만,<br>찾는 사람이<br><strong>쉽게 이해하는 것도 중요합니다.</strong></p>
+      <p>한 번쯤은,<br>더 크게 알리기보다<br><strong>더 쉽게 이해되는 쪽으로.</strong></p>
       <div class="nov-warmth-rule"></div>
       <small>이번 11월에는 매장명이나 연락처를 적지 않고도 <b>세 가지 가상 매장 화면</b>을 비교할 수 있습니다.</small>
     </aside>
@@ -384,7 +384,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
      <small>가상 매장을 바탕으로 한 작업 방향 예시입니다. 실제 매장 진단 결과나 수행 약속이 아닙니다.</small>
     </div>
     <div class="nov-bridge-steps">
-      <h3>작업 범위는 이렇게 정해볼 수 있습니다.</h3>
+      <h3>작업 전에 살펴볼 순서</h3>
       <ol>
        <li><span>01</span><div><strong>지금 보이는 화면 확인</strong><p>공개된 정보에서 고객이 다시 확인할 내용을 살펴봅니다.</p></div></li>
        <li><span>02</span><div><strong>먼저 바꿀 한 가지 합의</strong><p>범위·비용·일정을 확인한 뒤 실행 여부를 결정합니다.</p></div></li>
@@ -432,7 +432,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
     <legend><span>00</span> 이번 상담은 어떤 상황인가요?</legend>
     <div class="nov-relationship-options" role="group" aria-label="문의 유형">
      <button type="button" data-relationship="new" aria-pressed="true">처음 문의해요</button>
-     <button type="button" data-relationship="returning" aria-pressed="false">전에 상담하거나 함께 일했어요</button>
+     <button type="button" data-relationship="returning" aria-pressed="false">전에 연락했어요</button>
     </div>
    </fieldset>
 
@@ -472,7 +472,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
    </fieldset>
 
    <div class="nov-intake-summary" aria-live="polite">
-    <p class="nov-intake-small">YOUR SELECTION / 선택하신 내용</p>
+    <p class="nov-intake-small">선택하신 내용</p>
     <div class="nov-summary-chips" id="intake-summary-chips">
      <span>업종을 골라주세요</span><span>고민을 골라주세요</span><span>안내를 골라주세요</span>
     </div>
@@ -562,7 +562,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
    const done=[industry,concernLabel,requestType].filter(Boolean).length;
    one('#intake-counter').textContent=done+' / 3';
    const intro=relationship==='returning'
-     ?'전에 Weplace와 상담하거나 함께 일한 적이 있습니다.'
+     ?'이전에 Weplace와 연락한 적이 있습니다.'
      :'이번에 처음 문의드립니다.';
    const ask=requestType==='pricing'
      ?'가능한 작업 범위와 비용·일정을 알려주세요.'
