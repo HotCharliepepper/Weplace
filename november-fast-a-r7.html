@@ -481,19 +481,19 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   </div>
 </section>
 
-<!-- Existing warm R1 narrative preserved as the reveal, now shorter and more decisive. -->
+<!-- R7 keeps the FAST signature and brings the visual comparison forward. -->
 <!-- FAST: original live-text optics and short finite motion, not the unapproved full R3 -->
 <section class="nov-fast" id="fast" aria-labelledby="fast-title">
   <div class="nov-fast-grid" aria-hidden="true"></div><div class="nov-fast-sun" aria-hidden="true"></div>
   <div class="nov-fast-sky" aria-hidden="true"><i class="nov-ray r1"></i><i class="nov-ray r2"></i><i class="nov-ray r3"></i><i class="nov-wind w1"></i><i class="nov-wind w2"></i><i class="nov-wind w3"></i></div>
   <div class="wrap nov-fast-inner">
-    <div class="nov-fast-header"><p class="nov-label">BLACK FRIDAY / FIRST LOOK</p><p class="nov-fast-tag">A CLEARER FIRST LOOK</p></div>
+    <div class="nov-fast-header"><p class="nov-label">BLACK FRIDAY / FIRST LOOK</p><p class="nov-fast-tag">FIRST LOOK / BEYOND THE AD</p></div>
     <h2 id="fast-title" class="nov-fast-title" aria-label="RESOLUTE IT FAST.">
       <span class="nov-fast-word">RESOLUTE</span>
       <span class="nov-fast-line">IT <span class="nov-fast-wrap"><span class="nov-fast-shadow" aria-hidden="true">FAST.</span><span class="nov-fast-face">FAST.</span><span class="nov-fast-trail" aria-hidden="true">FAST.</span></span></span>
     </h2>
     <div class="nov-fast-bottom">
-      <div class="nov-fast-copy"><span class="nov-fast-corner" aria-hidden="true">↳</span><div><strong>가격을 바꾸기 전에,<br>손님이 보는 화면부터.</strong><p>대표 사진 · 찾아오는 길 · 예약 안내.<br>정리 전후를 가상 화면에서 비교해 보세요.</p></div></div>
+      <div class="nov-fast-copy"><span class="nov-fast-corner" aria-hidden="true">↳</span><div><strong>광고를 더하기 전에,<br>손님이 보는 화면부터.</strong><p>대표 사진 · 찾아오는 길 · 예약 안내.<br>정리 전후를 가상 화면에서 비교해 보세요.</p></div></div>
       <div class="nov-fast-actions"><a class="nov-button" href="#first-look">세 화면 비교하기 <span aria-hidden="true">↗</span></a><a class="nov-inline" href="#action-plan">진행 순서 보기 <span aria-hidden="true">↘</span></a></div>
     </div>
     <div class="nov-fast-controls"><button type="button" id="fast-replay" disabled aria-label="FAST 글자 움직임 다시 재생">FAST 다시 보기 ↻</button><span id="fast-status" role="status" aria-live="polite">기본 무음 · 한 번 움직이고 정착합니다</span></div>
@@ -609,7 +609,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
  <div class="wrap contact-grid">
   <div class="nov-intake-intro">
    <p class="overline">05 / QUICK INQUIRY</p>
-   <h2 id="contact-title">문의할 내용을<br>고르기만 하세요.</h2>
+   <h2 id="contact-title">우리 매장도<br>한 화면부터.</h2>
    <p class="nov-intake-lead">한 번에 하나씩 고르세요.<br>선택한 내용으로 문의 문장이 완성됩니다.</p>
    <div class="nov-intake-promise"><span>01</span> 한 질문씩 선택 <i aria-hidden="true">/</i> <span>02</span> 문의문 자동 완성 <i aria-hidden="true">/</i> <span>03</span> 붙여넣어 보내기</div>
    <p class="contact-note">이 페이지에서 문의를 자동 접수하지는 않습니다. 카카오톡 채팅창에 붙여넣고 직접 보내야 접수됩니다. 실제 매장 진단의 범위·비용·일정은 따로 안내합니다.</p>
@@ -703,7 +703,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
 <script>
 (()=>{'use strict';
  const data={
-  photo:{label:'대표 사진',before:['이곳에서는 무엇을 할 수 있을까요?','외관은 보이지만 어떤 서비스를 하는지 다른 사진을 찾아야 하는 화면입니다.','외관 · 분위기','서비스와 이용 공간은 다른 사진에서 찾아야 합니다.','사진 더 보기'],after:['서비스부터 이용 공간까지.','서비스와 공간 정보를 이어 보여주는 구성 예시입니다.','서비스 · 공간 사진','서비스와 공간 사진을 이어 놓았습니다.','이용 안내 확인']},
+  photo:{label:'대표 사진',before:['어디에 앉을 수 있을까요?','음식 사진은 보이지만 함께 앉을 공간은 다시 찾아야 하는 화면입니다.','메뉴만 보이는 화면','좌석·공간 사진은 따로 찾아야 합니다.','다른 사진 보기'],after:['먹고 싶은 메뉴 다음에, 함께 앉을 공간까지.','음식 사진에 이어 공간 사진을 보여주는 가상 구성입니다.','메뉴와 공간 사진','필요한 사진을 가까이 놓았습니다.','공간 정보 확인']},
   route:{label:'찾아오는 길',before:['주소는 알지만, 입구는 어디일까요?','주소·출구·주차 정보가 흩어져 있으면 처음 오는 손님이 다시 찾아봐야 할 수 있습니다.','주소 · 지도','입구와 주차 위치는 따로 확인해야 합니다.','길 다시 찾기'],after:['출구부터 입구까지 한 화면에.','출구·입구·주차 안내를 나란히 보여주는 가상 예시입니다.','출구 · 입구 · 주차','어디서 내려 어느 문으로 들어갈지 안내합니다.','도착 정보 확인']},
   booking:{label:'예약 안내',before:['예약하려면 무엇을 알아야 할까요?','예약 안내가 있어도 가능한 인원·시간·확정 방법이 보이지 않으면 망설일 수 있습니다.','예약 문의','인원·시간·확정 방식은 별도로 확인해야 합니다.','문의 채널 찾기'],after:['인원과 시간, 확인 절차까지.','가능한 인원·시간과 예약 확정 여부를 구분해 안내하는 구성 예시입니다.','인원 · 시간 · 확인','예약 전 확인할 조건과 절차를 함께 보여줍니다.','예약 방법 확인']}
  };
