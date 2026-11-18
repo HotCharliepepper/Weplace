@@ -278,6 +278,8 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
 
 
 /* R6 Slide Inquiry: progressive enhancement; original stacked R5 stays readable without JS. */
+.nov-wizard.is-ready:not([data-active-step="5"]) #intake-counter{display:none}
+
 .nov-wizard-progress{padding:1px 0 19px;margin:-4px 0 21px;border-bottom:1px solid #e0e9df}
 .nov-wizard-progress-top{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#607a67;font-size:11px;line-height:1.5}
 #nov-wizard-progress-label{font-size:12px;color:#275842;font-weight:800}
@@ -467,12 +469,12 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   <div class="contact-panel nov-intake-panel nov-wizard" id="nov-wizard" aria-label="한 질문씩 진행하는 선택형 문의">
    <div class="nov-intake-head"><div><span class="nov-intake-small">WEPLACE / FIRST LOOK</span><h3>하나씩 고르면 됩니다.</h3></div><span class="nov-intake-counter" id="intake-counter" aria-live="polite">0 / 3</span></div>
    <div class="nov-wizard-progress" aria-label="설문 진행 상황">
-    <div class="nov-wizard-progress-top"><span id="nov-wizard-progress-label" role="status" aria-live="polite">질문 1 / 5</span><span>선택하면 다음 질문으로 이동합니다</span></div>
+    <div class="nov-wizard-progress-top"><span id="nov-wizard-progress-label" role="status" aria-live="polite">질문 1 / 5</span><span id="nov-wizard-progress-hint">선택하면 다음 질문으로 이동합니다</span></div>
     <div class="nov-wizard-progress-track" aria-hidden="true"><span id="nov-wizard-progress-fill"></span></div>
    </div>
 
    <fieldset class="nov-relationship nov-intake-field" data-wizard-step="0" aria-label="상담 이력">
-    <legend><span>00</span> 이번 상담은 어떤 상황인가요?</legend>
+    <legend><span>01</span> 이번 상담은 어떤 상황인가요?</legend>
     <div class="nov-relationship-options" role="group" aria-label="문의 유형">
      <button type="button" data-relationship="new" aria-pressed="true">처음 문의해요</button>
      <button type="button" data-relationship="returning" aria-pressed="false">전에 연락했어요</button>
@@ -480,7 +482,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
    </fieldset>
 
    <fieldset class="nov-intake-field" data-wizard-step="1">
-    <legend><span>01</span> 어떤 업종인가요? <small>필수</small></legend>
+    <legend><span>02</span> 어떤 업종인가요? <small>필수</small></legend>
     <div class="nov-chip-row" role="group" aria-label="업종 선택">
      <button type="button" data-industry="restaurant" aria-pressed="false">식당</button>
      <button type="button" data-industry="cafe" aria-pressed="false">카페</button>
@@ -491,7 +493,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
    </fieldset>
 
    <fieldset class="nov-intake-field" data-wizard-step="2">
-    <legend><span>02</span> 어느 화면부터 볼까요? <small>앞에서 고른 화면</small></legend>
+    <legend><span>03</span> 어느 화면부터 볼까요? <small>앞에서 고른 화면</small></legend>
     <div class="nov-chip-row" role="group" aria-label="문의할 화면 선택">
      <button type="button" data-intake-focus="photo" aria-pressed="true">대표 사진</button>
      <button type="button" data-intake-focus="route" aria-pressed="false">찾아오는 길</button>
@@ -501,12 +503,12 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
    </fieldset>
 
    <fieldset class="nov-intake-field" data-wizard-step="3">
-    <legend><span>03</span> 지금 고민과 가까운 것은? <small>필수</small></legend>
+    <legend><span>04</span> 지금 고민과 가까운 것은? <small>필수</small></legend>
     <div class="nov-chip-stack" role="group" id="intake-issue-choices" aria-label="현재 고민 선택"></div>
    </fieldset>
 
    <fieldset class="nov-intake-field" data-wizard-step="4">
-    <legend><span>04</span> 어떤 안내가 필요하신가요? <small>필수</small></legend>
+    <legend><span>05</span> 어떤 안내가 필요하신가요? <small>필수</small></legend>
     <div class="nov-chip-row nov-need-row" role="group" aria-label="희망 상담 내용">
      <button type="button" data-request="priority" aria-pressed="false">먼저 바꿀 순서</button>
      <button type="button" data-request="proposal" aria-pressed="false">개선 방향</button>
@@ -585,6 +587,8 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
      if('inert' in el)el.inert=!active;
    });
    one('#nov-wizard-progress-label').textContent=wizardStep===5?'선택 완료 · 문의 내용 확인':'질문 '+(wizardStep+1)+' / 5';
+   one('#nov-wizard-progress-hint').textContent=wizardStep===5?'내용을 복사한 뒤 카카오톡에서 보내주세요':'선택하면 다음 질문으로 이동합니다';
+   one('.nov-intake-head h3').textContent=wizardStep===5?'문의 내용이 준비됐습니다.':'하나씩 고르면 됩니다.';
    one('#nov-wizard-progress-fill').style.width=Math.min(100,(wizardStep+1)*20)+'%';
    updateWizardNav();
    if(moveFocus){
