@@ -521,18 +521,6 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   one('#selected-problem').textContent=p.problem;
   one('#selected-action').textContent=p.action;
   many('[data-relationship]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.relationship===relationship)));
-  const intro=relationship==='returning'
-     ?'이전에 Weplace와 상담하거나 작업한 적이 있어, 현재 상황을 다시 살펴보고 싶습니다.'
-     :'이번 캠페인을 보고 처음 상담을 문의드립니다.';
-  const next=relationship==='returning'
-     ?'기존에 진행한 내용과 겹치지 않게 필요한 보완부터 확인하고 싶습니다.'
-     :'현재 화면부터 확인할 수 있는 범위와 가능한 일정·비용을 안내받고 싶습니다.';
-  one('#prepared-message').value=[
-    '안녕하세요. Weplace 11월 FAST 화면 비교를 살펴봤습니다.',
-    intro,'궁금한 화면: '+d.label,'먼저 확인할 질문: '+p.question,next,
-    '실제 매장 진단 제공 여부·작업 범위·비용과 일정은 안내를 받은 뒤 결정하겠습니다.',
-    '매장명과 지역은 카카오톡에서 직접 전달하겠습니다.'
-  ].join('\n');
  }
 
  const industryLabels={restaurant:'식당',cafe:'카페',stay:'숙박',beauty:'뷰티',other:'다른 업종'};
@@ -573,15 +561,21 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
    one('#intake-summary-chips').replaceChildren(...labels.map(label=>{const el=document.createElement('span');el.textContent=label;return el}));
    const done=[industry,concernLabel,requestType].filter(Boolean).length;
    one('#intake-counter').textContent=done+' / 3';
+   const intro=relationship==='returning'
+     ?'전에 Weplace와 상담하거나 함께 일한 적이 있습니다.'
+     :'이번에 처음 문의드립니다.';
+   const ask=requestType==='pricing'
+     ?'가능한 작업 범위와 비용·일정을 알려주세요.'
+     :requestType==='priority'
+     ?'어디부터 살펴보면 좋을지 알려주세요.'
+     :'어떤 방향으로 정리할 수 있을지 궁금합니다.';
    const text=[
-    '[Weplace · 11월 FAST 문의]',
-    '상담: '+(relationship==='returning'?'이전 상담·협업 확인':'처음 상담'),
-    '업종: '+(industry?industryLabels[industry]:'선택 전'),
-    '확인할 화면: '+data[focus].label,
-    '지금 고민: '+(concernLabel||'선택 전'),
-    '원하는 안내: '+(requestType?requestLabels[requestType]:'선택 전'),
-    '매장명과 지역은 채팅에서 필요한 경우 알려드리겠습니다.',
-    '실제 진단·제공 범위·비용과 일정은 담당자 안내 후 결정하겠습니다.'
+     '[Weplace · 11월 화면 비교 문의]',
+     '안녕하세요. '+intro,
+     '업종: '+(industry?industryLabels[industry]:'선택 전'),
+     '살펴보고 싶은 화면: '+data[focus].label,
+     '지금 고민: '+(concernLabel||'선택 전'),
+     ask
    ].join('\n');
    latestIntakeText=text;
    one('#prepared-message').value=text;
@@ -605,7 +599,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
      return Promise.resolve(false);
    }
    return navigator.clipboard.writeText(latestIntakeText).then(()=>{
-      one('#copy-status').textContent='문의 내용을 복사했습니다. 카카오톡 채팅창에 붙여넣고 전송해주세요. 아직 접수된 것은 아닙니다.';
+      one('#copy-status').textContent='복사했습니다. 카카오톡 채팅창에 붙여넣고 보내주세요. 아직 접수된 상태는 아닙니다.';
       return true;
    }).catch(()=>{
       fallbackSelect();
@@ -614,10 +608,10 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
    });
  }
   function render(){const d=data[focus],c=d[mode];many('[data-focus]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.focus===focus)));many('button[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
-  one('#stage-inner').className='stage-inner '+mode;one('#stage-kicker').textContent='01 / '+d.label;one('#stage-title').textContent=c[0];one('#stage-desc').textContent=c[1];one('#stage-label').textContent=mode==='before'?'이전 배열 — 다시 확인하는 화면':'정리한 배열 — 다음 행동이 보이는 화면';
-  one('#mockup').dataset.mode=mode;one('#mock-title').textContent=c[2];one('#mock-extra').textContent=c[3];one('#mock-cta').textContent=c[4];one('#answer').textContent=mode==='before'?d.label+'을 먼저 봅니다. 정리한 화면을 눌러 차이를 비교해 보세요.':'정보의 배열을 바꾼 가상 예시입니다. 실제 매장 결과나 매출 효과를 뜻하지 않습니다.';
-  one('#prepared-message').value='안녕하세요. Weplace의 블랙프라이데이 첫 화면 비교를 살펴봤습니다.\n먼저 확인하고 싶은 부분: '+d.label+'\n우리 매장의 실제 사진·정보·안내를 살펴본 뒤, 진단 범위와 가능한 일정을 안내받고 싶습니다.\n매장명과 지역은 카카오톡에서 직접 전달하겠습니다.';
-  one('#copy-status').textContent='선택 항목이 문의문에 반영됐습니다. 아직 전송하거나 접수하지 않았습니다.';
+  one('#stage-inner').className='stage-inner '+mode;one('#stage-kicker').textContent='01 / '+d.label;one('#stage-title').textContent=c[0];one('#stage-desc').textContent=c[1];one('#stage-label').textContent=mode==='before'?'정리 전 예시 · 다른 정보를 더 찾아야 합니다.':'정리 후 예시 · 다음 안내를 한눈에 볼 수 있습니다.';
+  one('#mockup').dataset.mode=mode;one('#mock-title').textContent=c[2];one('#mock-extra').textContent=c[3];one('#mock-cta').textContent=c[4];one('#answer').textContent=mode==='before'?d.label+'의 정리 전 예시입니다. 정리 후 화면과 비교해 보세요.':'가상 화면을 정리한 예시입니다. 실제 고객 성과나 매출 변화를 보여주는 자료는 아닙니다.';
+  // The required choices compose the customer-facing inquiry in updateClickIntake().
+  one('#copy-status').textContent='문의 내용을 준비하고 있습니다. 채팅창에서 직접 보내야 접수됩니다.';
   updateBridge();
   updateClickIntake();
  }
@@ -632,7 +626,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
  one('#copy-message').addEventListener('click',()=>{copyPrepared();});
  one('#copy-and-chat').addEventListener('click',event=>{
    if(!latestIntakeReady){
-     event.preventDefault();one('#intake-ready-status').focus?.();one('#intake-ready-status').textContent='세 가지 항목을 선택해야 합니다.';
+     event.preventDefault();one('#intake-ready-status').focus?.();one('#intake-ready-status').textContent='업종·고민·원하는 안내를 골라주세요.';
      return;
    }
    // The default anchor opens Kakao channel in a new tab; copying is a best-effort
