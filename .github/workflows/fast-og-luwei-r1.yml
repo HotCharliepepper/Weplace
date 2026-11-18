@@ -19,6 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: draft/weplace-fast-og-luwei-dwell-20261118
           fetch-depth: 0
           persist-credentials: true
       - uses: actions/setup-python@v5
