@@ -21,6 +21,9 @@ with sync_playwright() as p:
         page.on("request", lambda r: results["writes"].append(r.method+" "+r.url) if r.method not in ("GET","HEAD") else None)
         page.on("response",lambda r: results["errors"].append("HTTP "+str(r.status)+" "+r.url) if r.status>=400 and r.url.startswith(ROOT) else None)
         resp=page.goto(URL,wait_until="load")
+        # Lettering is central to the campaign; screenshots must use real Korean glyphs.
+        page.evaluate("document.fonts.ready")
+        check(f"{width} Korean webfont loaded",page.evaluate('document.fonts.check(\'16px "Noto Sans KR"\', "광고를 해보셨다면")'))
         check(f"{width} HTTP 200",resp is not None and resp.status==200)
         check(f"{width} headings: intro h1 and FAST h2",page.locator("h1#landing-title").count()==1 and page.locator("h2#fast-title").count()==1)
         check(f"{width} responsive overflow",page.evaluate("document.documentElement.scrollWidth <= window.innerWidth + 1"),page.evaluate("({scroll:document.documentElement.scrollWidth,inner:innerWidth})"))
