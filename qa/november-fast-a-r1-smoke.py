@@ -13,7 +13,7 @@ def check(name, passed, detail=None):
     results["checks"].append({"name":name,"passed":bool(passed),"detail":detail})
     if not passed: print("FAIL:", name, detail,flush=True)
 with sync_playwright() as p:
-    browser=p.chromium.launch(headless=True)
+    browser=p.chromium.launch(headless=True,channel='chrome')  # system Chrome preinstalled on GitHub hosted Ubuntu runners
     for width in (360,390,768,1440):
         context=browser.new_context(viewport={"width":width,"height":840 if width<900 else 900},device_scale_factor=1,reduced_motion="no-preference")
         page=context.new_page()
