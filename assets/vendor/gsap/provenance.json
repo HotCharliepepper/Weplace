@@ -1,0 +1,19 @@
+{
+  "package": "gsap",
+  "version": "3.13.0",
+  "source": "https://registry.npmjs.org/gsap/-/gsap-3.13.0.tgz",
+  "repository": "https://github.com/greensock/GSAP",
+  "license": "https://gsap.com/standard-license",
+  "tarball_sha256": "b570ed74abe1fbd4bb0cf43b57bf21118de1c87323659014a84339b5b6c33665",
+  "npm_integrity": "sha512-QL7MJ2WMjm1PHWsoFrAQH/J8wUeqZvMtHO58qdekHpCfhvhSL4gSiz6vJf5EeMP0LOn3ZCprL2ki/gjED8ghVw==",
+  "files": {
+    "gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "ScrollTrigger.min.js": {
+      "bytes": 44157,
+      "sha256": "308219390e5e3b84cda0c481e70caa9820883ae10bda44e6e9a149a81aac4b3f"
+    }
+  }
+}

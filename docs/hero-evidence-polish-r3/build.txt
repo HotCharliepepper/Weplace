@@ -1,0 +1,11 @@
+
+> weplace-public-site@1.1.0 build
+> node scripts/build-site.mjs
+
+Review build only: 22 company/privacy approval checks remain open. No production approval is implied.
+Static artifact created: dist/ (no server credentials, CRM writes, or migrations).
+
+> weplace-public-site@1.1.0 postbuild
+> node scripts/build-ad-routes.mjs
+
+R2-A: four static, noindex campaign routes included.

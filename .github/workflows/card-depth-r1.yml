@@ -1,0 +1,52 @@
+name: WEPLACE Selective Card Depth R1 QA
+on:
+  pull_request:
+    paths:
+      - assets/css/card-depth-r1.css
+      - index.html
+      - site.html
+      - unified-r3-hero-polish-r3.html
+      - tests/card-depth-r1.test.cjs
+      - scripts/qa-card-depth-r1.cjs
+      - assets/js/first-look-bridge-r412.js
+      - .github/workflows/card-depth-r1.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-and-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Static regression, links, build
+        run: |
+          npm ci
+          npm run verify
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Serve read-only review artifact
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory dist > /tmp/card-depth-r1.log 2>&1 &
+          for n in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/site.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/card-depth-r1.log
+          exit 1
+      - name: Responsive Chromium card QA
+        run: node scripts/qa-card-depth-r1.cjs
+      - name: Upload before/after reference captures and QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: WEPLACE-CARD-DEPTH-R1-QA
+          path: |
+            docs/card-depth-r1/browser/
+            test-results/
+          retention-days: 14
+          if-no-files-found: warn

@@ -1,0 +1,5383 @@
+{
+  "url": "http://127.0.0.1:4173/dist/unified-r3-hero-polish-r3.html",
+  "widths": [
+    360,
+    390,
+    430,
+    768,
+    1280,
+    1440
+  ],
+  "checks": [
+    {
+      "name": "360 page has no horizontal overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 retains eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 only 2026 initially selected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 one responsive SVG is visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 visible graph contains four years",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 graph needs no horizontal swipe",
+      "pass": true,
+      "detail": {
+        "left": 36,
+        "right": 324,
+        "width": 288,
+        "parentWidth": 288,
+        "parentScrollWidth": 288,
+        "texts": [
+          {
+            "text": "단위: 억 원",
+            "left": 39.84000015258789,
+            "right": 90.30875396728516,
+            "top": 3110.746826171875,
+            "bottom": 3127.746826171875,
+            "size": 12
+          },
+          {
+            "text": "2.1",
+            "left": 51.289371490478516,
+            "right": 68.0228042602539,
+            "top": 3140.466796875,
+            "bottom": 3159.466796875,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "1.9",
+            "left": 51.289371490478516,
+            "right": 68.0228042602539,
+            "top": 3207.6669921875,
+            "bottom": 3226.6669921875,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "1.7",
+            "left": 51.289371490478516,
+            "right": 68.0228042602539,
+            "top": 3274.866943359375,
+            "bottom": 3293.866943359375,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "1.5",
+            "left": 51.289371490478516,
+            "right": 68.0228042602539,
+            "top": 3342.06689453125,
+            "bottom": 3361.06689453125,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "1.74",
+            "left": 82.50437927246094,
+            "right": 109.13221740722656,
+            "top": 3238.346923828125,
+            "bottom": 3258.346923828125,
+            "size": 13.44
+          },
+          {
+            "text": "1.72",
+            "left": 183.30438232421875,
+            "right": 209.93222045898438,
+            "top": 3288.266845703125,
+            "bottom": 3308.266845703125,
+            "size": 13.44
+          },
+          {
+            "text": "1.93",
+            "left": 284.1044006347656,
+            "right": 310.73223876953125,
+            "top": 3174.5068359375,
+            "bottom": 3194.5068359375,
+            "size": 13.44
+          },
+          {
+            "text": "4월",
+            "left": 86.27000427246094,
+            "right": 105.37879180908203,
+            "top": 3366.06689453125,
+            "bottom": 3385.06689453125,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "5월",
+            "left": 187.07000732421875,
+            "right": 206.17880249023438,
+            "top": 3366.06689453125,
+            "bottom": 3385.06689453125,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "6월",
+            "left": 287.8699951171875,
+            "right": 306.97882080078125,
+            "top": 3366.06689453125,
+            "bottom": 3385.06689453125,
+            "size": 12.959999999999999
+          }
+        ]
+      }
+    },
+    {
+      "name": "360 all month labels fit",
+      "pass": true,
+      "detail": [
+        {
+          "text": "단위: 억 원",
+          "left": 39.84000015258789,
+          "right": 90.30875396728516,
+          "top": 3110.746826171875,
+          "bottom": 3127.746826171875,
+          "size": 12
+        },
+        {
+          "text": "2.1",
+          "left": 51.289371490478516,
+          "right": 68.0228042602539,
+          "top": 3140.466796875,
+          "bottom": 3159.466796875,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "1.9",
+          "left": 51.289371490478516,
+          "right": 68.0228042602539,
+          "top": 3207.6669921875,
+          "bottom": 3226.6669921875,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "1.7",
+          "left": 51.289371490478516,
+          "right": 68.0228042602539,
+          "top": 3274.866943359375,
+          "bottom": 3293.866943359375,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "1.5",
+          "left": 51.289371490478516,
+          "right": 68.0228042602539,
+          "top": 3342.06689453125,
+          "bottom": 3361.06689453125,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "1.74",
+          "left": 82.50437927246094,
+          "right": 109.13221740722656,
+          "top": 3238.346923828125,
+          "bottom": 3258.346923828125,
+          "size": 13.44
+        },
+        {
+          "text": "1.72",
+          "left": 183.30438232421875,
+          "right": 209.93222045898438,
+          "top": 3288.266845703125,
+          "bottom": 3308.266845703125,
+          "size": 13.44
+        },
+        {
+          "text": "1.93",
+          "left": 284.1044006347656,
+          "right": 310.73223876953125,
+          "top": 3174.5068359375,
+          "bottom": 3194.5068359375,
+          "size": 13.44
+        },
+        {
+          "text": "4월",
+          "left": 86.27000427246094,
+          "right": 105.37879180908203,
+          "top": 3366.06689453125,
+          "bottom": 3385.06689453125,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "5월",
+          "left": 187.07000732421875,
+          "right": 206.17880249023438,
+          "top": 3366.06689453125,
+          "bottom": 3385.06689453125,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "6월",
+          "left": 287.8699951171875,
+          "right": 306.97882080078125,
+          "top": 3366.06689453125,
+          "bottom": 3385.06689453125,
+          "size": 12.959999999999999
+        }
+      ]
+    },
+    {
+      "name": "360 readable axis and data labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "단위: 억 원",
+          "left": 39.84000015258789,
+          "right": 90.30875396728516,
+          "top": 3110.746826171875,
+          "bottom": 3127.746826171875,
+          "size": 12
+        },
+        {
+          "text": "2.1",
+          "left": 51.289371490478516,
+          "right": 68.0228042602539,
+          "top": 3140.466796875,
+          "bottom": 3159.466796875,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "1.9",
+          "left": 51.289371490478516,
+          "right": 68.0228042602539,
+          "top": 3207.6669921875,
+          "bottom": 3226.6669921875,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "1.7",
+          "left": 51.289371490478516,
+          "right": 68.0228042602539,
+          "top": 3274.866943359375,
+          "bottom": 3293.866943359375,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "1.5",
+          "left": 51.289371490478516,
+          "right": 68.0228042602539,
+          "top": 3342.06689453125,
+          "bottom": 3361.06689453125,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "1.74",
+          "left": 82.50437927246094,
+          "right": 109.13221740722656,
+          "top": 3238.346923828125,
+          "bottom": 3258.346923828125,
+          "size": 13.44
+        },
+        {
+          "text": "1.72",
+          "left": 183.30438232421875,
+          "right": 209.93222045898438,
+          "top": 3288.266845703125,
+          "bottom": 3308.266845703125,
+          "size": 13.44
+        },
+        {
+          "text": "1.93",
+          "left": 284.1044006347656,
+          "right": 310.73223876953125,
+          "top": 3174.5068359375,
+          "bottom": 3194.5068359375,
+          "size": 13.44
+        },
+        {
+          "text": "4월",
+          "left": 86.27000427246094,
+          "right": 105.37879180908203,
+          "top": 3366.06689453125,
+          "bottom": 3385.06689453125,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "5월",
+          "left": 187.07000732421875,
+          "right": 206.17880249023438,
+          "top": 3366.06689453125,
+          "bottom": 3385.06689453125,
+          "size": 12.959999999999999
+        },
+        {
+          "text": "6월",
+          "left": 287.8699951171875,
+          "right": 306.97882080078125,
+          "top": 3366.06689453125,
+          "bottom": 3385.06689453125,
+          "size": 12.959999999999999
+        }
+      ]
+    },
+    {
+      "name": "360 default 2026 line has strongest emphasis",
+      "pass": true,
+      "detail": [
+        {
+          "year": "2023",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2024",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2025",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2026",
+          "opacity": 1,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "name": "360 can select 2023",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 can select 2024",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 can select 2025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 2026-only action synchronizes both graphs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 all-years action selects four visible lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 last selected year cannot disappear",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 raw values remain readable without page overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 photo retains native scale",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 menu photograph appears",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 exterior photograph returns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 retained photo comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 retained route comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 retained booking comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 phrase 1 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 phrase 1 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 28.796875,
+        "right": 190.484375,
+        "top": 361.6875,
+        "bottom": 412.65625,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "360 phrase 2 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 phrase 2 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 68.390625,
+        "right": 230.078125,
+        "top": 361.28125,
+        "bottom": 412.25,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "360 phrase 3 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 phrase 3 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 108,
+        "right": 307.0625,
+        "top": 361.875,
+        "bottom": 412.84375,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "360 word starts progress diagonally",
+      "pass": true,
+      "detail": [
+        {
+          "left": 28.796875,
+          "right": 190.484375,
+          "top": 361.6875,
+          "bottom": 412.65625,
+          "opacity": 1
+        },
+        {
+          "left": 68.390625,
+          "right": 230.078125,
+          "top": 361.28125,
+          "bottom": 412.25,
+          "opacity": 1
+        },
+        {
+          "left": 108,
+          "right": 307.0625,
+          "top": 361.875,
+          "bottom": 412.84375,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "name": "360 FAST stays silent by default",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 FAST starts on replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 FAST settles after replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 inquiry prepares locally",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 inquiry explains unsent status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 inquiry closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 footer links are not clipped",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 22,
+          "right": 182,
+          "top": 95.578125,
+          "bottom": 139.578125,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 22,
+          "right": 172,
+          "top": 378.546875,
+          "bottom": 422.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 22,
+          "right": 172,
+          "top": 434.546875,
+          "bottom": 478.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 22,
+          "right": 172,
+          "top": 490.546875,
+          "bottom": 534.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 188,
+          "right": 338,
+          "top": 378.546875,
+          "bottom": 422.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 188,
+          "right": 338,
+          "top": 434.546875,
+          "bottom": 478.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 188,
+          "right": 338,
+          "top": 490.546875,
+          "bottom": 534.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 188,
+          "right": 338,
+          "top": 546.546875,
+          "bottom": 590.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 188,
+          "right": 338,
+          "top": 602.546875,
+          "bottom": 646.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 188,
+          "right": 338,
+          "top": 658.546875,
+          "bottom": 702.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 293.828125,
+          "right": 338,
+          "top": 767.546875,
+          "bottom": 811.546875,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "360 footer links do not overlap",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 22,
+          "right": 182,
+          "top": 95.578125,
+          "bottom": 139.578125,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 22,
+          "right": 172,
+          "top": 378.546875,
+          "bottom": 422.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 22,
+          "right": 172,
+          "top": 434.546875,
+          "bottom": 478.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 22,
+          "right": 172,
+          "top": 490.546875,
+          "bottom": 534.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 188,
+          "right": 338,
+          "top": 378.546875,
+          "bottom": 422.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 188,
+          "right": 338,
+          "top": 434.546875,
+          "bottom": 478.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 188,
+          "right": 338,
+          "top": 490.546875,
+          "bottom": 534.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 188,
+          "right": 338,
+          "top": 546.546875,
+          "bottom": 590.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 188,
+          "right": 338,
+          "top": 602.546875,
+          "bottom": 646.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 188,
+          "right": 338,
+          "top": 658.546875,
+          "bottom": 702.546875,
+          "width": 150,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 293.828125,
+          "right": 338,
+          "top": 767.546875,
+          "bottom": 811.546875,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "360 retains footer /#cases",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 retains footer /#flow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 retains footer /privacy/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 retains footer /",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 retains footer /my-store/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 retains footer #contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 footer inquiry link reaches contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "360 end-of-flow has no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 page has no horizontal overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 retains eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 only 2026 initially selected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 one responsive SVG is visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 visible graph contains four years",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 graph needs no horizontal swipe",
+      "pass": true,
+      "detail": {
+        "left": 36,
+        "right": 354,
+        "width": 318,
+        "parentWidth": 318,
+        "parentScrollWidth": 318,
+        "texts": [
+          {
+            "text": "단위: 억 원",
+            "left": 40.23999786376953,
+            "right": 96.32913208007812,
+            "top": 3097.293701171875,
+            "bottom": 3116.293701171875,
+            "size": 13.25
+          },
+          {
+            "text": "2.1",
+            "left": 52.870628356933594,
+            "right": 71.61795043945312,
+            "top": 3129.2138671875,
+            "bottom": 3150.2138671875,
+            "size": 14.31
+          },
+          {
+            "text": "1.9",
+            "left": 52.870628356933594,
+            "right": 71.61795043945312,
+            "top": 3203.413818359375,
+            "bottom": 3224.413818359375,
+            "size": 14.31
+          },
+          {
+            "text": "1.7",
+            "left": 52.870628356933594,
+            "right": 71.61795043945312,
+            "top": 3277.61376953125,
+            "bottom": 3298.61376953125,
+            "size": 14.31
+          },
+          {
+            "text": "1.5",
+            "left": 52.870628356933594,
+            "right": 71.61795043945312,
+            "top": 3351.813720703125,
+            "bottom": 3372.813720703125,
+            "size": 14.31
+          },
+          {
+            "text": "1.74",
+            "left": 87.3606185913086,
+            "right": 116.9137954711914,
+            "top": 3238.393798828125,
+            "bottom": 3259.393798828125,
+            "size": 14.84
+          },
+          {
+            "text": "1.72",
+            "left": 198.66061401367188,
+            "right": 228.2137908935547,
+            "top": 3293.513671875,
+            "bottom": 3314.513671875,
+            "size": 14.84
+          },
+          {
+            "text": "1.93",
+            "left": 309.9606018066406,
+            "right": 339.5137939453125,
+            "top": 3167.90380859375,
+            "bottom": 3188.90380859375,
+            "size": 14.84
+          },
+          {
+            "text": "4월",
+            "left": 91.5090560913086,
+            "right": 112.35835266113281,
+            "top": 3378.313720703125,
+            "bottom": 3399.313720703125,
+            "size": 14.31
+          },
+          {
+            "text": "5월",
+            "left": 202.80905151367188,
+            "right": 223.65835571289062,
+            "top": 3378.313720703125,
+            "bottom": 3399.313720703125,
+            "size": 14.31
+          },
+          {
+            "text": "6월",
+            "left": 314.10906982421875,
+            "right": 334.9583435058594,
+            "top": 3378.313720703125,
+            "bottom": 3399.313720703125,
+            "size": 14.31
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 all month labels fit",
+      "pass": true,
+      "detail": [
+        {
+          "text": "단위: 억 원",
+          "left": 40.23999786376953,
+          "right": 96.32913208007812,
+          "top": 3097.293701171875,
+          "bottom": 3116.293701171875,
+          "size": 13.25
+        },
+        {
+          "text": "2.1",
+          "left": 52.870628356933594,
+          "right": 71.61795043945312,
+          "top": 3129.2138671875,
+          "bottom": 3150.2138671875,
+          "size": 14.31
+        },
+        {
+          "text": "1.9",
+          "left": 52.870628356933594,
+          "right": 71.61795043945312,
+          "top": 3203.413818359375,
+          "bottom": 3224.413818359375,
+          "size": 14.31
+        },
+        {
+          "text": "1.7",
+          "left": 52.870628356933594,
+          "right": 71.61795043945312,
+          "top": 3277.61376953125,
+          "bottom": 3298.61376953125,
+          "size": 14.31
+        },
+        {
+          "text": "1.5",
+          "left": 52.870628356933594,
+          "right": 71.61795043945312,
+          "top": 3351.813720703125,
+          "bottom": 3372.813720703125,
+          "size": 14.31
+        },
+        {
+          "text": "1.74",
+          "left": 87.3606185913086,
+          "right": 116.9137954711914,
+          "top": 3238.393798828125,
+          "bottom": 3259.393798828125,
+          "size": 14.84
+        },
+        {
+          "text": "1.72",
+          "left": 198.66061401367188,
+          "right": 228.2137908935547,
+          "top": 3293.513671875,
+          "bottom": 3314.513671875,
+          "size": 14.84
+        },
+        {
+          "text": "1.93",
+          "left": 309.9606018066406,
+          "right": 339.5137939453125,
+          "top": 3167.90380859375,
+          "bottom": 3188.90380859375,
+          "size": 14.84
+        },
+        {
+          "text": "4월",
+          "left": 91.5090560913086,
+          "right": 112.35835266113281,
+          "top": 3378.313720703125,
+          "bottom": 3399.313720703125,
+          "size": 14.31
+        },
+        {
+          "text": "5월",
+          "left": 202.80905151367188,
+          "right": 223.65835571289062,
+          "top": 3378.313720703125,
+          "bottom": 3399.313720703125,
+          "size": 14.31
+        },
+        {
+          "text": "6월",
+          "left": 314.10906982421875,
+          "right": 334.9583435058594,
+          "top": 3378.313720703125,
+          "bottom": 3399.313720703125,
+          "size": 14.31
+        }
+      ]
+    },
+    {
+      "name": "390 readable axis and data labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "단위: 억 원",
+          "left": 40.23999786376953,
+          "right": 96.32913208007812,
+          "top": 3097.293701171875,
+          "bottom": 3116.293701171875,
+          "size": 13.25
+        },
+        {
+          "text": "2.1",
+          "left": 52.870628356933594,
+          "right": 71.61795043945312,
+          "top": 3129.2138671875,
+          "bottom": 3150.2138671875,
+          "size": 14.31
+        },
+        {
+          "text": "1.9",
+          "left": 52.870628356933594,
+          "right": 71.61795043945312,
+          "top": 3203.413818359375,
+          "bottom": 3224.413818359375,
+          "size": 14.31
+        },
+        {
+          "text": "1.7",
+          "left": 52.870628356933594,
+          "right": 71.61795043945312,
+          "top": 3277.61376953125,
+          "bottom": 3298.61376953125,
+          "size": 14.31
+        },
+        {
+          "text": "1.5",
+          "left": 52.870628356933594,
+          "right": 71.61795043945312,
+          "top": 3351.813720703125,
+          "bottom": 3372.813720703125,
+          "size": 14.31
+        },
+        {
+          "text": "1.74",
+          "left": 87.3606185913086,
+          "right": 116.9137954711914,
+          "top": 3238.393798828125,
+          "bottom": 3259.393798828125,
+          "size": 14.84
+        },
+        {
+          "text": "1.72",
+          "left": 198.66061401367188,
+          "right": 228.2137908935547,
+          "top": 3293.513671875,
+          "bottom": 3314.513671875,
+          "size": 14.84
+        },
+        {
+          "text": "1.93",
+          "left": 309.9606018066406,
+          "right": 339.5137939453125,
+          "top": 3167.90380859375,
+          "bottom": 3188.90380859375,
+          "size": 14.84
+        },
+        {
+          "text": "4월",
+          "left": 91.5090560913086,
+          "right": 112.35835266113281,
+          "top": 3378.313720703125,
+          "bottom": 3399.313720703125,
+          "size": 14.31
+        },
+        {
+          "text": "5월",
+          "left": 202.80905151367188,
+          "right": 223.65835571289062,
+          "top": 3378.313720703125,
+          "bottom": 3399.313720703125,
+          "size": 14.31
+        },
+        {
+          "text": "6월",
+          "left": 314.10906982421875,
+          "right": 334.9583435058594,
+          "top": 3378.313720703125,
+          "bottom": 3399.313720703125,
+          "size": 14.31
+        }
+      ]
+    },
+    {
+      "name": "390 default 2026 line has strongest emphasis",
+      "pass": true,
+      "detail": [
+        {
+          "year": "2023",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2024",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2025",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2026",
+          "opacity": 1,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "name": "390 can select 2023",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 can select 2024",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 can select 2025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 2026-only action synchronizes both graphs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 all-years action selects four visible lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 last selected year cannot disappear",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 raw values remain readable without page overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 photo retains native scale",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 menu photograph appears",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 exterior photograph returns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 retained photo comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 retained route comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 retained booking comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 phrase 1 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 phrase 1 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 31.1875,
+        "right": 206.34375,
+        "top": 359.4375,
+        "bottom": 414.65625,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "390 phrase 2 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 phrase 2 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 74.09375,
+        "right": 249.25,
+        "top": 359.03125,
+        "bottom": 414.25,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "390 phrase 3 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 phrase 3 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 117,
+        "right": 332.65625,
+        "top": 359.625,
+        "bottom": 414.84375,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "390 word starts progress diagonally",
+      "pass": true,
+      "detail": [
+        {
+          "left": 31.1875,
+          "right": 206.34375,
+          "top": 359.4375,
+          "bottom": 414.65625,
+          "opacity": 1
+        },
+        {
+          "left": 74.09375,
+          "right": 249.25,
+          "top": 359.03125,
+          "bottom": 414.25,
+          "opacity": 1
+        },
+        {
+          "left": 117,
+          "right": 332.65625,
+          "top": 359.625,
+          "bottom": 414.84375,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "name": "390 FAST stays silent by default",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 FAST starts on replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 FAST settles after replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 inquiry prepares locally",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 inquiry explains unsent status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 inquiry closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 footer links are not clipped",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 22,
+          "right": 182,
+          "top": 96.453125,
+          "bottom": 140.453125,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 22,
+          "right": 187,
+          "top": 379.421875,
+          "bottom": 423.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 22,
+          "right": 187,
+          "top": 435.421875,
+          "bottom": 479.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 22,
+          "right": 187,
+          "top": 491.421875,
+          "bottom": 535.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 203,
+          "right": 368,
+          "top": 379.421875,
+          "bottom": 423.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 203,
+          "right": 368,
+          "top": 435.421875,
+          "bottom": 479.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 203,
+          "right": 368,
+          "top": 491.421875,
+          "bottom": 535.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 203,
+          "right": 368,
+          "top": 547.421875,
+          "bottom": 591.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 203,
+          "right": 368,
+          "top": 603.421875,
+          "bottom": 647.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 203,
+          "right": 368,
+          "top": 659.421875,
+          "bottom": 703.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 323.828125,
+          "right": 368,
+          "top": 768.421875,
+          "bottom": 812.421875,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "390 footer links do not overlap",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 22,
+          "right": 182,
+          "top": 96.453125,
+          "bottom": 140.453125,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 22,
+          "right": 187,
+          "top": 379.421875,
+          "bottom": 423.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 22,
+          "right": 187,
+          "top": 435.421875,
+          "bottom": 479.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 22,
+          "right": 187,
+          "top": 491.421875,
+          "bottom": 535.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 203,
+          "right": 368,
+          "top": 379.421875,
+          "bottom": 423.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 203,
+          "right": 368,
+          "top": 435.421875,
+          "bottom": 479.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 203,
+          "right": 368,
+          "top": 491.421875,
+          "bottom": 535.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 203,
+          "right": 368,
+          "top": 547.421875,
+          "bottom": 591.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 203,
+          "right": 368,
+          "top": 603.421875,
+          "bottom": 647.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 203,
+          "right": 368,
+          "top": 659.421875,
+          "bottom": 703.421875,
+          "width": 165,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 323.828125,
+          "right": 368,
+          "top": 768.421875,
+          "bottom": 812.421875,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "390 retains footer /#cases",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 retains footer /#flow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 retains footer /privacy/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 retains footer /",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 retains footer /my-store/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 retains footer #contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 footer inquiry link reaches contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "390 end-of-flow has no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 page has no horizontal overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 retains eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 only 2026 initially selected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 one responsive SVG is visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 visible graph contains four years",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 graph needs no horizontal swipe",
+      "pass": true,
+      "detail": {
+        "left": 36,
+        "right": 394,
+        "width": 358,
+        "parentWidth": 358,
+        "parentScrollWidth": 358,
+        "texts": [
+          {
+            "text": "단위: 억 원",
+            "left": 40.77333450317383,
+            "right": 103.47645568847656,
+            "top": 3087.19482421875,
+            "bottom": 3108.19482421875,
+            "size": 14.916666666666668
+          },
+          {
+            "text": "2.1",
+            "left": 55.00499725341797,
+            "right": 76.10420989990234,
+            "top": 3123.38134765625,
+            "bottom": 3147.38134765625,
+            "size": 16.11
+          },
+          {
+            "text": "1.9",
+            "left": 55.00499725341797,
+            "right": 76.10420989990234,
+            "top": 3206.914794921875,
+            "bottom": 3230.914794921875,
+            "size": 16.11
+          },
+          {
+            "text": "1.7",
+            "left": 55.00499725341797,
+            "right": 76.10420989990234,
+            "top": 3290.4482421875,
+            "bottom": 3314.4482421875,
+            "size": 16.11
+          },
+          {
+            "text": "1.5",
+            "left": 55.00499725341797,
+            "right": 76.10420989990234,
+            "top": 3373.9814453125,
+            "bottom": 3397.9814453125,
+            "size": 16.11
+          },
+          {
+            "text": "1.74",
+            "left": 93.81478881835938,
+            "right": 126.96021270751953,
+            "top": 3246.294921875,
+            "bottom": 3270.294677734375,
+            "size": 16.706666666666667
+          },
+          {
+            "text": "1.72",
+            "left": 219.1147918701172,
+            "right": 252.2602081298828,
+            "top": 3308.34814453125,
+            "bottom": 3332.34814453125,
+            "size": 16.706666666666667
+          },
+          {
+            "text": "1.93",
+            "left": 344.414794921875,
+            "right": 377.5602111816406,
+            "top": 3166.938232421875,
+            "bottom": 3190.938232421875,
+            "size": 16.706666666666667
+          },
+          {
+            "text": "4월",
+            "left": 98.48666381835938,
+            "right": 121.48666381835938,
+            "top": 3403.814697265625,
+            "bottom": 3427.814697265625,
+            "size": 16.11
+          },
+          {
+            "text": "5월",
+            "left": 223.7866668701172,
+            "right": 246.7866668701172,
+            "top": 3403.814697265625,
+            "bottom": 3427.814697265625,
+            "size": 16.11
+          },
+          {
+            "text": "6월",
+            "left": 349.086669921875,
+            "right": 372.086669921875,
+            "top": 3403.814697265625,
+            "bottom": 3427.814697265625,
+            "size": 16.11
+          }
+        ]
+      }
+    },
+    {
+      "name": "430 all month labels fit",
+      "pass": true,
+      "detail": [
+        {
+          "text": "단위: 억 원",
+          "left": 40.77333450317383,
+          "right": 103.47645568847656,
+          "top": 3087.19482421875,
+          "bottom": 3108.19482421875,
+          "size": 14.916666666666668
+        },
+        {
+          "text": "2.1",
+          "left": 55.00499725341797,
+          "right": 76.10420989990234,
+          "top": 3123.38134765625,
+          "bottom": 3147.38134765625,
+          "size": 16.11
+        },
+        {
+          "text": "1.9",
+          "left": 55.00499725341797,
+          "right": 76.10420989990234,
+          "top": 3206.914794921875,
+          "bottom": 3230.914794921875,
+          "size": 16.11
+        },
+        {
+          "text": "1.7",
+          "left": 55.00499725341797,
+          "right": 76.10420989990234,
+          "top": 3290.4482421875,
+          "bottom": 3314.4482421875,
+          "size": 16.11
+        },
+        {
+          "text": "1.5",
+          "left": 55.00499725341797,
+          "right": 76.10420989990234,
+          "top": 3373.9814453125,
+          "bottom": 3397.9814453125,
+          "size": 16.11
+        },
+        {
+          "text": "1.74",
+          "left": 93.81478881835938,
+          "right": 126.96021270751953,
+          "top": 3246.294921875,
+          "bottom": 3270.294677734375,
+          "size": 16.706666666666667
+        },
+        {
+          "text": "1.72",
+          "left": 219.1147918701172,
+          "right": 252.2602081298828,
+          "top": 3308.34814453125,
+          "bottom": 3332.34814453125,
+          "size": 16.706666666666667
+        },
+        {
+          "text": "1.93",
+          "left": 344.414794921875,
+          "right": 377.5602111816406,
+          "top": 3166.938232421875,
+          "bottom": 3190.938232421875,
+          "size": 16.706666666666667
+        },
+        {
+          "text": "4월",
+          "left": 98.48666381835938,
+          "right": 121.48666381835938,
+          "top": 3403.814697265625,
+          "bottom": 3427.814697265625,
+          "size": 16.11
+        },
+        {
+          "text": "5월",
+          "left": 223.7866668701172,
+          "right": 246.7866668701172,
+          "top": 3403.814697265625,
+          "bottom": 3427.814697265625,
+          "size": 16.11
+        },
+        {
+          "text": "6월",
+          "left": 349.086669921875,
+          "right": 372.086669921875,
+          "top": 3403.814697265625,
+          "bottom": 3427.814697265625,
+          "size": 16.11
+        }
+      ]
+    },
+    {
+      "name": "430 readable axis and data labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "단위: 억 원",
+          "left": 40.77333450317383,
+          "right": 103.47645568847656,
+          "top": 3087.19482421875,
+          "bottom": 3108.19482421875,
+          "size": 14.916666666666668
+        },
+        {
+          "text": "2.1",
+          "left": 55.00499725341797,
+          "right": 76.10420989990234,
+          "top": 3123.38134765625,
+          "bottom": 3147.38134765625,
+          "size": 16.11
+        },
+        {
+          "text": "1.9",
+          "left": 55.00499725341797,
+          "right": 76.10420989990234,
+          "top": 3206.914794921875,
+          "bottom": 3230.914794921875,
+          "size": 16.11
+        },
+        {
+          "text": "1.7",
+          "left": 55.00499725341797,
+          "right": 76.10420989990234,
+          "top": 3290.4482421875,
+          "bottom": 3314.4482421875,
+          "size": 16.11
+        },
+        {
+          "text": "1.5",
+          "left": 55.00499725341797,
+          "right": 76.10420989990234,
+          "top": 3373.9814453125,
+          "bottom": 3397.9814453125,
+          "size": 16.11
+        },
+        {
+          "text": "1.74",
+          "left": 93.81478881835938,
+          "right": 126.96021270751953,
+          "top": 3246.294921875,
+          "bottom": 3270.294677734375,
+          "size": 16.706666666666667
+        },
+        {
+          "text": "1.72",
+          "left": 219.1147918701172,
+          "right": 252.2602081298828,
+          "top": 3308.34814453125,
+          "bottom": 3332.34814453125,
+          "size": 16.706666666666667
+        },
+        {
+          "text": "1.93",
+          "left": 344.414794921875,
+          "right": 377.5602111816406,
+          "top": 3166.938232421875,
+          "bottom": 3190.938232421875,
+          "size": 16.706666666666667
+        },
+        {
+          "text": "4월",
+          "left": 98.48666381835938,
+          "right": 121.48666381835938,
+          "top": 3403.814697265625,
+          "bottom": 3427.814697265625,
+          "size": 16.11
+        },
+        {
+          "text": "5월",
+          "left": 223.7866668701172,
+          "right": 246.7866668701172,
+          "top": 3403.814697265625,
+          "bottom": 3427.814697265625,
+          "size": 16.11
+        },
+        {
+          "text": "6월",
+          "left": 349.086669921875,
+          "right": 372.086669921875,
+          "top": 3403.814697265625,
+          "bottom": 3427.814697265625,
+          "size": 16.11
+        }
+      ]
+    },
+    {
+      "name": "430 default 2026 line has strongest emphasis",
+      "pass": true,
+      "detail": [
+        {
+          "year": "2023",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2024",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2025",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2026",
+          "opacity": 1,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "name": "430 can select 2023",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 can select 2024",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 can select 2025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 2026-only action synchronizes both graphs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 all-years action selects four visible lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 last selected year cannot disappear",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 raw values remain readable without page overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 photo retains native scale",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 menu photograph appears",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 exterior photograph returns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 retained photo comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 retained route comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 retained booking comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 phrase 1 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 phrase 1 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 34.390625,
+        "right": 227.515625,
+        "top": 357.046875,
+        "bottom": 417.921875,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "430 phrase 2 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 phrase 2 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 81.6875,
+        "right": 274.8125,
+        "top": 356.640625,
+        "bottom": 417.515625,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "430 phrase 3 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 phrase 3 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 129,
+        "right": 366.78125,
+        "top": 356.234375,
+        "bottom": 417.109375,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "430 word starts progress diagonally",
+      "pass": true,
+      "detail": [
+        {
+          "left": 34.390625,
+          "right": 227.515625,
+          "top": 357.046875,
+          "bottom": 417.921875,
+          "opacity": 1
+        },
+        {
+          "left": 81.6875,
+          "right": 274.8125,
+          "top": 356.640625,
+          "bottom": 417.515625,
+          "opacity": 1
+        },
+        {
+          "left": 129,
+          "right": 366.78125,
+          "top": 356.234375,
+          "bottom": 417.109375,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "name": "430 FAST stays silent by default",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 FAST starts on replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 FAST settles after replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 inquiry prepares locally",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 inquiry explains unsent status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 inquiry closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 footer links are not clipped",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 22,
+          "right": 182,
+          "top": 95.890625,
+          "bottom": 139.890625,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 22,
+          "right": 207,
+          "top": 378.859375,
+          "bottom": 422.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 22,
+          "right": 207,
+          "top": 434.859375,
+          "bottom": 478.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 22,
+          "right": 207,
+          "top": 490.859375,
+          "bottom": 534.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 223,
+          "right": 408,
+          "top": 378.859375,
+          "bottom": 422.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 223,
+          "right": 408,
+          "top": 434.859375,
+          "bottom": 478.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 223,
+          "right": 408,
+          "top": 490.859375,
+          "bottom": 534.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 223,
+          "right": 408,
+          "top": 546.859375,
+          "bottom": 590.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 223,
+          "right": 408,
+          "top": 602.859375,
+          "bottom": 646.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 223,
+          "right": 408,
+          "top": 658.859375,
+          "bottom": 702.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 363.828125,
+          "right": 408,
+          "top": 767.859375,
+          "bottom": 811.859375,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "430 footer links do not overlap",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 22,
+          "right": 182,
+          "top": 95.890625,
+          "bottom": 139.890625,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 22,
+          "right": 207,
+          "top": 378.859375,
+          "bottom": 422.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 22,
+          "right": 207,
+          "top": 434.859375,
+          "bottom": 478.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 22,
+          "right": 207,
+          "top": 490.859375,
+          "bottom": 534.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 223,
+          "right": 408,
+          "top": 378.859375,
+          "bottom": 422.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 223,
+          "right": 408,
+          "top": 434.859375,
+          "bottom": 478.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 223,
+          "right": 408,
+          "top": 490.859375,
+          "bottom": 534.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 223,
+          "right": 408,
+          "top": 546.859375,
+          "bottom": 590.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 223,
+          "right": 408,
+          "top": 602.859375,
+          "bottom": 646.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 223,
+          "right": 408,
+          "top": 658.859375,
+          "bottom": 702.859375,
+          "width": 185,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 363.828125,
+          "right": 408,
+          "top": 767.859375,
+          "bottom": 811.859375,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "430 retains footer /#cases",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 retains footer /#flow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 retains footer /privacy/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 retains footer /",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 retains footer /my-store/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 retains footer #contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 footer inquiry link reaches contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "430 end-of-flow has no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 page has no horizontal overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 retains eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 only 2026 initially selected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 one responsive SVG is visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 visible graph contains four years",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 graph needs no horizontal swipe",
+      "pass": true,
+      "detail": {
+        "left": 154,
+        "right": 614,
+        "width": 460,
+        "parentWidth": 643,
+        "parentScrollWidth": 643,
+        "texts": [
+          {
+            "text": "단위: 억 원",
+            "left": 160.13333129882812,
+            "right": 240.71145629882812,
+            "top": 3340.088623046875,
+            "bottom": 3368.088623046875,
+            "size": 19.166666666666668
+          },
+          {
+            "text": "2.1",
+            "left": 178.41250610351562,
+            "right": 204.958984375,
+            "top": 3387.1552734375,
+            "bottom": 3417.1552734375,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "1.9",
+            "left": 178.41250610351562,
+            "right": 204.958984375,
+            "top": 3494.488525390625,
+            "bottom": 3524.488525390625,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "1.7",
+            "left": 178.41250610351562,
+            "right": 204.958984375,
+            "top": 3601.82177734375,
+            "bottom": 3631.82177734375,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "1.5",
+            "left": 178.41250610351562,
+            "right": 204.958984375,
+            "top": 3709.1552734375,
+            "bottom": 3739.1552734375,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "1.74",
+            "left": 228.29322814941406,
+            "right": 271.0360107421875,
+            "top": 3544.088623046875,
+            "bottom": 3575.088623046875,
+            "size": 21.46666666666667
+          },
+          {
+            "text": "1.72",
+            "left": 389.293212890625,
+            "right": 431.0359802246094,
+            "top": 3623.82177734375,
+            "bottom": 3654.82177734375,
+            "size": 21.46666666666667
+          },
+          {
+            "text": "1.93",
+            "left": 550.293212890625,
+            "right": 592.0360107421875,
+            "top": 3442.121826171875,
+            "bottom": 3473.121826171875,
+            "size": 21.46666666666667
+          },
+          {
+            "text": "4월",
+            "left": 234.29322814941406,
+            "right": 263.840087890625,
+            "top": 3747.488525390625,
+            "bottom": 3777.488525390625,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "5월",
+            "left": 395.293212890625,
+            "right": 424.840087890625,
+            "top": 3747.488525390625,
+            "bottom": 3777.488525390625,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "6월",
+            "left": 556.293212890625,
+            "right": 585.840087890625,
+            "top": 3747.488525390625,
+            "bottom": 3777.488525390625,
+            "size": 20.700000000000003
+          }
+        ]
+      }
+    },
+    {
+      "name": "768 all month labels fit",
+      "pass": true,
+      "detail": [
+        {
+          "text": "단위: 억 원",
+          "left": 160.13333129882812,
+          "right": 240.71145629882812,
+          "top": 3340.088623046875,
+          "bottom": 3368.088623046875,
+          "size": 19.166666666666668
+        },
+        {
+          "text": "2.1",
+          "left": 178.41250610351562,
+          "right": 204.958984375,
+          "top": 3387.1552734375,
+          "bottom": 3417.1552734375,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "1.9",
+          "left": 178.41250610351562,
+          "right": 204.958984375,
+          "top": 3494.488525390625,
+          "bottom": 3524.488525390625,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "1.7",
+          "left": 178.41250610351562,
+          "right": 204.958984375,
+          "top": 3601.82177734375,
+          "bottom": 3631.82177734375,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "1.5",
+          "left": 178.41250610351562,
+          "right": 204.958984375,
+          "top": 3709.1552734375,
+          "bottom": 3739.1552734375,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "1.74",
+          "left": 228.29322814941406,
+          "right": 271.0360107421875,
+          "top": 3544.088623046875,
+          "bottom": 3575.088623046875,
+          "size": 21.46666666666667
+        },
+        {
+          "text": "1.72",
+          "left": 389.293212890625,
+          "right": 431.0359802246094,
+          "top": 3623.82177734375,
+          "bottom": 3654.82177734375,
+          "size": 21.46666666666667
+        },
+        {
+          "text": "1.93",
+          "left": 550.293212890625,
+          "right": 592.0360107421875,
+          "top": 3442.121826171875,
+          "bottom": 3473.121826171875,
+          "size": 21.46666666666667
+        },
+        {
+          "text": "4월",
+          "left": 234.29322814941406,
+          "right": 263.840087890625,
+          "top": 3747.488525390625,
+          "bottom": 3777.488525390625,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "5월",
+          "left": 395.293212890625,
+          "right": 424.840087890625,
+          "top": 3747.488525390625,
+          "bottom": 3777.488525390625,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "6월",
+          "left": 556.293212890625,
+          "right": 585.840087890625,
+          "top": 3747.488525390625,
+          "bottom": 3777.488525390625,
+          "size": 20.700000000000003
+        }
+      ]
+    },
+    {
+      "name": "768 readable axis and data labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "단위: 억 원",
+          "left": 160.13333129882812,
+          "right": 240.71145629882812,
+          "top": 3340.088623046875,
+          "bottom": 3368.088623046875,
+          "size": 19.166666666666668
+        },
+        {
+          "text": "2.1",
+          "left": 178.41250610351562,
+          "right": 204.958984375,
+          "top": 3387.1552734375,
+          "bottom": 3417.1552734375,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "1.9",
+          "left": 178.41250610351562,
+          "right": 204.958984375,
+          "top": 3494.488525390625,
+          "bottom": 3524.488525390625,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "1.7",
+          "left": 178.41250610351562,
+          "right": 204.958984375,
+          "top": 3601.82177734375,
+          "bottom": 3631.82177734375,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "1.5",
+          "left": 178.41250610351562,
+          "right": 204.958984375,
+          "top": 3709.1552734375,
+          "bottom": 3739.1552734375,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "1.74",
+          "left": 228.29322814941406,
+          "right": 271.0360107421875,
+          "top": 3544.088623046875,
+          "bottom": 3575.088623046875,
+          "size": 21.46666666666667
+        },
+        {
+          "text": "1.72",
+          "left": 389.293212890625,
+          "right": 431.0359802246094,
+          "top": 3623.82177734375,
+          "bottom": 3654.82177734375,
+          "size": 21.46666666666667
+        },
+        {
+          "text": "1.93",
+          "left": 550.293212890625,
+          "right": 592.0360107421875,
+          "top": 3442.121826171875,
+          "bottom": 3473.121826171875,
+          "size": 21.46666666666667
+        },
+        {
+          "text": "4월",
+          "left": 234.29322814941406,
+          "right": 263.840087890625,
+          "top": 3747.488525390625,
+          "bottom": 3777.488525390625,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "5월",
+          "left": 395.293212890625,
+          "right": 424.840087890625,
+          "top": 3747.488525390625,
+          "bottom": 3777.488525390625,
+          "size": 20.700000000000003
+        },
+        {
+          "text": "6월",
+          "left": 556.293212890625,
+          "right": 585.840087890625,
+          "top": 3747.488525390625,
+          "bottom": 3777.488525390625,
+          "size": 20.700000000000003
+        }
+      ]
+    },
+    {
+      "name": "768 default 2026 line has strongest emphasis",
+      "pass": true,
+      "detail": [
+        {
+          "year": "2023",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2024",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2025",
+          "opacity": 0.45,
+          "width": 2
+        },
+        {
+          "year": "2026",
+          "opacity": 1,
+          "width": 3
+        }
+      ]
+    },
+    {
+      "name": "768 can select 2023",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 can select 2024",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 can select 2025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 2026-only action synchronizes both graphs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 all-years action selects four visible lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 last selected year cannot disappear",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 raw values remain readable without page overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 photo retains native scale",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 menu photograph appears",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 exterior photograph returns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 retained photo comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 retained route comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 retained booking comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 phrase 1 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 phrase 1 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 61.4375,
+        "right": 343.09375,
+        "top": 342.1875,
+        "bottom": 430.984375,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "768 phrase 2 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 phrase 2 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 145.90625,
+        "right": 427.5625,
+        "top": 342.78125,
+        "bottom": 431.578125,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "768 phrase 3 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 phrase 3 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 230.390625,
+        "right": 577.15625,
+        "top": 342.375,
+        "bottom": 431.171875,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "768 word starts progress diagonally",
+      "pass": true,
+      "detail": [
+        {
+          "left": 61.4375,
+          "right": 343.09375,
+          "top": 342.1875,
+          "bottom": 430.984375,
+          "opacity": 1
+        },
+        {
+          "left": 145.90625,
+          "right": 427.5625,
+          "top": 342.78125,
+          "bottom": 431.578125,
+          "opacity": 1
+        },
+        {
+          "left": 230.390625,
+          "right": 577.15625,
+          "top": 342.375,
+          "bottom": 431.171875,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "name": "768 FAST stays silent by default",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 FAST starts on replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 FAST settles after replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 inquiry prepares locally",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 inquiry explains unsent status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 inquiry closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 footer links are not clipped",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 38.390625,
+          "right": 198.390625,
+          "top": 95.53125,
+          "bottom": 139.53125,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 38.390625,
+          "right": 323.390625,
+          "top": 380.1875,
+          "bottom": 424.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 38.390625,
+          "right": 323.390625,
+          "top": 436.1875,
+          "bottom": 480.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 38.390625,
+          "right": 323.390625,
+          "top": 492.1875,
+          "bottom": 536.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 380.1875,
+          "bottom": 424.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 436.1875,
+          "bottom": 480.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 492.1875,
+          "bottom": 536.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 548.1875,
+          "bottom": 592.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 604.1875,
+          "bottom": 648.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 660.1875,
+          "bottom": 704.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 685.4375,
+          "right": 729.609375,
+          "top": 769.1875,
+          "bottom": 813.1875,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "768 footer links do not overlap",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 38.390625,
+          "right": 198.390625,
+          "top": 95.53125,
+          "bottom": 139.53125,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 38.390625,
+          "right": 323.390625,
+          "top": 380.1875,
+          "bottom": 424.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 38.390625,
+          "right": 323.390625,
+          "top": 436.1875,
+          "bottom": 480.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 38.390625,
+          "right": 323.390625,
+          "top": 492.1875,
+          "bottom": 536.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 380.1875,
+          "bottom": 424.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 436.1875,
+          "bottom": 480.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 492.1875,
+          "bottom": 536.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 548.1875,
+          "bottom": 592.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 604.1875,
+          "bottom": 648.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 353.390625,
+          "right": 638.390625,
+          "top": 660.1875,
+          "bottom": 704.1875,
+          "width": 285,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 685.4375,
+          "right": 729.609375,
+          "top": 769.1875,
+          "bottom": 813.1875,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "768 retains footer /#cases",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 retains footer /#flow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 retains footer /privacy/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 retains footer /",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 retains footer /my-store/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 retains footer #contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 footer inquiry link reaches contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 end-of-flow has no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 page has no horizontal overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 retains eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 only 2026 initially selected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 one responsive SVG is visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 visible graph contains four years",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 graph needs no horizontal swipe",
+      "pass": true,
+      "detail": {
+        "left": 103,
+        "right": 1177,
+        "width": 1074,
+        "parentWidth": 1074,
+        "parentScrollWidth": 1074,
+        "texts": [
+          {
+            "text": "1.5억",
+            "left": 148.73077392578125,
+            "right": 189.18389892578125,
+            "top": 2961.188720703125,
+            "bottom": 2988.188720703125,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "1.7억",
+            "left": 148.73077392578125,
+            "right": 189.18389892578125,
+            "top": 2856.28955078125,
+            "bottom": 2883.28955078125,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "1.9억",
+            "left": 148.73077392578125,
+            "right": 189.18389892578125,
+            "top": 2751.390625,
+            "bottom": 2778.390625,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "2.1억",
+            "left": 148.73077392578125,
+            "right": 189.18389892578125,
+            "top": 2646.49169921875,
+            "bottom": 2673.49169921875,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "4월",
+            "left": 252.24337768554688,
+            "right": 278.4777526855469,
+            "top": 3007.394287109375,
+            "bottom": 3034.394287109375,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "5월",
+            "left": 621.8875732421875,
+            "right": 648.1219482421875,
+            "top": 3007.394287109375,
+            "bottom": 3034.394287109375,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "6월",
+            "left": 989.0342407226562,
+            "right": 1015.2686157226562,
+            "top": 3007.394287109375,
+            "bottom": 3034.394287109375,
+            "size": 18.731971153846153
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 all month labels fit",
+      "pass": true,
+      "detail": [
+        {
+          "text": "1.5억",
+          "left": 148.73077392578125,
+          "right": 189.18389892578125,
+          "top": 2961.188720703125,
+          "bottom": 2988.188720703125,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "1.7억",
+          "left": 148.73077392578125,
+          "right": 189.18389892578125,
+          "top": 2856.28955078125,
+          "bottom": 2883.28955078125,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "1.9억",
+          "left": 148.73077392578125,
+          "right": 189.18389892578125,
+          "top": 2751.390625,
+          "bottom": 2778.390625,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "2.1억",
+          "left": 148.73077392578125,
+          "right": 189.18389892578125,
+          "top": 2646.49169921875,
+          "bottom": 2673.49169921875,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "4월",
+          "left": 252.24337768554688,
+          "right": 278.4777526855469,
+          "top": 3007.394287109375,
+          "bottom": 3034.394287109375,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "5월",
+          "left": 621.8875732421875,
+          "right": 648.1219482421875,
+          "top": 3007.394287109375,
+          "bottom": 3034.394287109375,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "6월",
+          "left": 989.0342407226562,
+          "right": 1015.2686157226562,
+          "top": 3007.394287109375,
+          "bottom": 3034.394287109375,
+          "size": 18.731971153846153
+        }
+      ]
+    },
+    {
+      "name": "1280 readable axis and data labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "1.5억",
+          "left": 148.73077392578125,
+          "right": 189.18389892578125,
+          "top": 2961.188720703125,
+          "bottom": 2988.188720703125,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "1.7억",
+          "left": 148.73077392578125,
+          "right": 189.18389892578125,
+          "top": 2856.28955078125,
+          "bottom": 2883.28955078125,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "1.9억",
+          "left": 148.73077392578125,
+          "right": 189.18389892578125,
+          "top": 2751.390625,
+          "bottom": 2778.390625,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "2.1억",
+          "left": 148.73077392578125,
+          "right": 189.18389892578125,
+          "top": 2646.49169921875,
+          "bottom": 2673.49169921875,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "4월",
+          "left": 252.24337768554688,
+          "right": 278.4777526855469,
+          "top": 3007.394287109375,
+          "bottom": 3034.394287109375,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "5월",
+          "left": 621.8875732421875,
+          "right": 648.1219482421875,
+          "top": 3007.394287109375,
+          "bottom": 3034.394287109375,
+          "size": 18.731971153846153
+        },
+        {
+          "text": "6월",
+          "left": 989.0342407226562,
+          "right": 1015.2686157226562,
+          "top": 3007.394287109375,
+          "bottom": 3034.394287109375,
+          "size": 18.731971153846153
+        }
+      ]
+    },
+    {
+      "name": "1280 default 2026 line has strongest emphasis",
+      "pass": true,
+      "detail": [
+        {
+          "year": "2023",
+          "opacity": 0.45,
+          "width": 3.1
+        },
+        {
+          "year": "2024",
+          "opacity": 0.45,
+          "width": 3.1
+        },
+        {
+          "year": "2025",
+          "opacity": 0.45,
+          "width": 3.1
+        },
+        {
+          "year": "2026",
+          "opacity": 1,
+          "width": 5.8
+        }
+      ]
+    },
+    {
+      "name": "1280 can select 2023",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 can select 2024",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 can select 2025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 2026-only action synchronizes both graphs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 all-years action selects four visible lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 last selected year cannot disappear",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 raw values remain readable without page overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 photo retains native scale",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 menu photograph appears",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 exterior photograph returns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 retained photo comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 retained route comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 retained booking comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 phrase 1 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 phrase 1 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 175.82220458984375,
+        "right": 526.5878295898438,
+        "top": 366.7451477050781,
+        "bottom": 477.3232727050781,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "1280 phrase 2 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 phrase 2 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 367.82220458984375,
+        "right": 718.5878295898438,
+        "top": 366.7451477050781,
+        "bottom": 477.3232727050781,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "1280 phrase 3 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 phrase 3 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 559.8222045898438,
+        "right": 991.6972045898438,
+        "top": 366.7451477050781,
+        "bottom": 477.3232727050781,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "1280 word starts progress diagonally",
+      "pass": true,
+      "detail": [
+        {
+          "left": 175.82220458984375,
+          "right": 526.5878295898438,
+          "top": 366.7451477050781,
+          "bottom": 477.3232727050781,
+          "opacity": 1
+        },
+        {
+          "left": 367.82220458984375,
+          "right": 718.5878295898438,
+          "top": 366.7451477050781,
+          "bottom": 477.3232727050781,
+          "opacity": 1
+        },
+        {
+          "left": 559.8222045898438,
+          "right": 991.6972045898438,
+          "top": 366.7451477050781,
+          "bottom": 477.3232727050781,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "name": "1280 desktop starts near 15 30 45 percent",
+      "pass": true,
+      "detail": [
+        {
+          "left": 175.82220458984375,
+          "right": 526.5878295898438,
+          "top": 366.7451477050781,
+          "bottom": 477.3232727050781,
+          "opacity": 1
+        },
+        {
+          "left": 367.82220458984375,
+          "right": 718.5878295898438,
+          "top": 366.7451477050781,
+          "bottom": 477.3232727050781,
+          "opacity": 1
+        },
+        {
+          "left": 559.8222045898438,
+          "right": 991.6972045898438,
+          "top": 366.7451477050781,
+          "bottom": 477.3232727050781,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "name": "1280 FAST stays silent by default",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 FAST starts on replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 FAST settles after replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 inquiry prepares locally",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 inquiry explains unsent status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 inquiry closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 footer links are not clipped",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 64,
+          "right": 224,
+          "top": 403.265625,
+          "bottom": 447.265625,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 689.25,
+          "right": 937.625,
+          "top": 439.265625,
+          "bottom": 483.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 689.25,
+          "right": 937.625,
+          "top": 495.265625,
+          "bottom": 539.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 689.25,
+          "right": 937.625,
+          "top": 551.265625,
+          "bottom": 595.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 967.625,
+          "right": 1216,
+          "top": 439.265625,
+          "bottom": 483.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 967.625,
+          "right": 1216,
+          "top": 495.265625,
+          "bottom": 539.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 967.625,
+          "right": 1216,
+          "top": 551.265625,
+          "bottom": 595.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 967.625,
+          "right": 1216,
+          "top": 607.265625,
+          "bottom": 651.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 967.625,
+          "right": 1216,
+          "top": 663.265625,
+          "bottom": 707.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 967.625,
+          "right": 1216,
+          "top": 719.265625,
+          "bottom": 763.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 1171.828125,
+          "right": 1216,
+          "top": 828.265625,
+          "bottom": 872.265625,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "1280 footer links do not overlap",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 64,
+          "right": 224,
+          "top": 403.265625,
+          "bottom": 447.265625,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 689.25,
+          "right": 937.625,
+          "top": 439.265625,
+          "bottom": 483.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 689.25,
+          "right": 937.625,
+          "top": 495.265625,
+          "bottom": 539.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 689.25,
+          "right": 937.625,
+          "top": 551.265625,
+          "bottom": 595.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 967.625,
+          "right": 1216,
+          "top": 439.265625,
+          "bottom": 483.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 967.625,
+          "right": 1216,
+          "top": 495.265625,
+          "bottom": 539.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 967.625,
+          "right": 1216,
+          "top": 551.265625,
+          "bottom": 595.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 967.625,
+          "right": 1216,
+          "top": 607.265625,
+          "bottom": 651.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 967.625,
+          "right": 1216,
+          "top": 663.265625,
+          "bottom": 707.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 967.625,
+          "right": 1216,
+          "top": 719.265625,
+          "bottom": 763.265625,
+          "width": 248.375,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 1171.828125,
+          "right": 1216,
+          "top": 828.265625,
+          "bottom": 872.265625,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "1280 retains footer /#cases",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 retains footer /#flow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 retains footer /privacy/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 retains footer /",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 retains footer /my-store/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 retains footer #contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 footer inquiry link reaches contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 end-of-flow has no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 page has no horizontal overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 retains eight sections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 only 2026 initially selected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 one responsive SVG is visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 visible graph contains four years",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 graph needs no horizontal swipe",
+      "pass": true,
+      "detail": {
+        "left": 111,
+        "right": 1329,
+        "width": 1218,
+        "parentWidth": 1218,
+        "parentScrollWidth": 1218,
+        "texts": [
+          {
+            "text": "1.5억",
+            "left": 162.85296630859375,
+            "right": 208.72796630859375,
+            "top": 3098.8076171875,
+            "bottom": 3129.8076171875,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "1.7억",
+            "left": 162.85296630859375,
+            "right": 208.72796630859375,
+            "top": 2979.84130859375,
+            "bottom": 3010.84130859375,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "1.9억",
+            "left": 162.85296630859375,
+            "right": 208.72796630859375,
+            "top": 2860.875,
+            "bottom": 2891.875,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "2.1억",
+            "left": 162.85296630859375,
+            "right": 208.72796630859375,
+            "top": 2741.90869140625,
+            "bottom": 2772.90869140625,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "4월",
+            "left": 280.24517822265625,
+            "right": 309.99517822265625,
+            "top": 3151.20947265625,
+            "bottom": 3182.20947265625,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "5월",
+            "left": 699.4598999023438,
+            "right": 729.2098999023438,
+            "top": 3151.20947265625,
+            "bottom": 3182.20947265625,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "6월",
+            "left": 1115.842041015625,
+            "right": 1145.592041015625,
+            "top": 3151.20947265625,
+            "bottom": 3182.20947265625,
+            "size": 21.243990384615383
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440 all month labels fit",
+      "pass": true,
+      "detail": [
+        {
+          "text": "1.5억",
+          "left": 162.85296630859375,
+          "right": 208.72796630859375,
+          "top": 3098.8076171875,
+          "bottom": 3129.8076171875,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "1.7억",
+          "left": 162.85296630859375,
+          "right": 208.72796630859375,
+          "top": 2979.84130859375,
+          "bottom": 3010.84130859375,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "1.9억",
+          "left": 162.85296630859375,
+          "right": 208.72796630859375,
+          "top": 2860.875,
+          "bottom": 2891.875,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "2.1억",
+          "left": 162.85296630859375,
+          "right": 208.72796630859375,
+          "top": 2741.90869140625,
+          "bottom": 2772.90869140625,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "4월",
+          "left": 280.24517822265625,
+          "right": 309.99517822265625,
+          "top": 3151.20947265625,
+          "bottom": 3182.20947265625,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "5월",
+          "left": 699.4598999023438,
+          "right": 729.2098999023438,
+          "top": 3151.20947265625,
+          "bottom": 3182.20947265625,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "6월",
+          "left": 1115.842041015625,
+          "right": 1145.592041015625,
+          "top": 3151.20947265625,
+          "bottom": 3182.20947265625,
+          "size": 21.243990384615383
+        }
+      ]
+    },
+    {
+      "name": "1440 readable axis and data labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "1.5억",
+          "left": 162.85296630859375,
+          "right": 208.72796630859375,
+          "top": 3098.8076171875,
+          "bottom": 3129.8076171875,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "1.7억",
+          "left": 162.85296630859375,
+          "right": 208.72796630859375,
+          "top": 2979.84130859375,
+          "bottom": 3010.84130859375,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "1.9억",
+          "left": 162.85296630859375,
+          "right": 208.72796630859375,
+          "top": 2860.875,
+          "bottom": 2891.875,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "2.1억",
+          "left": 162.85296630859375,
+          "right": 208.72796630859375,
+          "top": 2741.90869140625,
+          "bottom": 2772.90869140625,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "4월",
+          "left": 280.24517822265625,
+          "right": 309.99517822265625,
+          "top": 3151.20947265625,
+          "bottom": 3182.20947265625,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "5월",
+          "left": 699.4598999023438,
+          "right": 729.2098999023438,
+          "top": 3151.20947265625,
+          "bottom": 3182.20947265625,
+          "size": 21.243990384615383
+        },
+        {
+          "text": "6월",
+          "left": 1115.842041015625,
+          "right": 1145.592041015625,
+          "top": 3151.20947265625,
+          "bottom": 3182.20947265625,
+          "size": 21.243990384615383
+        }
+      ]
+    },
+    {
+      "name": "1440 default 2026 line has strongest emphasis",
+      "pass": true,
+      "detail": [
+        {
+          "year": "2023",
+          "opacity": 0.45,
+          "width": 3.1
+        },
+        {
+          "year": "2024",
+          "opacity": 0.45,
+          "width": 3.1
+        },
+        {
+          "year": "2025",
+          "opacity": 0.45,
+          "width": 3.1
+        },
+        {
+          "year": "2026",
+          "opacity": 1,
+          "width": 5.8
+        }
+      ]
+    },
+    {
+      "name": "1440 can select 2023",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 can select 2024",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 can select 2025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 2026-only action synchronizes both graphs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 all-years action selects four visible lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 last selected year cannot disappear",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 raw values remain readable without page overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 photo retains native scale",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 menu photograph appears",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 exterior photograph returns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 retained photo comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 retained route comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 retained booking comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 phrase 1 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 phrase 1 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 199.82220458984375,
+        "right": 565.2128295898438,
+        "top": 364.2138977050781,
+        "bottom": 479.4013977050781,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "1440 phrase 2 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 phrase 2 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 415.82220458984375,
+        "right": 781.2128295898438,
+        "top": 364.2138977050781,
+        "bottom": 479.4013977050781,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "1440 phrase 3 owns the focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 phrase 3 fits and is clear",
+      "pass": true,
+      "detail": {
+        "left": 631.8222045898438,
+        "right": 1081.681640625,
+        "top": 364.2138977050781,
+        "bottom": 479.4013977050781,
+        "opacity": 1
+      }
+    },
+    {
+      "name": "1440 word starts progress diagonally",
+      "pass": true,
+      "detail": [
+        {
+          "left": 199.82220458984375,
+          "right": 565.2128295898438,
+          "top": 364.2138977050781,
+          "bottom": 479.4013977050781,
+          "opacity": 1
+        },
+        {
+          "left": 415.82220458984375,
+          "right": 781.2128295898438,
+          "top": 364.2138977050781,
+          "bottom": 479.4013977050781,
+          "opacity": 1
+        },
+        {
+          "left": 631.8222045898438,
+          "right": 1081.681640625,
+          "top": 364.2138977050781,
+          "bottom": 479.4013977050781,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "name": "1440 desktop starts near 15 30 45 percent",
+      "pass": true,
+      "detail": [
+        {
+          "left": 199.82220458984375,
+          "right": 565.2128295898438,
+          "top": 364.2138977050781,
+          "bottom": 479.4013977050781,
+          "opacity": 1
+        },
+        {
+          "left": 415.82220458984375,
+          "right": 781.2128295898438,
+          "top": 364.2138977050781,
+          "bottom": 479.4013977050781,
+          "opacity": 1
+        },
+        {
+          "left": 631.8222045898438,
+          "right": 1081.681640625,
+          "top": 364.2138977050781,
+          "bottom": 479.4013977050781,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "name": "1440 FAST stays silent by default",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 FAST starts on replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 FAST settles after replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 inquiry dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 inquiry prepares locally",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 inquiry explains unsent status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 inquiry closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 footer links are not clipped",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 72,
+          "right": 232,
+          "top": 403.3125,
+          "bottom": 447.3125,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 773.0625,
+          "right": 1055.53125,
+          "top": 439.3125,
+          "bottom": 483.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 773.0625,
+          "right": 1055.53125,
+          "top": 495.3125,
+          "bottom": 539.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 773.0625,
+          "right": 1055.53125,
+          "top": 551.3125,
+          "bottom": 595.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 439.3125,
+          "bottom": 483.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 495.3125,
+          "bottom": 539.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 551.3125,
+          "bottom": 595.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 607.3125,
+          "bottom": 651.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 663.3125,
+          "bottom": 707.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 719.3125,
+          "bottom": 763.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 1323.828125,
+          "right": 1368,
+          "top": 828.3125,
+          "bottom": 872.3125,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "1440 footer links do not overlap",
+      "pass": true,
+      "detail": [
+        {
+          "text": "",
+          "href": "#top",
+          "left": 72,
+          "right": 232,
+          "top": 403.3125,
+          "bottom": 447.3125,
+          "width": 160,
+          "height": 44
+        },
+        {
+          "text": "변화의 근거 확인",
+          "href": "#hero-evidence",
+          "left": 773.0625,
+          "right": 1055.53125,
+          "top": 439.3125,
+          "bottom": 483.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "화면 직접 바꿔보기",
+          "href": "#experience",
+          "left": 773.0625,
+          "right": 1055.53125,
+          "top": 495.3125,
+          "bottom": 539.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "첫 화면 진단 문의",
+          "href": "#contact",
+          "left": 773.0625,
+          "right": 1055.53125,
+          "top": 551.3125,
+          "bottom": 595.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "고객 사례",
+          "href": "/#cases",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 439.3125,
+          "bottom": 483.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "함께 보는 FLOW",
+          "href": "/#flow",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 495.3125,
+          "bottom": 539.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "업종별 안내",
+          "href": "/industries/",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 551.3125,
+          "bottom": 595.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "고객사 공간",
+          "href": "/my-store/",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 607.3125,
+          "bottom": 651.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "개인정보 안내",
+          "href": "/privacy/",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 663.3125,
+          "bottom": 707.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "회사·서비스 전체 안내",
+          "href": "/",
+          "left": 1085.53125,
+          "right": 1368,
+          "top": 719.3125,
+          "bottom": 763.3125,
+          "width": 282.46875,
+          "height": 44
+        },
+        {
+          "text": "맨 위로 ↑",
+          "href": "#top",
+          "left": 1323.828125,
+          "right": 1368,
+          "top": 828.3125,
+          "bottom": 872.3125,
+          "width": 44.171875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "1440 retains footer /#cases",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 retains footer /#flow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 retains footer /privacy/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 retains footer /",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 retains footer /my-store/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 retains footer #contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 footer inquiry link reaches contact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 end-of-flow has no overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 360 FAST replay disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 360 sound disabled and off",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 360 all words are static and legible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 360 chart selection still works",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 360 photograph changes immediately",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 1440 FAST replay disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 1440 sound disabled and off",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 1440 all words are static and legible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 1440 chart selection still works",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced 1440 photograph changes immediately",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer route /#cases resolves",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "footer anchor /#cases exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer route /#flow resolves",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "footer anchor /#flow exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer route /industries/ resolves",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "footer route /my-store/ resolves",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "footer route /privacy/ resolves",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "footer route / resolves",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "no JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no HTTP errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no network writes",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "broken": [],
+  "writes": [],
+  "layouts": [
+    {
+      "width": 360,
+      "chart": {
+        "left": 36,
+        "right": 324,
+        "width": 288,
+        "parentWidth": 288,
+        "parentScrollWidth": 288,
+        "texts": [
+          {
+            "text": "단위: 억 원",
+            "left": 39.84000015258789,
+            "right": 90.30875396728516,
+            "top": 3110.746826171875,
+            "bottom": 3127.746826171875,
+            "size": 12
+          },
+          {
+            "text": "2.1",
+            "left": 51.289371490478516,
+            "right": 68.0228042602539,
+            "top": 3140.466796875,
+            "bottom": 3159.466796875,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "1.9",
+            "left": 51.289371490478516,
+            "right": 68.0228042602539,
+            "top": 3207.6669921875,
+            "bottom": 3226.6669921875,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "1.7",
+            "left": 51.289371490478516,
+            "right": 68.0228042602539,
+            "top": 3274.866943359375,
+            "bottom": 3293.866943359375,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "1.5",
+            "left": 51.289371490478516,
+            "right": 68.0228042602539,
+            "top": 3342.06689453125,
+            "bottom": 3361.06689453125,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "1.74",
+            "left": 82.50437927246094,
+            "right": 109.13221740722656,
+            "top": 3238.346923828125,
+            "bottom": 3258.346923828125,
+            "size": 13.44
+          },
+          {
+            "text": "1.72",
+            "left": 183.30438232421875,
+            "right": 209.93222045898438,
+            "top": 3288.266845703125,
+            "bottom": 3308.266845703125,
+            "size": 13.44
+          },
+          {
+            "text": "1.93",
+            "left": 284.1044006347656,
+            "right": 310.73223876953125,
+            "top": 3174.5068359375,
+            "bottom": 3194.5068359375,
+            "size": 13.44
+          },
+          {
+            "text": "4월",
+            "left": 86.27000427246094,
+            "right": 105.37879180908203,
+            "top": 3366.06689453125,
+            "bottom": 3385.06689453125,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "5월",
+            "left": 187.07000732421875,
+            "right": 206.17880249023438,
+            "top": 3366.06689453125,
+            "bottom": 3385.06689453125,
+            "size": 12.959999999999999
+          },
+          {
+            "text": "6월",
+            "left": 287.8699951171875,
+            "right": 306.97882080078125,
+            "top": 3366.06689453125,
+            "bottom": 3385.06689453125,
+            "size": 12.959999999999999
+          }
+        ]
+      },
+      "words": [
+        {
+          "left": 28.796875,
+          "right": 190.484375,
+          "top": 361.6875,
+          "bottom": 412.65625,
+          "opacity": 1
+        },
+        {
+          "left": 68.390625,
+          "right": 230.078125,
+          "top": 361.28125,
+          "bottom": 412.25,
+          "opacity": 1
+        },
+        {
+          "left": 108,
+          "right": 307.0625,
+          "top": 361.875,
+          "bottom": 412.84375,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "chart": {
+        "left": 36,
+        "right": 354,
+        "width": 318,
+        "parentWidth": 318,
+        "parentScrollWidth": 318,
+        "texts": [
+          {
+            "text": "단위: 억 원",
+            "left": 40.23999786376953,
+            "right": 96.32913208007812,
+            "top": 3097.293701171875,
+            "bottom": 3116.293701171875,
+            "size": 13.25
+          },
+          {
+            "text": "2.1",
+            "left": 52.870628356933594,
+            "right": 71.61795043945312,
+            "top": 3129.2138671875,
+            "bottom": 3150.2138671875,
+            "size": 14.31
+          },
+          {
+            "text": "1.9",
+            "left": 52.870628356933594,
+            "right": 71.61795043945312,
+            "top": 3203.413818359375,
+            "bottom": 3224.413818359375,
+            "size": 14.31
+          },
+          {
+            "text": "1.7",
+            "left": 52.870628356933594,
+            "right": 71.61795043945312,
+            "top": 3277.61376953125,
+            "bottom": 3298.61376953125,
+            "size": 14.31
+          },
+          {
+            "text": "1.5",
+            "left": 52.870628356933594,
+            "right": 71.61795043945312,
+            "top": 3351.813720703125,
+            "bottom": 3372.813720703125,
+            "size": 14.31
+          },
+          {
+            "text": "1.74",
+            "left": 87.3606185913086,
+            "right": 116.9137954711914,
+            "top": 3238.393798828125,
+            "bottom": 3259.393798828125,
+            "size": 14.84
+          },
+          {
+            "text": "1.72",
+            "left": 198.66061401367188,
+            "right": 228.2137908935547,
+            "top": 3293.513671875,
+            "bottom": 3314.513671875,
+            "size": 14.84
+          },
+          {
+            "text": "1.93",
+            "left": 309.9606018066406,
+            "right": 339.5137939453125,
+            "top": 3167.90380859375,
+            "bottom": 3188.90380859375,
+            "size": 14.84
+          },
+          {
+            "text": "4월",
+            "left": 91.5090560913086,
+            "right": 112.35835266113281,
+            "top": 3378.313720703125,
+            "bottom": 3399.313720703125,
+            "size": 14.31
+          },
+          {
+            "text": "5월",
+            "left": 202.80905151367188,
+            "right": 223.65835571289062,
+            "top": 3378.313720703125,
+            "bottom": 3399.313720703125,
+            "size": 14.31
+          },
+          {
+            "text": "6월",
+            "left": 314.10906982421875,
+            "right": 334.9583435058594,
+            "top": 3378.313720703125,
+            "bottom": 3399.313720703125,
+            "size": 14.31
+          }
+        ]
+      },
+      "words": [
+        {
+          "left": 31.1875,
+          "right": 206.34375,
+          "top": 359.4375,
+          "bottom": 414.65625,
+          "opacity": 1
+        },
+        {
+          "left": 74.09375,
+          "right": 249.25,
+          "top": 359.03125,
+          "bottom": 414.25,
+          "opacity": 1
+        },
+        {
+          "left": 117,
+          "right": 332.65625,
+          "top": 359.625,
+          "bottom": 414.84375,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "chart": {
+        "left": 36,
+        "right": 394,
+        "width": 358,
+        "parentWidth": 358,
+        "parentScrollWidth": 358,
+        "texts": [
+          {
+            "text": "단위: 억 원",
+            "left": 40.77333450317383,
+            "right": 103.47645568847656,
+            "top": 3087.19482421875,
+            "bottom": 3108.19482421875,
+            "size": 14.916666666666668
+          },
+          {
+            "text": "2.1",
+            "left": 55.00499725341797,
+            "right": 76.10420989990234,
+            "top": 3123.38134765625,
+            "bottom": 3147.38134765625,
+            "size": 16.11
+          },
+          {
+            "text": "1.9",
+            "left": 55.00499725341797,
+            "right": 76.10420989990234,
+            "top": 3206.914794921875,
+            "bottom": 3230.914794921875,
+            "size": 16.11
+          },
+          {
+            "text": "1.7",
+            "left": 55.00499725341797,
+            "right": 76.10420989990234,
+            "top": 3290.4482421875,
+            "bottom": 3314.4482421875,
+            "size": 16.11
+          },
+          {
+            "text": "1.5",
+            "left": 55.00499725341797,
+            "right": 76.10420989990234,
+            "top": 3373.9814453125,
+            "bottom": 3397.9814453125,
+            "size": 16.11
+          },
+          {
+            "text": "1.74",
+            "left": 93.81478881835938,
+            "right": 126.96021270751953,
+            "top": 3246.294921875,
+            "bottom": 3270.294677734375,
+            "size": 16.706666666666667
+          },
+          {
+            "text": "1.72",
+            "left": 219.1147918701172,
+            "right": 252.2602081298828,
+            "top": 3308.34814453125,
+            "bottom": 3332.34814453125,
+            "size": 16.706666666666667
+          },
+          {
+            "text": "1.93",
+            "left": 344.414794921875,
+            "right": 377.5602111816406,
+            "top": 3166.938232421875,
+            "bottom": 3190.938232421875,
+            "size": 16.706666666666667
+          },
+          {
+            "text": "4월",
+            "left": 98.48666381835938,
+            "right": 121.48666381835938,
+            "top": 3403.814697265625,
+            "bottom": 3427.814697265625,
+            "size": 16.11
+          },
+          {
+            "text": "5월",
+            "left": 223.7866668701172,
+            "right": 246.7866668701172,
+            "top": 3403.814697265625,
+            "bottom": 3427.814697265625,
+            "size": 16.11
+          },
+          {
+            "text": "6월",
+            "left": 349.086669921875,
+            "right": 372.086669921875,
+            "top": 3403.814697265625,
+            "bottom": 3427.814697265625,
+            "size": 16.11
+          }
+        ]
+      },
+      "words": [
+        {
+          "left": 34.390625,
+          "right": 227.515625,
+          "top": 357.046875,
+          "bottom": 417.921875,
+          "opacity": 1
+        },
+        {
+          "left": 81.6875,
+          "right": 274.8125,
+          "top": 356.640625,
+          "bottom": 417.515625,
+          "opacity": 1
+        },
+        {
+          "left": 129,
+          "right": 366.78125,
+          "top": 356.234375,
+          "bottom": 417.109375,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "chart": {
+        "left": 154,
+        "right": 614,
+        "width": 460,
+        "parentWidth": 643,
+        "parentScrollWidth": 643,
+        "texts": [
+          {
+            "text": "단위: 억 원",
+            "left": 160.13333129882812,
+            "right": 240.71145629882812,
+            "top": 3340.088623046875,
+            "bottom": 3368.088623046875,
+            "size": 19.166666666666668
+          },
+          {
+            "text": "2.1",
+            "left": 178.41250610351562,
+            "right": 204.958984375,
+            "top": 3387.1552734375,
+            "bottom": 3417.1552734375,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "1.9",
+            "left": 178.41250610351562,
+            "right": 204.958984375,
+            "top": 3494.488525390625,
+            "bottom": 3524.488525390625,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "1.7",
+            "left": 178.41250610351562,
+            "right": 204.958984375,
+            "top": 3601.82177734375,
+            "bottom": 3631.82177734375,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "1.5",
+            "left": 178.41250610351562,
+            "right": 204.958984375,
+            "top": 3709.1552734375,
+            "bottom": 3739.1552734375,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "1.74",
+            "left": 228.29322814941406,
+            "right": 271.0360107421875,
+            "top": 3544.088623046875,
+            "bottom": 3575.088623046875,
+            "size": 21.46666666666667
+          },
+          {
+            "text": "1.72",
+            "left": 389.293212890625,
+            "right": 431.0359802246094,
+            "top": 3623.82177734375,
+            "bottom": 3654.82177734375,
+            "size": 21.46666666666667
+          },
+          {
+            "text": "1.93",
+            "left": 550.293212890625,
+            "right": 592.0360107421875,
+            "top": 3442.121826171875,
+            "bottom": 3473.121826171875,
+            "size": 21.46666666666667
+          },
+          {
+            "text": "4월",
+            "left": 234.29322814941406,
+            "right": 263.840087890625,
+            "top": 3747.488525390625,
+            "bottom": 3777.488525390625,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "5월",
+            "left": 395.293212890625,
+            "right": 424.840087890625,
+            "top": 3747.488525390625,
+            "bottom": 3777.488525390625,
+            "size": 20.700000000000003
+          },
+          {
+            "text": "6월",
+            "left": 556.293212890625,
+            "right": 585.840087890625,
+            "top": 3747.488525390625,
+            "bottom": 3777.488525390625,
+            "size": 20.700000000000003
+          }
+        ]
+      },
+      "words": [
+        {
+          "left": 61.4375,
+          "right": 343.09375,
+          "top": 342.1875,
+          "bottom": 430.984375,
+          "opacity": 1
+        },
+        {
+          "left": 145.90625,
+          "right": 427.5625,
+          "top": 342.78125,
+          "bottom": 431.578125,
+          "opacity": 1
+        },
+        {
+          "left": 230.390625,
+          "right": 577.15625,
+          "top": 342.375,
+          "bottom": 431.171875,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "chart": {
+        "left": 103,
+        "right": 1177,
+        "width": 1074,
+        "parentWidth": 1074,
+        "parentScrollWidth": 1074,
+        "texts": [
+          {
+            "text": "1.5억",
+            "left": 148.73077392578125,
+            "right": 189.18389892578125,
+            "top": 2961.188720703125,
+            "bottom": 2988.188720703125,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "1.7억",
+            "left": 148.73077392578125,
+            "right": 189.18389892578125,
+            "top": 2856.28955078125,
+            "bottom": 2883.28955078125,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "1.9억",
+            "left": 148.73077392578125,
+            "right": 189.18389892578125,
+            "top": 2751.390625,
+            "bottom": 2778.390625,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "2.1억",
+            "left": 148.73077392578125,
+            "right": 189.18389892578125,
+            "top": 2646.49169921875,
+            "bottom": 2673.49169921875,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "4월",
+            "left": 252.24337768554688,
+            "right": 278.4777526855469,
+            "top": 3007.394287109375,
+            "bottom": 3034.394287109375,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "5월",
+            "left": 621.8875732421875,
+            "right": 648.1219482421875,
+            "top": 3007.394287109375,
+            "bottom": 3034.394287109375,
+            "size": 18.731971153846153
+          },
+          {
+            "text": "6월",
+            "left": 989.0342407226562,
+            "right": 1015.2686157226562,
+            "top": 3007.394287109375,
+            "bottom": 3034.394287109375,
+            "size": 18.731971153846153
+          }
+        ]
+      },
+      "words": [
+        {
+          "left": 175.82220458984375,
+          "right": 526.5878295898438,
+          "top": 366.7451477050781,
+          "bottom": 477.3232727050781,
+          "opacity": 1
+        },
+        {
+          "left": 367.82220458984375,
+          "right": 718.5878295898438,
+          "top": 366.7451477050781,
+          "bottom": 477.3232727050781,
+          "opacity": 1
+        },
+        {
+          "left": 559.8222045898438,
+          "right": 991.6972045898438,
+          "top": 366.7451477050781,
+          "bottom": 477.3232727050781,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "chart": {
+        "left": 111,
+        "right": 1329,
+        "width": 1218,
+        "parentWidth": 1218,
+        "parentScrollWidth": 1218,
+        "texts": [
+          {
+            "text": "1.5억",
+            "left": 162.85296630859375,
+            "right": 208.72796630859375,
+            "top": 3098.8076171875,
+            "bottom": 3129.8076171875,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "1.7억",
+            "left": 162.85296630859375,
+            "right": 208.72796630859375,
+            "top": 2979.84130859375,
+            "bottom": 3010.84130859375,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "1.9억",
+            "left": 162.85296630859375,
+            "right": 208.72796630859375,
+            "top": 2860.875,
+            "bottom": 2891.875,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "2.1억",
+            "left": 162.85296630859375,
+            "right": 208.72796630859375,
+            "top": 2741.90869140625,
+            "bottom": 2772.90869140625,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "4월",
+            "left": 280.24517822265625,
+            "right": 309.99517822265625,
+            "top": 3151.20947265625,
+            "bottom": 3182.20947265625,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "5월",
+            "left": 699.4598999023438,
+            "right": 729.2098999023438,
+            "top": 3151.20947265625,
+            "bottom": 3182.20947265625,
+            "size": 21.243990384615383
+          },
+          {
+            "text": "6월",
+            "left": 1115.842041015625,
+            "right": 1145.592041015625,
+            "top": 3151.20947265625,
+            "bottom": 3182.20947265625,
+            "size": 21.243990384615383
+          }
+        ]
+      },
+      "words": [
+        {
+          "left": 199.82220458984375,
+          "right": 565.2128295898438,
+          "top": 364.2138977050781,
+          "bottom": 479.4013977050781,
+          "opacity": 1
+        },
+        {
+          "left": 415.82220458984375,
+          "right": 781.2128295898438,
+          "top": 364.2138977050781,
+          "bottom": 479.4013977050781,
+          "opacity": 1
+        },
+        {
+          "left": 631.8222045898438,
+          "right": 1081.681640625,
+          "top": 364.2138977050781,
+          "bottom": 479.4013977050781,
+          "opacity": 1
+        }
+      ]
+    }
+  ],
+  "passed": 299,
+  "failed": 0
+}

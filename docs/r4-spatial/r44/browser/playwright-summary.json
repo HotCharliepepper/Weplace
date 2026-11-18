@@ -1,0 +1,567 @@
+{
+  "suite": "R4.4",
+  "browser": "Chromium 153.0.8010.0",
+  "date": "2026-11-08",
+  "stats": {
+    "startTime": "2026-11-08T05:05:12.496Z",
+    "duration": 58256.869000000006,
+    "expected": 43,
+    "skipped": 3,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "project": "desktop",
+      "test": "three hero states, keyboard tabs and available CTA",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 3803
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "finite autoplay can pause and settles at scene 3",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 11218
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "reduced motion is static; scene selection remains available",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 431
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "blocked GSAP keeps content, native links and tabs working",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 395
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "existing tabs, case dialog, FLOW and diagnosis request remain local",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 755
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "free journey validates acknowledgement, completes, shares and restarts",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 803
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "detailed scope never exposes an unconfirmed price",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 442
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "copy success and denied clipboard both preserve a useful safe share",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 463
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "WCAG automated checks on main and all five journey states",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 1604
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "closing CTA remains visible against the dark panel and returns to diagnosis",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 498
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "all requested widths preserve type, poster, native links and the unchanged observation",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 5092
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "image failure shows the real fallback, headline and CTA stay available",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 505
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "delayed photo never delays title or CTA; no video is downloaded",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 426
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "mobile is static after eight seconds and reduced motion has no layer tween",
+      "status": "skipped",
+      "expected": "skipped",
+      "results": [
+        {
+          "status": "skipped",
+          "durationMs": 72
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "question download intent, dedicated page and browser Back retain the route",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 721
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "device sharing success, cancellation and unsupported fallback never include form data",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 611
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "journey browser Back/Forward restores the prior step and keeps simulation explicit",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 474
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "mobile menu keyboard and primary CTA navigation",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 396
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "delayed and failed photos never block the question or diagnosis CTA",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 1520
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "question page has no automatic accessibility violations",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 299
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "all desktop scenes keep guide copy in front of the photo",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 2087
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "three hero states, keyboard tabs and available CTA",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 1227
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "finite autoplay can pause and settles at scene 3",
+      "status": "skipped",
+      "expected": "skipped",
+      "results": [
+        {
+          "status": "skipped",
+          "durationMs": 62
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "reduced motion is static; scene selection remains available",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 401
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "blocked GSAP keeps content, native links and tabs working",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 360
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "existing tabs, case dialog, FLOW and diagnosis request remain local",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 704
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "free journey validates acknowledgement, completes, shares and restarts",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 722
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "detailed scope never exposes an unconfirmed price",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 442
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "copy success and denied clipboard both preserve a useful safe share",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 394
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "WCAG automated checks on main and all five journey states",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 1579
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "closing CTA remains visible against the dark panel and returns to diagnosis",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 574
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "all requested widths preserve type, poster, native links and the unchanged observation",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 2522
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "image failure shows the real fallback, headline and CTA stay available",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 410
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "delayed photo never delays title or CTA; no video is downloaded",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 316
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "mobile is static after eight seconds and reduced motion has no layer tween",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 8592
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "question download intent, dedicated page and browser Back retain the route",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 700
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "device sharing success, cancellation and unsupported fallback never include form data",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 513
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "journey browser Back/Forward restores the prior step and keeps simulation explicit",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 423
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "mobile menu keyboard and primary CTA navigation",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 510
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "delayed and failed photos never block the question or diagnosis CTA",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 1543
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "question page has no automatic accessibility violations",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 286
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "all desktop scenes keep guide copy in front of the photo",
+      "status": "skipped",
+      "expected": "skipped",
+      "results": [
+        {
+          "status": "skipped",
+          "durationMs": 72
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "no JavaScript retains claims, scope, CTA and full journey text",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 505
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "no JavaScript retains claims, scope, CTA and full journey text",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 509
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "test": "static question, image download and diagnosis link remain usable",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 461
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "test": "static question, image download and diagnosis link remain usable",
+      "status": "expected",
+      "expected": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 443
+        }
+      ]
+    }
+  ]
+}

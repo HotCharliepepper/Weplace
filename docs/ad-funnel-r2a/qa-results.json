@@ -1,0 +1,1063 @@
+{
+  "date": "2026-11-11",
+  "code_head": "4ae1a2688961686e0a33ab6ef9d3c7126df025c1",
+  "browser": "Chromium",
+  "viewport_is_real_device": false,
+  "responsive": [
+    {
+      "width": 360,
+      "mode": "normal",
+      "results": [
+        {
+          "name": "scene route",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene booking",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene photo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "booking example changes",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "compare changes layout",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "empty validation",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "preview is not intake",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all choices synchronized",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "request includes actual selection",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no payment surface",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no tracking storage",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "detail": "360/360"
+        },
+        {
+          "name": "no missing image",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all section text visible",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "touch controls >=44",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no submitted request",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "mode": "normal",
+      "results": [
+        {
+          "name": "scene route",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene booking",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene photo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "booking example changes",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "compare changes layout",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "empty validation",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "preview is not intake",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all choices synchronized",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "request includes actual selection",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no payment surface",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no tracking storage",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "detail": "375/390"
+        },
+        {
+          "name": "no missing image",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all section text visible",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "touch controls >=44",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no submitted request",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "mode": "normal",
+      "results": [
+        {
+          "name": "scene route",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene booking",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene photo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "booking example changes",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "compare changes layout",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "empty validation",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "preview is not intake",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all choices synchronized",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "request includes actual selection",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no payment surface",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no tracking storage",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "detail": "415/430"
+        },
+        {
+          "name": "no missing image",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all section text visible",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "touch controls >=44",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no submitted request",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "mode": "normal",
+      "results": [
+        {
+          "name": "scene route",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene booking",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene photo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "booking example changes",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "compare changes layout",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "empty validation",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "preview is not intake",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all choices synchronized",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "request includes actual selection",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no payment surface",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no tracking storage",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "detail": "1265/1280"
+        },
+        {
+          "name": "no missing image",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all section text visible",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "touch controls >=44",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no submitted request",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "mode": "normal",
+      "results": [
+        {
+          "name": "scene route",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene booking",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene photo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "booking example changes",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "compare changes layout",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "empty validation",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "preview is not intake",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all choices synchronized",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "request includes actual selection",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no payment surface",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no tracking storage",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "detail": "1425/1440"
+        },
+        {
+          "name": "no missing image",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all section text visible",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "touch controls >=44",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no submitted request",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    }
+  ],
+  "geometry": [
+    {
+      "width": "360",
+      "results": [
+        {
+          "name": "360/photo/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/photo/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/photo/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/photo/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/route/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/route/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/route/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/route/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/booking/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/booking/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/booking/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "360/booking/meeting",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "width": "390",
+      "results": [
+        {
+          "name": "390/photo/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/photo/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/photo/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/photo/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/route/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/route/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/route/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/route/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/booking/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/booking/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/booking/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "390/booking/meeting",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "width": "430",
+      "results": [
+        {
+          "name": "430/photo/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/photo/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/photo/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/photo/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/route/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/route/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/route/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/route/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/booking/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/booking/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/booking/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "430/booking/meeting",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "width": "1280",
+      "results": [
+        {
+          "name": "1280/photo/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/photo/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/photo/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/photo/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/route/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/route/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/route/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/route/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/booking/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/booking/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/booking/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1280/booking/meeting",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "width": "1440",
+      "results": [
+        {
+          "name": "1440/photo/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/photo/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/photo/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/photo/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/route/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/route/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/route/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/route/meeting",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/booking/experience",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/booking/contrast",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/booking/diagnosis",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "1440/booking/meeting",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    }
+  ],
+  "motion-fallback": [
+    {
+      "mode": "reduced",
+      "results": [
+        {
+          "name": "scene route",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene booking",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene photo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "booking example changes",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "compare changes layout",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "empty validation",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "preview is not intake",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all choices synchronized",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "request includes actual selection",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no payment surface",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no tracking storage",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "detail": "375/390"
+        },
+        {
+          "name": "no missing image",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all section text visible",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "touch controls >=44",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no submitted request",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "motion disabled for fixture",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "mode": "fallback",
+      "results": [
+        {
+          "name": "scene route",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene booking",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene photo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "booking example changes",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "compare changes layout",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "empty validation",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "preview is not intake",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all choices synchronized",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "request includes actual selection",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no payment surface",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no tracking storage",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "detail": "375/390"
+        },
+        {
+          "name": "no missing image",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all section text visible",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "touch controls >=44",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no submitted request",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "motion disabled for fixture",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "mode": "slow",
+      "results": [
+        {
+          "name": "scene route",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene booking",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "scene photo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "booking example changes",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "compare changes layout",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "empty validation",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "preview is not intake",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all choices synchronized",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "request includes actual selection",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no payment surface",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no tracking storage",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no horizontal overflow",
+          "pass": true,
+          "detail": "375/390"
+        },
+        {
+          "name": "no missing image",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "all section text visible",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "touch controls >=44",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "no submitted request",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "motion disabled for fixture",
+          "pass": true,
+          "detail": ""
+        }
+      ]
+    }
+  ],
+  "campaigns": [
+    {
+      "heroHidden": true,
+      "image": "/img/ind-dining.jpg",
+      "title": "식사는 마음에 드는데,\n예약은 왜 망설여질까요?",
+      "url": "https://deploy-preview-28--weplace.netlify.app/ad-funnel.html?ad=dining&utm_source=instagram&utm_medium=paid_social&utm_campaign=r2a_review&utm_content=first_view"
+    },
+    {
+      "heroHidden": true,
+      "image": "/img/ind-stay.jpg",
+      "title": "머물고 싶은 숙소,\n도착하는 길도 보이나요?",
+      "url": "https://deploy-preview-28--weplace.netlify.app/ad-funnel.html?ad=stay&utm_source=instagram&utm_medium=paid_social&utm_campaign=r2a_review&utm_content=first_view"
+    },
+    {
+      "heroHidden": true,
+      "image": "/img/ind-spa.jpg",
+      "title": "쉬고 싶은 마음이,\n첫 방문으로 이어지려면?",
+      "url": "https://deploy-preview-28--weplace.netlify.app/ad-funnel.html?ad=wellness&utm_source=instagram&utm_medium=paid_social&utm_campaign=r2a_review&utm_content=first_view"
+    },
+    {
+      "heroHidden": true,
+      "image": "/img/weplace-hero-surface.jpg",
+      "title": "찾아낸 우리 매장,\n다음 행동도 보이나요?",
+      "url": "https://deploy-preview-28--weplace.netlify.app/ad-funnel.html?ad=local&utm_source=instagram&utm_medium=paid_social&utm_campaign=r2a_review&utm_content=first_view"
+    }
+  ]
+}

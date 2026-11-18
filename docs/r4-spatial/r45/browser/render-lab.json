@@ -1,0 +1,266 @@
+{
+  "browser": "153.0.8010.0",
+  "method": "Local dist files fulfilled through Playwright routing, fresh context, no network throttling. Mobile uses 4x CPU slowdown; 9s observation window. File bytes are uncompressed requested resources, not wire transfer. Not field Core Web Vitals or a Lighthouse score.",
+  "samples": [
+    {
+      "variant": "before",
+      "device": "desktop",
+      "run": 1,
+      "lcp": 168,
+      "cls": 0.01509140625,
+      "longTasks": [
+        84
+      ],
+      "lcpElement": "IMG",
+      "fcp": 168,
+      "domContentLoaded": 182.5,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "desktop",
+      "run": 2,
+      "lcp": 132,
+      "cls": 0.01509140625,
+      "longTasks": [
+        70
+      ],
+      "lcpElement": "IMG",
+      "fcp": 132,
+      "domContentLoaded": 148.2000000011176,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "desktop",
+      "run": 3,
+      "lcp": 136,
+      "cls": 0.01509140625,
+      "longTasks": [
+        75
+      ],
+      "lcpElement": "IMG",
+      "fcp": 136,
+      "domContentLoaded": 156.30000000074506,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "mobile",
+      "run": 1,
+      "lcp": 676,
+      "cls": 0,
+      "longTasks": [
+        384,
+        113
+      ],
+      "lcpElement": "IMG",
+      "fcp": 676,
+      "domContentLoaded": 644.4000000003725,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "mobile",
+      "run": 2,
+      "lcp": 688,
+      "cls": 0,
+      "longTasks": [
+        370,
+        104
+      ],
+      "lcpElement": "IMG",
+      "fcp": 688,
+      "domContentLoaded": 655,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "before",
+      "device": "mobile",
+      "run": 3,
+      "lcp": 444,
+      "cls": 0.0001362054402157668,
+      "longTasks": [
+        325,
+        79
+      ],
+      "lcpElement": "IMG",
+      "fcp": 444,
+      "domContentLoaded": 598,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 481137,
+      "requestedResources": 28,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "desktop",
+      "run": 1,
+      "lcp": 132,
+      "cls": 0.01512609375,
+      "longTasks": [
+        78
+      ],
+      "lcpElement": "IMG",
+      "fcp": 132,
+      "domContentLoaded": 185.2999999988824,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 500994,
+      "requestedResources": 32,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "desktop",
+      "run": 2,
+      "lcp": 252,
+      "cls": 0,
+      "longTasks": [
+        91
+      ],
+      "lcpElement": "IMG",
+      "fcp": 252,
+      "domContentLoaded": 218.2999999988824,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 500994,
+      "requestedResources": 32,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "desktop",
+      "run": 3,
+      "lcp": 116,
+      "cls": 0.01512609375,
+      "longTasks": [
+        66
+      ],
+      "lcpElement": "IMG",
+      "fcp": 116,
+      "domContentLoaded": 137.30000000074506,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 500994,
+      "requestedResources": 32,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "mobile",
+      "run": 1,
+      "lcp": 700,
+      "cls": 0,
+      "longTasks": [
+        362,
+        123
+      ],
+      "lcpElement": "IMG",
+      "fcp": 700,
+      "domContentLoaded": 652.5999999996275,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 500994,
+      "requestedResources": 32,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "mobile",
+      "run": 2,
+      "lcp": 672,
+      "cls": 0,
+      "longTasks": [
+        364,
+        120
+      ],
+      "lcpElement": "IMG",
+      "fcp": 672,
+      "domContentLoaded": 636.6999999992549,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 500994,
+      "requestedResources": 32,
+      "errors": []
+    },
+    {
+      "variant": "after",
+      "device": "mobile",
+      "run": 3,
+      "lcp": 744,
+      "cls": 0,
+      "longTasks": [
+        419,
+        124
+      ],
+      "lcpElement": "IMG",
+      "fcp": 744,
+      "domContentLoaded": 705.8000000007451,
+      "videoCount": 0,
+      "overflow": false,
+      "requestedBytes": 500994,
+      "requestedResources": 32,
+      "errors": []
+    }
+  ],
+  "medians": [
+    {
+      "variant": "before",
+      "device": "desktop",
+      "lcpMs": 136,
+      "fcpMs": 136,
+      "cls": 0.01509140625,
+      "longTaskBlockingMs": 25,
+      "requestedBytes": 481137
+    },
+    {
+      "variant": "before",
+      "device": "mobile",
+      "lcpMs": 676,
+      "fcpMs": 676,
+      "cls": 0,
+      "longTaskBlockingMs": 374,
+      "requestedBytes": 481137
+    },
+    {
+      "variant": "after",
+      "device": "desktop",
+      "lcpMs": 132,
+      "fcpMs": 132,
+      "cls": 0.01512609375,
+      "longTaskBlockingMs": 28,
+      "requestedBytes": 500994
+    },
+    {
+      "variant": "after",
+      "device": "mobile",
+      "lcpMs": 700,
+      "fcpMs": 700,
+      "cls": 0,
+      "longTaskBlockingMs": 385,
+      "requestedBytes": 500994
+    }
+  ]
+}

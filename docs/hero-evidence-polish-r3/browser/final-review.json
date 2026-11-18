@@ -1,0 +1,3354 @@
+{
+  "checks": [
+    {
+      "width": 360,
+      "overflow": false,
+      "logo": {
+        "src": "/assets/brand/r42/weplace-logo-dark.svg",
+        "naturalWidth": 400,
+        "naturalHeight": 90
+      }
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "logo": {
+        "src": "/assets/brand/r42/weplace-logo-dark.svg",
+        "naturalWidth": 400,
+        "naturalHeight": 90
+      }
+    },
+    {
+      "width": 430,
+      "overflow": false,
+      "logo": {
+        "src": "/assets/brand/r42/weplace-logo-dark.svg",
+        "naturalWidth": 400,
+        "naturalHeight": 90
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "logo": {
+        "src": "/assets/brand/r42/weplace-logo-dark.svg",
+        "naturalWidth": 400,
+        "naturalHeight": 90
+      }
+    },
+    {
+      "width": 1280,
+      "overflow": false,
+      "logo": {
+        "src": "/assets/brand/r42/weplace-logo-dark.svg",
+        "naturalWidth": 400,
+        "naturalHeight": 90
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "logo": {
+        "src": "/assets/brand/r42/weplace-logo-dark.svg",
+        "naturalWidth": 400,
+        "naturalHeight": 90
+      }
+    }
+  ],
+  "contrast": [
+    {
+      "width": 360,
+      "route": "unified-r3-hero-polish.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                "button[data-photo-choice=\"before\"]"
+              ],
+              "html": "<button type=\"button\" data-photo-choice=\"before\" aria-pressed=\"true\">← 외관 다시 보기</button>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.17 (foreground color: #284835, background color: #233c2d, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+              "related": [
+                {
+                  "message": "Element has insufficient color contrast of 1.17 (foreground color: #284835, background color: #233c2d, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+                  "data": {
+                    "fgColor": "#284835",
+                    "bgColor": "#233c2d",
+                    "contrastRatio": 1.17,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#landing-title"
+              ],
+              "html": "<h1 id=\"landing-title\">한 달 사이 달라진 매출,<br><span class=\"u-number\">2,100<small>만 원.</small></span></h1>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-number"
+              ],
+              "html": "<span class=\"u-number\">2,100<small>만 원.</small></span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-number > small"
+              ],
+              "html": "<small>만 원.</small>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-button.primary[href$=\"#fast\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#chart-heading"
+              ],
+              "html": "<strong id=\"chart-heading\">+12.2<small>%</small></strong>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "text[y=\"45\"]"
+              ],
+              "html": "<text x=\"48\" y=\"45\" text-anchor=\"end\">2억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"140\"]"
+              ],
+              "html": "<text x=\"48\" y=\"140\" text-anchor=\"end\">1억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"235\"]"
+              ],
+              "html": "<text x=\"48\" y=\"235\" text-anchor=\"end\">0</text>",
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "text[y=\"49\"]"
+              ],
+              "html": "<text x=\"191\" y=\"49\" text-anchor=\"middle\">1.72억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "text[y=\"29\"]"
+              ],
+              "html": "<text x=\"379\" y=\"29\" text-anchor=\"middle\">1.93억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"191\"][y=\"263\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"191\" y=\"263\" text-anchor=\"middle\">5월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"379\"][y=\"263\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"379\" y=\"263\" text-anchor=\"middle\">6월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".u-chart-source"
+              ],
+              "html": "<p class=\"u-chart-source\">출처: 기존 홈페이지에 정리된 제공 매출 자료의 비교 수치. <a href=\"#evidence\">원값과 계산식 ↓</a></p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-chart-source > a[href$=\"#evidence\"]"
+              ],
+              "html": "<a href=\"#evidence\">원값과 계산식 ↓</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-landing-foot > a[href$=\"#fast\"]"
+              ],
+              "html": "<a href=\"#fast\">숫자 다음에는, 직접 경험해 보세요 <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-landing-foot > a[href$=\"#fast\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-hero-copy > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">02 / A CLEAR NEXT STEP</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-title-top"
+              ],
+              "html": "<span class=\"rf-title-top\">RESOLUTE</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-title-bottom"
+              ],
+              "html": "<span class=\"rf-title-bottom\">",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-corner"
+              ],
+              "html": "<span class=\"rf-corner\" aria-hidden=\"true\">↳</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-hero-sub > div > p"
+              ],
+              "html": "<p>손님이 멈추는 화면부터.<br>다음 선택이 쉬워지도록.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".rf-hero-sub > div > small"
+              ],
+              "html": "<small>사진 · 찾아오는 길 · 예약<br>흩어진 정보를 연결하는 실행 파트너.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".rf-text-link[href$=\"#contact\"]"
+              ],
+              "html": "<a class=\"rf-text-link\" href=\"#contact\">첫 화면 진단 문의 <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-text-link[href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#fast-replay"
+              ],
+              "html": "<button type=\"button\" id=\"fast-replay\" title=\"FAST의 짧은 모션을 한 번 재생합니다\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M3 5a5 5 0 1 1-1 4M3 1v4h4\"></path></svg>FAST 재생</button>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#fast-sound > span"
+              ],
+              "html": "<span>사운드 켜기</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#fast-status"
+              ],
+              "html": "<p id=\"fast-status\" role=\"status\" aria-live=\"polite\">기본 무음 · 소리는 선택한 경우에만</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".u-image-fallback"
+              ],
+              "html": "<span class=\"u-image-fallback\" role=\"status\">문을 열기 전, 공간의 첫인상을 떠올려 보세요.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-art-overlay > span"
+              ],
+              "html": "<span>문을 열기 전부터,</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-art-overlay > strong"
+              ],
+              "html": "<strong>좋은 첫인상으로.</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-hero-art > figcaption > span:nth-child(2)"
+              ],
+              "html": "<span>공간 진입을 표현한 참고 이미지 · 실제 고객 사례가 아닙니다</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#motion-toggle"
+              ],
+              "html": "<button type=\"button\" id=\"motion-toggle\" aria-pressed=\"false\">움직임 줄이기</button>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > div > a[href$=\"#experience\"]"
+              ],
+              "html": "<a href=\"#experience\">SCROLL TO DISCOVER <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > div > a[href$=\"#experience\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".he-hero-top > div > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">02A / EXPERIENCE THE EVIDENCE</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#he-evidence-title"
+              ],
+              "html": "<h2 id=\"he-evidence-title\">이미 유입이 있던 화면.<br>네 달 뒤, 2,350회.</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-hero-top > p"
+              ],
+              "html": "<p>숫자 하나로 결론을 내리기보다, 어디서 시작해 몇 달 뒤 어떻게 달라졌는지 함께 봅니다.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-eyebrow"
+              ],
+              "html": "<span class=\"he-eyebrow\">WELLNESS B / PLACE INFLOW / MAY → AUG</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-impact > strong"
+              ],
+              "html": "<strong>+168<span>%</span></strong>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-impact > p"
+              ],
+              "html": "<p>웰니스 B · 2026년 5월 대비 8월 플레이스 상세 유입 횟수</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-numbers > i"
+              ],
+              "html": "<i aria-hidden=\"true\">→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "text[y=\"324\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"324\" text-anchor=\"end\">1.5억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"240\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"240\" text-anchor=\"end\">1.7억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"156\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"156\" text-anchor=\"end\">1.9억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"72\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"72\" text-anchor=\"end\">2.1억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"130\"]"
+              ],
+              "html": "<text text-anchor=\"middle\" x=\"130\" y=\"361\">4월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"426\"]"
+              ],
+              "html": "<text text-anchor=\"middle\" x=\"426\" y=\"361\">5월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"720\"]"
+              ],
+              "html": "<text text-anchor=\"middle\" x=\"720\" y=\"361\">6월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#experience-title"
+              ],
+              "html": "<h2 id=\"experience-title\">어느 화면을<br><span class=\"rv-keyword\">먼저</span> 바꿔볼까요?</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rv-keyword"
+              ],
+              "html": "<span class=\"rv-keyword\">먼저</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-searchbar > span[aria-hidden=\"true\"]:nth-child(1)"
+              ],
+              "html": "<span aria-hidden=\"true\">⌕</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-searchbar > span[aria-hidden=\"true\"]:nth-child(2)"
+              ],
+              "html": "<span aria-hidden=\"true\">⋯</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-map-pin"
+              ],
+              "html": "<span class=\"rf-map-pin\">M</span>",
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".u-disconnected-photos > div:nth-child(1) > span"
+              ],
+              "html": "<span>사진 탭</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".rf-wrap > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">04 / FROM THE FIRST LOOK TO THE NEXT STEP</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(1) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-12px, 18px);\">보여주고,</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(1) > small"
+              ],
+              "html": "<small>사진 · 영상 · 공간</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(2) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-12px, 18px);\">정리하고,</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(2) > small"
+              ],
+              "html": "<small>검색 정보 · 홈페이지 · 안내</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(3) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-12px, 18px);\">실행합니다.</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(3) > small"
+              ],
+              "html": "<small>작업 · 검수 · 다음 개선</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".rf-work-intro > p"
+              ],
+              "html": "<p>첫인상에서 끝내지 않고,<br>실제 화면과 운영으로 이어갑니다.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "a[href$=\"/#process\"]"
+              ],
+              "html": "<a class=\"rf-text-link\" href=\"/#process\">함께하는 방식 자세히 보기 ↗</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#capabilities-title"
+              ],
+              "html": "<h2 id=\"capabilities-title\">바꾸는 일부터,<br><em>함께 보는 진행까지.</em></h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#capabilities-title > em"
+              ],
+              "html": "<em>함께 보는 진행까지.</em>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-proof-service > h3"
+              ],
+              "html": "<h3>바꾸는 일</h3>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-proof-case > .rf-eyebrow"
+              ],
+              "html": "<span class=\"rf-eyebrow\">02 / WELLNESS B · PLACE INFLOW</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > h3"
+              ],
+              "html": "<h3>기록으로 보는 변화</h3>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-case-value"
+              ],
+              "html": "<div class=\"rf-case-value\">+168<small>%</small></div>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(1) > span"
+              ],
+              "html": "<span>2026.05 / 이미 발생하던 유입</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(1) > b"
+              ],
+              "html": "<b>877회</b>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(2) > span"
+              ],
+              "html": "<span>2026.08 / 이후 관측값</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(2) > b"
+              ],
+              "html": "<b>2,350회</b>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > p"
+              ],
+              "html": "<p>플레이스 상세 유입<br>877회 → 2,350회</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-case-caution"
+              ],
+              "html": "<small class=\"rf-case-caution\">제공된 통계 비교입니다. 방문 고객 수·광고 클릭률 또는 Weplace 작업 기여율이 아닙니다.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > .rf-card-link"
+              ],
+              "html": "<span class=\"rf-card-link\">전후 수치 직접 비교 <b aria-hidden=\"true\">↗</b></span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-flow > h3"
+              ],
+              "html": "<h3>함께 보는 진행</h3>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#evidence-title"
+              ],
+              "html": "<h2 id=\"evidence-title\">숫자에는 맥락을.<br>과정에는 기록을.</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-flow-track > i:nth-child(2)"
+              ],
+              "html": "<i>→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "i:nth-child(4)"
+              ],
+              "html": "<i>→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#contact-title"
+              ],
+              "html": "<h2 id=\"contact-title\">우리 매장은,<br>어디에서<br><em>멈출까요?</em></h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#contact-title > em"
+              ],
+              "html": "<em>멈출까요?</em>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-footer-brand > p"
+              ],
+              "html": "<p>RESOLUTE<br>IT FAST.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-brand > small"
+              ],
+              "html": "<small>손님이 멈추는 화면부터,<br>다음 선택이 쉬워지도록.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(1) > strong"
+              ],
+              "html": "<strong>START</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#hero-evidence\"]"
+              ],
+              "html": "<a href=\"#hero-evidence\">변화의 근거 확인</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#experience\"]"
+              ],
+              "html": "<a href=\"#experience\">화면 직접 바꿔보기</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#contact\"]"
+              ],
+              "html": "<a href=\"#contact\">첫 화면 진단 문의</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(2) > strong"
+              ],
+              "html": "<strong>WEPLACE</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"/#cases\"]"
+              ],
+              "html": "<a href=\"/#cases\">고객 사례</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(2) > a[href$=\"/#flow\"]"
+              ],
+              "html": "<a href=\"/#flow\">함께 보는 FLOW</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"industries/\"]"
+              ],
+              "html": "<a href=\"/industries/\">업종별 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"my-store/\"]"
+              ],
+              "html": "<a href=\"/my-store/\">고객사 공간</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "a[href$=\"privacy/\"]"
+              ],
+              "html": "<a href=\"/privacy/\">개인정보 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href=\"/\"]"
+              ],
+              "html": "<a href=\"/\">회사·서비스 전체 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-bottom > span"
+              ],
+              "html": "<span>WEPLACE / 먼저 보여주고, 함께 확인합니다.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-bottom > a[href$=\"#top\"]"
+              ],
+              "html": "<a href=\"#top\">맨 위로 ↑</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "route": "unified-r3-hero-polish-r3.html",
+      "url": "http://127.0.0.1:4173/dist/unified-r3-hero-polish-r3.html",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#landing-title"
+              ],
+              "html": "<h1 id=\"landing-title\">한 달 사이 달라진 매출,<br><span class=\"u-number\">2,100<small>만 원.</small></span></h1>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-number"
+              ],
+              "html": "<span class=\"u-number\">2,100<small>만 원.</small></span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-number > small"
+              ],
+              "html": "<small>만 원.</small>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-button.primary[href$=\"#fast\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#chart-heading"
+              ],
+              "html": "<strong id=\"chart-heading\">+12.2<small>%</small></strong>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "text[y=\"45\"]"
+              ],
+              "html": "<text x=\"48\" y=\"45\" text-anchor=\"end\">2억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"140\"]"
+              ],
+              "html": "<text x=\"48\" y=\"140\" text-anchor=\"end\">1억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"235\"]"
+              ],
+              "html": "<text x=\"48\" y=\"235\" text-anchor=\"end\">0</text>",
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "text[y=\"49\"]"
+              ],
+              "html": "<text x=\"191\" y=\"49\" text-anchor=\"middle\">1.72억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "text[y=\"29\"]"
+              ],
+              "html": "<text x=\"379\" y=\"29\" text-anchor=\"middle\">1.93억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"191\"][y=\"263\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"191\" y=\"263\" text-anchor=\"middle\">5월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"379\"][y=\"263\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"379\" y=\"263\" text-anchor=\"middle\">6월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".u-chart-source"
+              ],
+              "html": "<p class=\"u-chart-source\">출처: 기존 홈페이지에 정리된 제공 매출 자료의 비교 수치. <a href=\"#evidence\">원값과 계산식 ↓</a></p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-chart-source > a[href$=\"#evidence\"]"
+              ],
+              "html": "<a href=\"#evidence\">원값과 계산식 ↓</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-landing-foot > a[href$=\"#fast\"]"
+              ],
+              "html": "<a href=\"#fast\">숫자 다음에는, 직접 경험해 보세요 <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-landing-foot > a[href$=\"#fast\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-hero-copy > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">02 / A CLEAR NEXT STEP</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-title-top"
+              ],
+              "html": "<span class=\"rf-title-top\">RESOLUTE</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-title-bottom"
+              ],
+              "html": "<span class=\"rf-title-bottom\">",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-corner"
+              ],
+              "html": "<span class=\"rf-corner\" aria-hidden=\"true\">↳</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-hero-sub > div > p"
+              ],
+              "html": "<p>손님이 멈추는 화면부터.<br>다음 선택이 쉬워지도록.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".rf-hero-sub > div > small"
+              ],
+              "html": "<small>사진 · 찾아오는 길 · 예약<br>흩어진 정보를 연결하는 실행 파트너.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".rf-text-link[href$=\"#contact\"]"
+              ],
+              "html": "<a class=\"rf-text-link\" href=\"#contact\">첫 화면 진단 문의 <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-text-link[href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#fast-replay"
+              ],
+              "html": "<button type=\"button\" id=\"fast-replay\" title=\"FAST의 짧은 모션을 한 번 재생합니다\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M3 5a5 5 0 1 1-1 4M3 1v4h4\"></path></svg>FAST 재생</button>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#fast-sound > span"
+              ],
+              "html": "<span>사운드 켜기</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#fast-status"
+              ],
+              "html": "<p id=\"fast-status\" role=\"status\" aria-live=\"polite\">기본 무음 · 소리는 선택한 경우에만</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".u-image-fallback"
+              ],
+              "html": "<span class=\"u-image-fallback\" role=\"status\">문을 열기 전, 공간의 첫인상을 떠올려 보세요.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-art-overlay > span"
+              ],
+              "html": "<span>문을 열기 전부터,</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-art-overlay > strong"
+              ],
+              "html": "<strong>좋은 첫인상으로.</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-hero-art > figcaption > span:nth-child(2)"
+              ],
+              "html": "<span>공간 진입을 표현한 참고 이미지 · 실제 고객 사례가 아닙니다</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#motion-toggle"
+              ],
+              "html": "<button type=\"button\" id=\"motion-toggle\" aria-pressed=\"false\">움직임 줄이기</button>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > div > a[href$=\"#experience\"]"
+              ],
+              "html": "<a href=\"#experience\">SCROLL TO DISCOVER <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > div > a[href$=\"#experience\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".he-hero-top > div > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">02A / EXPERIENCE THE EVIDENCE</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#he-evidence-title"
+              ],
+              "html": "<h2 id=\"he-evidence-title\">이미 유입이 있던 화면.<br>네 달 뒤, 2,350회.</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-hero-top > p"
+              ],
+              "html": "<p>숫자 하나로 결론을 내리기보다, 어디서 시작해 몇 달 뒤 어떻게 달라졌는지 함께 봅니다.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-eyebrow"
+              ],
+              "html": "<span class=\"he-eyebrow\">WELLNESS B / PLACE INFLOW / MAY → AUG</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-impact > strong"
+              ],
+              "html": "<strong>+168<span>%</span></strong>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-impact > p"
+              ],
+              "html": "<p>웰니스 B · 2026년 5월 대비 8월 플레이스 상세 유입 횟수</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-numbers > i"
+              ],
+              "html": "<i aria-hidden=\"true\">→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".he-unit"
+              ],
+              "html": "<text class=\"he-unit\" x=\"4\" y=\"20\">단위: 억 원</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"52.0\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"33\" y=\"52.0\" text-anchor=\"end\">2.1</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"122.0\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"33\" y=\"122.0\" text-anchor=\"end\">1.9</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"192.0\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"33\" y=\"192.0\" text-anchor=\"end\">1.7</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"262.0\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"33\" y=\"262.0\" text-anchor=\"end\">1.5</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"155\"]"
+              ],
+              "html": "<text x=\"62\" y=\"155\" text-anchor=\"middle\">1.74</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "text[y=\"207\"]"
+              ],
+              "html": "<text x=\"167\" y=\"207\" text-anchor=\"middle\">1.72</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "text[y=\"88.5\"]"
+              ],
+              "html": "<text x=\"272\" y=\"88.5\" text-anchor=\"middle\">1.93</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"62\"][y=\"287\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"62\" y=\"287\" text-anchor=\"middle\">4월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"167\"][y=\"287\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"167\" y=\"287\" text-anchor=\"middle\">5월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"272\"][y=\"287\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"272\" y=\"287\" text-anchor=\"middle\">6월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#experience-title"
+              ],
+              "html": "<h2 id=\"experience-title\">어느 화면을<br><span class=\"rv-keyword\">먼저</span> 바꿔볼까요?</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rv-keyword"
+              ],
+              "html": "<span class=\"rv-keyword\">먼저</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-searchbar > span[aria-hidden=\"true\"]:nth-child(1)"
+              ],
+              "html": "<span aria-hidden=\"true\">⌕</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-searchbar > span[aria-hidden=\"true\"]:nth-child(2)"
+              ],
+              "html": "<span aria-hidden=\"true\">⋯</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-map-pin"
+              ],
+              "html": "<span class=\"rf-map-pin\">M</span>",
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".u-disconnected-photos > div:nth-child(1) > span"
+              ],
+              "html": "<span>사진 탭</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".rf-wrap > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">04 / FROM THE FIRST LOOK TO THE NEXT STEP</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(1) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-12px, 18px);\">보여주고,</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(1) > small"
+              ],
+              "html": "<small>사진 · 영상 · 공간</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(2) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-12px, 18px);\">정리하고,</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(2) > small"
+              ],
+              "html": "<small>검색 정보 · 홈페이지 · 안내</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(3) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-12px, 18px);\">실행합니다.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(3) > small"
+              ],
+              "html": "<small>작업 · 검수 · 다음 개선</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-work-intro > p"
+              ],
+              "html": "<p>첫인상에서 끝내지 않고,<br>실제 화면과 운영으로 이어갑니다.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "a[href$=\"/#process\"]"
+              ],
+              "html": "<a class=\"rf-text-link\" href=\"/#process\">함께하는 방식 자세히 보기 ↗</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#capabilities-title"
+              ],
+              "html": "<h2 id=\"capabilities-title\">바꾸는 일부터,<br><em>함께 보는 진행까지.</em></h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#capabilities-title > em"
+              ],
+              "html": "<em>함께 보는 진행까지.</em>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-proof-service > h3"
+              ],
+              "html": "<h3>바꾸는 일</h3>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-proof-case > .rf-eyebrow"
+              ],
+              "html": "<span class=\"rf-eyebrow\">02 / WELLNESS B · PLACE INFLOW</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > h3"
+              ],
+              "html": "<h3>기록으로 보는 변화</h3>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-case-value"
+              ],
+              "html": "<div class=\"rf-case-value\">+168<small>%</small></div>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(1) > span"
+              ],
+              "html": "<span>2026.05 / 이미 발생하던 유입</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(1) > b"
+              ],
+              "html": "<b>877회</b>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(2) > span"
+              ],
+              "html": "<span>2026.08 / 이후 관측값</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(2) > b"
+              ],
+              "html": "<b>2,350회</b>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > p"
+              ],
+              "html": "<p>플레이스 상세 유입<br>877회 → 2,350회</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-case-caution"
+              ],
+              "html": "<small class=\"rf-case-caution\">제공된 통계 비교입니다. 방문 고객 수·광고 클릭률 또는 Weplace 작업 기여율이 아닙니다.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > .rf-card-link"
+              ],
+              "html": "<span class=\"rf-card-link\">전후 수치 직접 비교 <b aria-hidden=\"true\">↗</b></span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-flow > h3"
+              ],
+              "html": "<h3>함께 보는 진행</h3>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#evidence-title"
+              ],
+              "html": "<h2 id=\"evidence-title\">숫자에는 맥락을.<br>과정에는 기록을.</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-flow-track > i:nth-child(2)"
+              ],
+              "html": "<i>→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "i:nth-child(4)"
+              ],
+              "html": "<i>→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#contact-title > span:nth-child(1)"
+              ],
+              "html": "<span>손님은 우리 매장의</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#contact-title > em"
+              ],
+              "html": "<em>어느 화면에서</em>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#contact-title > span:nth-child(3)"
+              ],
+              "html": "<span>멈출까요?</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-footer-brand > p"
+              ],
+              "html": "<p>RESOLUTE<br>IT FAST.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-brand > small"
+              ],
+              "html": "<small>손님이 멈추는 화면부터,<br>다음 선택이 쉬워지도록.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(1) > strong"
+              ],
+              "html": "<strong>START</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#hero-evidence\"]"
+              ],
+              "html": "<a href=\"#hero-evidence\">변화의 근거 확인</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#experience\"]"
+              ],
+              "html": "<a href=\"#experience\">화면 직접 바꿔보기</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#contact\"]"
+              ],
+              "html": "<a href=\"#contact\">첫 화면 진단 문의</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(2) > strong"
+              ],
+              "html": "<strong>WEPLACE</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"/#cases\"]"
+              ],
+              "html": "<a href=\"/#cases\">고객 사례</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(2) > a[href$=\"/#flow\"]"
+              ],
+              "html": "<a href=\"/#flow\">함께 보는 FLOW</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"industries/\"]"
+              ],
+              "html": "<a href=\"/industries/\">업종별 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"my-store/\"]"
+              ],
+              "html": "<a href=\"/my-store/\">고객사 공간</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "a[href$=\"privacy/\"]"
+              ],
+              "html": "<a href=\"/privacy/\">개인정보 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href=\"/\"]"
+              ],
+              "html": "<a href=\"/\">회사·서비스 전체 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-bottom > span"
+              ],
+              "html": "<span>WEPLACE / 먼저 보여주고, 함께 확인합니다.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-bottom > a[href$=\"#top\"]"
+              ],
+              "html": "<a href=\"#top\">맨 위로 ↑</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
+      "wordStyles": [
+        {
+          "active": false,
+          "word": {
+            "opacity": "0.65",
+            "color": "rgb(37, 75, 52)"
+          },
+          "caption": {
+            "opacity": "1",
+            "color": "rgb(74, 98, 77)"
+          }
+        },
+        {
+          "active": false,
+          "word": {
+            "opacity": "0.65",
+            "color": "rgb(37, 75, 52)"
+          },
+          "caption": {
+            "opacity": "1",
+            "color": "rgb(74, 98, 77)"
+          }
+        },
+        {
+          "active": true,
+          "word": {
+            "opacity": "1",
+            "color": "rgb(23, 62, 43)"
+          },
+          "caption": {
+            "opacity": "1",
+            "color": "rgb(43, 84, 64)"
+          }
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "unified-r3-hero-polish.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                "button[data-photo-choice=\"before\"]"
+              ],
+              "html": "<button type=\"button\" data-photo-choice=\"before\" aria-pressed=\"true\">← 외관 다시 보기</button>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.17 (foreground color: #284835, background color: #233c2d, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+              "related": [
+                {
+                  "message": "Element has insufficient color contrast of 1.17 (foreground color: #284835, background color: #233c2d, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1",
+                  "data": {
+                    "fgColor": "#284835",
+                    "bgColor": "#233c2d",
+                    "contrastRatio": 1.17,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#landing-title"
+              ],
+              "html": "<h1 id=\"landing-title\">한 달 사이 달라진 매출,<br><span class=\"u-number\">2,100<small>만 원.</small></span></h1>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-number"
+              ],
+              "html": "<span class=\"u-number\">2,100<small>만 원.</small></span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-number > small"
+              ],
+              "html": "<small>만 원.</small>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-button.primary[href$=\"#fast\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#chart-heading"
+              ],
+              "html": "<strong id=\"chart-heading\">+12.2<small>%</small></strong>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "text[y=\"45\"]"
+              ],
+              "html": "<text x=\"48\" y=\"45\" text-anchor=\"end\">2억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"140\"]"
+              ],
+              "html": "<text x=\"48\" y=\"140\" text-anchor=\"end\">1억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"235\"]"
+              ],
+              "html": "<text x=\"48\" y=\"235\" text-anchor=\"end\">0</text>",
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "text[y=\"49\"]"
+              ],
+              "html": "<text x=\"191\" y=\"49\" text-anchor=\"middle\">1.72억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "text[y=\"29\"]"
+              ],
+              "html": "<text x=\"379\" y=\"29\" text-anchor=\"middle\">1.93억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"191\"][y=\"263\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"191\" y=\"263\" text-anchor=\"middle\">5월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"379\"][y=\"263\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"379\" y=\"263\" text-anchor=\"middle\">6월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".u-landing-foot > a[href$=\"#fast\"]"
+              ],
+              "html": "<a href=\"#fast\">숫자 다음에는, 직접 경험해 보세요 <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-landing-foot > a[href$=\"#fast\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-hero-copy > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">02 / A CLEAR NEXT STEP</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-title-top"
+              ],
+              "html": "<span class=\"rf-title-top\">RESOLUTE</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-title-bottom"
+              ],
+              "html": "<span class=\"rf-title-bottom\">",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-corner"
+              ],
+              "html": "<span class=\"rf-corner\" aria-hidden=\"true\">↳</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-hero-sub > div > p"
+              ],
+              "html": "<p>손님이 멈추는 화면부터.<br>다음 선택이 쉬워지도록.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-hero-sub > div > small"
+              ],
+              "html": "<small>사진 · 찾아오는 길 · 예약<br>흩어진 정보를 연결하는 실행 파트너.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-text-link[href$=\"#contact\"]"
+              ],
+              "html": "<a class=\"rf-text-link\" href=\"#contact\">첫 화면 진단 문의 <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-text-link[href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#fast-replay"
+              ],
+              "html": "<button type=\"button\" id=\"fast-replay\" title=\"FAST의 짧은 모션을 한 번 재생합니다\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M3 5a5 5 0 1 1-1 4M3 1v4h4\"></path></svg>FAST 재생</button>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#fast-sound > span"
+              ],
+              "html": "<span>사운드 켜기</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#fast-status"
+              ],
+              "html": "<p id=\"fast-status\" role=\"status\" aria-live=\"polite\">기본 무음 · 소리는 선택한 경우에만</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".u-image-fallback"
+              ],
+              "html": "<span class=\"u-image-fallback\" role=\"status\">문을 열기 전, 공간의 첫인상을 떠올려 보세요.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-art-overlay > span"
+              ],
+              "html": "<span>문을 열기 전부터,</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-art-overlay > strong"
+              ],
+              "html": "<strong>좋은 첫인상으로.</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-hero-art > figcaption > span:nth-child(2)"
+              ],
+              "html": "<span>공간 진입을 표현한 참고 이미지 · 실제 고객 사례가 아닙니다</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > span"
+              ],
+              "html": "<span>사진에서 방문까지, 한 흐름으로.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "#motion-toggle"
+              ],
+              "html": "<button type=\"button\" id=\"motion-toggle\" aria-pressed=\"false\">움직임 줄이기</button>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > div > a[href$=\"#experience\"]"
+              ],
+              "html": "<a href=\"#experience\">SCROLL TO DISCOVER <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > div > a[href$=\"#experience\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".he-hero-top > div > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">02A / EXPERIENCE THE EVIDENCE</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#he-evidence-title"
+              ],
+              "html": "<h2 id=\"he-evidence-title\">이미 유입이 있던 화면.<br>네 달 뒤, 2,350회.</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-hero-top > p"
+              ],
+              "html": "<p>숫자 하나로 결론을 내리기보다, 어디서 시작해 몇 달 뒤 어떻게 달라졌는지 함께 봅니다.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-eyebrow"
+              ],
+              "html": "<span class=\"he-eyebrow\">WELLNESS B / PLACE INFLOW / MAY → AUG</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-impact > strong"
+              ],
+              "html": "<strong>+168<span>%</span></strong>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-impact > p"
+              ],
+              "html": "<p>웰니스 B · 2026년 5월 대비 8월 플레이스 상세 유입 횟수</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-numbers > i"
+              ],
+              "html": "<i aria-hidden=\"true\">→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "text[y=\"324\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"324\" text-anchor=\"end\">1.5억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"240\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"240\" text-anchor=\"end\">1.7억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"156\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"156\" text-anchor=\"end\">1.9억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"72\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"72\" text-anchor=\"end\">2.1억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"130\"]"
+              ],
+              "html": "<text text-anchor=\"middle\" x=\"130\" y=\"361\">4월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"426\"]"
+              ],
+              "html": "<text text-anchor=\"middle\" x=\"426\" y=\"361\">5월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"720\"]"
+              ],
+              "html": "<text text-anchor=\"middle\" x=\"720\" y=\"361\">6월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#experience-title"
+              ],
+              "html": "<h2 id=\"experience-title\">어느 화면을<br><span class=\"rv-keyword\">먼저</span> 바꿔볼까요?</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rv-keyword"
+              ],
+              "html": "<span class=\"rv-keyword\">먼저</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-searchbar > span[aria-hidden=\"true\"]:nth-child(1)"
+              ],
+              "html": "<span aria-hidden=\"true\">⌕</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-searchbar > span[aria-hidden=\"true\"]:nth-child(2)"
+              ],
+              "html": "<span aria-hidden=\"true\">⋯</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-map-pin"
+              ],
+              "html": "<span class=\"rf-map-pin\">M</span>",
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".rf-address-card > small"
+              ],
+              "html": "<small>주소</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-disconnected-photos > div:nth-child(1) > span"
+              ],
+              "html": "<span>사진 탭</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".rf-wrap > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">04 / FROM THE FIRST LOOK TO THE NEXT STEP</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(1) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-36px, 18px);\">보여주고,</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(1) > small"
+              ],
+              "html": "<small>사진 · 영상 · 공간</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(2) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-36px, 18px);\">정리하고,</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(2) > small"
+              ],
+              "html": "<small>검색 정보 · 홈페이지 · 안내</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(3) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-36px, 18px);\">실행합니다.</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(3) > small"
+              ],
+              "html": "<small>작업 · 검수 · 다음 개선</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-work-intro > p"
+              ],
+              "html": "<p>첫인상에서 끝내지 않고,<br>실제 화면과 운영으로 이어갑니다.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "a[href$=\"/#process\"]"
+              ],
+              "html": "<a class=\"rf-text-link\" href=\"/#process\">함께하는 방식 자세히 보기 ↗</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#capabilities-title"
+              ],
+              "html": "<h2 id=\"capabilities-title\">바꾸는 일부터,<br><em>함께 보는 진행까지.</em></h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#capabilities-title > em"
+              ],
+              "html": "<em>함께 보는 진행까지.</em>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-proof-service > h3"
+              ],
+              "html": "<h3>바꾸는 일</h3>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-proof-case > .rf-eyebrow"
+              ],
+              "html": "<span class=\"rf-eyebrow\">02 / WELLNESS B · PLACE INFLOW</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > h3"
+              ],
+              "html": "<h3>기록으로 보는 변화</h3>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-case-value"
+              ],
+              "html": "<div class=\"rf-case-value\">+168<small>%</small></div>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(1) > span"
+              ],
+              "html": "<span>2026.05 / 이미 발생하던 유입</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(1) > b"
+              ],
+              "html": "<b>877회</b>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(2) > span"
+              ],
+              "html": "<span>2026.08 / 이후 관측값</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(2) > b"
+              ],
+              "html": "<b>2,350회</b>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > p"
+              ],
+              "html": "<p>플레이스 상세 유입<br>877회 → 2,350회</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-case-caution"
+              ],
+              "html": "<small class=\"rf-case-caution\">제공된 통계 비교입니다. 방문 고객 수·광고 클릭률 또는 Weplace 작업 기여율이 아닙니다.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > .rf-card-link"
+              ],
+              "html": "<span class=\"rf-card-link\">전후 수치 직접 비교 <b aria-hidden=\"true\">↗</b></span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-flow > h3"
+              ],
+              "html": "<h3>함께 보는 진행</h3>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#evidence-title"
+              ],
+              "html": "<h2 id=\"evidence-title\">숫자에는 맥락을.<br>과정에는 기록을.</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-flow-track > i:nth-child(2)"
+              ],
+              "html": "<i>→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "i:nth-child(4)"
+              ],
+              "html": "<i>→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#contact-title"
+              ],
+              "html": "<h2 id=\"contact-title\">우리 매장은,<br>어디에서<br><em>멈출까요?</em></h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#contact-title > em"
+              ],
+              "html": "<em>멈출까요?</em>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-footer-brand > p"
+              ],
+              "html": "<p>RESOLUTE<br>IT FAST.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-brand > small"
+              ],
+              "html": "<small>손님이 멈추는 화면부터,<br>다음 선택이 쉬워지도록.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(1) > strong"
+              ],
+              "html": "<strong>START</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#hero-evidence\"]"
+              ],
+              "html": "<a href=\"#hero-evidence\">변화의 근거 확인</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#experience\"]"
+              ],
+              "html": "<a href=\"#experience\">화면 직접 바꿔보기</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#contact\"]"
+              ],
+              "html": "<a href=\"#contact\">첫 화면 진단 문의</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(2) > strong"
+              ],
+              "html": "<strong>WEPLACE</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"/#cases\"]"
+              ],
+              "html": "<a href=\"/#cases\">고객 사례</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(2) > a[href$=\"/#flow\"]"
+              ],
+              "html": "<a href=\"/#flow\">함께 보는 FLOW</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"industries/\"]"
+              ],
+              "html": "<a href=\"/industries/\">업종별 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"my-store/\"]"
+              ],
+              "html": "<a href=\"/my-store/\">고객사 공간</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "a[href$=\"privacy/\"]"
+              ],
+              "html": "<a href=\"/privacy/\">개인정보 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href=\"/\"]"
+              ],
+              "html": "<a href=\"/\">회사·서비스 전체 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-bottom > span"
+              ],
+              "html": "<span>WEPLACE / 먼저 보여주고, 함께 확인합니다.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-bottom > a[href$=\"#top\"]"
+              ],
+              "html": "<a href=\"#top\">맨 위로 ↑</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "unified-r3-hero-polish-r3.html",
+      "url": "http://127.0.0.1:4173/dist/unified-r3-hero-polish-r3.html",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#landing-title"
+              ],
+              "html": "<h1 id=\"landing-title\">한 달 사이 달라진 매출,<br><span class=\"u-number\">2,100<small>만 원.</small></span></h1>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-number"
+              ],
+              "html": "<span class=\"u-number\">2,100<small>만 원.</small></span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-number > small"
+              ],
+              "html": "<small>만 원.</small>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-button.primary[href$=\"#fast\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#chart-heading"
+              ],
+              "html": "<strong id=\"chart-heading\">+12.2<small>%</small></strong>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "text[y=\"45\"]"
+              ],
+              "html": "<text x=\"48\" y=\"45\" text-anchor=\"end\">2억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"140\"]"
+              ],
+              "html": "<text x=\"48\" y=\"140\" text-anchor=\"end\">1억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"235\"]"
+              ],
+              "html": "<text x=\"48\" y=\"235\" text-anchor=\"end\">0</text>",
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "text[y=\"49\"]"
+              ],
+              "html": "<text x=\"191\" y=\"49\" text-anchor=\"middle\">1.72억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "text[y=\"29\"]"
+              ],
+              "html": "<text x=\"379\" y=\"29\" text-anchor=\"middle\">1.93억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"191\"][y=\"263\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"191\" y=\"263\" text-anchor=\"middle\">5월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"379\"][y=\"263\"][text-anchor=\"middle\"]"
+              ],
+              "html": "<text x=\"379\" y=\"263\" text-anchor=\"middle\">6월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".u-landing-foot > a[href$=\"#fast\"]"
+              ],
+              "html": "<a href=\"#fast\">숫자 다음에는, 직접 경험해 보세요 <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-landing-foot > a[href$=\"#fast\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-hero-copy > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">02 / A CLEAR NEXT STEP</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-title-top"
+              ],
+              "html": "<span class=\"rf-title-top\">RESOLUTE</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-title-bottom"
+              ],
+              "html": "<span class=\"rf-title-bottom\">",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-trail-right > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-depth > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(1)"
+              ],
+              "html": "<span>F</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(2)"
+              ],
+              "html": "<span>A</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(3)"
+              ],
+              "html": "<span>S</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-fast-face > span:nth-child(4)"
+              ],
+              "html": "<span>T</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-corner"
+              ],
+              "html": "<span class=\"rf-corner\" aria-hidden=\"true\">↳</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-hero-sub > div > p"
+              ],
+              "html": "<p>손님이 멈추는 화면부터.<br>다음 선택이 쉬워지도록.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-hero-sub > div > small"
+              ],
+              "html": "<small>사진 · 찾아오는 길 · 예약<br>흩어진 정보를 연결하는 실행 파트너.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-text-link[href$=\"#contact\"]"
+              ],
+              "html": "<a class=\"rf-text-link\" href=\"#contact\">첫 화면 진단 문의 <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-text-link[href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#fast-replay"
+              ],
+              "html": "<button type=\"button\" id=\"fast-replay\" title=\"FAST의 짧은 모션을 한 번 재생합니다\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M3 5a5 5 0 1 1-1 4M3 1v4h4\"></path></svg>FAST 재생</button>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#fast-sound > span"
+              ],
+              "html": "<span>사운드 켜기</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#fast-status"
+              ],
+              "html": "<p id=\"fast-status\" role=\"status\" aria-live=\"polite\">기본 무음 · 소리는 선택한 경우에만</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".u-image-fallback"
+              ],
+              "html": "<span class=\"u-image-fallback\" role=\"status\">문을 열기 전, 공간의 첫인상을 떠올려 보세요.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-art-overlay > span"
+              ],
+              "html": "<span>문을 열기 전부터,</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-art-overlay > strong"
+              ],
+              "html": "<strong>좋은 첫인상으로.</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-hero-art > figcaption > span:nth-child(2)"
+              ],
+              "html": "<span>공간 진입을 표현한 참고 이미지 · 실제 고객 사례가 아닙니다</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > span"
+              ],
+              "html": "<span>사진에서 방문까지, 한 흐름으로.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "#motion-toggle"
+              ],
+              "html": "<button type=\"button\" id=\"motion-toggle\" aria-pressed=\"false\">움직임 줄이기</button>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > div > a[href$=\"#experience\"]"
+              ],
+              "html": "<a href=\"#experience\">SCROLL TO DISCOVER <span aria-hidden=\"true\">↓</span></a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-hero-foot > div > a[href$=\"#experience\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".he-hero-top > div > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">02A / EXPERIENCE THE EVIDENCE</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#he-evidence-title"
+              ],
+              "html": "<h2 id=\"he-evidence-title\">이미 유입이 있던 화면.<br>네 달 뒤, 2,350회.</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-hero-top > p"
+              ],
+              "html": "<p>숫자 하나로 결론을 내리기보다, 어디서 시작해 몇 달 뒤 어떻게 달라졌는지 함께 봅니다.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-eyebrow"
+              ],
+              "html": "<span class=\"he-eyebrow\">WELLNESS B / PLACE INFLOW / MAY → AUG</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-impact > strong"
+              ],
+              "html": "<strong>+168<span>%</span></strong>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-impact > p"
+              ],
+              "html": "<p>웰니스 B · 2026년 5월 대비 8월 플레이스 상세 유입 횟수</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-numbers > i"
+              ],
+              "html": "<i aria-hidden=\"true\">→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "text[y=\"324\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"324\" text-anchor=\"end\">1.5억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"240\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"240\" text-anchor=\"end\">1.7억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"156\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"156\" text-anchor=\"end\">1.9억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[y=\"72\"]"
+              ],
+              "html": "<text class=\"he-axis\" x=\"69\" y=\"72\" text-anchor=\"end\">2.1억</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"130\"]"
+              ],
+              "html": "<text text-anchor=\"middle\" x=\"130\" y=\"361\">4월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"426\"]"
+              ],
+              "html": "<text text-anchor=\"middle\" x=\"426\" y=\"361\">5월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "text[x=\"720\"]"
+              ],
+              "html": "<text text-anchor=\"middle\" x=\"720\" y=\"361\">6월</text>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#experience-title"
+              ],
+              "html": "<h2 id=\"experience-title\">어느 화면을<br><span class=\"rv-keyword\">먼저</span> 바꿔볼까요?</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rv-keyword"
+              ],
+              "html": "<span class=\"rv-keyword\">먼저</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-searchbar > span[aria-hidden=\"true\"]:nth-child(1)"
+              ],
+              "html": "<span aria-hidden=\"true\">⌕</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-searchbar > span[aria-hidden=\"true\"]:nth-child(2)"
+              ],
+              "html": "<span aria-hidden=\"true\">⋯</span>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".rf-map-pin"
+              ],
+              "html": "<span class=\"rf-map-pin\">M</span>",
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".rf-address-card > small"
+              ],
+              "html": "<small>주소</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".u-disconnected-photos > div:nth-child(1) > span"
+              ],
+              "html": "<span>사진 탭</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".rf-wrap > .rf-eyebrow"
+              ],
+              "html": "<p class=\"rf-eyebrow\">04 / FROM THE FIRST LOOK TO THE NEXT STEP</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(1) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-36px, 18px);\">보여주고,</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(1) > small"
+              ],
+              "html": "<small>사진 · 영상 · 공간</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(2) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-36px, 18px);\">정리하고,</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(2) > small"
+              ],
+              "html": "<small>검색 정보 · 홈페이지 · 안내</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(3) > .rf-word"
+              ],
+              "html": "<span class=\"rf-word\" style=\"translate: none; rotate: none; scale: none; opacity: 0.38; transform: translate(-36px, 18px);\">실행합니다.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-word-row:nth-child(3) > small"
+              ],
+              "html": "<small>작업 · 검수 · 다음 개선</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".rf-work-intro > p"
+              ],
+              "html": "<p>첫인상에서 끝내지 않고,<br>실제 화면과 운영으로 이어갑니다.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "a[href$=\"/#process\"]"
+              ],
+              "html": "<a class=\"rf-text-link\" href=\"/#process\">함께하는 방식 자세히 보기 ↗</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#capabilities-title"
+              ],
+              "html": "<h2 id=\"capabilities-title\">바꾸는 일부터,<br><em>함께 보는 진행까지.</em></h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#capabilities-title > em"
+              ],
+              "html": "<em>함께 보는 진행까지.</em>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-proof-service > h3"
+              ],
+              "html": "<h3>바꾸는 일</h3>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".rf-proof-case > .rf-eyebrow"
+              ],
+              "html": "<span class=\"rf-eyebrow\">02 / WELLNESS B · PLACE INFLOW</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > h3"
+              ],
+              "html": "<h3>기록으로 보는 변화</h3>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-case-value"
+              ],
+              "html": "<div class=\"rf-case-value\">+168<small>%</small></div>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(1) > span"
+              ],
+              "html": "<span>2026.05 / 이미 발생하던 유입</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(1) > b"
+              ],
+              "html": "<b>877회</b>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(2) > span"
+              ],
+              "html": "<span>2026.08 / 이후 관측값</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".evi-inflow-bars > div:nth-child(2) > b"
+              ],
+              "html": "<b>2,350회</b>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > p"
+              ],
+              "html": "<p>플레이스 상세 유입<br>877회 → 2,350회</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-case-caution"
+              ],
+              "html": "<small class=\"rf-case-caution\">제공된 통계 비교입니다. 방문 고객 수·광고 클릭률 또는 Weplace 작업 기여율이 아닙니다.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-case > .rf-card-link"
+              ],
+              "html": "<span class=\"rf-card-link\">전후 수치 직접 비교 <b aria-hidden=\"true\">↗</b></span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".rf-proof-flow > h3"
+              ],
+              "html": "<h3>함께 보는 진행</h3>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#evidence-title"
+              ],
+              "html": "<h2 id=\"evidence-title\">숫자에는 맥락을.<br>과정에는 기록을.</h2>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".u-flow-track > i:nth-child(2)"
+              ],
+              "html": "<i>→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "i:nth-child(4)"
+              ],
+              "html": "<i>→</i>",
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#contact-title > span:nth-child(1)"
+              ],
+              "html": "<span>손님은 우리 매장의</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#contact-title > em"
+              ],
+              "html": "<em>어느 화면에서</em>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                "#contact-title > span:nth-child(3)"
+              ],
+              "html": "<span>멈출까요?</span>",
+              "summary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+            },
+            {
+              "target": [
+                ".he-footer-brand > p"
+              ],
+              "html": "<p>RESOLUTE<br>IT FAST.</p>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-brand > small"
+              ],
+              "html": "<small>손님이 멈추는 화면부터,<br>다음 선택이 쉬워지도록.</small>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(1) > strong"
+              ],
+              "html": "<strong>START</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#hero-evidence\"]"
+              ],
+              "html": "<a href=\"#hero-evidence\">변화의 근거 확인</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#experience\"]"
+              ],
+              "html": "<a href=\"#experience\">화면 직접 바꿔보기</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > a[href$=\"#contact\"]"
+              ],
+              "html": "<a href=\"#contact\">첫 화면 진단 문의</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(2) > strong"
+              ],
+              "html": "<strong>WEPLACE</strong>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"/#cases\"]"
+              ],
+              "html": "<a href=\"/#cases\">고객 사례</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-nav > div:nth-child(2) > a[href$=\"/#flow\"]"
+              ],
+              "html": "<a href=\"/#flow\">함께 보는 FLOW</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"industries/\"]"
+              ],
+              "html": "<a href=\"/industries/\">업종별 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href$=\"my-store/\"]"
+              ],
+              "html": "<a href=\"/my-store/\">고객사 공간</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "a[href$=\"privacy/\"]"
+              ],
+              "html": "<a href=\"/privacy/\">개인정보 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > a[href=\"/\"]"
+              ],
+              "html": "<a href=\"/\">회사·서비스 전체 안내</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-bottom > span"
+              ],
+              "html": "<span>WEPLACE / 먼저 보여주고, 함께 확인합니다.</span>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".he-footer-bottom > a[href$=\"#top\"]"
+              ],
+              "html": "<a href=\"#top\">맨 위로 ↑</a>",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
+      "wordStyles": [
+        {
+          "active": false,
+          "word": {
+            "opacity": "0.65",
+            "color": "rgb(37, 75, 52)"
+          },
+          "caption": {
+            "opacity": "1",
+            "color": "rgb(74, 98, 77)"
+          }
+        },
+        {
+          "active": false,
+          "word": {
+            "opacity": "0.65",
+            "color": "rgb(37, 75, 52)"
+          },
+          "caption": {
+            "opacity": "1",
+            "color": "rgb(74, 98, 77)"
+          }
+        },
+        {
+          "active": true,
+          "word": {
+            "opacity": "1",
+            "color": "rgb(23, 62, 43)"
+          },
+          "caption": {
+            "opacity": "1",
+            "color": "rgb(43, 84, 64)"
+          }
+        }
+      ]
+    }
+  ],
+  "finalArtifact": "http://127.0.0.1:4173/dist/unified-r3-hero-polish-r3.html",
+  "contrastNote": "Gradient surfaces and complex shadows require manual review. Foreground composite calculations in contrast-manual.json confirm inactive phrase >=3.15:1 and inactive caption >=4.68:1 after final refinement. Muted nonselected reference chart lines remain intentionally lower emphasis; each can be selected at full opacity and all raw values are available in the table.",
+  "assetIntegrity": [
+    {
+      "file": "assets/css/hero-evidence-polish-r3.css",
+      "sourceEqualsDist": true
+    },
+    {
+      "file": "assets/css/hero-evidence-polish-r3-motion.css",
+      "sourceEqualsDist": true
+    },
+    {
+      "file": "assets/js/hero-evidence-polish-r2.js",
+      "sourceEqualsDist": true
+    },
+    {
+      "file": "assets/js/hero-evidence-lab-r1.js",
+      "sourceEqualsDist": true
+    },
+    {
+      "file": "assets/js/unified-r3-hero-lab.js",
+      "sourceEqualsDist": true
+    }
+  ]
+}

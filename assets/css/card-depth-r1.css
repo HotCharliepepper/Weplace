@@ -1,0 +1,153 @@
+/* WEPLACE / Selective Card Depth R1 — visual finish for unfinished navigation blocks.
+   Reference: local-scope-style softly elevated cards, reinterpreted using Weplace colors.
+   Only three verified destinations and the informational role comparison are touched.
+   No charts, data values, login, CRM, diagnosis state, or business logic changed. */
+
+:root { --wp-depth-shadow: 0 18px 38px rgba(25, 64, 47, .085), 0 4px 11px rgba(25, 64, 47, .045); --wp-depth-shadow-hover: 0 24px 49px rgba(25, 64, 47, .13), 0 8px 18px rgba(25, 64, 47, .075); }
+ 
+/* 01. SITE GUIDE — actual interactive destinations only. */
+.weplace-site-guide .card-grid > a.link-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-width: 0;
+  border: 1px solid rgba(191, 207, 195, .83);
+  border-radius: 21px;
+  background: linear-gradient(155deg, #fffefa 0%, #f7faf5 100%);
+  color: #183d32;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .95), var(--wp-depth-shadow);
+  transform: translateY(0);
+  transition: transform .25s cubic-bezier(.2,.7,.2,1), background .25s, border-color .25s, box-shadow .25s;
+}
+.weplace-site-guide .card-grid > a.link-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.95) 30%, transparent);
+  pointer-events: none;
+}
+.weplace-site-guide .card-grid > a.link-card .num { color: #607b6b; }
+.weplace-site-guide .card-grid > a.link-card p { color: #4e6859; }
+.weplace-site-guide .card-grid > a.link-card .go { color: #296657; transition: transform .25s ease; }
+.weplace-site-guide .card-grid > a.link-card.featured {
+  background: linear-gradient(155deg, #245d50 0%, #17483e 100%);
+  border-color: #356f5f;
+  color: #f7faf3;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 23px 42px rgba(20,70,58,.19), 0 5px 13px rgba(15,52,40,.1);
+}
+.weplace-site-guide .card-grid > a.link-card.featured .num { color: #c6dfd3; }
+.weplace-site-guide .card-grid > a.link-card.featured p { color: #e5f1e9; }
+.weplace-site-guide .card-grid > a.link-card.featured .go { color: #fbfaf2; }
+/* The darker story section must still have dark text on its pale cards. */
+.weplace-site-guide .dark .card-grid > a.link-card { color: #183d32; }
+.weplace-site-guide .dark .card-grid > a.link-card p { color: #4e6859; }
+.weplace-site-guide .dark .card-grid > a.link-card .go { color: #296657; }
+
+/* 02. MAIN HOME — links currently presented as only a top border. */
+.home-r46 #explore .explore-links { gap: 18px; align-items: stretch; }
+.home-r46 #explore .explore-links > a {
+  display: block;
+  min-width: 0;
+  min-height: 208px;
+  padding: 26px 27px 52px;
+  border: 1px solid rgba(196, 208, 196, .95);
+  border-radius: 20px;
+  color: #1f4436;
+  background: linear-gradient(152deg, #fffefa, #f7faf5);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.92), var(--wp-depth-shadow);
+  transform: translateY(0);
+  transition: transform .25s cubic-bezier(.2,.7,.2,1), box-shadow .25s, border-color .25s;
+}
+.home-r46 #explore .explore-links > a:first-child { background: linear-gradient(152deg, #e9f1e8, #f8fbf6); }
+.home-r46 #explore .explore-links > a > span { color: #557765; }
+.home-r46 #explore .explore-links strong { font-size: clamp(17px, 1.7vw, 20px); color: #1d4437; line-height: 1.5; }
+.home-r46 #explore .explore-links p { color: #516b5a; font-size: 12px; line-height: 1.7; }
+.home-r46 #explore .explore-links b { top: auto; bottom: 16px; right: 25px; color: #316b5c; }
+/* Explanatory roles are not links. Keep them quieter and never add a pointer cursor. */
+.home-r46 #explore .r46-role-grid > div {
+  border-radius: 17px;
+  box-shadow: 0 13px 25px rgba(28, 61, 45, .062), 0 3px 6px rgba(28, 61, 45, .028);
+}
+.home-r46 #explore .r46-role-grid > div + div {
+  border-color: #bbcebd;
+  background: linear-gradient(145deg, #e9f0e5, #dfe9df);
+}
+
+/* 03. UNIFIED R3 — flat capability cards, not the revenue/chart or diagnosis mockup. */
+.unified-r3 #capabilities .rf-proof-grid { gap: 19px; }
+.unified-r3 #capabilities a.rf-proof-card {
+  min-width: 0;
+  border: 1px solid #c7d6c4;
+  border-radius: 20px;
+  background: linear-gradient(154deg, #fffef9 0%, #f7faf3 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.95), var(--wp-depth-shadow);
+  transform: translateY(0);
+  transition: transform .25s cubic-bezier(.2,.7,.2,1), box-shadow .25s, border-color .25s;
+}
+.unified-r3 #capabilities a.rf-proof-card:first-child {
+  background: linear-gradient(156deg, #295d4c 0%, #194738 100%);
+  border-color: #386853;
+  color: #f5f8ed;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 20px 40px rgba(20,67,49,.18), 0 4px 12px rgba(20,67,49,.08);
+}
+.unified-r3 #capabilities a.rf-proof-card:first-child :is(.rf-eyebrow, h3, p, .rf-card-link) { color: #eff7ee; }
+.unified-r3 #capabilities a.rf-proof-card:first-child .rf-eyebrow { color: #c7dfd1; }
+.unified-r3 #capabilities a.rf-proof-card:first-child .rf-card-link { border-color: rgba(240,247,237,.27); }
+.unified-r3 #capabilities a.rf-proof-card:first-child .rf-service-mini span {
+  color: #f0f8ee;
+  border-color: rgba(229,244,231,.34);
+  background: rgba(244,250,241,.11);
+}
+.unified-r3 #capabilities a.rf-proof-card:first-child .rf-service-mini span:nth-child(2) {
+  color: #f0f8ee;
+  background: rgba(240,251,237,.16);
+}
+.unified-r3 #capabilities a.rf-proof-card .rf-card-link b { display: inline-block; transition: transform .25s ease; }
+
+/* Hover only where supported. Keyboard focus keeps its own visible ring. */
+@media (hover:hover) and (pointer:fine) {
+  .weplace-site-guide .card-grid > a.link-card:hover,
+  .home-r46 #explore .explore-links > a:hover,
+  .unified-r3 #capabilities a.rf-proof-card:hover {
+    transform: translateY(-4px);
+    border-color: #8eae98;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.95), var(--wp-depth-shadow-hover);
+  }
+  .weplace-site-guide .card-grid > a.link-card.featured:hover,
+  .unified-r3 #capabilities a.rf-proof-card:first-child:hover {
+    border-color: #7cad90;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.19), 0 26px 45px rgba(17,59,43,.23), 0 8px 17px rgba(17,59,43,.12);
+  }
+  .weplace-site-guide .card-grid > a.link-card:hover .go,
+  .unified-r3 #capabilities a.rf-proof-card:hover .rf-card-link b { transform: translate(2px,-2px); }
+}
+.weplace-site-guide .card-grid > a.link-card:focus-visible,
+.home-r46 #explore .explore-links > a:focus-visible,
+.unified-r3 #capabilities a.rf-proof-card:focus-visible {
+  outline: 3px solid #68a28a;
+  outline-offset: 4px;
+  border-color: #39735b;
+}
+@media(max-width:800px){
+  .unified-r3 #capabilities .rf-proof-grid {gap:14px}
+}
+@media(max-width:640px){
+  .weplace-site-guide .card-grid > a.link-card {min-height:180px;padding:23px;border-radius:18px}
+  .home-r46 #explore .explore-links {gap:13px}
+  .home-r46 #explore .explore-links > a {min-height:174px;padding:22px 24px 48px;border-radius:17px}
+  .home-r46 #explore .r46-role-grid > div {border-radius:15px}
+  .unified-r3 #capabilities a.rf-proof-card {border-radius:17px}
+}
+@media (prefers-reduced-motion:reduce) {
+  .weplace-site-guide .card-grid > a.link-card,
+  .weplace-site-guide .card-grid > a.link-card .go,
+  .home-r46 #explore .explore-links > a,
+  .unified-r3 #capabilities a.rf-proof-card,
+  .unified-r3 #capabilities a.rf-proof-card .rf-card-link b {transition:none!important;transform:none!important}
+}
+@media (prefers-contrast:more) {
+  .weplace-site-guide .card-grid > a.link-card,
+  .home-r46 #explore .explore-links > a,
+  .unified-r3 #capabilities a.rf-proof-card {border-width:2px}
+}

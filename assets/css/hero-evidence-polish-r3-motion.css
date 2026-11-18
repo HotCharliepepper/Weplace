@@ -1,0 +1,91 @@
+/* R3 comparison only. R2 owns focus; the existing GSAP controller owns movement.
+   Full-width composition makes the 15/30/45% starts independent of .rf-wrap. */
+.unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-sequence {
+  width:100vw;
+  margin-left:calc((100% - 100vw) / 2);
+  margin-right:0;
+  font-size:clamp(48px,7.2vw,96px);
+  line-height:1.2;
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row {
+  margin-left:0;
+  padding-left:15%;
+  padding-right:5%;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  gap:14px;
+  min-height:clamp(380px,64svh,680px);
+  --word-depth:1px -1px 1px #fffff6c7,-2px 4px 8px #31533c12;
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row:nth-child(2) {
+  padding-left:30%;
+  --word-depth:1px -1px 1px #fffff6df,-1px 2px 1px #315b3f24,-5px 9px 16px #254a3221;
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row:nth-child(3) {
+  padding-left:45%;
+  --word-depth:1px -1px 1px #fffff8f0,-1px 2px 1px #315b3f33,-3px 5px 3px #21482f1c,-9px 16px 22px #20472f36;
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row .rf-word {
+  letter-spacing:-.04em;
+  text-shadow:var(--word-depth);
+  color:#254b34;
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 #work.he-focus-ready .rf-word-row .rf-word {
+  /* Focus has one owner even after GSAP has completed a previous row. */
+  opacity:.65!important;
+  text-shadow:1px -1px 1px #fffff680,-2px 5px 12px #31533c0d;
+  transition:color .65s ease,opacity .8s ease,text-shadow .8s ease;
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 #work.he-focus-ready .rf-word-row.is-word-active .rf-word {
+  opacity:1!important;
+  color:#173e2b;
+  text-shadow:var(--word-depth);
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row small {
+  max-width:none;
+  margin-top:0;
+  font-size:13px;
+  line-height:1.7;
+  letter-spacing:-.025em;
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 #work.he-focus-ready .rf-word-row small {
+  color:#4a624d;
+  opacity:1;
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 #work.he-focus-ready .rf-word-row.is-word-active small {color:#2b5440}
+@media(max-width:800px) {
+  .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-sequence {
+    font-size:clamp(40px,11.8vw,74px);
+  }
+  .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row {
+    padding-left:8%;
+    padding-right:6%;
+    min-height:clamp(300px,54svh,540px);
+    gap:12px;
+  }
+  .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row:nth-child(2) {padding-left:19%}
+  .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row:nth-child(3) {padding-left:30%}
+  .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row small {font-size:12px}
+}
+@media(prefers-reduced-motion:reduce) {
+  .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row .rf-word,
+  .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row small {
+    opacity:1!important;
+    transform:none!important;
+    transition:none!important;
+  }
+}
+html[data-rf-motion="off"] .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row .rf-word,
+html[data-rf-motion="off"] .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row small {
+  opacity:1!important;
+  transform:none!important;
+  transition:none!important;
+}
+@media(forced-colors:active) {
+  .unified-r3.he-lab.he-polish.he-polish-r3 #work .rf-word-row .rf-word {
+    color:CanvasText;
+    text-shadow:none!important;
+  }
+}
