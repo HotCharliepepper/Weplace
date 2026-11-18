@@ -45,7 +45,7 @@
    },700);
  }
  skip.addEventListener('click',()=>finish());
- replay.addEventListener('click',()=>play());
+ replay.addEventListener('click',()=>{if(!motionAllowed()){clearTimers();played=true;show('before');}else play();});
  if(motionQuery?.addEventListener)motionQuery.addEventListener('change',()=>{
    if(!motionAllowed())finish();
  });
