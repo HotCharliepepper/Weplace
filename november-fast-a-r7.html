@@ -317,6 +317,138 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   .nov-wizard.is-ready [data-wizard-step].is-active{animation:none!important;transform:none!important;opacity:1!important}
 }
 
+
+/* R7 SELECTIVE PORT — unified PR43 visual relationship, without unpublished client data. */
+.r7-frame-copy{font-size:clamp(13px,1.35vw,17px);line-height:1.75;color:#c7dfcc;margin:22px 0 0 23px;letter-spacing:-.02em}
+.r7-frame-copy strong{color:#f4efcf;font-weight:800}
+#first-look.r7-demo{background:linear-gradient(155deg,#e8eee5,#e2eade);padding-block:clamp(68px,7.5vw,108px);color:#203e2e}
+#first-look .r7-demo-head{margin-bottom:28px}
+#first-look .r7-demo-head h2{font-size:clamp(40px,5.2vw,74px);line-height:1.17;letter-spacing:-.065em}
+#first-look .r7-demo-head h2 em{font-style:normal;color:#245a42}
+#first-look .r7-demo-head p{font-size:14px;line-height:1.75;color:#536d58;max-width:24ch}
+#first-look .r7-choices{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-start}
+#first-look .r7-choices .choice{display:flex;gap:30px;justify-content:space-between;align-items:center;min-height:48px;min-width:135px;border-radius:100px;background:#e9efe7;color:#1e503b;padding:10px 20px;font-size:14px;font-weight:740}
+#first-look .r7-choices .choice[aria-pressed="true"]{background:#244b39;border-color:#244b39;color:#fffefa;box-shadow:0 10px 25px #173a3124}
+#first-look .r7-example-tag{font-size:11px;color:#657d69;letter-spacing:.025em;margin:16px 0 13px;max-width:none}
+#first-look .r7-stage{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);min-height:540px;border-radius:25px;overflow:hidden;border:1px solid #cfdbcc;background:#f7f7ee;box-shadow:0 17px 40px #1a483314;margin:0;isolation:isolate}
+#first-look .r7-stage-visual{grid-column:1;grid-row:1;background:#d5dfd1;padding:28px;min-width:0;min-height:540px;display:block}
+#first-look .r7-mockup{position:relative;width:100%;height:100%;min-height:482px;background:#f6f7ef;border-radius:15px;box-shadow:0 12px 27px #152f251c;padding:0;overflow:hidden;display:block}
+#first-look .r7-mockup .r7-view{position:absolute;inset:0;border-radius:inherit;overflow:hidden}
+#first-look .r7-mockup .r7-view[hidden]{display:none!important}
+#first-look .r7-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#first-look .r7-photo-overlay{position:absolute;inset:auto 0 0;padding:85px 30px 28px;color:#fff;background:linear-gradient(transparent,rgba(11,28,20,.89))}
+#first-look .r7-photo-overlay small{display:block;color:#e0eadb;font-weight:730;margin-bottom:12px}
+#first-look .r7-photo-overlay strong{font-size:clamp(23px,2.65vw,35px);line-height:1.4;font-weight:850;letter-spacing:-.04em}
+#first-look .r7-cover{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+#first-look .r7-top-label{position:absolute;top:18px;left:18px;font-size:11px;border-radius:100px;background:#213f31e9;color:#f5faf2;padding:8px 13px;letter-spacing:.035em}
+#first-look .r7-photo-pair{display:grid;grid-template-columns:1.15fr .85fr;gap:7px;height:69%;background:#ceddce}
+#first-look .r7-photo-pair img{display:block;width:100%;height:100%;min-width:0;object-fit:cover}
+#first-look .r7-photo-sequence{display:grid;grid-template-columns:1fr 1fr;background:#dce9db;color:#315340;font-size:12px;font-weight:800}
+#first-look .r7-photo-sequence span{padding:12px;text-align:center}
+#first-look .r7-photo-after-caption{padding:21px 25px}
+#first-look .r7-photo-after-caption strong{display:block;color:#244937;font-size:clamp(17px,1.8vw,23px);line-height:1.48;letter-spacing:-.04em}
+#first-look .r7-photo-after-caption small{display:block;color:#5d7563;font-size:11px;margin-top:8px}
+#first-look .r7-route{background:#e3eae1;padding:23px;color:#2a503d}
+#first-look .r7-map-search{background:#fbfcf8;border:1px solid #cdd7c9;border-radius:11px;padding:12px 14px;display:flex;justify-content:space-between;gap:12px;font-size:13px;font-weight:730}
+#first-look .r7-map-search b{font-size:21px;line-height:1}
+#first-look .r7-map-dummy{position:relative;height:48%;background:linear-gradient(90deg,#e9efe7 0 35%,#dce6d8 35% 65%,#e8ede6 65%);margin:14px 0;border-radius:9px;overflow:hidden}
+#first-look .r7-road{position:absolute;display:block;background:#fafbf6}
+#first-look .r7-road-a{height:19px;left:0;right:0;top:49%}
+#first-look .r7-road-b{width:19px;top:0;bottom:0;left:48%}
+#first-look .r7-map-pin{position:absolute;top:46%;left:52%;background:#2c6249;color:#fff;border:4px solid #fff;border-radius:50%;width:44px;height:44px;text-align:center;line-height:36px;font-style:normal;font-weight:800;box-shadow:0 3px 8px #0002}
+#first-look .r7-split-notes{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#first-look .r7-split-notes div{background:#fcfdf8;border:1px solid #d3dfd3;border-radius:9px;padding:9px}
+#first-look .r7-split-notes div:first-child{grid-column:1 / -1}
+#first-look .r7-split-notes small{display:block;font-size:9px;color:#738477}
+#first-look .r7-split-notes b{display:inline-block;font-size:11px;margin-top:5px}
+#first-look .r7-split-notes span{float:right;font-size:9px;color:#708879}
+#first-look .r7-route-question{font-size:13px;font-weight:750;color:#285640;margin:15px 0 0;max-width:none}
+#first-look .r7-route-after{background:#f5f7f1;padding:23px 25px;color:#28513e}
+#first-look .r7-route-head span{display:block;font-size:11px;color:#617c68}
+#first-look .r7-route-head strong{display:block;font-size:22px;letter-spacing:-.03em;margin:8px 0 17px}
+#first-look .r7-route-after svg{display:block;width:100%;height:auto;max-height:260px;border-radius:10px}
+#first-look .r7-route-steps{display:flex;list-style:none;justify-content:space-between;gap:8px;margin:18px 0 10px;padding:0}
+#first-look .r7-route-steps li{font-size:12px;white-space:nowrap}
+#first-look .r7-route-steps b{color:#2c7958;font-size:11px;margin-right:5px}
+#first-look .r7-route-note{font-size:11px;color:#738473;margin:15px 0 0;max-width:none}
+#first-look .r7-booking-before{background:linear-gradient(#edf3ec,#f7faf4);padding:27px}
+#first-look .r7-booking-search{background:#fff;border:1px solid #cdd9ce;border-radius:11px;padding:16px;display:flex;justify-content:space-between;color:#365943;font-size:13px;font-weight:730}
+#first-look .r7-booking-post{background:#fffef8;border-radius:12px;margin-top:23px;box-shadow:0 13px 29px #19492c11;padding:24px}
+#first-look .r7-booking-post span{display:block;font-size:11px;color:#668873}
+#first-look .r7-booking-post strong{display:block;margin:20px 0 12px;color:#28533f;font-size:22px}
+#first-look .r7-booking-post p{font-size:13px;line-height:1.9;color:#647867}
+#first-look .r7-booking-tabs{display:flex;justify-content:space-around;gap:10px;padding:22px;color:#697d70;font-size:12px}
+#first-look .r7-booking-before-question{text-align:center;color:#37634d;font-weight:770;font-size:17px;line-height:1.6}
+#first-look .r7-booking-after{background:#f8faf4;padding:clamp(22px,3vw,35px)}
+#first-look .r7-booking-head small{font-size:10px;letter-spacing:.06em;color:#698571;font-weight:800}
+#first-look .r7-booking-head h4{font-size:clamp(22px,2.6vw,32px);letter-spacing:-.055em;color:#224633;margin:13px 0 28px}
+#first-look .r7-booking-row{display:grid;grid-template-columns:85px 1fr;align-items:center;gap:14px;margin:18px 0;font-size:13px;color:#4e6b54}
+#first-look .r7-booking-row div{display:flex;flex-wrap:wrap;gap:8px}
+#first-look .r7-booking-row button{min-height:45px;border-radius:9px;border:1px solid #c7dac9;background:#fffefa;color:#43624d;font-size:13px;font-weight:730;padding:10px 15px;cursor:pointer}
+#first-look .r7-booking-row button[aria-pressed="true"]{background:#24553d;color:#fffefa;border-color:#24553d}
+#first-look .r7-booking-row button:focus-visible{outline:3px solid #3c8c68;outline-offset:3px}
+#first-look .r7-booking-summary{margin-top:26px;padding:16px 19px;border:1px solid #cadac9;background:#e3efe2;border-radius:10px;font-weight:800;color:#31593f;font-size:16px;max-width:none}
+#first-look .r7-booking-note{font-size:11px;color:#657d69;line-height:1.75;margin-top:12px;max-width:none}
+#first-look #stage-inner{grid-column:2;grid-row:1;display:flex;flex-direction:column;justify-content:space-between;gap:26px;padding:clamp(25px,3vw,43px);background:#f6f6ee;min-width:0}
+#first-look #stage-inner.after{background:#f2f7ed}
+#first-look .r7-scene-head{display:flex;gap:16px;justify-content:space-between;align-items:center}
+#first-look .r7-scene-head .stage-kicker{font-size:10px;font-weight:800;color:#486b53;letter-spacing:.09em}
+#first-look .r7-modes{display:flex;flex:0 0 auto;gap:0;border:1px solid #c9d9c5;border-radius:999px;padding:4px;background:#f2f5ec}
+#first-look .r7-modes button{flex:initial;min-height:37px;min-width:65px;border:0;color:#46684d;background:transparent;padding:8px 13px;font-size:12px;border-radius:100px}
+#first-look .r7-modes button[aria-pressed="true"]{background:#254c38;color:#fffefa;font-weight:800}
+#first-look .r7-scene-message{margin-block:auto}
+#first-look .r7-scene-message .stage-label{display:block;margin:0 0 16px;color:#6e8572;font-size:12px}
+#first-look .r7-scene-message h3{font-size:clamp(31px,3.7vw,53px);line-height:1.18;letter-spacing:-.065em;margin:0 0 26px;color:#224432;word-break:keep-all}
+#first-look .r7-scene-message p{font-size:clamp(13px,1.4vw,16px);line-height:1.9;color:#57705e;max-width:31ch}
+#first-look .r7-scene-foot{border-top:1px solid #d5dfd2;padding-top:21px;display:flex;flex-direction:column;gap:12px}
+#first-look .r7-scene-foot .answer{font-size:12px;line-height:1.75;color:#738473;margin:0}
+#first-look .r7-scene-foot a{font-size:13px;font-weight:790;color:#265441;display:flex;justify-content:space-between;min-height:41px;align-items:center;gap:12px}
+#first-look .r7-disclaimer{font-size:12px;line-height:1.8;color:#687e6b;max-width:100%;margin:16px 0 0}
+@media(max-width:900px){
+ #first-look .r7-stage{grid-template-columns:1fr}
+ #first-look .r7-stage-visual{grid-column:1;grid-row:1;min-height:420px;padding:17px}
+ #first-look .r7-mockup{min-height:388px}
+ #first-look #stage-inner{grid-column:1;grid-row:2;min-height:290px}
+ #first-look .r7-demo-head{flex-direction:column;align-items:flex-start;gap:18px}
+ #first-look .r7-demo-head p{max-width:none}
+}
+@media(max-width:560px){
+ .r7-frame-copy{margin:15px 0 0 17px;font-size:12px;line-height:1.65}
+ #first-look.r7-demo{padding-block:60px}
+ #first-look .r7-demo-head h2{font-size:clamp(35px,8vw,48px)}
+ #first-look .r7-choices{gap:7px}
+ #first-look .r7-choices .choice{min-width:0;flex:1;gap:7px;font-size:12px;padding:10px 12px}
+ #first-look .r7-example-tag{font-size:10px}
+ #first-look .r7-stage{border-radius:18px}
+ #first-look .r7-stage-visual{min-height:365px;padding:13px}
+ #first-look .r7-mockup{min-height:337px}
+ #first-look #stage-inner{padding:24px 20px;min-height:305px;gap:20px}
+ #first-look .r7-scene-message h3{font-size:clamp(30px,8.2vw,39px)}
+ #first-look .r7-photo-overlay{padding:55px 16px 18px}
+ #first-look .r7-photo-overlay strong{font-size:24px}
+ #first-look .r7-photo-pair{height:62%}
+ #first-look .r7-photo-after-caption{padding:12px 15px}
+ #first-look .r7-photo-after-caption strong{font-size:15px}
+ #first-look .r7-photo-after-caption small{font-size:10px}
+ #first-look .r7-route,#first-look .r7-route-after{padding:14px}
+ #first-look .r7-map-dummy{height:39%;margin:9px 0}
+ #first-look .r7-split-notes{gap:5px}
+ #first-look .r7-split-notes div{padding:7px}
+ #first-look .r7-route-after svg{max-height:200px}
+ #first-look .r7-route-head strong{font-size:19px;margin-bottom:12px}
+ #first-look .r7-route-steps{margin-top:12px;gap:3px}
+ #first-look .r7-route-steps li{font-size:10px}
+ #first-look .r7-booking-before{padding:17px}
+ #first-look .r7-booking-post{margin-top:16px;padding:17px}
+ #first-look .r7-booking-post strong{margin:12px 0;font-size:19px}
+ #first-look .r7-booking-after{padding:17px}
+ #first-look .r7-booking-head h4{margin:8px 0 20px}
+ #first-look .r7-booking-row{grid-template-columns:55px 1fr;gap:8px}
+ #first-look .r7-booking-row button{min-height:42px;padding:8px 10px;font-size:12px}
+ #first-look .r7-booking-summary{margin-top:15px;padding:12px}
+}
+@media(prefers-reduced-motion:reduce){#first-look .r7-choices .choice,#first-look .r7-booking-row button{transition:none!important}}
+
 </style>
 </head>
 <body>
@@ -729,6 +861,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
  }
   function render(){const d=data[focus],c=d[mode];many('[data-focus]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.focus===focus)));many('button[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
   one('#stage-inner').className='stage-inner '+mode;one('#stage-kicker').textContent='01 / '+d.label;one('#stage-title').textContent=c[0];one('#stage-desc').textContent=c[1];one('#stage-label').textContent=mode==='before'?'정리 전 예시 · 다른 정보를 더 찾아야 합니다.':'정리 후 예시 · 다음 안내를 한눈에 볼 수 있습니다.';
+  many('[data-r7-view]').forEach(v=>{v.hidden=v.dataset.r7View!==focus+'-'+mode;});
   one('#mockup').dataset.mode=mode;one('#mock-title').textContent=c[2];one('#mock-extra').textContent=c[3];one('#mock-cta').textContent=c[4];one('#answer').textContent=mode==='before'?d.label+'의 정리 전 예시입니다. 정리 후 화면과 비교해 보세요.':'가상 화면을 정리한 예시입니다. 실제 고객 성과나 매출 변화를 보여주는 자료는 아닙니다.';
   // The required choices compose the customer-facing inquiry in updateClickIntake().
   one('#copy-status').textContent='문의 내용을 준비하고 있습니다. 채팅창에서 직접 보내야 접수됩니다.';
@@ -736,12 +869,22 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   updateClickIntake();
  }
  many('[data-focus]').forEach(b=>b.addEventListener('click',()=>{if(focus!==b.dataset.focus)concern=null;focus=b.dataset.focus;mode='before';render();}));
+ let demoGuests='4',demoTime='18:00';
+ function updateDemoBooking(){
+  many('[data-r7-guests]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.r7Guests===demoGuests)));
+  many('[data-r7-time]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.r7Time===demoTime)));
+  one('#r7-booking-summary').textContent=demoGuests+'명 · '+demoTime+' 선택 예시';
+ }
+ many('[data-r7-guests]').forEach(b=>b.addEventListener('click',()=>{demoGuests=b.dataset.r7Guests;updateDemoBooking();}));
+ many('[data-r7-time]').forEach(b=>b.addEventListener('click',()=>{demoTime=b.dataset.r7Time;updateDemoBooking();}));
+ updateDemoBooking();
+
  many('[data-relationship]').forEach(b=>b.addEventListener('click',()=>{relationship=b.dataset.relationship;render();advanceFromWizard(0)}));
  many('[data-industry]').forEach(b=>b.addEventListener('click',()=>{industry=b.dataset.industry;updateClickIntake();advanceFromWizard(1)}));
  many('[data-intake-focus]').forEach(b=>b.addEventListener('click',()=>{if(focus!==b.dataset.intakeFocus){focus=b.dataset.intakeFocus;concern=null;mode='before';render()}else updateClickIntake();advanceFromWizard(2)}));
  many('[data-request]').forEach(b=>b.addEventListener('click',()=>{requestType=b.dataset.request;updateClickIntake();advanceFromWizard(4)}));
  many('button[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;render();}));
- one('#cta-experience').addEventListener('click',()=>{mode='after';render();one('#stage-title').scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
+ const oldCompareButton=one('#cta-experience');if(oldCompareButton)oldCompareButton.addEventListener('click',()=>{mode='after';render();one('#stage-title').scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
 
  one('#copy-message').addEventListener('click',()=>{copyPrepared();});
  one('#copy-and-chat').addEventListener('click',event=>{
