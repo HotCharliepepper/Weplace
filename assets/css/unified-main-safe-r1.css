@@ -56,3 +56,6 @@
 @media(prefers-reduced-motion:reduce){
  .unified-r3 .wp-home-story *{transition:none!important;animation:none!important}
 }
+
+/* Legacy public hash anchors: retain inbound links from older materials. */
+.unified-r3 .wp-hash-anchor{display:block;position:relative;width:1px;height:0;overflow:hidden;visibility:hidden;scroll-margin-top:84px;pointer-events:none}
