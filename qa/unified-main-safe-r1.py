@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 BASE=os.environ.get("WEPLACE_BASE","http://127.0.0.1:4173").rstrip("/")
 OUT=Path("qa/unified-main-safe-r1")
 OUT.mkdir(parents=True,exist_ok=True)
-result={"url":BASE+"/","checks":[],"errors":[],"writes":[],"captures":[]}
+result={"url":BASE+"/","checks":[],"errors":[],"writes":[],"legacy_analytics_posts":[],"captures":[]}
 def check(name,ok,detail=None):
     item={"name":name,"pass":bool(ok)}
     if detail is not None:item["detail"]=detail
@@ -23,7 +23,22 @@ with sync_playwright() as pw:
         page=ctx.new_page()
         page.route("https://**",lambda route:route.abort())
         page.on("pageerror",lambda e: result["errors"].append(str(e)))
-        page.on("request",lambda r: result["writes"].append(r.method+" "+r.url) if r.method not in ("GET","HEAD") else None)
+        # Keep the exact GA4 configuration already on main. Distinguish its known
+        # pageview/scroll beacons from NEW inquiry/CRM/POST submissions.
+        def audit_request(request):
+            if request.method in ("GET","HEAD"):return
+            known_ga=(
+                request.url.startswith("https://analytics.google.com/g/collect") or
+                request.url.startswith("https://stats.g.doubleclick.net/g/collect")
+            )
+            if known_ga and request.method=="POST":
+                result["legacy_analytics_posts"].append(request.url)
+                body=request.post_data or ""
+                if "테스트 매장" in body or "서울 영등포" in body:
+                    result["writes"].append("GA contains filled inquiry text")
+            else:
+                result["writes"].append(request.method+" "+request.url)
+        page.on("request",audit_request)
         page.on("response",lambda r: result["errors"].append("HTTP "+str(r.status)+" "+r.url) if r.status>=400 and r.url.startswith(BASE) else None)
         response=page.goto(BASE+"/",wait_until="load")
         check(f"{width} main served",response.status==200)
@@ -101,6 +116,6 @@ with sync_playwright() as pw:
 result["passed"]=sum(x["pass"] for x in result["checks"])
 result["failed"]=len(result["checks"])-result["passed"]
 (OUT/"report.json").write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
-print(f"WEPLACE UNIFIED MAIN QA: {result['passed']} passed, {result['failed']} failed, {len(result['errors'])} browser/HTTP errors, {len(result['writes'])} writes",flush=True)
+print(f"WEPLACE UNIFIED MAIN QA: {result['passed']} passed, {result['failed']} failed, {len(result['errors'])} browser/HTTP errors, {len(result['writes'])} unexpected writes, {len(result['legacy_analytics_posts'])} inherited GA beacons",flush=True)
 if result["errors"]:print("ERROR DETAILS",result["errors"][:20],flush=True)
 if result["failed"] or result["errors"] or result["writes"]:sys.exit(1)
