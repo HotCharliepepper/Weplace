@@ -1,0 +1,50 @@
+name: WEPLACE Public Copy Natural Korean Audit
+on:
+  pull_request:
+    paths:
+      - index.html
+      - november-fast-a-r6.html
+      - industries/**
+      - problems/**
+      - start/**
+      - check/**
+      - my-store/**
+      - qa/public-copy-natural-20261118.py
+      - .github/workflows/public-copy-natural-20261118.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Chrome browser QA dependencies
+        run: |
+          python -m pip install playwright==1.56.0
+          (which google-chrome || which google-chrome-stable || which chromium-browser)
+          node --version
+      - name: Start isolated static site preview
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 > /tmp/weplace-public-copy.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/index.html > /dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/weplace-public-copy.log
+          exit 1
+      - name: Verify actual public routes, links and copy invariants
+        run: python qa/public-copy-natural-20261118.py
+      - name: Preserve review screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: WEPLACE-PUBLIC-COPY-20261118-QA
+          path: |
+            qa/public-copy-natural-20261118/
+          retention-days: 14
+          if-no-files-found: warn
