@@ -390,14 +390,41 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   route:{label:'찾아오는 길',before:['주소는 알지만, 입구는 어디일까요?','주소와 출구, 주차 정보가 흩어져 있다면 처음 오는 손님은 다시 검색합니다.','주소 · 지도','입구와 주차 위치는 따로 확인해야 합니다.','길 다시 찾기'],after:['출구부터 입구까지 한 화면에.','실제 위치·출구·입구·주차 안내를 나란히 두는 구성 예시입니다.','출구 · 입구 · 주차','어디서 내려 어느 문으로 들어갈지 안내합니다.','도착 정보 확인']},
   booking:{label:'예약 안내',before:['예약하려면 무엇을 알아야 할까요?','예약 안내가 있어도 가능한 인원·시간·확정 방법이 보이지 않으면 망설일 수 있습니다.','예약 문의','인원·시간·확정 방식은 별도로 확인해야 합니다.','문의 채널 찾기'],after:['인원과 시간, 확인 절차까지.','가능한 인원·시간과 예약 확정 여부를 구분해 안내하는 구성 예시입니다.','인원 · 시간 · 확인','예약 전 확인할 조건과 절차를 함께 보여줍니다.','예약 방법 확인']}
  };
- let focus='photo',mode='before'; const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+ let focus='photo',mode='before',relationship='new'; const $=s=>document.querySelector(s), $=s=>[...document.querySelectorAll(s)];
+ const plan={
+  photo:{question:'첫 사진에서 어떤 매장인지 보이나요?',problem:'대표 사진이 공간만 보여준다면, 고객은 메뉴나 이용 장면을 다시 찾아야 할 수 있습니다.',action:'대표 메뉴·공간·이용 장면을 이어 보여줄 사진 순서'},
+  route:{question:'주소만 보고 입구까지 찾아올 수 있을까요?',problem:'지도가 있어도 출구·입구·주차 위치는 고객이 다시 확인할 수 있습니다.',action:'출구·입구·주차 정보를 함께 보여주는 도착 안내'},
+  booking:{question:'예약 전 확인할 조건이 한 화면에 있을까요?',problem:'예약 버튼이 있어도 인원·시간·확정 방법을 몰라 문의가 반복될 수 있습니다.',action:'예약 가능 조건과 확인 절차를 한 흐름으로 정리'}
+ };
+ function updateBridge(){
+  const p=plan[focus],d=data[focus];
+  $('#selected-topic').textContent=d.label;
+  $('#selected-question').textContent=p.question;
+  $('#selected-problem').textContent=p.problem;
+  $('#selected-action').textContent=p.action;
+  $('[data-relationship]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.relationship===relationship)));
+  const intro=relationship==='returning'
+     ?'이전에 Weplace와 상담하거나 작업한 적이 있어, 현재 상황을 다시 살펴보고 싶습니다.'
+     :'이번 캠페인을 보고 처음 상담을 문의드립니다.';
+  const next=relationship==='returning'
+     ?'기존에 진행한 내용과 겹치지 않게 필요한 보완부터 확인하고 싶습니다.'
+     :'현재 화면부터 확인할 수 있는 범위와 가능한 일정·비용을 안내받고 싶습니다.';
+  $('#prepared-message').value=[
+    '안녕하세요. Weplace 11월 FAST 화면 비교를 살펴봤습니다.',
+    intro,'궁금한 화면: '+d.label,'먼저 확인할 질문: '+p.question,next,
+    '실제 매장 진단 제공 여부·작업 범위·비용과 일정은 안내를 받은 뒤 결정하겠습니다.',
+    '매장명과 지역은 카카오톡에서 직접 전달하겠습니다.'
+  ].join('\n');
+ }
  function render(){const d=data[focus],c=d[mode];$$('[data-focus]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.focus===focus)));$$('button[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
   $('#stage-inner').className='stage-inner '+mode;$('#stage-kicker').textContent='01 / '+d.label;$('#stage-title').textContent=c[0];$('#stage-desc').textContent=c[1];$('#stage-label').textContent=mode==='before'?'이전 배열 — 다시 확인하는 화면':'정리한 배열 — 다음 행동이 보이는 화면';
   $('#mockup').dataset.mode=mode;$('#mock-title').textContent=c[2];$('#mock-extra').textContent=c[3];$('#mock-cta').textContent=c[4];$('#answer').textContent=mode==='before'?d.label+'을 먼저 봅니다. 정리한 화면을 눌러 차이를 비교해 보세요.':'정보의 배열을 바꾼 가상 예시입니다. 실제 매장 결과나 매출 효과를 뜻하지 않습니다.';
   $('#prepared-message').value='안녕하세요. Weplace의 블랙프라이데이 첫 화면 비교를 살펴봤습니다.\n먼저 확인하고 싶은 부분: '+d.label+'\n우리 매장의 실제 사진·정보·안내를 살펴본 뒤, 진단 범위와 가능한 일정을 안내받고 싶습니다.\n매장명과 지역은 카카오톡에서 직접 전달하겠습니다.';
   $('#copy-status').textContent='선택 항목이 문의문에 반영됐습니다. 아직 전송하거나 접수하지 않았습니다.';
+  updateBridge();
  }
- $$('[data-focus]').forEach(b=>b.addEventListener('click',()=>{focus=b.dataset.focus;mode='before';render();}));
+ $('[data-focus]').forEach(b=>b.addEventListener('click',()=>{focus=b.dataset.focus;mode='before';render();}));
+ $('[data-relationship]').forEach(b=>b.addEventListener('click',()=>{relationship=b.dataset.relationship;render();}));
  $$('button[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;render();}));
  $('#cta-experience').addEventListener('click',()=>{mode='after';render();$('#stage-title').scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
  $('#copy-message').addEventListener('click',async()=>{
