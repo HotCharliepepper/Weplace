@@ -20,5 +20,5 @@
 <text x="66" y="71" font-family="DejaVu Sans, Arial, sans-serif" font-weight="800" letter-spacing="-2" font-size="40" fill="#fff9eb">weplace<tspan fill="#c4ad75">.</tspan></text>
 <text x="1118" y="77" font-family="DejaVu Sans,Arial,sans-serif" text-anchor="end" font-size="13" letter-spacing="4" fill="#c8dbc5">FIRST LOOK / WEPLACE</text>
 <path d="M650 581H1144" stroke="#c7dfb8" stroke-width="2" opacity=".83"/>
-<text x="1144" y="563" font-family="Noto Sans CJK KR,Noto Sans KR,Malgun Gothic,sans-serif" text-anchor="end" font-size="38" letter-spacing="-.6" font-weight="800" fill="#f7f6ed">사진부터 예약까지, 손님이 보는 순서를 바꿉니다.</text>
+<text x="1144" y="563" font-family="Noto Sans CJK KR,Noto Sans KR,Malgun Gothic,sans-serif" text-anchor="end" font-size="38" letter-spacing="-.6" font-weight="800" fill="#f7f6ed">사진부터 예약까지.</text>
 </svg>
