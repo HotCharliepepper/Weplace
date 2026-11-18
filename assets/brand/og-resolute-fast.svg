@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
 <title id="t">Weplace — RESOLUTE IT FAST.</title>
-<desc id="d">짙은 초록 배경, 커다란 RESOLUTE IT FAST. 타이포와 Weplace 로고. 사진부터 예약까지, 손님이 보는 순서를 바꿉니다.</desc>
+<desc id="d">짙은 초록 배경, 커다란 RESOLUTE IT FAST. 타이포와 Weplace 로고. 사진부터 예약까지.</desc>
 <defs>
   <linearGradient id="forest" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#063024"/><stop offset=".55" stop-color="#0a3b2b"/><stop offset="1" stop-color="#09261f"/></linearGradient>
   <radialGradient id="glow" cx=".89" cy=".08" r=".68"><stop stop-color="#e0eab5" stop-opacity=".58"/><stop offset=".43" stop-color="#b2d49e" stop-opacity=".17"/><stop offset="1" stop-color="#c8e6ab" stop-opacity="0"/></radialGradient>
@@ -13,12 +13,12 @@
 <g opacity=".12" stroke="#d4e5be" stroke-width="1"><path d="M1210 -20L830 670"/><path d="M965 -40L600 680"/><path d="M630 -60L265 670"/></g>
 <g opacity=".65" fill="url(#speed)"><path d="M-20 302H468L430 318H-20Z"/><path d="M-20 361H324L273 370H-20Z"/><path d="M-20 492H450L405 501H-20Z"/></g>
 <g font-family="Arial Black, Impact, DejaVu Sans, sans-serif" font-style="italic" font-weight="900" letter-spacing="-5">
-  <text x="85" y="310" fill="url(#textcream)" font-size="121" textLength="1010" lengthAdjust="spacingAndGlyphs">RESOLUTE IT</text>
+  <text x="85" y="270" fill="url(#textcream)" font-size="121" textLength="1010" lengthAdjust="spacingAndGlyphs">RESOLUTE IT</text>
   <text x="93" y="513" fill="#649576" opacity=".35" font-size="287" textLength="1030" lengthAdjust="spacingAndGlyphs">FAST.</text>
   <text x="85" y="501" fill="url(#textsage)" font-size="287" textLength="1030" lengthAdjust="spacingAndGlyphs">FAST.</text>
 </g>
 <text x="66" y="71" font-family="DejaVu Sans, Arial, sans-serif" font-weight="800" letter-spacing="-2" font-size="40" fill="#fff9eb">weplace<tspan fill="#c4ad75">.</tspan></text>
 <text x="1118" y="77" font-family="DejaVu Sans,Arial,sans-serif" text-anchor="end" font-size="13" letter-spacing="4" fill="#c8dbc5">FIRST LOOK / WEPLACE</text>
 <path d="M650 581H1144" stroke="#c7dfb8" stroke-width="2" opacity=".83"/>
-<text x="1144" y="563" font-family="Noto Sans CJK KR,Noto Sans KR,Malgun Gothic,sans-serif" text-anchor="end" font-size="31" letter-spacing="-.6" font-weight="800" fill="#f7f6ed">사진부터 예약까지, 손님이 보는 순서를 바꿉니다.</text>
+<text x="1144" y="563" font-family="Noto Sans CJK KR,Noto Sans KR,Malgun Gothic,sans-serif" text-anchor="end" font-size="38" letter-spacing="-.6" font-weight="800" fill="#f7f6ed">사진부터 예약까지, 손님이 보는 순서를 바꿉니다.</text>
 </svg>
