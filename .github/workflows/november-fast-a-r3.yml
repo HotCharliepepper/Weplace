@@ -1,0 +1,42 @@
+name: WEPLACE November FAST A R3 QA
+on:
+  pull_request:
+    paths:
+      - november-fast-a-r3.html
+      - qa/november-fast-a-r3-smoke.py
+      - .github/workflows/november-fast-a-r3.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  campaign-r3-preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Python Playwright and check system Chrome
+        run: |
+          python -m pip install playwright==1.56.0
+          (which google-chrome || which google-chrome-stable || which chromium-browser)
+      - name: Serve static review site
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 > /tmp/weplace-nov-r3.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/november-fast-a-r3.html > /dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/weplace-nov-r3.log; exit 1
+      - name: R3 route and message flow browser QA
+        run: python qa/november-fast-a-r3-smoke.py
+      - name: Preserve mobile and desktop screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: WEPLACE-NOVEMBER-FAST-R3-QA
+          path: |
+            qa/november-fast-a-r3/
+          retention-days: 14
+          if-no-files-found: warn
