@@ -41,6 +41,12 @@ with sync_playwright() as p:
         check(f"{width} copy does not promise an unconfirmed offer",not any(term in page.locator("main").inner_text() for term in ("50% 할인","오늘만","무료 진단","매출 보장","무료 1장")) )
         check(f"{width} responsive overflow",page.evaluate("document.documentElement.scrollWidth <= window.innerWidth + 1"),page.evaluate("({scroll:document.documentElement.scrollWidth,inner:innerWidth})"))
         check(f"{width} three choices",page.locator("[data-focus]").count()==3)
+        check(f"{width} FAST face has opaque forest contrast",
+              page.locator(".nov-fast-face").evaluate("""el=>{
+                const s=getComputedStyle(el);
+                const fill=s.webkitTextFillColor||s.color;
+                return fill==='rgb(24, 62, 49)' && s.opacity==='1';
+              }"""))
         check(f"{width} safe review meta",page.locator('meta[name="robots"]').get_attribute("content")=="noindex,nofollow")
         check(f"{width} transparent benefit", "가상 매장" in page.locator("body").inner_text() and "무료로 진단" not in page.locator("body").inner_text())
         check(f"{width} no auto contact payload",page.locator("form").count()==0 and page.locator("a.kakao-link").get_attribute("href")=="https://pf.kakao.com/_mxbexhX")
