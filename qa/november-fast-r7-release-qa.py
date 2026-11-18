@@ -40,6 +40,12 @@ with sync_playwright() as p:
         img.scroll_into_view_if_needed()
         homepage.wait_for_function("""()=>{const image=document.querySelector('#november-fast .nov-campaign-media img');return image&&image.complete&&image.naturalWidth>0}""",timeout=12000)
         check(f"{width} thumbnail raster actually loaded",img.evaluate("i=>i.naturalWidth>=900&&i.naturalHeight>=500"))
+        check(f"{width} entire image is contained, not cropped",
+              img.evaluate("""im=>{
+                const imgRect=im.getBoundingClientRect(), frame=im.parentElement.getBoundingClientRect();
+                return getComputedStyle(im).objectFit==='contain' && imgRect.width<=frame.width+2 && imgRect.height<=frame.height+2
+                    && Math.abs(imgRect.width/imgRect.height-1200/675)<0.03;
+              }"""))
         if width in (390,1440):
             homepage.locator("#november-fast").screenshot(path=str(OUT/f"r7-home-campaign-{width}.png"),animations="disabled")
             report["screenshots"].append(f"r7-home-campaign-{width}.png")
