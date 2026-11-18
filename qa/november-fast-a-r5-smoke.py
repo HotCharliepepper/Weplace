@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only Chromium QA for Nov FAST campaign R1; does not send external messages."""
+"""Read-only Natural Korean copy + funnel regression QA for Nov FAST R5."""
 from pathlib import Path
 import json, os, re, sys, time
 from playwright.sync_api import sync_playwright
@@ -39,11 +39,16 @@ with sync_playwright() as p:
           const s=getComputedStyle(el), b=el.getBoundingClientRect();return s.display!=='none'&&s.visibility!=='hidden'&&b.width>0&&b.height>0
         }"""))
         check(f"{width} copy does not promise an unconfirmed offer",not any(term in page.locator("main").inner_text() for term in ("50% 할인","오늘만","무료 진단","매출 보장","무료 1장")) )
-        check(f"{width} text is natural and avoids unverified time promises",
+        check(f"{width} no invented speed promise or automatic send language",
               "30초 선택 문의" not in page.locator("main").inner_text() and
               "카카오톡으로 전달" not in page.locator("main").inner_text() and
-              "카카오톡에서" in page.locator("#intake-ready-status").inner_text() or
-              "업종·고민" in page.locator("#intake-ready-status").inner_text())
+              "채팅창에 붙여넣" in page.locator("#contact").inner_text())
+        check(f"{width} welcome is conditional, not a claim about all visitors",
+              "사진도 바꾸고 광고도 해보셨다면" in page.locator("#top").inner_text())
+        check(f"{width} no implicit restaurant-only claim in photo simulation",
+              "대표 메뉴" not in page.locator("#first-look").inner_text() and
+              "좌석" not in page.locator("#first-look").inner_text() and
+              "이곳에서는 무엇을 할 수 있을까요" in page.locator("#first-look").inner_text())
         check(f"{width} campaign preserves the intended negative hook and same-screen recovery",
               "광고, 하지 마세요." in page.locator("#campaign-hook-title").inner_text().replace("\\n", " ") or
               ("광고," in page.locator("#campaign-hook-title").inner_text() and "하지 마세요." in page.locator("#campaign-hook-title").inner_text()))
