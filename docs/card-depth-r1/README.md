@@ -19,3 +19,6 @@
 - `npm run verify` covers existing scripts and paths and includes `tests/card-depth-r1.test.cjs`.
 - `node scripts/qa-card-depth-r1.cjs` checks 360, 390, 768, 1440 widths, three surfaces, card shadows/borders, contrast cue, overflow, destinations, keyboard/reduced motion and collects screenshots.
 - Production launch remains blocked by existing company/privacy evidence gate. Verify photo/data/publication rights and real Safari/Kakao devices separately.
+
+## QA finding / safe related fix
+The first Chromium sweep had 82 passing card checks but 8 HTTP 404 entries for `/assets/first-look/photos/recognize-{a,b}.webp`: these optional files are absent. The behavior was inherited from the baseline page, not caused by new CSS. Applied the tested opt-in `data-wpfl-photo-pack="ready"` gate from the earlier R3 launch-preflight branch: SVG illustrations remain usable and no unavailable image is requested. Adding real photos later still requires publishing permissions and a complete verified pack. This is a narrowly scoped QA defect fix, not a new feature.
