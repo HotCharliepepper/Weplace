@@ -26,7 +26,7 @@ if png.exists():
         ok('OG artwork has image detail',ImageStat.Stat(im.convert('RGB')).stddev[1]>15)
 if crop.exists():
     with Image.open(crop) as im:
-        ok('crop derived from facade-only bounds',im.format=='WEBP' and im.size==(756,819))
+        ok('crop derived from facade-only bounds',im.format=='WEBP' and im.size==(894,874))
 for path in ('assets/home-r42/luwei-peking-duck-1254.webp','assets/home-r42/luwei-peking-duck-640.webp'):
     ok('existing LuWei duck image '+path,Path(path).exists())
 
@@ -67,7 +67,7 @@ with sync_playwright() as p:
           const image=document.querySelector('#luwei-before img');
           return image&&image.complete&&image.naturalWidth>0;
         }""",timeout=12000)
-        ok(f'{width} source exterior crop renders',image.evaluate('i=>i.naturalWidth===756&&i.naturalHeight===819'))
+        ok(f'{width} source exterior crop renders',image.evaluate('i=>i.naturalWidth===894&&i.naturalHeight===874'))
         if width in (390,1440):
             stage.screenshot(path=str(OUT/f'luwei-exterior-{width}.png'),animations='disabled')
             results['screenshots'].append(f'luwei-exterior-{width}.png')
