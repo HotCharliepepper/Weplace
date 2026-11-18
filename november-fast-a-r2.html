@@ -178,6 +178,21 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
 @media(prefers-reduced-motion:reduce){.nov-reversal{animation:none!important;opacity:1!important;transform:none!important}}
 @media(prefers-contrast:more){.nov-reversal{border-left-color:#fff}.nov-cold-preface,.nov-cold-doubt{color:#fff}.nov-reversal-copy em{color:#fff}}
 
+
+/* R2 typography QA: FAST must land as legible dark-forest live text.
+   Chrome's translucent text-clip can lose contrast on light backgrounds. */
+.nov-fast .nov-fast-face {
+  background:none;
+  background-clip:initial;
+  -webkit-background-clip:initial;
+  color:#183e31;
+  -webkit-text-fill-color:#183e31;
+  -webkit-text-stroke:.25px #183e31;
+  text-shadow:0 1px 0 #fcfff2,1px 4px 0 rgba(111,151,114,.23),0 12px 25px rgba(25,69,45,.12);
+  filter:none;
+}
+.nov-fast .nov-fast-shadow{opacity:.38;color:#7da28d}
+
 </style>
 </head>
 <body>
