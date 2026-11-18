@@ -51,7 +51,10 @@ for p in FILES:
         test("main: required sections preserved",all(x in info.ids for x in ('journey','working-industries','experience','how','field-notes','audit','faq','contact')))
     if p=="industries/beauty/index.html":
         test("beauty: never link to missing massage page",'/industries/massage/' not in info.links)
-    for m in re.finditer(r'<script\b([^>]*)>([\s\S]*?)</script>',content,re.I):
+    # Inline examples in HTML comments can mention a literal <script> tag; they are not executable.
+    # Remove HTML comments only for script extraction, not for page/DOM assertions.
+    uncommented=re.sub(r'<!--[\s\S]*?-->','',content)
+    for m in re.finditer(r'<script\b([^>]*)>([\s\S]*?)</script>',uncommented,re.I):
         attrs,body=m.groups()
         if 'src=' in attrs:continue
         typ=re.search(r'\btype=["\']([^"\']+)["\']',attrs)
