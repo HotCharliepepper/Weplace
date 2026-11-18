@@ -41,12 +41,16 @@
   let step=0;
   let chosen=[null,null,null,null];
   let photoSequence=0;
-  let photoPackState="unknown"; // Stop further probes after the first missing asset.
+  // This optional WebP pack is not in the deployment. Keep the illustrated
+  // First Look until files and publication rights are explicitly verified.
+  // Same fail-closed gate previously tested in PR #33's release preflight.
+  const photoPackEnabled=root.dataset.wpflPhotoPack==='ready';
+  let photoPackState=photoPackEnabled?'unknown':'disabled';
   // The optional local AI-photo pack can be supplied later. Keep the
   // illustration visible unless the browser decodes an existing same-origin
   // WebP file; a missing photo never breaks the four-step experience.
   function useVerifiedPhoto(button,round,side,sequence){
-    if(typeof Image==='undefined'||photoPackState==='missing')return;
+    if(typeof Image==='undefined'||photoPackState==='missing'||photoPackState==='disabled')return;
     const filename=round.id+'-'+side+'.webp';
     const url='/assets/first-look/photos/'+filename;
     const probe=new Image();
