@@ -62,5 +62,7 @@ const targets=[
  report.pass=report.checks.filter(c=>c.pass).length;report.fail=report.checks.filter(c=>!c.pass).length;
  fs.writeFileSync(path.join(dir,'report.json'),JSON.stringify(report,null,2));
  console.log('CARD DEPTH R1:',report.pass,'passed,',report.fail,'failed; errors',report.errors.length,'writes',report.writes.length);
+ if(report.errors.length)console.error('CARD DEPTH RUNTIME ERROR DETAILS:',JSON.stringify(report.errors,null,2));
+ if(report.writes.length)console.error('CARD DEPTH UNEXPECTED WRITES:',JSON.stringify(report.writes,null,2));
  if(report.fail||report.errors.length||report.writes.length)process.exitCode=1;
 })().catch(e=>{console.error(e);process.exitCode=1;});
