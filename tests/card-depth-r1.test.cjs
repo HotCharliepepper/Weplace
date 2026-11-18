@@ -38,3 +38,12 @@ test('contrast, mobile, focus, reduced motion and no fake interactive elements',
  assert.ok(p.querySelector('#contact a[href^="https://pf.kakao.com/"]'));
  assert.equal(p.querySelectorAll('h1').length,1);
 });
+
+test('optional First Look photo pack is disabled unless actual media is approved and present',()=>{
+ const code=read('assets/js/first-look-bridge-r412.js');
+ assert.match(code,/root\.dataset\.wpflPhotoPack==='ready'/);
+ assert.match(code,/photoPackState=photoPackEnabled\?'unknown':'disabled'/);
+ assert.match(code,/photoPackState==='disabled'/);
+ assert.ok(!document('index.html').getElementById('wpfl-experience')?.dataset.wpflPhotoPack,
+   'the site must not claim its unshipped photo pack is ready');
+});
