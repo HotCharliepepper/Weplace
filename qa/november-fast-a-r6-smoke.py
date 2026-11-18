@@ -36,6 +36,9 @@ with sync_playwright() as p:
         check(f"{width} 5 question stages plus summary",page.locator("[data-wizard-step]").count()==6)
         check(f"{width} initial stage only",stage_ok(page,0))
         check(f"{width} initial progress and disabled back",page.locator("#nov-wizard-progress-label").inner_text()=="질문 1 / 5" and page.locator("#nov-wizard-back").is_disabled())
+        check(f"{width} question legends use 1–5 rather than outdated zero index",
+              page.locator('[data-wizard-step="0"] legend span').first.inner_text()=="01" and
+              all(page.locator(f'[data-wizard-step="{k}"] legend span').first.inner_text()==str(k+1).zfill(2) for k in range(5)))
         check(f"{width} no unapproved claims",not any(word in page.locator("main").inner_text() for word in ("무료 1장","매출 보장","30초 선택 문의","자동 접수 완료")))
         page.locator('[data-relationship="returning"]').click()
         check(f"{width} relationship click auto-advances",stage_ok(page,1))
@@ -56,6 +59,11 @@ with sync_playwright() as p:
               page.locator("#copy-and-chat").get_attribute("aria-disabled")=="false" and
               page.locator("#copy-and-chat").get_attribute("href")=="https://pf.kakao.com/_mxbexhX" and
               page.locator("#nov-wizard-progress-label").inner_text()=="선택 완료 · 문의 내용 확인")
+        check(f"{width} completion wording replaces question helper",
+              "문의 내용이 준비됐습니다." in page.locator(".nov-intake-head h3").inner_text() and
+              "카카오톡에서 보내주세요" in page.locator("#nov-wizard-progress-hint").inner_text() and
+              "다음 질문" not in page.locator("#nov-wizard-progress-hint").inner_text())
+
         value=page.locator("#prepared-message").input_value()
         check(f"{width} assembled text preserves all selected answers",
               all(x in value for x in ("업종: 카페","찾아오는 길","주차·대중교통","비용·일정","이전에 Weplace와 연락한 적이 있습니다.")),value[:420])
