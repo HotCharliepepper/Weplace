@@ -43,7 +43,7 @@ jobs:
           from pathlib import Path
           with Image.open('/tmp/luwei-full.webp') as raw:
               assert raw.size == (908, 689), f'unexpected screenshot dimensions: {raw.size}'
-              cropped = raw.convert('RGB').crop((0, 0, 252, 273)).resize((756, 819), Image.Resampling.LANCZOS)
+              cropped = raw.convert('RGB').crop((0, 0, 447, 437)).resize((894, 874), Image.Resampling.LANCZOS)
           dest=Path('assets/home-r42/luwei-exterior-crop.webp')
           dest.parent.mkdir(parents=True, exist_ok=True)
           cropped.save(dest,'WEBP',quality=86,method=6)
