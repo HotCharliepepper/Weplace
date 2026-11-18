@@ -6,6 +6,9 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#e9eee6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 <title>Weplace · 11월의 작은 온기 | BLACK FRIDAY × FAST R1</title>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Weplace">
@@ -67,6 +70,10 @@ a,button{font:inherit;color:inherit}a{text-decoration:none}a:focus-visible,butto
 @media(max-width:850px){.contact-grid{grid-template-columns:1fr}}
 @media(max-width:540px){.contact-actions{grid-template-columns:1fr}.contact h2{font-size:38px}}
 
+/* Public CJK webfont fallback for browsers without installed Korean fonts.
+   The type remains selectable DOM text; system Korean fonts remain fallbacks. */
+body{font-family:"Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif}
+textarea,button{font-family:inherit}
 /* ---------------------------------------------------------------------------
  WEPLACE BLACK FRIDAY × FAST R1 — campaign-only optics.
  A's verified mockup selection, message copy and Kakao handoff remain unchanged.
