@@ -1,0 +1,97 @@
+name: Weplace FAST OG × Luwei Visual Scene QA
+on:
+  pull_request:
+    paths:
+      - index.html
+      - assets/brand/og-resolute-fast.svg
+      - assets/css/luwei-dwell-r1.css
+      - assets/js/luwei-dwell-r1.js
+      - assets/home-r42/luwei-peking-duck-*.webp
+      - qa/fast-og-luwei-r1.py
+      - .github/workflows/fast-og-luwei-r1.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render-and-test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: draft/weplace-fast-og-luwei-dwell-20261118
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare Python raster and browser tools
+        run: |
+          python -m pip install Pillow playwright==1.56.0
+          (which google-chrome || which google-chrome-stable || which chromium-browser)
+      - name: Crop only LuWei facade, without people or review UI
+        run: |
+          git fetch origin refs/heads/draft/weplace-card-depth-selective-r1-20261118:refs/remotes/origin/luwei-source
+          git show origin/luwei-source:assets/home-r42/luwei-before-capture.webp > /tmp/luwei-full.webp
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          with Image.open('/tmp/luwei-full.webp') as raw:
+              assert raw.size == (908, 689), f'unexpected source size: {raw.size}'
+              cropped=raw.convert('RGB').crop((0,0,447,437)).resize((894,874),Image.Resampling.LANCZOS)
+          dest=Path('assets/home-r42/luwei-exterior-crop.webp')
+          dest.parent.mkdir(parents=True,exist_ok=True)
+          cropped.save(dest,'WEBP',quality=86,method=6)
+          print('Exterior-only crop saved',dest,cropped.size)
+          PY
+          rm /tmp/luwei-full.webp
+      - name: Start isolated local server
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 > /tmp/weplace-luwei-r1.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/index.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/weplace-luwei-r1.log; exit 1
+      - name: Render typography SVG to social PNG using Chrome
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          svg=Path('assets/brand/og-resolute-fast.svg').read_text(encoding='utf-8')
+          svg=svg.replace('font-family="Noto Sans CJK KR,Noto Sans KR,Malgun Gothic,sans-serif"', 'font-family="WeplaceKO, Malgun Gothic, sans-serif"')
+          frame='<html lang="ko"><head><style>@font-face{font-family:WeplaceKO;src:url("/assets/ad-funnel-r2a/fonts/WeplaceFunnelSansBold.woff2") format("woff2");font-weight:800}html,body{margin:0;width:1200px;height:630px;overflow:hidden}svg{width:1200px;height:630px;display:block}</style></head><body>'+svg+'</body></html>'
+          with sync_playwright() as p:
+              browser=p.chromium.launch(headless=True,channel='chrome')
+              page=browser.new_page(viewport={'width':1200,'height':630},device_scale_factor=1)
+              page.goto('http://127.0.0.1:4173/',wait_until='domcontentloaded')
+              page.set_content(frame,wait_until='load')
+              page.evaluate('document.fonts.ready')
+              page.wait_for_timeout(150)
+              page.screenshot(path='assets/brand/og-resolute-fast.png',animations='disabled')
+              browser.close()
+          print('Created FAST share image 1200×630')
+          PY
+      - name: Verify OG asset and responsive scene
+        run: python qa/fast-og-luwei-r1.py
+      - name: Commit only derived assets to review branch
+        if: success() && github.event_name == 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/brand/og-resolute-fast.png assets/home-r42/luwei-exterior-crop.webp
+          if git diff --cached --quiet; then
+            echo 'Derived assets are up to date'
+          else
+            git commit -m "assets: add rendered FAST OG and privacy-safe LuWei exterior crop"
+            git push origin HEAD:draft/weplace-fast-og-luwei-dwell-20261118
+          fi
+      - name: Keep screenshots and result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: WEPLACE-FAST-OG-LUWEI-R1-QA
+          path: |
+            qa/fast-og-luwei-r1/
+          retention-days: 14
+          if-no-files-found: warn
