@@ -35,7 +35,7 @@
 .unified-r3 #luwei-phase-description{font-size:13px;line-height:1.7;color:#325d44;margin:0;min-height:1.7em}
 .unified-r3 .wp-luwei-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:flex-end}
 .unified-r3 .wp-luwei-controls button,
-.unified-r3 .wp-luwei-controls a{background:#f5f8f0;color:#27563f;border:1px solid #c1d5c1;border-radius:100px;padding:10px 15px;min-height:45px;font:730 12px/1.6 inherit;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.unified-r3 .wp-luwei-controls a{background:#f5f8f0;color:#27563f;border:1px solid #c1d5c1;border-radius:100px;padding:10px 15px;min-height:45px;font-family:inherit;font-weight:730;font-size:12px;line-height:1.6;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
 .unified-r3 .wp-luwei-controls a{background:#25553c;color:#fffdf3;border-color:#25553c}
 .unified-r3 .wp-luwei-controls :is(button,a):focus-visible{outline:3px solid #3f9673;outline-offset:3px}
 .unified-r3 .wp-luwei-controls :is(button,a):hover{filter:brightness(.96)}
