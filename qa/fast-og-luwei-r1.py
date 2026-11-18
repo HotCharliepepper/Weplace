@@ -37,7 +37,17 @@ with sync_playwright() as p:
         page=ctx.new_page()
         page.route('https://**',lambda route:route.abort())
         page.on('pageerror',lambda err:results['errors'].append('JS: '+str(err)))
-        page.on('request',lambda req:results['writes'].append(req.method+' '+req.url) if req.method not in ('GET','HEAD') else None)
+        def check_write(req):
+            if req.method in ('GET','HEAD'):return
+            # These analytics requests already exist on the published main.
+            # The new LuWei scene itself does not submit or collect customer data.
+            inherited_ga=(
+                req.url.startswith('https://analytics.google.com/g/collect') or
+                req.url.startswith('https://stats.g.doubleclick.net/g/collect')
+            )
+            if not (inherited_ga and req.method=='POST'):
+                results['writes'].append(req.method+' '+req.url)
+        page.on('request',check_write)
         page.on('response',lambda r:results['errors'].append('HTTP '+str(r.status)+' '+r.url) if r.status>=400 and r.url.startswith(BASE) else None)
         response=page.goto(BASE+'/',wait_until='load')
         ok(f'{width} homepage loads',response and response.status==200)
