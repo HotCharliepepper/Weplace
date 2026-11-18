@@ -89,7 +89,7 @@ with sync_playwright() as p:
         page.locator('[data-relationship="returning"]').click()
         check(f"{width} return customer option and carried topic",
               page.locator('[data-relationship="returning"]').get_attribute('aria-pressed')=='true' and
-              "전에 Weplace와 상담하거나 함께 일한 적이 있습니다." in page.locator("#prepared-message").input_value() and
+              "이전에 Weplace와 연락한 적이 있습니다." in page.locator("#prepared-message").input_value() and
               "찾아오는 길" in page.locator("#prepared-message").input_value())
         page.locator('[data-relationship="new"]').click()
         check(f"{width} new inquiry resets to first-time text",
@@ -155,7 +155,7 @@ with sync_playwright() as p:
 
         page.locator('[data-relationship="returning"]').click()
         check(f"{width} existing customer inquiry is reflected without typing",
-              "전에 Weplace와 상담하거나 함께 일한 적이 있습니다." in page.locator("#prepared-message").input_value()
+              "이전에 Weplace와 연락한 적이 있습니다." in page.locator("#prepared-message").input_value()
               and page.locator('[data-relationship="returning"]').get_attribute("aria-pressed")=="true")
         page.locator('[data-relationship="new"]').click()
         # Test clipboard success without opening Kakao during CI.
