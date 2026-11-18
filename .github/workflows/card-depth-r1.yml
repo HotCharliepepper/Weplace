@@ -8,6 +8,7 @@ on:
       - unified-r3-hero-polish-r3.html
       - tests/card-depth-r1.test.cjs
       - scripts/qa-card-depth-r1.cjs
+      - assets/js/first-look-bridge-r412.js
       - .github/workflows/card-depth-r1.yml
   workflow_dispatch:
 permissions:
