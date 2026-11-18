@@ -36,6 +36,7 @@ jobs:
           rsvg-convert -w 1200 -h 675 -o assets/campaign/november-fast-thumb.png assets/campaign/november-fast-thumb.svg
           file assets/campaign/november-fast-thumb.png
       - name: Persist generated thumbnail to release branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/release/weplace-nov-fast-r7-thumbnail-main-20261118'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
