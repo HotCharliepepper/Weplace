@@ -41,14 +41,27 @@ with sync_playwright() as p:
               page.locator('a[href="/industries/"]').count()==0)
         check(f"{width} campaign supports photo-route-booking",page.locator("#first-look button[data-focus]").count()==3 and page.locator("[data-r7-view]").count()==6)
         check(f"{width} initial comparison is photo before",active(page)=="photo-before")
-        check(f"{width} valid restaurant imagery available",page.locator('[data-r7-view="photo-before"] img').evaluate("(el)=>el.complete&&el.naturalWidth>0"))
+        photo=page.locator('[data-r7-view="photo-before"] img')
+        photo.scroll_into_view_if_needed()
+        page.wait_for_function("""() => {
+          const image=document.querySelector('[data-r7-view="photo-before"] img');
+          return image&&image.complete&&image.naturalWidth>0;
+        }""",timeout=12000)
+        check(f"{width} verified PR43 food image loads",photo.evaluate("(el)=>el.complete&&el.naturalWidth>0"))
         check(f"{width} mockup is left of explanation on desktop or above on mobile",
               page.evaluate("""() => {const a=document.querySelector('#r7-visual').getBoundingClientRect(),b=document.querySelector('#stage-inner').getBoundingClientRect();return innerWidth<=900 ? a.bottom<=b.top+3 : a.right<=b.left+3}"""))
         page.locator("#first-look button[data-mode='after']").click()
         check(f"{width} photo after is a two-image sequence",
               active(page)=="photo-after" and page.locator('[data-r7-view="photo-after"] img').count()==2)
-        check(f"{width} two images load",
+        page.locator('[data-r7-view="photo-after"] img').first.scroll_into_view_if_needed()
+        page.wait_for_function("""() => {
+          const images=Array.from(document.querySelectorAll('[data-r7-view="photo-after"] img'));
+          return images.length===2&&images.every(img=>img.complete&&img.naturalWidth>0);
+        }""",timeout=12000)
+        check(f"{width} both PR43 food and room images load",
               page.locator('[data-r7-view="photo-after"]').evaluate("el=>Array.from(el.querySelectorAll('img')).every(img=>img.complete&&img.naturalWidth>0)"))
+        check(f"{width} media references two distinct reusable existing assets",
+              page.locator('[data-r7-view="photo-after"]').evaluate("el=>new Set(Array.from(el.querySelectorAll('img'),i=>i.getAttribute('src'))).size===2"))
         if width in (390,1440):
             page.locator("#first-look").screenshot(path=str(OUT/f"r7-photo-after-{width}.png"),animations="disabled")
             report["screenshots"].append(f"r7-photo-after-{width}.png")
