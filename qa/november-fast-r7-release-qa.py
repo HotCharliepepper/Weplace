@@ -28,27 +28,22 @@ with sync_playwright() as p:
         res=page.goto(URL,wait_until="load")
         page.evaluate("document.fonts.ready")
         check(f"{width} page 200",res is not None and res.status==200)
-        # Published main's entry point has the same campaign image and a stable CTA.
+        # November FAST remains published at its dedicated route; the public
+        # homepage is now the PR43-inspired unified experience, not an ad tile.
         homepage=ctx.new_page()
         home_response=homepage.goto(BASE+"/",wait_until="load")
         check(f"{width} homepage responds 200",home_response.status==200)
-        check(f"{width} homepage has visible campaign entry",homepage.locator("#november-fast .nov-campaign-card").count()==1)
-        check(f"{width} homepage visual points to campaign thumbnail",homepage.locator('#november-fast img[src="/assets/campaign/november-fast-thumb.png"]').count()==1)
-        check(f"{width} homepage links to official campaign",homepage.locator('#november-fast a[href="/november-fast/"]').count()==2)
+        check(f"{width} unified FAST homepage is active",
+              homepage.locator("#fast").count()==1
+              and homepage.locator("#experience").count()==1
+              and homepage.locator("#contact").count()==1
+              and homepage.locator(".nov-campaign-card").count()==0)
+        check(f"{width} official November FAST remains discoverable",
+              homepage.locator('a[href="/november-fast/"]').count()>=1)
         check(f"{width} homepage no horizontal overflow",homepage.evaluate("document.documentElement.scrollWidth<=innerWidth+2"))
-        img=homepage.locator("#november-fast .nov-campaign-media img")
-        img.scroll_into_view_if_needed()
-        homepage.wait_for_function("""()=>{const image=document.querySelector('#november-fast .nov-campaign-media img');return image&&image.complete&&image.naturalWidth>0}""",timeout=12000)
-        check(f"{width} thumbnail raster actually loaded",img.evaluate("i=>i.naturalWidth>=900&&i.naturalHeight>=500"))
-        check(f"{width} entire image is contained, not cropped",
-              img.evaluate("""im=>{
-                const imgRect=im.getBoundingClientRect(), frame=im.parentElement.getBoundingClientRect();
-                return getComputedStyle(im).objectFit==='contain' && imgRect.width<=frame.width+2 && imgRect.height<=frame.height+2
-                    && Math.abs(imgRect.width/imgRect.height-1200/675)<0.03;
-              }"""))
         if width in (390,1440):
-            homepage.locator("#november-fast").screenshot(path=str(OUT/f"r7-home-campaign-{width}.png"),animations="disabled")
-            report["screenshots"].append(f"r7-home-campaign-{width}.png")
+            homepage.locator("#fast").screenshot(path=str(OUT/f"r7-home-unified-{width}.png"),animations="disabled")
+            report["screenshots"].append(f"r7-home-unified-{width}.png")
         homepage.close()
         check(f"{width} no horizontal overflow",page.evaluate("document.documentElement.scrollWidth<=innerWidth+2"),page.evaluate("({width:innerWidth,scroll:document.documentElement.scrollWidth})"))
         check(f"{width} one strong hook, FAST, large demo, action and inquiry",

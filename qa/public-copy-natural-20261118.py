@@ -48,7 +48,7 @@ for p in FILES:
         test("industry hub: unpublished paths are not clickable",all(x not in info.links for x in ['/industries/massage/','/industries/clinic/','/industries/stay/']))
     if p=="index.html":
         test("main: published campaign link is discoverable",'/november-fast/' in info.links)
-        test("main: required sections preserved",all(x in info.ids for x in ('journey','working-industries','experience','how','field-notes','audit','faq','contact')))
+        test("main: PR43 unified root sections preserved",all(x in info.ids for x in ('top','fast','experience','work','capabilities','evidence','contact')))
     if p=="industries/beauty/index.html":
         test("beauty: never link to missing massage page",'/industries/massage/' not in info.links)
     # Inline examples in HTML comments can mention a literal <script> tag; they are not executable.

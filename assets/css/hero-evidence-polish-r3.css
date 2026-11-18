@@ -1,0 +1,76 @@
+/* PR #39 comparison only. All incumbent sheets/controllers remain unchanged. */
+.he-polish-r3 .he-mobile-chart {display:none}
+.he-polish-r3 .he-graph-header h3 {word-break:keep-all;letter-spacing:-.035em}
+.he-polish-r3 .he-chart-takeaway {display:block;color:#244431;font-size:15px;line-height:1.7;margin-bottom:12px}
+.unified-r3.he-lab.he-polish.he-polish-r3 .he-chart-scroll {overflow:visible}
+.he-polish-r3 .he-chart-scroll .he-line:not(.is-selected),
+.he-polish-r3 .he-chart-scroll .he-graph-dot:not(.is-selected) {opacity:.45}
+.he-polish-r3 .he-chart-scroll .he-line[data-chart-year="2023"] {stroke:#687d6f;stroke-dasharray:3 5}
+.he-polish-r3 .he-chart-scroll .he-line[data-chart-year="2024"] {stroke:#536c7a;stroke-dasharray:9 5}
+.he-polish-r3 .he-chart-scroll .he-line[data-chart-year="2025"] {stroke:#8b704d;stroke-dasharray:13 4 2 4}
+.he-polish-r3 .he-chart-scroll .he-graph-dot[data-chart-year="2023"] {fill:#687d6f}
+.he-polish-r3 .he-chart-scroll .he-graph-dot[data-chart-year="2024"] {fill:#536c7a}
+.he-polish-r3 .he-chart-scroll .he-graph-dot[data-chart-year="2025"] {fill:#8b704d}
+.he-polish-r3 .he-graph-filters button[data-compare-year]::before {
+  content:"";display:inline-block;vertical-align:middle;width:14px;margin-right:6px;border-top:2px solid currentColor;
+}
+.he-polish-r3 .he-graph-filters button[data-compare-year="2023"]::before {border-top-style:dotted}
+.he-polish-r3 .he-graph-filters button[data-compare-year="2024"]::before,
+.he-polish-r3 .he-graph-filters button[data-compare-year="2025"]::before {border-top-style:dashed}
+.unified-r3.he-polish-r3 #contact-title {
+  font-size:clamp(38px,4.2vw,64px);line-height:1.22;letter-spacing:-.035em;
+  word-break:keep-all;overflow-wrap:break-word;text-wrap:initial;
+}
+.he-polish-r3 #contact-title>span,.he-polish-r3 #contact-title>em {display:block}
+.unified-r3.he-polish-r3 .rf-contact-grid>div>p.he-cx-context {
+  font-size:14px;line-height:1.85;color:#526852;margin-top:20px;max-width:42ch;
+}
+/* The inherited footer uses flex on all direct divs; explicitly retain its R2 grid. */
+.unified-r3.he-lab.he-polish.he-polish-r3 .he-footer>.rf-wrap {display:block}
+.unified-r3.he-lab.he-polish.he-polish-r3 .he-footer>.rf-wrap>.he-footer-grid {
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:40px;
+}
+.unified-r3.he-lab.he-polish.he-polish-r3 .he-footer-nav>div {min-width:0}
+.unified-r3.he-lab.he-polish.he-polish-r3 .he-footer-nav a {min-height:44px;overflow-wrap:anywhere;word-break:keep-all}
+.he-polish-r3 .he-footer-bottom {line-height:1.7}
+.unified-r3.he-lab.he-polish.he-polish-r3 .he-photo-controls button[data-photo-choice="before"] {color:#e4efdc}
+@media(max-width:900px) {
+ .unified-r3.he-lab.he-polish.he-polish-r3 .he-footer>.rf-wrap>.he-footer-grid {grid-template-columns:1fr}
+}
+@media(max-width:800px) {
+ .unified-r3.he-lab.he-polish.he-polish-r3 .he-chart-scroll .he-overlaid-chart {display:none}
+ .unified-r3.he-lab.he-polish.he-polish-r3 .he-mobile-chart {
+   display:block;width:100%;max-width:460px;height:auto;margin-inline:auto;overflow:visible;shape-rendering:geometricPrecision;
+ }
+ .he-polish-r3 .he-mobile-chart .he-grid {stroke:#cad5c4;stroke-width:1;stroke-dasharray:3 4}
+ .he-polish-r3 .he-mobile-chart .he-axis {fill:#4b624e;font-size:13.5px;font-variant-numeric:tabular-nums}
+ .he-polish-r3 .he-mobile-chart .he-unit {fill:#4b624e;font-size:12.5px}
+ .he-polish-r3 .he-mobile-chart .he-months {font-weight:700}
+ .he-polish-r3 .he-mobile-chart .he-line {stroke-width:2;vector-effect:non-scaling-stroke}
+ .he-polish-r3 .he-mobile-chart .he-line.is-selected {stroke-width:2.5}
+ .he-polish-r3 .he-mobile-chart .he-line[data-chart-year="2026"] {stroke-width:3}
+ .he-polish-r3 .he-mobile-chart .he-mobile-values {
+   font-size:14px;font-weight:750;fill:#28593c;font-variant-numeric:tabular-nums;
+   paint-order:stroke;stroke:#f8f9f0;stroke-width:4;stroke-linejoin:round;
+ }
+ .he-polish-r3 .he-mobile-values:not(.is-selected) {visibility:hidden}
+ .unified-r3.he-polish-r3 #contact-title {font-size:clamp(33px,5.5vw,51px)}
+}
+@media(max-width:580px) {
+ .unified-r3.he-lab.he-polish.he-polish-r3 .he-graph-filters {display:grid;grid-template-columns:1fr 1fr;gap:8px;padding-block:12px 20px}
+ .unified-r3.he-lab.he-polish.he-polish-r3 .he-graph-filters button {min-height:44px;padding:9px 6px;font-size:12px;margin:0}
+ .he-polish-r3 .he-raw-values table {font-size:12px}
+ .he-polish-r3 .he-raw-values th,.he-polish-r3 .he-raw-values td {padding:10px 4px}
+ .unified-r3.he-polish-r3 .rf-contact .rf-actions {align-items:flex-start;flex-direction:column;gap:16px}
+ .unified-r3.he-polish-r3 .rf-contact .rf-actions a {min-height:44px;display:inline-flex;align-items:center}
+ .unified-r3.he-polish-r3 .rf-contact-grid>div>p.he-cx-context br {display:none}
+ .unified-r3.he-lab.he-polish.he-polish-r3 .he-footer-nav {gap:16px}
+ .unified-r3.he-lab.he-polish.he-polish-r3 .he-footer-bottom {gap:12px;align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce) {
+ .he-polish-r3 .he-chart-scroll .he-line,.he-polish-r3 .he-chart-scroll .he-graph-dot {transition:none}
+}
+@media(forced-colors:active) {
+ .he-polish-r3 .he-chart-scroll .he-line {stroke:CanvasText}
+ .he-polish-r3 .he-mobile-chart text {fill:CanvasText;stroke:none}
+}
