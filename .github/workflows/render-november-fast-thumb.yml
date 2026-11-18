@@ -1,0 +1,38 @@
+name: Render November FAST campaign share image
+on:
+  push:
+    branches:
+      - release/weplace-nov-fast-r7-thumbnail-main-20261118
+    paths:
+      - assets/campaign/november-fast-thumb.svg
+      - .github/workflows/render-november-fast-thumb.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Render stable PNG thumbnail from approved layout
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends librsvg2-bin fonts-noto-cjk
+          mkdir -p assets/campaign
+          rsvg-convert --width=1200 --height=675 --output=assets/campaign/november-fast-thumb.png assets/campaign/november-fast-thumb.svg
+          file assets/campaign/november-fast-thumb.png
+      - name: Commit thumbnail to review branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/campaign/november-fast-thumb.png
+          if git diff --cached --quiet; then
+            echo "Thumbnail unchanged"
+            exit 0
+          fi
+          git commit -m "assets: render social-compatible November FAST thumbnail PNG"
+          git push origin HEAD:release/weplace-nov-fast-r7-thumbnail-main-20261118

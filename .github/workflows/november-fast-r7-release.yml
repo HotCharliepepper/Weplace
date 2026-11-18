@@ -1,0 +1,67 @@
+name: WEPLACE November FAST R7 Release QA
+on:
+  pull_request:
+    paths:
+      - assets/campaign/**
+      - assets/hero-r2/**
+      - assets/css/november-campaign-entry.css
+      - november-fast-a-r7.html
+      - index.html
+      - _redirects
+      - qa/november-fast-r7-release-qa.py
+      - .github/workflows/november-fast-r7-release.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  visual-and-conversion:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Korean font renderer, browser and PIL
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends librsvg2-bin fonts-noto-cjk
+          python -m pip install playwright==1.56.0 Pillow
+          (which google-chrome || which google-chrome-stable || which chromium-browser)
+      - name: Render Kakao-friendly social PNG
+        run: |
+          rsvg-convert -w 1200 -h 675 -o assets/campaign/november-fast-thumb.png assets/campaign/november-fast-thumb.svg
+          file assets/campaign/november-fast-thumb.png
+      - name: Persist generated thumbnail to release branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/campaign/november-fast-thumb.png
+          if git diff --cached --quiet; then
+            echo "Social preview already up-to-date"
+          else
+            git commit -m "assets: publish raster November FAST social thumbnail"
+            git push origin HEAD:release/weplace-nov-fast-r7-thumbnail-main-20261118
+          fi
+      - name: Serve review site
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 > /tmp/nov-fast-release.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/november-fast-a-r7.html > /dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/nov-fast-release.log; exit 1
+      - name: Validate full R7 and homepage paths
+        run: python qa/november-fast-r7-release-qa.py
+      - name: Keep screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: WEPLACE-R7-RELEASE-QA
+          path: |
+            qa/november-fast-a-r7/
+          retention-days: 14
+          if-no-files-found: warn

@@ -1,0 +1,19 @@
+/* November FAST campaign entry — intentional, isolated home-page promotion. */
+.nov-campaign-section{background:#eff4eb;padding:clamp(54px,6vw,84px) 0;scroll-margin-top:85px;border-top:1px solid #d8e4d5;border-bottom:1px solid #d1dfce}
+.nov-campaign-section .nov-campaign-wrap{max-width:1320px;margin-inline:auto;padding-inline:clamp(20px,3vw,42px)}
+.nov-campaign-section .nov-campaign-card{border-radius:26px;background:#102d24;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);overflow:hidden;box-shadow:0 26px 62px #183e282b;isolation:isolate;border:1px solid #214938}
+.nov-campaign-section .nov-campaign-media{display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:340px;background:#0b251d}
+.nov-campaign-section .nov-campaign-media img{display:block;width:100%;height:auto;object-fit:contain;aspect-ratio:1200/675;max-height:100%}
+.nov-campaign-section .nov-campaign-media:focus-visible{outline:3px solid #ff956c;outline-offset:-6px}
+.nov-campaign-section .nov-campaign-body{padding:clamp(27px,4vw,58px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:15px;color:#e8eee1}
+.nov-campaign-section .nov-campaign-eyebrow{color:#b5d6bb;font-size:11px;letter-spacing:.13em;font-weight:800;text-transform:uppercase;margin:0}
+.nov-campaign-section .nov-campaign-body h2{font-size:clamp(25px,3vw,44px);line-height:1.37;letter-spacing:-.065em;font-weight:820;margin:5px 0 0;color:#fffaf0;word-break:keep-all;text-wrap:balance}
+.nov-campaign-section .nov-campaign-body h2 em{font-style:normal;color:#dfecc7}
+.nov-campaign-section .nov-campaign-body p:not(.nov-campaign-eyebrow):not(.nov-campaign-note){color:#c9ddce;line-height:1.84;font-size:14px;margin:0;word-break:keep-all}
+.nov-campaign-section .nov-campaign-cta{display:inline-flex;justify-content:space-between;align-items:center;gap:28px;margin-top:18px;min-height:50px;padding:12px 22px;border-radius:100px;background:#e7efd8;color:#173b2d;text-decoration:none;font-size:14px;font-weight:790}
+.nov-campaign-section .nov-campaign-cta:hover{background:#fff8df;transform:translateY(-2px)}
+.nov-campaign-section .nov-campaign-cta:focus-visible{outline:3px solid #f3b28e;outline-offset:4px}
+.nov-campaign-section .nov-campaign-note{font-size:11px;color:#acbfad;line-height:1.7;margin:8px 0 0}
+@media(max-width:850px){.nov-campaign-section .nov-campaign-card{grid-template-columns:1fr}.nov-campaign-section .nov-campaign-media{min-height:initial}.nov-campaign-section .nov-campaign-media img{height:auto}.nov-campaign-section .nov-campaign-body{padding:29px 26px 35px}.nov-campaign-section .nov-campaign-body h2{max-width:22ch}}
+@media(max-width:480px){.nov-campaign-section{padding-block:49px}.nov-campaign-section .nov-campaign-wrap{padding-inline:16px}.nov-campaign-section .nov-campaign-card{border-radius:18px}.nov-campaign-section .nov-campaign-body{padding:27px 23px 31px}.nov-campaign-section .nov-campaign-body h2{font-size:27px}.nov-campaign-section .nov-campaign-body p:not(.nov-campaign-eyebrow):not(.nov-campaign-note){font-size:13px}.nov-campaign-section .nov-campaign-cta{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.nov-campaign-section .nov-campaign-cta{transition:none!important;transform:none!important}}
