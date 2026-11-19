@@ -36,3 +36,10 @@
 ## QA / 배포
 - `qa/search-surfaces-r1.py`와 GitHub Actions가 320·360·390·768·1440px에서 네 채널 전환·키보드·가상 웹사이트 네비게이션·FAQ·기존 차트와 설문·동의·내부 링크, no-JS, 가로 넘침 및 JS/404를 확인한다.
 - 이 Draft는 코드와 카피 검토본이며 자동 운영 배포·외부 발송·Google/Naver 프로필 변경은 없음. 실제 사례·수치 출처 상태는 구분하여 별도 검토.
+
+## R1.1 — 2026-11-19, user-approved follow-up
+1. **SITE tab destination**: Primary call-to-action now opens https://mashcore.co.kr/ in a separate browser tab, clearly labeled **Mashcore (separate brand/site)**. Weplace-owned *fictional* Moon HTML demo remains as the secondary link, preserving the distinction between a working demo and Mashcore's unrelated brand identity. Target website could not be tested for external availability from the current tool environment; the href and safe external link behavior are QA-tested.
+2. **Restaurant A marketing-start marker**: User states Weplace marketing began **May 2026**. This is flagged as a **user-provided timeline**, not independently verified via a customer contract or invoices, and is **not evidence of causal attribution** of the June sales increase. Render a small dashed May marker only when **2026** is selected, and change the accessible text when viewing historical years.
+3. **Prior May→June declines**: 2023 **−10.6%**, 2024 **−1.0%**, 2025 **−15.8%**, all against 2026 **+12.2%**. Prior-year selector controls and table cells are visually emphasized with subdued warning tones while 2026 is distinct. Same restaurant, different years; shifts in pricing, market conditions and seasonality remain uncontrolled.
+4. **Home first fold**: “같은 화면이 아닌, 서로 다른 두 기록.” → **“말보다, 숫자.”**. Its two supporting tiles continue to disclose **different businesses and metrics**; +168% for Wellness B does not combine with Restaurant A's +21 million KRW.
+5. **Deployment boundary**: This change is staged on Draft PR #70. Production release requires QA and the user's request to apply is recorded in this conversation. The existing public client data/image rights and GA4 realtime-ingestion verification limitations are unchanged.
