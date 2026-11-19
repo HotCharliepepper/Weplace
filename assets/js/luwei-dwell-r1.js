@@ -44,8 +44,8 @@
      bridgeTimer=window.setTimeout(()=>finish(),950);
    },700);
  }
- skip.addEventListener('click',()=>finish());
- replay.addEventListener('click',()=>{if(!motionAllowed()){clearTimers();played=true;show('before');}else play();});
+ skip.addEventListener('click',()=>{finish();window.wpAnalytics?.track?.('luwei_step',{phase:'after'});});
+ replay.addEventListener('click',()=>{if(!motionAllowed()){clearTimers();played=true;show('before');}else play();window.wpAnalytics?.track?.('luwei_step',{phase:'before'});});
  if(motionQuery?.addEventListener)motionQuery.addEventListener('change',()=>{
    if(!motionAllowed())finish();
  });
