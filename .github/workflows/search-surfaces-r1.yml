@@ -1,0 +1,44 @@
+name: WEPLACE Multi-platform and Website QA
+on:
+  pull_request:
+    paths:
+      - index.html
+      - november-fast-a-r8.html
+      - assets/css/search-surfaces-r1.css
+      - assets/js/search-surfaces-r1.js
+      - examples/moon-site/index.html
+      - qa/search-surfaces-r1.py
+      - .github/workflows/search-surfaces-r1.yml
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Korean font and browser
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+          python -m pip install playwright==1.56.0
+      - name: Serve preview locally
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 >/tmp/search-surfaces.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/index.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/search-surfaces.log; exit 1
+      - name: QA tabs, website, FAQ, campaign bridge, source preservation
+        run: python qa/search-surfaces-r1.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weplace-search-surfaces-qa
+          path: qa/search-surfaces-r1/
+          retention-days: 14
+          if-no-files-found: warn
