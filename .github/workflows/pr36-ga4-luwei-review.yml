@@ -1,0 +1,44 @@
+name: WEPLACE PR36 chart and GA4 review QA
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'november-fast-a-r8.html'
+      - 'assets/css/evidence-duo-r1.css'
+      - 'assets/js/luwei-inline-r1.js'
+      - 'assets/js/weplace-analytics-r1.js'
+      - 'qa/pr36-ga4-luwei-r1.py'
+      - '.github/workflows/pr36-ga4-luwei-review.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Korean fonts and Chromium
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+          python -m pip install playwright==1.56.0
+      - name: Start isolated static website
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 > /tmp/pr36-ga4.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:4173/index.html >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/pr36-ga4.log; exit 1
+      - name: Validate original values, charts and GA4 event queue
+        run: python qa/pr36-ga4-luwei-r1.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weplace-pr36-ga4-luwei-r1
+          path: qa/pr36-ga4-luwei/
+          retention-days: 14
+          if-no-files-found: warn
