@@ -24,13 +24,18 @@
   const path='<path d="'+values.map((v,i)=>(i?'L':'M')+xs[i]+','+y(v)).join(' ')+'" class="wp-combo-line"/>';
   const dots=values.map((v,i)=>'<circle class="wp-combo-dot" cx="'+xs[i]+'" cy="'+y(v)+'" r="5.5"/>').join("");
   const figures=values.map((v,i)=>'<g><text x="'+xs[i]+'" y="'+(y(v)-16)+'" text-anchor="middle" class="wp-combo-value">'+esc(texts[i])+'</text><text x="'+xs[i]+'" y="'+(base+29)+'" text-anchor="middle" class="wp-combo-axis wp-combo-month">'+months[i]+'</text></g>').join("");
-  svg.innerHTML='<title id="wp-combo-sales-title">'+esc(title)+'</title><desc id="wp-combo-sales-desc">'+esc(desc)+'</desc><g>'+grid()+'</g><g>'+bars+'</g><g>'+path+dots+'</g>'+figures;
+  const marketingStartMark=year==="2026"?'<g class="wp-marketing-start-svg"><line x1="276" y1="31" x2="276" y2="232"/><text x="276" y="23" text-anchor="middle">WEPLACE · MAY 2026</text></g>':'';
+  svg.innerHTML='<title id="wp-combo-sales-title">'+esc(title)+'</title><desc id="wp-combo-sales-desc">'+esc(desc)+'</desc><g>'+grid()+'</g>'+marketingStartMark+'<g>'+bars+'</g><g>'+path+dots+'</g>'+figures;
   const impact=document.getElementById("wp-combo-delta");
   const rate=document.getElementById("wp-combo-rate");
   const heading=document.getElementById("wp-sales-title");
   if(impact)impact.textContent=item.delta;
   if(rate)rate.textContent=item.rate;
-  if(heading)heading.textContent=year+"년 4·5·6월, 마지막 두 달의 변화";
+  if(heading)heading.textContent=year==="2026"?"2026년 5월 마케팅 시작 · 6월의 변화":year+"년 5→6월 매출 감소";
+  const marketing=document.getElementById("wp-marketing-context");
+  if(marketing)marketing.textContent=year==="2026"
+    ?"2026년 5월 · Weplace 마케팅 시작(사용자 제공 일정). 시작 시점과 매출 변화의 인과관계는 검증되지 않았습니다."
+    :year+"년 5→6월 매출은 "+item.rate+"로 감소했습니다. 2026년 마케팅 시작 일정과는 별개의 비교 연도입니다.";
   document.querySelectorAll('[data-combo-year]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.comboYear===year)));
  }
  document.querySelectorAll('[data-combo-year]').forEach(button=>{
