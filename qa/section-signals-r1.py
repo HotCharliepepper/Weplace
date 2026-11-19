@@ -40,7 +40,7 @@ with sync_playwright() as pw:
   ck(not recorded,f"No external GA tag prior to consent {width}")
   ck(not page.evaluate("Boolean(window.dataLayer?.length)"),f"No GA events prior to consent {width}")
   page.locator('[data-wp-choose="accepted"]').click()
-  ck(page.evaluate("window.wpAnalytics.getState()")==="accepted",f"Consent accepted {width}")
+  ck(page.evaluate("window.wpAnalytics.getState()")=="accepted",f"Consent accepted {width}")
   page.bring_to_front()
   page.wait_for_function("""()=>Array.from(window.dataLayer||[]).some(x=>x[0]==='event'&&x[1]==='section_view'&&x[2].section_id==='top')""",timeout=9000)
   ck(True,f"Homepage section_view top after one second {width}")
