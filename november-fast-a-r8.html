@@ -25,7 +25,26 @@
 <meta name="twitter:image" content="https://withweplace.kr/assets/campaign/bf-contrarian-r8.png?v=20261119">
 <meta property="og:image:alt" content="광고, 하지 마세요. 다음 화면을 확인하기 전에는. Weplace 사진·길·예약 비교">
 <link rel="canonical" href="https://withweplace.kr/november-fast/">
-<!-- Analytics integration pending verified GA4 property and privacy notice. No tracking cookies added by this release. -->
+<!-- GA4 G-FVCYL26FTL supplied by the user on 2026-11-19. This draft is not evidence of live data ingestion. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVCYL26FTL"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-FVCYL26FTL');
+window.wpCampaignTrack=function(name,params){
+ try{
+  const permitted=['campaign_view','firstlook_select','firstlook_compare','intake_start','intake_complete','message_copy_click','kakao_open_click','evidence_view','luwei_view'];
+  if(!permitted.includes(name))return;
+  const safe={send_to:'G-FVCYL26FTL',campaign_variant:'a_contrarian',page_type:'november_fast_r8'};
+  for(const [key,value] of Object.entries(params||{})){
+   if(['focus_type','mode','entry_point','page_type','campaign_variant'].includes(key)&&typeof value==='string'&&value.length<48&&/^[a-z0-9_-]+$/i.test(value))safe[key]=value;
+  }
+  gtag('event',name,safe);
+ }catch(_e){}
+};
+</script>
+<script defer src="/assets/js/weplace-analytics-r1.js"></script>
 <link rel="stylesheet" href="/assets/css/evidence-duo-r1.css">
 <script defer src="/assets/js/luwei-inline-r1.js"></script>
 <meta name="description" content="광고를 더 쓰기 전에, 손님이 광고 다음에 보는 화면부터 확인해 보세요. 사진·길·예약을 가상 매장에서 직접 비교하고, 우리 매장의 첫 개선 순서를 생각해 보는 Weplace 캠페인.">
