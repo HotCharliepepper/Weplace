@@ -1,0 +1,46 @@
+name: WEPLACE PR36 charts, LuWei & GA4 consent QA
+on:
+  pull_request:
+    paths:
+      - index.html
+      - november-fast-a-r8.html
+      - cases/luwei-first-look/index.html
+      - assets/css/evidence-duo-r1.css
+      - assets/css/luwei-inline-adapter-r1.css
+      - assets/js/pr36-combo-r1.js
+      - assets/js/weplace-consent-analytics-r1.js
+      - assets/css/weplace-consent-analytics-r1.css
+      - qa/pr36-combo-ga4-r1.py
+      - .github/workflows/pr36-combo-ga4-r1.yml
+permissions:
+  contents: read
+jobs:
+  verify-visual-and-consent:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Korean fonts, Python browser tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+          python -m pip install 'playwright==1.56.0' Pillow
+          (which google-chrome || which google-chrome-stable || which chromium-browser)
+      - name: Run isolated static review server
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 >/tmp/weplace-pr36-review.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:4173/index.html >/dev/null && exit 0; sleep 1; done
+          cat /tmp/weplace-pr36-review.log; exit 1
+      - name: Test 320-1440px combo charts and consent flows
+        run: python qa/pr36-combo-ga4-r1.py
+      - name: Upload review screenshots and test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weplace-pr36-combo-ga4-review
+          path: qa/pr36-combo-ga4-r1/
+          retention-days: 14
+          if-no-files-found: warn

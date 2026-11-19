@@ -1,0 +1,11 @@
+/* Inline PR63 photographic scene adapted to main and November FAST, without touching the standalone study. */
+.wp-luwei-inline{font-family:'Noto Sans CJK KR','Noto Sans KR','Malgun Gothic',system-ui,sans-serif;word-break:keep-all}
+.wp-luwei-inline .rf-wrap{width:min(1200px,100%);padding-inline:clamp(19px,4vw,60px);margin-inline:auto}
+.wp-luwei-inline .rf-eyebrow{font-size:11px;color:#366d50;letter-spacing:.14em;font-weight:800}
+.wp-luwei-inline .wp-luwei-section{scroll-margin-top:36px}
+.unified-r3 .wp-luwei-case-link{margin:14px 0 0;font-size:13px;font-weight:750;line-height:1.65}
+.unified-r3 .wp-luwei-case-link a{display:inline-flex;align-items:center;min-height:43px;color:#276348;border-bottom:1px solid #86af91;text-decoration:none}
+.unified-r3 .wp-luwei-case-link a:focus-visible{outline:3px solid #7aa588;outline-offset:4px}
+.unified-r3 .wp-luwei-section .wp-luwei-intro p:not(.rf-eyebrow){word-break:keep-all}
+@media(max-width:580px){.wp-luwei-inline .rf-wrap{padding-inline:20px}.unified-r3 .wp-luwei-case-link{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.unified-r3 .wp-luwei-frame{transition:none!important}}
