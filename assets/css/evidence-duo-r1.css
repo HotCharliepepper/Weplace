@@ -133,3 +133,28 @@
  .wp-evidence-duo .wp-combo-footnote{font-size:10px}
 }
 @media(prefers-reduced-motion:reduce){.wp-evidence-duo .wp-combo-year{transition:none!important}}
+
+/* MARKETING START vs OBSERVED REVENUE — historical comparison stays distinct. */
+.unified-r3 .wp-hero-evidence-hook{font-size:clamp(31px,3.2vw,42px);line-height:1.29;letter-spacing:-.065em}
+.unified-r3 .wp-hero-evidence-hook strong{color:#f3dfa8}
+.wp-evidence-duo .wp-year-takeaway{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:8px 0 13px!important;font-size:12px;line-height:1.7;color:#c8ddc5}
+.wp-evidence-duo .wp-year-takeaway .wp-trend-negative{color:#f0bcb1;font-weight:790}
+.wp-evidence-duo .wp-year-takeaway strong{color:#eddea9}
+.wp-evidence-duo .wp-combo-year--decline{background:#493c38;border-color:#81615d;color:#fee8db}
+.wp-evidence-duo .wp-combo-year--decline small{color:#f5bdb1;opacity:1}
+.wp-evidence-duo .wp-combo-year--decline[aria-pressed=true]{background:#edc6b7;border-color:#ffdcc8;color:#442e2c}
+.wp-evidence-duo .wp-combo-year--decline[aria-pressed=true] small{color:#663935}
+.wp-evidence-duo .wp-combo-year--rise small{color:#d4eecc;opacity:1}
+.wp-evidence-duo .wp-combo-year--rise[aria-pressed=true] small{color:#27593b}
+.wp-evidence-duo .wp-marketing-context{margin:8px 0 15px!important;min-height:44px;border-left:3px solid #e8cc9e;padding:8px 12px;background:#415847;color:#e7ebd8!important;font-size:12px;line-height:1.7;word-break:keep-all}
+.wp-evidence-duo .wp-marketing-context strong{color:#f5e2ae}
+.wp-evidence-duo .wp-marketing-start-svg line{stroke:#eadab2;stroke-width:1.7;stroke-dasharray:5 5;opacity:.87}
+.wp-evidence-duo .wp-marketing-start-svg text{fill:#f4dfac;font-size:12px;letter-spacing:.01em;font-weight:780}
+.wp-evidence-duo .wp-negative-cell{color:#995a4a!important;font-weight:820}
+.wp-evidence-duo .wp-positive-cell{color:#2b7e52!important;font-weight:820}
+@media(max-width:560px){
+ .unified-r3 .wp-hero-evidence-hook{font-size:clamp(29px,8vw,38px)}
+ .wp-evidence-duo .wp-combo-year--decline small{font-size:10px}
+ .wp-evidence-duo .wp-marketing-context{font-size:11.5px}
+ .wp-evidence-duo .wp-marketing-start-svg text{font-size:11px}
+}
