@@ -26,6 +26,7 @@
 <meta property="og:image:alt" content="광고, 하지 마세요. 다음 화면을 확인하기 전에는. Weplace 사진·길·예약 비교">
 <link rel="canonical" href="https://withweplace.kr/november-fast/">
 <!-- Analytics integration pending verified GA4 property and privacy notice. No tracking cookies added by this release. -->
+<link rel="stylesheet" href="/assets/css/evidence-duo-r1.css">
 <meta name="description" content="광고를 더 쓰기 전에, 손님이 광고 다음에 보는 화면부터 확인해 보세요. 사진·길·예약을 가상 매장에서 직접 비교하고, 우리 매장의 첫 개선 순서를 생각해 보는 Weplace 캠페인.">
 <style>
 :root{color-scheme:light;--ink:#234432;--dark:#1e3c2c;--sage:#e7eee2;--sage2:#dbe7d5;--line:#c1cfc0;--cream:#f8f9ef;--warm:#b66b5d;--muted:#526954}
@@ -559,7 +560,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
       </div>
     </div>
     <div class="nov-cold-bottom">
-      <a href="#first-look" class="nov-cold-next">사진·길·예약 비교하고 판단하기 <span aria-hidden="true">↘</span></a>
+      <a href="#observed-records" class="nov-cold-next">두 매장의 관측 기록 보기 <span aria-hidden="true">↘</span></a>
       <a href="#fast" class="nov-cold-direct">FAST로 먼저 보기 ↗</a>
     </div>
   </div>
@@ -582,6 +583,39 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
     </div>
     <div class="nov-fast-controls"><button type="button" id="fast-replay" disabled aria-label="FAST 글자 움직임 다시 재생">FAST 다시 보기 ↻</button><span id="fast-status" role="status" aria-live="polite">기본 무음 · 한 번 움직이고 정착합니다</span></div>
   </div>
+</section>
+<section class="wp-evidence-duo" id="observed-records" aria-labelledby="wp-evidence-duo-title">
+<div class="wp-ev-container">
+ <div class="wp-ev-head">
+  <div><p class="wp-ev-kicker">OBSERVED RECORDS / TWO SEPARATE CASES</p><h2 id="wp-evidence-duo-title">숫자가 달라졌습니다.<br><em>이유는 따로 살펴봐야 합니다.</em></h2></div>
+  <p>서로 다른 두 매장에서 제공한 기록입니다. 숫자를 먼저 보고, 그다음 손님이 보는 화면을 함께 살펴봅니다.</p>
+ </div>
+ <div class="wp-ev-grid">
+  <article class="wp-ev-card" aria-labelledby="wp-inflow-title">
+   <div class="wp-ev-card-top"><p class="wp-ev-eyebrow">01 / 네이버 플레이스 상세 유입</p><span class="wp-ev-case">웰니스 B</span></div>
+   <p class="wp-ev-metric">+168<small>%</small></p><h3 id="wp-inflow-title" class="wp-ev-title">월간 상세 유입 횟수의 변화</h3>
+   <div class="wp-ev-chart" role="img" aria-label="웰니스 B 네이버 플레이스 월간 상세 유입 횟수, 2026년 5월 877회, 8월 2350회. 기준은 0회로 표시한 두 막대 비교입니다.">
+     <div class="wp-ev-bar-row"><div class="wp-ev-bar-top"><span>2026년 5월</span><strong>877회</strong></div><div class="wp-ev-track"><span style="--fill:37.32%" aria-hidden="true"></span></div></div>
+     <div class="wp-ev-bar-row is-after"><div class="wp-ev-bar-top"><span>2026년 8월</span><strong>2,350회</strong></div><div class="wp-ev-track"><span style="--fill:100%" aria-hidden="true"></span></div></div>
+   </div>
+   <div class="wp-ev-difference"><span>두 집계월 간 차이</span><b>+1,473회</b></div>
+   <p class="wp-ev-note">상세 유입 ‘횟수’이며 방문 고객 수·매출·예약 증가율이 아닙니다.</p>
+  </article>
+  <article class="wp-ev-card wp-ev-card--sales" aria-labelledby="wp-sales-title">
+   <div class="wp-ev-card-top"><p class="wp-ev-eyebrow">02 / 월매출 비교</p><span class="wp-ev-case">음식점 A</span></div>
+   <p class="wp-ev-metric">+2,100<small>만 원</small></p><h3 id="wp-sales-title" class="wp-ev-title">2026년 5월에서 6월로</h3>
+   <div class="wp-ev-chart" role="img" aria-label="음식점 A 제공 월매출 2026년 5월 1억 7200만원, 6월 1억 9300만원. 0원 기준 두 막대의 매출 비교입니다.">
+      <div class="wp-ev-bar-row"><div class="wp-ev-bar-top"><span>2026년 5월</span><strong>1억 7,200만 원</strong></div><div class="wp-ev-track"><span style="--fill:89.12%" aria-hidden="true"></span></div></div>
+      <div class="wp-ev-bar-row is-after"><div class="wp-ev-bar-top"><span>2026년 6월</span><strong>1억 9,300만 원</strong></div><div class="wp-ev-track"><span style="--fill:100%" aria-hidden="true"></span></div></div>
+   </div>
+   <div class="wp-ev-difference"><span>월매출 차이</span><b>+12.2%</b></div>
+   <p class="wp-ev-note">동일 음식점의 제공 월매출 비교입니다. 플레이스 유입과 다른 매장·다른 지표입니다.</p>
+  </article>
+ </div>
+ 
+ <p class="wp-ev-disclosure"><strong>자료의 범위:</strong> 기존에 제공받은 스마트플레이스 상세 유입 기록과 월매출 자료를 각각 비교했습니다. 원본 관리자 화면·매출 원장 및 외부 공개 권한은 최종 대조가 필요합니다. 두 사례를 동일한 매장으로 보거나, Weplace의 개별 작업이 이 변화를 단독으로 만들었다고 단정할 수 없습니다.</p>
+ <div class="wp-ev-actions"><a class="wp-ev-action" href="#first-look">사진·길·예약 화면 비교하기 ↗</a><a class="wp-ev-action wp-ev-action--alt" href="/">Weplace 홈페이지 살펴보기 ↗</a></div>
+</div>
 </section>
 <section id="first-look" class="section r7-demo" aria-labelledby="first-look-title">
  <div class="wrap">
