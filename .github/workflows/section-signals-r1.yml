@@ -1,0 +1,43 @@
+name: Weplace Section Exposure GA4 QA
+on:
+  pull_request:
+    paths:
+      - index.html
+      - november-fast-a-r8.html
+      - assets/js/weplace-consent-analytics-r1.js
+      - assets/js/weplace-section-signals-r1.js
+      - qa/section-signals-r1.py
+      - .github/workflows/section-signals-r1.yml
+permissions:
+  contents: read
+jobs:
+  section-consent:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: 
+          python-version: '3.12'
+      - name: Korean font and browser
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+          python -m pip install playwright==1.56.0
+      - name: Serve static website
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 >/tmp/section-qa.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:4173/index.html >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/section-qa.log; exit 1
+      - name: Test opt-in/out and visual section exposure
+        run: python qa/section-signals-r1.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: section-exposure-ga4-qa
+          path: qa/section-signals-r1/
+          retention-days: 14
+          if-no-files-found: warn
