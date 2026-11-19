@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#183c2c">
+<meta name="description" content="Weplace가 직접 구성한 가상 매장 모온의 홈페이지 제작 시안입니다. 실제 영업 정보나 예약 가능 여부를 뜻하지 않습니다.">
+<title>모온 | 가상 매장 홈페이지 · Weplace 제작 예시</title>
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<style>
+:root{--dark:#1b4031;--mid:#34654c;--cream:#faf9f1;--ink:#284436;--muted:#647a68;--line:#d6e1d4;--gold:#cbaa79}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;color:var(--ink);background:var(--cream);font-family:"Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;letter-spacing:-.037em;line-height:1.7;overflow-x:hidden}
+a{color:inherit}a:focus-visible,summary:focus-visible{outline:3px solid #6d9e7d;outline-offset:4px}
+.wrap{width:min(1150px,100%);margin:0 auto;padding:0 clamp(20px,4.6vw,64px)}
+.skip{position:absolute;left:-9999px;top:7px;background:white;padding:8px;z-index:100}.skip:focus{left:10px}
+.demo-ribbon{background:#203f30;color:#e4eddd;font-size:12px;padding:11px 0;text-align:center;letter-spacing:.01em}
+.demo-ribbon strong{color:#f0d6ac}
+.site-header{position:sticky;top:0;z-index:20;background:#f9faf3f2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.site-header .inner{min-height:74px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-weight:900;letter-spacing:-.095em;text-decoration:none;font-size:33px;color:#244a37}
+.logo span{color:#c39c6d;font-size:18px;vertical-align:super;margin-left:3px}
+.site-nav{display:flex;align-items:center;gap:clamp(14px,3vw,32px);font-size:14px;font-weight:700;flex-wrap:wrap}
+.site-nav a{text-decoration:none}
+.site-nav .last{background:#244f39;border-radius:100px;padding:11px 16px;color:#fffef3}
+.hero{background:radial-gradient(circle at 95% 20%,#d6e3d3 0%,transparent 49%),#eef1e8;padding:clamp(58px,8vw,117px) 0 54px}
+.hero-grid{display:grid;grid-template-columns:1fr 1.02fr;align-items:center;gap:clamp(25px,5vw,70px)}
+.eyebrow{color:#5a8061;font-size:11px;letter-spacing:.14em;font-weight:820;margin:0 0 22px}
+h1{font-size:clamp(43px,5.2vw,74px);line-height:1.19;letter-spacing:-.075em;color:#1b4330;margin:0 0 29px;font-weight:850;word-break:keep-all}
+h1 em{font-style:normal;color:#568266}
+.hero p.lead{max-width:40ch;font-size:clamp(15px,1.5vw,18px);line-height:1.85;color:#5b7360;margin:0 0 33px;word-break:keep-all}
+.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.button{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;border-radius:100px;min-height:51px;padding:12px 22px;background:#245a3e;color:#fffdf0;text-decoration:none;font-size:14px;font-weight:770}
+.button.alt{background:#fff;border:1px solid #a8c4b0;color:#245a3e}
+.art{margin:0;max-width:100%;min-width:0;min-height:clamp(340px,49vw,530px);border-radius:14px 105px 14px 14px;position:relative;overflow:hidden;background:#224936;box-shadow:0 29px 68px #213c2928}
+.art>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85)}
+.art:after{position:absolute;inset:35% 0 0;content:"";background:linear-gradient(transparent,#09251cb3)}
+.art-note{position:absolute;z-index:2;bottom:26px;left:30px;right:24px;display:flex;justify-content:space-between;gap:12px;align-items:flex-end;color:#f5f9e9}
+.art-note strong{font-size:clamp(23px,2.6vw,35px);line-height:1.28}
+.art-note small{font-size:11px;letter-spacing:.13em;color:#e1ebd5}
+.disclaimer{font-size:12px;color:#687c6d;line-height:1.7;margin:27px 0 0}
+.section{padding:clamp(71px,8vw,118px) 0}
+.sec-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.6fr);gap:30px;align-items:end;margin-bottom:32px}
+.sec-intro h2{font-size:clamp(29px,4vw,53px);letter-spacing:-.067em;line-height:1.35;margin:0}
+.sec-intro p{color:#657e69;margin:0;font-size:15px;line-height:1.85}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:19px}
+.photo-card{margin:0;border-radius:17px;background:#f0f4eb;overflow:hidden;border:1px solid #d5e2d3}
+.photo-card img{width:100%;aspect-ratio:1.65;display:block;object-fit:cover}
+.photo-card figcaption{padding:19px 23px}
+.photo-card figcaption strong{display:block;font-size:18px;color:#224735}
+.photo-card figcaption span{display:block;color:#667d6a;font-size:13px;margin-top:3px}
+.arrival{background:#eaf0e6}
+.arrival-grid{display:grid;grid-template-columns:1fr 1.07fr;gap:40px;align-items:start}
+.arrival h2,.faq h2{font-size:clamp(29px,4vw,48px);line-height:1.38;letter-spacing:-.065em;margin:0 0 17px}
+.arrival p{color:#59735f;line-height:1.9}
+.arrival-step{background:#fcfdf7;border:1px solid #d2dfd1;border-radius:17px;padding:20px 24px;display:flex;gap:22px;align-items:flex-start;margin-bottom:10px}
+.arrival-step b{color:#5c8967;font-size:13px}
+.arrival-step strong{font-size:19px;color:#214634}
+.arrival-step p{font-size:13px;line-height:1.7;margin:3px 0 0}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+details{border-bottom:1px solid #cbdccb;padding:18px 0}summary{cursor:pointer;font-size:18px;color:#274e39;font-weight:790;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary:after{content:"＋";font-size:22px;color:#69906d}details[open] summary:after{content:"−"}
+details p{font-size:14px;line-height:1.9;color:#617b69;margin:13px 0 6px}
+.cta{background:#1e4331;color:#f8f9ed;padding:clamp(72px,8vw,105px) 0}
+.cta .inner{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+.cta h2{font-size:clamp(29px,4vw,50px);margin:0;line-height:1.34;letter-spacing:-.055em}
+.cta p{color:#d1e2d2;font-size:14px;line-height:1.9;margin:12px 0 20px}
+.cta .button{background:#f4f6e8;color:#24543a}
+footer{background:#112e22;color:#c6d8c5;padding:36px 0;font-size:12px}
+footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+footer a{color:#f0f6e9;text-underline-offset:4px}
+@media(max-width:820px){.hero-grid,.sec-intro,.arrival-grid,.faq-grid,.cta .inner{grid-template-columns:1fr}.art{max-width:660px;width:100%;min-height:470px}.site-nav{gap:13px}.site-nav a{font-size:12px}.photo-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.site-header .inner{gap:10px}.site-nav a[href="#menu"]{display:none}.site-nav a{font-size:11px}.logo{font-size:27px}.site-nav .last{padding:9px 11px}.art{min-height:355px;border-top-right-radius:70px}.photo-grid{grid-template-columns:1fr}.section{padding:72px 0}.sec-intro p{font-size:14px}.cta .inner{gap:14px}footer .wrap{display:block}footer a{display:inline-block;margin-top:10px}}
+@media(max-width:520px){.site-header .inner{flex-wrap:wrap;row-gap:2px;padding-top:10px;padding-bottom:10px}.site-header .site-nav{flex:1 1 100%;width:100%;gap:7px;justify-content:space-between}.site-header .site-nav a{font-size:11px;white-space:nowrap}.site-header .site-nav .last{padding:8px 10px}.hero h1{overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 바로가기</a>
+<div class="demo-ribbon"><div class="wrap"><strong>WEPLACE / 직접 제작한 홈페이지 샘플</strong> · ‘모온’은 가상 매장이며 실제 주소·영업·예약 정보가 아닙니다.</div></div>
+<header class="site-header"><div class="wrap inner"><a class="logo" href="#top" aria-label="모온 가상 매장 홈페이지 맨 위로">모온<span>MOON</span></a><nav class="site-nav" aria-label="가상 매장 안내"><a href="#menu">사진·공간</a><a href="#directions">찾아오는 길</a><a href="#questions">자주 묻는 질문</a><a class="last" href="#contact">이용 방법 확인 ↗</a></nav></div></header>
+<main id="main">
+<section class="hero" id="top"><div class="wrap hero-grid"><div><p class="eyebrow">A PLACE TO GATHER / WEBSITE CONCEPT</p><h1>함께 먹는 시간,<br><em>편하게 찾을 수 있도록.</em></h1><p class="lead">사진으로 어떤 공간인지 보고, 찾아오는 길과 이용 방법까지 한 페이지에서 확인할 수 있도록 구성했습니다.</p><div class="actions"><a class="button" href="#menu">사진과 공간 보기 <span aria-hidden="true">↘</span></a><a class="button alt" href="#directions">찾아오는 길 ↗</a></div></div><figure class="art"><img src="/assets/hero-r2/memory.webp" width="840" height="840" loading="eager" alt="음식이 놓인 식탁을 보여주는 참고 이미지"><figcaption class="art-note"><strong>처음 보는 사진도,<br>찾는 정보도 가까이.</strong><small>FICTIONAL DEMO / 01</small></figcaption></figure></div><div class="wrap"><p class="disclaimer">Weplace 홈페이지 제작 방식을 보여주기 위한 가상 시안입니다. 사진도 기존 참고 자산이며 실제 모온 매장이나 메뉴를 보증하지 않습니다.</p></div></section>
+<section id="menu" class="section"><div class="wrap"><div class="sec-intro"><div><p class="eyebrow">01 / PHOTOS & SPACE</p><h2>어떤 음식인지.<br>어디에 앉을 수 있는지.</h2></div><p>맛있어 보이는 음식 다음에 함께 앉을 공간을 보여줍니다. 사진의 순서부터 손님이 확인할 질문을 생각했습니다.</p></div><div class="photo-grid"><figure class="photo-card"><img src="/assets/hero-r2/memory.webp" width="840" height="840" loading="lazy" alt="식사 사진 참고 이미지"><figcaption><strong>음식 사진</strong><span>무엇을 먹을지 먼저 떠올리는 장면</span></figcaption></figure><figure class="photo-card"><img src="/assets/hero-r2/room.webp" width="1440" height="960" loading="lazy" alt="식사 공간 참고 이미지"><figcaption><strong>공간 사진</strong><span>함께 앉을 자리를 확인하는 장면</span></figcaption></figure></div></div></section>
+<section id="directions" class="section arrival"><div class="wrap arrival-grid"><div><p class="eyebrow">02 / DIRECTIONS</p><h2>주소를 찾은 뒤에도,<br>헤매지 않도록.</h2><p>이곳은 가상 안내입니다. 실제 매장이라면 출구 번호와 입구 사진, 주차 위치를 현장에서 확인한 뒤 안내합니다.</p></div><div><div class="arrival-step"><b>01</b><div><strong>가장 가까운 출구</strong><p>몇 번 출구로 나와야 할지 정리</p></div></div><div class="arrival-step"><b>02</b><div><strong>실제 들어가는 입구</strong><p>건물명보다 찾기 쉬운 입구 사진과 설명</p></div></div><div class="arrival-step"><b>03</b><div><strong>주차와 도착 안내</strong><p>주차 가능 여부·장소·이용 조건을 확인한 뒤 표시</p></div></div></div></div></section>
+<section id="questions" class="section faq"><div class="wrap faq-grid"><div><p class="eyebrow">03 / QUICK ANSWERS</p><h2>방문 전에 다시 묻는 것들.</h2><p style="color:#627a68;font-size:14px;line-height:1.8">이런 문답은 홈페이지에서 사람이 읽을 수 있을 뿐 아니라 검색엔진이 수집할 수 있는 텍스트의 예시가 됩니다. 검색 노출을 보장하지는 않습니다.</p></div><div><details><summary>입구는 어디인가요?</summary><p>실제 운영 매장에서는 출구·입구·사진을 함께 확인해 안내합니다. 이 샘플에는 실제 위치 정보가 없습니다.</p></details><details><summary>주차할 수 있나요?</summary><p>주차 가능 여부와 위치·요금·조건을 현장에서 확인한 뒤 표시할 수 있습니다. 가상의 안내입니다.</p></details><details><summary>예약은 어떻게 하나요?</summary><p>가능한 인원과 시간, 예약 확정 방법을 확인해 한곳에 정리합니다. 이 페이지에서 실제 예약은 진행되지 않습니다.</p></details><details><summary>영업시간은 어디서 보나요?</summary><p>실제 매장 홈페이지에서는 운영시간과 휴무일의 최신 정보를 확인해 표시합니다. 이 샘플은 운영 중인 매장이 아닙니다.</p></details></div></div></section>
+<section id="contact" class="cta"><div class="wrap inner"><div><h2>좋은 안내는,<br>질문을 덜 헤매게 합니다.</h2><p>이 페이지는 Weplace가 설계·구현한 예시 사이트입니다. 실제 고객사 예약·결제·상담을 대신하지 않습니다.</p></div><div><a class="button" href="/#search-surfaces">Weplace가 정리하는 다른 화면 보기 ↗</a></div></div></section>
+</main><footer><div class="wrap"><span>MOON · 가상 매장 웹사이트 / WEPLACE 제작 시안</span><a href="/">Weplace 메인 홈페이지로 ↗</a></div></footer>
+</body></html>
