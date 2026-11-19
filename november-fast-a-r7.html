@@ -23,6 +23,17 @@
 <meta property="og:image:height" content="675">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://withweplace.kr/november-fast/">
+<!-- Draft only: verify Weplace GA4 stream and privacy notice before merging. No personal data in event payloads. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVCYL26FTL"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-FVCYL26FTL');
+window.wpCampaignTrack=function(eventName,params){
+  try{gtag('event',eventName,Object.assign({campaign_variant:'a_contrarian',campaign_topic:'black_friday'},params||{}));}catch(_e){}
+};
+</script>
 <meta name="description" content="광고 다음에 손님이 보는 화면부터. 사진·길·예약의 정리 전후를 직접 비교하고, 관심 있는 내용을 클릭해 문의문까지 완성하는 Weplace 캠페인.">
 <style>
 :root{color-scheme:light;--ink:#234432;--dark:#1e3c2c;--sage:#e7eee2;--sage2:#dbe7d5;--line:#c1cfc0;--cream:#f8f9ef;--warm:#b66b5d;--muted:#526954}
@@ -472,7 +483,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
       <span class="nov-cold-side">WEPLACE · NOVEMBER 2026</span>
     </div>
     <div class="nov-cold-story">
-      <p class="nov-cold-preface">광고를 해봤는데도 답답했다면, 이런 생각이 들 수 있습니다.</p>
+      <p class="nov-cold-preface">광고비는 들어가는데 결과가 선명하지 않다면, 이런 생각이 들 수 있습니다.</p>
       <h1 id="campaign-hook-title" class="nov-cold-title">광고,<br><span>하지 마세요.</span></h1>
       <p class="nov-cold-doubt">“어차피 돈만 들지 않나요?”</p>
       <div class="nov-cold-pause" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -709,6 +720,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
 <div class="wrap"><footer class="footer"><span>WEPLACE · NOVEMBER FAST / 2026</span><span>가입 없이 보는 가상 화면 비교 · 진단 범위·비용은 담당자 안내 후 결정 · <a href="/" aria-label="Weplace 홈페이지로 돌아가기">Weplace 홈페이지 ↗</a></span></footer></div>
 <script>
 (()=>{'use strict';
+ const track=(eventName,params)=>{if(typeof window.wpCampaignTrack==='function')window.wpCampaignTrack(eventName,params||{});};
  const data={
   photo:{label:'대표 사진',before:['어디에 앉을 수 있을까요?','음식 사진은 보이지만 함께 앉을 공간은 다시 찾아야 하는 화면입니다.','메뉴만 보이는 화면','좌석·공간 사진은 따로 찾아야 합니다.','다른 사진 보기'],after:['먹고 싶은 메뉴 다음에, 함께 앉을 공간까지.','음식 사진에 이어 공간 사진을 보여주는 가상 구성입니다.','메뉴와 공간 사진','필요한 사진을 가까이 놓았습니다.','공간 정보 확인']},
   route:{label:'찾아오는 길',before:['주소는 알지만, 입구는 어디일까요?','주소·출구·주차 정보가 흩어져 있으면 처음 오는 손님이 다시 찾아봐야 할 수 있습니다.','주소 · 지도','입구와 주차 위치는 따로 확인해야 합니다.','길 다시 찾기'],after:['출구부터 입구까지 한 화면에.','출구·입구·주차 안내를 나란히 보여주는 가상 예시입니다.','출구 · 입구 · 주차','어디서 내려 어느 문으로 들어갈지 안내합니다.','도착 정보 확인']},
@@ -755,7 +767,9 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
      wizardRoot.scrollIntoView({block:'start',behavior:reduce?'instant':'smooth'});
    }
  }
+ let intakeStartedTracked=false;
  function advanceFromWizard(step){
+   if(!intakeStartedTracked){intakeStartedTracked=true;track('intake_start',{first_step:step+1});}
    if(wizardEnhanced&&wizardStep===step&&wizardAnswerReady(step))showWizardStep(step+1);
  }
  function initWizard(){
@@ -788,7 +802,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   route:[['entrance','처음 오는 손님이 입구를 헷갈려해요'],['parking','주차·대중교통 문의가 반복돼요'],['maps','지도와 상세 안내가 서로 달라요']],
   booking:[['terms','예약 인원·시간을 반복해서 확인해요'],['button','예약하는 버튼이나 경로가 눈에 안 띄어요'],['confirm','예약 완료·확정 방법을 이해하기 어려워요']]
  };
- let currentConcernFocus=null, latestIntakeReady=false, latestIntakeText='';
+ let currentConcernFocus=null, latestIntakeReady=false, latestIntakeText='', intakeCompleteTracked=false;
  const makeOption=(code,label)=>{
    const button=document.createElement('button');button.type='button';button.dataset.concern=code;
    button.textContent=label;button.setAttribute('aria-pressed',String(concern===code));
@@ -810,6 +824,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
    const concernLabel=concerns[focus].find(([code])=>code===concern)?.[1]||null;
    const isReady=Boolean(industry&&concernLabel&&requestType);
    latestIntakeReady=isReady;
+   if(isReady&&!intakeCompleteTracked){intakeCompleteTracked=true;track('intake_complete',{focus_type:focus,industry_type:industry,request_type:requestType});}
    const labels=[
      industry?industryLabels[industry]:'업종을 골라주세요',
      '화면: '+data[focus].label,
@@ -875,7 +890,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   updateBridge();
   updateClickIntake();
  }
- many('[data-focus]').forEach(b=>b.addEventListener('click',()=>{if(focus!==b.dataset.focus)concern=null;focus=b.dataset.focus;mode='before';render();}));
+ many('[data-focus]').forEach(b=>b.addEventListener('click',()=>{if(focus!==b.dataset.focus)concern=null;focus=b.dataset.focus;mode='before';render();track('firstlook_select',{focus_type:focus});}));
  let demoGuests='4',demoTime='18:00';
  function updateDemoBooking(){
   many('[data-r7-guests]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.r7Guests===demoGuests)));
@@ -890,21 +905,25 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
  many('[data-industry]').forEach(b=>b.addEventListener('click',()=>{industry=b.dataset.industry;updateClickIntake();advanceFromWizard(1)}));
  many('[data-intake-focus]').forEach(b=>b.addEventListener('click',()=>{if(focus!==b.dataset.intakeFocus){focus=b.dataset.intakeFocus;concern=null;mode='before';render()}else updateClickIntake();advanceFromWizard(2)}));
  many('[data-request]').forEach(b=>b.addEventListener('click',()=>{requestType=b.dataset.request;updateClickIntake();advanceFromWizard(4)}));
- many('button[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;render();}));
+ many('button[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;render();track('firstlook_compare',{focus_type:focus,compare_mode:mode});}));
  const oldCompareButton=one('#cta-experience');if(oldCompareButton)oldCompareButton.addEventListener('click',()=>{mode='after';render();one('#stage-title').scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
 
- one('#copy-message').addEventListener('click',()=>{copyPrepared();});
+ one('#copy-message').addEventListener('click',()=>{track('message_copy_click',{entry_point:'copy_only'});copyPrepared();});
  one('#copy-and-chat').addEventListener('click',event=>{
    if(!latestIntakeReady){
      event.preventDefault();one('#intake-ready-status').focus?.();one('#intake-ready-status').textContent='업종·고민·원하는 안내를 골라주세요.';
      return;
    }
+   track('kakao_open_click',{entry_point:'intake_cta',focus_type:focus});
    // The default anchor opens Kakao channel in a new tab; copying is a best-effort
    // gesture-initiated helper, never a claim of message submission.
    copyPrepared();
  });
+ const fallbackKakao=one('.kakao-link');
+ if(fallbackKakao)fallbackKakao.addEventListener('click',()=>track('kakao_open_click',{entry_point:'fallback'}));
  render();
  initWizard();
+ track('campaign_view',{page_type:'november_fast_r7'});
 })();
 </script>
 <script>
