@@ -1,0 +1,43 @@
+name: Weplace November FAST R8 typography production QA
+on:
+  pull_request:
+    paths:
+      - index.html
+      - november-fast-a-r8.html
+      - assets/css/weplace-type-release-r1.css
+      - qa/typography-r8-release.py
+      - .github/workflows/typography-r8-release.yml
+permissions:
+  contents: read
+jobs:
+  qa-browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Korean glyphs and Chromium
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+          python -m pip install playwright==1.56.0
+          (which google-chrome || which google-chrome-stable || which chromium-browser)
+      - name: Serve the reviewed branch
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 >/tmp/typer8.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:4173/index.html >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/typer8.log; exit 1
+      - name: Run 320 to 1440px UI regression
+        run: python qa/typography-r8-release.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weplace-r8-typography-qa
+          path: qa/typography-r8-release/
+          retention-days: 14
+          if-no-files-found: warn

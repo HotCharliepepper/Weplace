@@ -134,10 +134,11 @@ if thumb.is_file():
     with Image.open(thumb) as im:
         check("social poster is 1200x675 RGB PNG",im.format=="PNG" and im.size==(1200,675))
 redirects=Path("_redirects").read_text(encoding="utf8")
-check("campaign short link maps to R7",all(line in redirects for line in (
-    "/november-fast  /november-fast-a-r7.html  200",
-    "/november-fast/  /november-fast-a-r7.html  200"
-)))
+# R7 still remains available as a historical page; the live short link intentionally moved to R8.
+check("campaign short link maps to current R8",all(line in redirects for line in (
+    "/november-fast  /november-fast-a-r8.html  200",
+    "/november-fast/  /november-fast-a-r8.html  200"
+)) and Path("november-fast-a-r8.html").is_file())
 campaign=Path("november-fast-a-r7.html").read_text(encoding="utf8")
 check("social metadata references PNG and correct public canonical", 
       'og:image" content="https://withweplace.kr/assets/campaign/november-fast-thumb.png"' in campaign
