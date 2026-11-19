@@ -25,7 +25,7 @@ ok('말보다,<br><strong>숫자.</strong>' in home,"First-fold hook is shorter 
 ok('content="noindex,nofollow"' in demo,"Fictional client demo is excluded from indexing")
 ok('<details>' in demo and 'href="#questions"' in demo and 'href="#directions"' in demo,"Demo has native functional FAQ and arrival navigation")
 ok('AI 검색의 노출·인용·순위를 보장하지 않습니다' in home,"AI search claim boundaries visible")
-ok('실제 네이버·Google의 검색 결과 캡처가 아닙니다' in home,"Mock screen label clearly distinguishes fake screenshots")
+ok('실제 네이버·Google 검색 결과 캡처가 아닙니다' in home,"Mock screen label clearly distinguishes fake screenshots")
 ok('id="wp-combo-sales"' in home and 'id="wp-combo-inflow"' in home,"Prior numerical visual charts preserved")
 ok('id="wp-combo-sales"' in campaign and 'id="nov-wizard"' in campaign,"November FAST chart & inquiry preserved")
 ok('weplace-consent-analytics-r1.js' in home and 'weplace-consent-analytics-r1.js' in campaign,"Existing consent analytics preserved")
