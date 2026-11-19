@@ -27,6 +27,9 @@
 <link rel="canonical" href="https://withweplace.kr/november-fast/">
 <!-- Analytics integration pending verified GA4 property and privacy notice. No tracking cookies added by this release. -->
 <link rel="stylesheet" href="/assets/css/evidence-duo-r1.css">
+<link rel="stylesheet" href="/assets/css/luwei-dwell-r1.css">
+<link rel="stylesheet" href="/assets/css/luwei-inline-adapter-r1.css">
+<script defer src="/assets/js/luwei-dwell-r1.js"></script>
 <meta name="description" content="광고를 더 쓰기 전에, 손님이 광고 다음에 보는 화면부터 확인해 보세요. 사진·길·예약을 가상 매장에서 직접 비교하고, 우리 매장의 첫 개선 순서를 생각해 보는 Weplace 캠페인.">
 <style>
 :root{color-scheme:light;--ink:#234432;--dark:#1e3c2c;--sage:#e7eee2;--sage2:#dbe7d5;--line:#c1cfc0;--cream:#f8f9ef;--warm:#b66b5d;--muted:#526954}
@@ -618,6 +621,48 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
  <div class="wp-ev-actions"><a class="wp-ev-action" href="#first-look">사진·길·예약 화면 비교하기 ↗</a><a class="wp-ev-action wp-ev-action--alt" href="/">Weplace 홈페이지 살펴보기 ↗</a></div>
 </div>
 </section>
+<div class="unified-r3 wp-luwei-inline"><section class="wp-luwei-section" id="luwei-scene" aria-labelledby="luwei-title">
+ <div class="rf-wrap wp-luwei-intro">
+  <p class="rf-eyebrow">PHOTO STUDY / 루위</p>
+  <h2 id="luwei-title">같은 매장,<br><em>먼저 보는 사진이 다르다면?</em></h2>
+  <p>외관은 찾아오는 길을 알려줍니다.<br>베이징덕 사진은 어떤 음식을 만날지 먼저 보여줍니다.<br>사진을 바꾸는 게 아니라, 보여주는 순서를 직접 비교해 보세요.</p>
+ </div>
+ <div class="wp-luwei-track" id="luwei-track">
+  <div class="rf-wrap wp-luwei-stage" id="luwei-stage" data-phase="before">
+   <div class="wp-luwei-visual" id="luwei-visual" role="region" aria-label="루위 사진을 활용한 첫 화면 순서 비교">
+    <figure class="wp-luwei-frame wp-luwei-before" id="luwei-before">
+      <img src="/assets/home-r42/luwei-exterior-crop.webp" alt="루위가 제공한 외관 화면 캡처에서 간판과 차량이 보이는 부분만 잘라낸 이미지" width="770" height="780" loading="lazy" decoding="async">
+      <figcaption><span>01 / 외관을 먼저 보여준다면</span><strong>간판과 차량이 보이지만,<br>무엇을 먹는 곳인지 찾게 됩니다.</strong></figcaption>
+    </figure>
+    <div class="wp-luwei-frame wp-luwei-bridge" id="luwei-bridge" aria-hidden="true">
+      <span class="wp-luwei-green-tag">PAUSE / FIRST LOOK</span>
+      <p>매장을 바꾸는 대신,<br><strong>처음 보여주는 사진</strong>을 바꿔본다면?</p>
+      <span class="wp-luwei-green-line" aria-hidden="true"></span>
+    </div>
+    <figure class="wp-luwei-frame wp-luwei-after" id="luwei-after" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 640px)" srcset="/assets/home-r42/luwei-peking-duck-640.webp" type="image/webp">
+        <img src="/assets/home-r42/luwei-peking-duck-1254.webp" alt="루위가 제공한 베이징덕을 손질하는 음식 사진" width="1254" height="1254" loading="lazy" decoding="async">
+      </picture>
+      <figcaption><span>02 / 베이징덕을 먼저 보여준다면</span><strong>어떤 요리가 기다리는지,<br>먼저 보입니다.</strong></figcaption>
+    </figure>
+   </div>
+   <div class="wp-luwei-caption">
+     <div class="wp-luwei-captions"><p class="wp-luwei-label">SAME PLACE, DIFFERENT FIRST LOOK</p><p id="luwei-phase-description" role="status" aria-live="polite">먼저 보이는 외관 사진을 살펴보세요.</p></div>
+     <div class="wp-luwei-controls">
+       <button type="button" id="luwei-replay">처음부터 다시 보기 <span aria-hidden="true">↺</span></button>
+       <button type="button" id="luwei-skip">베이징덕 먼저 보기 <span aria-hidden="true">↗</span></button>
+       <a href="#first-look">다른 업종의 첫 화면도 비교하기 <span aria-hidden="true">↓</span></a>
+     </div>
+   </div>
+  </div>
+ </div>
+ <div class="rf-wrap wp-luwei-foot">
+  <p>제공된 루위 외관 캡처 일부와 베이징덕 사진으로 만든 <strong>가상의 배열 비교</strong>입니다. 실제 네이버 플레이스 대표사진이 이미 변경되었다거나, 이 편집으로 매출이 상승했다는 뜻은 아닙니다. 고객 제공 자료의 공개 사용 권한은 최종 확인이 필요합니다.</p>
+  <p class="wp-luwei-case-link"><a href="/cases/luwei-first-look/">루위 사례 페이지 전체 보기 ↗</a></p>
+  <noscript><div class="wp-luwei-noscript"><img src="/assets/home-r42/luwei-peking-duck-640.webp" alt="루위 베이징덕 사진을 별도로 확인하는 정적 이미지" width="640" height="640" loading="lazy"><p>자바스크립트가 없더라도 음식 사진을 확인할 수 있습니다.</p></div></noscript>
+ </div>
+</section></div>
 <section id="first-look" class="section r7-demo" aria-labelledby="first-look-title">
  <div class="wrap">
   <div class="section-head r7-demo-head">
