@@ -26,6 +26,6 @@ for(const root of document.querySelectorAll('.wp-surface-section')){
      activate(index,true);
    });
  });
- activate(0,false);
+ activate(2,false);
 }
 })();
