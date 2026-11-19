@@ -1,0 +1,42 @@
+name: WEPLACE GA4 opt-in release QA
+on:
+  pull_request:
+    paths:
+      - index.html
+      - november-fast-a-r8.html
+      - assets/js/weplace-consent-analytics-r1.js
+      - assets/css/weplace-consent-analytics-r1.css
+      - analytics-info/index.html
+      - qa/ga4-optin-release-r1.py
+      - .github/workflows/ga4-optin-release-r1.yml
+permissions:
+  contents: read
+jobs:
+  consent-and-regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Korean fonts and browser
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+          python -m pip install playwright==1.56.0
+          (which google-chrome || which google-chrome-stable || which chromium-browser)
+      - name: Start static review web server
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 >/tmp/weplace-ga4.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:4173/index.html >/dev/null && exit 0; sleep 1; done
+          cat /tmp/weplace-ga4.log; exit 1
+      - name: Verify consent and existing visitor flows
+        run: python qa/ga4-optin-release-r1.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weplace-ga4-optin-release
+          path: qa/ga4-release/
+          retention-days: 14
+          if-no-files-found: warn

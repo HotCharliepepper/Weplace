@@ -25,7 +25,9 @@
 <meta name="twitter:image" content="https://withweplace.kr/assets/campaign/bf-contrarian-r8.png?v=20261119">
 <meta property="og:image:alt" content="광고, 하지 마세요. 다음 화면을 확인하기 전에는. Weplace 사진·길·예약 비교">
 <link rel="canonical" href="https://withweplace.kr/november-fast/">
-<!-- Analytics integration pending verified GA4 property and privacy notice. No tracking cookies added by this release. -->
+<!-- GA4 loads only after explicit visitor consent. -->
+<link rel="stylesheet" href="/assets/css/weplace-consent-analytics-r1.css">
+<script defer src="/assets/js/weplace-consent-analytics-r1.js"></script>
 <meta name="description" content="광고를 더 쓰기 전에, 손님이 광고 다음에 보는 화면부터 확인해 보세요. 사진·길·예약을 가상 매장에서 직접 비교하고, 우리 매장의 첫 개선 순서를 생각해 보는 Weplace 캠페인.">
 <style>
 :root{color-scheme:light;--ink:#234432;--dark:#1e3c2c;--sage:#e7eee2;--sage2:#dbe7d5;--line:#c1cfc0;--cream:#f8f9ef;--warm:#b66b5d;--muted:#526954}
@@ -798,7 +800,7 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   </div>
 </section>
 </main>
-<div class="wrap"><footer class="footer"><span>WEPLACE · NOVEMBER FAST R8 / 2026</span><span>가입 없이 보는 가상 화면 비교 · 진단 범위·비용은 담당자 안내 후 결정 · <a href="/" aria-label="Weplace 홈페이지로 돌아가기">Weplace 홈페이지 ↗</a></span></footer></div>
+<div class="wrap"><footer class="footer"><span>WEPLACE · NOVEMBER FAST R8 / 2026</span><span>가입 없이 보는 가상 화면 비교 · 진단 범위·비용은 담당자 안내 후 결정 · <a href="/" aria-label="Weplace 홈페이지로 돌아가기">Weplace 홈페이지 ↗</a> · <button type="button" class="wp-consent-manage" data-wp-consent-manage>방문 분석 설정</button></span></footer></div>
 <script>
 (()=>{'use strict';
  const track=(eventName,params)=>{if(typeof window.wpCampaignTrack==='function')window.wpCampaignTrack(eventName,params||{});};
@@ -1039,4 +1041,11 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
  document.addEventListener('visibilitychange',()=>{if(document.hidden){clearTimeout(timeout);settle();}});
 })();
 </script>
+<section id="wp-consent-panel" class="wp-consent-panel" aria-labelledby="wp-consent-heading" hidden>
+  <h2 id="wp-consent-heading">방문 분석 사용 여부를 선택해 주세요.</h2>
+  <p>사진·길·예약 화면을 어떻게 살펴보는지 이해하기 위해 Google Analytics(GA4)를 사용합니다. 동의한 경우에만 페이지 방문과 선택형 이벤트를 측정합니다. 매장명·문의 내용은 측정 이벤트에 넣지 않습니다.</p>
+  <small class="wp-consent-info">분석은 선택 사항이며 거부해도 페이지와 문의 기능을 사용할 수 있습니다. <a href="/analytics-info/" target="_blank" rel="noopener">방문 분석 안내 보기</a></small>
+  <div class="wp-consent-actions"><button type="button" data-wp-choose="rejected">사용하지 않음</button><button type="button" data-wp-choose="accepted">분석 동의</button></div>
+  <p id="wp-consent-status" role="status" aria-live="polite">동의하지 않으면 분석 태그는 로딩되지 않습니다.</p>
+</section>
 </body></html>
