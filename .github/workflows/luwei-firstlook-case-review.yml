@@ -1,0 +1,71 @@
+name: LuWei first-look review assets and QA
+on:
+  pull_request:
+    paths:
+      - cases/luwei-first-look/index.html
+      - assets/css/luwei-dwell-r1.css
+      - assets/js/luwei-dwell-r1.js
+      - .github/workflows/luwei-firstlook-case-review.yml
+permissions:
+  contents: write
+jobs:
+  render-review:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image verifier and browser
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+          python -m pip install Pillow playwright==1.56.0
+      - name: Restore only the three already-reviewed cropped/food assets
+        run: |
+          git fetch origin refs/heads/draft/weplace-fast-og-luwei-dwell-20261118:refs/remotes/origin/luwei-review-source
+          mkdir -p assets/home-r42
+          for f in assets/home-r42/luwei-exterior-crop.webp assets/home-r42/luwei-peking-duck-1254.webp assets/home-r42/luwei-peking-duck-640.webp; do
+            git show "origin/luwei-review-source:${f}" > "${f}"
+          done
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          paths=[Path(p) for p in ("assets/home-r42/luwei-exterior-crop.webp","assets/home-r42/luwei-peking-duck-1254.webp","assets/home-r42/luwei-peking-duck-640.webp")]
+          for p in paths:
+              with Image.open(p) as im:
+                  assert im.format=="WEBP" and im.width>200 and im.height>200, (p, im.size)
+                  print(p,im.size)
+          PY
+      - name: Start isolated preview server
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 >/tmp/luwei-case.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/cases/luwei-first-look/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/luwei-case.log; exit 1
+      - name: QA standalone scene at mobile and desktop widths
+        run: python qa/luwei-case-review.py
+      - name: Save derived assets to draft branch for preview only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/home-r42/luwei-exterior-crop.webp assets/home-r42/luwei-peking-duck-1254.webp assets/home-r42/luwei-peking-duck-640.webp
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(luwei): preserve earlier cropped exterior and provided duck images"
+            git push origin HEAD:"${{ github.head_ref }}"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weplace-luwei-firstlook-qa
+          path: qa/luwei-case-review/
+          retention-days: 14
+          if-no-files-found: warn
