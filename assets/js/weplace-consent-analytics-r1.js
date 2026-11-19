@@ -6,7 +6,7 @@ let choice=null,loaded=false;
 function get(){try{return localStorage.getItem(KEY)}catch(_){return null}}
 function save(v){try{localStorage.setItem(KEY,v)}catch(_){}}
 const events=new Set(['campaign_view','firstlook_select','firstlook_compare','intake_start','intake_complete','message_copy_click','kakao_open_click','evidence_year_select','luwei_step','home_to_campaign','campaign_to_home']);
-const keys=new Set(['campaign_variant','campaign_topic','page_type','focus_type','mode','industry','entry_point','year_selected','source_type','phase','step_number']);
+const keys=new Set(['campaign_variant','campaign_topic','page_type','focus_type','compare_mode','industry_type','request_type','first_step','mode','industry','entry_point','year_selected','source_type','phase','step_number']);
 function cleanParams(data){
  const safe={};
  Object.entries(data||{}).forEach(([key,value])=>{
