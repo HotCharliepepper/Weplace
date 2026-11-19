@@ -492,6 +492,28 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
  .r7-frame-copy{font-size:11.5px;margin-top:6px}
 }
 
+
+/* NOVEMBER FAST → WEPLACE. End-of-journey CTA; no tracking or automatic sends. */
+.nov-home-return{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(135deg,#09251e 0%,#123c2e 66%,#174231 100%);color:#f6f8e9;border-top:1px solid #305c49;padding-block:clamp(72px,9vw,130px)}
+.nov-home-return::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse 56% 85% at 100% 5%,rgba(190,223,179,.15),transparent 65%),repeating-linear-gradient(112deg,transparent 0 125px,rgba(216,235,209,.025) 126px,transparent 127px)}
+.nov-home-return-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(245px,.6fr);gap:clamp(35px,6vw,95px);align-items:center}
+.nov-home-return-kicker{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:#c6dcbf;font-weight:800;margin:0 0 25px}
+.nov-home-return h2{font-size:clamp(37px,4.5vw,64px);font-weight:880;letter-spacing:-.065em;line-height:1.28;margin:0;color:#f7f9ee;word-break:keep-all}
+.nov-home-return h2 em{font-style:normal;color:#d3e8c5}
+.nov-home-return p:not(.nov-home-return-kicker){color:#c2dac8;line-height:1.85;font-size:clamp(14px,1.4vw,17px);margin:22px 0 0;max-width:51ch}
+.nov-home-return-action{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 23px;min-height:66px;border-radius:17px;background:#f3f5e8;color:#173b2c;font-size:clamp(14px,1.4vw,17px);font-weight:830;letter-spacing:-.025em;border:1px solid #d4e5ce;box-shadow:0 18px 43px rgba(5,20,13,.27);transition:transform .2s,background .2s}
+.nov-home-return-action:hover{transform:translateY(-3px);background:#fffdf0}
+.nov-home-return-action:focus-visible,.nov-home-return-back:focus-visible{outline:3px solid #f2cb91;outline-offset:5px}
+.nov-home-return-action span:last-child{font-size:25px}
+.nov-home-return-aside{display:flex;flex-direction:column;gap:13px}
+.nov-home-return-aside small{font-size:12px;color:#bed5c2;line-height:1.7}
+.nov-home-return-back{align-self:flex-start;color:#d5e4d4;text-decoration:underline;text-underline-offset:6px;min-height:39px;display:inline-flex;align-items:center;font-size:13px;margin-top:9px}
+.nov-home-return-wordmark{display:block;font-size:clamp(22px,2.7vw,38px);font-family:Arial Black,Impact,system-ui,sans-serif;font-weight:950;letter-spacing:-.07em;color:#e3eccd;line-height:1.2;margin-top:16px}
+.nov-home-return-wordmark i{font-style:normal;color:#e6c79a;margin-inline:.12em}
+@media(max-width:800px){.nov-home-return-grid{grid-template-columns:1fr;gap:30px}.nov-home-return-aside{max-width:530px}}
+@media(max-width:540px){.nov-home-return{padding-block:66px}.nov-home-return h2{font-size:clamp(31px,8vw,43px)}.nov-home-return-action{min-height:61px}.nov-home-return p:not(.nov-home-return-kicker){font-size:14px}.nov-home-return-kicker{margin-bottom:19px}}
+@media(prefers-reduced-motion:reduce){.nov-home-return-action{transition:none}.nov-home-return-action:hover{transform:none}}
+
 </style>
 </head>
 <body>
@@ -740,6 +762,21 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
    <noscript><p class="contact-note">자바스크립트가 꺼져 있으면 위 선택 기능은 사용할 수 없습니다. 아래 카카오톡 링크에서 직접 문의할 수 있습니다.</p></noscript>
   </div>
  </div>
+</section>
+<section class="nov-home-return" id="more-weplace" aria-labelledby="nov-home-return-title">
+  <div class="wrap nov-home-return-grid">
+    <div>
+      <p class="nov-home-return-kicker">06 / AFTER THE FIRST LOOK</p>
+      <h2 id="nov-home-return-title">한 화면을 비교했다면,<br><em>이제 매장 전체의 흐름으로.</em></h2>
+      <p>사진을 어떤 순서로 보여줄지, 찾아오는 길을 어떻게 안내할지, 예약 전 질문은 어디서 답할지. Weplace가 실제로 정리하는 일과 작업 과정을 본 홈페이지에서 살펴보세요.</p>
+      <span class="nov-home-return-wordmark" aria-label="RESOLUTE V IT FAST">RESOLUTE <i aria-hidden="true">∨</i> IT FAST.</span>
+    </div>
+    <div class="nov-home-return-aside">
+      <a class="nov-home-return-action" href="/" aria-label="Weplace 본 홈페이지로 이동"><span>Weplace 본 홈페이지 살펴보기</span><span aria-hidden="true">↗</span></a>
+      <small>실제 수행 범위·일정·비용은 매장 상황을 확인한 뒤 안내합니다. 방문이나 문의를 강요하지 않습니다.</small>
+      <a class="nov-home-return-back" href="#first-look">가상 화면 다시 비교하기 ↑</a>
+    </div>
+  </div>
 </section>
 </main>
 <div class="wrap"><footer class="footer"><span>WEPLACE · NOVEMBER FAST R8 / 2026</span><span>가입 없이 보는 가상 화면 비교 · 진단 범위·비용은 담당자 안내 후 결정 · <a href="/" aria-label="Weplace 홈페이지로 돌아가기">Weplace 홈페이지 ↗</a></span></footer></div>
