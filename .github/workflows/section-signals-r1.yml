@@ -19,11 +19,8 @@ jobs:
       - uses: actions/setup-python@v5
         with: 
           python-version: '3.12'
-      - name: Korean font and browser
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
-          python -m pip install playwright==1.56.0
+      - name: Install browser-test Python dependency
+        run: python -m pip install playwright==1.56.0
       - name: Serve static website
         run: |
           python -m http.server 4173 --bind 127.0.0.1 >/tmp/section-qa.log 2>&1 &
