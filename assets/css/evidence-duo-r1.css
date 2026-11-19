@@ -97,3 +97,71 @@
 .wp-evidence-duo .wp-ev-year-details thead{background:#e7eee2}
 .wp-evidence-duo .wp-ev-year-details p{font-size:12px;line-height:1.7;color:#567160;margin:14px 0 0}
 @media(max-width:560px){.wp-evidence-duo .wp-ev-year-details{padding:13px}.wp-evidence-duo .wp-ev-year-details summary{font-size:12px}}
+
+/* PR #36 editorial chart grammar: two scale-accurate bars + one thin connecting line. */
+.wp-evidence-duo .wp-pr36-chart{margin:0;padding:0}
+.wp-evidence-duo .wp-pr36-combo{display:block;width:100%;max-width:520px;height:auto;overflow:visible;margin-inline:auto}
+.wp-evidence-duo .wp-pr36-grid{fill:none;stroke:#244e3640;stroke-width:1}
+.wp-evidence-duo .wp-pr36-axis{font-size:14px;fill:#52715b;font-weight:550}
+.wp-evidence-duo .wp-pr36-bar.is-before{fill:#9bb69b}
+.wp-evidence-duo .wp-pr36-bar.is-after{fill:#50856a}
+.wp-evidence-duo .wp-pr36-line{fill:none;stroke:#c69b60;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.wp-evidence-duo .wp-pr36-dot{fill:#edca90;stroke:#fbfdf7;stroke-width:2.5}
+.wp-evidence-duo .wp-pr36-numbers{font-size:15px;font-weight:850;fill:#285440}
+.wp-evidence-duo .wp-pr36-chart figcaption{margin:0;text-align:center;font-size:11px;line-height:1.8;color:#53715e}
+.wp-evidence-duo .wp-ev-card--sales .wp-pr36-grid{stroke:#d7e9d22a}
+.wp-evidence-duo .wp-ev-card--sales .wp-pr36-axis{fill:#cbdbcd}
+.wp-evidence-duo .wp-ev-card--sales .wp-pr36-bar.is-before{fill:#779a7a}
+.wp-evidence-duo .wp-ev-card--sales .wp-pr36-bar.is-after{fill:#deebbc}
+.wp-evidence-duo .wp-ev-card--sales .wp-pr36-line{stroke:#f1d2a0}
+.wp-evidence-duo .wp-ev-card--sales .wp-pr36-dot{fill:#f2deb2;stroke:#254337}
+.wp-evidence-duo .wp-ev-card--sales .wp-pr36-numbers{fill:#f8f8e9}
+.wp-evidence-duo .wp-ev-card--sales .wp-pr36-chart figcaption{color:#c5d7c6}
+.wp-evidence-duo .wp-ev-year-intro{margin:18px 0 12px!important;color:#4c6a53!important}
+.wp-evidence-duo .wp-ev-year-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0}
+.wp-evidence-duo .wp-ev-year-mini{margin:0;padding:16px;background:#f5f8ee;border:1px solid #d6e2d2;border-radius:13px;min-width:0}
+.wp-evidence-duo .wp-ev-year-mini.is-emphasis{border-color:#5e996b;background:#e7f1df;box-shadow:0 6px 16px #244c3113}
+.wp-evidence-duo .wp-ev-year-mini figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:12px;color:#627765}
+.wp-evidence-duo .wp-ev-year-mini figcaption strong{font-size:16px;color:#2a513c}
+.wp-evidence-duo .wp-ev-year-mini.is-emphasis figcaption span{color:#35714d;font-weight:800}
+.wp-evidence-duo .wp-ev-year-mini svg{width:100%;height:auto;display:block}
+.wp-evidence-duo .wp-ev-year-rule{stroke:#d3dfd1;stroke-width:1;fill:none}
+.wp-evidence-duo .wp-ev-year-axis{font-size:14px;fill:#65796a}
+.wp-evidence-duo .wp-ev-year-line{fill:none;stroke:#90aa91;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.wp-evidence-duo .wp-ev-year-point{fill:#aac3a7;stroke:#f8fbf2;stroke-width:2}
+.wp-evidence-duo .wp-ev-year-value{font-size:13px;fill:#507259;font-weight:750}
+.wp-evidence-duo .wp-ev-year-mini.is-emphasis .wp-ev-year-line{stroke:#377e51;stroke-width:4}
+.wp-evidence-duo .wp-ev-year-mini.is-emphasis .wp-ev-year-point{fill:#397f51}
+.wp-evidence-duo .wp-ev-year-mini.is-emphasis .wp-ev-year-value{fill:#235d3a}
+@media(max-width:580px){.wp-evidence-duo .wp-ev-year-grid{grid-template-columns:1fr}.wp-evidence-duo .wp-ev-year-mini{padding:12px}.wp-evidence-duo .wp-pr36-numbers{font-size:15px}}
+
+/* Same photo / different first look. A visual arrangement proposal, not a proven intervention. */
+.wp-luwei-inline{background:linear-gradient(125deg,#e7eee3,#f5f7ef);padding:clamp(60px,7vw,92px) 0;overflow:hidden;border-top:1px solid #d6e2d3}
+.wp-luwei-inline .wp-lw-wrap{width:min(1160px,100%);margin:auto;padding-inline:clamp(20px,5vw,64px)}
+.wp-luwei-inline .wp-lw-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.6fr);align-items:end;gap:35px;margin-bottom:30px}
+.wp-luwei-inline .wp-lw-eyebrow{color:#396b4e;font-size:11px;font-weight:800;letter-spacing:.15em;margin:0 0 14px}
+.wp-luwei-inline h2{font-size:clamp(30px,3.8vw,51px);line-height:1.28;letter-spacing:-.06em;margin:0;color:#1c4330;word-break:keep-all}
+.wp-luwei-inline h2 em{font-style:normal;color:#377957}
+.wp-luwei-inline .wp-lw-head>p{color:#526c58;line-height:1.84;font-size:14px;margin:0}
+.wp-luwei-inline .wp-lw-screen{position:relative;isolation:isolate;min-height:clamp(350px,53vw,560px);background:#163629;border-radius:23px;overflow:hidden;box-shadow:0 24px 55px #224e321f}
+.wp-luwei-inline .wp-lw-frame{position:absolute;inset:0;margin:0;opacity:0;visibility:hidden;transition:opacity .48s ease,visibility .48s ease}
+.wp-luwei-inline .wp-lw-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.wp-luwei-inline .wp-lw-frame--before img{filter:saturate(.78);object-position:center 43%}
+.wp-luwei-inline .wp-lw-frame:after{content:"";position:absolute;inset:38% 0 0;background:linear-gradient(transparent,#0a241bca);pointer-events:none}
+.wp-luwei-inline .wp-lw-frame figcaption{position:absolute;z-index:1;bottom:clamp(24px,3vw,42px);left:clamp(22px,4vw,48px);right:20px;color:#f9f8ed;display:flex;flex-direction:column;gap:7px}
+.wp-luwei-inline .wp-lw-frame figcaption small{font-size:11px;font-weight:800;letter-spacing:.12em;color:#cce0ca}
+.wp-luwei-inline .wp-lw-frame figcaption strong{font-size:clamp(23px,3vw,43px);line-height:1.27;letter-spacing:-.055em}
+.wp-luwei-inline .wp-lw-bridge{position:absolute;inset:0;opacity:0;visibility:hidden;background:radial-gradient(circle at 80% 0%,#3d704e,#12392a 72%);display:flex;align-items:center;padding:clamp(30px,7vw,95px);color:#f9fbf1;font-size:clamp(26px,4.5vw,56px);font-weight:850;line-height:1.36;letter-spacing:-.055em}
+.wp-luwei-inline .wp-lw-screen[data-phase="before"] .wp-lw-frame--before,
+.wp-luwei-inline .wp-lw-screen[data-phase="bridge"] .wp-lw-bridge,
+.wp-luwei-inline .wp-lw-screen[data-phase="after"] .wp-lw-frame--after{visibility:visible;opacity:1}
+.wp-luwei-inline .wp-lw-foot{display:flex;align-items:center;justify-content:space-between;gap:15px 24px;flex-wrap:wrap;padding-top:20px}
+.wp-luwei-inline .wp-lw-caption{font-size:12px;color:#4c7057;line-height:1.75;margin:0;max-width:55ch}
+.wp-luwei-inline .wp-lw-actions{display:flex;gap:9px;flex-wrap:wrap}
+.wp-luwei-inline .wp-lw-actions :is(button,a){padding:12px 17px;min-height:44px;border:1px solid #abc7b1;border-radius:99px;background:#fbfdf6;color:#23543b;font:inherit;font-weight:730;font-size:12px;line-height:1.4;cursor:pointer;text-decoration:none}
+.wp-luwei-inline .wp-lw-actions a{background:#204d35;color:#fff9e8;border-color:#204d35}
+.wp-luwei-inline .wp-lw-actions :is(button,a):focus-visible{outline:3px solid #6f9a73;outline-offset:4px}
+.wp-luwei-inline .wp-lw-disclosure{color:#6c826f;font-size:11px;line-height:1.75;margin:15px 0 0}
+@media(max-width:800px){.wp-luwei-inline .wp-lw-head{grid-template-columns:1fr;gap:16px}}
+@media(max-width:580px){.wp-luwei-inline .wp-lw-screen{min-height:400px;border-radius:16px}.wp-luwei-inline .wp-lw-frame figcaption strong{font-size:26px}.wp-luwei-inline .wp-lw-actions{width:100%}.wp-luwei-inline .wp-lw-actions :is(button,a){flex:1;text-align:center}.wp-luwei-inline .wp-lw-head h2{font-size:clamp(29px,8vw,40px)}}
+@media(prefers-reduced-motion:reduce){.wp-luwei-inline .wp-lw-frame,.wp-luwei-inline .wp-lw-bridge{transition:none!important}}
