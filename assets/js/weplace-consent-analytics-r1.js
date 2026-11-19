@@ -2,6 +2,7 @@
 (()=>{'use strict';
 const NEW='G-FVCYL26FTL',OLD='G-H9B5F4HRDS',KEY='weplace_analytics_consent_v1';
 const home=location.pathname==='/'||location.pathname.endsWith('/index.html');
+const isNetlifyPreview=/(^|\\.)netlify\\.app$/.test(location.hostname);
 let choice=null,loaded=false;
 function get(){try{return localStorage.getItem(KEY)}catch(_){return null}}
 function save(v){try{localStorage.setItem(KEY,v)}catch(_){}}
@@ -27,7 +28,7 @@ function track(name,params){
  try{window.gtag('event',name,{...cleanParams(params),send_to:NEW});return true}catch(_){return false}
 }
 function load(){
- if(loaded||choice!=='accepted')return;
+ if(loaded||choice!=='accepted'||isNetlifyPreview)return;
  loaded=true;
  window.dataLayer=window.dataLayer||[];
  window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};
@@ -54,6 +55,7 @@ function init(){
  panel.querySelector('[data-wp-choose="rejected"]')?.addEventListener('click',()=>choose('rejected'));
  document.querySelectorAll('[data-wp-consent-manage]').forEach(btn=>btn.addEventListener('click',show));
  if(choice==='accepted')load();else if(choice===null)show();
+ if(isNetlifyPreview){const msg=document.getElementById('wp-consent-status');if(msg)msg.textContent='검토용 Netlify Preview에서는 실제 GA4 데이터가 전송되지 않습니다.';}
  document.addEventListener('click',e=>{
   const a=e.target.closest?.('a[href]');if(!a)return;
   const href=a.getAttribute('href')||'';
