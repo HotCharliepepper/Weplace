@@ -19,7 +19,7 @@ ck("innerHeight*.5" in source and "box.height*.5" in source,"Viewport section th
 ck("section_view" in analytics and "section_engaged" in analytics,"New GA4 events whitelisted")
 ck("section_id" in analytics and "dwell_bucket" in analytics,"Custom dimension params allowlisted")
 ck("G-FVCYL26FTL" in analytics and "G-H9B5F4HRDS" in analytics,"Existing streams intact")
-ck("isNetlifyPreview" in source and "isNetlifyPreview" in analytics,"Preview traffic excluded")
+ck("const isPreview=" in source and "isNetlifyPreview" in analytics,"Preview traffic excluded")
 for path in ("index.html","november-fast-a-r8.html"):
  txt=(ROOT/path).read_text(encoding="utf-8")
  ck(txt.count("weplace-section-signals-r1.js")==1,path+" installs tracker once")
