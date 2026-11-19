@@ -1,0 +1,65 @@
+/* WEPLACE / HOME × NOVEMBER FAST R1
+   Source: previously supplied Wellness B Naver Place monthly detail inflow.
+   Public release is held until client permission & original admin figures verified.
+   All rules scoped to the unified home and new evidence blocks. */
+.unified-r3 .wp-unified-intro .u-landing-grid{align-items:center}
+.unified-r3 .wp-unified-intro #landing-title{line-height:1.17;letter-spacing:-.072em}
+.unified-r3 .wp-inflow-hero-label{display:block;font-size:clamp(33px,4.1vw,60px);line-height:1.24;color:#1c4332;letter-spacing:-.065em;font-weight:800}
+.unified-r3 .wp-unified-intro .wp-home-intro-accent{display:block;color:#286c4d;font-size:clamp(79px,9.5vw,143px);font-weight:900;line-height:1.07;letter-spacing:-.088em;text-shadow:0 3px 0 #f9fbee,0 20px 38px rgba(28,79,51,.12);white-space:nowrap}
+.unified-r3 .wp-unified-intro .u-landing-lead{max-width:42ch;font-size:clamp(14px,1.5vw,18px);line-height:1.85;color:#3a614a}
+.unified-r3 .wp-unified-intro .u-source{font-size:12px;line-height:1.78;max-width:56ch}
+.unified-r3 .wp-hero-campaign-link{display:inline-block;margin-left:8px;color:#2f664d;text-decoration:underline;text-underline-offset:4px}
+.unified-r3 .wp-home-story.wp-inflow-glance{gap:17px;min-height:440px;justify-content:space-between}
+.unified-r3 .wp-inflow-glance .u-chart-top{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px}
+.unified-r3 .wp-inflow-glance .wp-story-title{font-size:clamp(22px,2.1vw,30px);line-height:1.42}
+.unified-r3 .wp-inflow-rows{display:grid;gap:23px;margin:3px 0 2px}
+.unified-r3 .wp-inflow-row-top{display:flex;align-items:baseline;justify-content:space-between;gap:15px;color:#d6e5d8;font-size:13px;margin-bottom:9px}
+.unified-r3 .wp-inflow-row-top strong{font-size:clamp(23px,2.7vw,32px);font-weight:840;color:#f6f9eb;white-space:nowrap;font-variant-numeric:tabular-nums}
+.unified-r3 .wp-inflow-meter{height:13px;border-radius:99px;background:rgba(229,243,217,.15);overflow:hidden;box-shadow:inset 0 1px 3px #142d2161}
+.unified-r3 .wp-inflow-meter i{display:block;height:100%;border-radius:inherit;background:#9ebea4}
+.unified-r3 .wp-inflow-row.is-current .wp-inflow-meter i{background:linear-gradient(90deg,#c4e4bc,#f1d6a3);box-shadow:0 0 18px #e2dab178}
+.unified-r3 .wp-inflow-caption{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid rgba(213,235,213,.26);padding-top:15px;color:#d7e7d1}
+.unified-r3 .wp-inflow-caption strong{font-size:clamp(17px,1.9vw,22px);font-weight:850;color:#f5dfb1;font-variant-numeric:tabular-nums}
+.unified-r3 .wp-inflow-caption span{font-size:11px;color:#c4d7c9}
+.unified-r3 .wp-inflow-glance .wp-story-note{font-size:11px;line-height:1.6}
+.unified-r3 .wp-inflow-source-link{align-self:flex-start;color:#eff4e7;border-bottom:1px solid #b9d2c1;padding:6px 0;text-decoration:none;font-weight:750;font-size:12.5px;min-height:38px}
+.unified-r3 .wp-inflow-source-link span{margin-left:12px}
+.unified-r3 .wp-inflow-source-link:hover,.unified-r3 .wp-hero-campaign-link:hover{color:#f8ddb4}
+.unified-r3 .wp-inflow-source-link:focus-visible,.unified-r3 .wp-hero-campaign-link:focus-visible{outline:3px solid #a7d4ab;outline-offset:5px}
+
+.unified-r3 .wp-place-evidence{display:grid;grid-template-columns:minmax(0,1.38fr) minmax(0,.62fr);gap:clamp(26px,3.5vw,54px);background:#f3f5ed;border:1px solid #cad9c8;border-left:5px solid #427c5a;border-radius:20px;padding:clamp(26px,4vw,45px);margin:22px 0 44px;scroll-margin-top:92px;box-shadow:0 18px 35px #193d2612}
+.unified-r3 .wp-place-evidence h3{font-size:clamp(23px,2.5vw,37px);line-height:1.48;letter-spacing:-.05em;color:#214434;margin:14px 0 20px;font-weight:850}
+.unified-r3 .wp-place-evidence h3 span{color:#477158}
+.unified-r3 .wp-place-evidence p{font-size:clamp(13px,1.35vw,16px);color:#3e5d47;line-height:1.8;margin:0}
+.unified-r3 .wp-place-evidence-main .rf-text-link{display:inline-flex;align-items:center;min-height:44px;margin-top:22px}
+.unified-r3 .wp-place-evidence-side{border-left:1px solid #bbd1c1;padding-left:26px;align-self:center}
+.unified-r3 .wp-place-evidence-side strong{font-weight:850;color:#315e46;font-size:15px}
+.unified-r3 .wp-place-evidence-side p{font-size:13.5px;margin-top:12px}
+.unified-r3 .wp-place-evidence-side small{display:block;margin-top:14px;font-size:11.5px;line-height:1.7;color:#667c6d}
+.unified-r3 .he-footer-nav>div a{min-height:40px;display:flex;align-items:center;padding-block:6px;text-underline-offset:4px}
+.unified-r3 .he-footer-nav>div a[href="#place-evidence"]{color:#d9e3ba;font-weight:760}
+.unified-r3 .he-footer-nav>div a[href="/november-fast/"]{text-decoration:underline;text-decoration-color:rgba(219,238,215,.4)}
+
+@media(max-width:1000px){
+ .unified-r3 .wp-inflow-hero-label{font-size:clamp(28px,3.6vw,46px)}
+ .unified-r3 .wp-unified-intro .wp-home-intro-accent{font-size:clamp(73px,9vw,111px)}
+}
+@media(max-width:800px){
+ .unified-r3 .wp-place-evidence{grid-template-columns:1fr;gap:22px}
+ .unified-r3 .wp-place-evidence-side{border-left:none;border-top:1px solid #bbd1c1;padding:20px 0 0}
+}
+@media(max-width:540px){
+ .unified-r3 .wp-unified-intro .u-landing-grid{padding-block:44px 30px}
+ .unified-r3 .wp-inflow-hero-label{font-size:clamp(31px,8vw,40px)}
+ .unified-r3 .wp-unified-intro .wp-home-intro-accent{font-size:clamp(71px,18vw,95px)}
+ .unified-r3 .wp-unified-intro .u-landing-lead{font-size:14px;line-height:1.7}
+ .unified-r3 .wp-home-story.wp-inflow-glance{padding:24px 20px;min-height:400px}
+ .unified-r3 .wp-inflow-glance .wp-story-title{font-size:22px}
+ .unified-r3 .wp-inflow-row-top strong{font-size:24px}
+ .unified-r3 .wp-inflow-caption strong{font-size:18px}
+ .unified-r3 .wp-place-evidence{margin:12px 0 32px;padding:24px 20px}
+ .unified-r3 .wp-place-evidence h3{font-size:24px}
+ .unified-r3 .wp-hero-campaign-link{margin:5px 0 0}
+ .unified-r3 .he-footer-nav>div a{min-height:38px}
+}
+@media(prefers-reduced-motion:reduce){.unified-r3 .wp-inflow-glance *{transition:none!important;animation:none!important}}
