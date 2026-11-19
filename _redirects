@@ -5,5 +5,5 @@
 /api/weplace-industries  https://weplace-flow-mino-review.netlify.app/.netlify/functions/public-industries  200!
 /client  https://flow.withweplace.kr/client  302
 /client/*  https://flow.withweplace.kr/client/:splat  302
-/november-fast  /november-fast-a-r7.html  200
-/november-fast/  /november-fast-a-r7.html  200
+/november-fast  /november-fast-a-r8.html  200
+/november-fast/  /november-fast-a-r8.html  200
