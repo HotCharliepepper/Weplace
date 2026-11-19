@@ -2,7 +2,7 @@
 (()=>{'use strict';
 const NEW='G-FVCYL26FTL',OLD='G-H9B5F4HRDS',KEY='weplace_analytics_consent_v1';
 const home=location.pathname==='/'||location.pathname.endsWith('/index.html');
-const isNetlifyPreview=/(^|\\.)netlify\\.app$/.test(location.hostname);
+const isNetlifyPreview=/(^|\.)netlify\.app$/.test(location.hostname);
 let choice=null,loaded=false;
 function get(){try{return localStorage.getItem(KEY)}catch(_){return null}}
 function save(v){try{localStorage.setItem(KEY,v)}catch(_){}}
@@ -19,7 +19,7 @@ function cleanParams(data){
 }
 function cleanUrl(){
  const u=new URLSearchParams(location.search),q=new URLSearchParams();
- const allowed={utm_source:['kakao','naver','google'],utm_medium:['message','cpc','social'],utm_campaign:['bf_20261119','bf_20261125'],utm_content:['a_contrarian','a_r8','a_r8_reversal']};
+ const allowed={utm_source:['kakao','naver','google','chatgpt.com','chatgpt'],utm_medium:['message','cpc','social'],utm_campaign:['bf_20261119','bf_20261125'],utm_content:['a_contrarian','a_r8','a_r8_reversal']};
  Object.entries(allowed).forEach(([k,values])=>{const v=u.get(k);if(v&&values.includes(v))q.set(k,v)});
  return location.origin+location.pathname+(q.size?'?'+q.toString():'');
 }

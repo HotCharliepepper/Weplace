@@ -14,7 +14,7 @@ checks=[]; faults=[]; bad_http=[]
 def ok(value,description):
     if not value: raise AssertionError(description)
     checks.append(description)
-ok("+168%" not in home and "2,350회" not in home,"No unverified client metric promoted")
+ok("웰니스 B" in home and "음식점 A" in home and "2,350회" in home and "2,100" in home and "외부 공개 권한은 최종 대조가 필요합니다" in home,"Requested observed data remains separated and source limits are visible")
 ok('href="#experience"' in home and 'id="fast"' in home,"Original public homepage comparison retained")
 ok(home.count('id="landing-title"')==1,"One home H1")
 ok(home.count('class="wp-type-question"')==2,"Home H1 uses two semantic break groups")
