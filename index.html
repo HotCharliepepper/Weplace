@@ -56,8 +56,8 @@
 <link rel="stylesheet" href="/assets/css/luwei-inline-adapter-r1.css">
 <script defer src="/assets/js/luwei-dwell-r1.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://withweplace.kr/#organization","name":"(주)위플레이스마케팅","alternateName":"Weplace","url":"https://withweplace.kr/","email":"weplace25@gmail.com","telephone":"+82-10-6461-6594","address":{"@type":"PostalAddress","streetAddress":"선유로9길 10, 812호","addressLocality":"영등포구","addressRegion":"서울","addressCountry":"KR"}},{"@type":"WebSite","@id":"https://withweplace.kr/#website","name":"Weplace","url":"https://withweplace.kr/","inLanguage":"ko-KR","publisher":{"@id":"https://withweplace.kr/#organization"}},{"@type":"WebPage","@id":"https://withweplace.kr/#webpage","url":"https://withweplace.kr/","name":"Weplace — 손님이 움직이는 이유를, 화면에 담습니다","inLanguage":"ko-KR","isPartOf":{"@id":"https://withweplace.kr/#website"},"about":{"@id":"https://withweplace.kr/#organization"}},{"@type":"Service","@id":"https://withweplace.kr/#local-surface-service","name":"로컬 비즈니스 정보·고객경험 정리","serviceType":"로컬 비즈니스 홈페이지·지도·사진·리뷰·검색 정보 및 방문 전 고객경험 정리","provider":{"@id":"https://withweplace.kr/#organization"},"areaServed":{"@type":"Country","name":"대한민국"},"description":"고객이 매장을 발견하고 확인하고 방문하기까지 필요한 정보가 홈페이지, 네이버, 구글 및 여러 채널에서 일관되도록 정리하는 서비스."}]}</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H9B5F4HRDS"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-H9B5F4HRDS');</script>
+<link rel="stylesheet" href="/assets/css/weplace-consent-analytics-r1.css">
+<script defer src="/assets/js/weplace-consent-analytics-r1.js"></script>
 <script defer src="/assets/js/pr36-combo-r1.js"></script>
 </head>
 <body class="rv-vision unified-r3 swd-study tdp-study evi-study he-lab he-polish he-polish-r3">
@@ -295,9 +295,16 @@
       </nav>
     </div>
     <div class="he-footer-bottom"><span>WEPLACE / (주)위플레이스마케팅 · 대표 박규민 · 서울 영등포구 선유로9길 10, 812호 · weplace25@gmail.com</span>
-      <a href="#top">맨 위로 ↑</a>
+      <button type="button" class="wp-consent-manage" data-wp-consent-manage>방문 분석 설정</button><a href="#top">맨 위로 ↑</a>
     </div>
   </div>
 </footer>
 <dialog id="request-dialog" class="rf-dialog" aria-labelledby="request-title" aria-describedby="request-description"><div class="rf-dialog-heading"><span class="rf-eyebrow">FIRST LOOK / 진단 문의</span><button id="close-dialog" type="button" aria-label="문의 준비 닫기">×</button></div><h2 id="request-title">어느 화면부터<br>함께 볼까요?</h2><p id="request-description">매장명과 지역을 적으면 문의할 내용을 준비할 수 있습니다. 자동으로 전송되거나 접수되지 않습니다.</p><form id="request-form" autocomplete="off"><fieldset id="request-fields" disabled><legend class="u-sr-only">문의할 내용 준비</legend><div class="rf-form-fields"><label>매장명<input id="store" name="store" maxlength="60" placeholder="예: 우리식당" autocomplete="organization" required></label><label>지역<input id="region" name="region" maxlength="60" placeholder="예: 서울 영등포" required></label></div><label>먼저 보고 싶은 부분<select id="interest" name="interest"><option value="photo">사진</option><option value="route">찾아오는 길</option><option value="booking">예약</option></select></label><button type="submit" class="rf-button primary">문의할 내용 만들기 <span aria-hidden="true">↓</span></button></fieldset></form><div id="request-result" hidden><label for="request-text">직접 전달할 문의 내용</label><textarea id="request-text" rows="8" readonly></textarea><div class="rf-actions"><button type="button" class="rf-button primary" id="copy-request">내용 복사</button><a class="rf-text-link" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오 채널 열기 ↗</a></div></div><p id="request-status" role="status"></p><p class="rf-dialog-note">내용 복사는 발송이 아닙니다. 카카오 채널에서 직접 보내셔야 문의가 전달됩니다.<br>담당자와 진단 범위·가능한 일정을 확인해 주세요.</p></dialog>
+<section id="wp-consent-panel" class="wp-consent-panel" aria-labelledby="wp-consent-heading" hidden>
+  <h2 id="wp-consent-heading">방문 분석 사용 여부를 선택해 주세요.</h2>
+  <p>사진·길·예약 화면을 어떻게 살펴보는지 이해하기 위해 Google Analytics(GA4)를 사용합니다. 동의한 경우에만 페이지 방문과 선택형 이벤트를 측정합니다. 매장명·문의 내용은 측정 이벤트에 넣지 않습니다.</p>
+  <small class="wp-consent-info">분석은 선택 사항이며 거부해도 페이지와 문의 기능을 사용할 수 있습니다. <a href="/analytics-info/" target="_blank" rel="noopener">방문 분석 안내 보기</a></small>
+  <div class="wp-consent-actions"><button type="button" data-wp-choose="rejected">사용하지 않음</button><button type="button" data-wp-choose="accepted">분석 동의</button></div>
+  <p id="wp-consent-status" role="status" aria-live="polite">동의하지 않으면 분석 태그는 로딩되지 않습니다.</p>
+</section>
 </body></html>
