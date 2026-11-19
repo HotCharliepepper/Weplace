@@ -63,7 +63,7 @@ with sync_playwright() as pw:
  ok(conf==["G-H9B5F4HRDS","G-FVCYL26FTL"],"Homepage both legacy and requested GA4")
  home.evaluate("window.wpAnalytics.track('evidence_year_select',{year_selected:'2025',store_name:'PRIVATE'})")
  ev=home.evaluate("Array.from(window.dataLayer||[],a=>Array.from(a)).filter(v=>v[0]==='event').slice(-1)[0]")
- ok(ev[1]=="evidence_year_select" and ev[2].year_selected=="2025" and "store_name" not in ev[2],"Event whitelist strips unapproved store data")
+ ok(ev[1]=="evidence_year_select" and ev[2]["year_selected"]=="2025" and "store_name" not in ev[2],"Event whitelist strips unapproved store data")
  campaign=ctx.new_page();campaign.goto(BASE+"/november-fast-a-r8.html",wait_until="domcontentloaded")
  conf2=campaign.evaluate("Array.from(window.dataLayer||[],a=>Array.from(a)).filter(v=>v[0]==='config').map(v=>v[1])")
  ok(conf2==["G-FVCYL26FTL"],"Campaign config only new stream")
