@@ -18,7 +18,8 @@ for filename in ("index.html","november-fast-a-r8.html"):
  ok("weplace-consent-analytics-r1.js" in html,f"{filename} consent loader inserted")
  ok(html.count('id="wp-consent-panel"')==1,f"{filename} exactly one consent panel")
  ok("G-FVCYL26FTL" not in html,f"{filename} GA4 not inserted as duplicate inline snippet")
- ok('id="observed-records"' not in html and "luwei-scene" not in html,f"{filename} contains no unapproved metrics/photos")
+ ok('id="observed-records"' in html and 'id="luwei-scene"' in html,f"{filename} contains the reviewed evidence and LuWei scene")
+ ok(all(label in html for label in ["웰니스 B","음식점 A","외부 공개 권한은 최종 대조가 필요합니다","단독으로 만들었다고 단정할 수 없습니다"]),f"{filename} keeps source-separated evidence and no-causality disclaimer")
 ok((ROOT/"analytics-info/index.html").exists(),"Analytics info page present")
 with sync_playwright() as pw:
  b=pw.chromium.launch(channel="chrome",headless=True)
