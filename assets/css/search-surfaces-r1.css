@@ -62,3 +62,10 @@
 @media(max-width:960px){.wp-surface-grid{grid-template-columns:1fr}.wp-surface-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.wp-surface-stage{min-height:530px}.wp-surface-head{grid-template-columns:1fr;gap:16px}}
 @media(max-width:600px){.wp-surface-section{padding-block:62px}.wp-surface-controls{grid-template-columns:1fr 1fr;gap:8px}.wp-surface-controls button{min-height:86px;padding:12px 11px;border-radius:12px;align-items:flex-start;gap:7px}.wp-surface-controls button .number{font-size:10px}.wp-surface-controls button .tabcopy strong{font-size:13px}.wp-surface-controls button .tabcopy small{font-size:10px}.wp-surface-stage{min-height:535px;border-radius:17px}.wp-surface-panel{min-height:535px}.wp-surface-panel-content{padding:22px}.wp-surface-panel-top{padding:16px 22px}.wp-surface-panel-content h3{font-size:clamp(27px,7vw,34px)}.wp-surface-browser-body--split{grid-template-columns:1fr}.wp-surface-thumbnail{min-height:155px}.wp-surface-browser-body{padding:18px}.wp-surface-browser-body--split{gap:14px}.wp-surface-foot{align-items:flex-start;gap:12px}.wp-surface-foot a{width:100%}.wp-surface-bridge .wp-bridge-inner{grid-template-columns:1fr;gap:18px}.wp-surface-bridge a{justify-content:center}}
 @media(prefers-reduced-motion:reduce){.wp-surface-section *{transition:none!important;animation:none!important}.wp-surface-controls button:hover:not([aria-selected=true]){transform:none}}
+
+/* Separate external Mashcore brand from the fictional Weplace-produced HTML demo. */
+.wp-surface-panel .wp-surface-links{display:flex;gap:9px;flex-wrap:wrap;align-items:center;max-width:100%}
+.wp-surface-panel .wp-surface-links a{max-width:100%;text-align:center;white-space:normal}
+.wp-surface-panel .wp-surface-links .wp-surface-secondary{background:transparent;color:#f0f4de;border:1px solid #bfd7be66}
+.wp-surface-panel .wp-surface-links .wp-surface-secondary:hover{background:#2b5940;color:#fffdf5}
+@media(max-width:600px){.wp-surface-panel .wp-surface-links{width:100%;flex-direction:column;align-items:stretch}.wp-surface-panel .wp-surface-links a{width:100%}}
