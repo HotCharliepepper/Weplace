@@ -2,7 +2,7 @@
 (()=>{'use strict';
 const NEW='G-FVCYL26FTL',OLD='G-H9B5F4HRDS',KEY='weplace_analytics_consent_v1';
 const home=location.pathname==='/'||location.pathname.endsWith('/index.html');
-const isNetlifyPreview=/(^|\\.)netlify\\.app$/.test(location.hostname);
+const isNetlifyPreview=/(^|\.)netlify\.app$/.test(location.hostname);
 let choice=null,loaded=false;
 function get(){try{return localStorage.getItem(KEY)}catch(_){return null}}
 function save(v){try{localStorage.setItem(KEY,v)}catch(_){}}
