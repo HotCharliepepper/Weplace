@@ -514,6 +514,26 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
 @media(max-width:540px){.nov-home-return{padding-block:66px}.nov-home-return h2{font-size:clamp(31px,8vw,43px)}.nov-home-return-action{min-height:61px}.nov-home-return p:not(.nov-home-return-kicker){font-size:14px}.nov-home-return-kicker{margin-bottom:19px}}
 @media(prefers-reduced-motion:reduce){.nov-home-return-action{transition:none}.nov-home-return-action:hover{transform:none}}
 
+
+/* R2 editorial line-breaking and type scale; independent of global marketing layouts. */
+.nov-home-return h2{max-width:15ch;line-height:1.32;text-wrap:balance;overflow-wrap:normal;word-break:keep-all}
+.nov-home-return-line{display:block}
+.nov-home-return h2 .nov-home-return-line:last-child{margin-top:.15em}
+.nov-home-return-grid>div:first-child{min-width:0}
+.nov-home-return p:not(.nov-home-return-kicker){max-width:41ch;text-wrap:pretty;margin-top:16px}
+.nov-home-return-wordmark{display:flex;align-items:baseline;gap:.22em;flex-wrap:wrap;max-width:100%;line-height:1.28;font-size:clamp(18px,2.3vw,32px);letter-spacing:-.035em;margin-top:27px}
+.nov-home-return-wordmark i{margin:0;color:#edcaa1;font-size:.92em}
+.nov-home-return-action{width:100%;line-height:1.48;text-wrap:balance}
+.nov-home-return-action span:first-child{min-width:0}
+.nov-home-return-action span:last-child{flex:none}
+@media(max-width:800px){.nov-home-return h2{max-width:19ch}}
+@media(max-width:540px){
+  .nov-home-return h2{font-size:clamp(30px,8vw,39px);letter-spacing:-.055em;line-height:1.39;max-width:18ch}
+  .nov-home-return-line{display:block}
+  .nov-home-return-wordmark{font-size:clamp(18px,5vw,25px);gap:.16em;letter-spacing:-.045em}
+  .nov-home-return-action{font-size:14px;padding-inline:19px}
+}
+@media(max-width:350px){.nov-home-return h2{font-size:29px}.nov-home-return-action{padding:16px;font-size:13px}}
 </style>
 </head>
 <body>
@@ -767,12 +787,12 @@ html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-f
   <div class="wrap nov-home-return-grid">
     <div>
       <p class="nov-home-return-kicker">06 / AFTER THE FIRST LOOK</p>
-      <h2 id="nov-home-return-title">한 화면을 비교했다면,<br><em>이제 매장 전체의 흐름으로.</em></h2>
-      <p>사진을 어떤 순서로 보여줄지, 찾아오는 길을 어떻게 안내할지, 예약 전 질문은 어디서 답할지. Weplace가 실제로 정리하는 일과 작업 과정을 본 홈페이지에서 살펴보세요.</p>
-      <span class="nov-home-return-wordmark" aria-label="RESOLUTE V IT FAST">RESOLUTE <i aria-hidden="true">∨</i> IT FAST.</span>
+      <h2 id="nov-home-return-title"><span class="nov-home-return-line">한 화면을 비교했다면,</span><em class="nov-home-return-line">이제 매장 전체의 흐름으로.</em></h2>
+      <p>사진은 어떤 순서로 보여줄까요?<br>찾아오는 길과 예약 안내는 충분할까요?</p><p>Weplace가 매장의 정보와 작업 과정을 어떻게 정리하는지, 본 홈페이지에서 이어서 살펴보세요.</p>
+      <span class="nov-home-return-wordmark" aria-label="RESOLUTE V IT FAST."><span>RESOLUTE</span><i aria-hidden="true">∨</i><span>IT FAST.</span></span>
     </div>
     <div class="nov-home-return-aside">
-      <a class="nov-home-return-action" href="/" aria-label="Weplace 본 홈페이지로 이동"><span>Weplace 본 홈페이지 살펴보기</span><span aria-hidden="true">↗</span></a>
+      <a class="nov-home-return-action" href="/" aria-label="Weplace 본 홈페이지로 이동"><span>Weplace 홈페이지에서 이어 보기</span><span aria-hidden="true">↗</span></a>
       <small>실제 수행 범위·일정·비용은 매장 상황을 확인한 뒤 안내합니다. 방문이나 문의를 강요하지 않습니다.</small>
       <a class="nov-home-return-back" href="#first-look">가상 화면 다시 비교하기 ↑</a>
     </div>
