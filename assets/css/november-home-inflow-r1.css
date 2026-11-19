@@ -63,3 +63,34 @@
  .unified-r3 .he-footer-nav>div a{min-height:38px}
 }
 @media(prefers-reduced-motion:reduce){.unified-r3 .wp-inflow-glance *{transition:none!important;animation:none!important}}
+
+/* R2 typography: deliberate H1 line groups, clear bar figures, calm footer rhythm. */
+.unified-r3 .wp-inflow-hero-label{max-width:13ch;text-wrap:balance}
+.unified-r3 .wp-hero-line{display:inline-block}
+.unified-r3 .wp-unified-intro .wp-home-intro-accent{line-height:1.05;letter-spacing:-.075em;font-variant-numeric:tabular-nums}
+.unified-r3 .wp-unified-intro .u-landing-lead{word-break:keep-all;text-wrap:pretty}
+.unified-r3 .wp-lead-first,.unified-r3 .wp-lead-second{display:block}
+.unified-r3 .wp-lead-first{font-weight:600;color:#28533e}
+.unified-r3 .wp-lead-first strong{color:#245f45;font-weight:850;font-variant-numeric:tabular-nums}
+.unified-r3 .wp-lead-second{margin-top:.42em}
+.unified-r3 .wp-inflow-glance .wp-story-title span,.unified-r3 .wp-inflow-glance .wp-story-title strong{display:block;word-break:keep-all;text-wrap:balance}
+.unified-r3 .wp-inflow-caption strong span{color:#91a88d;padding-inline:4px}
+.unified-r3 .wp-inflow-row-top{line-height:1.4}
+.unified-r3 .wp-place-evidence h3{line-height:1.4;text-wrap:balance}
+.unified-r3 .wp-evidence-statement,.unified-r3 .wp-evidence-question{display:block}
+.unified-r3 .wp-evidence-question{margin-top:.45em;font-size:.82em;line-height:1.52}
+.unified-r3 .he-footer-nav{column-gap:clamp(22px,5vw,60px);row-gap:15px}
+.unified-r3 .he-footer-nav>div{min-width:0}
+.unified-r3 .he-footer-nav>div strong{letter-spacing:.12em}
+.unified-r3 .he-footer-nav>div a{line-height:1.5;word-break:keep-all}
+@media(max-width:540px){
+ .unified-r3 .wp-inflow-hero-label{max-width:14ch;line-height:1.27;font-size:clamp(27px,7.5vw,39px)}
+ .unified-r3 .wp-unified-intro .wp-home-intro-accent{font-size:clamp(67px,17.2vw,92px)}
+ .unified-r3 .wp-inflow-glance .wp-story-title{font-size:clamp(20px,5.9vw,25px)}
+ .unified-r3 .wp-inflow-caption strong{font-size:clamp(15px,4.7vw,19px)}
+ .unified-r3 .wp-place-evidence h3{font-size:clamp(23px,6.2vw,28px)}
+ .unified-r3 .wp-desktop-break{display:none}
+ .unified-r3 .wp-unified-intro .rf-actions{gap:12px}
+ .unified-r3 .wp-unified-intro .rf-actions .rf-button{white-space:normal;text-align:center;line-height:1.45;min-height:50px}
+}
+@media(max-width:340px){.unified-r3 .wp-unified-intro .wp-home-intro-accent{font-size:62px}}
