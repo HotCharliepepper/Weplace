@@ -97,3 +97,9 @@
  .wp-fl-bridge .wp-fl-option,.wp-fl-bridge .wp-fl-action{transition:none}
  .wp-fl-bridge .wp-fl-option:hover:not(:disabled){transform:none}
 }
+
+/* Existing R2.3 film handoff. No forced scroll or automatic video playback. */
+.wp-owner-promise .wp-fl-nudge{width:100%;max-width:410px;text-align:center;margin:15px auto 0;font-size:13px;line-height:1.6}
+.wp-owner-promise .wp-fl-nudge a{display:inline-flex;align-items:center;justify-content:center;gap:8px;color:#d7e7d0;text-decoration:none;border-bottom:1px solid rgba(215,231,208,.52);padding:8px 0;min-height:44px}
+.wp-owner-promise .wp-fl-nudge a:hover{color:#fff;border-bottom-color:#fff}
+.wp-owner-promise .wp-fl-nudge-ready a{color:#fff;border-bottom-color:#d0e8c5}
