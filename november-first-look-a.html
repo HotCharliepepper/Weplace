@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#e9eee6">
+<title>WEPLACE — Black Friday First Look A | Campaign Preview</title>
+<meta name="description" content="할인하기 전에 손님이 보는 매장 정보를 직접 비교해 보는 인터랙티브 화면 점검 예시입니다.">
+<style>
+:root{color-scheme:light;--ink:#234432;--dark:#1e3c2c;--sage:#e7eee2;--sage2:#dbe7d5;--line:#c1cfc0;--cream:#f8f9ef;--warm:#b66b5d;--muted:#526954}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:25px}body{margin:0;background:var(--sage);color:var(--ink);font-family:"Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;letter-spacing:-.035em}
+a,button{font:inherit;color:inherit}a{text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid #4b8c60;outline-offset:4px}
+.wrap{width:min(1210px,100%);margin:auto;padding-inline:clamp(21px,5vw,75px)}
+.skip{position:absolute;left:-9999px;top:5px}.skip:focus{left:15px;background:#fff;padding:12px;z-index:20}
+.header{min-height:91px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #b5c8b6;gap:25px}.brand{font-size:23px;font-weight:850;letter-spacing:-.07em}.brand b{color:#6f9b70}.edition{font-size:11px;letter-spacing:.12em;color:#637d65;font-weight:750}
+.hero{min-height:min(720px,80svh);padding-block:clamp(78px,12vh,135px) 85px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(220px,.52fr);align-items:end;gap:10%}
+.overline{font-size:11px;letter-spacing:.16em;color:#56765e;font-weight:760;margin:0 0 24px}.hero h1{font-size:clamp(43px,5.6vw,78px);line-height:1.19;letter-spacing:-.068em;margin:0;font-weight:820;word-break:keep-all}
+.hero h1 em{font-style:normal;position:relative;white-space:nowrap;text-shadow:1px -1px #fff,-3px 7px 22px #b7655840}
+.hero .lead{font-size:clamp(16px,1.6vw,20px);line-height:1.85;color:#4c6551;margin:28px 0 31px;max-width:38ch}
+.hero-link{display:inline-flex;align-items:center;justify-content:space-between;min-width:min(330px,100%);gap:26px;border-bottom:1px solid #476c52;padding:12px 0 15px;font-weight:740;font-size:15px}.hero-link span{font-size:24px}
+.aside{border-top:1px solid #90a993;padding-top:23px}.aside .tag{font-size:10px;letter-spacing:.12em;color:#59735d}.aside p{font-size:clamp(18px,1.8vw,24px);line-height:1.62;letter-spacing:-.042em;font-weight:630}.aside small{font-size:12px;color:#617a66;line-height:1.8;display:block}
+.section{background:#f6f8f1;border-top:1px solid #cedccc;padding-block:clamp(77px,8vw,115px)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:55px;margin-bottom:34px}.section-head h2{margin:0;font-size:clamp(34px,4vw,55px);letter-spacing:-.06em;line-height:1.2}.section-head p{color:#59715f;max-width:30ch;font-size:14px;line-height:1.85}
+.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.choice{display:flex;justify-content:space-between;align-items:center;text-align:left;padding:20px 20px;min-height:80px;border:1px solid #bdccbb;border-radius:12px;background:#f5f7ee;color:#526f56;font-size:clamp(14px,1.4vw,18px);cursor:pointer;transition:background .18s,border-color .18s}.choice .num{font-size:10px;letter-spacing:.1em;align-self:flex-start;color:#809780}.choice[aria-pressed="true"]{background:#dfead1;border-color:#668b68;color:#1d472e;box-shadow:0 8px 22px #244a3110}.choice:hover{border-color:#6f9571}
+.stage{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:0;margin-top:21px;border-radius:17px;border:1px solid #bdd0bb;overflow:hidden;background:#e2e9dd;min-height:372px}
+.stage-inner{padding:clamp(26px,3.5vw,49px);display:flex;flex-direction:column;justify-content:space-between;gap:26px}
+.stage-inner.before{background:#e3e8dc}.stage-inner.after{background:#d8e8d5}
+.stage-kicker{font-size:11px;letter-spacing:.12em;font-weight:750;color:#637a66}.stage-label{font-size:12px;color:#68846a;margin-top:12px}.stage h3{font-size:clamp(28px,3vw,43px);line-height:1.2;margin:17px 0 12px;letter-spacing:-.055em;word-break:keep-all}
+.stage p{font-size:14px;line-height:1.8;color:#4f6755;margin:0;max-width:38ch}
+.stage-visual{padding:clamp(20px,3vw,42px);background:#2a4b38;display:flex;flex-direction:column;justify-content:center;gap:15px;min-width:0}
+.mockup{padding:21px;border-radius:12px;background:#f3f6e9;box-shadow:0 13px 37px #10291a35;min-height:203px;display:flex;flex-direction:column;gap:12px}
+.mockup .mock-top{font-size:10px;letter-spacing:.09em;color:#708274;border-bottom:1px solid #cbd8c8;padding-bottom:11px;display:flex;justify-content:space-between}
+.mockup .mock-title{font-size:clamp(16px,1.8vw,22px);color:#2a4c35;font-weight:720;line-height:1.42}
+.mockup .mock-extra{font-size:12px;color:#647566;line-height:1.75}.mockup[data-mode="before"] .mock-extra{color:#8a897b}
+.mockup .mock-cta{font-size:11px;color:#fff;background:#31533d;display:inline-block;padding:9px 13px;border-radius:7px;align-self:flex-start;margin-top:auto}
+.mode-switch{display:flex;gap:9px;align-items:center}.mode-switch button{flex:1;min-height:44px;border:1px solid #8eaa94;color:#e1eee0;background:transparent;border-radius:100px;font-size:12px;cursor:pointer}.mode-switch button[aria-pressed="true"]{color:#22442e;background:#e4f0d6;border-color:#e4f0d6;font-weight:760}
+.answer{font-size:12px;color:#afc4b2;line-height:1.7;margin-top:3px}
+.lower{background:#24432f;color:#ecf2e8;padding-block:clamp(75px,8.5vw,120px)}.lower-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(35px,8vw,120px);align-items:end}
+.lower h2{font-size:clamp(36px,5vw,72px);line-height:1.17;margin:0;letter-spacing:-.064em}.lower p{color:#c6d9c6;font-size:14px;line-height:1.9}.lower .overline{color:#afcbae}
+.action{display:block;border-radius:10px;background:#e4f2ce;color:#1d3d2a;padding:20px 23px;font-weight:750;display:flex;justify-content:space-between;gap:14px;align-items:center;transition:background .18s}.action:hover{background:#f2fae2}.action.alt{background:transparent;border:1px solid #86a28a;color:#ecf2e8;font-weight:500;margin-top:10px;padding:17px 20px}
+.fine{font-size:11px!important;color:#b2c9b4!important;line-height:1.85!important;margin-top:19px}
+.footer{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap;padding-block:36px;font-size:11px;color:#66826b}
+@media(max-width:870px){.hero{grid-template-columns:1fr;min-height:unset;gap:40px}.aside{max-width:650px}.stage,.lower-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:18px}.choices{gap:8px}.stage-visual{min-height:325px}}
+@media(max-width:540px){.header{min-height:74px}.hero{padding-block:67px 74px}.hero h1{font-size:clamp(41px,10.7vw,56px)}.hero .lead{font-size:16px}.choices{grid-template-columns:1fr}.choice{min-height:59px;padding:14px 17px}.section{padding-block:70px}.section-head h2{font-size:35px}.stage-inner{padding:26px 22px}.stage-visual{padding:25px 21px}.mockup{min-height:189px}.lower{padding-block:70px}.lower h2{font-size:clamp(39px,10vw,51px)}.footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+.action:is(button){width:100%;border:0;cursor:pointer;text-align:left;font:inherit}
+.contact{background:#e8eee4;padding-block:clamp(82px,8vw,126px);border-top:1px solid #b7c7b9}
+.contact-grid{display:grid;grid-template-columns:.96fr 1.04fr;gap:clamp(32px,6vw,88px);align-items:start}
+.contact h2{margin:0 0 22px;font-size:clamp(38px,4.8vw,66px);line-height:1.22;letter-spacing:-.06em}
+.contact p{line-height:1.85;font-size:15px;color:#4e6654}
+.contact .contact-note{font-size:12px;color:#647b69;max-width:36em;margin-top:30px}
+.contact-panel{background:#f7f8ef;border:1px solid #bccbbb;border-radius:16px;padding:clamp(19px,3vw,34px);box-shadow:0 12px 38px #28452c12}
+.contact-panel label{display:block;font-size:13px;font-weight:720;color:#365641;margin-bottom:12px}
+.contact-panel textarea{width:100%;min-height:178px;resize:vertical;padding:17px;border-radius:10px;border:1px solid #a6bba7;background:#fffefa;color:#2c4c35;font:inherit;font-size:14px;line-height:1.7}
+.contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
+.contact-actions :is(a,button){text-align:center;min-height:51px;display:flex;align-items:center;justify-content:center;border-radius:9px;padding:12px 13px;font:inherit;font-weight:740;font-size:13px;cursor:pointer}
+.copy-button{color:#22422f;background:#f7f8ef;border:1px solid #7c997f}.kakao-link{background:#244633;color:#f9f9ed;border:1px solid #244633}
+.copy-status{font-size:12px!important;margin-top:16px;color:#486d51!important}
+.contact-panel .reconsider{display:inline-block;font-size:12px;margin-top:12px;border-bottom:1px solid #66896f;padding-bottom:5px}
+@media(max-width:850px){.contact-grid{grid-template-columns:1fr}}
+@media(max-width:540px){.contact-actions{grid-template-columns:1fr}.contact h2{font-size:38px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로</a>
+<div class="wrap"><header class="header"><a class="brand" href="#top" aria-label="Weplace 처음으로">weplace<b>.</b></a><span class="edition">BLACK FRIDAY / FIRST LOOK</span></header></div>
+<main id="main">
+<section class="wrap hero" id="top" aria-labelledby="landing-title">
+ <div><p class="overline">NOVEMBER 2026 / A · FIRST LOOK</p><h1 id="landing-title">할인하기는 <em>부담스럽고,</em><br>그대로 있자니<br>마음이 놓이지 않습니다.</h1>
+ <p class="lead">손님을 놓칠까 고민되는 순간.<br>가격을 바꾸기 전에 먼저 확인할 화면이 있습니다.</p>
+ <a class="hero-link" href="#first-look">우리 매장의 첫 화면 생각해 보기 <span aria-hidden="true">↓</span></a></div>
+ <aside class="aside"><span class="tag">THE QUESTION BEFORE A DISCOUNT</span><p>손님은 가격을 보기 전에<br>무엇을 다시 확인할까요?</p><small>할인이 옳고 그른지를 정하지 않습니다. 매장의 좋은 점과 이용 방법이 충분히 전달되는지 살펴봅니다.</small></aside>
+</section>
+<section id="first-look" class="section" aria-labelledby="first-look-title"><div class="wrap">
+ <div class="section-head"><div><p class="overline">01 / FIRST LOOK</p><h2 id="first-look-title">대표님이라면,<br>어디부터 확인하실까요?</h2></div><p>하나를 고르면 화면 예시가 바뀝니다. 실제 고객 기록이 아닌 가상 매장 구성으로 비교합니다.</p></div>
+ <div class="choices" role="group" aria-label="먼저 확인할 화면 선택">
+   <button class="choice" type="button" data-focus="photo" aria-pressed="true"><span>대표 사진</span><span class="num">01</span></button>
+   <button class="choice" type="button" data-focus="route" aria-pressed="false"><span>찾아오는 길</span><span class="num">02</span></button>
+   <button class="choice" type="button" data-focus="booking" aria-pressed="false"><span>예약 안내</span><span class="num">03</span></button>
+ </div>
+ <div class="stage" role="region" aria-labelledby="stage-title">
+   <div class="stage-inner before" id="stage-inner"><div><span class="stage-kicker" id="stage-kicker">01 / 대표 사진</span><h3 id="stage-title">어떤 식사를 할 수 있을까요?</h3><p id="stage-desc">외관은 보이는데 대표 메뉴와 자리를 다시 찾아봐야 하는 화면입니다.</p></div><div class="stage-label" id="stage-label">이전 배열 — 추가 확인이 필요합니다.</div></div>
+   <div class="stage-visual">
+     <div class="mockup" id="mockup" data-mode="before" aria-label="가상 매장 UI 예시">
+       <div class="mock-top"><span>MOON / 가상 매장</span><span>01 / FIRST LOOK</span></div>
+       <div class="mock-title" id="mock-title">외관 · 분위기</div>
+       <div class="mock-extra" id="mock-extra">메뉴와 좌석은 다른 화면에서 찾아야 합니다.</div>
+       <span class="mock-cta" id="mock-cta">사진 더 보기</span>
+     </div>
+     <div class="mode-switch" role="group" aria-label="예시 화면 전후 비교">
+       <button type="button" data-mode="before" aria-pressed="true">지금 보이는 화면</button>
+       <button type="button" data-mode="after" aria-pressed="false">정리한 화면 보기</button>
+     </div>
+     <div class="answer" role="status" aria-live="polite" id="answer">화면 예시입니다. 고객 데이터를 분석하거나 전송하지 않습니다.</div>
+   </div>
+ </div>
+</div></section>
+<section class="lower" aria-labelledby="next-title"><div class="wrap lower-grid">
+ <div><p class="overline">02 / ONE CLEAR NEXT STEP</p><h2 id="next-title">가격을 바꾸기 전에,<br>첫 화면부터.</h2><p>대표님의 매장을 지금 판단하지 않습니다. 먼저 일반적인 비교 장면을 살펴보고, 필요하면 실제 매장 정보를 함께 확인할 수 있습니다.</p></div>
+ <div><button class="action" type="button" id="cta-experience">선택한 화면 다시 비교하기 <span aria-hidden="true">↗</span></button>
+ <a class="action alt" id="cta-contact" href="#contact">선택한 항목으로 문의 준비하기 <span aria-hidden="true">↗</span></a>
+ <p class="fine">화면 선택은 이 페이지 안에서만 유지됩니다. 매장명·전화번호를 입력받거나 자동으로 전송하지 않습니다.</p></div>
+ </div></section>
+<section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid">
+ <div>
+  <p class="overline">03 / NEXT STEP</p>
+  <h2 id="contact-title">한 화면만,<br>함께 확인할까요?</h2>
+  <p>모든 작업을 맡기지 않으셔도 됩니다. 먼저 확인하고 싶은 한 가지를 전달해 주세요.</p>
+  <p class="contact-note">아래 문의문에는 매장명이나 개인정보를 넣지 않습니다. 카카오톡에서 직접 작성하고 전송해야 문의가 접수됩니다.</p>
+ </div>
+ <div class="contact-panel">
+  <label for="prepared-message">선택한 항목으로 준비한 문의문</label>
+  <textarea id="prepared-message" rows="7" readonly spellcheck="false">안녕하세요. Weplace 홈페이지에서 첫 화면 비교를 살펴봤습니다. 매장의 첫 화면 진단 범위와 가능한 일정을 안내받고 싶습니다.</textarea>
+  <div class="contact-actions">
+   <button type="button" id="copy-message" class="copy-button">1. 문의문 복사</button>
+   <a class="kakao-link" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">2. 카카오톡 열기 ↗</a>
+  </div>
+  <p id="copy-status" class="copy-status" role="status" aria-live="polite">문구를 복사한 뒤 카카오톡에서 직접 보내주세요. 아직 접수되지 않았습니다.</p>
+  <a class="reconsider" href="#first-look">아직 결정이 부담스럽다면, 화면 다시 비교하기 ↑</a>
+  <noscript><p class="contact-note">JavaScript가 꺼져 있어도 카카오톡 채널을 열어 직접 문의할 수 있습니다.</p></noscript>
+ </div>
+</div></section>
+</main>
+<div class="wrap"><footer class="footer"><span>WEPLACE · BLACK FRIDAY A / PREVIEW</span><span>가상의 매장 화면 비교 · 유료 계약·자동 접수 기능 없음</span></footer></div>
+<script>
+(()=>{'use strict';
+ const data={
+  photo:{label:'대표 사진',before:['어떤 식사를 할 수 있을까요?','외관은 보이는데 대표 메뉴와 자리를 다시 찾아봐야 하는 화면입니다.','외관 · 분위기','메뉴와 좌석은 다른 화면에서 찾아야 합니다.','사진 더 보기'],after:['메뉴 다음에, 앉을 자리까지.','대표 메뉴와 공간이 가까이 있어 손님이 다음 정보를 찾기 쉽습니다.','대표 메뉴 · 좌석 사진','메뉴와 자리 안내를 같은 흐름에 놓았습니다.','예약 안내 확인']},
+  route:{label:'찾아오는 길',before:['주소는 알지만, 입구는 어디일까요?','주소와 출구, 주차 정보가 흩어져 있다면 처음 오는 손님은 다시 검색합니다.','주소 · 지도','입구와 주차 위치는 따로 확인해야 합니다.','길 다시 찾기'],after:['출구부터 입구까지 한 화면에.','실제 위치·출구·입구·주차 안내를 나란히 두는 구성 예시입니다.','출구 · 입구 · 주차','어디서 내려 어느 문으로 들어갈지 안내합니다.','도착 정보 확인']},
+  booking:{label:'예약 안내',before:['예약하려면 무엇을 알아야 할까요?','예약 안내가 있어도 가능한 인원·시간·확정 방법이 보이지 않으면 망설일 수 있습니다.','예약 문의','인원·시간·확정 방식은 별도로 확인해야 합니다.','문의 채널 찾기'],after:['인원과 시간, 확인 절차까지.','가능한 인원·시간과 예약 확정 여부를 구분해 안내하는 구성 예시입니다.','인원 · 시간 · 확인','예약 전 확인할 조건과 절차를 함께 보여줍니다.','예약 방법 확인']}
+ };
+ let focus='photo',mode='before'; const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+ function render(){const d=data[focus],c=d[mode];$$('[data-focus]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.focus===focus)));$$('button[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
+  $('#stage-inner').className='stage-inner '+mode;$('#stage-kicker').textContent='01 / '+d.label;$('#stage-title').textContent=c[0];$('#stage-desc').textContent=c[1];$('#stage-label').textContent=mode==='before'?'이전 배열 — 다시 확인하는 화면':'정리한 배열 — 다음 행동이 보이는 화면';
+  $('#mockup').dataset.mode=mode;$('#mock-title').textContent=c[2];$('#mock-extra').textContent=c[3];$('#mock-cta').textContent=c[4];$('#answer').textContent=mode==='before'?d.label+'을 먼저 봅니다. 정리한 화면을 눌러 차이를 비교해 보세요.':'정보의 배열을 바꾼 가상 예시입니다. 실제 매장 결과나 매출 효과를 뜻하지 않습니다.';
+  $('#prepared-message').value='안녕하세요. Weplace의 블랙프라이데이 첫 화면 비교를 살펴봤습니다.\n먼저 확인하고 싶은 부분: '+d.label+'\n우리 매장의 실제 사진·정보·안내를 살펴본 뒤, 진단 범위와 가능한 일정을 안내받고 싶습니다.\n매장명과 지역은 카카오톡에서 직접 전달하겠습니다.';
+  $('#copy-status').textContent='선택 항목이 문의문에 반영됐습니다. 아직 전송하거나 접수하지 않았습니다.';
+ }
+ $$('[data-focus]').forEach(b=>b.addEventListener('click',()=>{focus=b.dataset.focus;mode='before';render();}));
+ $$('button[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;render();}));
+ $('#cta-experience').addEventListener('click',()=>{mode='after';render();$('#stage-title').scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
+ $('#copy-message').addEventListener('click',async()=>{
+   const area=$('#prepared-message');const text=area.value;
+   try{if(!navigator.clipboard?.writeText)throw Error('unsupported');await navigator.clipboard.writeText(text);$('#copy-status').textContent='문의문을 복사했습니다. 카카오톡에서 직접 보내주세요. 아직 접수되지 않았습니다.';}
+   catch(e){area.focus();area.select();$('#copy-status').textContent='자동 복사가 어려워 텍스트를 선택했습니다. 직접 복사하여 카카오톡에서 전송해주세요.';}
+ });
+ render();
+})();
+</script>
+</body></html>

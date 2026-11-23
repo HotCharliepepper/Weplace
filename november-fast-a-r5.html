@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#e9eee6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<title>광고 이후의 화면부터 · 선택으로 문의 준비 | WEPLACE November FAST R5</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Weplace">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="광고, 하지 마세요. 정말 그럴까요? | Weplace">
+<meta property="og:description" content="광고를 멈추라는 뜻은 아닙니다. 손님이 광고 다음에 보는 화면을 먼저 확인해 보자는 이야기입니다. Weplace 11월의 가상 매장 비교 체험.">
+<meta property="og:image" content="https://withweplace.kr/og-image.png">
+<meta name="description" content="광고 이후의 사진·길·예약을 비교하고, Weplace의 작업 과정과 FLOW 예시를 확인한 뒤 문의할 수 있는 11월 캠페인입니다.">
+<style>
+:root{color-scheme:light;--ink:#234432;--dark:#1e3c2c;--sage:#e7eee2;--sage2:#dbe7d5;--line:#c1cfc0;--cream:#f8f9ef;--warm:#b66b5d;--muted:#526954}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:25px}body{margin:0;background:var(--sage);color:var(--ink);font-family:"Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;letter-spacing:-.035em}
+a,button{font:inherit;color:inherit}a{text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid #4b8c60;outline-offset:4px}
+.wrap{width:min(1210px,100%);margin:auto;padding-inline:clamp(21px,5vw,75px)}
+.skip{position:absolute;left:-9999px;top:5px}.skip:focus{left:15px;background:#fff;padding:12px;z-index:20}
+.header{min-height:91px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #b5c8b6;gap:25px}.brand{font-size:23px;font-weight:850;letter-spacing:-.07em}.brand b{color:#6f9b70}.edition{font-size:11px;letter-spacing:.12em;color:#637d65;font-weight:750}
+.hero{min-height:min(720px,80svh);padding-block:clamp(78px,12vh,135px) 85px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(220px,.52fr);align-items:end;gap:10%}
+.overline{font-size:11px;letter-spacing:.16em;color:#56765e;font-weight:760;margin:0 0 24px}.hero h1{font-size:clamp(43px,5.6vw,78px);line-height:1.19;letter-spacing:-.068em;margin:0;font-weight:820;word-break:keep-all}
+.hero h1 em{font-style:normal;position:relative;white-space:nowrap;text-shadow:1px -1px #fff,-3px 7px 22px #b7655840}
+.hero .lead{font-size:clamp(16px,1.6vw,20px);line-height:1.85;color:#4c6551;margin:28px 0 31px;max-width:38ch}
+.hero-link{display:inline-flex;align-items:center;justify-content:space-between;min-width:min(330px,100%);gap:26px;border-bottom:1px solid #476c52;padding:12px 0 15px;font-weight:740;font-size:15px}.hero-link span{font-size:24px}
+.aside{border-top:1px solid #90a993;padding-top:23px}.aside .tag{font-size:10px;letter-spacing:.12em;color:#59735d}.aside p{font-size:clamp(18px,1.8vw,24px);line-height:1.62;letter-spacing:-.042em;font-weight:630}.aside small{font-size:12px;color:#617a66;line-height:1.8;display:block}
+.section{background:#f6f8f1;border-top:1px solid #cedccc;padding-block:clamp(77px,8vw,115px)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:55px;margin-bottom:34px}.section-head h2{margin:0;font-size:clamp(34px,4vw,55px);letter-spacing:-.06em;line-height:1.2}.section-head p{color:#59715f;max-width:30ch;font-size:14px;line-height:1.85}
+.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.choice{display:flex;justify-content:space-between;align-items:center;text-align:left;padding:20px 20px;min-height:80px;border:1px solid #bdccbb;border-radius:12px;background:#f5f7ee;color:#526f56;font-size:clamp(14px,1.4vw,18px);cursor:pointer;transition:background .18s,border-color .18s}.choice .num{font-size:10px;letter-spacing:.1em;align-self:flex-start;color:#809780}.choice[aria-pressed="true"]{background:#dfead1;border-color:#668b68;color:#1d472e;box-shadow:0 8px 22px #244a3110}.choice:hover{border-color:#6f9571}
+.stage{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:0;margin-top:21px;border-radius:17px;border:1px solid #bdd0bb;overflow:hidden;background:#e2e9dd;min-height:372px}
+.stage-inner{padding:clamp(26px,3.5vw,49px);display:flex;flex-direction:column;justify-content:space-between;gap:26px}
+.stage-inner.before{background:#e3e8dc}.stage-inner.after{background:#d8e8d5}
+.stage-kicker{font-size:11px;letter-spacing:.12em;font-weight:750;color:#637a66}.stage-label{font-size:12px;color:#68846a;margin-top:12px}.stage h3{font-size:clamp(28px,3vw,43px);line-height:1.2;margin:17px 0 12px;letter-spacing:-.055em;word-break:keep-all}
+.stage p{font-size:14px;line-height:1.8;color:#4f6755;margin:0;max-width:38ch}
+.stage-visual{padding:clamp(20px,3vw,42px);background:#2a4b38;display:flex;flex-direction:column;justify-content:center;gap:15px;min-width:0}
+.mockup{padding:21px;border-radius:12px;background:#f3f6e9;box-shadow:0 13px 37px #10291a35;min-height:203px;display:flex;flex-direction:column;gap:12px}
+.mockup .mock-top{font-size:10px;letter-spacing:.09em;color:#708274;border-bottom:1px solid #cbd8c8;padding-bottom:11px;display:flex;justify-content:space-between}
+.mockup .mock-title{font-size:clamp(16px,1.8vw,22px);color:#2a4c35;font-weight:720;line-height:1.42}
+.mockup .mock-extra{font-size:12px;color:#647566;line-height:1.75}.mockup[data-mode="before"] .mock-extra{color:#8a897b}
+.mockup .mock-cta{font-size:11px;color:#fff;background:#31533d;display:inline-block;padding:9px 13px;border-radius:7px;align-self:flex-start;margin-top:auto}
+.mode-switch{display:flex;gap:9px;align-items:center}.mode-switch button{flex:1;min-height:44px;border:1px solid #8eaa94;color:#e1eee0;background:transparent;border-radius:100px;font-size:12px;cursor:pointer}.mode-switch button[aria-pressed="true"]{color:#22442e;background:#e4f0d6;border-color:#e4f0d6;font-weight:760}
+.answer{font-size:12px;color:#afc4b2;line-height:1.7;margin-top:3px}
+.lower{background:#24432f;color:#ecf2e8;padding-block:clamp(75px,8.5vw,120px)}.lower-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(35px,8vw,120px);align-items:end}
+.lower h2{font-size:clamp(36px,5vw,72px);line-height:1.17;margin:0;letter-spacing:-.064em}.lower p{color:#c6d9c6;font-size:14px;line-height:1.9}.lower .overline{color:#afcbae}
+.action{display:block;border-radius:10px;background:#e4f2ce;color:#1d3d2a;padding:20px 23px;font-weight:750;display:flex;justify-content:space-between;gap:14px;align-items:center;transition:background .18s}.action:hover{background:#f2fae2}.action.alt{background:transparent;border:1px solid #86a28a;color:#ecf2e8;font-weight:500;margin-top:10px;padding:17px 20px}
+.fine{font-size:11px!important;color:#b2c9b4!important;line-height:1.85!important;margin-top:19px}
+.footer{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap;padding-block:36px;font-size:11px;color:#66826b}
+@media(max-width:870px){.hero{grid-template-columns:1fr;min-height:unset;gap:40px}.aside{max-width:650px}.stage,.lower-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:18px}.choices{gap:8px}.stage-visual{min-height:325px}}
+@media(max-width:540px){.header{min-height:74px}.hero{padding-block:67px 74px}.hero h1{font-size:clamp(41px,10.7vw,56px)}.hero .lead{font-size:16px}.choices{grid-template-columns:1fr}.choice{min-height:59px;padding:14px 17px}.section{padding-block:70px}.section-head h2{font-size:35px}.stage-inner{padding:26px 22px}.stage-visual{padding:25px 21px}.mockup{min-height:189px}.lower{padding-block:70px}.lower h2{font-size:clamp(39px,10vw,51px)}.footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+.action:is(button){width:100%;border:0;cursor:pointer;text-align:left;font:inherit}
+.contact{background:#e8eee4;padding-block:clamp(82px,8vw,126px);border-top:1px solid #b7c7b9}
+.contact-grid{display:grid;grid-template-columns:.96fr 1.04fr;gap:clamp(32px,6vw,88px);align-items:start}
+.contact h2{margin:0 0 22px;font-size:clamp(38px,4.8vw,66px);line-height:1.22;letter-spacing:-.06em}
+.contact p{line-height:1.85;font-size:15px;color:#4e6654}
+.contact .contact-note{font-size:12px;color:#647b69;max-width:36em;margin-top:30px}
+.contact-panel{background:#f7f8ef;border:1px solid #bccbbb;border-radius:16px;padding:clamp(19px,3vw,34px);box-shadow:0 12px 38px #28452c12}
+.contact-panel label{display:block;font-size:13px;font-weight:720;color:#365641;margin-bottom:12px}
+.contact-panel textarea{width:100%;min-height:178px;resize:vertical;padding:17px;border-radius:10px;border:1px solid #a6bba7;background:#fffefa;color:#2c4c35;font:inherit;font-size:14px;line-height:1.7}
+.contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
+.contact-actions :is(a,button){text-align:center;min-height:51px;display:flex;align-items:center;justify-content:center;border-radius:9px;padding:12px 13px;font:inherit;font-weight:740;font-size:13px;cursor:pointer}
+.copy-button{color:#22422f;background:#f7f8ef;border:1px solid #7c997f}.kakao-link{background:#244633;color:#f9f9ed;border:1px solid #244633}
+.copy-status{font-size:12px!important;margin-top:16px;color:#486d51!important}
+.contact-panel .reconsider{display:inline-block;font-size:12px;margin-top:12px;border-bottom:1px solid #66896f;padding-bottom:5px}
+@media(max-width:850px){.contact-grid{grid-template-columns:1fr}}
+@media(max-width:540px){.contact-actions{grid-template-columns:1fr}.contact h2{font-size:38px}}
+
+/* Public CJK webfont fallback for browsers without installed Korean fonts.
+   The type remains selectable DOM text; system Korean fonts remain fallbacks. */
+body{font-family:"Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif}
+textarea,button{font-family:inherit}
+/* ---------------------------------------------------------------------------
+ WEPLACE BLACK FRIDAY × FAST R1 — campaign-only optics.
+ A's verified mockup selection, message copy and Kakao handoff remain unchanged.
+ No remote fonts, analytics, automatic sends or unapproved discount promises.
+--------------------------------------------------------------------------- */
+:root{--nov-forest:#173c31;--nov-dark:#102b24;--nov-light:#f1f4ec;--nov-sage:#e2ebe0;--nov-warm:#b78365}
+html{scroll-padding-top:18px}body{background:#f0f4ed;overflow-x:hidden;-webkit-font-smoothing:antialiased}button{touch-action:manipulation}
+.nov-header-right{display:flex;gap:24px;align-items:center}.nov-header-skip{font-size:12px;letter-spacing:-.02em;font-weight:750;border:1px solid #9bb5a2;border-radius:40px;padding:9px 16px;min-height:41px}.nov-header-skip:hover{background:#d9e7d9}
+.nov-entry{background:radial-gradient(ellipse 60% 58% at 85% 10%,#fdfbf1 0%,transparent 75%),linear-gradient(135deg,#edf3eb 0%,#e5eee5 63%,#dfe8de 100%);position:relative;overflow:hidden}
+.nov-entry:before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(66deg,transparent 0px,transparent 126px,rgba(52,91,67,.027) 127px,transparent 128px)}
+.nov-entry-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(270px,.65fr);align-items:center;gap:clamp(25px,6vw,100px);padding-block:clamp(72px,9vw,130px) 76px;min-height:635px}
+.nov-entry-main{position:relative;z-index:2}.nov-label{display:flex;align-items:center;gap:13px;color:#456f58;font-size:11px;letter-spacing:.13em;font-weight:780;line-height:1.55}
+.nov-label-line{display:inline-block;width:28px;height:1px;background:#477964}.nov-entry h2{font-size:clamp(36px,4.7vw,72px);line-height:1.27;letter-spacing:-.07em;font-weight:850;margin:25px 0 27px;color:#193e32;word-break:keep-all}
+.nov-entry h2 em{font-style:normal;color:#187963;font-weight:850;white-space:nowrap}
+.nov-lead{font-size:clamp(15px,1.5vw,18px);line-height:1.93;color:#3a5e4c;letter-spacing:-.03em;margin:0}.nov-lead strong{font-weight:750;color:#1a4533}
+.nov-entry-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px 24px;margin-top:33px}.nov-button{display:inline-flex;align-items:center;justify-content:space-between;gap:25px;padding:16px 24px;border-radius:999px;background:#214e3f;color:#f8f9f0;font-size:14px;font-weight:750;min-height:52px;box-shadow:0 9px 22px rgba(19,61,41,.13);transition:transform .23s,box-shadow .23s}.nov-button:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(19,61,41,.22)}.nov-inline{display:inline-flex;gap:12px;align-items:center;border-bottom:1px solid #698e79;padding:10px 0;color:#2b614b;font-size:13px;font-weight:710}
+.nov-warmth{align-self:center;position:relative;border:1px solid #c5d5c3;border-radius:28px 80px 28px 28px;background:linear-gradient(150deg,#fffef8 0%,#f7f5e9 72%,#ecf1e6 100%);padding:clamp(26px,3.5vw,45px);box-shadow:inset 0 1px #fff,0 24px 60px rgba(41,67,48,.09),0 6px 18px rgba(41,67,48,.055)}.nov-warmth-top{display:flex;align-items:center;justify-content:space-between;gap:20px;color:#6b8875;font-size:10px;font-weight:730;letter-spacing:.1em;line-height:1.6}.nov-warmth-number{font-size:60px;line-height:1;font-family:Georgia,serif;letter-spacing:-.07em;color:#b18a6e}.nov-warmth p{font-size:clamp(18px,2vw,27px);font-weight:750;line-height:1.5;letter-spacing:-.055em;color:#254534;margin:44px 0 38px}.nov-warmth p strong{color:#176957}.nov-warmth-rule{height:1px;background:#cddaca;margin-bottom:22px}.nov-warmth small{display:block;font-size:13px;line-height:1.8;color:#536b57}.nov-warmth b{font-weight:750;color:#2a5a42}
+.nov-entry-foot{display:flex;align-items:center;justify-content:space-between;gap:20px;color:#688675;font-size:10px;font-weight:680;letter-spacing:.11em;padding-bottom:26px}.nov-entry-foot a{text-decoration:underline;text-underline-offset:4px}
+.nov-fast{position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse 66% 73% at 94% 0%,rgba(255,254,212,.96) 0%,rgba(254,249,213,.58) 19%,transparent 67%),radial-gradient(ellipse 70% 65% at 53% 59%,rgba(221,237,219,.65),transparent 71%),linear-gradient(130deg,#f2f5ee 0%,#ecf0e7 53%,#dce6db 100%);color:#214335;border-top:1px solid #cbdacb}
+.nov-fast-grid{position:absolute;inset:0;pointer-events:none;background:linear-gradient(rgba(40,72,50,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(40,72,50,.05) 1px,transparent 1px);background-size:90px 90px;opacity:.36;mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),transparent 77%)}
+.nov-fast-sun{position:absolute;top:-27%;right:-4%;width:65vw;height:72vw;max-width:850px;max-height:850px;border-radius:50%;background:radial-gradient(circle,rgba(255,254,222,.75) 0%,rgba(253,249,222,.25) 38%,transparent 70%);filter:blur(4px);pointer-events:none}
+.nov-fast-sky{position:absolute;inset:0;overflow:hidden;pointer-events:none}.nov-ray{position:absolute;right:-15%;top:3%;width:62%;height:1px;background:linear-gradient(90deg,transparent,rgba(245,217,170,.4),transparent);transform:rotate(-34deg);transform-origin:right center}.nov-ray.r2{top:12%;right:-10%;transform:rotate(-42deg);opacity:.65}.nov-ray.r3{top:23%;right:-10%;transform:rotate(-31deg);opacity:.35}.nov-wind{position:absolute;right:-18%;top:47%;height:1px;width:48%;background:linear-gradient(90deg,transparent,rgba(88,127,101,.23),transparent);transform:rotate(-11deg);opacity:0}.nov-wind.w2{top:52%;width:42%;transform:rotate(-7deg)}.nov-wind.w3{top:61%;width:38%;transform:rotate(-16deg)}
+.nov-fast-inner{position:relative;z-index:2;min-height:min(850px,92svh);padding-top:clamp(70px,8vw,120px);padding-bottom:36px;display:flex;flex-direction:column;justify-content:space-between}
+.nov-fast-header{display:flex;justify-content:space-between;align-items:baseline;gap:20px}.nov-fast-header .nov-label{margin:0}.nov-fast-tag{font-size:10px;letter-spacing:.14em;color:#6f8b76;font-weight:750}
+.nov-fast-title{font-family:"Arial Black",Impact,"Malgun Gothic",system-ui,sans-serif;font-weight:950;line-height:.93;font-stretch:condensed;letter-spacing:-.095em;white-space:nowrap;font-size:clamp(49px,10.7vw,160px);margin:28px 0 48px;color:#204437;text-shadow:0 2px 0 #fcfff4,0 15px 26px rgba(42,91,57,.10)}
+.nov-fast-word,.nov-fast-line{display:block}.nov-fast-line{margin-top:.05em}.nov-fast-wrap{position:relative;display:inline-block;isolation:isolate}.nov-fast-face{position:relative;z-index:3;display:inline-block;background:linear-gradient(158deg,#345d48 0%,#214536 53%,#183e30 100%);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0px 1px 0px rgba(255,255,255,.8))}.nov-fast-shadow{position:absolute;left:0;top:0;z-index:0;color:#93ae9c;opacity:.5;transform:translate(-3px,4px);user-select:none}.nov-fast-trail{position:absolute;top:0;left:0;z-index:1;color:rgba(94,134,110,.2);transform:translate(-18px,0);opacity:0;user-select:none}
+.nov-fast-bottom{display:flex;justify-content:space-between;gap:35px;align-items:end;border-top:1px solid #a7c0ab;padding-top:28px}.nov-fast-copy{display:flex;align-items:start;gap:17px}.nov-fast-corner{font-size:29px;color:#8ca98b;line-height:1}.nov-fast-copy strong{font-size:clamp(18px,2vw,26px);letter-spacing:-.05em;line-height:1.47}.nov-fast-copy p{font-size:13px;line-height:1.75;margin:12px 0 0;color:#55715d}.nov-fast-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}.nov-fast-actions .nov-button{white-space:nowrap}.nov-fast-controls{display:flex;align-items:center;flex-wrap:wrap;gap:15px;margin-top:31px;font-size:11px;color:#69806e}.nov-fast-controls button{border:1px solid #a6bcab;border-radius:999px;padding:9px 15px;background:rgba(252,254,249,.55);font-size:11px;font-weight:680;cursor:pointer;min-height:38px}.nov-fast-controls button:disabled{opacity:.5;cursor:default}
+/* Finite animation only; initial/static and reduced-motion are deliberately the same. */
+.nov-fast.is-fast-playing .nov-fast-face{animation:nov-face .56s cubic-bezier(.22,.65,.25,1) both}
+.nov-fast.is-fast-playing .nov-fast-shadow{animation:nov-shadow .56s cubic-bezier(.22,.65,.25,1) both}
+.nov-fast.is-fast-playing .nov-fast-trail{animation:nov-trail .56s ease-out both}
+.nov-fast.is-fast-playing .nov-wind{animation:nov-wind .57s ease-out both}
+.nov-fast.is-fast-playing .nov-wind.w2{animation-delay:.045s}
+.nov-fast.is-fast-playing .nov-wind.w3{animation-delay:.085s}
+@keyframes nov-face{0%{transform:translateX(0) skewX(0)}23%{transform:translateX(9px) skewX(-2deg)}52%{transform:translateX(-3px) skewX(0)}100%{transform:translateX(0) skewX(0)}}
+@keyframes nov-shadow{0%{transform:translate(-2px,3px);opacity:.38}30%{transform:translate(-13px,5px);opacity:.65}100%{transform:translate(-3px,4px);opacity:.5}}
+@keyframes nov-trail{0%{transform:translate(-5px,0);opacity:0}34%{transform:translate(-18px,1px);opacity:.45}100%{transform:translate(-22px,1px);opacity:0}}
+@keyframes nov-wind{0%{opacity:0;translate:0 0}33%{opacity:.43}100%{opacity:0;translate:-35px 0}}
+/* The original A selection remains the owner of before/after behavior. */
+#first-look{background:linear-gradient(165deg,#f7f9f3 0%,#edf2e9 100%)}#first-look .section-head h2 em{font-style:normal;color:#286957}#first-look .choices{gap:14px}#first-look .choice{border:1px solid #c5d3c6;border-radius:18px;background:#fffefa;box-shadow:0 14px 30px rgba(38,73,49,.085),0 2px 6px rgba(38,73,49,.05);min-height:104px}#first-look .choice[aria-pressed="true"]{background:#244f40;color:#f6faf1;border-color:#244f40;box-shadow:0 19px 36px rgba(34,76,55,.21)}#first-look .choice:focus-visible{outline-offset:5px}
+.nov-entry .nov-button,.nov-fast .nov-button,.nov-header-skip,.nov-fast-controls button{transition-property:transform,background,box-shadow,color,opacity;transition-duration:.2s}
+@media(max-width:980px){.nov-entry-grid{grid-template-columns:1fr .7fr;gap:25px}.nov-warmth{padding:27px}.nov-fast-title{font-size:clamp(57px,10.4vw,120px)}.nov-fast-bottom{align-items:start}.nov-fast-actions{max-width:290px}}
+@media(max-width:760px){.nov-entry-grid{display:flex;flex-direction:column;align-items:stretch;min-height:auto;padding-top:70px;padding-bottom:53px;gap:35px}.nov-entry h2{font-size:clamp(35px,7.5vw,56px)}.nov-warmth{align-self:stretch;border-radius:22px 52px 22px 22px}.nov-warmth p{margin:21px 0 25px}.nov-fast-inner{min-height:auto;padding-top:65px;padding-bottom:30px}.nov-fast-title{font-size:clamp(46px,10.5vw,88px);margin:85px 0 95px}.nov-fast-bottom{flex-direction:column;gap:25px}.nov-fast-actions{max-width:none}.nov-fast-tag{display:none}}
+@media(max-width:540px){.header{min-height:76px}.nov-header-right{gap:8px}.nov-header-right .edition{font-size:9px;letter-spacing:.045em}.nov-header-skip{font-size:11px;padding:6px 11px;min-height:38px}.brand{font-size:21px}.nov-entry-grid{padding-top:57px;padding-bottom:36px}.nov-label{font-size:10px;letter-spacing:.09em}.nov-entry h2{font-size:clamp(33px,8.2vw,45px);margin:20px 0 22px}.nov-lead{font-size:14px;line-height:1.8}.nov-entry-actions{margin-top:25px;gap:10px 18px}.nov-button{font-size:13px;padding:14px 18px;min-height:49px}.nov-inline{font-size:12px}.nov-warmth-number{font-size:50px}.nov-warmth p{font-size:20px}.nov-warmth small{font-size:12px}.nov-entry-foot span{display:none}.nov-entry-foot{justify-content:flex-end;font-size:10px}.nov-fast-inner{padding-top:45px}.nov-fast-title{font-size:clamp(44px,11vw,65px);margin:75px 0 95px}.nov-fast-copy strong{font-size:20px}.nov-fast-copy p{font-size:12px}.nov-fast-actions{flex-direction:column;align-items:stretch;width:100%}.nov-fast-actions .nov-button{width:100%}.nov-fast-controls{margin-top:25px}.nov-fast-header .nov-label{font-size:9px}.nov-fast-grid{background-size:48px 48px}#first-look .choices{gap:8px}#first-look .choice{min-height:89px;border-radius:13px}}
+@media(prefers-reduced-motion:reduce){.nov-fast.is-fast-playing .nov-fast-face,.nov-fast.is-fast-playing .nov-fast-shadow,.nov-fast.is-fast-playing .nov-fast-trail,.nov-fast.is-fast-playing .nov-wind{animation:none!important}.nov-button,.nov-inline,.nov-fast-controls button,#first-look .choice{transition:none!important;transform:none!important}html{scroll-behavior:auto}}
+@media(prefers-contrast:more){.nov-entry h2 em{color:#075544}.nov-warmth,#first-look .choice{border-width:2px}.nov-fast-title{text-shadow:none}}
+
+
+/* ------------------------------------------------------------------
+ NOVEMBER FAST R2 | CONTRARIAN COLD OPEN → VISIBLE REVERSAL → WARM R1.
+ No scroll locks, no automatic redirects. Readable HTML without JS.
+ The negative headline is clearly presented as a hypothetical concern,
+ never Weplace's literal recommendation to stop all advertising.
+------------------------------------------------------------------ */
+:root{--nov-void:#0e231d;--nov-paper:#f2f5e9;--nov-emphasis:#d9e3cc;--nov-signal:#e2c49a}
+.nov-cold{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(134deg,#0b201b 0%,#183d32 65%,#1d4233 100%);color:#f7f8f0;border-bottom:1px solid #4f735c}
+.nov-cold-grain{position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(106deg,transparent 0,transparent 125px,rgba(233,246,222,.033) 126px,transparent 127px),radial-gradient(ellipse 63% 67% at 90% 5%,rgba(216,231,196,.1),transparent 66%);opacity:.85}
+.nov-cold-light{position:absolute;width:min(68vw,900px);height:min(68vw,900px);top:-37%;right:-24%;background:radial-gradient(circle,rgba(208,229,202,.12) 0%,rgba(201,224,203,.04) 50%,transparent 76%);pointer-events:none;filter:blur(6px)}
+.nov-cold-inner{position:relative;z-index:2;min-height:max(690px,calc(100svh - 82px));display:flex;flex-direction:column;justify-content:space-between;padding-top:clamp(38px,5vw,64px);padding-bottom:clamp(35px,4vw,50px)}
+.nov-cold-top{display:flex;align-items:center;justify-content:space-between;gap:20px}.nov-cold-index,.nov-cold-side{font-size:10px;letter-spacing:.14em;font-weight:790;color:#b3ccbd;line-height:1.5}.nov-cold-index span{color:#e4cb9f;margin-right:9px}.nov-cold-side{text-align:right;opacity:.75}
+.nov-cold-story{margin:38px 0 52px}.nov-cold-preface{margin:0 0 clamp(13px,2.2vw,27px);font-size:clamp(13px,1.4vw,16px);color:#bcd1c3;line-height:1.8}
+.nov-cold-title{color:#fffdf5;font-size:clamp(52px,8vw,116px);line-height:1.08;font-weight:900;letter-spacing:-.087em;margin:0;word-break:keep-all;text-wrap:balance}
+.nov-cold-title span{color:#dfe9cf;text-shadow:0 2px 0 rgba(0,0,0,.13),0 18px 34px rgba(0,0,0,.23)}
+.nov-cold-doubt{color:#c5d8cb;font-size:clamp(17px,2.2vw,26px);font-weight:540;letter-spacing:-.04em;margin:23px 0 0;line-height:1.5}
+.nov-cold-pause{display:flex;align-items:center;gap:9px;margin-top:29px;margin-bottom:28px}
+.nov-cold-pause i{display:block;width:5px;height:5px;border-radius:50%;background:#c2d0b8;opacity:.65}
+.nov-cold-pause i:nth-child(2){opacity:.45}.nov-cold-pause i:nth-child(3){opacity:.25}
+.nov-reversal{border-left:2px solid #b5bc98;padding:3px 0 4px 23px;max-width:830px;animation:nov-reversal-arrive .8s ease-out .62s both}
+.nov-reversal-kicker{font-size:13px;letter-spacing:.04em;font-weight:750;color:#d2b991;margin:0 0 10px}
+.nov-reversal-copy{font-size:clamp(19px,2.6vw,34px);line-height:1.56;font-weight:600;letter-spacing:-.048em;color:#e6efe2;margin:0;word-break:keep-all}
+.nov-reversal-copy strong{color:#fbfaf3;font-weight:850}.nov-reversal-copy em{font-style:normal;color:#f0d2a5;font-weight:850}
+.nov-cold-bottom{border-top:1px solid rgba(223,237,220,.24);padding-top:23px;display:flex;align-items:center;gap:20px;justify-content:space-between}
+.nov-cold-next{color:#f7f7ea;font-size:14px;display:inline-flex;align-items:center;gap:28px;min-height:44px;font-weight:760;text-decoration:underline;text-decoration-color:rgba(226,238,224,.4);text-underline-offset:8px}
+.nov-cold-next span{font-size:23px}.nov-cold-direct{font-size:12px;color:#c5d6c7;min-height:44px;display:inline-flex;align-items:center}
+.nov-cold a:focus-visible{outline:3px solid #f5cc8f;outline-offset:5px}
+@keyframes nov-reversal-arrive{from{opacity:0;transform:translateY(19px)}to{opacity:1;transform:translateY(0)}}
+.nov-entry #landing-title{max-width:12.5em}
+@media(max-width:760px){
+ .nov-cold-inner{min-height:max(630px,calc(100svh - 76px));padding-top:38px;padding-bottom:25px}
+ .nov-cold-story{margin:35px 0 43px}
+ .nov-cold-title{font-size:clamp(49px,11vw,83px)}
+ .nov-reversal{padding-left:17px}.nov-reversal-copy{font-size:clamp(18px,4.5vw,27px)}
+ .nov-cold-doubt{font-size:18px}
+}
+@media(max-width:540px){
+ .nov-cold-inner{min-height:max(620px,calc(100svh - 76px));padding-top:27px;padding-bottom:21px}
+ .nov-cold-top{align-items:start}.nov-cold-side{max-width:100px;font-size:9px}
+ .nov-cold-index{font-size:9px;letter-spacing:.09em}
+ .nov-cold-story{margin:26px 0 30px}
+ .nov-cold-preface{font-size:12px;margin-bottom:15px}
+ .nov-cold-title{font-size:clamp(46px,12.8vw,66px);letter-spacing:-.08em}
+ .nov-cold-doubt{font-size:17px;margin-top:19px}
+ .nov-cold-pause{margin-top:22px;margin-bottom:18px;gap:8px}
+ .nov-reversal-copy{font-size:18px;line-height:1.58}
+ .nov-reversal-kicker{font-size:12px;margin-bottom:6px}
+ .nov-reversal-desktop{display:none}
+ .nov-cold-bottom{flex-direction:column;align-items:stretch;gap:9px;padding-top:16px}
+ .nov-cold-next{justify-content:space-between;font-size:13px}
+ .nov-cold-direct{font-size:11px}
+ .nov-entry #landing-title{font-size:clamp(32px,7.9vw,44px)}
+}
+@media(prefers-reduced-motion:reduce){.nov-reversal{animation:none!important;opacity:1!important;transform:none!important}}
+@media(prefers-contrast:more){.nov-reversal{border-left-color:#fff}.nov-cold-preface,.nov-cold-doubt{color:#fff}.nov-reversal-copy em{color:#fff}}
+
+
+/* R2 typography QA: FAST must land as legible dark-forest live text.
+   Chrome's translucent text-clip can lose contrast on light backgrounds. */
+.nov-fast .nov-fast-face {
+  background:none;
+  background-clip:initial;
+  -webkit-background-clip:initial;
+  color:#183e31;
+  -webkit-text-fill-color:#183e31;
+  -webkit-text-stroke:.25px #183e31;
+  text-shadow:0 1px 0 #fcfff2,1px 4px 0 rgba(111,151,114,.23),0 12px 25px rgba(25,69,45,.12);
+  filter:none;
+}
+.nov-fast .nov-fast-shadow{opacity:.38;color:#7da28d}
+
+
+/* R3 — verified scope: selected topic work bridge and browsable proof; not client results. */
+.nov-work-bridge,.nov-work-proof{padding:clamp(76px,8vw,120px) 0;scroll-margin-top:25px;overflow:hidden}
+.nov-work-bridge{background:linear-gradient(152deg,#ebf2e9,#f8f8f1);color:#1e4536}.nov-work-proof{background:#173a2f;color:#f6f8f0}
+.nov-step-label{font-size:11px;letter-spacing:.13em;font-weight:800;color:#407d60;margin:0 0 23px}
+.nov-bridge-head{display:flex;align-items:end;justify-content:space-between;gap:38px;margin-bottom:35px}
+.nov-bridge-head h2,.nov-work-proof h2{font-size:clamp(30px,4.1vw,56px);line-height:1.33;letter-spacing:-.062em;margin:0;word-break:keep-all}.nov-bridge-head h2 em{color:#197b63;font-style:normal}.nov-work-proof h2 em{color:#e2c99f;font-style:normal}
+.nov-bridge-head p{max-width:31ch;line-height:1.84;font-size:14px;color:#5b7160}.nov-bridge-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.nov-bridge-topic,.nov-bridge-steps{border-radius:23px;padding:clamp(24px,3.5vw,42px);min-width:0}
+.nov-bridge-topic{background:linear-gradient(146deg,#235c4b,#143b2f);color:#f7f9ee;border:1px solid #44836c;box-shadow:0 23px 45px #153a2c24}
+.nov-topic-tag{font-size:11px;color:#c6dccc;letter-spacing:.06em}.nov-topic-tag b{color:#f5f6ea}
+.nov-bridge-topic h3{font-size:clamp(23px,2.6vw,33px);line-height:1.48;letter-spacing:-.052em;margin:25px 0 15px}
+.nov-bridge-topic p{font-size:14px;line-height:1.83;color:#d3e5d5}.nov-bridge-topic small{font-size:11px;color:#b8d4c3;line-height:1.6;display:block}
+.nov-bridge-output{border-top:1px solid #a2c2aa66;margin:27px 0 22px;padding-top:20px;display:flex;gap:10px;flex-direction:column}
+.nov-bridge-output span{font-size:10px;color:#b8d5bd;letter-spacing:.11em}.nov-bridge-output strong{font-size:clamp(17px,1.8vw,21px);line-height:1.58}
+.nov-bridge-steps{background:#fffefa;border:1px solid #c8dac9;box-shadow:0 17px 34px #153a2a12}
+.nov-bridge-steps h3{font-size:clamp(21px,2vw,27px);letter-spacing:-.05em;color:#214b3b;margin:0 0 20px}
+.nov-bridge-steps ol{list-style:none;padding:0;margin:0}.nov-bridge-steps li{display:flex;gap:19px;padding:16px 0;border-bottom:1px solid #e1e9dd}.nov-bridge-steps li:last-child{border-bottom:0;padding-bottom:0}.nov-bridge-steps li>span{font-size:12px;font-weight:800;color:#287b5c;min-width:24px}.nov-bridge-steps strong{display:block;color:#204b38;font-size:15px}.nov-bridge-steps p{font-size:12px;color:#607367;line-height:1.8;margin:5px 0 0}
+.nov-bridge-next,.nov-proof-actions{display:flex;align-items:center;gap:15px 25px;flex-wrap:wrap;margin-top:35px}
+.nov-work-proof .nov-step-label{color:#b9d0bc}.nov-proof-lead{max-width:740px;color:#c3d5c6;font-size:15px;line-height:1.86;margin:25px 0 35px}
+.nov-proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.nov-proof-card{display:flex;flex-direction:column;border-radius:20px;background:linear-gradient(155deg,#fffdf5,#edf2e8);border:1px solid #c5d8c7;color:#214637;padding:27px;min-height:270px;box-shadow:0 18px 31px #0002}.nov-proof-card-primary{background:linear-gradient(155deg,#dce9dc,#f0f4e8)}
+.nov-proof-index{color:#507a60;font-weight:800;font-size:10px;letter-spacing:.12em}.nov-proof-card h3{font-size:clamp(20px,2vw,26px);line-height:1.52;letter-spacing:-.05em;margin:22px 0 13px}.nov-proof-card p{color:#5a6f5f;line-height:1.8;font-size:13px;margin:0 0 23px}
+.nov-proof-link{margin-top:auto;border-top:1px solid #c6d6c8;min-height:47px;padding-top:14px;display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:740;gap:10px}.nov-proof-link span{font-size:20px}.nov-proof-disclaimer{font-size:12px;color:#bcd2c1;line-height:1.8;margin:23px 0 0}.nov-work-proof .nov-button{background:#e7efe2;color:#173d2e}.nov-work-proof .nov-inline{color:#e7eee0;border-color:#b2c8b4}
+.nov-relationship{border:0;margin:0 0 24px;padding:0;min-width:0}.nov-relationship legend{font-size:14px;font-weight:800;color:#224a37;margin-bottom:13px}.nov-relationship-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.nov-relationship-options button{min-height:47px;border-radius:12px;border:1.5px solid #b8cdbb;background:#fffefa;color:#22523d;font-size:13px;font-weight:740;cursor:pointer;padding:10px}
+.nov-relationship-options button[aria-pressed="true"]{background:#225641;border-color:#225641;color:#fffefa}.nov-relationship-options button:focus-visible{outline:3px solid #258566;outline-offset:3px}
+@media(max-width:820px){.nov-bridge-head{flex-direction:column;align-items:start;gap:15px}.nov-bridge-head p{max-width:65ch}.nov-bridge-grid{grid-template-columns:1fr}.nov-proof-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.nov-work-bridge,.nov-work-proof{padding:65px 0}.nov-proof-grid{grid-template-columns:1fr}.nov-bridge-topic,.nov-bridge-steps{padding:23px;border-radius:18px}.nov-bridge-head h2,.nov-work-proof h2{font-size:clamp(29px,8vw,40px)}.nov-proof-card{min-height:225px}.nov-relationship-options button{font-size:12px}}
+
+
+/* R4 / Click-only Inquiry. Scoped override, keeps the original funnel intact. */
+.nov-intake-contact{background:radial-gradient(ellipse 80% 65% at 12% 8%,#f4f8ef 0%,transparent 72%),linear-gradient(155deg,#e8f0e6,#edf3ea);color:#194637}
+.nov-intake-contact .contact-grid{grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(25px,5vw,75px)}
+.nov-intake-intro h2{font-size:clamp(36px,4.7vw,66px);letter-spacing:-.073em;line-height:1.27}
+.nov-intake-intro .nov-intake-lead{font-size:clamp(15px,1.6vw,18px);line-height:1.9;color:#355c49;margin:24px 0 0}
+.nov-intake-promise{font-size:11px;line-height:2.1;letter-spacing:.005em;color:#496e5c;display:flex;flex-wrap:wrap;gap:5px 9px;max-width:360px;margin-top:31px;font-weight:730}
+.nov-intake-promise span{color:#227d63}.nov-intake-promise i{font-style:normal;color:#bdcdbd}
+.nov-intake-contact .contact-note{color:#5c7161}
+.nov-intake-panel{border:1px solid #bed2c2;box-shadow:0 23px 57px #163e2c16;max-width:735px;border-radius:24px;background:#fffef9;padding:clamp(22px,3.3vw,40px)}
+.nov-intake-head{display:flex;justify-content:space-between;gap:18px;align-items:center;padding-bottom:22px;border-bottom:1px solid #d9e5d9;margin-bottom:23px}
+.nov-intake-small{font-size:10px;letter-spacing:.12em;font-weight:760;color:#658272}
+.nov-intake-head h3{font-size:clamp(21px,2.3vw,29px);line-height:1.4;letter-spacing:-.05em;color:#1e4938;margin:8px 0 0}
+.nov-intake-counter{display:inline-flex;align-items:center;justify-content:center;min-width:64px;min-height:36px;border-radius:100px;background:#e6eee4;border:1px solid #d2e0d0;color:#245640;font-size:13px;letter-spacing:.03em;font-weight:790}
+.nov-intake-field{margin:0;padding:0 0 22px;border:0;min-width:0}
+.nov-intake-field + .nov-intake-field{border-top:1px solid #e4ece3;padding-top:21px}
+.nov-intake-field legend{font-size:clamp(13px,1.35vw,15px);font-weight:780;color:#204c39;letter-spacing:-.028em;margin-bottom:13px;line-height:1.65;padding:0}
+.nov-intake-field legend>span{color:#7b9885;margin-right:9px;font-size:11px}
+.nov-intake-field legend small{font-size:10px;color:#607b6b;font-weight:540;margin-left:7px;letter-spacing:0}
+.nov-intake-contact .nov-relationship-options{grid-template-columns:1fr 1fr}
+.nov-intake-contact .nov-relationship-options button{font-size:12px;min-height:48px}
+.nov-chip-row,.nov-chip-stack{display:flex;flex-wrap:wrap;gap:9px}
+.nov-chip-row button,.nov-chip-stack button{background:#f7f9f3;border:1px solid #c8d9ca;border-radius:14px;color:#2c5843;font-size:13px;line-height:1.5;padding:11px 14px;min-height:47px;cursor:pointer;text-align:center;font-weight:660;transition:background .16s,color .16s,border-color .16s,transform .16s}
+.nov-chip-row button[aria-pressed="true"],.nov-chip-stack button[aria-pressed="true"]{background:#225a45;color:#fffdf3;border-color:#225a45;box-shadow:0 8px 16px #275c452a}
+.nov-chip-row button:focus-visible,.nov-chip-stack button:focus-visible,#copy-and-chat:focus-visible,.nov-intake-preview summary:focus-visible{outline:3px solid #368e73;outline-offset:3px}
+.nov-chip-stack{flex-direction:column}.nov-chip-stack button{width:100%;text-align:left;min-height:44px;padding:13px 15px}
+.nov-intake-help{font-size:11px!important;line-height:1.6!important;color:#698070!important;margin:12px 0 0!important}
+.nov-need-row button{flex:1;min-width:112px}
+.nov-intake-summary{padding:19px;border:1px solid #c7dcca;background:#edf5eb;border-radius:16px;margin:7px 0 17px}
+.nov-intake-summary .nov-intake-small{margin:0 0 13px;color:#4d785e}
+.nov-summary-chips{display:flex;gap:7px;flex-wrap:wrap}
+.nov-summary-chips span{font-size:12px;line-height:1.45;background:#fffefa;border:1px solid #d6e3d4;border-radius:100px;padding:6px 10px;color:#315d45;max-width:100%}
+.nov-intake-status{font-size:12px!important;margin:13px 0 0!important;line-height:1.65!important;color:#4d755a!important}
+.nov-intake-preview{border-top:1px solid #d7e2d4;border-bottom:1px solid #d7e2d4;margin-bottom:20px;padding:4px 0}
+.nov-intake-preview summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:700;color:#42674f;min-height:46px}
+.nov-intake-preview summary::-webkit-details-marker{display:none}
+.nov-intake-preview[open] summary span{transform:rotate(45deg)}
+.nov-intake-preview label{display:block;color:#5a7462;font-size:11px;margin:12px 0 8px}
+.nov-intake-preview textarea{background:#f9fbf6;border:1px solid #d4e2d5;border-radius:12px;width:100%;font-size:12px;line-height:1.85;padding:12px;resize:vertical;color:#2a4f3c}
+.nov-intake-submit{margin-top:14px}
+#copy-and-chat{width:100%;min-height:58px;border-radius:14px;background:#205441;color:#fffef7;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 19px;font-weight:750;font-size:15px;box-shadow:0 13px 25px #1b51401d;text-decoration:none}
+#copy-and-chat[aria-disabled="true"]{background:#dce6da;color:#607766;cursor:not-allowed;box-shadow:none}
+#copy-and-chat span{font-size:21px}
+.nov-intake-submit .copy-status{font-size:12px!important;color:#496854!important;line-height:1.73!important;margin:13px 0!important}
+.nov-intake-fallback{display:flex;gap:12px;flex-wrap:wrap}
+.nov-intake-fallback button,.nov-intake-fallback a{flex:1;min-width:140px;min-height:44px;border-radius:10px;padding:9px 11px;font-size:12px;font-weight:690;text-align:center;display:inline-flex;align-items:center;justify-content:center}
+.nov-intake-fallback #copy-message{background:#e7efe7;border:1px solid #bdd2bf;color:#285641}
+.nov-intake-fallback #copy-message:disabled{opacity:.58;cursor:not-allowed}
+.nov-intake-fallback .kakao-link{background:#f9f9f3;border:1px solid #c4d4bf;color:#285340}
+.nov-intake-security{font-size:11px!important;line-height:1.7!important;color:#728374!important;margin:17px 0 15px!important}
+@media(max-width:930px){.nov-intake-contact .contact-grid{grid-template-columns:1fr;gap:28px}.nov-intake-panel{max-width:none}.nov-intake-promise{max-width:none}}
+@media(max-width:540px){.nov-intake-contact .contact-grid{gap:24px}.nov-intake-intro h2{font-size:clamp(35px,8.8vw,45px)}.nov-intake-panel{border-radius:17px;padding:22px 18px}.nov-intake-field{padding-bottom:19px}.nov-chip-row,.nov-chip-stack{gap:7px}.nov-chip-row button,.nov-chip-stack button{font-size:12px;padding:10px 11px;min-height:45px;border-radius:10px}.nov-chip-stack button{text-align:left}.nov-intake-contact .nov-relationship-options button{font-size:11px}.nov-need-row button{min-width:95px}.nov-intake-head{margin-bottom:18px}}
+@media(prefers-reduced-motion:reduce){.nov-chip-row button,.nov-chip-stack button{transition:none!important;transform:none!important}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로</a>
+<div class="wrap"><header class="header"><a class="brand" href="#top" aria-label="Weplace 캠페인 처음으로">weplace<b>.</b></a><div class="nov-header-right"><span class="edition">BLACK FRIDAY · 2026</span><a class="nov-header-skip" href="#first-look">바로 비교 ↗</a></div></header></div>
+<main id="main">
+<!-- R2 Cold Open / provocation belongs to a quoted customer doubt, resolved in the SAME viewport. -->
+<section class="nov-cold" id="top" aria-labelledby="campaign-hook-title">
+  <div class="nov-cold-grain" aria-hidden="true"></div>
+  <div class="nov-cold-light" aria-hidden="true"></div>
+  <div class="wrap nov-cold-inner">
+    <div class="nov-cold-top">
+      <p class="nov-cold-index"><span aria-hidden="true">01 —</span> BLACK FRIDAY / FIRST LOOK</p>
+      <span class="nov-cold-side">WEPLACE · NOVEMBER 2026</span>
+    </div>
+    <div class="nov-cold-story">
+      <p class="nov-cold-preface">사진도 바꾸고 광고도 해보셨다면, 이런 생각이 들 수 있습니다.</p>
+      <h1 id="campaign-hook-title" class="nov-cold-title">광고,<br><span>하지 마세요.</span></h1>
+      <p class="nov-cold-doubt">“어차피 돈만 들지 않나요?”</p>
+      <div class="nov-cold-pause" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="nov-reversal" id="reversal" aria-label="광고에 대한 반전 메시지">
+        <p class="nov-reversal-kicker">그런데,</p>
+        <p class="nov-reversal-copy"><strong>광고를 멈추라는 말은 아닙니다.</strong><br>
+          광고를 보고 들어온 손님은<br class="nov-reversal-desktop">
+          <em>다음에 무엇을 볼까요?</em></p>
+      </div>
+    </div>
+    <div class="nov-cold-bottom">
+      <a href="#reveal" class="nov-cold-next">그다음 화면을 볼까요? <span aria-hidden="true">↘</span></a>
+      <a href="#first-look" class="nov-cold-direct">곧바로 화면 비교하기 ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- Existing warm R1 narrative preserved as the reveal, now shorter and more decisive. -->
+<section class="nov-entry" id="reveal" aria-labelledby="landing-title">
+  <div class="wrap nov-entry-grid">
+    <div class="nov-entry-main">
+      <p class="nov-label"><span class="nov-label-line"></span> NOVEMBER 2026 / BLACK FRIDAY · A R5</p>
+      <h2 id="landing-title">광고 다음,<br><em>손님이 보는 화면</em>을<br>살펴볼 차례입니다.</h2>
+      <p class="nov-lead">사진을 올리고 광고도 해보셨다면,<br>손님이 어떤 정보를 다시 찾는지 살펴볼까요?<br><strong>사진·길·예약 안내를 가상 화면에서 비교해 보세요.</strong></p>
+      <div class="nov-entry-actions"><a class="nov-button" href="#fast">RESOLUTE IT FAST 보기 <span aria-hidden="true">↘</span></a><a class="nov-inline" href="#first-look">바로 비교해 보기 <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <aside class="nov-warmth" aria-label="11월의 작은 온기">
+      <div class="nov-warmth-top"><span class="nov-warmth-number">11</span><span>NOVEMBER<br>A SMALL WARMTH</span></div>
+      <p>한 번쯤은,<br>더 크게 알리기보다<br><strong>더 쉽게 이해되는 쪽으로.</strong></p>
+      <div class="nov-warmth-rule"></div>
+      <small>이번 11월에는 매장명이나 연락처를 적지 않고도 <b>세 가지 가상 매장 화면</b>을 비교할 수 있습니다.</small>
+    </aside>
+  </div>
+  <div class="nov-entry-foot wrap"><span>ALREADY SEEN AN AD? / LOOK AT THE NEXT SCREEN.</span><a href="#fast" aria-label="FAST 히어로로 이동">SCROLL TO EXPLORE ↓</a></div>
+</section>
+
+<!-- FAST: original live-text optics and short finite motion, not the unapproved full R3 -->
+<section class="nov-fast" id="fast" aria-labelledby="fast-title">
+  <div class="nov-fast-grid" aria-hidden="true"></div><div class="nov-fast-sun" aria-hidden="true"></div>
+  <div class="nov-fast-sky" aria-hidden="true"><i class="nov-ray r1"></i><i class="nov-ray r2"></i><i class="nov-ray r3"></i><i class="nov-wind w1"></i><i class="nov-wind w2"></i><i class="nov-wind w3"></i></div>
+  <div class="wrap nov-fast-inner">
+    <div class="nov-fast-header"><p class="nov-label">BLACK FRIDAY / FIRST LOOK</p><p class="nov-fast-tag">A CLEARER FIRST LOOK</p></div>
+    <h2 id="fast-title" class="nov-fast-title" aria-label="RESOLUTE IT FAST.">
+      <span class="nov-fast-word">RESOLUTE</span>
+      <span class="nov-fast-line">IT <span class="nov-fast-wrap"><span class="nov-fast-shadow" aria-hidden="true">FAST.</span><span class="nov-fast-face">FAST.</span><span class="nov-fast-trail" aria-hidden="true">FAST.</span></span></span>
+    </h2>
+    <div class="nov-fast-bottom">
+      <div class="nov-fast-copy"><span class="nov-fast-corner" aria-hidden="true">↳</span><div><strong>가격을 바꾸기 전에,<br>손님이 보는 화면부터.</strong><p>대표 사진 · 찾아오는 길 · 예약 안내.<br>정리 전후를 가상 화면에서 비교해 보세요.</p></div></div>
+      <div class="nov-fast-actions"><a class="nov-button" href="#first-look">세 화면 비교하기 <span aria-hidden="true">↗</span></a><a class="nov-inline" href="#action-plan">진행 순서 보기 <span aria-hidden="true">↘</span></a></div>
+    </div>
+    <div class="nov-fast-controls"><button type="button" id="fast-replay" disabled aria-label="FAST 글자 움직임 다시 재생">FAST 다시 보기 ↻</button><span id="fast-status" role="status" aria-live="polite">기본 무음 · 한 번 움직이고 정착합니다</span></div>
+  </div>
+</section>
+<section id="first-look" class="section" aria-labelledby="first-look-title"><div class="wrap">
+ <div class="section-head"><div><p class="overline">03 / MAKE IT CLEAR</p><h2 id="first-look-title">손님이 다시 찾는 정보는<br><em>어디에 있을까요?</em></h2></div><p>하나를 고르면 정리 전후가 바뀝니다. <b>가상 매장 화면</b>으로, 실제 고객 사례나 매출 성과를 보여주는 자료는 아닙니다.</p></div>
+ <div class="choices" role="group" aria-label="먼저 확인할 화면 선택">
+   <button class="choice" type="button" data-focus="photo" aria-pressed="true"><span>대표 사진</span><span class="num">01</span></button>
+   <button class="choice" type="button" data-focus="route" aria-pressed="false"><span>찾아오는 길</span><span class="num">02</span></button>
+   <button class="choice" type="button" data-focus="booking" aria-pressed="false"><span>예약 안내</span><span class="num">03</span></button>
+ </div>
+ <div class="stage" role="region" aria-labelledby="stage-title">
+   <div class="stage-inner before" id="stage-inner"><div><span class="stage-kicker" id="stage-kicker">01 / 대표 사진</span><h3 id="stage-title">이곳에서는 무엇을 할 수 있을까요?</h3><p id="stage-desc">외관은 보이지만 어떤 서비스를 하는지 다른 사진을 찾아야 하는 화면입니다.</p></div><div class="stage-label" id="stage-label">정리 전 예시 · 다른 정보를 더 찾아야 합니다.</div></div>
+   <div class="stage-visual">
+     <div class="mockup" id="mockup" data-mode="before" aria-label="가상 매장 UI 예시">
+       <div class="mock-top"><span>MOON / 가상 매장</span><span>01 / FIRST LOOK</span></div>
+       <div class="mock-title" id="mock-title">외관 · 분위기</div>
+       <div class="mock-extra" id="mock-extra">서비스와 이용 공간은 다른 사진에서 찾아야 합니다.</div>
+       <span class="mock-cta" id="mock-cta">사진 더 보기</span>
+     </div>
+     <div class="mode-switch" role="group" aria-label="예시 화면 전후 비교">
+       <button type="button" data-mode="before" aria-pressed="true">정리 전 보기</button>
+       <button type="button" data-mode="after" aria-pressed="false">정리 후 보기</button>
+     </div>
+     <div class="answer" role="status" aria-live="polite" id="answer">가상 화면입니다. 매장 정보를 읽거나 저장하지 않습니다.</div>
+   </div>
+ </div>
+</div></section>
+
+<section class="nov-work-bridge" id="action-plan" aria-labelledby="action-plan-title">
+ <div class="wrap">
+  <p class="nov-step-label">04 / FROM THE CLICK TO THE NEXT STEP</p>
+  <div class="nov-bridge-head"><h2 id="action-plan-title">그 화면을 바꾸려면,<br><em>무엇부터 볼까요?</em></h2><p>광고를 보고 온 손님이 무엇을 다시 찾을까요? 그 질문부터 살펴보면, 정리할 순서도 조금 더 분명해질 수 있습니다.</p></div>
+  <div class="nov-bridge-grid">
+    <div class="nov-bridge-topic" aria-live="polite">
+     <span class="nov-topic-tag">선택한 화면 / <b id="selected-topic">대표 사진</b></span>
+     <h3 id="selected-question">첫 사진에서 어떤 매장인지 보이나요?</h3>
+     <p id="selected-problem">첫 사진에 무엇이 보이는지부터 확인합니다.</p>
+     <div class="nov-bridge-output"><span>우선 검토할 것</span><strong id="selected-action">대표 메뉴와 공간을 이어 보여줄 사진 순서</strong></div>
+     <small>가상 매장을 바탕으로 한 작업 방향 예시입니다. 실제 매장 진단 결과나 수행 약속이 아닙니다.</small>
+    </div>
+    <div class="nov-bridge-steps">
+      <h3>작업 전에 살펴볼 순서</h3>
+      <ol>
+       <li><span>01</span><div><strong>지금 보이는 화면 확인</strong><p>공개된 정보에서 고객이 다시 확인할 내용을 살펴봅니다.</p></div></li>
+       <li><span>02</span><div><strong>먼저 바꿀 한 가지 합의</strong><p>범위·비용·일정을 확인한 뒤 실행 여부를 결정합니다.</p></div></li>
+       <li><span>03</span><div><strong>변경 → 검수 → 공유</strong><p>합의된 작업에 한해 결과물과 수정 사항을 확인합니다.</p></div></li>
+      </ol>
+    </div>
+  </div>
+  <div class="nov-bridge-next"><a class="nov-button" href="#proof">작업 흐름 예시 보기 <span aria-hidden="true">↘</span></a><a class="nov-inline" href="#first-look">다른 장면 비교하기 ↗</a></div>
+ </div>
+</section>
+<section class="nov-work-proof" id="proof" aria-labelledby="proof-title">
+ <div class="wrap">
+  <p class="nov-step-label">05 / SHOW WHAT WE DO</p>
+  <h2 id="proof-title">정리한 다음에는,<br><em>무엇을 확인할까요?</em></h2>
+  <p class="nov-proof-lead">정리한 화면과 작업 흐름을 미리 살펴보세요. 아래는 화면과 기능의 <strong>예시</strong>이며 실제 고객 실적을 보여주는 자료는 아닙니다.</p>
+  <div class="nov-proof-grid">
+    <article class="nov-proof-card nov-proof-card-primary"><span class="nov-proof-index">01 / FIRST LOOK</span><h3>찾아보던 정보를,<br>한 화면에서.</h3><p>사진·길·예약 중 고른 내용을 직접 정리 전후로 비교할 수 있습니다.</p><a class="nov-proof-link" href="#first-look">비교 다시 보기 <span aria-hidden="true">↗</span></a></article>
+    <article class="nov-proof-card"><span class="nov-proof-index">02 / FLOW DEMO</span><h3>진행 과정을<br>미리 살펴보세요.</h3><p>Weplace FLOW 예시 운영 화면을 열어보세요. 실제 고객 데이터나 수행 기록이 아닙니다.</p><a class="nov-proof-link" href="/flow-preview/" target="_blank" rel="noopener noreferrer">FLOW 예시 살펴보기 <span aria-hidden="true">↗</span></a></article>
+    <article class="nov-proof-card"><span class="nov-proof-index">03 / WEPLACE</span><h3>Weplace가 하는 일이<br>더 궁금하다면.</h3><p>Weplace 홈페이지에서 다른 서비스 안내를 확인할 수 있습니다. 새 창에서 열립니다.</p><a class="nov-proof-link" href="/" target="_blank" rel="noopener noreferrer">회사·서비스 더 보기 <span aria-hidden="true">↗</span></a></article>
+  </div>
+  <p class="nov-proof-disclaimer">위 화면은 구성과 진행 방식을 이해하기 위한 예시입니다. 특정 매장의 성과를 보여주는 자료는 아닙니다. 실제 제공 범위는 상담 후 확인합니다.</p>
+  <div class="nov-proof-actions"><a href="#contact" class="nov-button">우리 매장도 살펴볼까요? <span aria-hidden="true">↗</span></a><a href="#action-plan" class="nov-inline">진행 순서 다시 보기 ↗</a></div>
+ </div>
+</section>
+<section class="lower" aria-labelledby="next-title"><div class="wrap lower-grid">
+ <div><p class="overline">06 / ONE CLEAR NEXT STEP</p><h2 id="next-title">궁금한 점이<br>하나 떠올랐다면.</h2><p>다른 화면을 더 비교해 봐도 좋고, 지금 궁금한 점을 문의해도 됩니다. 아직 결정하지 않으셔도 괜찮습니다.</p></div>
+ <div><button class="action" type="button" id="cta-experience">다른 화면도 비교하기 <span aria-hidden="true">↗</span></button>
+ <a class="action alt" id="cta-contact" href="#contact">문의 내용 준비하기 <span aria-hidden="true">↗</span></a>
+ <p class="fine">선택한 내용은 이 페이지 안에서만 반영됩니다. 매장명이나 연락처는 입력받지 않습니다.</p></div>
+ </div></section>
+
+<section class="contact nov-intake-contact" id="contact" aria-labelledby="contact-title">
+ <div class="wrap contact-grid">
+  <div class="nov-intake-intro">
+   <p class="overline">07 / QUICK INQUIRY</p>
+   <h2 id="contact-title">문의 문장은<br>쓰지 않으셔도 됩니다.</h2>
+   <p class="nov-intake-lead">업종, 지금 고민, 필요한 안내를 골라주세요.<br>고른 내용으로 문의 문장이 만들어집니다.</p>
+   <div class="nov-intake-promise"><span>01</span> 글쓰기 없이 선택 <i aria-hidden="true">/</i> <span>02</span> 문의문 자동 완성 <i aria-hidden="true">/</i> <span>03</span> 붙여넣어 보내기</div>
+   <p class="contact-note">이 페이지는 문의 내용을 저장하거나 자동으로 보내지 않습니다. 채팅창에 붙여넣어 직접 보내야 접수됩니다. 실제 매장 진단의 제공 범위·비용·일정은 상담 후 안내합니다.</p>
+  </div>
+  <div class="contact-panel nov-intake-panel">
+   <div class="nov-intake-head"><div><span class="nov-intake-small">WEPLACE / FIRST LOOK</span><h3>선택으로 문의 준비</h3></div><span class="nov-intake-counter" id="intake-counter" aria-live="polite">0 / 3</span></div>
+
+   <fieldset class="nov-relationship nov-intake-field" aria-label="상담 이력">
+    <legend><span>00</span> 이번 상담은 어떤 상황인가요?</legend>
+    <div class="nov-relationship-options" role="group" aria-label="문의 유형">
+     <button type="button" data-relationship="new" aria-pressed="true">처음 문의해요</button>
+     <button type="button" data-relationship="returning" aria-pressed="false">전에 연락했어요</button>
+    </div>
+   </fieldset>
+
+   <fieldset class="nov-intake-field">
+    <legend><span>01</span> 어떤 업종인가요? <small>필수</small></legend>
+    <div class="nov-chip-row" role="group" aria-label="업종 선택">
+     <button type="button" data-industry="restaurant" aria-pressed="false">식당</button>
+     <button type="button" data-industry="cafe" aria-pressed="false">카페</button>
+     <button type="button" data-industry="stay" aria-pressed="false">숙박</button>
+     <button type="button" data-industry="beauty" aria-pressed="false">뷰티</button>
+     <button type="button" data-industry="other" aria-pressed="false">다른 업종</button>
+    </div>
+   </fieldset>
+
+   <fieldset class="nov-intake-field">
+    <legend><span>02</span> 어느 화면부터 볼까요? <small>앞에서 고른 화면</small></legend>
+    <div class="nov-chip-row" role="group" aria-label="문의할 화면 선택">
+     <button type="button" data-intake-focus="photo" aria-pressed="true">대표 사진</button>
+     <button type="button" data-intake-focus="route" aria-pressed="false">찾아오는 길</button>
+     <button type="button" data-intake-focus="booking" aria-pressed="false">예약 안내</button>
+    </div>
+    <p class="nov-intake-help">화면 비교에서 고른 항목을 그대로 가져왔습니다. 여기서 변경해도 됩니다.</p>
+   </fieldset>
+
+   <fieldset class="nov-intake-field">
+    <legend><span>03</span> 지금 고민과 가까운 것은? <small>필수</small></legend>
+    <div class="nov-chip-stack" role="group" id="intake-issue-choices" aria-label="현재 고민 선택"></div>
+   </fieldset>
+
+   <fieldset class="nov-intake-field">
+    <legend><span>04</span> 어떤 안내가 필요하신가요? <small>필수</small></legend>
+    <div class="nov-chip-row nov-need-row" role="group" aria-label="희망 상담 내용">
+     <button type="button" data-request="priority" aria-pressed="false">먼저 바꿀 순서</button>
+     <button type="button" data-request="proposal" aria-pressed="false">개선 방향</button>
+     <button type="button" data-request="pricing" aria-pressed="false">비용·일정</button>
+    </div>
+   </fieldset>
+
+   <div class="nov-intake-summary" aria-live="polite">
+    <p class="nov-intake-small">선택하신 내용</p>
+    <div class="nov-summary-chips" id="intake-summary-chips">
+     <span>업종을 골라주세요</span><span>고민을 골라주세요</span><span>안내를 골라주세요</span>
+    </div>
+    <p class="nov-intake-status" id="intake-ready-status" role="status">세 항목을 고르면 문의 내용이 완성됩니다.</p>
+   </div>
+
+   <details class="nov-intake-preview" id="intake-preview">
+    <summary>완성된 문의 내용 미리 보기 <span aria-hidden="true">＋</span></summary>
+    <label for="prepared-message">선택 내용을 조합한 문의문</label>
+    <textarea id="prepared-message" rows="8" readonly spellcheck="false" aria-describedby="intake-ready-status">필수 항목을 선택하면 문의 문장이 만들어집니다.</textarea>
+   </details>
+
+   <div class="nov-intake-submit">
+    <a id="copy-and-chat" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer" aria-disabled="true" tabindex="-1">업종·고민·안내를 골라주세요 <span aria-hidden="true">↗</span></a>
+    <p id="copy-status" class="copy-status" role="status" aria-live="polite">카카오톡이 열리면 내용을 붙여넣어 보내주세요. 복사가 안 되면 아래 버튼으로 다시 복사할 수 있습니다.</p>
+    <div class="nov-intake-fallback">
+     <button type="button" id="copy-message" class="copy-button" disabled>내용만 복사</button>
+     <a class="kakao-link" href="https://pf.kakao.com/_mxbexhX" target="_blank" rel="noopener noreferrer">카카오톡만 열기 ↗</a>
+    </div>
+   </div>
+   <p class="nov-intake-security">이 페이지에서는 문의 내용을 저장하거나 전송하지 않습니다. 매장명·지역은 상담할 때 필요한 경우에만 여쭤봅니다.</p>
+   <a class="reconsider" href="#first-look">다른 화면도 비교하기 ↑</a>
+   <noscript><p class="contact-note">자바스크립트가 꺼져 있으면 위 선택 기능은 사용할 수 없습니다. 아래 카카오톡 링크에서 직접 문의할 수 있습니다.</p></noscript>
+  </div>
+ </div>
+</section>
+</main>
+<div class="wrap"><footer class="footer"><span>WEPLACE · NOVEMBER FAST A R5 / REVIEW ONLY</span><span>11월의 작은 온기: 가입 없이 보는 가상 화면 비교 · 실제 혜택·가격·기한 미확정</span></footer></div>
+<script>
+(()=>{'use strict';
+ const data={
+  photo:{label:'대표 사진',before:['이곳에서는 무엇을 할 수 있을까요?','외관은 보이지만 어떤 서비스를 하는지 다른 사진을 찾아야 하는 화면입니다.','외관 · 분위기','서비스와 이용 공간은 다른 사진에서 찾아야 합니다.','사진 더 보기'],after:['서비스부터 이용 공간까지.','서비스와 공간 정보를 이어 보여주는 구성 예시입니다.','서비스 · 공간 사진','서비스와 공간 사진을 이어 놓았습니다.','이용 안내 확인']},
+  route:{label:'찾아오는 길',before:['주소는 알지만, 입구는 어디일까요?','주소·출구·주차 정보가 흩어져 있으면 처음 오는 손님이 다시 찾아봐야 할 수 있습니다.','주소 · 지도','입구와 주차 위치는 따로 확인해야 합니다.','길 다시 찾기'],after:['출구부터 입구까지 한 화면에.','출구·입구·주차 안내를 나란히 보여주는 가상 예시입니다.','출구 · 입구 · 주차','어디서 내려 어느 문으로 들어갈지 안내합니다.','도착 정보 확인']},
+  booking:{label:'예약 안내',before:['예약하려면 무엇을 알아야 할까요?','예약 안내가 있어도 가능한 인원·시간·확정 방법이 보이지 않으면 망설일 수 있습니다.','예약 문의','인원·시간·확정 방식은 별도로 확인해야 합니다.','문의 채널 찾기'],after:['인원과 시간, 확인 절차까지.','가능한 인원·시간과 예약 확정 여부를 구분해 안내하는 구성 예시입니다.','인원 · 시간 · 확인','예약 전 확인할 조건과 절차를 함께 보여줍니다.','예약 방법 확인']}
+ };
+ let focus='photo',mode='before',relationship='new',industry=null,concern=null,requestType=null; const one=selector=>document.querySelector(selector), many=selector=>Array.from(document.querySelectorAll(selector));
+ const plan={
+  photo:{question:'첫 사진에서 어떤 매장인지 보이나요?',problem:'대표 사진이 공간만 보여준다면, 고객은 메뉴나 이용 장면을 다시 찾아야 할 수 있습니다.',action:'서비스·공간·이용 장면을 이어 보여줄 사진 순서'},
+  route:{question:'주소만 보고 입구까지 찾아올 수 있을까요?',problem:'지도가 있어도 출구·입구·주차 위치는 고객이 다시 확인할 수 있습니다.',action:'출구·입구·주차 정보를 함께 보여주는 도착 안내'},
+  booking:{question:'예약 전 확인할 조건이 한 화면에 있을까요?',problem:'예약 버튼이 있어도 인원·시간·확정 방법을 몰라 문의가 반복될 수 있습니다.',action:'예약 가능 조건과 확인 절차를 한 흐름으로 정리'}
+ };
+ function updateBridge(){
+  const p=plan[focus],d=data[focus];
+  one('#selected-topic').textContent=d.label;
+  one('#selected-question').textContent=p.question;
+  one('#selected-problem').textContent=p.problem;
+  one('#selected-action').textContent=p.action;
+  many('[data-relationship]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.relationship===relationship)));
+ }
+
+ const industryLabels={restaurant:'식당',cafe:'카페',stay:'숙박',beauty:'뷰티',other:'다른 업종'};
+ const requestLabels={priority:'먼저 바꿀 순서',proposal:'개선 방향',pricing:'비용·일정'};
+ const concerns={
+  photo:[['first','첫 사진만으로 매장 특징이 잘 보이지 않아요'],['menu','서비스와 공간 정보를 따로 찾아야 해요'],['order','어떤 사진부터 바꿀지 잘 모르겠어요']],
+  route:[['entrance','처음 오는 손님이 입구를 헷갈려해요'],['parking','주차·대중교통 문의가 반복돼요'],['maps','지도와 상세 안내가 서로 달라요']],
+  booking:[['terms','예약 인원·시간을 반복해서 확인해요'],['button','예약하는 버튼이나 경로가 눈에 안 띄어요'],['confirm','예약 완료·확정 방법을 이해하기 어려워요']]
+ };
+ let currentConcernFocus=null, latestIntakeReady=false, latestIntakeText='';
+ const makeOption=(code,label)=>{
+   const button=document.createElement('button');button.type='button';button.dataset.concern=code;
+   button.textContent=label;button.setAttribute('aria-pressed',String(concern===code));
+   button.addEventListener('click',()=>{concern=code;updateClickIntake()});
+   return button;
+ };
+ function renderConcernOptions(){
+   if(currentConcernFocus===focus)return;
+   const choices=one('#intake-issue-choices');
+   choices.replaceChildren(...concerns[focus].map(([code,label])=>makeOption(code,label)));
+   currentConcernFocus=focus;
+ }
+ function updateClickIntake(){
+   renderConcernOptions();
+   many('[data-industry]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.industry===industry)));
+   many('[data-intake-focus]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.intakeFocus===focus)));
+   many('[data-request]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.request===requestType)));
+   many('[data-concern]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.concern===concern)));
+   const concernLabel=concerns[focus].find(([code])=>code===concern)?.[1]||null;
+   const isReady=Boolean(industry&&concernLabel&&requestType);
+   latestIntakeReady=isReady;
+   const labels=[
+     industry?industryLabels[industry]:'업종을 골라주세요',
+     '화면: '+data[focus].label,
+     concernLabel||'고민을 골라주세요',
+     requestType?requestLabels[requestType]:'안내를 골라주세요'
+   ];
+   one('#intake-summary-chips').replaceChildren(...labels.map(label=>{const el=document.createElement('span');el.textContent=label;return el}));
+   const done=[industry,concernLabel,requestType].filter(Boolean).length;
+   one('#intake-counter').textContent=done+' / 3';
+   const intro=relationship==='returning'
+     ?'이전에 Weplace와 연락한 적이 있습니다.'
+     :'이번에 처음 문의드립니다.';
+   const ask=requestType==='pricing'
+     ?'가능한 작업 범위와 비용·일정을 알려주세요.'
+     :requestType==='priority'
+     ?'어디부터 살펴보면 좋을지 알려주세요.'
+     :'어떤 방향으로 정리할 수 있을지 궁금합니다.';
+   const text=[
+     '[Weplace · 11월 화면 비교 문의]',
+     '안녕하세요. '+intro,
+     '업종: '+(industry?industryLabels[industry]:'선택 전'),
+     '살펴보고 싶은 화면: '+data[focus].label,
+     '지금 고민: '+(concernLabel||'선택 전'),
+     ask
+   ].join('\n');
+   latestIntakeText=text;
+   one('#prepared-message').value=text;
+   const summary=one('#intake-ready-status');
+   summary.textContent=isReady?'문의 문장이 준비됐습니다. 카카오톡에서 붙여넣어 보내주세요.':'업종·고민·원하는 안내를 골라주세요. ('+done+'/3)';
+   const link=one('#copy-and-chat');link.setAttribute('aria-disabled',String(!isReady));
+   link.tabIndex=isReady?0:-1;
+   link.innerHTML=isReady?'문의문 복사하고 채팅 열기 <span aria-hidden="true">↗</span>':'업종·고민·안내를 골라주세요 <span aria-hidden="true">↗</span>';
+   one('#copy-message').disabled=!isReady;
+ }
+ function fallbackSelect(){
+   one('#intake-preview').open=true;
+   const area=one('#prepared-message');
+   area.focus();area.select();
+ }
+ function copyPrepared(){
+   if(!latestIntakeReady)return Promise.resolve(false);
+   if(!navigator.clipboard||!navigator.clipboard.writeText){
+     fallbackSelect();
+     one('#copy-status').textContent='자동 복사를 지원하지 않아 문구를 선택했습니다. 복사한 뒤 채팅창에 붙여넣어 주세요.';
+     return Promise.resolve(false);
+   }
+   return navigator.clipboard.writeText(latestIntakeText).then(()=>{
+      one('#copy-status').textContent='복사했습니다. 카카오톡 채팅창에 붙여넣고 보내주세요. 아직 접수된 상태는 아닙니다.';
+      return true;
+   }).catch(()=>{
+      fallbackSelect();
+      one('#copy-status').textContent='복사가 제한되어 문의문을 선택했습니다. 직접 복사해 카카오톡에 붙여넣어 주세요.';
+      return false;
+   });
+ }
+  function render(){const d=data[focus],c=d[mode];many('[data-focus]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.focus===focus)));many('button[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
+  one('#stage-inner').className='stage-inner '+mode;one('#stage-kicker').textContent='01 / '+d.label;one('#stage-title').textContent=c[0];one('#stage-desc').textContent=c[1];one('#stage-label').textContent=mode==='before'?'정리 전 예시 · 다른 정보를 더 찾아야 합니다.':'정리 후 예시 · 다음 안내를 한눈에 볼 수 있습니다.';
+  one('#mockup').dataset.mode=mode;one('#mock-title').textContent=c[2];one('#mock-extra').textContent=c[3];one('#mock-cta').textContent=c[4];one('#answer').textContent=mode==='before'?d.label+'의 정리 전 예시입니다. 정리 후 화면과 비교해 보세요.':'가상 화면을 정리한 예시입니다. 실제 고객 성과나 매출 변화를 보여주는 자료는 아닙니다.';
+  // The required choices compose the customer-facing inquiry in updateClickIntake().
+  one('#copy-status').textContent='문의 내용을 준비하고 있습니다. 채팅창에서 직접 보내야 접수됩니다.';
+  updateBridge();
+  updateClickIntake();
+ }
+ many('[data-focus]').forEach(b=>b.addEventListener('click',()=>{if(focus!==b.dataset.focus)concern=null;focus=b.dataset.focus;mode='before';render();}));
+ many('[data-relationship]').forEach(b=>b.addEventListener('click',()=>{relationship=b.dataset.relationship;render();}));
+ many('[data-industry]').forEach(b=>b.addEventListener('click',()=>{industry=b.dataset.industry;updateClickIntake()}));
+ many('[data-intake-focus]').forEach(b=>b.addEventListener('click',()=>{if(focus!==b.dataset.intakeFocus){focus=b.dataset.intakeFocus;concern=null;mode='before';render()}else updateClickIntake()}));
+ many('[data-request]').forEach(b=>b.addEventListener('click',()=>{requestType=b.dataset.request;updateClickIntake()}));
+ many('button[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;render();}));
+ one('#cta-experience').addEventListener('click',()=>{mode='after';render();one('#stage-title').scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
+
+ one('#copy-message').addEventListener('click',()=>{copyPrepared();});
+ one('#copy-and-chat').addEventListener('click',event=>{
+   if(!latestIntakeReady){
+     event.preventDefault();one('#intake-ready-status').focus?.();one('#intake-ready-status').textContent='업종·고민·원하는 안내를 골라주세요.';
+     return;
+   }
+   // The default anchor opens Kakao channel in a new tab; copying is a best-effort
+   // gesture-initiated helper, never a claim of message submission.
+   copyPrepared();
+ });
+ render();
+})();
+</script>
+<script>
+/* Finite, optional FAST optics. Static HTML and all calls to action work without JS. */
+(()=>{'use strict';
+ const hero=document.getElementById('fast'),btn=document.getElementById('fast-replay'),status=document.getElementById('fast-status');
+ if(!hero||!btn||!status)return;
+ const reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)');
+ const dataSaver=navigator.connection&&navigator.connection.saveData;
+ let started=false,timeout=0;
+ function motionAllowed(){return !((reduced&&reduced.matches)||dataSaver);}
+ function settle(){hero.classList.remove('is-fast-playing');btn.disabled=!motionAllowed();}
+ function replay(){
+   if(!motionAllowed()){settle();status.textContent='움직임을 줄인 상태로 선명하게 보여드립니다';return;}
+   clearTimeout(timeout);hero.classList.remove('is-fast-playing');void hero.offsetWidth;
+   btn.disabled=true;hero.classList.add('is-fast-playing');
+   status.textContent='FAST · 가속, 잔상, 정착';
+   timeout=setTimeout(()=>{settle();status.textContent='정착 완료 · 다시 보기를 누르면 재생됩니다';},660);
+ }
+ btn.disabled=!motionAllowed();
+ btn.addEventListener('click',replay);
+ if(reduced&&reduced.addEventListener)reduced.addEventListener('change',()=>{clearTimeout(timeout);settle();});
+ if(!motionAllowed()){status.textContent='기본 무음 · 움직임을 줄인 정적인 화면입니다';return;}
+ if('IntersectionObserver' in window){
+   const observer=new IntersectionObserver(entries=>{
+     if(entries.some(e=>e.isIntersecting&&!started)){
+       started=true;observer.disconnect();replay();
+     }
+   },{threshold:.4});
+   observer.observe(hero);
+ }else{started=true;replay();}
+ document.addEventListener('visibilitychange',()=>{if(document.hidden){clearTimeout(timeout);settle();}});
+})();
+</script>
+</body></html>
