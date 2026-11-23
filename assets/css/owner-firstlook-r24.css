@@ -1,0 +1,99 @@
+/* WEPLACE OWNER FIRST LOOK R2.4 — standalone namespaced bridge, appended after Owner Focus film.
+   The original /#experience and inquiry dialog are preserved and used as deeper destinations. */
+.wp-fl-bridge{
+  --wpfl-ink:#233529;--wpfl-moss:#3d5846;--wpfl-muted:#637466;--wpfl-soft:#eef0e8;
+  --wpfl-line:rgba(44,77,53,.18);--wpfl-accent:#d4e0ca;
+  position:relative;isolation:isolate;scroll-margin-top:90px;overflow:hidden;
+  background:linear-gradient(120deg,#f4f3eb 0%,#e9eee5 100%);color:var(--wpfl-ink);
+  padding:clamp(70px,9vw,124px) 0;
+}
+.wp-fl-bridge,.wp-fl-bridge *{box-sizing:border-box}
+.wp-fl-bridge [hidden]{display:none!important}
+.wp-fl-bridge button,.wp-fl-bridge a{font:inherit}
+.wp-fl-bridge button:focus-visible,.wp-fl-bridge a:focus-visible{outline:3px solid #536a48;outline-offset:3px}
+.wp-fl-bridge .wp-fl-overline{font-size:11px;font-weight:800;letter-spacing:.16em;color:#587360;margin:0 0 16px}
+.wp-fl-bridge .wp-fl-header h2{font-size:clamp(34px,4.8vw,63px);line-height:1.17;letter-spacing:-.067em;font-weight:750;max-width:14ch;margin:0}
+.wp-fl-bridge .wp-fl-header h2 em{font-style:normal;color:#6c8b73}
+.wp-fl-bridge .wp-fl-header p:last-child{font-size:clamp(14px,1.2vw,17px);line-height:1.75;max-width:39em;color:#596b5c;margin:18px 0 0}
+.wp-fl-bridge .wp-fl-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(25px,5.5vw,82px);align-items:center;margin-top:clamp(36px,5.5vw,70px)}
+.wp-fl-bridge .wp-fl-topline{font-size:13px;color:#4e6553;font-weight:700;margin:0 0 14px}
+.wp-fl-bridge .wp-fl-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.wp-fl-bridge .wp-fl-option{min-height:90px;background:#ffffffab;border:1px solid #d0dad0;border-radius:16px;text-align:left;padding:14px 13px;color:#4b604f;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;gap:9px;transition:background .2s,border-color .2s,transform .2s}
+.wp-fl-bridge .wp-fl-option span{font-size:10px;letter-spacing:.1em;color:#778b79;font-weight:700}
+.wp-fl-bridge .wp-fl-option strong{font-size:clamp(12px,1.2vw,16px);font-weight:750;line-height:1.35;word-break:keep-all}
+.wp-fl-bridge .wp-fl-option:hover:not(:disabled){border-color:#779780;transform:translateY(-2px)}
+.wp-fl-bridge .wp-fl-option[aria-pressed=true]{background:#2e4535;border-color:#2e4535;color:#f7f7ed;box-shadow:0 12px 28px rgba(27,59,34,.14)}
+.wp-fl-bridge .wp-fl-option[aria-pressed=true] span{color:#c4d5bc}
+.wp-fl-bridge .wp-fl-option:disabled{cursor:default}
+.wp-fl-bridge .wp-fl-story{min-height:196px;margin-top:29px}
+.wp-fl-bridge .wp-fl-topic{font-size:11px;letter-spacing:.11em;color:#729077;font-weight:750}
+.wp-fl-bridge .wp-fl-story h3{font-size:clamp(28px,3.2vw,44px);white-space:pre-line;line-height:1.23;letter-spacing:-.056em;margin:11px 0 16px;color:#25392a}
+.wp-fl-bridge .wp-fl-story p{color:#596d5c;font-size:15px;line-height:1.8;max-width:38ch;margin:0}
+.wp-fl-bridge .wp-fl-actionrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.wp-fl-bridge .wp-fl-action{min-height:48px;padding:11px 18px;border:1px solid #9baea0;background:transparent;border-radius:100px;font-size:14px;font-weight:730;color:#2e4935;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .18s ease}
+.wp-fl-bridge .wp-fl-action.primary{background:#2f5139;border-color:#2f5139;color:#f5f5ec}
+.wp-fl-bridge .wp-fl-action:hover{background:#c8d8c8}
+.wp-fl-bridge .wp-fl-action.primary:hover{background:#3f694b}
+.wp-fl-bridge .wp-fl-action:disabled{cursor:default;opacity:.5}
+.wp-fl-bridge .wp-fl-note{font-size:12px;line-height:1.7;color:#728273;margin:19px 0 0;max-width:45ch}
+.wp-fl-bridge .wp-fl-demo{border-radius:25px;background:#24362a;color:#f1f4ed;padding:22px;box-shadow:0 24px 72px rgba(34,63,42,.18);border:1px solid #364d3b}
+.wp-fl-bridge .wp-fl-demo-head{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:28px}
+.wp-fl-bridge .wp-fl-demo-head strong{font-size:11px;letter-spacing:.13em;color:#d0ddc8}
+.wp-fl-bridge .wp-fl-demo-head span{font-size:11px;color:#9eb7a1}
+.wp-fl-bridge .wp-fl-modebar{display:flex;gap:5px;background:#1b2b20;border:1px solid #394c3d;border-radius:12px;padding:5px;margin:16px auto 16px;max-width:352px}
+.wp-fl-bridge .wp-fl-modebar button{flex:1;border:0;background:none;border-radius:9px;color:#b3c6b4;min-height:42px;font-size:14px;font-weight:720;cursor:pointer}
+.wp-fl-bridge .wp-fl-modebar button[aria-pressed=true]{background:#d5e3cb;color:#243d2b;box-shadow:0 2px 8px #0002}
+.wp-fl-bridge .wp-fl-modebar button:disabled{cursor:default}
+.wp-fl-bridge .wp-fl-device{max-width:356px;margin:auto;border:6px solid #0d1811;border-radius:29px;background:#f9faf5;color:#29372b;box-shadow:0 21px 34px #0b191377;overflow:hidden}
+.wp-fl-bridge .wp-fl-device-top{min-height:55px;display:flex;align-items:end;justify-content:space-between;padding:14px 17px 9px;gap:7px;border-bottom:1px solid #e5e8e0;font-size:11px}
+.wp-fl-bridge .wp-fl-device-top strong{font-weight:760}
+.wp-fl-bridge .wp-fl-device-top span{color:#7d8779}
+.wp-fl-bridge .wp-fl-picture{height:156px;position:relative;overflow:hidden;background:#9fae96}
+.wp-fl-bridge .wp-fl-picture img{width:100%;height:100%;object-fit:cover;display:block}
+.wp-fl-bridge .wp-fl-device-body{padding:16px 16px 20px;min-height:265px}
+.wp-fl-bridge .wp-fl-view{min-height:245px}
+.wp-fl-bridge .wp-fl-pillrow{display:flex;gap:6px;margin-bottom:15px}
+.wp-fl-bridge .wp-fl-pillrow span{padding:6px 10px;background:#e7eae1;border-radius:99px;color:#657464;font-size:11px;font-weight:650}
+.wp-fl-bridge .wp-fl-view>h4{font-size:18px;letter-spacing:-.04em;margin:0 0 9px;color:#283e2d}
+.wp-fl-bridge .wp-fl-view>p{font-size:12px;line-height:1.65;color:#5f7160;margin:0 0 11px}
+.wp-fl-bridge .wp-fl-fogrow{display:flex;align-items:center;justify-content:space-between;gap:7px;background:#eceee9;border:1px solid #e3e6df;border-radius:11px;padding:11px;margin:8px 0;filter:blur(.6px);opacity:.7;font-size:12px}
+.wp-fl-bridge .wp-fl-fogrow strong{color:#778778;font-weight:600}
+.wp-fl-bridge .wp-fl-fogrow small{color:#a1aaa1}
+.wp-fl-bridge .wp-fl-hint{display:block;font-size:11px;color:#87948a;padding-top:7px}
+.wp-fl-bridge .wp-fl-fixedrow{border-radius:11px;background:#e9f0e5;border:1px solid #d5e2d2;margin:9px 0;padding:12px;display:flex;justify-content:space-between;gap:7px;align-items:center}
+.wp-fl-bridge .wp-fl-fixedrow strong{font-size:12px;color:#2f593d;font-weight:750}
+.wp-fl-bridge .wp-fl-fixedrow span{font-size:11px;color:#536c55}
+.wp-fl-bridge .wp-fl-fake-cta{border-radius:10px;text-align:center;background:#315d3f;color:#fff;padding:12px 14px;margin-top:12px;font-size:13px;font-weight:750}
+.wp-fl-bridge .wp-fl-photo-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:9px 0}
+.wp-fl-bridge .wp-fl-photo-pair img{width:100%;height:93px;object-fit:cover;border-radius:9px}
+.wp-fl-bridge .wp-fl-route-line{display:flex;align-items:center;gap:7px;padding:11px 8px;border-bottom:1px solid #d8e4d8}
+.wp-fl-bridge .wp-fl-route-line b{display:grid;place-items:center;border-radius:50%;background:#376443;color:#f8f9f4;width:23px;height:23px;flex:none;font-size:11px}
+.wp-fl-bridge .wp-fl-route-line span{font-size:12px;color:#3f6249;font-weight:650}
+.wp-fl-bridge .wp-fl-demo-caption{font-size:12px;color:#adc3ad;text-align:center;line-height:1.7;margin:16px auto 3px;max-width:38ch}
+.wp-fl-bridge .wp-fl-final{margin-top:16px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.wp-fl-bridge .wp-fl-final a{width:100%;max-width:356px;min-height:48px;display:flex;justify-content:center;align-items:center;background:#d0e0c6;color:#253e2e;text-decoration:none;border-radius:13px;font-size:14px;font-weight:750;text-align:center;padding:10px 12px}
+.wp-fl-bridge .wp-fl-final a:hover{background:#e7f0df}
+.wp-fl-bridge .wp-fl-final p{font-size:11px;color:#b4c5af;text-align:center;margin:0;line-height:1.5}
+.wp-fl-bridge .wp-fl-noscript{font-size:12px;color:#d2e2d1;text-align:center;line-height:1.7;margin-top:16px}
+@media(max-width:980px){
+ .wp-fl-bridge .wp-fl-grid{grid-template-columns:1fr;gap:34px}
+ .wp-fl-bridge .wp-fl-demo{max-width:610px;width:100%;margin-inline:auto}
+ .wp-fl-bridge .wp-fl-story{min-height:0}
+}
+@media(max-width:560px){
+ .wp-fl-bridge{scroll-margin-top:60px;padding:64px 0 78px}
+ .wp-fl-bridge .wp-fl-header h2{font-size:clamp(32px,9.5vw,45px)}
+ .wp-fl-bridge .wp-fl-grid{margin-top:30px}
+ .wp-fl-bridge .wp-fl-option{min-height:83px;padding:12px 10px;border-radius:13px}
+ .wp-fl-bridge .wp-fl-story{margin-top:24px}
+ .wp-fl-bridge .wp-fl-story h3{font-size:clamp(27px,8.3vw,36px)}
+ .wp-fl-bridge .wp-fl-actionrow{flex-direction:column;align-items:stretch}
+ .wp-fl-bridge .wp-fl-action{width:100%}
+ .wp-fl-bridge .wp-fl-demo{padding:15px;border-radius:20px}
+ .wp-fl-bridge .wp-fl-picture{height:144px}
+ .wp-fl-bridge .wp-fl-device-body{min-height:263px}
+}
+@media(prefers-reduced-motion:reduce){
+ .wp-fl-bridge .wp-fl-option,.wp-fl-bridge .wp-fl-action{transition:none}
+ .wp-fl-bridge .wp-fl-option:hover:not(:disabled){transform:none}
+}
