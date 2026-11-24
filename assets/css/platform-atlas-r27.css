@@ -1,0 +1,42 @@
+/* R2.7 — Platform atlas; marks are never transformed, recolored, filtered or animated. */
+.wp-tp-journey #platform-atlas{--atlas-paper:#fffefa;--atlas-line:#d8dfd2;--atlas-ink:#233a2b;--atlas-moss:#42634b;margin:0 0 clamp(38px,6vw,78px);border-top:1px solid var(--atlas-line);padding-top:28px;scroll-margin-top:80px;}
+.wp-tp-journey .tp-atlas-head{display:grid;grid-template-columns:1fr .8fr;gap:24px;align-items:end;margin-bottom:23px}
+.wp-tp-journey .tp-atlas-kicker{font-size:10px;font-weight:800;letter-spacing:.18em;color:#566e5a;margin:0 0 9px}
+.wp-tp-journey .tp-atlas-head h3{font-size:clamp(24px,3.1vw,40px);line-height:1.25;letter-spacing:-.055em;margin:0;word-break:keep-all}
+.wp-tp-journey .tp-atlas-head>p{max-width:35ch;margin:0 0 2px;font-size:14px;line-height:1.75;color:#536557;word-break:keep-all}
+.wp-tp-journey .tp-atlas-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.wp-tp-journey button.tp-atlas-card{position:relative;display:grid;grid-template-rows:auto 1fr auto;min-width:0;min-height:132px;text-align:left;gap:12px;padding:14px 15px;background:var(--atlas-paper);border:1px solid var(--atlas-line);border-radius:12px;color:var(--atlas-ink);cursor:pointer;transition:background .22s ease,border-color .22s ease,box-shadow .22s ease}
+.wp-tp-journey button.tp-atlas-card:disabled{cursor:default}
+.wp-tp-journey button.tp-atlas-card::after{content:"";position:absolute;bottom:0;left:15px;right:15px;height:2px;background:#698970;transform:scaleX(0);transform-origin:left;transition:transform .24s ease}
+.wp-tp-journey button.tp-atlas-card:is([aria-pressed=true],[data-preview=true]){border-color:#78917b;background:#f1f5ed;box-shadow:0 5px 20px #263b2c0c}
+.wp-tp-journey button.tp-atlas-card:is([aria-pressed=true],[data-preview=true])::after{transform:scaleX(1)}
+.wp-tp-journey .tp-atlas-index{display:flex;align-items:center;justify-content:space-between;gap:7px;color:#617361;font-size:10px;font-weight:650;letter-spacing:.06em}
+.wp-tp-journey .tp-atlas-index>span{letter-spacing:0;font-size:10px;color:#58705c;text-align:right}
+.wp-tp-journey .tp-atlas-name{align-self:center;overflow-wrap:normal;word-break:keep-all;font-family:inherit;font-size:clamp(16px,1.8vw,23px);font-weight:710;line-height:1.18;letter-spacing:-.045em;color:#263e2d}
+.wp-tp-journey .tp-atlas-card[data-atlas-channel=gbp] .tp-atlas-name{font-size:clamp(13px,1.45vw,18px)}
+.wp-tp-journey .tp-atlas-foot{display:flex;justify-content:space-between;align-items:end;gap:5px;font-size:11px;font-weight:550;line-height:1.3;color:#5d705f;word-break:keep-all}
+.wp-tp-journey .tp-atlas-arrow{display:block;flex:none;line-height:1;color:#617e66;font-size:15px;transition:transform .2s ease}
+.wp-tp-journey .tp-atlas-card:is([aria-pressed=true],[data-preview=true]) .tp-atlas-arrow{transform:translate(2px,-2px)}
+.wp-tp-journey .tp-atlas-detail{display:grid;grid-template-columns:146px minmax(0,1fr) auto;align-items:center;gap:clamp(16px,2.7vw,31px);margin-top:14px;padding:clamp(16px,2.6vw,30px);background:#e7ede1;border:1px solid #cdd8c9;border-radius:17px;min-height:200px}
+.wp-tp-journey .tp-atlas-art{display:grid;place-items:center;min-width:0;min-height:135px;padding:12px;background:#fff;border:1px solid #dce4d7;border-radius:12px}
+.wp-tp-journey .tp-atlas-art img{display:block;object-fit:contain;max-width:100%;width:116px;height:116px;transform:none;filter:none;opacity:1}
+.wp-tp-journey .tp-atlas-detail[data-atlas-active=site] .tp-atlas-art img{width:112px;height:auto}
+.wp-tp-journey .tp-atlas-art>span{font-size:18px;line-height:1.3;letter-spacing:-.02em;font-weight:700;text-align:center;color:#263e2d;word-break:keep-all}
+.wp-tp-journey .tp-atlas-detail-kicker{display:block;color:#536d57;font-size:10px;font-weight:800;letter-spacing:.15em;margin-bottom:6px}
+.wp-tp-journey .tp-atlas-info h4{margin:0 0 7px;font-size:clamp(21px,2.2vw,30px);line-height:1.2;letter-spacing:-.04em;word-break:keep-all}
+.wp-tp-journey .tp-atlas-info>p{font-size:14px;line-height:1.7;margin:0;color:#465c4a;word-break:keep-all}
+.wp-tp-journey .tp-atlas-route{display:flex;align-items:center;gap:7px;margin:15px 0 9px;flex-wrap:wrap}
+.wp-tp-journey .tp-atlas-route [data-atlas-hop]{font-size:11px;line-height:1.3;font-weight:650;color:#526753;background:#f7f9f5;border:1px solid #d2ded0;border-radius:5px;padding:6px 8px;max-width:100%;word-break:keep-all}
+.wp-tp-journey .tp-atlas-route [data-atlas-hop].is-current{color:#fff;background:#42664c;border-color:#42664c}
+.wp-tp-journey .tp-atlas-link{display:block;position:relative;flex:0 0 12px;height:1px;background:#718972}
+.wp-tp-journey .tp-atlas-link::after{content:"";position:absolute;right:0;top:-2px;width:4px;height:4px;border-right:1px solid #718972;border-top:1px solid #718972;transform:rotate(45deg)}
+.wp-tp-journey .tp-atlas-detail .tp-atlas-note{font-size:11px;line-height:1.5;color:#617462}
+.wp-tp-journey .tp-atlas-actions{display:grid;justify-items:end;gap:9px}
+.wp-tp-journey .tp-atlas-actions a{background:#2f5139;color:#f7f8f1;display:inline-flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;font-size:13px;font-weight:750;padding:12px 15px;border-radius:30px;min-height:44px;transition:background .2s;white-space:nowrap}
+.wp-tp-journey .tp-atlas-actions a:hover{background:#43684c}
+.wp-tp-journey .tp-atlas-actions>span{font-size:10px;color:#556b59;line-height:1.5;text-align:right}
+.wp-tp-journey .tp-atlas-disclosure{font-size:11px;line-height:1.7;color:#657766;margin:12px 0 0}
+.wp-tp-journey #tp-journey-board{scroll-margin-top:90px}
+@media(max-width:1050px){.wp-tp-journey .tp-atlas-detail{grid-template-columns:132px 1fr}.wp-tp-journey .tp-atlas-actions{grid-column:2;justify-items:start}.wp-tp-journey .tp-atlas-actions>span{text-align:left}.wp-tp-journey .tp-atlas-art{grid-row:1/3}.wp-tp-journey .tp-atlas-card{padding:13px}}
+@media(max-width:760px){.wp-tp-journey .tp-atlas-head{grid-template-columns:1fr;gap:12px}.wp-tp-journey .tp-atlas-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.wp-tp-journey button.tp-atlas-card{min-height:113px;padding:12px;gap:8px}.wp-tp-journey .tp-atlas-name{font-size:20px}.wp-tp-journey .tp-atlas-card[data-atlas-channel=gbp] .tp-atlas-name{font-size:16px}.wp-tp-journey .tp-atlas-detail{grid-template-columns:1fr;min-height:0;gap:16px}.wp-tp-journey .tp-atlas-art{grid-row:auto;width:100%;min-height:112px}.wp-tp-journey .tp-atlas-art img{width:104px;height:104px}.wp-tp-journey .tp-atlas-detail[data-atlas-active=site] .tp-atlas-art img{width:142px;height:auto}.wp-tp-journey .tp-atlas-actions{grid-column:auto;justify-items:stretch}.wp-tp-journey .tp-atlas-actions a{justify-content:center}.wp-tp-journey .tp-atlas-actions>span{display:none}.wp-tp-journey #tp-journey-board{scroll-margin-top:60px}}
+@media(prefers-reduced-motion:reduce){.wp-tp-journey button.tp-atlas-card,.wp-tp-journey button.tp-atlas-card::after,.wp-tp-journey .tp-atlas-arrow,.wp-tp-journey .tp-atlas-actions a{transition:none}.wp-tp-journey .tp-atlas-card:is([aria-pressed=true],[data-preview=true]) .tp-atlas-arrow{transform:none}}
