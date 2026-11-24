@@ -96,3 +96,8 @@
  .wp-tp-journey .tp-bottom{gap:15px}
 }
 @media(prefers-reduced-motion:reduce){.wp-tp-journey .tp-route{transition:none}}
+
+.wp-tp-journey button.tp-phone-next{display:block;width:100%;min-height:44px;border:0;cursor:pointer;font-size:12px;font-weight:750}
+.wp-tp-journey button.tp-phone-next:disabled{cursor:default;opacity:.75}
+.wp-tp-journey .tp-phone-next:hover:not(:disabled){background:#244d32}
+.wp-tp-journey .tp-node:disabled{cursor:default}
