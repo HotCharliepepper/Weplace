@@ -74,10 +74,11 @@
 <link rel="stylesheet" href="/assets/css/owner-firstlook-r24.css">
 <script defer src="/assets/js/owner-firstlook-r24.js"></script>
 <link rel="stylesheet" href="/assets/css/touchpoint-journey-r26.css">
-<script defer src="/assets/js/touchpoint-journey-r26.js"></script>
+<script defer src="/assets/js/touchpoint-journey-r29.js"></script>
 <link rel="stylesheet" href="/assets/css/platform-atlas-r27.css">
 <link rel="stylesheet" href="/assets/css/platform-signal-r28.css">
-<script defer src="/assets/js/platform-signal-r28.js"></script>
+<link rel="stylesheet" href="/assets/css/platform-signal-r29.css">
+<script defer src="/assets/js/platform-signal-r29.js"></script>
 </head>
 <body class="rv-vision unified-r3 swd-study tdp-study evi-study he-lab he-polish he-polish-r3">
 <a class="rf-skip" href="#main">본문으로 바로가기</a>
@@ -262,7 +263,7 @@
  </div>
 </section>
 
-<section class="wp-tp-journey" id="channel-journey" aria-labelledby="tp-title" data-route="social" data-step="0" data-complete="false">
+<section class="wp-tp-journey" id="channel-journey" aria-labelledby="tp-title" data-route="ai" data-step="0" data-complete="false">
  <div class="rf-wrap">
   <div class="tp-head">
    <div><p class="tp-eyebrow">EVERY TOUCHPOINT / WEPLACE</p><h2 id="tp-title">여러 곳에서 발견되고,<br><em>한 곳처럼 이해되도록.</em></h2></div>
@@ -276,90 +277,84 @@
   <div><p class="tp-atlas-kicker">THE CONNECTED EXPERIENCE</p><h3 id="tp-atlas-title">어디서 시작해도,<br>하나의 매장으로.</h3></div>
   <p>익숙한 채널에 시선을 두어 보세요.<br>선택하면 손님의 다음 화면으로 이어집니다.</p>
  </div>
- <div class="tp-atlas-grid tp-signal-map" aria-label="발견, 확인, 선택으로 이어지는 고객 접점">
- <div class="tp-signal-group" data-signal-phase="01">
- <div class="tp-signal-group-title"><span>01</span><strong>발견</strong><small>매장을 처음 만나는 곳</small></div>
- <div class="tp-signal-nodes" role="group" aria-label="발견 접점 선택">
- <button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="instagram" data-on-path="true" aria-pressed="true" aria-controls="tp-atlas-detail" disabled><span class="tp-atlas-name">Instagram</span><span class="tp-atlas-foot">공간과 메뉴<span class="tp-atlas-arrow" aria-hidden="true">↗</span></span></button>
-<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="threads"  aria-pressed="false" aria-controls="tp-atlas-detail" disabled><span class="tp-atlas-name">Threads</span><span class="tp-atlas-foot">매장의 이야기<span class="tp-atlas-arrow" aria-hidden="true">↗</span></span></button>
-<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="karrot"  aria-pressed="false" aria-controls="tp-atlas-detail" disabled><span class="tp-atlas-name">당근</span><span class="tp-atlas-foot">동네의 발견<span class="tp-atlas-arrow" aria-hidden="true">↗</span></span></button>
-<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="google"  aria-pressed="false" aria-controls="tp-atlas-detail" disabled><span class="tp-atlas-name">Google 검색</span><span class="tp-atlas-foot">지역과 메뉴<span class="tp-atlas-arrow" aria-hidden="true">↗</span></span></button>
- </div>
- </div>
-<div class="tp-signal-group" data-signal-phase="02">
- <div class="tp-signal-group-title"><span>02</span><strong>확인</strong><small>사실을 다시 살피는 곳</small></div>
- <div class="tp-signal-nodes" role="group" aria-label="확인 접점 선택">
- <button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="naver" data-on-path="true" aria-pressed="false" aria-controls="tp-atlas-detail" disabled><span class="tp-atlas-name">네이버 플레이스</span><span class="tp-atlas-foot">사진 · 후기<span class="tp-atlas-arrow" aria-hidden="true">↗</span></span></button>
-<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="gbp"  aria-pressed="false" aria-controls="tp-atlas-detail" disabled><span class="tp-atlas-name">Google Business Profile</span><span class="tp-atlas-foot">지도 · 영업 정보<span class="tp-atlas-arrow" aria-hidden="true">↗</span></span></button>
- </div>
- </div>
-<div class="tp-signal-group" data-signal-phase="03">
- <div class="tp-signal-group-title"><span>03</span><strong>선택</strong><small>다음 행동을 정하는 곳</small></div>
- <div class="tp-signal-nodes" role="group" aria-label="선택 접점 선택">
- <button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="catchtable" data-on-path="true" aria-pressed="false" aria-controls="tp-atlas-detail" disabled><span class="tp-atlas-name">캐치테이블</span><span class="tp-atlas-foot">예약 방법<span class="tp-atlas-arrow" aria-hidden="true">↗</span></span></button>
-<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="site"  aria-pressed="false" aria-controls="tp-atlas-detail" disabled><span class="tp-atlas-name">홈페이지</span><span class="tp-atlas-foot">공식 방문 안내<span class="tp-atlas-arrow" aria-hidden="true">↗</span></span></button>
- </div>
- </div>
- </div>
- <p class="tp-signal-caption"><span class="tp-signal-dot" aria-hidden="true"></span><span id="tp-signal-status">선택한 경로 · Instagram → 네이버 플레이스 → 캐치테이블</span></p>
- <div class="tp-atlas-detail" id="tp-atlas-detail" data-atlas-active="instagram">
+ <div class="tp-atlas-layout"><div class="tp-atlas-diagram">
+<div class="tp-atlas-grid tp-signal-map" id="tp-signal-map" aria-label="발견, 확인, 선택으로 이어지는 고객 접점">
+<svg class="tp-connection-svg" id="tp-connection-svg" aria-hidden="true" focusable="false"><defs><filter id="tp-path-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter></defs><g id="tp-connections-muted"></g><g id="tp-connections-active"></g></svg>
+<div class="tp-signal-group" data-signal-phase="01"><div class="tp-signal-group-title"><span>01</span><strong>발견</strong><small>매장을 처음 만나는 곳</small></div><div class="tp-signal-nodes" role="group" aria-label="발견 접점 선택"><button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="instagram"   aria-pressed="false" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><path d="M17 7h.01"/></svg><span class="tp-atlas-name">Instagram</span><span class="tp-signal-port" aria-hidden="true"></span></button>
+<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="threads"   aria-pressed="false" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h14v11H11l-5 4v-4H5z"/><path d="M8 9h8M8 12h5"/></svg><span class="tp-atlas-name">Threads</span><span class="tp-signal-port" aria-hidden="true"></span></button>
+<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="karrot"   aria-pressed="false" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-12a7 7 0 1 0-14 0c0 6 7 12 7 12Z"/><circle cx="12" cy="9" r="2"/></svg><span class="tp-atlas-name">당근</span><span class="tp-signal-port" aria-hidden="true"></span></button>
+<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="google"   aria-pressed="false" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><span class="tp-atlas-name">Google 검색</span><span class="tp-signal-port" aria-hidden="true"></span></button>
+<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="ai" data-on-path="true" data-signal-focus="true" aria-pressed="true" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c0 6-4 10-10 10 6 0 10 4 10 10 0-6 4-10 10-10C16 12 12 8 12 2Z"/><path d="M20 2v4M18 4h4"/></svg><span class="tp-atlas-name">AI 검색</span><span class="tp-signal-port" aria-hidden="true"></span></button></div></div>
+<div class="tp-signal-group" data-signal-phase="02"><div class="tp-signal-group-title"><span>02</span><strong>확인</strong><small>사진·후기·운영 정보</small></div><div class="tp-signal-nodes" role="group" aria-label="확인 접점 선택"><button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="naver" data-on-path="true"  aria-pressed="false" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span class="tp-atlas-name">네이버 플레이스</span><span class="tp-signal-port" aria-hidden="true"></span></button>
+<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="gbp"   aria-pressed="false" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h18l-2-5H5L3 8ZM5 9v12h14V9M9 21v-7h6v7M3 8v2a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0V8"/></svg><span class="tp-atlas-name">Google Business Profile</span><span class="tp-signal-port" aria-hidden="true"></span></button></div></div>
+<div class="tp-signal-group" data-signal-phase="03"><div class="tp-signal-group-title"><span>03</span><strong>선택</strong><small>방문·예약·문의</small></div><div class="tp-signal-nodes" role="group" aria-label="선택 접점 선택"><button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="catchtable"   aria-pressed="false" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16m-12 5 3 3 5-5"/></svg><span class="tp-atlas-name">캐치테이블</span><span class="tp-signal-port" aria-hidden="true"></span></button>
+<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="site" data-on-path="true"  aria-pressed="false" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M12 17v4M8 21h8M6 7h12"/></svg><span class="tp-atlas-name">홈페이지</span><span class="tp-signal-port" aria-hidden="true"></span></button>
+<button type="button" class="tp-atlas-card tp-signal-node" data-atlas-channel="inquiry"   aria-pressed="false" aria-controls="tp-atlas-detail" disabled><svg class="tp-map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 1-8 8H5l1-4a8 8 0 1 1 14-4Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg><span class="tp-atlas-name">예약·문의</span><span class="tp-signal-port" aria-hidden="true"></span></button></div></div>
+</div>
+<p class="tp-signal-caption"><span class="tp-signal-dot" aria-hidden="true"></span><span id="tp-signal-status">선택한 경로 · AI 검색 → 네이버 플레이스 → 홈페이지</span></p>
+</div>
+ <div class="tp-atlas-detail" id="tp-atlas-detail" data-atlas-active="ai">
    <div class="tp-atlas-art" id="tp-atlas-art">
-    <img id="tp-atlas-logo" src="/assets/brand/platforms-r27/instagram-official.png" alt="Instagram 공식 브랜드 리소스 이미지" width="272" height="272" decoding="async">
-    <span id="tp-atlas-word" hidden>Instagram</span>
+    <img id="tp-atlas-logo" src="/assets/brand/platforms-r27/instagram-official.png" alt="Instagram 공식 브랜드 리소스 이미지" width="272" height="272" decoding="async" hidden>
+    <svg class="tp-atlas-ai-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c0 6-4 10-10 10 6 0 10 4 10 10 0-6 4-10 10-10C16 12 12 8 12 2Z"/><path d="M20 2v4M18 4h4"/></svg><span id="tp-atlas-word" hidden>AI 검색</span>
    </div>
    <div class="tp-atlas-info" id="tp-atlas-info">
     <span class="tp-atlas-detail-kicker" id="tp-atlas-phase">01 / 발견</span>
-    <h4 id="tp-atlas-channel">Instagram</h4>
-    <p id="tp-atlas-description">공간과 메뉴를 보고 관심을 가진 손님은 사진만으로 알 수 없는 후기와 위치를 확인합니다.</p>
+    <h4 id="tp-atlas-channel">AI 검색</h4>
+    <p id="tp-atlas-description">자연어로 매장을 찾고, 관련 출처에서 실제 위치와 영업 정보, 예약 방법을 다시 확인할 수 있습니다.</p>
     <div class="tp-atlas-route" aria-label="가능한 다음 탐색 경로">
-      <span data-atlas-hop="0" class="is-current">Instagram</span><span class="tp-atlas-link" aria-hidden="true"></span><span data-atlas-hop="1">네이버 플레이스</span><span class="tp-atlas-link" aria-hidden="true"></span><span data-atlas-hop="2">캐치테이블</span>
+      <span data-atlas-hop="0" class="is-current">AI 검색</span><span class="tp-atlas-link" aria-hidden="true"></span><span data-atlas-hop="1">네이버 플레이스</span><span class="tp-atlas-link" aria-hidden="true"></span><span data-atlas-hop="2">홈페이지</span>
     </div>
-    <p class="tp-atlas-note" id="tp-atlas-note">해당 플랫폼을 설명하는 공식 원본 이미지입니다. 공식 제휴나 추천 관계를 나타내지 않습니다.</p>
+    <p class="tp-atlas-note" id="tp-atlas-note">가상 AI 검색 경로입니다. AI 답변·인용·노출은 보장되지 않습니다.</p>
    </div>
    <div class="tp-atlas-actions"><a id="tp-atlas-go" href="#tp-journey-board">선택한 화면 체험하기 <span aria-hidden="true">↓</span></a><span>호버: 미리보기 · 클릭: 선택</span></div>
  </div>
- <p class="tp-atlas-disclosure">채널은 가능한 탐색 경로의 예시입니다. 공식 제휴·연동·성과를 뜻하지 않으며, 실제 운영 업무는 매장별로 협의합니다.</p>
+ </div><!-- atlas layout -->
+ <p class="tp-atlas-disclosure">채널은 가능한 탐색 경로의 예시입니다. 아이콘은 설명용이며 공식 제휴·연동·성과를 뜻하지 않습니다. AI 노출·인용은 보장되지 않습니다.</p>
  <noscript><p class="tp-static-note">동적 미리보기 없이 <a href="#search-surfaces">기존 채널별 설명</a>을 확인하실 수 있습니다.</p></noscript>
 </div>
   <details class="tp-signal-alternate"><summary>다른 시작점에서 경험하기</summary>
   <p class="tp-route-label">손님의 시작점을 골라 직접 경험해 보세요.</p>
   <div class="tp-routes" role="group" aria-label="고객의 탐색 시작점 선택">
-   <button class="tp-route" type="button" data-tp-route="social" aria-pressed="true" disabled><small>01 / 사진에서 시작</small><strong>Instagram → 네이버 플레이스 → 캐치테이블</strong></button>
+   <button class="tp-route" type="button" data-tp-route="social" aria-pressed="false" disabled><small>01 / 사진에서 시작</small><strong>Instagram → 네이버 플레이스 → 캐치테이블</strong></button>
    <button class="tp-route" type="button" data-tp-route="story" aria-pressed="false" disabled><small>02 / 이야기에서 시작</small><strong>Threads → 네이버 플레이스 → 홈페이지</strong></button>
    <button class="tp-route" type="button" data-tp-route="search" aria-pressed="false" disabled><small>03 / 검색에서 시작</small><strong>Google 검색 → 지도 · GBP → 홈페이지</strong></button>
    <button class="tp-route" type="button" data-tp-route="local" aria-pressed="false" disabled><small>04 / 동네에서 시작</small><strong>당근 → 네이버 플레이스 → 홈페이지</strong></button>
+   <button class="tp-route" type="button" data-tp-route="ai" aria-pressed="true" disabled><small>05 / 질문에서 시작</small><strong>AI 검색 → 네이버 플레이스 → 홈페이지</strong></button>
+   <button class="tp-route" type="button" data-tp-route="direct" aria-pressed="false" disabled><small>06 / 직접 문의</small><strong>AI 검색 → 네이버 플레이스 → 예약·문의</strong></button>
   </div>
   </details>
   <div class="tp-signal-divider"><span>EXPERIENCE / 손님의 화면</span><span aria-hidden="true">↓</span></div>
   <div class="tp-board" id="tp-journey-board">
    <div class="tp-path" role="group" aria-label="선택한 탐색 경로의 단계">
-    <button class="tp-node" type="button" data-tp-step="0" aria-pressed="true" disabled><small>1 / 발견</small><b>Instagram</b></button><span class="tp-arrow" aria-hidden="true">→</span>
+    <button class="tp-node" type="button" data-tp-step="0" aria-pressed="true" disabled><small>1 / 발견</small><b>AI 검색</b></button><span class="tp-arrow" aria-hidden="true">→</span>
     <button class="tp-node" type="button" data-tp-step="1" aria-pressed="false" disabled><small>2 / 확인</small><b>네이버 플레이스</b></button><span class="tp-arrow" aria-hidden="true">→</span>
-    <button class="tp-node" type="button" data-tp-step="2" aria-pressed="false" disabled><small>3 / 선택</small><b>캐치테이블</b></button>
+    <button class="tp-node" type="button" data-tp-step="2" aria-pressed="false" disabled><small>3 / 선택</small><b>매장 홈페이지</b></button>
    </div>
    <div class="tp-content">
     <div>
      <div aria-live="polite" aria-atomic="true">
       <p class="tp-progress" id="tp-progress">01 / 03 · 발견</p>
-      <h3 class="tp-question" id="tp-question">사진을 보니, 가보고 싶어집니다.</h3>
-      <p class="tp-explain" id="tp-explain">공간과 음식 사진에서 처음 관심이 생깁니다. 하지만 위치와 예약 방법은 아직 알아봐야 합니다.</p>
-      <div class="tp-work"><span>WEPLACE / 점검할 접점</span><p id="tp-work">공간·메뉴의 표현과 실제 매장 정보를 맞추고, 다음에 확인할 경로를 설계합니다.</p></div>
+      <h3 class="tp-question" id="tp-question">질문으로 시작하는 매장 탐색.</h3>
+      <p class="tp-explain" id="tp-explain">“분위기 좋은 식당을 찾고 있어요.” 질문으로 후보를 찾고 실제 정보와 출처를 확인하는 가상 예시입니다.</p>
+      <div class="tp-work"><span>WEPLACE / 점검할 접점</span><p id="tp-work">AI와 검색 서비스가 참고할 수 있도록 실제 매장명·메뉴·운영 정보와 출처 페이지를 정리합니다.</p></div>
      </div>
      <div class="tp-controls">
-      <button class="tp-btn primary" type="button" data-tp-next disabled>후기와 위치 확인하기 →</button>
+      <button class="tp-btn primary" type="button" data-tp-next disabled>출처와 매장 정보 확인하기 →</button>
       <button class="tp-btn" type="button" data-tp-back disabled>이전 화면</button>
      </div>
      <div class="tp-complete" id="tp-complete" role="status" hidden>가상 탐색 경로 체험을 마쳤습니다. 실제 손님은 다른 경로로 들어오거나 중간에 멈출 수도 있습니다. 우리 매장의 접점은 어떻게 연결되어 있을까요?</div>
     </div>
     <div>
      <div class="tp-phone">
-      <div class="tp-phone-top"><strong class="tp-phone-platform" id="tp-platform" data-brand="instagram">Instagram</strong><span class="tp-mocktag">가상 화면</span></div>
+      <div class="tp-phone-top"><strong class="tp-phone-platform" id="tp-platform" data-brand="ai">AI 검색</strong><span class="tp-mocktag">가상 화면</span></div>
+      <div id="tp-ai-query" class="tp-ai-query"><span aria-hidden="true">✧</span><span>가까운 분위기 좋은 식당은?</span><small>가상 질문</small></div>
       <div class="tp-photo"><img id="tp-photo" src="/assets/hero-r2/room.webp" alt="가상 매장 모온의 실내를 표현한 참고 사진" width="1440" height="960" loading="lazy"></div>
       <div class="tp-phone-body">
        <p class="tp-store">모온 <span>가상의 식당</span></p>
-       <p class="tp-phone-summary" id="tp-summary">먹고 싶은 한 접시, 함께 앉고 싶은 공간.</p>
-       <ul class="tp-facts"><li data-tp-fact>공간과 메뉴 사진</li><li data-tp-fact>매장명: 모온 · 가상 매장</li><li data-tp-fact>방문 정보는 다음 화면에서 확인</li></ul>
-       <button class="tp-phone-next" type="button" data-tp-next disabled>후기와 위치 확인하기 →</button>
+       <p class="tp-phone-summary" id="tp-summary">AI 답변이 아닌 매장 정보 예시입니다.</p>
+       <ul class="tp-facts"><li data-tp-fact>매장명 · 메뉴 등 확인할 사실</li><li data-tp-fact>참고할 실제 정보의 출처</li><li data-tp-fact>영업·예약 조건은 원본 확인</li></ul>
+       <button class="tp-phone-next" type="button" data-tp-next disabled>출처와 매장 정보 확인하기 →</button>
       </div>
      </div>
      <p class="tp-phone-caption">플랫폼 화면을 그대로 복제한 것이 아닌 WEPLACE의 가상 탐색 시안입니다. 실제 검색·예약·전송은 하지 않습니다.</p>
@@ -371,7 +366,7 @@
    </div>
   </div>
  </div><!-- fixed channel signal board -->
-  <p class="tp-boundary">위 경로는 가능한 고객 탐색을 보여주는 가상 시나리오입니다. 네이버 플레이스·Google 검색·지도·자체 홈페이지는 기존 소개 범위이며, 그 밖의 채널 운영·예약 연계·콘텐츠 작업은 실제 매장과 계약 범위에 따라 협의합니다. 플랫폼 공식 제휴, 검색 순위, 예약 및 매출 상승을 의미하지 않습니다.</p>
+  <p class="tp-boundary">위 경로는 가능한 고객 탐색을 보여주는 가상 시나리오입니다. AI 검색 화면은 실제 AI 답변이 아니며, 정보 출처와 운영 사실을 정리하는 방법을 보여줍니다. 네이버 플레이스·Google 검색·지도·자체 홈페이지는 기존 소개 범위이며, 그 밖의 채널 운영·예약 연계·콘텐츠 작업은 실제 매장과 계약 범위에 따라 협의합니다. 플랫폼 공식 제휴, 검색 순위, 예약 및 매출 상승을 의미하지 않습니다.</p>
   <noscript><p class="tp-static-note">화면 전환 체험에는 JavaScript가 필요합니다. <a href="#search-surfaces">기존 검색 화면 비교</a>와 <a href="#contact">문의 안내</a>는 이용할 수 있습니다.</p></noscript>
  </div>
 </section>

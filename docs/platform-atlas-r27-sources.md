@@ -28,3 +28,9 @@ Review all platform permissions in exact intended promotional context, replace t
 - Original Meta marks remain in the individual selection plate only; own logo remains the existing SVG. All other marks are plain text until permission is established. No change to the trademark source register above.
 - Hover/focus is preview, click/touch is commit; selected path visible without animation, one short pulse on path changes; reduced-motion disables pulse and transitions. No autoplay, cursor tracking or new analytics.
 - Draft preview only; production trademark context and real device QA required.
+
+## R2.9 (2026-11-24) AI-connected funnel
+- R2.8 #76 source retained. Reference images are conceptual, not actual platform screenshots, rating or booking evidence. AI search and booking/inquiry nodes added; six example routes, 18 stages. Default AI → Naver Place → website. The booking/inquiry node is a fictional action state, not an actual submission or booking.
+- Desktop horizontal map and mobile vertical groups with SVG connections computed from real node coordinates; short light pulse only when route/preview changes; reduced-motion supported. Existing campaign, First Look, consultation, FLOW and tracking untouched.
+- Generic outline symbols on the diagram are not third-party logos. Meta originals and WEPLACE's own mark remain individual preview assets; unapproved third-party logo placement remains pending. No imitation marks, made-up customer ratings, AI citations, claimed endorsements, ranking or booking promises.
+- Draft review only, production usage approval and device testing required.
