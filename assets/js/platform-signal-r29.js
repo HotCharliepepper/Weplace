@@ -75,7 +75,7 @@
    const changed=Boolean(lastSignal&&signature!==lastSignal);if(changed){pulse=pulse==='a'?'b':'a';atlas.dataset.signalPulse=pulse;}
    lastSignal=signature;schedule(changed);
    name.textContent=names[key];phase.textContent='0'+(path.step+1)+' / '+['발견','확인','선택'][path.step];desc.textContent=item.desc;
-   word.textContent=names[key]; word.hidden=Boolean(item.image||item.isAI);logo.hidden=!item.image;if(aiSymbol)aiSymbol.hidden=!item.isAI;
+   word.textContent=names[key]; word.hidden=Boolean(item.image||item.isAI);logo.hidden=!item.image;if(aiSymbol)aiSymbol.toggleAttribute('hidden',!item.isAI);
    if(item.image){if(logo.getAttribute('src')!==item.image)logo.src=item.image;logo.alt=item.owned?'WEPLACE 기존 브랜드 로고':names[key]+' 공식 브랜드 리소스 이미지';}
    note.textContent=item.isAI?'가상 AI 검색 경로입니다. AI 답변·인용·노출은 보장되지 않습니다.':item.owned?'Weplace의 자체 제작 영역입니다. 실제 제작 예시는 아래 홈페이지 데모에서 확인할 수 있습니다.':item.image?'해당 플랫폼을 설명하는 공식 원본 이미지입니다. 공식 제휴나 추천 관계를 나타내지 않습니다.':'서비스명을 설명 목적으로 표기했습니다. 공식 로고는 사용 조건 확인 후 적용합니다.';
    hops.forEach((hop,i)=>{hop.textContent=names[routeMap[path.route][i]];hop.classList.toggle('is-current',i===path.step);});
