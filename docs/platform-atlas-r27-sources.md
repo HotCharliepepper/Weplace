@@ -22,3 +22,9 @@ Hover/keyboard focus: preview without committing. Click/tap/Enter/Space: existin
 
 ## Before production
 Review all platform permissions in exact intended promotional context, replace text slots only with approved source assets, validate official logo use with the business owner, confirm actual service scope, mobile Safari/in-app, accessibility, and current draft lineage. No merge, public production deployment, campaign production or dispatch authorized by this change.
+
+## R2.8 fixed signal board (design increment, 2026-11-24)
+- In-document fixed panel inspired by the user-supplied Mashcore screenshot, not viewport-fixed or sticky. Three stage groups (discover / verify / choose), eight service names, illuminated selected shell and route connections. Existing R2.6 phone journey, stage controls and inquiry links remain. Alternate route selector is an accessible native details element.
+- Original Meta marks remain in the individual selection plate only; own logo remains the existing SVG. All other marks are plain text until permission is established. No change to the trademark source register above.
+- Hover/focus is preview, click/touch is commit; selected path visible without animation, one short pulse on path changes; reduced-motion disables pulse and transitions. No autoplay, cursor tracking or new analytics.
+- Draft preview only; production trademark context and real device QA required.
